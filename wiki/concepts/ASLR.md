@@ -23,6 +23,11 @@ evidence_ids:
 capability_layers:
   - reliable-results
 history:
+  event:
+    start: 2003
+    basis: representative
+    evidence_id: ref-137
+  note: 이 문서가 확인한 기준점은 PaX Team의 2003년 설계 문서다. 커널 문서의 판 연도는 비워 둔다.
   layer: system
 redirect_from:
   - /concepts/aslr/

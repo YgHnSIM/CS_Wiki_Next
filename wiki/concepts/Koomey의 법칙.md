@@ -25,6 +25,13 @@ evidence_ids:
 capability_layers:
   - resource-efficiency
 history:
+  publication_year: 2011
+  event:
+    start: 1946
+    end: 2009
+    basis: observed
+    evidence_id: ref-047
+  note: 2011년 논문이 1946-2009년 표본의 효율 추세를 보고했다. 법칙이라는 이름은 후대 호칭이다.
   layer: measurement
 redirect_from:
   - /concepts/koomey의-법칙/

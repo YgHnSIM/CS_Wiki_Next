@@ -25,7 +25,7 @@ history:
     start: 1985
     end: 2019
     basis: publication-process
-    evidence_id: null
+    evidence_id: ref-051
   note: 최초 IEEE 754 표준(1985)에서 현행 2019 개정까지의 표준화 계보를 나타낸다.
   layer: measurement
 redirect_from:

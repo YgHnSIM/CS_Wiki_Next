@@ -23,6 +23,8 @@ evidence_ids:
   - ref-042
   - ref-046
   - ref-041
+  - ref-084
+  - ref-045
 capability_layers:
   - realized-performance
   - scalability

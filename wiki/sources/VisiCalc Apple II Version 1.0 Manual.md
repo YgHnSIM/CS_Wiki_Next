@@ -25,7 +25,7 @@ history:
   event:
     start: 1979
     basis: publication-process
-    evidence_id: null
+    evidence_id: ref-061
   note: Software Arts가 개발하고 Personal Software가 1979년 Apple II용으로 배포한 VisiCalc Version 1.0 매뉴얼과 동시대 제품의 기관 기록을 함께 대조한다.
   layer: software
 redirect_from:

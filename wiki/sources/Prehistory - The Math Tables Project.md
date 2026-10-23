@@ -28,7 +28,7 @@ history:
     start: 1938
     end: 1946
     basis: publication-process
-    evidence_id: null
+    evidence_id: ref-057
   note: NIST가 2022년에 공개한 역사 페이지가 1938–1946년 WPA/NBS Mathematical Tables Project를 회고한다.
   layer: system
 redirect_from:

@@ -20,6 +20,8 @@ evidence_ids: []
 capability_layers:
   - reliable-results
 history:
+  publication_year: 2017
+  note: 정규 페이지 하단의 저작권 표기는 2017년 O'Reilly 판이다.
   layer: service
 origin: external
 works:

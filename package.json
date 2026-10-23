@@ -14,6 +14,7 @@
     "knowledge:sync": "node packages/knowledge/src/cli/sync.mjs",
     "knowledge:schema": "node packages/knowledge/src/cli/schema.mjs",
     "knowledge:build": "node packages/knowledge/src/build.mjs",
+    "knowledge:quality": "node packages/knowledge/src/cli/quality.mjs",
     "test": "node --test packages/knowledge/tests/*.test.mjs",
     "site:build": "npm run knowledge:build && node app/scripts/copy-assets.mjs && npm --prefix app run build",
     "site:parity": "node app/scripts/check-routes.mjs",

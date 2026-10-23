@@ -160,6 +160,7 @@ redirect_from:
 - [2026-10-23 update | unlisted 공개 범위 구현과 초안 43건 전환](logs/log-2026-10-23-133-unlisted-visibility-and-draft-conversion.md)
 - [2026-10-24 update | 스키마 v3 전환과 review·editorial_status·private 제거](logs/log-2026-10-24-134-schema-v3-removal.md)
 - [2026-10-24 update | P0 원본 보존과 외부 링크 부패 복구](logs/log-2026-10-24-135-preservation-and-link-rot.md)
+- [2026-10-24 update | 콘텐츠 품질 배치 01 — 연도·근거 정합성](logs/log-2026-10-24-136-content-quality-batch-01.md)
 
 ## 출처
 

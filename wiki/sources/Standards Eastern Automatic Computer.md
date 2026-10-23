@@ -26,7 +26,7 @@ history:
     start: 1950
     end: 1964
     basis: publication-process
-    evidence_id: null
+    evidence_id: ref-059
   note: NIST가 2022년에 공개한 역사 페이지가 1950년 5월 유용한 계산을 시작해 14년 동안 운용된 SEAC를 회고한다.
   layer: machine
 redirect_from:

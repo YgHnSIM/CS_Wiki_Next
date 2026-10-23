@@ -20,6 +20,8 @@ evidence_ids: []
 capability_layers:
   - reliable-results
 history:
+  publication_year: 2018
+  note: 워크북 부록 표의 날짜는 2018-02-19이고, 페이지 저작권은 2018년 O'Reilly 판이다.
   layer: service
 origin: external
 works:

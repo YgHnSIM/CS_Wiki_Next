@@ -25,7 +25,7 @@ history:
     start: 1946
     end: 2009
     basis: publication-process
-    evidence_id: null
+    evidence_id: ref-047
   note: 1946–2009년 표본을 분석한 2011년 출판물이다. 관측 기간과 출판 시점을 구분한다.
   layer: measurement
 redirect_from:

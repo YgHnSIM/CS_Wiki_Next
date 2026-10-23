@@ -21,6 +21,11 @@ evidence_ids:
 capability_layers:
   - programmability
 history:
+  event:
+    start: 1992
+    basis: representative
+    evidence_id: ref-004
+  note: 생몰년이 아니다. 재사용 연구를 정리한 1992년 논문의 출판 연도다.
   layer: software
 redirect_from:
   - /entities/찰스-w-크루거/

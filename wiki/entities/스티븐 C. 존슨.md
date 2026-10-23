@@ -23,6 +23,11 @@ evidence_ids:
 capability_layers:
   - programmability
 history:
+  event:
+    start: 1978
+    basis: representative
+    evidence_id: ref-021
+  note: 생몰년이 아니다. C와 Unix 이식성 논문의 1978년 출판 연도다.
   layer: software
 redirect_from:
   - /entities/스티븐-c-존슨/

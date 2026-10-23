@@ -21,7 +21,7 @@ history:
   event:
     start: 1948
     basis: publication-process
-    evidence_id: null
+    evidence_id: ref-007
   note: 자료가 설명하는 Manchester Baby의 최초 저장 프로그램 실행은 1948년 6월 21일이다.
   layer: machine
 redirect_from:

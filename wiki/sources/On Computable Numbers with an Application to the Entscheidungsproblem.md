@@ -25,7 +25,7 @@ history:
     start: 1936
     end: 1937
     basis: publication-process
-    evidence_id: null
+    evidence_id: ref-009
   note: 1936년 제출·1937년 출판을 구분한다.
   layer: theory
 redirect_from:

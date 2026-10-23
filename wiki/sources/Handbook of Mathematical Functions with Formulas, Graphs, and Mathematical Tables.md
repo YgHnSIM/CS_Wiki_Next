@@ -27,7 +27,7 @@ history:
     start: 1938
     end: 1964
     basis: publication-process
-    evidence_id: null
+    evidence_id: ref-054
   note: 1938년 WPA 지원 Mathematical Tables Project에 참여한 NBS 계산 조직의 작업이 1964년 Applied Mathematics Series 55 발행으로 이어졌다.
   layer: measurement
 redirect_from:
