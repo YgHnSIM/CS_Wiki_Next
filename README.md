@@ -4,6 +4,7 @@
 
 - **이전 저장소**: `C:\Vault\CS_Wiki` (백업: `C:\Vault\_backups\CS_Wiki_2026-10-24_0514`)
 - **현재 단계**: Phase 3 코어 완료 (Astro 1,002 pages, 440 docs, 555 redirects, 397 search records)
+- **의존성**: `npm audit` 0 vulnerabilities (루트·app)
 - **URL 계약**: `/docs/{id}/` 440개와 리디렉션 555개를 유지한다.
 
 ## 구조
@@ -16,7 +17,7 @@ docs/architecture/    ADR과 Phase 1 설계
 catalog/              노드·작품·어휘 Registry
 contracts/            URL·리디렉션 계약
 packages/knowledge/   새 지식 컴파일러
-app/                  Astro 사이트 (예정)
+app/                  Astro 사이트
 ```
 
 ## 핵심 계약
@@ -33,6 +34,7 @@ app/                  Astro 사이트 (예정)
 - [ADR 0001: 지식 그래프와 메타데이터 아키텍처](docs/architecture/0001-knowledge-model.md)
 - [Graph contract v1](docs/architecture/0002-graph-contract.md)
 - [Astro app contract](docs/architecture/0003-astro-app.md)
+- [Dependency policy](docs/architecture/0004-dependencies.md)
 - [Phase 1 relations 마이그레이션](docs/architecture/phase-1-relations-migration.md)
 - [relations 스키마](schema/knowledge/relations.schema.json)
 - [Registry 스키마](schema/knowledge/registry.schema.json)

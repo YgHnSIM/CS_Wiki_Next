@@ -17,11 +17,12 @@
     "test": "node --test packages/knowledge/tests/*.test.mjs",
     "site:build": "npm run knowledge:build && node app/scripts/copy-assets.mjs && npm --prefix app run build",
     "site:parity": "node app/scripts/check-routes.mjs",
-    "site:links": "node app/scripts/check-links.mjs"
+    "site:links": "node app/scripts/check-links.mjs",
+    "security:audit": "npm audit --audit-level=moderate && npm --prefix app audit --audit-level=moderate"
   },
   "dependencies": {
-    "ajv": "^8.17.1",
+    "ajv": "^8.20.0",
     "ajv-formats": "^3.0.1",
-    "yaml": "^2.8.1"
+    "yaml": "^2.9.1"
   }
 }
