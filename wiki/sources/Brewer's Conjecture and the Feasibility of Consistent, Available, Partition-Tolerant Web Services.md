@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-087
+key: source:ref-087
 kind: reference
 title: Brewer's Conjecture and the Feasibility of Consistent, Available, Partition-Tolerant Web Services
 aliases:
@@ -58,6 +59,17 @@ access:
     url: https://web.archive.org/web/20230311114823/https://www.cs.princeton.edu/courses/archive/fall19/cos418/papers/cap.pdf
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2023-03-11
+relations:
+  - predicate: enables
+    target: concept:cap-theorem
+    note: 비동기 네트워크 분할 모형에서 원자적 일관성과 가용성을 동시에 보장할 수 없다는 정리를 제공한다.
+    evidence:
+      - source: ref-087
+  - predicate: constrains
+    target: concept:availability-recovery
+    note: 서비스 가용성 주장을 복제 상태의 일관성·분할·응답 의미와 분리하지 않도록 이론적 경계를 제공한다.
+    evidence:
+      - source: ref-087
 ---
 
 ## 개요
@@ -91,10 +103,12 @@ access:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | enables | [[CAP 정리]] | 비동기 네트워크 분할 모형에서 원자적 일관성과 가용성을 동시에 보장할 수 없다는 정리를 제공한다. | [[Brewer's Conjecture and the Feasibility of Consistent, Available, Partition-Tolerant Web Services]] |
 | constrains | [[가용성과 복구]] | 서비스 가용성 주장을 복제 상태의 일관성·분할·응답 의미와 분리하지 않도록 이론적 경계를 제공한다. | [[Brewer's Conjecture and the Feasibility of Consistent, Available, Partition-Tolerant Web Services]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

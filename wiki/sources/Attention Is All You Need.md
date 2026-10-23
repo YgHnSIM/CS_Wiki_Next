@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-073
+key: source:ref-073
 kind: reference
 title: Attention Is All You Need
 aliases:
@@ -52,6 +53,22 @@ access:
     url: https://web.archive.org/web/20261016223242/https://proceedings.neurips.cc/paper_files/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-10-16
+relations:
+  - predicate: exemplifies
+    target: concept:transformer
+    note: 어텐션과 위치별 피드포워드 층으로 구성한 원 논문의 인코더·디코더 구조를 제시한다.
+    evidence:
+      - source: ref-073
+  - predicate: exemplifies
+    target: concept:self-attention
+    note: 같은 시퀀스에서 생성한 질의·키·값으로 위치 사이 관계를 계산하는 세 가지 어텐션 용례를 설명한다.
+    evidence:
+      - source: ref-073
+  - predicate: precedes
+    target: concept:io-aware-attention
+    note: 전역 자기 주의가 만든 계산 구조는 후대에 GPU 메모리 계층을 고려한 정확한 어텐션 구현의 대상이 되었다.
+    evidence:
+      - source: ref-074
 ---
 
 ## 개요
@@ -87,11 +104,13 @@ Transformer가 순환이나 합성곱 대신 무엇을 중심 계산으로 삼�
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | exemplifies | [[Transformer]] | 어텐션과 위치별 피드포워드 층으로 구성한 원 논문의 인코더·디코더 구조를 제시한다. | [[Attention Is All You Need]] |
 | exemplifies | [[자기 주의]] | 같은 시퀀스에서 생성한 질의·키·값으로 위치 사이 관계를 계산하는 세 가지 어텐션 용례를 설명한다. | [[Attention Is All You Need]] |
-| precedes | [[입출력 인지 어텐션]] | 전역 자기 주의가 만든 계산 구조는 후대에 GPU 메모리 계층을 고려한 정확한 어텐션 구현의 대상이 되었다. | [[FlashAttention - Fast and Memory-Efficient Exact Attention with IO-Awareness]] |
+| precedes | [[입출력 인지 어텐션]] | 전역 자기 주의가 만든 계산 구조는 후대에 GPU 메모리 계층을 고려한 정확한 어텐션 구현의 대상이 되었다. | [[FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

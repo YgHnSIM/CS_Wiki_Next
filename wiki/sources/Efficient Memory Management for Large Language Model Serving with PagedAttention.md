@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-076
+key: source:ref-076
 kind: reference
 title: Efficient Memory Management for Large Language Model Serving with PagedAttention
 aliases:
@@ -56,6 +57,27 @@ access:
     url: https://web.archive.org/web/20261021061051/https://arxiv.org/abs/2309.06180
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-10-21
+relations:
+  - predicate: implements
+    target: concept:kv-cache
+    note: 논리 KV 블록을 비연속 물리 블록에 매핑하고 필요할 때 할당·공유·해제하는 관리 방식을 구현한다.
+    evidence:
+      - source: ref-076
+  - predicate: responds_to
+    target: concept:memory-wall
+    note: GPU 메모리 용량과 단편화 때문에 활성 배치가 제한되는 LLM 서빙 병목에 대응한다.
+    evidence:
+      - source: ref-076
+  - predicate: enables
+    target: concept:continuous-batching
+    note: 캐시 낭비를 줄여 반복마다 선택할 수 있는 동시 요청 수와 배치 수용량을 늘린다.
+    evidence:
+      - source: ref-076
+  - predicate: responds_to
+    target: source:ref-075
+    note: Orca의 반복 단위 스케줄링을 비교 기준으로 삼고, 연속 KV 공간 예약이 남긴 메모리 비효율을 보완한다.
+    evidence:
+      - source: ref-076
 ---
 
 ## 개요
@@ -89,12 +111,14 @@ access:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | implements | [[KV 캐시]] | 논리 KV 블록을 비연속 물리 블록에 매핑하고 필요할 때 할당·공유·해제하는 관리 방식을 구현한다. | [[Efficient Memory Management for Large Language Model Serving with PagedAttention]] |
 | responds_to | [[메모리 장벽]] | GPU 메모리 용량과 단편화 때문에 활성 배치가 제한되는 LLM 서빙 병목에 대응한다. | [[Efficient Memory Management for Large Language Model Serving with PagedAttention]] |
 | enables | [[연속 배칭]] | 캐시 낭비를 줄여 반복마다 선택할 수 있는 동시 요청 수와 배치 수용량을 늘린다. | [[Efficient Memory Management for Large Language Model Serving with PagedAttention]] |
-| responds_to | [[Orca - A Distributed Serving System for Transformer-Based Generative Models]] | Orca의 반복 단위 스케줄링을 비교 기준으로 삼고, 연속 KV 공간 예약이 남긴 메모리 비효율을 보완한다. | [[Efficient Memory Management for Large Language Model Serving with PagedAttention]] |
+| responds_to | [[Orca: A Distributed Serving System for Transformer-Based Generative Models]] | Orca의 반복 단위 스케줄링을 비교 기준으로 삼고, 연속 KV 공간 예약이 남긴 메모리 비효율을 보완한다. | [[Efficient Memory Management for Large Language Model Serving with PagedAttention]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

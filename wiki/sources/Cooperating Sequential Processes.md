@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-092
+key: source:ref-092
 kind: reference
 title: Cooperating Sequential Processes
 aliases:
@@ -60,6 +61,17 @@ access:
     url: https://web.archive.org/web/20261013190746/https://www.cs.utexas.edu/~EWD/transcriptions/EWD01xx/EWD123.html
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-10-13
+relations:
+  - predicate: enables
+    target: concept:concurrency
+    note: 여러 순차 프로세스가 속도 비율 가정 없이 통신·공유 상태를 통해 협력하는 문제를 정식 탐구 대상으로 제시한다.
+    evidence:
+      - source: ref-092
+  - predicate: enables
+    target: concept:mutual-exclusion-synchronization
+    note: 임계 구역의 동시 진입 방지, 대기 조건, 세마포어를 통해 공유 자원 접근을 조정하는 문제를 구체화한다.
+    evidence:
+      - source: ref-092
 ---
 
 ## 개요
@@ -91,10 +103,12 @@ access:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | enables | [[동시성]] | 여러 순차 프로세스가 속도 비율 가정 없이 통신·공유 상태를 통해 협력하는 문제를 정식 탐구 대상으로 제시한다. | [[Cooperating Sequential Processes]] |
 | enables | [[상호 배제와 동기화]] | 임계 구역의 동시 진입 방지, 대기 조건, 세마포어를 통해 공유 자원 접근을 조정하는 문제를 구체화한다. | [[Cooperating Sequential Processes]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

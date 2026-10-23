@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-077
+key: source:ref-077
 kind: reference
 title: "DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving"
 aliases:
@@ -57,6 +58,27 @@ access:
     url: https://web.archive.org/web/20261009014809/https://www.usenix.org/conference/osdi24/presentation/zhong-yinmin
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-10-09
+relations:
+  - predicate: exemplifies
+    target: concept:prefill-decode
+    note: 입력 병렬 처리와 순차 토큰 생성을 서로 다른 GPU 군에 배치해 두 실행 단계의 차이를 시스템 구조로 드러낸다.
+    evidence:
+      - source: ref-077
+  - predicate: measures
+    target: concept:llm-inference-service-metrics
+    note: TTFT·TPOT SLO와 목표 달성 비율을 동시에 만족하는 최대 요청률을 goodput으로 측정한다.
+    evidence:
+      - source: ref-077
+  - predicate: responds_to
+    target: concept:continuous-batching
+    note: 프리필과 디코드를 한 GPU 배치에 함께 넣을 때 생기는 단계 간 간섭과 결합된 자원 구성을 분리한다.
+    evidence:
+      - source: ref-077
+  - predicate: constrains
+    target: concept:kv-cache
+    note: 단계 분리 뒤에도 프리필에서 만든 요청별 KV 상태를 디코드 군으로 옮겨 보존해야 한다.
+    evidence:
+      - source: ref-077
 ---
 
 ## 개요
@@ -92,12 +114,14 @@ DistServe는 [[프리필과 디코드]]를 서로 다른 GPU 군에 배치한다
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
-| exemplifies | [[프리필과 디코드]] | 입력 병렬 처리와 순차 토큰 생성을 서로 다른 GPU 군에 배치해 두 실행 단계의 차이를 시스템 구조로 드러낸다. | [[DistServe - Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving]] |
-| measures | [[LLM 추론 서비스 지표]] | TTFT·TPOT SLO와 목표 달성 비율을 동시에 만족하는 최대 요청률을 goodput으로 측정한다. | [[DistServe - Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving]] |
-| responds_to | [[연속 배칭]] | 프리필과 디코드를 한 GPU 배치에 함께 넣을 때 생기는 단계 간 간섭과 결합된 자원 구성을 분리한다. | [[DistServe - Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving]] |
-| constrains | [[KV 캐시]] | 단계 분리 뒤에도 프리필에서 만든 요청별 KV 상태를 디코드 군으로 옮겨 보존해야 한다. | [[DistServe - Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving]] |
+| exemplifies | [[프리필과 디코드]] | 입력 병렬 처리와 순차 토큰 생성을 서로 다른 GPU 군에 배치해 두 실행 단계의 차이를 시스템 구조로 드러낸다. | [[DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving]] |
+| measures | [[LLM 추론 서비스 지표]] | TTFT·TPOT SLO와 목표 달성 비율을 동시에 만족하는 최대 요청률을 goodput으로 측정한다. | [[DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving]] |
+| responds_to | [[연속 배칭]] | 프리필과 디코드를 한 GPU 배치에 함께 넣을 때 생기는 단계 간 간섭과 결합된 자원 구성을 분리한다. | [[DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving]] |
+| constrains | [[KV 캐시]] | 단계 분리 뒤에도 프리필에서 만든 요청별 KV 상태를 디코드 군으로 옮겨 보존해야 한다. | [[DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

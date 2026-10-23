@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-074
+key: source:ref-074
 kind: reference
 title: "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness"
 aliases:
@@ -55,6 +56,22 @@ access:
     url: https://web.archive.org/web/20260105034037/https://proceedings.neurips.cc/paper_files/paper/2022/hash/67d57c32e20fd0a7a302cb81d36e40d5-Abstract.html
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-01-05
+relations:
+  - predicate: implements
+    target: concept:io-aware-attention
+    note: 타일링·온라인 softmax·재계산으로 HBM 접근을 줄이는 정확 어텐션 구현을 제시한다.
+    evidence:
+      - source: ref-074
+  - predicate: responds_to
+    target: concept:memory-wall
+    note: FLOP 감소보다 HBM–SRAM 데이터 이동이 실제 어텐션 시간을 제한할 수 있다는 문제에 대응한다.
+    evidence:
+      - source: ref-074
+  - predicate: implements
+    target: concept:self-attention
+    note: 어텐션 정의를 근사하지 않고 밀집 자기 주의를 메모리 계층에 맞게 재구성한다.
+    evidence:
+      - source: ref-074
 ---
 
 ## 개요
@@ -88,11 +105,13 @@ access:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | implements | [[입출력 인지 어텐션]] | 타일링·온라인 softmax·재계산으로 HBM 접근을 줄이는 정확 어텐션 구현을 제시한다. | [[FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness]] |
 | responds_to | [[메모리 장벽]] | FLOP 감소보다 HBM–SRAM 데이터 이동이 실제 어텐션 시간을 제한할 수 있다는 문제에 대응한다. | [[FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness]] |
 | implements | [[자기 주의]] | 어텐션 정의를 근사하지 않고 밀집 자기 주의를 메모리 계층에 맞게 재구성한다. | [[FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

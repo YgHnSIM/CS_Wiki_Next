@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-006
+key: source:ref-006
 kind: reference
 title: First Draft of a Report on the EDVAC
 aliases:
@@ -70,6 +71,17 @@ access:
     url: https://web2.qatar.cmu.edu/~mhhammou/15346-s13/resources/OriginsOfComputers/The%20Computer%20as%20von%20Neumann%20planned%20it.pdf
     retrieved: 2026-07-10
     version: null
+relations:
+  - predicate: responds_to
+    target: concept:programmability
+    note: 새 작업을 외부 배선과 장치 설정으로 부여하던 변경 비용을 내부 기억장치의 기호 변경 문제로 옮긴다.
+    evidence:
+      - source: ref-006
+  - predicate: enables
+    target: concept:stored-program-computer
+    note: 명령과 수를 같은 고속 기억장치에 두는 구조를 명시해 저장 프로그램 설계를 구체화한다.
+    evidence:
+      - source: ref-006
 ---
 
 ## 개요
@@ -92,10 +104,12 @@ access:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | responds_to | [[프로그래밍 가능성]] | 새 작업을 외부 배선과 장치 설정으로 부여하던 변경 비용을 내부 기억장치의 기호 변경 문제로 옮긴다. | [[First Draft of a Report on the EDVAC]] |
 | enables | [[저장 프로그램 컴퓨터]] | 명령과 수를 같은 고속 기억장치에 두는 구조를 명시해 저장 프로그램 설계를 구체화한다. | [[First Draft of a Report on the EDVAC]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

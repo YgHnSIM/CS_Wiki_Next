@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-098
+key: source:ref-098
 kind: reference
 title: Decoupling Algorithms from Schedules for Easy Optimization of Image Processing Pipelines
 aliases:
@@ -56,6 +57,17 @@ access:
     url: https://web.archive.org/web/20260710111336/https://people.csail.mit.edu/jrk/halide12/
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-07-10
+relations:
+  - predicate: implements
+    target: concept:algorithm-schedule-separation
+    note: 계산 함수와 저장·순서·타일링·병렬화 선택을 별도 표현으로 두는 언어와 컴파일 방식을 제시한다.
+    evidence:
+      - source: ref-098
+  - predicate: enables
+    target: concept:performance-portability
+    note: 하나의 영상 처리 알고리즘에 대상별 스케줄을 적용해 ARM, x86, GPU를 위한 실행을 탐색하게 한다.
+    evidence:
+      - source: ref-098
 ---
 
 ## 개요
@@ -76,10 +88,12 @@ Halide는 알고리즘을 함수들의 조합으로 표현하고, 스케줄로 �
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | implements | [[알고리즘과 스케줄 분리]] | 계산 함수와 저장·순서·타일링·병렬화 선택을 별도 표현으로 두는 언어와 컴파일 방식을 제시한다. | [[Decoupling Algorithms from Schedules for Easy Optimization of Image Processing Pipelines]] |
 | enables | [[성능 이식성]] | 하나의 영상 처리 알고리즘에 대상별 스케줄을 적용해 ARM, x86, GPU를 위한 실행을 탐색하게 한다. | [[Decoupling Algorithms from Schedules for Easy Optimization of Image Processing Pipelines]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

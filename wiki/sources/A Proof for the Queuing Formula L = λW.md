@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-085
+key: source:ref-085
 kind: reference
 title: "A Proof for the Queuing Formula: L = λ W"
 aliases:
@@ -55,6 +56,17 @@ access:
     url: https://web.archive.org/web/20260303161513/https://pubsonline.informs.org/doi/abs/10.1287/opre.9.3.383?journalCode=opre
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-03-03
+relations:
+  - predicate: enables
+    target: concept:littles-law
+    note: 시스템 안의 평균 작업 수, 평균 처리율, 평균 체류 시간을 같은 경계에서 연결하는 정리를 제공한다.
+    evidence:
+      - source: ref-085
+  - predicate: enables
+    target: concept:queueing-load-control
+    note: 입장·대기·서비스를 포함한 작업 수와 체류 시간을 유량과 함께 점검할 수 있게 한다.
+    evidence:
+      - source: ref-085
 ---
 
 ## 개요
@@ -96,10 +108,12 @@ LLM 서빙에서는 요청·활성 시퀀스·토큰처럼 서로 다른 단위�
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
-| enables | [[리틀의 법칙]] | 시스템 안의 평균 작업 수, 평균 처리율, 평균 체류 시간을 같은 경계에서 연결하는 정리를 제공한다. | [[A Proof for the Queuing Formula L = λW]] |
-| enables | [[대기열과 부하 제어]] | 입장·대기·서비스를 포함한 작업 수와 체류 시간을 유량과 함께 점검할 수 있게 한다. | [[A Proof for the Queuing Formula L = λW]] |
+| enables | [[리틀의 법칙]] | 시스템 안의 평균 작업 수, 평균 처리율, 평균 체류 시간을 같은 경계에서 연결하는 정리를 제공한다. | [[A Proof for the Queuing Formula: L = λ W]] |
+| enables | [[대기열과 부하 제어]] | 입장·대기·서비스를 포함한 작업 수와 체류 시간을 유량과 함께 점검할 수 있게 한다. | [[A Proof for the Queuing Formula: L = λ W]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

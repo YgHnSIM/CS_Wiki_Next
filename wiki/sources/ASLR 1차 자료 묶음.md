@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-137
+key: source:ref-137
 kind: reference
 title: ASLR 1차 자료 묶음
 aliases:
@@ -54,6 +55,11 @@ access:
     url: https://web.archive.org/web/20261013120042/http://pax.grsecurity.net/docs/aslr.txt
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-10-13
+relations:
+  - predicate: exemplifies
+    target: concept:aslr
+    note: ASLR의 사용자 공간·커널 공간 적용과 확률적 방어 한계를 설명하는 1차 자료 묶음이다.
+    evidence: []
 ---
 
 ## 개요
@@ -88,9 +94,11 @@ Linux 커널 자기 보호 문서는 KASLR을 부팅 시 커널의 물리·가�
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
-| exemplifies | [[ASLR]] | ASLR의 사용자 공간·커널 공간 적용과 확률적 방어 한계를 설명하는 1차 자료 묶음이다. | PaX Team, Linux Kernel Documentation |
+| exemplifies | [[ASLR (Address Space Layout Randomization)]] | ASLR의 사용자 공간·커널 공간 적용과 확률적 방어 한계를 설명하는 1차 자료 묶음이다. | - |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

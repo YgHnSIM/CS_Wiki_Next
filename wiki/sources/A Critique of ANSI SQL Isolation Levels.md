@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-111
+key: source:ref-111
 kind: reference
 title: A Critique of ANSI SQL Isolation Levels
 aliases:
@@ -41,6 +42,17 @@ access:
     url: https://web.archive.org/web/20260308210021/https://www.microsoft.com/en-us/research/publication/a-critique-of-ansi-sql-isolation-levels/
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-03-08
+relations:
+  - predicate: enables
+    target: concept:serializability
+    note: 격리 수준의 이름보다 실행 이력과 허용 이상을 직접 비교해야 한다는 분석의 근거를 제공한다.
+    evidence:
+      - source: ref-111
+  - predicate: synthesizes
+    target: concept:concurrency
+    note: 여러 트랜잭션의 상호작용이 공유 상태의 결과 계약을 바꾸는 방식을 구체화한다.
+    evidence:
+      - source: ref-111
 ---
 
 ## 개요
@@ -55,10 +67,12 @@ access:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | enables | [[직렬 가능성]] | 격리 수준의 이름보다 실행 이력과 허용 이상을 직접 비교해야 한다는 분석의 근거를 제공한다. | [[A Critique of ANSI SQL Isolation Levels]] |
 | synthesizes | [[동시성]] | 여러 트랜잭션의 상호작용이 공유 상태의 결과 계약을 바꾸는 방식을 구체화한다. | [[A Critique of ANSI SQL Isolation Levels]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

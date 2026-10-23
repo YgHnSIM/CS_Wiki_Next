@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-101
+key: source:ref-101
 kind: reference
 title: End-to-End Arguments in System Design
 aliases:
@@ -58,6 +59,17 @@ access:
     url: https://web.archive.org/web/20260520063005/https://web.mit.edu/saltzer/www/publications/endtoend/endtoendA4.pdf
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-05-20
+relations:
+  - predicate: enables
+    target: concept:end-to-end-principle
+    note: 응용이 필요한 정확성 보장을 종단에서 확인하고 하위 계층 기능을 성능 향상과 구분해야 한다는 설계 논증을 제공한다.
+    evidence:
+      - source: ref-101
+  - predicate: constrains
+    target: analysis:local-interface-remote-state
+    note: 패킷·호스트·중간 저장소의 확인만으로는 응용 작업의 성공을 확정할 수 없다는 해석 경계를 제공한다.
+    evidence:
+      - source: ref-101
 ---
 
 ## 개요
@@ -91,10 +103,12 @@ access:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | enables | [[종단 간 원칙]] | 응용이 필요한 정확성 보장을 종단에서 확인하고 하위 계층 기능을 성능 향상과 구분해야 한다는 설계 논증을 제공한다. | [[End-to-End Arguments in System Design]] |
 | constrains | [[로컬 호출과 파일은 원격 상태가 될 때 무엇을 잃는가]] | 패킷·호스트·중간 저장소의 확인만으로는 응용 작업의 성공을 확정할 수 없다는 해석 경계를 제공한다. | [[End-to-End Arguments in System Design]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

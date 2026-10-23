@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-126
+key: source:ref-126
 kind: reference
 title: Bazel BUILD Files and Hermeticity
 aliases:
@@ -38,6 +39,17 @@ access:
     url: https://web.archive.org/web/20260917021307/https://bazel.build/concepts/build-files
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-09-17
+relations:
+  - predicate: exemplifies
+    target: concept:reproducible-builds
+    note: 알려진 입력과 제한된 I/O로 빌드 환경을 좁히는 구현 사례를 제공한다.
+    evidence:
+      - source: ref-126
+  - predicate: constrains
+    target: analysis:reproducible-build-boundary
+    note: hermetic 입력 경계와 bit-by-bit 결과 비교를 별도 검증 단계로 나눈다.
+    evidence:
+      - source: ref-126
 ---
 
 ## 개요
@@ -52,10 +64,12 @@ Bazel의 BUILD 파일 문서는 BUILD 파일 해석이 알려진 입력에만 �
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | exemplifies | [[재현 가능한 빌드]] | 알려진 입력과 제한된 I/O로 빌드 환경을 좁히는 구현 사례를 제공한다. | [[Bazel BUILD Files and Hermeticity]] |
 | constrains | [[재현 가능한 빌드는 무엇을 같게 만드는가]] | hermetic 입력 경계와 bit-by-bit 결과 비교를 별도 검증 단계로 나눈다. | [[Bazel BUILD Files and Hermeticity]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

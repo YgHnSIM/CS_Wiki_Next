@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-091
+key: source:ref-091
 kind: reference
 title: CWE-190 Integer Overflow or Wraparound
 aliases:
@@ -45,6 +46,17 @@ access:
     url: https://web.archive.org/web/20261012142831/https://cwe.mitre.org/data/definitions/190.html
     retrieved: 2026-07-25
     version: CWE 4.20
+relations:
+  - predicate: enables
+    target: concept:page-9ecf6d54
+    note: 표현 범위를 넘은 계산이 할당 크기·루프·권한 결정과 메모리 경계 오류로 이어질 수 있는 약점 경로를 제공한다.
+    evidence:
+      - source: ref-091
+  - predicate: constrains
+    target: concept:input-validation
+    note: 수치 입력의 범위뿐 아니라 곱셈·덧셈·변환으로 생긴 길이·오프셋·할당 크기의 범위도 확인하게 한다.
+    evidence:
+      - source: ref-091
 ---
 
 ## 개요
@@ -76,10 +88,12 @@ access:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | enables | [[정수 오버플로]] | 표현 범위를 넘은 계산이 할당 크기·루프·권한 결정과 메모리 경계 오류로 이어질 수 있는 약점 경로를 제공한다. | [[CWE-190 Integer Overflow or Wraparound]] |
 | constrains | [[입력 검증]] | 수치 입력의 범위뿐 아니라 곱셈·덧셈·변환으로 생긴 길이·오프셋·할당 크기의 범위도 확인하게 한다. | [[CWE-190 Integer Overflow or Wraparound]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

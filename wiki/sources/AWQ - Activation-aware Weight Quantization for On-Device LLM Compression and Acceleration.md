@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-082
+key: source:ref-082
 kind: reference
 title: "AWQ: Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration"
 aliases:
@@ -55,6 +56,22 @@ access:
     url: https://web.archive.org/web/20260926174853/https://proceedings.mlsys.org/paper_files/paper/2024/hash/42a452cbafa9dd64e9ba4aa95cc1ef21-Abstract-Conference.html
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-09-26
+relations:
+  - predicate: implements
+    target: concept:llm-weight-quantization
+    note: 보정 활성값으로 중요한 채널을 찾고 채널별 스케일을 조정하는 가중치 전용 PTQ를 구현한다.
+    evidence:
+      - source: ref-082
+  - predicate: responds_to
+    target: concept:memory-wall
+    note: 낮은 비트 가중치와 전용 커널을 결합해 장치 메모리 용량과 가중치 대역폭 제약에 대응한다.
+    evidence:
+      - source: ref-082
+  - predicate: exemplifies
+    target: concept:mixed-precision
+    note: 저비트 가중치와 높은 정밀도의 활성값·누산을 역할별로 배치하고 채널별 스케일로 오차를 조절한다.
+    evidence:
+      - source: ref-082
 ---
 
 ## 개요
@@ -88,11 +105,13 @@ AWQ는 역전파나 가중치 재구성 최적화를 사용하지 않아 작은 
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
-| implements | [[LLM 가중치 양자화]] | 보정 활성값으로 중요한 채널을 찾고 채널별 스케일을 조정하는 가중치 전용 PTQ를 구현한다. | [[AWQ - Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration]] |
-| responds_to | [[메모리 장벽]] | 낮은 비트 가중치와 전용 커널을 결합해 장치 메모리 용량과 가중치 대역폭 제약에 대응한다. | [[AWQ - Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration]] |
-| exemplifies | [[혼합 정밀도]] | 저비트 가중치와 높은 정밀도의 활성값·누산을 역할별로 배치하고 채널별 스케일로 오차를 조절한다. | [[AWQ - Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration]] |
+| implements | [[LLM 가중치 양자화]] | 보정 활성값으로 중요한 채널을 찾고 채널별 스케일을 조정하는 가중치 전용 PTQ를 구현한다. | [[AWQ: Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration]] |
+| responds_to | [[메모리 장벽]] | 낮은 비트 가중치와 전용 커널을 결합해 장치 메모리 용량과 가중치 대역폭 제약에 대응한다. | [[AWQ: Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration]] |
+| exemplifies | [[혼합 정밀도]] | 저비트 가중치와 높은 정밀도의 활성값·누산을 역할별로 배치하고 채널별 스케일로 오차를 조절한다. | [[AWQ: Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-110
+key: source:ref-110
 kind: reference
 title: Carbon Emissions and Large Neural Network Training
 aliases:
@@ -54,6 +55,17 @@ access:
     url: https://web.archive.org/web/20261015004229/https://arxiv.org/abs/2104.10350
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-10-15
+relations:
+  - predicate: measures
+    target: concept:operational-embodied-carbon
+    note: 학습 작업의 에너지 사용과 전력망·시설 조건에 따른 운영 CO₂e를 비교하는 측정 예를 제공한다.
+    evidence:
+      - source: ref-110
+  - predicate: constrains
+    target: concept:llm-inference-energy-metrics
+    note: 특정 장비의 에너지 수치를 탄소 영향으로 읽으려면 위치·시간·시설과 작업 품질 조건을 추가해야 함을 보인다.
+    evidence:
+      - source: ref-110
 ---
 
 ## 개요
@@ -79,10 +91,12 @@ access:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | measures | [[운영 탄소와 내재 탄소]] | 학습 작업의 에너지 사용과 전력망·시설 조건에 따른 운영 CO₂e를 비교하는 측정 예를 제공한다. | [[Carbon Emissions and Large Neural Network Training]] |
 | constrains | [[LLM 추론 에너지 지표]] | 특정 장비의 에너지 수치를 탄소 영향으로 읽으려면 위치·시간·시설과 작업 품질 조건을 추가해야 함을 보인다. | [[Carbon Emissions and Large Neural Network Training]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

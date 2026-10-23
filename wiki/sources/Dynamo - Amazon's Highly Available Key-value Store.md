@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-104
+key: source:ref-104
 kind: reference
 title: "Dynamo: Amazon's Highly Available Key-value Store"
 aliases:
@@ -55,6 +56,17 @@ access:
     url: https://web.archive.org/web/20261011233915/https://www.amazon.science/publications/dynamo-amazons-highly-available-key-value-store
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-10-11
+relations:
+  - predicate: exemplifies
+    target: concept:partial-failure
+    note: 지속적인 서버·네트워크 구성 요소 실패 속에서 복제·버전·응용 보조 충돌 해결을 조합한 저장 시스템 사례를 제공한다.
+    evidence:
+      - source: ref-104
+  - predicate: enables
+    target: analysis:local-interface-remote-state
+    note: 단일 키 갱신의 결과가 원격 복제 환경에서는 버전 병존·정족수·충돌 해결의 계약으로 바뀌는 사례를 제공한다.
+    evidence:
+      - source: ref-104
 ---
 
 ## 개요
@@ -88,10 +100,12 @@ Dynamo는 오늘날의 DynamoDB나 모든 NoSQL 제품의 정확한 구현 명�
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
-| exemplifies | [[부분 실패]] | 지속적인 서버·네트워크 구성 요소 실패 속에서 복제·버전·응용 보조 충돌 해결을 조합한 저장 시스템 사례를 제공한다. | [[Dynamo - Amazon's Highly Available Key-value Store]] |
-| enables | [[로컬 호출과 파일은 원격 상태가 될 때 무엇을 잃는가]] | 단일 키 갱신의 결과가 원격 복제 환경에서는 버전 병존·정족수·충돌 해결의 계약으로 바뀌는 사례를 제공한다. | [[Dynamo - Amazon's Highly Available Key-value Store]] |
+| exemplifies | [[부분 실패]] | 지속적인 서버·네트워크 구성 요소 실패 속에서 복제·버전·응용 보조 충돌 해결을 조합한 저장 시스템 사례를 제공한다. | [[Dynamo: Amazon's Highly Available Key-value Store]] |
+| enables | [[로컬 호출과 파일은 원격 상태가 될 때 무엇을 잃는가]] | 단일 키 갱신의 결과가 원격 복제 환경에서는 버전 병존·정족수·충돌 해결의 계약으로 바뀌는 사례를 제공한다. | [[Dynamo: Amazon's Highly Available Key-value Store]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

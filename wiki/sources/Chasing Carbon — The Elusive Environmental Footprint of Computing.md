@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-109
+key: source:ref-109
 kind: reference
 title: "Chasing Carbon: The Elusive Environmental Footprint of Computing"
 aliases:
@@ -61,6 +62,17 @@ access:
     url: https://web.archive.org/web/20261001073014/https://arxiv.org/abs/2011.02839
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-10-01
+relations:
+  - predicate: enables
+    target: concept:operational-embodied-carbon
+    note: 운영 전력과 하드웨어 제조·인프라에서 나오는 탄소를 별도 항으로 분석할 근거를 제공한다.
+    evidence:
+      - source: ref-109
+  - predicate: constrains
+    target: concept:energy-proportional-computing
+    note: 부하에 따른 운영 전력 개선을 전체 수명 주기 환경 영향의 충분조건으로 확대하지 않게 한다.
+    evidence:
+      - source: ref-109
 ---
 
 ## 개요
@@ -85,10 +97,12 @@ access:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | enables | [[운영 탄소와 내재 탄소]] | 운영 전력과 하드웨어 제조·인프라에서 나오는 탄소를 별도 항으로 분석할 근거를 제공한다. | [[Chasing Carbon: The Elusive Environmental Footprint of Computing]] |
 | constrains | [[에너지 비례 컴퓨팅]] | 부하에 따른 운영 전력 개선을 전체 수명 주기 환경 영향의 충분조건으로 확대하지 않게 한다. | [[Chasing Carbon: The Elusive Environmental Footprint of Computing]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

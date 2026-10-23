@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-139
+key: source:ref-139
 kind: reference
 title: Design and Implementation of the Sun Network Filesystem
 aliases:
@@ -46,6 +47,17 @@ access:
     url: https://web.archive.org/web/20260505150313/https://www.rfc-editor.org/rfc/rfc1094
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-05-05
+relations:
+  - predicate: exemplifies
+    target: concept:distributed-file-system
+    note: RPC와 상태 비저장 서버로 분산 파일 공유를 구현한 대표 사례다.
+    evidence:
+      - source: ref-139
+  - predicate: implements
+    target: concept:remote-procedure-call
+    note: 파일 연산을 RPC 프로시저로 노출한다.
+    evidence:
+      - source: ref-139
 ---
 
 ## 개요
@@ -58,10 +70,12 @@ Sun Network Filesystem(NFS)은 원격 프로시저 호출을 중심 인터페이
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | exemplifies | [[분산 파일 시스템]] | RPC와 상태 비저장 서버로 분산 파일 공유를 구현한 대표 사례다. | [[Design and Implementation of the Sun Network Filesystem]] |
 | implements | [[원격 프로시저 호출]] | 파일 연산을 RPC 프로시저로 노출한다. | [[Design and Implementation of the Sun Network Filesystem]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

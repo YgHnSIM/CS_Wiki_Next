@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-079
+key: source:ref-079
 kind: reference
 title: Fast Inference from Transformers via Speculative Decoding
 aliases:
@@ -54,6 +55,22 @@ access:
     url: https://web.archive.org/web/20261012083245/https://proceedings.mlr.press/v202/leviathan23a.html
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-10-12
+relations:
+  - predicate: implements
+    target: concept:speculative-decoding
+    note: 근사 모델의 후보 생성과 타깃 모델의 병렬 검증·수락·보정을 하나의 정확한 표본화 알고리즘으로 제시한다.
+    evidence:
+      - source: ref-079
+  - predicate: responds_to
+    target: concept:prefill-decode
+    note: 토큰마다 큰 모델을 직렬 호출해야 하는 디코드 단계의 지연을 여러 후보 위치의 병렬 검증으로 줄인다.
+    evidence:
+      - source: ref-079
+  - predicate: exemplifies
+    target: concept:llm-inference-service-metrics
+    note: 지연 가속과 출력 분포 보존을 함께 요구해 원시 토큰률과 결과 계약을 분리한다.
+    evidence:
+      - source: ref-079
 ---
 
 ## 개요
@@ -87,11 +104,13 @@ T5-XXL 평가에서 표준 T5X 구현보다 2–3배의 지연 단축을 보고�
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | implements | [[추측 디코딩]] | 근사 모델의 후보 생성과 타깃 모델의 병렬 검증·수락·보정을 하나의 정확한 표본화 알고리즘으로 제시한다. | [[Fast Inference from Transformers via Speculative Decoding]] |
 | responds_to | [[프리필과 디코드]] | 토큰마다 큰 모델을 직렬 호출해야 하는 디코드 단계의 지연을 여러 후보 위치의 병렬 검증으로 줄인다. | [[Fast Inference from Transformers via Speculative Decoding]] |
 | exemplifies | [[LLM 추론 서비스 지표]] | 지연 가속과 출력 분포 보존을 함께 요구해 원시 토큰률과 결과 계약을 분리한다. | [[Fast Inference from Transformers via Speculative Decoding]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

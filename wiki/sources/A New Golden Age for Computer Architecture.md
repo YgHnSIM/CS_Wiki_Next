@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-138
+key: source:ref-138
 kind: reference
 title: A New Golden Age for Computer Architecture
 aliases:
@@ -56,6 +57,17 @@ access:
     url: https://web.archive.org/web/20250223200420/https://dl.acm.org/doi/10.1145/3282307
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2025-02-23
+relations:
+  - predicate: exemplifies
+    target: concept:domain-specific-accelerator
+    note: 범용 프로세서의 한계를 극복하기 위해 특정 도메인 연산에 하드웨어를 최적화하는 DSA 개념을 제시한다.
+    evidence:
+      - source: ref-138
+  - predicate: synthesizes
+    target: concept:heterogeneous-execution-model
+    note: 범용 호스트 CPU와 특화 가속기가 분업하는 이종 컴퓨팅 구조의 필연성을 분석한다.
+    evidence:
+      - source: ref-138
 ---
 
 ## 개요
@@ -82,10 +94,12 @@ access:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | exemplifies | [[도메인 특화 가속기]] | 범용 프로세서의 한계를 극복하기 위해 특정 도메인 연산에 하드웨어를 최적화하는 DSA 개념을 제시한다. | [[A New Golden Age for Computer Architecture]] |
 | synthesizes | [[이기종 실행 모델]] | 범용 호스트 CPU와 특화 가속기가 분업하는 이종 컴퓨팅 구조의 필연성을 분석한다. | [[A New Golden Age for Computer Architecture]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

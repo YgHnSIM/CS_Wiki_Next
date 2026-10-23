@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-090
+key: source:ref-090
 kind: reference
 title: CWE-20 Improper Input Validation
 aliases:
@@ -45,6 +46,17 @@ access:
     url: https://web.archive.org/web/20261012080218/https://cwe.mitre.org/data/definitions/20.html
     retrieved: 2026-07-25
     version: CWE 4.20
+relations:
+  - predicate: enables
+    target: concept:input-validation
+    note: 입력의 길이·타입·문법·범위·일관성·도메인 규칙을 소비 경계 전에 확인해야 하는 범위를 제공한다.
+    evidence:
+      - source: ref-090
+  - predicate: constrains
+    target: analysis:interpretation-security-boundary
+    note: 검증·필터링·출력 인코딩·정준화를 하나의 동의어로 합치지 않고, 각 단계의 원인과 소비 표현을 구분하게 한다.
+    evidence:
+      - source: ref-090
 ---
 
 ## 개요
@@ -78,10 +90,12 @@ CWE는 허용된 명세에 맞는 입력을 받아들이는 accept-known-good �
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | enables | [[입력 검증]] | 입력의 길이·타입·문법·범위·일관성·도메인 규칙을 소비 경계 전에 확인해야 하는 범위를 제공한다. | [[CWE-20 Improper Input Validation]] |
 | constrains | [[입력을 해석하는 경계는 왜 보안 경계인가]] | 검증·필터링·출력 인코딩·정준화를 하나의 동의어로 합치지 않고, 각 단계의 원인과 소비 표현을 구분하게 한다. | [[CWE-20 Improper Input Validation]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

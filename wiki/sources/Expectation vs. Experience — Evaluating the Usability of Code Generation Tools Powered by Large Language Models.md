@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-105
+key: source:ref-105
 kind: reference
 title: "Expectation vs. Experience: Evaluating the Usability of Code Generation Tools Powered by Large Language Models"
 aliases:
@@ -54,6 +55,17 @@ access:
     url: https://web.archive.org/web/20260115065627/https://dl.acm.org/doi/10.1145/3491101.3519665
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-01-15
+relations:
+  - predicate: exemplifies
+    target: concept:ai-coding-assistance
+    note: Copilot 사용 경험을 통해 코드 생성 도구가 초안 생성과 사람의 검토·편집을 함께 요구하는 작업 방식을 보인다.
+    evidence:
+      - source: ref-105
+  - predicate: enables
+    target: concept:verification-labor
+    note: 생성된 제안을 이해·수정·디버깅해야 한다는 관찰은 검증과 통합을 독립 작업으로 분석할 근거를 제공한다.
+    evidence:
+      - source: ref-105
 ---
 
 ## 개요
@@ -78,10 +90,12 @@ access:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | exemplifies | [[AI 코딩 지원]] | Copilot 사용 경험을 통해 코드 생성 도구가 초안 생성과 사람의 검토·편집을 함께 요구하는 작업 방식을 보인다. | [[Expectation vs. Experience: Evaluating the Usability of Code Generation Tools Powered by Large Language Models]] |
 | enables | [[검증 노동]] | 생성된 제안을 이해·수정·디버깅해야 한다는 관찰은 검증과 통합을 독립 작업으로 분석할 근거를 제공한다. | [[Expectation vs. Experience: Evaluating the Usability of Code Generation Tools Powered by Large Language Models]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

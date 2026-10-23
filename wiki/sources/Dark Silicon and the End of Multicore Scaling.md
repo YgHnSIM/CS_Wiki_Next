@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-048
+key: source:ref-048
 kind: reference
 title: Dark Silicon and the End of Multicore Scaling
 aliases:
@@ -71,6 +72,27 @@ access:
     url: https://web.archive.org/web/20251203185845/https://research.cs.wisc.edu/vertical/papers/2011/isca11-darksilicon.pdf
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2025-12-03
+relations:
+  - predicate: responds_to
+    target: concept:page-3b07c7d6
+    note: 전압 축소가 이상적 일정 전계 가정을 더는 따르지 못할 때 생기는 전력 한계를 정량 모델로 다룬다.
+    evidence:
+      - source: ref-048
+  - predicate: exemplifies
+    target: concept:page-7fcb10cc
+    note: 집적한 트랜지스터 가운데 전력 예산 때문에 동시에 유용하게 활성화할 수 없는 영역의 증가를 정량 모델로 구체화한다.
+    evidence:
+      - source: ref-048
+  - predicate: exemplifies
+    target: concept:domain-specific-accelerator
+    note: 전력 제약에 대응하는 방향으로 이질적·특화 코어 구성을 제시해 특화 구조의 사례를 보인다.
+    evidence:
+      - source: ref-048
+  - predicate: constrains
+    target: concept:parallel-scalability
+    note: 집적 가능한 코어 수가 늘어도 전력 예산과 프로그램 병렬성 때문에 동시에 유용하게 활성화할 수 있는 코어 수를 제한한다.
+    evidence:
+      - source: ref-048
 ---
 
 ## 개요
@@ -153,12 +175,14 @@ access:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | responds_to | [[Dennard 스케일링]] | 전압 축소가 이상적 일정 전계 가정을 더는 따르지 못할 때 생기는 전력 한계를 정량 모델로 다룬다. | [[Dark Silicon and the End of Multicore Scaling]] |
 | exemplifies | [[다크 실리콘]] | 집적한 트랜지스터 가운데 전력 예산 때문에 동시에 유용하게 활성화할 수 없는 영역의 증가를 정량 모델로 구체화한다. | [[Dark Silicon and the End of Multicore Scaling]] |
 | exemplifies | [[도메인 특화 가속기]] | 전력 제약에 대응하는 방향으로 이질적·특화 코어 구성을 제시해 특화 구조의 사례를 보인다. | [[Dark Silicon and the End of Multicore Scaling]] |
 | constrains | [[병렬 확장성]] | 집적 가능한 코어 수가 늘어도 전력 예산과 프로그램 병렬성 때문에 동시에 유용하게 활성화할 수 있는 코어 수를 제한한다. | [[Dark Silicon and the End of Multicore Scaling]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 
