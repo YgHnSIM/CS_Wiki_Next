@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: concept-prefix-kv-caching
+key: concept:prefix-kv-caching
 kind: concept
 title: 접두사 KV 캐싱
 aliases:
@@ -28,6 +29,27 @@ history:
   layer: system
 redirect_from:
   - /concepts/접두사-kv-캐싱/
+relations:
+  - predicate: narrower
+    target: concept:kv-cache
+    note: 한 요청 내부 상태 재사용을 넘어 동일 토큰 접두사의 KV 상태를 요청·호출 사이에 보존한다.
+    evidence:
+      - source: ref-080
+  - predicate: enables
+    target: concept:prefill-decode
+    note: 적중한 접두사의 키·값을 다시 계산하지 않고 불일치 접미사부터 프리필을 이어 간다.
+    evidence:
+      - source: ref-080
+  - predicate: constrains
+    target: concept:continuous-batching
+    note: 캐시 적중을 높이는 요청 순서가 활성 배치·공정성·대기 지연과 함께 결정되어야 한다.
+    evidence:
+      - source: ref-080
+  - predicate: implements
+    target: concept:memory-wall
+    note: 중복 프리필 계산과 KV 메모리를 줄이는 대신 캐시 점유·조회·퇴거 비용을 추가한다.
+    evidence:
+      - source: ref-080
 ---
 
 ## 개요
@@ -68,12 +90,14 @@ SGLang의 RadixAttention은 토큰 시퀀스와 KV 페이지를 radix tree에 �
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
-| narrower | [[KV 캐시]] | 한 요청 내부 상태 재사용을 넘어 동일 토큰 접두사의 KV 상태를 요청·호출 사이에 보존한다. | [[SGLang - Efficient Execution of Structured Language Model Programs]] |
-| enables | [[프리필과 디코드]] | 적중한 접두사의 키·값을 다시 계산하지 않고 불일치 접미사부터 프리필을 이어 간다. | [[SGLang - Efficient Execution of Structured Language Model Programs]] |
-| constrains | [[연속 배칭]] | 캐시 적중을 높이는 요청 순서가 활성 배치·공정성·대기 지연과 함께 결정되어야 한다. | [[SGLang - Efficient Execution of Structured Language Model Programs]] |
-| implements | [[메모리 장벽]] | 중복 프리필 계산과 KV 메모리를 줄이는 대신 캐시 점유·조회·퇴거 비용을 추가한다. | [[SGLang - Efficient Execution of Structured Language Model Programs]] |
+| narrower | [[KV 캐시]] | 한 요청 내부 상태 재사용을 넘어 동일 토큰 접두사의 KV 상태를 요청·호출 사이에 보존한다. | [[SGLang: Efficient Execution of Structured Language Model Programs]] |
+| enables | [[프리필과 디코드]] | 적중한 접두사의 키·값을 다시 계산하지 않고 불일치 접미사부터 프리필을 이어 간다. | [[SGLang: Efficient Execution of Structured Language Model Programs]] |
+| constrains | [[연속 배칭]] | 캐시 적중을 높이는 요청 순서가 활성 배치·공정성·대기 지연과 함께 결정되어야 한다. | [[SGLang: Efficient Execution of Structured Language Model Programs]] |
+| implements | [[메모리 장벽]] | 중복 프리필 계산과 KV 메모리를 줄이는 대신 캐시 점유·조회·퇴거 비용을 추가한다. | [[SGLang: Efficient Execution of Structured Language Model Programs]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 
