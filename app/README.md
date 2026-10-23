@@ -1,5 +1,7 @@
 # Astro app
 
+공개 사이트: https://yghnsim.github.io/CS_Wiki_Next/
+
 `data/build/graph.json`과 `documents.json`만 읽어 정적 사이트를 만든다. Markdown을 다시 파싱하지 않는다.
 
 ## 실행

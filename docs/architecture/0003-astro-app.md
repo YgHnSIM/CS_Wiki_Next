@@ -1,5 +1,7 @@
 # Astro app contract
 
+공개 배포: https://yghnsim.github.io/CS_Wiki_Next/
+
 Phase 3의 정적 사이트는 `packages/knowledge`가 만든 그래프만 소비한다.
 
 ## 입력
