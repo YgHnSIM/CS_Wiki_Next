@@ -43,9 +43,11 @@ npm run knowledge:check
 npm run knowledge:schema
 npm run knowledge:report
 npm run knowledge:sync -- --check
+npm run knowledge:build
+npm test
 ```
 
-`knowledge:check`는 Registry 정합성, `knowledge:schema`는 440쪽 frontmatter 스키마, `knowledge:report`는 887개 관계의 preflight, `knowledge:sync --check`는 frontmatter와 generated block의 패리티를 검사한다.
+`knowledge:check`는 Registry 정합성, `knowledge:schema`는 440쪽 frontmatter 스키마, `knowledge:report`는 887개 관계의 preflight, `knowledge:sync --check`는 generated block 패리티, `knowledge:build`는 정규 그래프와 parity를 검사한다.
 
 ## 금지
 

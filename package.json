@@ -12,7 +12,9 @@
     "knowledge:check": "node packages/knowledge/src/cli/check.mjs",
     "knowledge:migrate": "node packages/knowledge/src/cli/migrate.mjs",
     "knowledge:sync": "node packages/knowledge/src/cli/sync.mjs",
-    "knowledge:schema": "node packages/knowledge/src/cli/schema.mjs"
+    "knowledge:schema": "node packages/knowledge/src/cli/schema.mjs",
+    "knowledge:build": "node packages/knowledge/src/build.mjs",
+    "test": "node --test packages/knowledge/tests/*.test.mjs"
   },
   "dependencies": {
     "ajv": "^8.17.1",

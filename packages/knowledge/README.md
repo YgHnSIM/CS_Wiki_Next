@@ -32,6 +32,7 @@ Phase 1에서는 `seed`, `report`, `migrate`, `check`, `sync` 순서로 구현�
 - `src/cli/migrate.mjs` — `## 관계` 표를 frontmatter `relations`로 이관
 - `src/cli/sync.mjs` — frontmatter에서 generated block 재생성·검사
 - `src/cli/schema.mjs` — 440쪽 frontmatter JSON Schema 검증
+- `src/build.mjs` — 정규 graph/documents/report 생성과 parity 검사
 
 ```bash
 npm run knowledge:seed -- --dry-run
@@ -41,4 +42,6 @@ npm run knowledge:check
 npm run knowledge:schema
 npm run knowledge:migrate -- --kind concept --limit 24
 npm run knowledge:sync -- --check
+npm run knowledge:build
+npm test
 ```
