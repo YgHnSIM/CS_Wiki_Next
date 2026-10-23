@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-066
+key: source:ref-066
 kind: reference
 title: The Complexity of Theorem-Proving Procedures
 aliases:
@@ -59,6 +60,17 @@ access:
     url: https://direct.mit.edu/books/edited-volume/5003/chapter/2657057/The-Complexity-of-Theorem-Proving-Procedures-1971
     retrieved: 2026-07-24
     version: Proceedings of the Third Annual ACM Symposium on Theory of Computing, 1971, pp. 151–158
+relations:
+  - predicate: enables
+    target: concept:polynomial-time-reduction
+    note: 질의 기계가 다항 시간 안에 한 문제를 다른 문제의 오라클로 푸는 P-환원 정의를 제시한다.
+    evidence:
+      - source: ref-066
+  - predicate: enables
+    target: concept:np-completeness
+    note: 다항 시간 비결정적 계산과 대표적인 어려운 문제를 연결하는 완전성 틀을 제공한다.
+    evidence:
+      - source: ref-066
 ---
 
 ## 개요
@@ -90,10 +102,12 @@ Cook은 다항 시간 비결정적 튜링 기계의 계산 과정을 명제 변�
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | enables | [[다항 시간 환원]] | 질의 기계가 다항 시간 안에 한 문제를 다른 문제의 오라클로 푸는 P-환원 정의를 제시한다. | [[The Complexity of Theorem-Proving Procedures]] |
 | enables | [[NP-완전]] | 다항 시간 비결정적 계산과 대표적인 어려운 문제를 연결하는 완전성 틀을 제공한다. | [[The Complexity of Theorem-Proving Procedures]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-072
+key: source:ref-072
 kind: reference
 title: The SPACE of Developer Productivity
 aliases:
@@ -54,6 +55,17 @@ access:
     url: https://web.archive.org/web/20260912005333/https://www.microsoft.com/en-us/research/publication/the-space-of-developer-productivity-theres-more-to-it-than-you-think/
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-09-12
+relations:
+  - predicate: measures
+    target: concept:developer-productivity
+    note: 만족·웰빙, 성과, 활동, 소통·협업, 효율·몰입의 다섯 차원으로 측정 질문을 구성한다.
+    evidence:
+      - source: ref-072
+  - predicate: constrains
+    target: analysis:code-volume-developer-productivity
+    note: 코드량·커밋 등 활동 지표를 전체 생산성의 단일 대리값으로 쓰지 않게 한다.
+    evidence:
+      - source: ref-072
 ---
 
 ## 개요
@@ -85,10 +97,12 @@ SPACE는 다섯 차원을 제안한다. 만족과 웰빙(Satisfaction and well-b
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | measures | [[개발자 생산성]] | 만족·웰빙, 성과, 활동, 소통·협업, 효율·몰입의 다섯 차원으로 측정 질문을 구성한다. | [[The SPACE of Developer Productivity]] |
 | constrains | [[코드 생산량은 왜 개발 생산성을 설명하지 못하는가]] | 코드량·커밋 등 활동 지표를 전체 생산성의 단일 대리값으로 쓰지 않게 한다. | [[The SPACE of Developer Productivity]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

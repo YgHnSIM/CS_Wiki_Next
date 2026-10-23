@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-141
+key: source:ref-141
 kind: reference
 title: The Design Philosophy of the DARPA Internet Protocols
 aliases:
@@ -45,6 +46,17 @@ access:
     url: https://web.archive.org/web/20240427062457/https://dl.acm.org/doi/10.1145/52324.52336
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2024-04-27
+relations:
+  - predicate: synthesizes
+    target: concept:end-to-end-principle
+    note: 인터넷 설계 목표와 종단 배치 논증을 연결한다.
+    evidence:
+      - source: ref-141
+  - predicate: enables
+    target: source:ref-101
+    note: Saltzer·Reed·Clark의 인수 논증을 설계사로 확장한다.
+    evidence:
+      - source: ref-141
 ---
 
 ## 개요
@@ -57,10 +69,12 @@ Clark의 논문은 인터넷 프로토콜이 무엇을 최우선으로 최적화
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | synthesizes | [[종단 간 원칙]] | 인터넷 설계 목표와 종단 배치 논증을 연결한다. | [[The Design Philosophy of the DARPA Internet Protocols]] |
 | enables | [[End-to-End Arguments in System Design]] | Saltzer·Reed·Clark의 인수 논증을 설계사로 확장한다. | [[The Design Philosophy of the DARPA Internet Protocols]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

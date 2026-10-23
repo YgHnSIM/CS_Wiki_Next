@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-131
+key: source:ref-131
 kind: reference
 title: StableHLO Compatibility
 aliases:
@@ -37,6 +38,17 @@ access:
     url: https://web.archive.org/web/20260507054558/https://openxla.org/stablehlo/compatibility
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-05-07
+relations:
+  - predicate: constrains
+    target: concept:stablehlo-mlir-abi
+    note: portable artifact의 version window와 ABI 호환성을 분리한다.
+    evidence:
+      - source: ref-131
+  - predicate: constrains
+    target: analysis:stablehlo-mlir-abi-boundary
+    note: 파일 호환성과 의미·호출 규약 보존을 서로 다른 판정으로 둔다.
+    evidence:
+      - source: ref-131
 ---
 
 ## 개요
@@ -49,10 +61,12 @@ StableHLO compatibility 문서는 portable artifact의 serialization version과 
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | constrains | [[StableHLO·MLIR·ABI 경계]] | portable artifact의 version window와 ABI 호환성을 분리한다. | [[StableHLO Compatibility]] |
 | constrains | [[표현·IR·ABI 경계는 무엇을 보존하는가]] | 파일 호환성과 의미·호출 규약 보존을 서로 다른 판정으로 둔다. | [[StableHLO Compatibility]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

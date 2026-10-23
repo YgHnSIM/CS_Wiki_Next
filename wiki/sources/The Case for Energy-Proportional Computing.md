@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-046
+key: source:ref-046
 kind: reference
 title: The Case for Energy-Proportional Computing
 aliases:
@@ -61,6 +62,17 @@ access:
     url: https://web.archive.org/web/20261008132417/https://research.google/pubs/the-case-for-energy-proportional-computing/
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-10-08
+relations:
+  - predicate: responds_to
+    target: analysis:power-wall-performance
+    note: 낮은 활용률에서도 높은 기저 전력을 쓰는 서버의 운영 제약에 부하에 맞춰 전력을 조절하는 목표로 대응한다.
+    evidence:
+      - source: ref-046
+  - predicate: enables
+    target: concept:energy-proportional-computing
+    note: 부하가 거의 없는 상태부터 최대 부하까지 유효 처리량에 맞춰 전력이 변하는지를 시스템 능력의 평가 기준으로 만든다.
+    evidence:
+      - source: ref-046
 ---
 
 ## 개요
@@ -141,10 +153,12 @@ CPU는 전압과 주파수를 낮춘 상태에서도 명령을 수행하는 작�
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | responds_to | [[전력 장벽은 성능 향상의 의미를 어떻게 바꾸었는가]] | 낮은 활용률에서도 높은 기저 전력을 쓰는 서버의 운영 제약에 부하에 맞춰 전력을 조절하는 목표로 대응한다. | [[The Case for Energy-Proportional Computing]] |
 | enables | [[에너지 비례 컴퓨팅]] | 부하가 거의 없는 상태부터 최대 부하까지 유효 처리량에 맞춰 전력이 변하는지를 시스템 능력의 평가 기준으로 만든다. | [[The Case for Energy-Proportional Computing]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

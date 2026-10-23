@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-103
+key: source:ref-103
 kind: reference
 title: The Google File System
 aliases:
@@ -51,6 +52,17 @@ access:
     url: https://web.archive.org/web/20261016064935/https://research.google/pubs/the-google-file-system/
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-10-16
+relations:
+  - predicate: enables
+    target: concept:distributed-file-system
+    note: 마스터·청크 서버·복제·임대와 데이터 직접 경로를 결합한 대규모 분산 파일 시스템 사례를 제공한다.
+    evidence:
+      - source: ref-103
+  - predicate: exemplifies
+    target: concept:partial-failure
+    note: 일부 구성 요소의 고장을 정상 조건으로 두고 복제·검출·복구를 설계에 포함한 저장 시스템 사례를 제공한다.
+    evidence:
+      - source: ref-103
 ---
 
 ## 개요
@@ -84,10 +96,12 @@ GFS가 제시한 높은 처리량은 당시의 작업 부하, 파일 크기, 청
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | enables | [[분산 파일 시스템]] | 마스터·청크 서버·복제·임대와 데이터 직접 경로를 결합한 대규모 분산 파일 시스템 사례를 제공한다. | [[The Google File System]] |
 | exemplifies | [[부분 실패]] | 일부 구성 요소의 고장을 정상 조건으로 두고 복제·검출·복구를 설계에 포함한 저장 시스템 사례를 제공한다. | [[The Google File System]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

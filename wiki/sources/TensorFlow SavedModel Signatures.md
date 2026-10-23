@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-134
+key: source:ref-134
 kind: reference
 title: TensorFlow SavedModel Signatures
 aliases:
@@ -38,6 +39,17 @@ access:
     url: https://web.archive.org/web/20261005083459/https://www.tensorflow.org/guide/saved_model
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-10-05
+relations:
+  - predicate: exemplifies
+    target: concept:runtime-contract
+    note: serving consumer가 확인할 input·output signature의 구체적 형식을 보여준다.
+    evidence:
+      - source: ref-134
+  - predicate: constrains
+    target: analysis:runtime-contract
+    note: 모델 파일을 로드하는 것과 호출 가능한 endpoint 계약을 분리한다.
+    evidence:
+      - source: ref-134
 ---
 
 ## 개요
@@ -50,10 +62,12 @@ TensorFlow SavedModel은 SignatureDef로 consumer가 호출할 함수의 input·
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | exemplifies | [[runtime contract]] | serving consumer가 확인할 input·output signature의 구체적 형식을 보여준다. | [[TensorFlow SavedModel Signatures]] |
 | constrains | [[runtime contract는 무엇을 보장해야 하는가]] | 모델 파일을 로드하는 것과 호출 가능한 endpoint 계약을 분리한다. | [[TensorFlow SavedModel Signatures]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

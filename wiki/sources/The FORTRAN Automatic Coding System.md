@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-016
+key: source:ref-016
 kind: reference
 title: The FORTRAN Automatic Coding System
 aliases:
@@ -61,6 +62,17 @@ access:
     url: https://bitsavers.trailing-edge.com/pdf/ibm/704/FORTRAN_paper_1957.pdf
     retrieved: 2026-07-10
     version: null
+relations:
+  - predicate: responds_to
+    target: concept:programmability
+    note: 수식 중심 문제를 기계어로 직접 옮기던 작성·검증 비용에 자동 번역과 최적화로 대응한다.
+    evidence:
+      - source: ref-016
+  - predicate: enables
+    target: concept:page-72af5ee2
+    note: 수학에 가까운 소스 표기를 IBM 704 목적 프로그램으로 번역하는 언어·컴파일러 체계를 실현한다.
+    evidence:
+      - source: ref-016
 ---
 
 ## 개요
@@ -83,10 +95,12 @@ access:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | responds_to | [[프로그래밍 가능성]] | 수식 중심 문제를 기계어로 직접 옮기던 작성·검증 비용에 자동 번역과 최적화로 대응한다. | [[The FORTRAN Automatic Coding System]] |
 | enables | [[Fortran]] | 수학에 가까운 소스 표기를 IBM 704 목적 프로그램으로 번역하는 언어·컴파일러 체계를 실현한다. | [[The FORTRAN Automatic Coding System]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-099
+key: source:ref-099
 kind: reference
 title: "TVM: An Automated End-to-End Optimizing Compiler for Deep Learning"
 aliases:
@@ -57,6 +58,22 @@ access:
     url: https://web.archive.org/web/20260926190300/https://www.usenix.org/conference/osdi18/presentation/chen
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-09-26
+relations:
+  - predicate: implements
+    target: concept:performance-portability
+    note: 그래프·연산자 수준 최적화와 대상별 자동 탐색을 결합해 다양한 하드웨어 백엔드에서 경쟁력 있는 실행을 목표로 한다.
+    evidence:
+      - source: ref-099
+  - predicate: implements
+    target: concept:intermediate-representation
+    note: 계산 그래프, 텐서 연산 표현, 최적화된 저수준 루프 프로그램을 서로 다른 변환 단계의 표현으로 사용한다.
+    evidence:
+      - source: ref-099
+  - predicate: enables
+    target: concept:heterogeneous-execution-model
+    note: CPU·GPU·가속기별 계산 원시 연산과 메모리 구조에 맞춰 코드와 실행 모듈을 생성할 수 있게 한다.
+    evidence:
+      - source: ref-099
 ---
 
 ## 개요
@@ -77,11 +94,13 @@ TVM은 텐서 연산의 선언과 대상별 변환을 분리하고, 비용 모�
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
-| implements | [[성능 이식성]] | 그래프·연산자 수준 최적화와 대상별 자동 탐색을 결합해 다양한 하드웨어 백엔드에서 경쟁력 있는 실행을 목표로 한다. | [[TVM - An Automated End-to-End Optimizing Compiler for Deep Learning]] |
-| implements | [[중간 표현]] | 계산 그래프, 텐서 연산 표현, 최적화된 저수준 루프 프로그램을 서로 다른 변환 단계의 표현으로 사용한다. | [[TVM - An Automated End-to-End Optimizing Compiler for Deep Learning]] |
-| enables | [[이기종 실행 모델]] | CPU·GPU·가속기별 계산 원시 연산과 메모리 구조에 맞춰 코드와 실행 모듈을 생성할 수 있게 한다. | [[TVM - An Automated End-to-End Optimizing Compiler for Deep Learning]] |
+| implements | [[성능 이식성]] | 그래프·연산자 수준 최적화와 대상별 자동 탐색을 결합해 다양한 하드웨어 백엔드에서 경쟁력 있는 실행을 목표로 한다. | [[TVM: An Automated End-to-End Optimizing Compiler for Deep Learning]] |
+| implements | [[중간 표현]] | 계산 그래프, 텐서 연산 표현, 최적화된 저수준 루프 프로그램을 서로 다른 변환 단계의 표현으로 사용한다. | [[TVM: An Automated End-to-End Optimizing Compiler for Deep Learning]] |
+| enables | [[이기종 실행 모델]] | CPU·GPU·가속기별 계산 원시 연산과 메모리 구조에 맞춰 코드와 실행 모듈을 생성할 수 있게 한다. | [[TVM: An Automated End-to-End Optimizing Compiler for Deep Learning]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

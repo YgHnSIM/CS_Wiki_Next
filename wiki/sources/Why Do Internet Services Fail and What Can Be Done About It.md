@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-064
+key: source:ref-064
 kind: reference
 title: Why Do Internet Services Fail and What Can Be Done About It
 aliases:
@@ -61,6 +62,17 @@ access:
     url: https://web.archive.org/web/20250829174446/https://www.usenix.org/conference/usits-03/why-do-internet-services-fail-and-what-can-be-done-about-it
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2025-08-29
+relations:
+  - predicate: measures
+    target: concept:availability-recovery
+    note: 서비스 장애의 탐지와 품질 회복 시간을 구분해 운영상 측정 경계를 제시한다.
+    evidence:
+      - source: ref-064
+  - predicate: constrains
+    target: concept:fault-tolerance
+    note: 중복이 운영자·설정 오류처럼 공통 원인을 가진 실패를 자동으로 가리지 못함을 관찰한다.
+    evidence:
+      - source: ref-064
 ---
 
 ## 개요
@@ -92,10 +104,12 @@ access:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | measures | [[가용성과 복구]] | 서비스 장애의 탐지와 품질 회복 시간을 구분해 운영상 측정 경계를 제시한다. | [[Why Do Internet Services Fail and What Can Be Done About It]] |
 | constrains | [[결함 허용]] | 중복이 운영자·설정 오류처럼 공통 원인을 가진 실패를 자동으로 가리지 못함을 관찰한다. | [[Why Do Internet Services Fail and What Can Be Done About It]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

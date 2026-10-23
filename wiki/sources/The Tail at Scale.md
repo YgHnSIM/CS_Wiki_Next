@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-049
+key: source:ref-049
 kind: reference
 title: The Tail at Scale
 aliases:
@@ -67,6 +68,12 @@ access:
     url: https://web.archive.org/web/20260925164637/https://research.google/pubs/the-tail-at-scale/
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-09-25
+relations:
+  - predicate: responds_to
+    target: concept:tail-latency
+    note: 많은 구성요소에 팬아웃하는 서비스에서 드문 느린 응답이 종단 지연을 지배하는 문제에 중복·분산 기법으로 대응한다.
+    evidence:
+      - source: ref-049
 ---
 
 ## 개요
@@ -120,9 +127,11 @@ access:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | responds_to | [[꼬리 지연 시간]] | 많은 구성요소에 팬아웃하는 서비스에서 드문 느린 응답이 종단 지연을 지배하는 문제에 중복·분산 기법으로 대응한다. | [[The Tail at Scale]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-115
+key: source:ref-115
 kind: reference
 title: Stripe Idempotent Requests
 aliases:
@@ -40,6 +41,17 @@ access:
     url: https://web.archive.org/web/20261016135159/https://docs.stripe.com/api/idempotent_requests
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-10-16
+relations:
+  - predicate: exemplifies
+    target: concept:idempotency
+    note: 동일 키·동일 매개변수의 재시도와 매개변수 불일치 검사를 API 수준에서 구현한 사례다.
+    evidence:
+      - source: ref-115
+  - predicate: constrains
+    target: concept:partial-failure
+    note: 응답을 잃은 호출이 이미 효과를 냈을 가능성을 키 보존·결과 재사용 계약으로 다루게 한다.
+    evidence:
+      - source: ref-115
 ---
 
 ## 개요
@@ -54,10 +66,12 @@ access:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | exemplifies | [[멱등성]] | 동일 키·동일 매개변수의 재시도와 매개변수 불일치 검사를 API 수준에서 구현한 사례다. | [[Stripe Idempotent Requests]] |
 | constrains | [[부분 실패]] | 응답을 잃은 호출이 이미 효과를 냈을 가능성을 키 보존·결과 재사용 계약으로 다루게 한다. | [[Stripe Idempotent Requests]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-001
+key: source:ref-001
 kind: reference
 title: The Preparation of Programs for an Electronic Digital Computer
 aliases:
@@ -49,6 +50,22 @@ access:
     url: https://archive.org/stream/programsforelect00wilk/programsforelect00wilk_djvu.txt
     retrieved: 2026-07-10
     version: null
+relations:
+  - predicate: responds_to
+    target: concept:programmability
+    note: 주소와 명령을 직접 관리해야 하는 초기 저장 프로그램 기계의 작성 비용에 체계적인 프로그램 준비법으로 대응한다.
+    evidence:
+      - source: ref-001
+  - predicate: enables
+    target: concept:subroutine
+    note: 매개변수·복귀 규약을 갖춘 폐쇄형 서브루틴을 반복 가능한 작성 단위로 만든다.
+    evidence:
+      - source: ref-001
+  - predicate: enables
+    target: concept:library
+    note: 검증된 루틴을 카탈로그로 축적하고 다시 불러 쓰는 공용 프로그램 기반을 제시한다.
+    evidence:
+      - source: ref-001
 ---
 
 ## 개요
@@ -73,11 +90,13 @@ access:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | responds_to | [[프로그래밍 가능성]] | 주소와 명령을 직접 관리해야 하는 초기 저장 프로그램 기계의 작성 비용에 체계적인 프로그램 준비법으로 대응한다. | [[The Preparation of Programs for an Electronic Digital Computer]] |
 | enables | [[서브루틴]] | 매개변수·복귀 규약을 갖춘 폐쇄형 서브루틴을 반복 가능한 작성 단위로 만든다. | [[The Preparation of Programs for an Electronic Digital Computer]] |
 | enables | [[라이브러리]] | 검증된 루틴을 카탈로그로 축적하고 다시 불러 쓰는 공용 프로그램 기반을 제시한다. | [[The Preparation of Programs for an Electronic Digital Computer]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

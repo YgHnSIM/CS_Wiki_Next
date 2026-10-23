@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-130
+key: source:ref-130
 kind: reference
 title: StableHLO Specification
 aliases:
@@ -37,6 +38,17 @@ access:
     url: https://web.archive.org/web/20260727161926/https://openxla.org/stablehlo/spec
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-07-27
+relations:
+  - predicate: synthesizes
+    target: concept:stablehlo-mlir-abi
+    note: framework와 compiler 사이에서 보존해야 하는 ML operation semantics를 제공한다.
+    evidence:
+      - source: ref-130
+  - predicate: constrains
+    target: analysis:stablehlo-mlir-abi-boundary
+    note: StableHLO의 의미 보존과 backend ABI를 다른 층으로 나누게 한다.
+    evidence:
+      - source: ref-130
 ---
 
 ## 개요
@@ -49,10 +61,12 @@ StableHLO는 ML framework가 생성하고 ML compiler가 소비할 수 있는 �
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | synthesizes | [[StableHLO·MLIR·ABI 경계]] | framework와 compiler 사이에서 보존해야 하는 ML operation semantics를 제공한다. | [[StableHLO Specification]] |
 | constrains | [[표현·IR·ABI 경계는 무엇을 보존하는가]] | StableHLO의 의미 보존과 backend ABI를 다른 층으로 나누게 한다. | [[StableHLO Specification]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

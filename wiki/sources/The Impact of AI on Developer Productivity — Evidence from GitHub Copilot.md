@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-106
+key: source:ref-106
 kind: reference
 title: "The Impact of AI on Developer Productivity: Evidence from GitHub Copilot"
 aliases:
@@ -45,6 +46,17 @@ access:
     url: https://web.archive.org/web/20261022213536/https://arxiv.org/abs/2302.06590
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-10-22
+relations:
+  - predicate: exemplifies
+    target: concept:ai-coding-assistance
+    note: 무작위 배정 실험으로 특정 구현 과제에서 AI 페어 프로그래머 접근과 완료 시간을 비교한다.
+    evidence:
+      - source: ref-106
+  - predicate: measures
+    target: concept:developer-productivity
+    note: 과제 완료 시간을 생산성의 한 측정값으로 제공하지만 전체 개발 성과를 대신하지는 않는다.
+    evidence:
+      - source: ref-106
 ---
 
 ## 개요
@@ -69,10 +81,12 @@ access:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | exemplifies | [[AI 코딩 지원]] | 무작위 배정 실험으로 특정 구현 과제에서 AI 페어 프로그래머 접근과 완료 시간을 비교한다. | [[The Impact of AI on Developer Productivity: Evidence from GitHub Copilot]] |
 | measures | [[개발자 생산성]] | 과제 완료 시간을 생산성의 한 측정값으로 제공하지만 전체 개발 성과를 대신하지는 않는다. | [[The Impact of AI on Developer Productivity: Evidence from GitHub Copilot]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

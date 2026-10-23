@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-119
+key: source:ref-119
 kind: reference
 title: The Phi Accrual Failure Detector
 aliases:
@@ -41,6 +42,17 @@ access:
     url: https://web.archive.org/web/20261016092527/https://dspace.jaist.ac.jp/dspace/bitstream/10119/4784/1/IS-RR-2004-010.pdf
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-10-16
+relations:
+  - predicate: enables
+    target: concept:failure-detection
+    note: heartbeat 관찰을 연속 suspicion 값과 threshold 정책으로 바꾸는 모델을 제공한다.
+    evidence:
+      - source: ref-119
+  - predicate: constrains
+    target: concept:tail-latency
+    note: 정상적인 tail latency와 heartbeat 지연이 장애 의심을 만들 수 있으므로 지연 분포를 함께 관찰하게 한다.
+    evidence:
+      - source: ref-119
 ---
 
 ## 개요
@@ -55,10 +67,12 @@ access:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | enables | [[장애 감지]] | heartbeat 관찰을 연속 suspicion 값과 threshold 정책으로 바꾸는 모델을 제공한다. | [[The Phi Accrual Failure Detector]] |
 | constrains | [[꼬리 지연 시간]] | 정상적인 tail latency와 heartbeat 지연이 장애 의심을 만들 수 있으므로 지연 분포를 함께 관찰하게 한다. | [[The Phi Accrual Failure Detector]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-100
+key: source:ref-100
 kind: reference
 title: Time, Clocks, and the Ordering of Events in a Distributed System
 aliases:
@@ -59,6 +60,17 @@ access:
     url: https://web.archive.org/web/20261001144218/https://www.microsoft.com/en-us/research/publication/time-clocks-ordering-events-distributed-system/
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-10-01
+relations:
+  - predicate: enables
+    target: concept:replicated-log-consensus
+    note: 인과 관계를 보존하는 전체 순서가 분산 프로세서 네트워크에서 순차 상태 기계를 구현하는 논리적 바탕을 제공한다.
+    evidence:
+      - source: ref-100
+  - predicate: enables
+    target: analysis:local-interface-remote-state
+    note: 로컬의 단일 실행 순서가 원격 환경에서는 인과적 부분 순서와 선택된 전체 순서로 분리된다는 분석의 근거를 제공한다.
+    evidence:
+      - source: ref-100
 ---
 
 ## 개요
@@ -94,10 +106,12 @@ Lamport는 이 전체 순서를 이용해 분산된 프로세서 네트워크가
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | enables | [[복제 로그와 합의]] | 인과 관계를 보존하는 전체 순서가 분산 프로세서 네트워크에서 순차 상태 기계를 구현하는 논리적 바탕을 제공한다. | [[Time, Clocks, and the Ordering of Events in a Distributed System]] |
 | enables | [[로컬 호출과 파일은 원격 상태가 될 때 무엇을 잃는가]] | 로컬의 단일 실행 순서가 원격 환경에서는 인과적 부분 순서와 선택된 전체 순서로 분리된다는 분석의 근거를 제공한다. | [[Time, Clocks, and the Ordering of Events in a Distributed System]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

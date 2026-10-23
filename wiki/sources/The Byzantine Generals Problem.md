@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-063
+key: source:ref-063
 kind: reference
 title: The Byzantine Generals Problem
 aliases:
@@ -61,6 +62,17 @@ access:
     url: https://web.archive.org/web/20220919074813/https://www.microsoft.com/en-us/research/?p=338450
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2022-09-19
+relations:
+  - predicate: exemplifies
+    target: concept:byzantine-fault
+    note: 상호 모순된 메시지를 보내는 참여자를 포함하는 실패 모형과 합의 조건을 정식화한다.
+    evidence:
+      - source: ref-063
+  - predicate: constrains
+    target: concept:fault-tolerance
+    note: 가능한 보장의 범위가 실패 모형과 인증·시간 가정에 따라 달라짐을 보인다.
+    evidence:
+      - source: ref-063
 ---
 
 ## 개요
@@ -92,10 +104,12 @@ access:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | exemplifies | [[비잔틴 장애]] | 상호 모순된 메시지를 보내는 참여자를 포함하는 실패 모형과 합의 조건을 정식화한다. | [[The Byzantine Generals Problem]] |
 | constrains | [[결함 허용]] | 가능한 보장의 범위가 실패 모형과 인증·시간 가정에 따라 달라짐을 보인다. | [[The Byzantine Generals Problem]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

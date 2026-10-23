@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-083
+key: source:ref-083
 kind: reference
 title: "TokenPowerBench: Benchmarking the Power Consumption of LLM Inference"
 aliases:
@@ -65,6 +66,32 @@ access:
     url: https://web.archive.org/web/20260510220918/https://ojs.aaai.org/index.php/AAAI/article/view/40535
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-05-10
+relations:
+  - predicate: measures
+    target: concept:llm-inference-energy-metrics
+    note: 전력 샘플을 실행 단계와 맞추고 GPU·노드·시스템 경계의 에너지와 토큰당 에너지를 계산한다.
+    evidence:
+      - source: ref-083
+  - predicate: measures
+    target: concept:llm-weight-quantization
+    note: 양자화 설정을 실험 변수로 두고 같은 추론 실행의 시스템 경계별 에너지와 J/token 변화를 측정한다.
+    evidence:
+      - source: ref-083
+  - predicate: measures
+    target: concept:energy-proportional-computing
+    note: 유휴·프리필·디코드의 전력과 실행 조건을 맞춰 작업량·단계에 따른 전력·에너지 변화를 관찰한다.
+    evidence:
+      - source: ref-083
+  - predicate: measures
+    target: concept:prefill-decode
+    note: 유휴·프리필·디코드 구간에 전력 샘플을 맞춰 단계별 에너지 기여를 구분한다.
+    evidence:
+      - source: ref-083
+  - predicate: exemplifies
+    target: concept:computing-capability
+    note: LLM 추론 능력을 지연·처리량뿐 아니라 지정 경계의 전력과 에너지로 측정하는 사례다.
+    evidence:
+      - source: ref-083
 ---
 
 ## 개요
@@ -98,13 +125,15 @@ access:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
-| measures | [[LLM 추론 에너지 지표]] | 전력 샘플을 실행 단계와 맞추고 GPU·노드·시스템 경계의 에너지와 토큰당 에너지를 계산한다. | [[TokenPowerBench - Benchmarking the Power Consumption of LLM Inference]] |
-| measures | [[LLM 가중치 양자화]] | 양자화 설정을 실험 변수로 두고 같은 추론 실행의 시스템 경계별 에너지와 J/token 변화를 측정한다. | [[TokenPowerBench - Benchmarking the Power Consumption of LLM Inference]] |
-| measures | [[에너지 비례 컴퓨팅]] | 유휴·프리필·디코드의 전력과 실행 조건을 맞춰 작업량·단계에 따른 전력·에너지 변화를 관찰한다. | [[TokenPowerBench - Benchmarking the Power Consumption of LLM Inference]] |
-| measures | [[프리필과 디코드]] | 유휴·프리필·디코드 구간에 전력 샘플을 맞춰 단계별 에너지 기여를 구분한다. | [[TokenPowerBench - Benchmarking the Power Consumption of LLM Inference]] |
-| exemplifies | [[컴퓨팅 능력이란 무엇인가]] | LLM 추론 능력을 지연·처리량뿐 아니라 지정 경계의 전력과 에너지로 측정하는 사례다. | [[TokenPowerBench - Benchmarking the Power Consumption of LLM Inference]] |
+| measures | [[LLM 추론 에너지 지표]] | 전력 샘플을 실행 단계와 맞추고 GPU·노드·시스템 경계의 에너지와 토큰당 에너지를 계산한다. | [[TokenPowerBench: Benchmarking the Power Consumption of LLM Inference]] |
+| measures | [[LLM 가중치 양자화]] | 양자화 설정을 실험 변수로 두고 같은 추론 실행의 시스템 경계별 에너지와 J/token 변화를 측정한다. | [[TokenPowerBench: Benchmarking the Power Consumption of LLM Inference]] |
+| measures | [[에너지 비례 컴퓨팅]] | 유휴·프리필·디코드의 전력과 실행 조건을 맞춰 작업량·단계에 따른 전력·에너지 변화를 관찰한다. | [[TokenPowerBench: Benchmarking the Power Consumption of LLM Inference]] |
+| measures | [[프리필과 디코드]] | 유휴·프리필·디코드 구간에 전력 샘플을 맞춰 단계별 에너지 기여를 구분한다. | [[TokenPowerBench: Benchmarking the Power Consumption of LLM Inference]] |
+| exemplifies | [[컴퓨팅 능력이란 무엇인가]] | LLM 추론 능력을 지연·처리량뿐 아니라 지정 경계의 전력과 에너지로 측정하는 사례다. | [[TokenPowerBench: Benchmarking the Power Consumption of LLM Inference]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

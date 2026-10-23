@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-068
+key: source:ref-068
 kind: reference
 title: There's Plenty of Room at the Top
 aliases:
@@ -44,6 +45,17 @@ access:
     url: https://doi.org/10.1126/science.aam9744
     retrieved: 2026-07-24
     version: Science 368(6495), 5 June 2020
+relations:
+  - predicate: synthesizes
+    target: concept:computational-complexity
+    note: 알고리즘의 자원 증가율과 실제 하드웨어·소프트웨어 설계의 개선을 함께 성능 향상 수단으로 다룬다.
+    evidence:
+      - source: ref-068
+  - predicate: responds_to
+    target: analysis:hardware-vs-algorithmic-improvement
+    note: 공정 미세화 둔화 뒤 성능 향상을 소프트웨어·알고리즘·아키텍처의 공동 문제로 재구성한다.
+    evidence:
+      - source: ref-068
 ---
 
 ## 개요
@@ -75,10 +87,12 @@ access:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | synthesizes | [[계산 복잡도]] | 알고리즘의 자원 증가율과 실제 하드웨어·소프트웨어 설계의 개선을 함께 성능 향상 수단으로 다룬다. | [[There's Plenty of Room at the Top]] |
 | responds_to | [[더 빠른 하드웨어는 더 나은 알고리즘을 대신할 수 있는가]] | 공정 미세화 둔화 뒤 성능 향상을 소프트웨어·알고리즘·아키텍처의 공동 문제로 재구성한다. | [[There's Plenty of Room at the Top]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 
