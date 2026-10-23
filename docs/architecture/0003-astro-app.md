@@ -40,6 +40,13 @@ app/dist/
 - `SITE_BASE`가 `/CS_Wiki_Next`이면 링크·자산·canonical에 base를 붙인다.
 - `SITE_URL`은 canonical origin으로 사용한다.
 
+## 디자인 경계
+
+- 문서 페이지는 기존 `00-core.css`의 article/prose 스타일을 이식한 `legacy-doc.css`를 사용한다.
+- 문서 페이지에서만 `body.legacy-page`와 `.legacy-doc` 테마를 적용해 green/amber 터미널 스타일을 복원한다.
+- 홈·색인·검색은 새 단순 UI를 유지한다.
+- 기존 디자인을 복원하되 데이터·라우트·검색 계층은 새 구조를 유지한다.
+
 ## 데이터 경계
 
 - 앱은 Markdown 파일을 직접 읽지 않는다.

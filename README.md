@@ -5,6 +5,7 @@
 - **이전 저장소**: `C:\Vault\CS_Wiki` (백업: `C:\Vault\_backups\CS_Wiki_2026-10-24_0514`)
 - **공개 사이트**: https://yghnsim.github.io/CS_Wiki_Next/
 - **현재 단계**: Phase 3 코어 + 필수 기능 완료·배포 (Astro 1,001 pages, 440 docs, 555 redirects, 397 search records)
+- **디자인**: 문서 페이지는 기존 CS Wiki의 터미널 스타일, 색인·검색은 단순한 새 UI (하이브리드)
 - **의존성**: `npm audit` 0 vulnerabilities (루트·app)
 - **URL 계약**: `/docs/{id}/` 440개와 리디렉션 555개를 유지한다.
 

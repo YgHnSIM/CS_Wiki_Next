@@ -39,6 +39,10 @@ a:hover { color: #fff; }
   margin-inline: auto;
 }
 
+.shell-wide {
+  width: min(1400px, calc(100vw - 48px));
+}
+
 .skip-link {
   position: absolute;
   left: -999px;

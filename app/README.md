@@ -4,6 +4,12 @@
 
 `data/build/graph.json`과 `documents.json`만 읽어 정적 사이트를 만든다. Markdown을 다시 파싱하지 않는다.
 
+## 디자인
+
+- 문서 페이지: 기존 CS Wiki의 터미널 스타일(D2Coding, green/amber, article rail·prose)을 복원
+- 색인·검색·홈: 단순한 새 UI 유지
+- 문서 페이지에서만 `legacy-page` 셸과 `legacy-doc` 테마를 적용
+
 ## 실행
 
 루트에서 실행한다.
