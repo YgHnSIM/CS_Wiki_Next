@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: analysis-low-precision-ai-result-contract
+key: analysis:low-precision-ai-result-contract
 kind: analysis
 title: 낮은 정밀도는 AI의 컴퓨팅 능력을 어떻게 바꾸는가
 aliases:
@@ -31,6 +32,27 @@ history:
   layer: measurement
 redirect_from:
   - /analyses/낮은-정밀도는-ai의-컴퓨팅-능력을-어떻게-바꾸는가/
+relations:
+  - predicate: synthesizes
+    target: concept:mixed-precision
+    note: 정밀도 역할 분담과 수치 안정성 장치를 시스템 수준의 시간·자원·품질 비교로 연결한다.
+    evidence:
+      - source: ref-069
+  - predicate: measures
+    target: concept:time-to-quality
+    note: 학습 성능을 처리량 대신 정해진 품질 문턱까지의 시간으로 검증한다.
+    evidence:
+      - source: ref-070
+  - predicate: constrains
+    target: analysis:page-8f48231d
+    note: 비트 동일성 외에 과업 품질·안정성·측정 규칙을 포함한 결과 계약이 필요함을 보인다.
+    evidence:
+      - source: ref-070
+  - predicate: synthesizes
+    target: concept:llm-weight-quantization
+    note: 추론 가중치의 압축·대역폭 이득과 보정·커널·과업 품질 조건을 혼합 정밀도 측정 틀에 연결한다.
+    evidence:
+      - source: ref-082
 ---
 
 ## 문제 제기
@@ -78,12 +100,14 @@ AI 시스템에서 낮은 정밀도는 메모리 용량, 데이터 이동과 전
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | synthesizes | [[혼합 정밀도]] | 정밀도 역할 분담과 수치 안정성 장치를 시스템 수준의 시간·자원·품질 비교로 연결한다. | [[Mixed Precision Training]] |
 | measures | [[목표 품질 도달 시간]] | 학습 성능을 처리량 대신 정해진 품질 문턱까지의 시간으로 검증한다. | [[MLPerf Training Benchmark]] |
 | constrains | [[더 빠른 계산은 같은 답을 내는가]] | 비트 동일성 외에 과업 품질·안정성·측정 규칙을 포함한 결과 계약이 필요함을 보인다. | [[MLPerf Training Benchmark]] |
-| synthesizes | [[LLM 가중치 양자화]] | 추론 가중치의 압축·대역폭 이득과 보정·커널·과업 품질 조건을 혼합 정밀도 측정 틀에 연결한다. | [[AWQ - Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration]] |
+| synthesizes | [[LLM 가중치 양자화]] | 추론 가중치의 압축·대역폭 이득과 보정·커널·과업 품질 조건을 혼합 정밀도 측정 틀에 연결한다. | [[AWQ: Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

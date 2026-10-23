@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: analysis-llm-slo-resource-cost
+key: analysis:llm-slo-resource-cost
 kind: analysis
 title: 같은 SLO의 LLM 서비스는 무엇을 비용으로 세어야 하는가
 aliases:
@@ -32,6 +33,33 @@ history:
   layer: measurement
 redirect_from:
   - /analyses/같은-slo의-llm-서비스는-무엇을-비용으로-세어야-하는가/
+relations:
+  - predicate: synthesizes
+    target: concept:llm-inference-energy-metrics
+    note: 전체 시스템 J와 가속기 시간을 품질·SLO를 만족한 요청이라는 같은 분모로 결합한다.
+    evidence:
+      - source: ref-083
+  - predicate: synthesizes
+    target: concept:llm-inference-service-metrics
+    note: TTFT·TPOT·품질을 통과한 good request를 자원 회계의 유효 작업 단위로 사용한다.
+    evidence:
+      - source: ref-084
+  - predicate: synthesizes
+    target: concept:energy-proportional-computing
+    note: 총량과 증분 에너지를 구분하고 낮은 부하의 유휴 전력을 서비스 용량 비용에 남긴다.
+    evidence:
+      - source: ref-046
+  - predicate: constrains
+    target: concept:computing-capability
+    note: 같은 작업·결과 계약·시스템 경계에서 측정한 자원만 LLM 서비스 능력 비교에 사용하게 한다.
+    evidence:
+      - source: ref-078
+  - predicate: synthesizes
+    target: concept:queueing-load-control
+    note: 승인·거부·시간 초과가 있는 부하에서 유효 요청 분모와 이미 소비한 자원 분자를 함께 보존한다.
+    evidence:
+      - source: ref-085
+      - source: ref-086
 ---
 
 ## 문제 제기
@@ -100,13 +128,15 @@ GPU 텔레메트리는 단계별 변화를 보기 좋지만 CPU·DRAM·네트워
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
-| synthesizes | [[LLM 추론 에너지 지표]] | 전체 시스템 J와 가속기 시간을 품질·SLO를 만족한 요청이라는 같은 분모로 결합한다. | [[TokenPowerBench - Benchmarking the Power Consumption of LLM Inference]] |
+| synthesizes | [[LLM 추론 에너지 지표]] | 전체 시스템 J와 가속기 시간을 품질·SLO를 만족한 요청이라는 같은 분모로 결합한다. | [[TokenPowerBench: Benchmarking the Power Consumption of LLM Inference]] |
 | synthesizes | [[LLM 추론 서비스 지표]] | TTFT·TPOT·품질을 통과한 good request를 자원 회계의 유효 작업 단위로 사용한다. | [[MLPerf Inference Power Measurement]] |
 | synthesizes | [[에너지 비례 컴퓨팅]] | 총량과 증분 에너지를 구분하고 낮은 부하의 유휴 전력을 서비스 용량 비용에 남긴다. | [[The Case for Energy-Proportional Computing]] |
 | constrains | [[컴퓨팅 능력이란 무엇인가]] | 같은 작업·결과 계약·시스템 경계에서 측정한 자원만 LLM 서비스 능력 비교에 사용하게 한다. | [[MLPerf Inference Benchmark]] |
-| synthesizes | [[대기열과 부하 제어]] | 승인·거부·시간 초과가 있는 부하에서 유효 요청 분모와 이미 소비한 자원 분자를 함께 보존한다. | [[A Proof for the Queuing Formula L = λW]], [[Serving DNNs like Clockwork Performance Predictability from the Bottom Up]] |
+| synthesizes | [[대기열과 부하 제어]] | 승인·거부·시간 초과가 있는 부하에서 유효 요청 분모와 이미 소비한 자원 분자를 함께 보존한다. | [[A Proof for the Queuing Formula: L = λ W]], [[Serving DNNs like Clockwork: Performance Predictability from the Bottom Up]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

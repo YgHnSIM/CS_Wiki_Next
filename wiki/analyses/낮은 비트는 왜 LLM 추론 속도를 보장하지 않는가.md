@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: analysis-low-bit-llm-inference
+key: analysis:low-bit-llm-inference
 kind: analysis
 title: 낮은 비트는 왜 LLM 추론 속도를 보장하지 않는가
 aliases:
@@ -30,6 +31,32 @@ history:
   layer: system
 redirect_from:
   - /analyses/낮은-비트는-왜-llm-추론-속도를-보장하지-않는가/
+relations:
+  - predicate: synthesizes
+    target: concept:llm-weight-quantization
+    note: 모델 용량·가중치 바이트 절감과 스케일·패킹·역양자화 비용을 하나의 실행 경계에서 비교한다.
+    evidence:
+      - source: ref-081
+  - predicate: responds_to
+    target: concept:memory-wall
+    note: 낮은 비트가 가중치 대역폭 병목을 완화해도 커널·활성값·KV 병목이 남을 수 있음을 분석한다.
+    evidence:
+      - source: ref-039
+  - predicate: synthesizes
+    target: concept:mixed-precision
+    note: 가중치·활성값·누산의 정밀도를 분리하고 품질 문턱을 통과한 자원 이득만 비교한다.
+    evidence:
+      - source: ref-069
+  - predicate: synthesizes
+    target: concept:llm-inference-energy-metrics
+    note: 저비트 실행의 속도·품질 비교를 같은 부하와 시스템 경계의 전체 에너지·J/token 측정으로 확장한다.
+    evidence:
+      - source: ref-083
+  - predicate: constrains
+    target: concept:computing-capability
+    note: 압축률이나 저비트 TOPS가 아니라 같은 작업·품질·시스템 경계의 달성 성능을 요구한다.
+    evidence:
+      - source: ref-082
 ---
 
 ## 문제 제기
@@ -83,13 +110,15 @@ GPTQ와 AWQ는 여러 평가에서 낮은 perplexity 저하를 보고하지만, 
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
-| synthesizes | [[LLM 가중치 양자화]] | 모델 용량·가중치 바이트 절감과 스케일·패킹·역양자화 비용을 하나의 실행 경계에서 비교한다. | [[GPTQ - Accurate Post-Training Quantization for Generative Pre-trained Transformers]] |
+| synthesizes | [[LLM 가중치 양자화]] | 모델 용량·가중치 바이트 절감과 스케일·패킹·역양자화 비용을 하나의 실행 경계에서 비교한다. | [[GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers]] |
 | responds_to | [[메모리 장벽]] | 낮은 비트가 가중치 대역폭 병목을 완화해도 커널·활성값·KV 병목이 남을 수 있음을 분석한다. | [[Hitting the Memory Wall]] |
 | synthesizes | [[혼합 정밀도]] | 가중치·활성값·누산의 정밀도를 분리하고 품질 문턱을 통과한 자원 이득만 비교한다. | [[Mixed Precision Training]] |
-| synthesizes | [[LLM 추론 에너지 지표]] | 저비트 실행의 속도·품질 비교를 같은 부하와 시스템 경계의 전체 에너지·J/token 측정으로 확장한다. | [[TokenPowerBench - Benchmarking the Power Consumption of LLM Inference]] |
-| constrains | [[컴퓨팅 능력이란 무엇인가]] | 압축률이나 저비트 TOPS가 아니라 같은 작업·품질·시스템 경계의 달성 성능을 요구한다. | [[AWQ - Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration]] |
+| synthesizes | [[LLM 추론 에너지 지표]] | 저비트 실행의 속도·품질 비교를 같은 부하와 시스템 경계의 전체 에너지·J/token 측정으로 확장한다. | [[TokenPowerBench: Benchmarking the Power Consumption of LLM Inference]] |
+| constrains | [[컴퓨팅 능력이란 무엇인가]] | 압축률이나 저비트 TOPS가 아니라 같은 작업·품질·시스템 경계의 달성 성능을 요구한다. | [[AWQ: Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 
