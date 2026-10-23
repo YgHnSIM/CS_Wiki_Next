@@ -5,7 +5,7 @@
 - **이전 저장소**: `C:\Vault\CS_Wiki` (백업: `C:\Vault\_backups\CS_Wiki_2026-10-24_0514`)
 - **공개 사이트**: https://yghnsim.github.io/CS_Wiki_Next/
 - **현재 단계**: Phase 3 코어 + 필수 기능 완료·배포 (Astro 1,001 pages, 440 docs, 555 redirects, 397 search records)
-- **디자인**: “Paper & Signal” 에디토리얼 테마 — 종이색 배경, serif 헤드라인, rust/teal 포인트
+- **디자인**: “VS Code Workbench” 셸 — activity bar, explorer, tabs, status bar, man-page 본문, command palette
 - **의존성**: `npm audit` 0 vulnerabilities (루트·app)
 - **URL 계약**: `/docs/{id}/` 440개와 리디렉션 555개를 유지한다.
 

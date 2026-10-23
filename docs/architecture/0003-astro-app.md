@@ -42,11 +42,11 @@ app/dist/
 
 ## 디자인 경계
 
-- “Paper & Signal” 에디토리얼 테마를 사용한다.
-- 배경은 종이색, 본문은 먹색, 포인트는 rust/teal.
-- 홈은 serif 헤드라인과 ‘먼저 읽을 세 가지’ 패널, 문서는 메타 rail·prose·연결 rail의 3열 구조.
-- 색인은 유형별 compact list, 검색은 큰 입력과 결과 목록.
-- 색·타이포·간격은 `app/src/styles/global.css` 한 곳에서 관리한다.
+- “VS Code Workbench” 셸을 사용한다: activity bar, explorer, tabs, breadcrumb, status bar.
+- 문서 본문은 man page 스타일: `CSWIKI(1)` 헤더, `##`/`###` 프리픽스, RELATIONS/BACKLINKS rail.
+- 검색은 `Ctrl/Cmd+K` command palette와 `/search/` 페이지를 함께 제공한다.
+- 색인은 explorer형 compact file list.
+- 다크 팔레트와 IBM Plex Mono/Noto Sans KR을 사용하며, 색·타이포·간격은 `app/src/styles/global.css` 한 곳에서 관리한다.
 
 ## 데이터 경계
 

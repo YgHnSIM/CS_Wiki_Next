@@ -20,7 +20,8 @@ const total = [...evidenceCount.values()].reduce((sum, value) => sum + value, 0)
 ---
 
 <Base title="근거 렌즈" description="관계 statement를 뒷받침하는 소스·참고 자료">
-  <p class="eyebrow">Evidence</p>
+  <div class="lens-page">
+  <p class="eyebrow">EVIDENCE</p>
   <h1>근거 렌즈</h1>
   <p class="lede">관계 statement에 연결된 source/reference 페이지입니다. 인용 위치가 없는 근거는 별도 표시하지 않습니다.</p>
 
@@ -39,4 +40,5 @@ const total = [...evidenceCount.values()].reduce((sum, value) => sum + value, 0)
       </li>
     ))}
   </ol>
+  </div>
 </Base>

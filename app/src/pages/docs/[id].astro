@@ -3,7 +3,6 @@ import Base from "../../layouts/Base.astro";
 import {
   documentUrl,
   documents,
-  evidenceSources,
   incoming,
   nodeDocument,
   outgoing,
@@ -43,66 +42,45 @@ const relationTitle = (key: string) => nodeDocument(key)?.title || key;
   description={document.summary}
   canonical={withBase(document.url)}
   noindex={document.publication_visibility === "unlisted"}
-  wide
 >
-  <div class="doc-page">
-    <div class="doc-layout">
-      <aside class="doc-rail">
-        <a class="rail-back" href={withBase("/index/")}>← 색인</a>
-        <dl class="rail-list">
-          <div class="rail-block">
-            <dt>유형</dt>
-            <dd>{kindLabel}</dd>
+  <div class="man-page">
+    <div class="man-head">
+      <span>CSWIKI(1)</span>
+      <span>CS Wiki Manual</span>
+      <span>CSWIKI(1)</span>
+    </div>
+    <div class="man-layout">
+      <article class="man-main">
+        <h1 class="man-title">{document.title}</h1>
+        <div class="man-block">
+          <h2 class="man-label">NAME</h2>
+          <p class="man-summary">{document.summary}</p>
+        </div>
+        <div class="man-block">
+          <h2 class="man-label">SYNOPSIS</h2>
+          <div class="man-meta">
+            <span>{kindLabel}</span>
+            <span>updated {document.updated}</span>
+            {year !== null && <span>{year}</span>}
+            {document.history?.layer && <span>{document.history.layer}</span>}
+            {document.domains.map((domain) => <span>{domain}</span>)}
           </div>
-          <div class="rail-block">
-            <dt>갱신</dt>
-            <dd>{document.updated}</dd>
-          </div>
-          {year !== null && (
-            <div class="rail-block">
-              <dt>연도</dt>
-              <dd>{year}</dd>
-            </div>
-          )}
-          {document.history?.layer && (
-            <div class="rail-block">
-              <dt>층위</dt>
-              <dd>{document.history.layer}</dd>
-            </div>
-          )}
-          <div class="rail-block">
-            <dt>근거</dt>
-            <dd>{evidenceCount}</dd>
-          </div>
-          <div class="rail-block">
-            <dt>관계</dt>
-            <dd>{statements.length}</dd>
-          </div>
-        </dl>
-      </aside>
+        </div>
 
-      <article class="doc-main">
         {document.publication_visibility === "unlisted" && (
           <aside class="notice" role="note">
             <strong>미등록 문서</strong> 이 문서는 공개 목록에 등록되지 않았습니다. 검색·사이트맵에는 노출되지 않으며, 링크로만 접근할 수 있습니다.
           </aside>
         )}
 
-        <header class="doc-header">
-          <p class="eyebrow">{kindLabel}</p>
-          <h1>{document.title}</h1>
-          <p class="doc-summary">{document.summary}</p>
-          <div class="doc-meta">
-            {document.domains.map((domain) => <span>{domain}</span>)}
-            {document.aliases.map((alias) => <span>{alias}</span>)}
-          </div>
-        </header>
-
-        <div class="prose" set:html={html} />
+        <div class="man-description">
+          <h2 class="man-label">DESCRIPTION</h2>
+          <div class="prose" set:html={html} />
+        </div>
       </article>
 
-      <aside class="doc-aside">
-        <h2>나가는 관계</h2>
+      <aside class="man-aside">
+        <h2>RELATIONS</h2>
         {statements.length === 0 ? (
           <p>기록된 관계가 없습니다.</p>
         ) : (
@@ -118,7 +96,7 @@ const relationTitle = (key: string) => nodeDocument(key)?.title || key;
           </ul>
         )}
 
-        <h2>들어오는 관계</h2>
+        <h2>BACKLINKS</h2>
         {backlinks.length === 0 ? (
           <p>들어오는 관계가 없습니다.</p>
         ) : (

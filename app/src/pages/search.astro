@@ -15,8 +15,9 @@ const suggestions = [...degree.entries()]
 ---
 
 <Base title="검색" description="CS Wiki 문서 검색">
-  <p class="eyebrow">Search</p>
-  <h1>검색</h1>
+  <div class="search-page">
+    <p class="eyebrow">SEARCH</p>
+    <h1 class="search-title">검색</h1>
   <p class="lede">제목·요약·별칭·주제로 공개 문서를 찾습니다. <kbd>/</kbd> 키로 검색어 입력란에 바로 이동할 수 있습니다.</p>
   <label class="sr-only" for="site-search">검색어</label>
   <input
@@ -91,4 +92,5 @@ const suggestions = [...degree.entries()]
       });
     }
   </script>
+  </div>
 </Base>

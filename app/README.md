@@ -6,11 +6,11 @@
 
 ## 디자인
 
-- “Paper & Signal” 에디토리얼 테마: 종이색 배경, 먹색 본문, rust/teal 포인트
-- 홈: 큰 serif 헤드라인 + 오른쪽 ‘먼저 읽을 세 가지’ 패널
-- 문서: 왼쪽 메타 rail, 가운데 prose, 오른쪽 연결 rail
-- 색인: 유형별 compact list
-- Noto Sans KR / Noto Serif KR / IBM Plex Mono 사용
+- “VS Code Workbench” 셸: activity bar, explorer, tabs, breadcrumb, status bar
+- 문서 본문은 man page 스타일: `CSWIKI(1)` 헤더, `##`/`###` 프리픽스, RELATIONS/BACKLINKS rail
+- 검색은 `Ctrl/Cmd+K` command palette와 `/search/` 페이지를 함께 사용
+- 색인은 explorer형 compact file list
+- IBM Plex Mono / Noto Sans KR 사용, VS Code Dark+ 계열 팔레트
 
 ## 실행
 

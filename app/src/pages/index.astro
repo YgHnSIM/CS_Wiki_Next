@@ -29,7 +29,7 @@ const featured = publicDocuments
 const recent = publicDocuments
   .filter((document) => document.kind !== "meta")
   .sort((a, b) => b.updated.localeCompare(a.updated) || a.title.localeCompare(b.title, "ko"))
-  .slice(0, 6);
+  .slice(0, 8);
 
 const domainCounts = new Map<string, number>();
 for (const document of publicDocuments) {
@@ -74,96 +74,85 @@ const startEntries = [
   title="CS Wiki"
   description="컴퓨터 과학의 역사·이론·시스템을 원본과 지식 연결로 읽는 위키"
   canonical={withBase("/")}
-  wide
 >
-  <section class="home-hero">
-    <div class="hero-copy">
-      <p class="eyebrow">CS Wiki / Knowledge Atlas</p>
-      <h1>컴퓨팅의 역사를<br /><em>연결해서 읽는다.</em></h1>
-      <p class="hero-lede">
+  <div class="welcome">
+    <header class="welcome-head">
+      <p class="welcome-kicker">CSWIKI(1) · KNOWLEDGE ATLAS</p>
+      <h1 class="welcome-title">컴퓨팅의 역사를<br /><em>연결해서 읽는다.</em></h1>
+      <p class="welcome-lede">
         배비지와 러브레이스에서 저장 프로그램 컴퓨터, 구조적 프로그래밍, Unix와 C, 유니코드까지.
         원본 문헌에서 출발해 개념과 분석을 잇는 기술 위키입니다.
       </p>
-      <div class="hero-actions">
-        <a class="button" href={withBase("/search/")}>문서 검색</a>
-        <a class="button ghost" href={withBase("/index/")}>전체 색인</a>
+      <div class="welcome-actions">
+        <a href={withBase("/search/")}>문서 검색</a>
+        <a class="ghost" href={withBase("/index/")}>전체 색인</a>
       </div>
-      <dl class="hero-stats">
+      <dl class="welcome-stats">
         <div><dt>공개 문서</dt><dd>{publicDocuments.length}</dd></div>
         <div><dt>개념</dt><dd>{counts.concept || 0}</dd></div>
         <div><dt>관계</dt><dd>{graph.statements.length}</dd></div>
         <div><dt>분석</dt><dd>{counts.analysis || 0}</dd></div>
       </dl>
-    </div>
+    </header>
 
-    <aside class="start-panel" aria-labelledby="start-title">
-      <header class="start-heading">
-        <span>START HERE</span>
-        <h2 id="start-title">먼저 읽을 세 가지</h2>
-      </header>
-      <ol class="start-list">
-        {startEntries.map((entry, index) => (
-          <li>
-            <a href={documentUrl(entry.document!)}>
-              <span class="start-index">{String(index + 1).padStart(2, "0")}</span>
-              <span class="start-kind">{kindLabels[entry.kind] || entry.kind}</span>
-              <strong>{entry.document!.title}</strong>
-              <small>{entry.document!.summary}</small>
-            </a>
-          </li>
-        ))}
-      </ol>
-      <a class="start-all" href={withBase("/index/")}>전체 색인에서 더 찾기 <span>→</span></a>
-    </aside>
-  </section>
-
-  <section class="home-section">
-    <header class="section-head">
-      <span>01</span>
+    <div class="welcome-grid">
       <div>
         <h2>자료 유형</h2>
-        <p>원본에서 개념으로, 개념에서 분석으로. 읽고 싶은 층을 고르세요.</p>
-      </div>
-    </header>
-    <div class="type-grid">
-      {routes.map((route, index) => (
-        <a class="type-card" href={route.href}>
-          <span class="type-index">{String(index + 1).padStart(2, "0")}</span>
-          <h3>{route.label}</h3>
-          <p>문서</p>
-          <strong>{route.count}</strong>
-        </a>
-      ))}
-    </div>
-  </section>
-
-  <section class="home-split">
-    <div>
-      <header class="section-head">
-        <span>02</span>
-        <div><h2>지식 범위</h2><p>주제별 문서 분포.</p></div>
-      </header>
-      <div class="scope-list">
-        {domains.map(([domain, count]) => (
-          <div><span>{domainLabels[domain] || domain}</span><strong>{count}</strong></div>
-        ))}
-      </div>
-    </div>
-    <div>
-      <header class="section-head">
-        <span>03</span>
-        <div><h2>최근 갱신</h2><p>마지막으로 손본 문서.</p></div>
-      </header>
-      <ol class="recent-list">
-        {recent.map((document) => (
-          <li>
-            <a href={documentUrl(document)}>
-              <span>{document.title}</span>
-              <time>{document.updated}</time>
+        <div class="type-grid">
+          {routes.map((route, index) => (
+            <a class="type-card" href={route.href}>
+              <span class="type-index">{String(index + 1).padStart(2, "0")}</span>
+              <h3>{route.label}</h3>
+              <strong>{route.count}</strong>
             </a>
-          </li>
-        ))}
-      </ol>
+          ))}
+        </div>
+
+        <div class="section-head">
+          <span>02</span>
+          <h2>지식 범위</h2>
+        </div>
+        <div class="scope-list">
+          {domains.map(([domain, count]) => (
+            <div><span>{domainLabels[domain] || domain}</span><strong>{count}</strong></div>
+          ))}
+        </div>
+      </div>
+
+      <aside class="start-panel" aria-labelledby="start-title">
+        <header class="start-heading">
+          <span>START HERE</span>
+          <h2 id="start-title">먼저 읽을 세 가지</h2>
+        </header>
+        <ol class="start-list">
+          {startEntries.map((entry, index) => (
+            <li>
+              <a href={documentUrl(entry.document!)}>
+                <span class="start-index">{String(index + 1).padStart(2, "0")}</span>
+                <span class="start-kind">{kindLabels[entry.kind] || entry.kind}</span>
+                <strong>{entry.document!.title}</strong>
+                <small>{entry.document!.summary}</small>
+              </a>
+            </li>
+          ))}
+        </ol>
+        <a class="start-all" href={withBase("/index/")}>전체 색인에서 더 찾기 <span>→</span></a>
+      </aside>
     </div>
-  </section>
+
+    <div class="section-head">
+      <span>03</span>
+      <h2>최근 갱신</h2>
+    </div>
+    <ol class="recent-list">
+      {recent.map((document) => (
+        <li>
+          <a href={documentUrl(document)}>
+            <span>{document.title}</span>
+            <time>{document.updated}</time>
+          </a>
+        </li>
+      ))}
+    </ol>
+  </div>
 </Base>

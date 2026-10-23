@@ -3,8 +3,20 @@ import path from "node:path";
 
 const root = process.cwd();
 const dist = path.join(root, "app", "dist");
-const base = process.env.SITE_BASE || "/";
+const configuredBase = process.env.SITE_BASE || "";
+const detectedBase = await detectBase();
+const base = configuredBase || detectedBase || "/";
 const basePrefix = base === "/" ? "" : base.replace(/\/$/, "");
+
+async function detectBase() {
+  try {
+    const html = await readFile(path.join(dist, "index.html"), "utf8");
+    const match = html.match(/(?:href|src)="(\/[^"]*\/)_astro\//);
+    return match ? match[1] : "/";
+  } catch {
+    return "/";
+  }
+}
 
 async function walk(directory) {
   const entries = await readdir(directory, { withFileTypes: true });
@@ -26,6 +38,7 @@ async function exists(file) {
 function targetFile(reference) {
   let clean = reference.split("#", 1)[0].split("?", 1)[0];
   if (!clean.startsWith("/")) return null;
+  try { clean = decodeURIComponent(clean); } catch { /* keep encoded path */ }
   if (basePrefix && !clean.startsWith(`${basePrefix}/`) && clean !== basePrefix) return null;
   if (basePrefix) clean = clean.slice(basePrefix.length) || "/";
   if (clean === "/") return path.join(dist, "index.html");

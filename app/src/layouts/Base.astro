@@ -1,6 +1,6 @@
 ---
 import "../styles/global.css";
-import { documents, graph } from "../lib/data";
+import { documents, graph, publicDocuments, withBase } from "../lib/data";
 
 interface Props {
   title: string;
@@ -15,16 +15,27 @@ interface Props {
 const { title, description = "", canonical, noindex = false, refresh, wide = false, bodyClass = "" } = Astro.props;
 const base = import.meta.env.BASE_URL || "/";
 const site = Astro.site || new URL("http://localhost:4321");
-const canonicalHref = canonical
-  ? new URL(canonical, site).href
-  : new URL(Astro.url.pathname, site).href;
-const nav = [
-  ["색인", `${base}index/`],
-  ["역사", `${base}history/`],
-  ["근거", `${base}evidence/`],
-  ["검색", `${base}search/`]
-];
+const canonicalHref = canonical ? new URL(canonical, site).href : new URL(Astro.url.pathname, site).href;
 const currentPath = Astro.url.pathname;
+const sections = ["concept", "entity", "analysis", "source", "reference", "meta"];
+const labels: Record<string, string> = {
+  concept: "concepts",
+  entity: "entities",
+  analysis: "analyses",
+  source: "sources",
+  reference: "references",
+  meta: "meta"
+};
+const counts = publicDocuments.reduce((accumulator, document) => {
+  accumulator[document.kind] = (accumulator[document.kind] || 0) + 1;
+  return accumulator;
+}, {} as Record<string, number>);
+const section = currentPath.includes("/docs/") ? "docs" : currentPath.split("/").filter(Boolean)[0] || "home";
+const fileLabel = title === "CS Wiki" ? "welcome.md" : `${title}.md`;
+const pageTitle = title === "CS Wiki" ? "CS Wiki" : `${title} · CS Wiki`;
+const isNotFound = currentPath.endsWith("/404/") || currentPath.endsWith("/404.html");
+const tabHref = isNotFound ? base : currentPath;
+const activeView = currentPath.includes("/search/") ? "search" : currentPath.includes("/history/") ? "history" : currentPath.includes("/evidence/") ? "evidence" : "explorer";
 ---
 
 <!doctype html>
@@ -32,48 +43,177 @@ const currentPath = Astro.url.pathname;
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="color-scheme" content="light" />
-    <meta name="theme-color" content="#f4efe5" />
-    <title>{title} · CS Wiki</title>
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#1e1e1e" />
+    <title>{pageTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalHref} />
     <link rel="icon" href={`${base}favicon.svg`} type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&family=Noto+Serif+KR:wght@500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     {refresh && <meta http-equiv="refresh" content={`0; url=${refresh}`} />}
     {noindex && <meta name="robots" content="noindex" />}
-    <meta property="og:title" content={`${title} · CS Wiki`} />
+    <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
   </head>
   <body class={bodyClass}>
-    <a class="skip-link" href="#main">본문으로 건너뛰기</a>
-    <header class="site-header">
-      <div class="shell header-inner">
-        <a class="brand" href={base} aria-label="CS Wiki 홈">
-          <span class="brand-mark">CS</span>
-          <span class="brand-name">CS Wiki</span>
-          <span class="brand-sub">Knowledge Atlas</span>
-        </a>
-        <nav class="site-nav" aria-label="주요 탐색">
-          {nav.map(([label, href]) => (
-            <a href={href} aria-current={currentPath === href || (href !== base && currentPath.startsWith(href)) ? "page" : undefined}>{label}</a>
-          ))}
+    <a class="skip-link" href="#editor">본문으로 건너뛰기</a>
+    <div class="workbench">
+      <aside class="activity-bar" aria-label="활동 표시줄">
+        <a class="activity-brand" href={base} aria-label="CS Wiki 홈">CS</a>
+        <nav class="activity-nav">
+          <a href={withBase("/index/")} aria-label="탐색기" title="Explorer" aria-current={activeView === "explorer" ? "page" : undefined}>▤</a>
+          <button type="button" data-command-open aria-label="검색" title="Search" aria-current={activeView === "search" ? "page" : undefined}>⌕</button>
+          <a href={withBase("/history/")} aria-label="역사" title="History" aria-current={activeView === "history" ? "page" : undefined}>◷</a>
+          <a href={withBase("/evidence/")} aria-label="근거" title="Evidence" aria-current={activeView === "evidence" ? "page" : undefined}>◈</a>
         </nav>
-      </div>
-    </header>
-    <main id="main" class={`shell ${wide ? "shell-wide" : ""}`}>
-      <slot />
-    </main>
-    <footer class="site-footer">
-      <div class="shell footer-inner">
-        <span>CS Wiki · 원본에서 지식으로</span>
-        <span>{documents.length} documents · {graph.statements.length} statements</span>
-      </div>
+        <button class="activity-command" type="button" data-command-open aria-label="명령 팔레트" title="Command Palette">⌘</button>
+      </aside>
+
+      <aside class="sidebar" aria-label="탐색기">
+        <div class="sidebar-section">EXPLORER</div>
+        <div class="tree">
+          <a class="tree-root" href={base}>▾ CS_WIKI</a>
+          {sections.map((kind) => (
+            <a class="tree-item" href={`${withBase("/index/")}#${kind}`}>
+              <span class="tree-icon">{kind === "source" || kind === "reference" ? "▤" : "◇"}</span>
+              <span>{labels[kind]}</span>
+              <span class="tree-count">{counts[kind] || 0}</span>
+            </a>
+          ))}
+        </div>
+        <div class="sidebar-section">OPEN EDITORS</div>
+        <a class="open-editor active" href={tabHref}>
+          <span class="dot"></span>
+          <span>{fileLabel}</span>
+        </a>
+        <div class="sidebar-section">SHORTCUTS</div>
+        <button class="sidebar-shortcut" type="button" data-command-open>
+          <span>Command Palette</span><kbd>Ctrl K</kbd>
+        </button>
+        <a class="sidebar-shortcut" href={withBase("/search/")}>
+          <span>Search</span><kbd>/</kbd>
+        </a>
+      </aside>
+
+      <main class="editor" id="editor">
+        <div class="tabbar">
+          <a class="tab active" href={tabHref}>
+            <span class="tab-file">◇</span>
+            <span>{fileLabel}</span>
+            <span class="tab-close" aria-hidden="true">×</span>
+          </a>
+          <a class="tab muted" href={withBase("/index/")}>
+            <span class="tab-file">▤</span>
+            <span>index.md</span>
+          </a>
+        </div>
+        <div class="breadcrumb" aria-label="경로">
+          <a href={base}>CS_Wiki</a><span>/</span><span>{section}</span><span>/</span><span>{fileLabel}</span>
+        </div>
+        <div class="editor-scroll">
+          <slot />
+        </div>
+      </main>
+    </div>
+
+    <footer class="statusbar" aria-label="상태 표시줄">
+      <span>⑂ main</span>
+      <span>CS Wiki</span>
+      <span>{documents.length} docs</span>
+      <span>{graph.statements.length} statements</span>
+      <span>UTF-8</span>
+      <span>LF</span>
+      {noindex && <span class="status-warning">noindex</span>}
     </footer>
+
+    <div class="command-backdrop" data-command-palette hidden>
+      <div class="command" role="dialog" aria-modal="true" aria-label="명령 팔레트">
+        <input
+          type="search"
+          class="command-input"
+          placeholder="문서 검색..."
+          aria-label="문서 검색"
+          data-command-input
+          data-base={withBase("/")}
+          autocomplete="off"
+        />
+        <div class="command-results" data-command-results role="listbox"></div>
+        <div class="command-footer"><span>↑↓ 이동</span><span>Enter 열기</span><span>Esc 닫기</span></div>
+      </div>
+    </div>
+
+    <script>
+      const palette = document.querySelector("[data-command-palette]");
+      const commandInput = document.querySelector("[data-command-input]");
+      const commandResults = document.querySelector("[data-command-results]");
+      let commandIndex = [];
+      let selected = 0;
+
+      if (palette && commandInput && commandResults) {
+        const open = () => {
+          palette.hidden = false;
+          commandInput.value = "";
+          render("");
+          commandInput.focus();
+          if (!commandIndex.length) {
+            fetch(`${commandInput.dataset.base}search.json`)
+              .then((response) => response.json())
+              .then((data) => { commandIndex = data; render(""); })
+              .catch(() => { commandResults.textContent = "검색 색인을 불러오지 못했습니다."; });
+          }
+        };
+        const close = () => { palette.hidden = true; };
+        const render = (query) => {
+          const terms = query.trim().toLocaleLowerCase("ko-KR").split(/\s+/).filter(Boolean);
+          const matches = commandIndex.filter((item) => {
+            const haystack = [item.title, item.summary, item.kind, ...(item.aliases || [])].join(" ").toLocaleLowerCase("ko-KR");
+            return terms.every((term) => haystack.includes(term));
+          }).slice(0, 12);
+          selected = 0;
+          commandResults.replaceChildren();
+          for (const [index, item] of matches.entries()) {
+            const link = document.createElement("a");
+            link.href = item.url;
+            link.setAttribute("role", "option");
+            link.dataset.index = String(index);
+            link.className = index === 0 ? "selected" : "";
+            link.innerHTML = `<span>${item.title}</span><small>${item.kind} · ${item.url}</small>`;
+            commandResults.append(link);
+          }
+          if (!matches.length) commandResults.textContent = "일치하는 문서가 없습니다.";
+        };
+        const select = (next) => {
+          const links = [...commandResults.querySelectorAll("a")];
+          if (!links.length) return;
+          selected = (next + links.length) % links.length;
+          links.forEach((link, index) => link.classList.toggle("selected", index === selected));
+          links[selected].scrollIntoView({ block: "nearest" });
+        };
+
+        document.querySelectorAll("[data-command-open]").forEach((button) => button.addEventListener("click", open));
+        document.addEventListener("keydown", (event) => {
+          if ((event.ctrlKey || event.metaKey) && (event.key.toLowerCase() === "k" || (event.shiftKey && event.key.toLowerCase() === "p"))) {
+            event.preventDefault();
+            open();
+          }
+          if (palette.hidden) return;
+          if (event.key === "Escape") close();
+          if (event.key === "ArrowDown") { event.preventDefault(); select(selected + 1); }
+          if (event.key === "ArrowUp") { event.preventDefault(); select(selected - 1); }
+          if (event.key === "Enter") {
+            const link = commandResults.querySelectorAll("a")[selected];
+            if (link) window.location.href = link.href;
+          }
+        });
+        commandInput.addEventListener("input", () => render(commandInput.value));
+        palette.addEventListener("click", (event) => { if (event.target === palette) close(); });
+      }
+    </script>
   </body>
 </html>
