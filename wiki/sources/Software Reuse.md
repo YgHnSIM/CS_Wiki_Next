@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-004
+key: source:ref-004
 kind: reference
 title: Software Reuse
 aliases:

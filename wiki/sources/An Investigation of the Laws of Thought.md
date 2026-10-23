@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-030
+key: source:ref-030
 kind: reference
 title: An Investigation of the Laws of Thought
 aliases:

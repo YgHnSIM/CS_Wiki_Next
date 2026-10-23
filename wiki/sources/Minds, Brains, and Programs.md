@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-146
+key: source:ref-146
 kind: reference
 title: Minds, Brains, and Programs
 aliases:

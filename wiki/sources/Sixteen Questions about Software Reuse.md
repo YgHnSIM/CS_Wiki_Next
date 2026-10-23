@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-005
+key: source:ref-005
 kind: reference
 title: Sixteen Questions about Software Reuse
 aliases:

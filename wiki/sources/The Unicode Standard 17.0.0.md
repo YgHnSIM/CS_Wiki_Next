@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-022
+key: source:ref-022
 kind: reference
 title: The Unicode Standard 17.0.0
 aliases:

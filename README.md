@@ -3,7 +3,7 @@
 기존 CS Wiki의 **440개 문서와 원본은 그대로** 가져오고, 메타데이터·지식 연결·사이트 도구는 새로 구성하는 저장소다.
 
 - **이전 저장소**: `C:\Vault\CS_Wiki` (백업: `C:\Vault\_backups\CS_Wiki_2026-10-24_0514`)
-- **현재 단계**: Phase 1-B 배치 01–04 완료 (97 pages / 294 relations)
+- **현재 단계**: Phase 1-B 완료 (362 pages / 887 relations, 440 keys)
 - **URL 계약**: `/docs/{id}/` 440개와 리디렉션 555개를 유지한다.
 
 ## 구조
@@ -37,7 +37,7 @@ app/                  Astro 사이트 (예정)
 
 ## 다음 단계
 
-1. Phase 1-B 배치 05+: 나머지 265개 관계 문서를 20~30쪽 단위로 이관
-2. generated block 전체 동기화
-3. `packages/knowledge` 컴파일러와 parity 테스트
-4. Astro 앱 구축
+1. Phase 2: `packages/knowledge` 컴파일러와 graph parity 테스트
+2. Astro 앱 구축
+3. 기존 440개 URL·555개 리디렉션과 출력 parity 확인
+4. cutover

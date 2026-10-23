@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-035
+key: source:ref-035
 kind: reference
 title: Validity of the Single Processor Approach to Achieving Large Scale Computing Capabilities
 aliases:

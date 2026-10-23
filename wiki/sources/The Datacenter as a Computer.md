@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-041
+key: source:ref-041
 kind: reference
 title: The Datacenter as a Computer
 aliases:

@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-026
+key: source:ref-026
 kind: reference
 title: WHATWG Encoding Standard
 aliases:

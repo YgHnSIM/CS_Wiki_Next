@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-052
+key: source:ref-052
 kind: reference
 title: "The History of Mathematical Tables: From Sumer to Spreadsheets"
 aliases:

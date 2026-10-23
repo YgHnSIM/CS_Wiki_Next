@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-059
+key: source:ref-059
 kind: reference
 title: Standards Eastern Automatic Computer
 aliases:

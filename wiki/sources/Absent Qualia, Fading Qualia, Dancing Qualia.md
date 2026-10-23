@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-154
+key: source:ref-154
 kind: reference
 title: Absent Qualia, Fading Qualia, Dancing Qualia
 aliases:

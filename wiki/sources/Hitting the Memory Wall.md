@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-039
+key: source:ref-039
 kind: reference
 title: Hitting the Memory Wall
 aliases:

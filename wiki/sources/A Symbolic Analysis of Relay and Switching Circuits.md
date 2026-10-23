@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-008
+key: source:ref-008
 kind: reference
 title: A Symbolic Analysis of Relay and Switching Circuits
 aliases:

@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-011
+key: source:ref-011
 kind: reference
 title: A Case against the GO TO Statement
 aliases:

@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-057
+key: source:ref-057
 kind: reference
 title: "Prehistory: The Math Tables Project"
 aliases:

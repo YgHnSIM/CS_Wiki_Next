@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-050
+key: source:ref-050
 kind: reference
 title: What Every Computer Scientist Should Know About Floating-Point Arithmetic
 aliases:

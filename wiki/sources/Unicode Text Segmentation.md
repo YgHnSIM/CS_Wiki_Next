@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-025
+key: source:ref-025
 kind: reference
 title: Unicode Text Segmentation
 aliases:

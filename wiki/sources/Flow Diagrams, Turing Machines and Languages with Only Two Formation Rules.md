@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-012
+key: source:ref-012
 kind: reference
 title: Flow Diagrams, Turing Machines and Languages with Only Two Formation Rules
 aliases:

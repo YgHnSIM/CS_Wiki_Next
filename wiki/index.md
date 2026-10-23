@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: meta-index
+key: document:index
 kind: meta
 title: 위키 색인
 aliases:

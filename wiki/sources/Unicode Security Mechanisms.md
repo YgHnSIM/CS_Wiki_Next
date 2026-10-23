@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-027
+key: source:ref-027
 kind: reference
 title: Unicode Security Mechanisms
 aliases:

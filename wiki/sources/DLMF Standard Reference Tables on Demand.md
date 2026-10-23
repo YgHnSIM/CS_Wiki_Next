@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-060
+key: source:ref-060
 kind: reference
 title: DLMF Standard Reference Tables on Demand
 aliases:

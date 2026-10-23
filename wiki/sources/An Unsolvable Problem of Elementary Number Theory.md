@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-010
+key: source:ref-010
 kind: reference
 title: An Unsolvable Problem of Elementary Number Theory
 aliases:

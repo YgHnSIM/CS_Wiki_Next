@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-147
+key: source:ref-147
 kind: reference
 title: Blaise Agüera y Arcas Big Think 인터뷰 원문
 aliases:

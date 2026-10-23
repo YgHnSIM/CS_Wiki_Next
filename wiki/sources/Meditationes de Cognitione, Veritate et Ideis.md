@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-144
+key: source:ref-144
 kind: reference
 title: Meditationes de Cognitione, Veritate et Ideis
 aliases:

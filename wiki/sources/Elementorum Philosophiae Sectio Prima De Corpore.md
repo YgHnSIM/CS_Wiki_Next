@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-143
+key: source:ref-143
 kind: reference
 title: Elementorum Philosophiae Sectio Prima De Corpore
 aliases:

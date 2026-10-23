@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-013
+key: source:ref-013
 kind: reference
 title: Structured Programming
 aliases:

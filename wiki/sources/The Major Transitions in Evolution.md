@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-153
+key: source:ref-153
 kind: reference
 title: The Major Transitions in Evolution
 aliases:

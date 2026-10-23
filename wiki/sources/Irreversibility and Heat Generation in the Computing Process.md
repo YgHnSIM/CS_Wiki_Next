@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-150
+key: source:ref-150
 kind: reference
 title: Irreversibility and Heat Generation in the Computing Process
 aliases:

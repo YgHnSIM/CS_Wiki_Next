@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-032
+key: source:ref-032
 kind: reference
 title: SPEC CPU 2026 Overview
 aliases:

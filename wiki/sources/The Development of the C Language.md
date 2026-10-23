@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-019
+key: source:ref-019
 kind: reference
 title: The Development of the C Language
 aliases:

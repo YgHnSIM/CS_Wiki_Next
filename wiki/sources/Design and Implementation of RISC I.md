@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-044
+key: source:ref-044
 kind: reference
 title: Design and Implementation of RISC I
 aliases:

@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-054
+key: source:ref-054
 kind: reference
 title: Handbook of Mathematical Functions with Formulas, Graphs, and Mathematical Tables
 aliases:

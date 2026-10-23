@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-007
+key: source:ref-007
 kind: reference
 title: The Manchester Small Scale Experimental Machine - The Baby
 aliases:

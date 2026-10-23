@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-002
+key: source:ref-002
 kind: reference
 title: Mass Produced Software Components
 aliases:

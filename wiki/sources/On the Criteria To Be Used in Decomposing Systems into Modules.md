@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-003
+key: source:ref-003
 kind: reference
 title: On the Criteria To Be Used in Decomposing Systems into Modules
 aliases:

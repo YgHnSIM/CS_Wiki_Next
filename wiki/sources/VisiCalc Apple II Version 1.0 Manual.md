@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-061
+key: source:ref-061
 kind: reference
 title: VisiCalc Apple II Version 1.0 Manual
 aliases:

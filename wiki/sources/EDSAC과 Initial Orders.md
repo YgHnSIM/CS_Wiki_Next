@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: src-003
+key: source:src-003
 kind: source
 title: EDSAC과 Initial Orders
 aliases:

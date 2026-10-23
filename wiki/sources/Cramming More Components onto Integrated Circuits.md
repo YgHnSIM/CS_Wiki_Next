@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-037
+key: source:ref-037
 kind: reference
 title: Cramming More Components onto Integrated Circuits
 aliases:

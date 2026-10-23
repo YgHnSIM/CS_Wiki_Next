@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: src-005
+key: source:src-005
 kind: source
 title: 폐쇄형 서브루틴과 Wheeler Jump
 aliases:

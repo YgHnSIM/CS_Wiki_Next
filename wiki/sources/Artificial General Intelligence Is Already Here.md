@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-151
+key: source:ref-151
 kind: reference
 title: Artificial General Intelligence Is Already Here
 aliases:

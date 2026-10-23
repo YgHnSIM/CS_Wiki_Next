@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-034
+key: source:ref-034
 kind: reference
 title: Roofline An Insightful Visual Performance Model
 aliases:

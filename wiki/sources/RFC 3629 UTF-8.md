@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-023
+key: source:ref-023
 kind: reference
 title: RFC 3629 UTF-8
 aliases:

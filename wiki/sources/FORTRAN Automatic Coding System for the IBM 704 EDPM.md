@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-015
+key: source:ref-015
 kind: reference
 title: FORTRAN Automatic Coding System for the IBM 704 EDPM
 aliases:

@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-152
+key: source:ref-152
 kind: reference
 title: Theory of Self-Reproducing Automata
 aliases:

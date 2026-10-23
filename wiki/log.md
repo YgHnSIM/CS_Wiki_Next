@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: meta-log
+key: document:log
 kind: meta
 title: 작업 로그
 aliases:

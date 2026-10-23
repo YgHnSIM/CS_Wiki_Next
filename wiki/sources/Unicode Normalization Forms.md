@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-024
+key: source:ref-024
 kind: reference
 title: Unicode Normalization Forms
 aliases:

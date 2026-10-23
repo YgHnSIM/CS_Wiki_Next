@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-056
+key: source:ref-056
 kind: reference
 title: "The computation factory: de Prony's project for making tables in the 1790s"
 aliases:

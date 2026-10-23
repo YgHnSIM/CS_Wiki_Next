@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-042
+key: source:ref-042
 kind: reference
 title: In-Datacenter Performance Analysis of a Tensor Processing Unit
 aliases:

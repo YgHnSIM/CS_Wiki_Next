@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: meta-overview
+key: document:overview
 kind: meta
 title: 위키 개요
 aliases:

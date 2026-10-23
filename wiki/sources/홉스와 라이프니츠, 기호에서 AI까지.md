@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: src-007
+key: source:src-007
 kind: source
 title: 홉스와 라이프니츠, 기호에서 AI까지
 aliases:

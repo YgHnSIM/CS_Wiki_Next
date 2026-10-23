@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-145
+key: source:ref-145
 kind: reference
 title: Explication de l'Arithmétique Binaire
 aliases:

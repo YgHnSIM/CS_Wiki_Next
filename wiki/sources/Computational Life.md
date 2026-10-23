@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-148
+key: source:ref-148
 kind: reference
 title: Computational Life
 aliases:

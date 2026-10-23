@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-029
+key: source:ref-029
 kind: reference
 title: C Integer and Shift Semantics
 aliases:

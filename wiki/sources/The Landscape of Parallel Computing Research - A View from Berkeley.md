@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-040
+key: source:ref-040
 kind: reference
 title: The Landscape of Parallel Computing Research - A View from Berkeley
 aliases:

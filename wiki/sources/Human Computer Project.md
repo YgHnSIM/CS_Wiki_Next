@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-058
+key: source:ref-058
 kind: reference
 title: Human Computer Project
 aliases:

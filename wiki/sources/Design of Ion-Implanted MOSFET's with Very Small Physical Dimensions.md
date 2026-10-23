@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-038
+key: source:ref-038
 kind: reference
 title: Design of Ion-Implanted MOSFET's with Very Small Physical Dimensions
 aliases:

@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-055
+key: source:ref-055
 kind: reference
 title: "Mathematical Tables: Containing the Common, Hyperbolic, and Logistic Logarithms"
 aliases:

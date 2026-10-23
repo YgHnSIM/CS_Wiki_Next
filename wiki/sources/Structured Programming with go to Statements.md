@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-014
+key: source:ref-014
 kind: reference
 title: Structured Programming with go to Statements
 aliases:

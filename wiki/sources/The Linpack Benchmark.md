@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-033
+key: source:ref-033
 kind: reference
 title: The Linpack Benchmark
 aliases:

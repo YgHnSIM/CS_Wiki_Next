@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: src-004
+key: source:src-004
 kind: source
 title: 서브루틴과 스택(Stack)의 원리
 aliases:

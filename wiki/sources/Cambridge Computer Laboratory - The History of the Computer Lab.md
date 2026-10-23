@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-028
+key: source:ref-028
 kind: reference
 title: Cambridge Computer Laboratory - The History of the Computer Lab
 aliases:

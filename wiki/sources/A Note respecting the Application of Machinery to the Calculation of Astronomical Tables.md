@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-053
+key: source:ref-053
 kind: reference
 title: A Note respecting the Application of Machinery to the Calculation of Astronomical Tables
 aliases:
