@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-129
+key: source:ref-129
 kind: reference
 title: OCI Distribution Specification
 aliases:
@@ -38,6 +39,17 @@ access:
     url: https://web.archive.org/web/20261015102547/https://github.com/opencontainers/distribution-spec/blob/main/spec.md
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-10-15
+relations:
+  - predicate: constrains
+    target: concept:dependency-provenance
+    note: registry 위치와 content-addressable digest의 의미를 분리한다.
+    evidence:
+      - source: ref-129
+  - predicate: constrains
+    target: analysis:dependency-provenance-registry
+    note: tag만으로 dependency identity를 고정하지 않고 digest를 검증 대상으로 둔다.
+    evidence:
+      - source: ref-129
 ---
 
 ## 개요
@@ -50,10 +62,12 @@ OCI Distribution Specification은 registry와 client 사이의 content distribut
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | constrains | [[dependency provenance와 registry identity]] | registry 위치와 content-addressable digest의 의미를 분리한다. | [[OCI Distribution Specification]] |
 | constrains | [[registry는 의존성의 출처와 동일성을 어떻게 증명하는가]] | tag만으로 dependency identity를 고정하지 않고 digest를 검증 대상으로 둔다. | [[OCI Distribution Specification]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

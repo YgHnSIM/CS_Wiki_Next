@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-114
+key: source:ref-114
 kind: reference
 title: RFC 9110 HTTP Semantics
 aliases:
@@ -43,6 +44,17 @@ access:
     url: https://web.archive.org/web/20261017191309/https://www.rfc-editor.org/rfc/rfc9110.html
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-10-17
+relations:
+  - predicate: enables
+    target: concept:idempotency
+    note: 반복 요청의 의도된 효과를 기준으로 멱등성을 정의하고, exactly-once 실행과 분리한다.
+    evidence:
+      - source: ref-114
+  - predicate: constrains
+    target: concept:remote-procedure-call
+    note: 응답 유실 뒤 재전송할 수 있는 요청의 의미를 메서드·부작용 계약과 함께 판단하게 한다.
+    evidence:
+      - source: ref-114
 ---
 
 ## 개요
@@ -57,10 +69,12 @@ HTTP의 멱등 메서드 규칙은 네트워크가 응답을 잃었을 때 안�
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | enables | [[멱등성]] | 반복 요청의 의도된 효과를 기준으로 멱등성을 정의하고, exactly-once 실행과 분리한다. | [[RFC 9110 HTTP Semantics]] |
 | constrains | [[원격 프로시저 호출]] | 응답 유실 뒤 재전송할 수 있는 요청의 의미를 메서드·부작용 계약과 함께 판단하게 한다. | [[RFC 9110 HTTP Semantics]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-127
+key: source:ref-127
 kind: reference
 title: npm Package Provenance Statements
 aliases:
@@ -36,6 +37,17 @@ access:
     url: https://web.archive.org/web/20261019190653/https://docs.npmjs.com/generating-provenance-statements/
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-10-19
+relations:
+  - predicate: exemplifies
+    target: concept:dependency-provenance
+    note: 패키지 registry가 source·build instructions·publisher를 연결하는 실제 사례다.
+    evidence:
+      - source: ref-127
+  - predicate: constrains
+    target: analysis:dependency-provenance-registry
+    note: provenance가 악성 코드 부재 보장이 아님을 소비자 검증 경계로 둔다.
+    evidence:
+      - source: ref-127
 ---
 
 ## 개요
@@ -48,10 +60,12 @@ npm provenance는 게시된 패키지와 source code·build instructions를 연�
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | exemplifies | [[dependency provenance와 registry identity]] | 패키지 registry가 source·build instructions·publisher를 연결하는 실제 사례다. | [[npm Package Provenance Statements]] |
 | constrains | [[registry는 의존성의 출처와 동일성을 어떻게 증명하는가]] | provenance가 악성 코드 부재 보장이 아님을 소비자 검증 경계로 둔다. | [[npm Package Provenance Statements]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

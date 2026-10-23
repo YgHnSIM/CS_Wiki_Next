@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-124
+key: source:ref-124
 kind: reference
 title: SOURCE_DATE_EPOCH Specification
 aliases:
@@ -36,6 +37,17 @@ access:
     url: https://web.archive.org/web/https://reproducible-builds.org/specs/source-date-epoch//200
     retrieved: 2026-10-24
     version: Internet Archive snapshot http-s:-//
+relations:
+  - predicate: constrains
+    target: concept:reproducible-builds
+    note: 현재 시각에 의존하는 산출물 변동을 통제하는 표준 입력을 제공한다.
+    evidence:
+      - source: ref-124
+  - predicate: constrains
+    target: analysis:reproducible-build-boundary
+    note: 시간·timestamp를 환경 변동과 산출물 동일성 사이에 배치한다.
+    evidence:
+      - source: ref-124
 ---
 
 ## 개요
@@ -50,10 +62,12 @@ timestamp는 빌드가 실행된 시각과 소스가 의미 있게 변경된 시
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | constrains | [[재현 가능한 빌드]] | 현재 시각에 의존하는 산출물 변동을 통제하는 표준 입력을 제공한다. | [[SOURCE_DATE_EPOCH Specification]] |
 | constrains | [[재현 가능한 빌드는 무엇을 같게 만드는가]] | 시간·timestamp를 환경 변동과 산출물 동일성 사이에 배치한다. | [[SOURCE_DATE_EPOCH Specification]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

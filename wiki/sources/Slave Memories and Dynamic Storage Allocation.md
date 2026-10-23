@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-043
+key: source:ref-043
 kind: reference
 title: Slave Memories and Dynamic Storage Allocation
 aliases:
@@ -47,6 +48,17 @@ access:
     url: https://www.cl.cam.ac.uk/teaching/2324/P56/files/wilkes1965cache.pdf
     retrieved: 2026-07-16
     version: IEEE Transactions on Electronic Computers EC-14(2), April 1965
+relations:
+  - predicate: responds_to
+    target: concept:memory-wall
+    note: ‘메모리 장벽’이라는 후대 명칭보다 앞선 제안이지만, 프로세서와 주기억장치의 속도 격차라는 같은 구조적 제약을 완화한다.
+    evidence:
+      - source: ref-043
+  - predicate: enables
+    target: concept:page-6aaebafb
+    note: 최근 요구된 단어를 빠른 소용량 기억장치에 유지해 계층적 기억장치의 실용 설계 공간을 연다.
+    evidence:
+      - source: ref-043
 ---
 
 ## 개요
@@ -90,10 +102,12 @@ Wilkes는 빠른 층의 용량, 주소 변환, 교체할 블록의 선택, 변�
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | responds_to | [[메모리 장벽]] | ‘메모리 장벽’이라는 후대 명칭보다 앞선 제안이지만, 프로세서와 주기억장치의 속도 격차라는 같은 구조적 제약을 완화한다. | [[Slave Memories and Dynamic Storage Allocation]] |
 | enables | [[캐시 메모리]] | 최근 요구된 단어를 빠른 소용량 기억장치에 유지해 계층적 기억장치의 실용 설계 공간을 연다. | [[Slave Memories and Dynamic Storage Allocation]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

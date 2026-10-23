@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-089
+key: source:ref-089
 kind: reference
 title: "Spanner: Google's Globally-Distributed Database"
 aliases:
@@ -55,6 +56,17 @@ access:
     url: https://web.archive.org/web/20261003154630/https://www.usenix.org/conference/osdi12/technical-sessions/presentation/corbett
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-10-03
+relations:
+  - predicate: enables
+    target: concept:external-consistency-time-uncertainty
+    note: Paxos 상태 기계, 다중 그룹 트랜잭션, TrueTime 불확실성·commit wait를 결합한 외부 일관성 사례를 제공한다.
+    evidence:
+      - source: ref-089
+  - predicate: implements
+    target: concept:replicated-log-consensus
+    note: 데이터 조각을 Paxos 상태 기계로 동기 복제하고 리더가 쓰기를 순서화하는 구현 계층을 보여 준다.
+    evidence:
+      - source: ref-089
 ---
 
 ## 개요
@@ -89,10 +101,12 @@ TrueTime이 시간 오차를 무시하지 않고 경계가 있는 구간으로 �
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
-| enables | [[외부 일관성과 시간 불확실성]] | Paxos 상태 기계, 다중 그룹 트랜잭션, TrueTime 불확실성·commit wait를 결합한 외부 일관성 사례를 제공한다. | [[Spanner - Google's Globally-Distributed Database]] |
-| implements | [[복제 로그와 합의]] | 데이터 조각을 Paxos 상태 기계로 동기 복제하고 리더가 쓰기를 순서화하는 구현 계층을 보여 준다. | [[Spanner - Google's Globally-Distributed Database]] |
+| enables | [[외부 일관성과 시간 불확실성]] | Paxos 상태 기계, 다중 그룹 트랜잭션, TrueTime 불확실성·commit wait를 결합한 외부 일관성 사례를 제공한다. | [[Spanner: Google's Globally-Distributed Database]] |
+| implements | [[복제 로그와 합의]] | 데이터 조각을 Paxos 상태 기계로 동기 복제하고 리더가 쓰기를 순서화하는 구현 계층을 보여 준다. | [[Spanner: Google's Globally-Distributed Database]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

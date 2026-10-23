@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-123
+key: source:ref-123
 kind: reference
 title: Reproducible Builds - Definition
 aliases:
@@ -37,6 +38,17 @@ access:
     url: https://web.archive.org/web/20261023163028/https://reproducible-builds.org/docs/definition/
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-10-23
+relations:
+  - predicate: synthesizes
+    target: concept:reproducible-builds
+    note: 소스·환경·지침과 bit-by-bit 산출물 동일성의 기준을 제공한다.
+    evidence:
+      - source: ref-123
+  - predicate: constrains
+    target: analysis:reproducible-build-boundary
+    note: 비교 시 무엇을 고정하고 무엇을 산출물로 볼지 결정하게 한다.
+    evidence:
+      - source: ref-123
 ---
 
 ## 개요
@@ -51,10 +63,12 @@ Reproducible Builds 프로젝트는 같은 소스 코드, 빌드 환경, 빌드 
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | synthesizes | [[재현 가능한 빌드]] | 소스·환경·지침과 bit-by-bit 산출물 동일성의 기준을 제공한다. | [[Reproducible Builds - Definition]] |
 | constrains | [[재현 가능한 빌드는 무엇을 같게 만드는가]] | 비교 시 무엇을 고정하고 무엇을 산출물로 볼지 결정하게 한다. | [[Reproducible Builds - Definition]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

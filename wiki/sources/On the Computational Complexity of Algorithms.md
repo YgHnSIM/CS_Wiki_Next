@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-031
+key: source:ref-031
 kind: reference
 title: On the Computational Complexity of Algorithms
 aliases:
@@ -59,6 +60,17 @@ access:
     url: https://web.archive.org/web/20240421032532/https://www3.risc.jku.at/people/schreine/courses/compcomp/HartmanisStearns1965.pdf
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2024-04-21
+relations:
+  - predicate: responds_to
+    target: concept:computability
+    note: 계산 가능 여부만으로는 구분되지 않는 입력 규모별 시간 자원 증가를 별도의 질문으로 만든다.
+    evidence:
+      - source: ref-031
+  - predicate: enables
+    target: concept:computational-complexity
+    note: 계산 가능한 수열 사이의 시간 자원 차이를 형식화해 복잡도 분류의 출발점을 제공한다.
+    evidence:
+      - source: ref-031
 ---
 
 ## 개요
@@ -88,10 +100,12 @@ access:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | responds_to | [[계산 가능성]] | 계산 가능 여부만으로는 구분되지 않는 입력 규모별 시간 자원 증가를 별도의 질문으로 만든다. | [[On the Computational Complexity of Algorithms]] |
 | enables | [[계산 복잡도]] | 계산 가능한 수열 사이의 시간 자원 차이를 형식화해 복잡도 분류의 출발점을 제공한다. | [[On the Computational Complexity of Algorithms]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

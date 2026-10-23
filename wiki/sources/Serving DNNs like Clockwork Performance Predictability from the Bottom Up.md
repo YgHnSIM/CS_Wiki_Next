@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-086
+key: source:ref-086
 kind: reference
 title: "Serving DNNs like Clockwork: Performance Predictability from the Bottom Up"
 aliases:
@@ -56,6 +57,17 @@ access:
     url: https://web.archive.org/web/https://www.usenix.org/conference/osdi20/presentation/gujarati/200
     retrieved: 2026-10-24
     version: Internet Archive snapshot http-s:-//
+relations:
+  - predicate: enables
+    target: concept:queueing-load-control
+    note: 예측된 작업 시간과 요청 기한을 사용해 배치·예약·취소를 판단하는 SLO 지향 제어 사례를 제공한다.
+    evidence:
+      - source: ref-086
+  - predicate: measures
+    target: concept:tail-latency
+    note: 목표 기한을 만족한 요청만 세는 goodput과 모든 요청의 지연 분포를 구분해 평가한다.
+    evidence:
+      - source: ref-086
 ---
 
 ## 개요
@@ -89,10 +101,12 @@ Clockwork의 대상은 보통 한 번의 DNN 실행으로 끝나는 요청이며
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
-| enables | [[대기열과 부하 제어]] | 예측된 작업 시간과 요청 기한을 사용해 배치·예약·취소를 판단하는 SLO 지향 제어 사례를 제공한다. | [[Serving DNNs like Clockwork Performance Predictability from the Bottom Up]] |
-| measures | [[꼬리 지연 시간]] | 목표 기한을 만족한 요청만 세는 goodput과 모든 요청의 지연 분포를 구분해 평가한다. | [[Serving DNNs like Clockwork Performance Predictability from the Bottom Up]] |
+| enables | [[대기열과 부하 제어]] | 예측된 작업 시간과 요청 기한을 사용해 배치·예약·취소를 판단하는 SLO 지향 제어 사례를 제공한다. | [[Serving DNNs like Clockwork: Performance Predictability from the Bottom Up]] |
+| measures | [[꼬리 지연 시간]] | 목표 기한을 만족한 요청만 세는 goodput과 모든 요청의 지연 분포를 구분해 평가한다. | [[Serving DNNs like Clockwork: Performance Predictability from the Bottom Up]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

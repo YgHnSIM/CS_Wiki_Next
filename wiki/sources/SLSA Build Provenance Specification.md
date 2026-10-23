@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-125
+key: source:ref-125
 kind: reference
 title: SLSA Build Provenance Specification
 aliases:
@@ -38,6 +39,17 @@ access:
     url: https://web.archive.org/web/https://slsa.dev/spec/v1.2/build-provenance/200
     retrieved: 2026-10-24
     version: Internet Archive snapshot http-s:-//
+relations:
+  - predicate: constrains
+    target: concept:reproducible-builds
+    note: 생성 경로 attestation과 산출물 bit-by-bit 동일성 검사를 분리한다.
+    evidence:
+      - source: ref-125
+  - predicate: constrains
+    target: analysis:reproducible-build-boundary
+    note: buildDefinition과 runDetails를 동일성 비교가 아닌 provenance 층으로 배치한다.
+    evidence:
+      - source: ref-125
 ---
 
 ## 개요
@@ -52,10 +64,12 @@ SLSA v1.2의 Build Provenance는 소프트웨어 산출물이 어디서, 언제,
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | constrains | [[재현 가능한 빌드]] | 생성 경로 attestation과 산출물 bit-by-bit 동일성 검사를 분리한다. | [[SLSA Build Provenance Specification]] |
 | constrains | [[재현 가능한 빌드는 무엇을 같게 만드는가]] | buildDefinition과 runDetails를 동일성 비교가 아닌 provenance 층으로 배치한다. | [[SLSA Build Provenance Specification]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-071
+key: source:ref-071
 kind: reference
 title: No Silver Bullet—Essence and Accidents of Software Engineering
 aliases:
@@ -63,6 +64,17 @@ access:
     url: https://web.archive.org/web/20260930010456/https://ieeexplore.ieee.org/document/1663532/
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-09-30
+relations:
+  - predicate: exemplifies
+    target: concept:essential-accidental-complexity
+    note: 소프트웨어의 개념 구조와 그 표현·도구 과정에서 생기는 어려움을 구분한다.
+    evidence:
+      - source: ref-071
+  - predicate: constrains
+    target: concept:developer-productivity
+    note: 단일 기술·관리 기법이나 활동량만으로 생산성·신뢰성·단순성을 함께 판단할 수 없게 한다.
+    evidence:
+      - source: ref-071
 ---
 
 ## 개요
@@ -94,10 +106,12 @@ Brooks는 마법 같은 단일 해법을 부정하면서도, 누적적 개선의
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | exemplifies | [[본질적 복잡성과 부수적 복잡성]] | 소프트웨어의 개념 구조와 그 표현·도구 과정에서 생기는 어려움을 구분한다. | [[No Silver Bullet—Essence and Accidents of Software Engineering]] |
 | constrains | [[개발자 생산성]] | 단일 기술·관리 기법이나 활동량만으로 생산성·신뢰성·단순성을 함께 판단할 수 없게 한다. | [[No Silver Bullet—Essence and Accidents of Software Engineering]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

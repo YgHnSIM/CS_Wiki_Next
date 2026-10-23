@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-112
+key: source:ref-112
 kind: reference
 title: Serializable Isolation for Snapshot Databases
 aliases:
@@ -42,6 +43,17 @@ access:
     url: https://web.archive.org/web/http://www.cs.cornell.edu/~sowell/dbpapers/serializable_isolation.pdf/200
     retrieved: 2026-10-24
     version: Internet Archive snapshot http-:/-/w
+relations:
+  - predicate: enables
+    target: concept:serializability
+    note: snapshot isolation의 write skew와 SSI의 위험 의존성 검사를 통해 serial equivalence의 구현 경계를 보여준다.
+    evidence:
+      - source: ref-112
+  - predicate: synthesizes
+    target: concept:concurrency
+    note: 겹친 트랜잭션이 서로 다른 데이터를 갱신할 때 발생하는 불변식 위반을 구체적인 실행 이력으로 설명한다.
+    evidence:
+      - source: ref-112
 ---
 
 ## 개요
@@ -56,10 +68,12 @@ access:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | enables | [[직렬 가능성]] | snapshot isolation의 write skew와 SSI의 위험 의존성 검사를 통해 serial equivalence의 구현 경계를 보여준다. | [[Serializable Isolation for Snapshot Databases]] |
 | synthesizes | [[동시성]] | 겹친 트랜잭션이 서로 다른 데이터를 갱신할 때 발생하는 불변식 위반을 구체적인 실행 이력으로 설명한다. | [[Serializable Isolation for Snapshot Databases]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-113
+key: source:ref-113
 kind: reference
 title: PostgreSQL 17 Transaction Isolation
 aliases:
@@ -39,6 +40,17 @@ access:
     url: https://web.archive.org/web/20260902174124/https://www.postgresql.org/docs/17/transaction-iso.html
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-09-02
+relations:
+  - predicate: implements
+    target: concept:serializability
+    note: SSI와 predicate-lock 기반 감시로 직렬 순서와 모순되는 커밋을 실패시키는 구현 사례를 제공한다.
+    evidence:
+      - source: ref-113
+  - predicate: constrains
+    target: analysis:transaction-ordering-guarantees
+    note: 격리 수준 비교가 재시도와 serialization failure 처리까지 포함해야 한다는 실무 경계를 부과한다.
+    evidence:
+      - source: ref-113
 ---
 
 ## 개요
@@ -53,10 +65,12 @@ access:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | implements | [[직렬 가능성]] | SSI와 predicate-lock 기반 감시로 직렬 순서와 모순되는 커밋을 실패시키는 구현 사례를 제공한다. | [[PostgreSQL 17 Transaction Isolation]] |
 | constrains | [[트랜잭션 시스템은 어떤 순서 보장을 제공하는가]] | 격리 수준 비교가 재시도와 serialization failure 처리까지 포함해야 한다는 실무 경계를 부과한다. | [[PostgreSQL 17 Transaction Isolation]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

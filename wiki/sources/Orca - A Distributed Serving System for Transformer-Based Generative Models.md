@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-075
+key: source:ref-075
 kind: reference
 title: "Orca: A Distributed Serving System for Transformer-Based Generative Models"
 aliases:
@@ -57,6 +58,22 @@ access:
     url: https://web.archive.org/web/20261001015413/https://www.usenix.org/conference/osdi22/presentation/yu
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-10-01
+relations:
+  - predicate: implements
+    target: concept:continuous-batching
+    note: 모델 한 번의 반복마다 완료·대기·신규 요청을 반영해 다음 활성 배치를 다시 구성한다.
+    evidence:
+      - source: ref-075
+  - predicate: implements
+    target: concept:transformer
+    note: 자동회귀 Transformer의 어텐션 상태와 비어텐션 연산을 구분한 분산 서빙 엔진을 구현한다.
+    evidence:
+      - source: ref-075
+  - predicate: precedes
+    target: source:ref-076
+    note: 반복 단위 스케줄링을 확립했지만 KV 캐시의 연속 할당과 단편화 문제는 후속 PagedAttention 연구의 비교 기준이 되었다.
+    evidence:
+      - source: ref-076
 ---
 
 ## 개요
@@ -90,11 +107,13 @@ Orca의 첫 번째 핵심은 **반복 단위 스케줄링**(iteration-level sche
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
-| implements | [[연속 배칭]] | 모델 한 번의 반복마다 완료·대기·신규 요청을 반영해 다음 활성 배치를 다시 구성한다. | [[Orca - A Distributed Serving System for Transformer-Based Generative Models]] |
-| implements | [[Transformer]] | 자동회귀 Transformer의 어텐션 상태와 비어텐션 연산을 구분한 분산 서빙 엔진을 구현한다. | [[Orca - A Distributed Serving System for Transformer-Based Generative Models]] |
+| implements | [[연속 배칭]] | 모델 한 번의 반복마다 완료·대기·신규 요청을 반영해 다음 활성 배치를 다시 구성한다. | [[Orca: A Distributed Serving System for Transformer-Based Generative Models]] |
+| implements | [[Transformer]] | 자동회귀 Transformer의 어텐션 상태와 비어텐션 연산을 구분한 분산 서빙 엔진을 구현한다. | [[Orca: A Distributed Serving System for Transformer-Based Generative Models]] |
 | precedes | [[Efficient Memory Management for Large Language Model Serving with PagedAttention]] | 반복 단위 스케줄링을 확립했지만 KV 캐시의 연속 할당과 단편화 문제는 후속 PagedAttention 연구의 비교 기준이 되었다. | [[Efficient Memory Management for Large Language Model Serving with PagedAttention]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

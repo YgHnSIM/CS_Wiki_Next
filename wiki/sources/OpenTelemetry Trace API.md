@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-122
+key: source:ref-122
 kind: reference
 title: OpenTelemetry Trace API
 aliases:
@@ -37,6 +38,17 @@ access:
     url: https://web.archive.org/web/20261013222023/https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/trace/api.md
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-10-13
+relations:
+  - predicate: constrains
+    target: concept:failure-detection
+    note: detector 신호와 요청별 trace·span 상태를 별도 관찰 채널로 기록하게 한다.
+    evidence:
+      - source: ref-122
+  - predicate: synthesizes
+    target: concept:tail-latency
+    note: trace 구간의 시간 정보를 fan-out·큐·재시도 경로와 함께 분석할 수 있게 한다.
+    evidence:
+      - source: ref-122
 ---
 
 ## 개요
@@ -51,10 +63,12 @@ Trace가 있다고 해서 failure detector가 정확해지는 것은 아니다. 
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | constrains | [[장애 감지]] | detector 신호와 요청별 trace·span 상태를 별도 관찰 채널로 기록하게 한다. | [[OpenTelemetry Trace API]] |
 | synthesizes | [[꼬리 지연 시간]] | trace 구간의 시간 정보를 fan-out·큐·재시도 경로와 함께 분석할 수 있게 한다. | [[OpenTelemetry Trace API]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-135
+key: source:ref-135
 kind: reference
 title: ONNX Runtime Execution Providers
 aliases:
@@ -39,6 +40,17 @@ access:
     url: https://web.archive.org/web/20261011085516/https://onnxruntime.ai/docs/execution-providers/
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-10-11
+relations:
+  - predicate: exemplifies
+    target: concept:runtime-contract
+    note: backend capability와 subgraph placement를 실행 계약의 일부로 보여준다.
+    evidence:
+      - source: ref-135
+  - predicate: constrains
+    target: analysis:runtime-contract
+    note: 같은 model API가 backend capability·fallback 결과와 함께 해석되어야 함을 보여준다.
+    evidence:
+      - source: ref-135
 ---
 
 ## 개요
@@ -51,10 +63,12 @@ ONNX Runtime은 execution provider가 실행 가능한 node 또는 subgraph를 c
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | exemplifies | [[runtime contract]] | backend capability와 subgraph placement를 실행 계약의 일부로 보여준다. | [[ONNX Runtime Execution Providers]] |
 | constrains | [[runtime contract는 무엇을 보장해야 하는가]] | 같은 model API가 backend capability·fallback 결과와 함께 해석되어야 함을 보여준다. | [[ONNX Runtime Execution Providers]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

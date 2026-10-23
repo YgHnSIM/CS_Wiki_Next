@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-097
+key: source:ref-097
 kind: reference
 title: Scalable Parallel Programming with CUDA
 aliases:
@@ -57,6 +58,17 @@ access:
     url: https://web.archive.org/web/20260919132917/https://research.nvidia.com/publication/2008-03_scalable-parallel-programming-cuda
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-09-19
+relations:
+  - predicate: implements
+    target: concept:heterogeneous-execution-model
+    note: 호스트·커널과 스레드·블록·그리드 계층을 통해 GPU 자원에 병렬 작업을 배치하는 구체적 실행 모델을 제시한다.
+    evidence:
+      - source: ref-097
+  - predicate: enables
+    target: concept:performance-portability
+    note: 서로 다른 코어 수의 GPU에서 병렬 작업을 확장할 수 있는 프로그램 구조를 제공하지만, 실제 성능은 대상별 배치와 메모리 선택에 달려 있음을 드러낸다.
+    evidence:
+      - source: ref-097
 ---
 
 ## 개요
@@ -77,10 +89,12 @@ CUDA는 호스트 코드와 GPU에서 실행되는 커널을 구분하고, 커�
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | implements | [[이기종 실행 모델]] | 호스트·커널과 스레드·블록·그리드 계층을 통해 GPU 자원에 병렬 작업을 배치하는 구체적 실행 모델을 제시한다. | [[Scalable Parallel Programming with CUDA]] |
 | enables | [[성능 이식성]] | 서로 다른 코어 수의 GPU에서 병렬 작업을 확장할 수 있는 프로그램 구조를 제공하지만, 실제 성능은 대상별 배치와 메모리 선택에 달려 있음을 드러낸다. | [[Scalable Parallel Programming with CUDA]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

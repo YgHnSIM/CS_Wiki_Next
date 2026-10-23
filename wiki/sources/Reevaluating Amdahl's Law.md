@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-045
+key: source:ref-045
 kind: reference
 title: Reevaluating Amdahl's Law
 aliases:
@@ -57,6 +58,17 @@ access:
     url: https://web.archive.org/web/20260508153521/http://johngustafson.net/glaw.html
     retrieved: 2026-07-16
     version: Communications of the ACM 31(5), May 1988, pp. 532–533
+relations:
+  - predicate: responds_to
+    target: source:ref-035
+    note: 고정 크기 문제의 가속 상한에 문제 크기를 자원과 함께 늘리는 고정 시간 관점으로 응답한다.
+    evidence:
+      - source: ref-045
+  - predicate: enables
+    target: concept:parallel-scalability
+    note: 지연 시간 감소와 동일 시간 안의 문제 규모 확대를 서로 다른 확장 능력으로 비교하게 한다.
+    evidence:
+      - source: ref-045
 ---
 
 ## 개요
@@ -119,10 +131,12 @@ Gustafson은 원문에서 암달 식의 오용이 대규모 병렬성에 대한 
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | responds_to | [[Validity of the Single Processor Approach to Achieving Large Scale Computing Capabilities]] | 고정 크기 문제의 가속 상한에 문제 크기를 자원과 함께 늘리는 고정 시간 관점으로 응답한다. | [[Reevaluating Amdahl's Law]] |
 | enables | [[병렬 확장성]] | 지연 시간 감소와 동일 시간 안의 문제 규모 확대를 서로 다른 확장 능력으로 비교하게 한다. | [[Reevaluating Amdahl's Law]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

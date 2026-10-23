@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-036
+key: source:ref-036
 kind: reference
 title: Power Measurement Tutorial for the Green500 List
 aliases:
@@ -49,6 +50,17 @@ access:
     url: https://web.archive.org/web/20231224150626/https://top500.org/files/green500/tutorial.pdf
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2023-12-24
+relations:
+  - predicate: measures
+    target: concept:computing-capability
+    note: 같은 LINPACK 실행의 달성 성능과 평균 시스템 전력을 결합해 제한된 전력당 실현 성능을 측정한다.
+    evidence:
+      - source: ref-036
+  - predicate: exemplifies
+    target: analysis:power-wall-performance
+    note: 최고 성능만이 아니라 작업·시스템 경계가 고정된 성능/W를 비교하는 초기 측정 사례를 제공한다.
+    evidence:
+      - source: ref-036
 ---
 
 ## 개요
@@ -80,10 +92,12 @@ access:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | measures | [[컴퓨팅 능력이란 무엇인가]] | 같은 LINPACK 실행의 달성 성능과 평균 시스템 전력을 결합해 제한된 전력당 실현 성능을 측정한다. | [[Power Measurement Tutorial for the Green500 List]] |
 | exemplifies | [[전력 장벽은 성능 향상의 의미를 어떻게 바꾸었는가]] | 최고 성능만이 아니라 작업·시스템 경계가 고정된 성능/W를 비교하는 초기 측정 사례를 제공한다. | [[Power Measurement Tutorial for the Green500 List]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

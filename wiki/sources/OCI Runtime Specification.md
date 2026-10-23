@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-136
+key: source:ref-136
 kind: reference
 title: OCI Runtime Specification
 aliases:
@@ -38,6 +39,17 @@ access:
     url: https://web.archive.org/web/20261005112249/https://specs.opencontainers.org/runtime-spec/
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-10-05
+relations:
+  - predicate: exemplifies
+    target: concept:runtime-contract
+    note: 실행 configuration과 lifecycle을 명시적 contract로 만든 시스템 사례다.
+    evidence:
+      - source: ref-136
+  - predicate: constrains
+    target: analysis:runtime-contract
+    note: load·start·state·delete의 실행 경계를 모델 입력과 구분한다.
+    evidence:
+      - source: ref-136
 ---
 
 ## 개요
@@ -50,10 +62,12 @@ OCI Runtime Specification은 container runtime이 configuration, execution envir
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | exemplifies | [[runtime contract]] | 실행 configuration과 lifecycle을 명시적 contract로 만든 시스템 사례다. | [[OCI Runtime Specification]] |
 | constrains | [[runtime contract는 무엇을 보장해야 하는가]] | load·start·state·delete의 실행 경계를 모델 입력과 구분한다. | [[OCI Runtime Specification]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

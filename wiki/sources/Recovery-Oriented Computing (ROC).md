@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-065
+key: source:ref-065
 kind: reference
 title: Recovery-Oriented Computing (ROC)
 aliases:
@@ -70,6 +71,17 @@ access:
     url: https://web.archive.org/web/20260926165007/https://www2.eecs.berkeley.edu/Pubs/TechRpts/2002/5574.html
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-09-26
+relations:
+  - predicate: enables
+    target: concept:availability-recovery
+    note: 평균 고장 간격뿐 아니라 평균 복구 시간을 줄이는 설계·평가 관점을 제시한다.
+    evidence:
+      - source: ref-065
+  - predicate: broader
+    target: concept:fault-tolerance
+    note: 고장을 견디는 설계를 예방, 격리와 복구 절차까지 포함하는 운영 문제로 확장한다.
+    evidence:
+      - source: ref-065
 ---
 
 ## 개요
@@ -101,10 +113,12 @@ access:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | enables | [[가용성과 복구]] | 평균 고장 간격뿐 아니라 평균 복구 시간을 줄이는 설계·평가 관점을 제시한다. | [[Recovery-Oriented Computing (ROC)]] |
 | broader | [[결함 허용]] | 고장을 견디는 설계를 예방, 격리와 복구 절차까지 포함하는 운영 문제로 확장한다. | [[Recovery-Oriented Computing (ROC)]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

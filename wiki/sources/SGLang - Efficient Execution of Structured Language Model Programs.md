@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-080
+key: source:ref-080
 kind: reference
 title: "SGLang: Efficient Execution of Structured Language Model Programs"
 aliases:
@@ -51,6 +52,22 @@ access:
     url: https://proceedings.nips.cc/paper_files/paper/2024/file/724be4472168f31ba1c9ac630f15dec8-Paper-Conference.pdf
     retrieved: 2026-07-25
     version: NeurIPS 2024 proceedings, volume 37
+relations:
+  - predicate: implements
+    target: concept:prefix-kv-caching
+    note: 동일 토큰 접두사의 KV 상태를 radix tree와 LRU 정책으로 호출 사이에 보존·검색·퇴거한다.
+    evidence:
+      - source: ref-080
+  - predicate: enables
+    target: concept:prefill-decode
+    note: 적중한 접두사의 프리필 계산을 생략하고 일치 지점 이후의 토큰만 처리하게 한다.
+    evidence:
+      - source: ref-080
+  - predicate: constrains
+    target: concept:continuous-batching
+    note: 긴 접두사 적중을 우선하는 순서가 캐시 적중률과 처리량을 높이는 대신 공정성·대기 지연과 충돌할 수 있다.
+    evidence:
+      - source: ref-080
 ---
 
 ## 개요
@@ -86,11 +103,13 @@ access:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
-| implements | [[접두사 KV 캐싱]] | 동일 토큰 접두사의 KV 상태를 radix tree와 LRU 정책으로 호출 사이에 보존·검색·퇴거한다. | [[SGLang - Efficient Execution of Structured Language Model Programs]] |
-| enables | [[프리필과 디코드]] | 적중한 접두사의 프리필 계산을 생략하고 일치 지점 이후의 토큰만 처리하게 한다. | [[SGLang - Efficient Execution of Structured Language Model Programs]] |
-| constrains | [[연속 배칭]] | 긴 접두사 적중을 우선하는 순서가 캐시 적중률과 처리량을 높이는 대신 공정성·대기 지연과 충돌할 수 있다. | [[SGLang - Efficient Execution of Structured Language Model Programs]] |
+| implements | [[접두사 KV 캐싱]] | 동일 토큰 접두사의 KV 상태를 radix tree와 LRU 정책으로 호출 사이에 보존·검색·퇴거한다. | [[SGLang: Efficient Execution of Structured Language Model Programs]] |
+| enables | [[프리필과 디코드]] | 적중한 접두사의 프리필 계산을 생략하고 일치 지점 이후의 토큰만 처리하게 한다. | [[SGLang: Efficient Execution of Structured Language Model Programs]] |
+| constrains | [[연속 배칭]] | 긴 접두사 적중을 우선하는 순서가 캐시 적중률과 처리량을 높이는 대신 공정성·대기 지연과 충돌할 수 있다. | [[SGLang: Efficient Execution of Structured Language Model Programs]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

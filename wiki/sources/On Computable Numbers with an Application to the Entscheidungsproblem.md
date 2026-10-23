@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-009
+key: source:ref-009
 kind: reference
 title: On Computable Numbers with an Application to the Entscheidungsproblem
 aliases:
@@ -70,6 +71,17 @@ access:
     url: https://web.archive.org/web/20261019143951/https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf
     retrieved: 2026-07-10
     version: null
+relations:
+  - predicate: responds_to
+    target: concept:page-145622bc
+    note: 모든 수학 명제에 적용되는 기계적 판정 절차가 존재하는지 묻는 결정 문제에 형식적으로 대응한다.
+    evidence:
+      - source: ref-009
+  - predicate: enables
+    target: concept:computability
+    note: 유한한 규칙을 수행하는 기계 모델로 “기계적으로 계산 가능하다”는 범위를 분석할 수 있게 한다.
+    evidence:
+      - source: ref-009
 ---
 
 ## 개요
@@ -92,10 +104,12 @@ access:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | responds_to | [[Entscheidungsproblem]] | 모든 수학 명제에 적용되는 기계적 판정 절차가 존재하는지 묻는 결정 문제에 형식적으로 대응한다. | [[On Computable Numbers with an Application to the Entscheidungsproblem]] |
 | enables | [[계산 가능성]] | 유한한 규칙을 수행하는 기계 모델로 “기계적으로 계산 가능하다”는 범위를 분석할 수 있게 한다. | [[On Computable Numbers with an Application to the Entscheidungsproblem]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

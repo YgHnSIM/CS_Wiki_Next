@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-067
+key: source:ref-067
 kind: reference
 title: Reducibility Among Combinatorial Problems
 aliases:
@@ -60,6 +61,17 @@ access:
     url: https://web.archive.org/web/20260629141723/https://link.springer.com/chapter/10.1007/978-1-4684-2001-2_9
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-06-29
+relations:
+  - predicate: implements
+    target: concept:polynomial-time-reduction
+    note: 만족 가능성 문제와 여러 조합적 결정 문제 사이의 다항 시간 변환을 구성한다.
+    evidence:
+      - source: ref-067
+  - predicate: exemplifies
+    target: concept:np-completeness
+    note: 대표 완전 문제에서 조합적 결정 문제로 완전성 결과를 확장하는 사례를 제공한다.
+    evidence:
+      - source: ref-067
 ---
 
 ## 개요
@@ -91,10 +103,12 @@ Karp가 사용한 환원은 입력 `x`를 다항 시간 안에 `f(x)`로 바꾸�
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | implements | [[다항 시간 환원]] | 만족 가능성 문제와 여러 조합적 결정 문제 사이의 다항 시간 변환을 구성한다. | [[Reducibility Among Combinatorial Problems]] |
 | exemplifies | [[NP-완전]] | 대표 완전 문제에서 조합적 결정 문제로 완전성 결과를 확장하는 사례를 제공한다. | [[Reducibility Among Combinatorial Problems]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 
