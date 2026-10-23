@@ -64,6 +64,12 @@ const routes = ["concept", "entity", "analysis", "source", "reference"].map((kin
   href: `${withBase("/index/")}#${kind}`
 }));
 
+const startEntries = [
+  { kind: "concept", document: publicDocuments.find((document) => document.key === "concept:computing-capability") },
+  { kind: "entity", document: publicDocuments.find((document) => document.key === "person:alan-turing") },
+  { kind: "analysis", document: featured[0] }
+].filter((entry) => Boolean(entry.document));
+
 ---
 
 <Base
@@ -96,6 +102,26 @@ const routes = ["concept", "entity", "analysis", "source", "reference"].map((kin
           <div><dt>핵심 분석</dt><dd>{counts.analysis || 0}</dd></div>
         </dl>
       </div>
+
+      <aside class="hero-start" aria-labelledby="hero-start-title">
+        <header class="hero-start-heading">
+          <span>START HERE</span>
+          <h2 id="hero-start-title">먼저 읽을 세 가지</h2>
+        </header>
+        <ol>
+          {startEntries.map((entry, index) => (
+            <li>
+              <a href={documentUrl(entry.document!)}>
+                <span class="hero-start-index">{String(index + 1).padStart(2, "0")}</span>
+                <span class="hero-start-kind">{kindLabels[entry.kind] || entry.kind}</span>
+                <strong>{entry.document!.title}</strong>
+                <small>{entry.document!.summary}</small>
+              </a>
+            </li>
+          ))}
+        </ol>
+        <a class="hero-start-all" href={withBase("/index/")}>전체 색인에서 더 찾기 <span>→</span></a>
+      </aside>
     </section>
 
     <section class="home-directory content-section">

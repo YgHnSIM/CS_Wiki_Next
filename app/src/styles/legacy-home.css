@@ -2672,3 +2672,118 @@ kbd {
 .home-page .hero h1 {
   word-spacing: -0.08em;
 }
+
+/* hero reading entry rail */
+.hero-start {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(32px, 4vw, 56px);
+  background: rgba(0, 255, 65, 0.025);
+}
+
+.hero-start-heading {
+  margin-bottom: 22px;
+}
+
+.hero-start-heading > span {
+  color: var(--amber);
+  font-size: var(--type-meta);
+  letter-spacing: 0.12em;
+}
+
+.hero-start-heading h2 {
+  margin: 8px 0 0;
+  color: var(--text);
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+.hero-start ol {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+
+.hero-start li {
+  border-bottom: 1px solid var(--line);
+}
+
+.hero-start li a {
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr);
+  gap: 4px 10px;
+  padding: 15px 0;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.hero-start li a:hover strong {
+  color: var(--phosphor);
+}
+
+.hero-start-index {
+  grid-row: span 3;
+  color: var(--amber);
+  font-size: var(--type-meta);
+}
+
+.hero-start-kind {
+  color: var(--muted);
+  font-size: var(--type-meta);
+}
+
+.hero-start strong {
+  color: var(--text);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.hero-start small {
+  display: -webkit-box;
+  overflow: hidden;
+  color: var(--muted);
+  font-size: var(--type-meta);
+  line-height: 1.5;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.hero-start-all {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 22px;
+  padding-top: 15px;
+  border-top: 1px solid var(--line-strong);
+  color: var(--phosphor);
+  font-size: var(--type-meta);
+  text-decoration: none;
+}
+
+.hero-start-all span {
+  color: var(--amber);
+}
+
+@media (min-width: 901px) {
+  .home-page .hero {
+    grid-template-columns: minmax(0, 1.2fr) minmax(340px, 0.8fr);
+  }
+
+  .home-page .hero-copy {
+    border-right: 1px solid var(--line-strong);
+    border-bottom: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-start {
+    border-top: 1px solid var(--line-strong);
+    padding: 30px 28px 36px;
+  }
+}
