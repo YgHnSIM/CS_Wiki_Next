@@ -1,0 +1,36 @@
+---
+import Base from "../layouts/Base.astro";
+import { routes, withBase } from "../lib/data";
+
+export function getStaticPaths() {
+  const reserved = new Set(["docs", "index", "map", "history", "evidence", "search", "404", "_astro"]);
+  return Object.entries(routes.redirects)
+    .map(([from, to]) => {
+      const legacy = from.replace(/^\/+|\/+$/g, "");
+      return { legacy, to };
+    })
+    .filter(({ legacy }) => {
+      if (!legacy || legacy.includes("?") || legacy.includes("#")) return false;
+      if (legacy.startsWith("docs/")) return false;
+      if (reserved.has(legacy.split("/")[0])) return false;
+      return !legacy.includes(".");
+    })
+    .map(({ legacy, to }) => ({ params: { legacy }, props: { to } }));
+}
+
+const { to } = Astro.props;
+const href = withBase(to);
+---
+
+<Base
+  title="이동된 문서"
+  description={`이 문서는 ${to}로 이동했습니다.`}
+  canonical={href}
+  refresh={href}
+  noindex
+>
+  <p class="eyebrow">Redirect</p>
+  <h1>이동된 문서</h1>
+  <p class="lede">이 주소는 새 위치로 이동했습니다.</p>
+  <p><a href={href}>{href}</a></p>
+</Base>

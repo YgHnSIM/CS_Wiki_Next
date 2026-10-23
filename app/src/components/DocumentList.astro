@@ -1,0 +1,28 @@
+---
+import { documentUrl } from "../lib/data";
+import type { Document } from "../lib/data";
+
+interface Props {
+  documents: Document[];
+}
+
+const { documents } = Astro.props;
+const kindLabels: Record<string, string> = {
+  concept: "개념",
+  entity: "개체",
+  analysis: "분석",
+  source: "소스",
+  reference: "참고 자료",
+  meta: "운영"
+};
+---
+
+<div class="grid">
+  {documents.map((document) => (
+    <a class="card" href={documentUrl(document)}>
+      <p class="eyebrow">{kindLabels[document.kind] || document.kind}</p>
+      <h3>{document.title}</h3>
+      <p>{document.summary}</p>
+    </a>
+  ))}
+</div>

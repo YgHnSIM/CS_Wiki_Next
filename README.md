@@ -3,7 +3,7 @@
 기존 CS Wiki의 **440개 문서와 원본은 그대로** 가져오고, 메타데이터·지식 연결·사이트 도구는 새로 구성하는 저장소다.
 
 - **이전 저장소**: `C:\Vault\CS_Wiki` (백업: `C:\Vault\_backups\CS_Wiki_2026-10-24_0514`)
-- **현재 단계**: Phase 1-B 완료, Phase 2 그래프 컴파일러·parity 완료 (440 documents / 887 statements)
+- **현재 단계**: Phase 3 코어 완료 (Astro 1,002 pages, 440 docs, 555 redirects, 397 search records)
 - **URL 계약**: `/docs/{id}/` 440개와 리디렉션 555개를 유지한다.
 
 ## 구조
@@ -32,13 +32,14 @@ app/                  Astro 사이트 (예정)
 
 - [ADR 0001: 지식 그래프와 메타데이터 아키텍처](docs/architecture/0001-knowledge-model.md)
 - [Graph contract v1](docs/architecture/0002-graph-contract.md)
+- [Astro app contract](docs/architecture/0003-astro-app.md)
 - [Phase 1 relations 마이그레이션](docs/architecture/phase-1-relations-migration.md)
 - [relations 스키마](schema/knowledge/relations.schema.json)
 - [Registry 스키마](schema/knowledge/registry.schema.json)
 
 ## 다음 단계
 
-1. Phase 3: Astro 앱 구축
-2. 440개 URL·555개 리디렉션과 출력 parity 확인
-3. 검색·역사·근거·연결 렌즈를 graph 위에 구현
-4. cutover
+1. Phase 3.1: 그래프 캔버스·연결 경로 탐색기·학습 경로
+2. 검색 랭킹·한국어 검색 품질 개선
+3. 기존 사이트와 컴포넌트·출력 parity 확인
+4. 배포 경로·GitHub Pages cutover

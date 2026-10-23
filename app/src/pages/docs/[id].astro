@@ -1,0 +1,107 @@
+---
+import Base from "../../layouts/Base.astro";
+import {
+  documentUrl,
+  documents,
+  evidenceSources,
+  incoming,
+  nodeDocument,
+  outgoing,
+  resolveDocument,
+  withBase
+} from "../../lib/data";
+import { renderMarkdown } from "../../lib/markdown.mjs";
+
+export function getStaticPaths() {
+  return documents.map((document) => ({
+    params: { id: document.id },
+    props: { document }
+  }));
+}
+
+const { document } = Astro.props;
+const html = renderMarkdown(document.body, resolveDocument, withBase);
+const statements = outgoing(document);
+const backlinks = incoming(document);
+const kindLabels = {
+  concept: "개념",
+  entity: "개체",
+  analysis: "분석",
+  source: "소스",
+  reference: "참고 자료",
+  meta: "운영"
+};
+const kindLabel = kindLabels[document.kind] || document.kind;
+const event = document.history?.event;
+const year = event?.start ?? document.history?.publication_year ?? null;
+---
+
+<Base
+  title={document.title}
+  description={document.summary}
+  canonical={withBase(document.url)}
+  noindex={document.publication_visibility === "unlisted"}
+>
+  <p class="eyebrow"><a href={withBase("/index/")}>색인</a> / {kindLabel}</p>
+  <h1>{document.title}</h1>
+  <p class="lede">{document.summary}</p>
+  <div class="meta-row">
+    <span class="pill">{kindLabel}</span>
+    {document.domains.map((domain) => <span class="pill">{domain}</span>)}
+    <span class="pill">갱신 {document.updated}</span>
+    {year !== null && <span class="pill">{year}</span>}
+    {document.history?.layer && <span class="pill">{document.history.layer}</span>}
+  </div>
+
+  {document.publication_visibility === "unlisted" && (
+    <div class="notice" role="note">
+      <strong>미등록 문서</strong> 이 문서는 공개 목록에 등록되지 않았습니다. 검색·사이트맵에는 노출되지 않으며, 링크로만 접근할 수 있습니다.
+    </div>
+  )}
+
+  <div class="layout-doc">
+    <article class="doc-body" set:html={html} />
+
+    <aside class="sidebar" aria-label="지식 연결">
+      <h2>나가는 관계</h2>
+      {statements.length === 0 ? (
+        <p>기록된 관계가 없습니다.</p>
+      ) : (
+        <ul>
+          {statements.map((statement) => {
+            const target = nodeDocument(statement.target);
+            const sources = evidenceSources(statement);
+            return (
+              <li>
+                <div>{statement.predicate} → {target ? <a href={documentUrl(target)}>{target.title}</a> : statement.target}</div>
+                {statement.note && <p>{statement.note}</p>}
+                {sources.length > 0 && (
+                  <p>근거: {sources.map((source, index) => (
+                    <span>{index > 0 ? ", " : ""}<a href={documentUrl(source)}>{source.title}</a></span>
+                  ))}</p>
+                )}
+              </li>
+            );
+          })}
+        </ul>
+      )}
+
+      <h2>들어오는 관계</h2>
+      {backlinks.length === 0 ? (
+        <p>들어오는 관계가 없습니다.</p>
+      ) : (
+        <ul>
+          {backlinks.map((link) => {
+            const source = nodeDocument(link.source);
+            return (
+              <li>
+                {source ? <a href={documentUrl(source)}>{source.title}</a> : link.source}
+                {" "}<span>— {link.predicate}</span>
+              </li>
+            );
+          })}
+        </ul>
+      )}
+    </aside>
+  </div>
+</Base>

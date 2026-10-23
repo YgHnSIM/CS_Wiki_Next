@@ -1,0 +1,11 @@
+---
+import Base from "../layouts/Base.astro";
+import { withBase } from "../lib/data";
+---
+
+<Base title="찾을 수 없음" description="요청한 문서를 찾을 수 없습니다." noindex>
+  <p class="eyebrow">404</p>
+  <h1>찾을 수 없음</h1>
+  <p class="lede">요청한 주소에 해당하는 문서가 없습니다.</p>
+  <p><a href={withBase("/index/")}>전체 색인으로 이동</a></p>
+</Base>

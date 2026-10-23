@@ -1,0 +1,55 @@
+---
+import Base from "../layouts/Base.astro";
+import { publicDocuments, withBase } from "../lib/data";
+---
+
+<Base title="검색" description="CS Wiki 문서 검색">
+  <p class="eyebrow">Search</p>
+  <h1>검색</h1>
+  <p class="lede">제목·요약·별칭·주제로 공개 문서를 찾습니다.</p>
+  <input
+    id="site-search"
+    class="search-box"
+    type="search"
+    placeholder="예: 튜링, 캐시, LLM"
+    autocomplete="off"
+    data-base={withBase("/")}
+  />
+  <p id="search-status" role="status" aria-live="polite"></p>
+  <div id="search-results" class="search-results"></div>
+  <script>
+    const input = document.querySelector("#site-search");
+    const status = document.querySelector("#search-status");
+    const results = document.querySelector("#search-results");
+    let index = [];
+    if (input) {
+      fetch(`${input.dataset.base}search.json`)
+        .then((response) => response.json())
+        .then((data) => { index = data; status.textContent = `${index.length}개 문서`; })
+        .catch(() => { status.textContent = "검색 색인을 불러오지 못했습니다."; });
+
+      input.addEventListener("input", () => {
+        const query = input.value.trim().toLocaleLowerCase("ko-KR");
+        results.replaceChildren();
+        if (!query) { status.textContent = `${index.length}개 문서`; return; }
+        const words = query.split(/\s+/).filter(Boolean);
+        const matches = index.filter((item) => {
+          const haystack = [item.title, item.summary, item.kind, ...(item.aliases || []), ...(item.domains || [])]
+            .join(" ")
+            .toLocaleLowerCase("ko-KR");
+          return words.every((word) => haystack.includes(word));
+        }).slice(0, 40);
+        status.textContent = `${matches.length}개 결과`;
+        for (const item of matches) {
+          const link = document.createElement("a");
+          link.href = item.url;
+          link.textContent = item.title;
+          const small = document.createElement("small");
+          small.textContent = ` · ${item.kind} · ${item.summary}`;
+          link.append(small);
+          results.append(link);
+        }
+      });
+    }
+  </script>
+</Base>
