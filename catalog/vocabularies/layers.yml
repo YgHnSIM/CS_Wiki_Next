@@ -1,0 +1,17 @@
+capability_layers:
+  - computability
+  - complexity
+  - programmability
+  - realized-performance
+  - scalability
+  - resource-efficiency
+  - reliable-results
+
+historical_layers:
+  - theory
+  - machine
+  - architecture
+  - software
+  - system
+  - service
+  - measurement

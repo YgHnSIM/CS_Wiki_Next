@@ -1,0 +1,101 @@
+---
+schema_version: 3
+id: concept-3b07c7d6f11aed09
+kind: concept
+title: Dennard 스케일링
+aliases:
+  - Dennard scaling
+  - 데나드 스케일링
+  - 일정 전계 스케일링
+  - constant-field scaling
+summary: MOSFET의 치수와 전압을 함께 축소해 회로 속도와 집적도를 높이면서 이상적인 전력 밀도를 일정하게 유지하는 소자 스케일링 규칙.
+domains:
+  - computer-history
+  - computer-architecture
+publication_visibility: public
+graph_visibility: public
+created: 2026-07-16
+updated: 2026-10-24
+evidence_ids:
+  - ref-038
+  - ref-037
+  - ref-040
+  - ref-047
+  - ref-048
+capability_layers:
+  - resource-efficiency
+history:
+  event:
+    start: 1974
+    basis: representative
+    evidence_id: ref-038
+  note: MOSFET 축소 규칙을 제시한 Dennard 등의 논문이 출판된 1974년을 대표 시점으로 둔다.
+  layer: architecture
+redirect_from:
+  - /concepts/dennard-스케일링/
+---
+
+## 개요
+
+[[Dennard 스케일링]](Dennard scaling)은 MOSFET의 치수와 공급 전압을 같은 비율로 낮춰 내부 전기장을 일정하게 유지하는 축소 규칙이다. Robert Dennard와 IBM 연구진의 [[Design of Ion-Implanted MOSFET's with Very Small Physical Dimensions]]에서 제시됐으며 일정 전계 스케일링(constant-field scaling)이라고도 한다.
+
+## 이상적 축소 규칙
+
+선형 치수를 `1/κ`로 줄일 때 전압도 `1/κ`로 낮추고 도핑 농도를 높인다고 하자. 이상적인 모델에서는 다음 변화가 함께 일어난다.
+
+| 항목 | 이상적 변화 | 의미 |
+|---|---:|---|
+| 선형 치수 | `1/κ` | 소자가 작아진다 |
+| 면적 | `1/κ²` | 같은 면적에 더 많은 소자를 넣는다 |
+| 전압 | `1/κ` | 전기장을 일정하게 유지한다 |
+| 회로 지연 | 약 `1/κ` | 스위칭이 빨라진다 |
+| 회로당 전력 | 약 `1/κ²` | 소자 하나의 전력이 줄어든다 |
+| 전력 밀도 | 대체로 일정 | 집적도 증가를 열 증가 없이 흡수한다 |
+
+이 관계가 성립하면 트랜지스터 수와 동작 속도, 에너지 효율을 동시에 개선할 수 있다. [[무어의 법칙]]이 관찰한 집적도 증가가 오랫동안 클럭과 단일 코어 성능 향상으로 전환될 수 있었던 중요한 이유다.
+
+## 무어의 법칙과의 차이
+
+무어의 법칙은 경제적으로 유리한 집적 회로의 부품 수가 시간에 따라 증가한다는 경험적 추세다. Dennard 스케일링은 소자 치수·전압·도핑을 어떻게 함께 바꾸면 전기장과 전력 밀도를 관리할 수 있는지를 설명하는 설계 규칙이다. 하나는 산업의 시간 추세, 다른 하나는 이상적인 물리 축소 관계이므로 어느 한쪽의 성립이 다른 쪽을 자동으로 보장하지 않는다.
+
+## 약화와 전력 장벽
+
+소자가 작아질수록 임계 전압과 공급 전압을 같은 속도로 계속 낮추기 어려워졌다. 누설 전류, 변동성, 절연막과 신뢰성, 배선 지연도 더 큰 비중을 차지했다. 전압 축소가 치수 축소를 따라가지 못하면 소자당 전력이 충분히 줄지 않고, 모든 트랜지스터를 동시에 높은 주파수로 사용할 때 전력 밀도와 발열이 증가한다.
+
+이 변화는 단일 코어 클럭 상승의 둔화와 멀티코어 전환의 배경이다. [[The Landscape of Parallel Computing Research - A View from Berkeley]]가 기록하듯 더 많은 트랜지스터를 복잡한 단일 코어에 투입하는 방식의 수익이 줄면서 병렬 하드웨어, 에너지 효율과 소프트웨어 공동 설계가 중심 과제가 됐다.
+
+## 장기 효율과 활성 면적
+
+[[Implications of Historical Trends in the Electrical Efficiency of Computing]]에서 유래한 [[Koomey의 법칙]]은 여러 종류의 완성 시스템에서 최고 부하 계산/J가 장기간 개선된 경험적 결과다. Dennard 스케일링은 그 개선을 뒷받침한 중요한 소자 수준 기제였지만 같은 명제는 아니다. Koomey 표본은 진공관에서 트랜지스터로의 전환도 포함하고, 시스템 구조와 구성요소의 변화까지 합친 결과다.
+
+전압 축소가 약해진 뒤에는 칩 면적과 전력 예산이 독립적인 제약이 되었다. [[Dark Silicon and the End of Multicore Scaling]]의 [[다크 실리콘]]은 트랜지스터를 구현할 면적이 있어도 전력·열과 프로그램의 병렬성 때문에 일부 회로를 동시에 유용하게 사용하지 못하는 간극을 모델링했다. 이는 Dennard 스케일링의 약화를 “더 이상 작게 만들 수 없다”보다 “작게 만든 회로를 모두 같은 방식으로 켤 수 없다”는 문제로 구체화한다.
+
+## 관계
+
+| 관계 | 대상 | 설명 | 근거 |
+|---|---|---|---|
+| constrains | [[무어의 법칙]] | 소자 축소가 전력 밀도를 유지할 때만 클럭·집적 이득이 함께 온다. | [[Design of Ion-Implanted MOSFET's with Very Small Physical Dimensions]] |
+| precedes | [[다크 실리콘]] | 축소 규칙이 깨진 뒤 활성 면적 제한이 성능 모델이 된다. | [[The Landscape of Parallel Computing Research - A View from Berkeley]] |
+
+## 출처
+<!-- wiki-v2:evidence-start -->
+### 근거 ID
+- `ref-038`
+- `ref-037`
+- `ref-040`
+- `ref-047`
+- `ref-048`
+<!-- wiki-v2:evidence-end -->
+
+- [[Design of Ion-Implanted MOSFET's with Very Small Physical Dimensions]]
+- [[Cramming More Components onto Integrated Circuits]]
+- [[The Landscape of Parallel Computing Research - A View from Berkeley]]
+- [[Implications of Historical Trends in the Electrical Efficiency of Computing]]
+- [[Dark Silicon and the End of Multicore Scaling]]
+
+## 관련 항목
+
+- [[컴퓨팅 능력이란 무엇인가]] — 컴퓨팅 능력을 계산 가능성, 복잡도, 프로그래밍 가능성, 실현 성능, 확장성, 자원 효율, 신뢰 가능한 결과의 일곱 층위로 구분하고 측정 조건을 정리한 개념.
+- [[컴퓨팅 능력의 발달사]] — 기계 이전의 계산 인프라와 계산 가능성의 형식화에서 프로그래밍 가능성, 집적도·소자 축소, 수치 표준화, 메모리·전력 장벽, 병렬·분산 시스템과 도메인 특화로 이어진 컴퓨팅 능력의 발전을 분석한다.
+- [[Koomey의 법칙]] — 1946–2009년 컴퓨터 표본에서 최고 부하의 단위 에너지당 계산량이 평균 약 1.57년마다 배가했다는 경험적 역사 추세와 그 측정 범위·한계를 가리키는 후대의 이름.
+- [[다크 실리콘]] — 칩에 회로를 집적할 수는 있지만 전력·열·병렬성 제약 때문에 모든 영역을 동시에 유용하게 활성화할 수 없어 생기는 구현 자원과 활성 자원의 간극.

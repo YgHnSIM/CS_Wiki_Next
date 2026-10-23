@@ -1,0 +1,57 @@
+---
+schema_version: 3
+id: entity-1a2d36f59369083d
+kind: entity
+title: 찰스 W. 크루거
+aliases:
+  - Charles W. Krueger
+  - Charles Krueger
+  - C. W. Krueger
+summary: 소프트웨어 재사용을 추상화, 선택, 특수화, 통합의 문제로 정리한 컴퓨터 과학자.
+domains:
+  - software-engineering
+  - computer-history
+publication_visibility: public
+graph_visibility: public
+created: 2026-07-10
+updated: 2026-10-24
+evidence_ids:
+  - ref-004
+capability_layers:
+  - programmability
+history:
+  layer: software
+redirect_from:
+  - /entities/찰스-w-크루거/
+---
+
+## 개요
+
+[[찰스 W. 크루거]]는 1992년 조사 논문 [[Software Reuse]]를 통해 [[소프트웨어 재사용]] 연구를 추상화·선택·특수화·통합의 관점에서 정리한 컴퓨터 과학자다. 이 위키에서는 재사용이 코드 보관소의 문제가 아니라 사용자가 이해하고 찾고 변형하고 결합할 수 있는 표현 체계의 문제라는 관점을 설명할 때 연결한다.
+
+## 이 위키에서의 의미
+
+Krueger의 논의는 McIlroy의 컴포넌트 구상을 1990년대 재사용 연구의 분류 체계로 확장한다. 특히 인지적 거리 개념은 좋은 [[API]], [[라이브러리]], [[소프트웨어 컴포넌트]]가 내부 구현보다 높은 수준의 설명과 검색 가능성을 제공해야 하는 이유를 설명한다.
+
+## 관계
+
+| 관계 | 대상 | 설명 | 근거 |
+|---|---|---|---|
+| synthesizes | [[소프트웨어 재사용]] | 재사용 접근을 재사용물의 추상화·선택·특수화·통합 방식으로 비교하고, 인지적 거리를 활용 난이도의 기준으로 제시했다. | [[Software Reuse]] |
+
+## 출처
+
+<!-- wiki-v2:evidence-start -->
+### 근거 ID
+- `ref-004`
+<!-- wiki-v2:evidence-end -->
+
+- [[Software Reuse]]
+
+## 관련 항목
+
+- [[소프트웨어 재사용]] — 기존 소프트웨어 지식이나 산출물을 바탕으로 새 소프트웨어를 만드는 실천.
+- [[소프트웨어 컴포넌트]] — 다른 시스템에서 재사용할 수 있도록 경계, 명세, 변형 가능성, 품질 기준을 갖춘 소프트웨어 산출물.
+- [[API]] — 기능 제공자와 사용자 사이의 동작, 호출 규약, 비용, 전제 조건을 정리한 프로그래밍 인터페이스.
+- [[라이브러리]] — 검증된 재사용 코드 단위를 모아 공동체의 소프트웨어 자산으로 만든 체계.
+- [[소프트웨어 공학]] — 소프트웨어를 신뢰 가능하고 이해 가능하며 유지보수 가능한 구조로 만드는 공학적 실천.

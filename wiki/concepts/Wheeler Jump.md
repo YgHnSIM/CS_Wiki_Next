@@ -1,0 +1,99 @@
+---
+schema_version: 3
+id: concept-2397a193cf79979b
+kind: concept
+title: Wheeler Jump
+aliases:
+  - 휠러 점프
+  - Wheeler jump
+summary: 호출부 명령을 이용해 복귀 점프를 만들어내는 EDSAC의 초기 서브루틴 호출 기법.
+domains:
+  - computer-history
+  - software-engineering
+publication_visibility: public
+graph_visibility: public
+created: 2026-05-04
+updated: 2026-10-24
+evidence_ids:
+  - src-002
+  - src-003
+  - src-004
+  - src-005
+  - ref-011
+capability_layers:
+  - programmability
+history:
+  event:
+    start: 1949
+    basis: representative
+    evidence_id: src-002
+  note: EDSAC 초기 서브루틴 호출 관행이 형성된 1949년을 대표 시점으로 둔다.
+  layer: software
+redirect_from:
+  - /concepts/wheeler-jump/
+---
+
+## 개요
+
+[[Wheeler Jump]]는 [[데이비드 휠러]]가 [[EDSAC]] 환경에서 폐쇄형 [[서브루틴]]을 구현하기 위해 사용한 초기 호출 기법이다. 현대적인 `CALL`/`RET` 명령이나 호출 [[스택]]이 없던 상황에서 서브루틴이 실행 후 호출 지점 다음으로 돌아갈 수 있도록 [[복귀 주소]]를 명령어 형태로 만들어 넣었다.
+
+## 기본 구조
+
+호출부가 `m`번지에 있고 서브루틴이 `n`번지에서 시작한다면 기본 패턴은 다음과 같다.
+
+```text
+m:     A m F
+m+1:   G n F
+m+2:   ...
+```
+
+첫 명령은 자기 자신의 명령어 값을 accumulator에 넣고 두 번째 명령은 서브루틴으로 점프한다. 서브루틴 시작부는 여기에 특수 상수를 더해 다음과 같은 복귀 점프를 만든다.
+
+```text
+A m F + Memory[3] = E (m+2) F
+```
+
+이렇게 만들어진 명령은 서브루틴 끝에 저장되고 마지막에 실행되어 호출 지점 다음 명령으로 복귀한다.
+
+## 의미와 한계
+
+Wheeler Jump는 같은 서브루틴을 여러 위치에서 호출할 수 있게 해 모듈화와 재사용의 기반을 마련했다. [[라이브러리]]와 서브루틴 카탈로그가 의미를 갖기 위해서는 루틴이 특정 호출 위치에만 묶이지 않아야 했기 때문이다.
+
+한계도 뚜렷했다. 복귀 점프를 저장하는 위치가 하나뿐이면 중첩 호출이나 재귀 호출에서 복귀 정보가 덮어써질 수 있다. 이 문제는 이후 [[스택]] 기반 호출 구조가 중요해지는 이유를 설명한다.
+
+## goto와의 구분
+
+Wheeler Jump는 기계 수준에서 [[제어 흐름]]을 구현하기 위한 호출 기법이다. 이에 비해 [[GOTO 문]]은 고급 언어의 표면에서 프로그래머가 임의 라벨로 실행을 이동시키는 제어문이다. 둘 다 점프를 사용하지만, Wheeler Jump의 목적은 [[복귀 주소]]를 보존해 루틴을 재사용하는 데 있고, `goto` 논쟁의 초점은 프로그램 텍스트와 실행 과정 사이의 대응을 사람이 추적할 수 있느냐에 있다.
+
+이 구분은 [[goto와 점프에서 구조적 프로그래밍으로]]에서 더 넓게 다룬다.
+
+## 관계
+
+| 관계 | 대상 | 설명 | 근거 |
+|---|---|---|---|
+| implements | [[서브루틴]] | 호출부 명령을 복귀 점프로 고쳐 폐쇄형 호출을 구현한다. | [[폐쇄형 서브루틴과 Wheeler Jump]] |
+| implements | [[자기 수정 코드]] | 저장된 명령을 실행 중에 고쳐 복귀 주소를 심는다. | [[서브루틴과 스택(Stack)의 원리]] |
+
+## 출처
+<!-- wiki-v2:evidence-start -->
+### 근거 ID
+- `src-002`
+- `src-003`
+- `src-004`
+- `src-005`
+- `ref-011`
+<!-- wiki-v2:evidence-end -->
+
+- [[초기 소프트웨어의 탄생]]
+- [[EDSAC과 Initial Orders]]
+- [[서브루틴과 스택(Stack)의 원리]]
+- [[폐쇄형 서브루틴과 Wheeler Jump]]
+- [[A Case against the GO TO Statement]]
+
+## 관련 항목
+
+- [[데이비드 휠러]] — Wheeler Jump와 폐쇄형 서브루틴을 통해 복귀 주소 관리와 모듈화의 초기 형태를 정립한 EDSAC 팀 인물.
+- [[서브루틴]] — 호출 후 원래 위치로 돌아오는 재사용 가능한 코드 단위.
+- [[복귀 주소]] — 서브루틴이나 함수가 끝난 뒤 실행을 재개해야 할 위치를 가리키는 주소.
+- [[자기 수정 코드]] — 프로그램이 실행 중에 자기 명령어나 다른 코드 영역의 명령을 바꾸는 방식.
+- [[스택]] — 복귀 주소와 실행 상태를 LIFO 순서로 저장해 중첩 호출과 재귀를 가능하게 하는 구조.

@@ -1,0 +1,104 @@
+---
+schema_version: 3
+id: ref-007
+kind: reference
+title: The Manchester Small Scale Experimental Machine - The Baby
+aliases:
+  - Manchester Baby source
+  - SSEM source
+summary: Manchester Baby의 저장 프로그램 실행, Williams-Kilburn tube, EDSAC과의 최초성 기준 차이를 정리한 참고 자료.
+domains:
+  - computer-history
+  - computer-architecture
+publication_visibility: public
+graph_visibility: public
+created: 2026-07-10
+updated: 2026-10-24
+evidence_ids: []
+capability_layers: []
+history:
+  event:
+    start: 1948
+    basis: publication-process
+    evidence_id: null
+  note: 자료가 설명하는 Manchester Baby의 최초 저장 프로그램 실행은 1948년 6월 21일이다.
+  layer: machine
+redirect_from:
+  - /references/the-manchester-small-scale-experimental-machine-the-baby/
+  - /sources/the-manchester-small-scale-experimental-machine-the-baby/
+origin: external
+works:
+  primary:
+    - citation: University of Manchester Computer50
+      genre: other
+      identifiers: []
+      edition: null
+  supporting:
+    - citation: University of Cambridge historical account
+      genre: other
+      identifiers: []
+      edition: null
+    - citation: The National Museum of Computing EDSAC page
+      genre: official-record
+      identifiers: []
+      edition: null
+access:
+  - kind: url
+    role: canonical
+    url: https://curation.cs.manchester.ac.uk/computer50/www.computer50.org/mark1/new.baby.html
+    retrieved: 2026-07-10
+    version: null
+  - kind: url
+    role: mirror
+    url: https://www.cst.cam.ac.uk/news/70-years-first-computer-designed-practical-everyday-use
+    retrieved: 2026-07-10
+    version: null
+  - kind: url
+    role: mirror
+    url: https://www.tnmoc.org/edsac
+    retrieved: 2026-07-10
+    version: null
+  - kind: url
+    role: archive
+    url: https://web.archive.org/web/20260918043708/https://curation.cs.manchester.ac.uk/computer50/www.computer50.org/mark1/new.baby.html
+    retrieved: 2026-10-24
+    version: Internet Archive snapshot 2026-09-18
+---
+
+## 개요
+
+[[The Manchester Small Scale Experimental Machine - The Baby]]는 University of Manchester의 Computer50 자료를 바탕으로 [[Manchester Baby]]를 정리한 참고 자료다. Baby는 1948년 6월 21일 저장된 프로그램을 전자적으로 실행한 실험 기계로, Williams-Kilburn tube 메모리의 가능성과 저장 프로그램 개념을 검증하기 위해 만들어졌다.
+
+이 자료의 핵심은 Baby가 저장 프로그램 개념을 실제 실행으로 입증했다는 점이다. Baby의 주기억 장치는 수치 데이터뿐 아니라 프로그램 명령도 담았고, 프로그램을 바꾸기 위해 전자 회로를 다시 배선하는 대신 기억장치의 일부를 다시 설정할 수 있었다.
+
+## 주요 인사이트
+
+- Baby는 저장 프로그램을 실행한 최초의 전자식 디지털 컴퓨터로 다뤄진다.
+- 목적은 일반 사용자에게 계산 서비스를 제공하는 완성형 기계가 아니라, Williams-Kilburn tube와 저장 프로그램 개념을 시험하는 실험 장치였다.
+- 첫 성공 프로그램은 1948년 6월 21일 실행되었고, 이후 더 현실적인 Manchester Mark 1 개발로 이어졌다.
+- Baby의 의미는 "실용적 범용 컴퓨팅 서비스"보다 "저장 프로그램 원리의 실행 증명"에 있다.
+- 이 구분은 [[EDSAC]]의 실용적 최초성과 충돌하지 않고, 서로 다른 기준의 최초성을 분리하게 해준다.
+
+## 위키 반영
+
+이 참고 자료는 [[Manchester Baby]], [[저장 프로그램 개념의 여러 기원]], [[EDSAC은 무엇의 최초인가]]에 반영한다. 특히 Baby와 EDSAC의 차이는 실험적 원리 증명과 실용적 계산 서비스의 차이로 정리한다.
+
+## 출처
+
+<!-- wiki-v2:evidence-start -->
+### 근거 ID
+- 없음
+<!-- wiki-v2:evidence-end -->
+
+- University of Manchester Computer50, [The Manchester Small Scale Experimental Machine -- The Baby](https://curation.cs.manchester.ac.uk/computer50/www.computer50.org/mark1/new.baby.html)
+- University of Cambridge Department of Computer Science and Technology, [70 years since the first computer designed for practical everyday use](https://www.cst.cam.ac.uk/news/70-years-first-computer-designed-practical-everyday-use)
+- The National Museum of Computing, [EDSAC - Electronic Delay Storage Automatic Calculator](https://www.tnmoc.org/edsac)
+
+## 관련 항목
+
+- [[Manchester Baby]]
+- [[저장 프로그램 컴퓨터]]
+- [[EDSAC]]
+- [[EDVAC]]
+- [[저장 프로그램 개념의 여러 기원]]
+- [[EDSAC은 무엇의 최초인가]]

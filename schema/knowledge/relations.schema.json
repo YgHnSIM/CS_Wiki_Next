@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cs-wiki.local/schema/knowledge/relations.schema.json",
+  "title": "CS Wiki relations v1",
+  "description": "Page frontmatter relations. Canonical knowledge edges for schema v3. The generator renders the human-readable relations table from this array.",
+  "type": "array",
+  "items": { "$ref": "#/$defs/relation" },
+  "$defs": {
+    "key": {
+      "type": "string",
+      "pattern": "^(person|organization|concept|work|event|place|artifact|analysis|document|source):[a-z0-9][a-z0-9-]*$"
+    },
+    "sourceId": {
+      "type": "string",
+      "pattern": "^(?:src|ref)-[0-9]{3,}$"
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source"],
+      "properties": {
+        "source": { "$ref": "#/$defs/sourceId" },
+        "locator": { "type": "string", "maxLength": 200 },
+        "quote": { "type": "string", "maxLength": 1000 },
+        "snapshot": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" }
+      }
+    },
+    "relation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["predicate", "target"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^stmt:[a-z0-9][a-z0-9:/-]*$"
+        },
+        "subject": { "$ref": "#/$defs/key" },
+        "predicate": {
+          "enum": [
+            "broader",
+            "narrower",
+            "prerequisite_for",
+            "enables",
+            "constrains",
+            "measures",
+            "implements",
+            "exemplifies",
+            "precedes",
+            "responds_to",
+            "contradicts",
+            "synthesizes"
+          ]
+        },
+        "target": { "$ref": "#/$defs/key" },
+        "note": { "type": "string", "maxLength": 300 },
+        "evidence": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/evidence" },
+          "uniqueItems": true
+        },
+        "confidence": {
+          "enum": ["established", "probable", "disputed", "unknown"]
+        },
+        "valid_from": {
+          "type": ["integer", "null"],
+          "minimum": -9999,
+          "maximum": 9999
+        },
+        "valid_to": {
+          "type": ["integer", "null"],
+          "minimum": -9999,
+          "maximum": 9999
+        }
+      }
+    }
+  }
+}

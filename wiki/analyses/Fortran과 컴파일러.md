@@ -1,0 +1,100 @@
+---
+schema_version: 3
+id: analysis-866096c7a9c8c715
+kind: analysis
+title: Fortran과 컴파일러
+aliases:
+  - FORTRAN과 컴파일러
+  - Fortran compiler
+  - Fortran and compiler
+summary: Fortran을 고급 언어와 효율적 컴파일러가 결합된 시스템으로 보고, 소스 프로그램에서 목적 프로그램으로의 전환을 분석.
+domains:
+  - programming-languages
+  - software-engineering
+  - computer-history
+publication_visibility: public
+graph_visibility: public
+created: 2026-07-10
+updated: 2026-10-24
+evidence_ids:
+  - ref-001
+  - ref-015
+  - ref-016
+  - ref-017
+  - ref-050
+  - ref-051
+capability_layers:
+  - programmability
+history:
+  layer: software
+redirect_from:
+  - /analyses/fortran과-컴파일러/
+---
+
+## 핵심 주장
+
+[[Fortran과 컴파일러]]는 Fortran의 역사적 의미를 고급 [[프로그래밍 언어]] 하나의 등장보다 넓게 본다. Fortran은 사람이 쓰는 수학적 절차를 [[소스 프로그램]]으로 만들고, [[컴파일러]]가 이를 [[IBM 704]]의 [[목적 프로그램]]으로 바꾸는 체계를 실용화했다. 핵심은 "쓰기 쉬운 언어"와 "충분히 효율적인 번역기"가 동시에 필요했다는 점이다.
+
+## 전환 구조
+
+| 층위 | Fortran 이전의 부담 | Fortran의 전환 |
+|---|---|---|
+| 표현 | 기계어·어셈블리 언어 중심 | 수학식, 배열, 함수, 반복으로 표현 |
+| 번역 | 사람이 기계 명령과 주소를 직접 관리 | 컴파일러가 소스 프로그램을 목적 프로그램으로 변환 |
+| 최적화 | 숙련 프로그래머가 손으로 수행 | 번역기가 식, 반복, 인덱스 사용을 분석 |
+| 디버깅 | 기계 상태와 명령 수준 추적 | 소스 문장과 출력 결과 중심의 오류 수정 |
+| 신뢰 | 고급 표기는 느릴 것이라는 의심 | 손코딩에 가까운 효율을 목표로 설계 |
+
+## 분석
+
+초기 자동 프로그래밍은 주소 보정, 서브루틴 조립, 부동 주소 처리처럼 기계어 프로그래밍의 사무적 부담을 줄이는 방향으로 시작했다. [[The Preparation of Programs for an Electronic Digital Computer]]에서 보이는 [[자동 프로그래밍]]은 이 흐름의 초기 단계다. Fortran은 이 흐름을 더 높은 수준으로 끌어올려, 사용자가 문제를 수학에 가까운 표기로 쓰고 시스템이 실제 기계 프로그램을 만들게 했다.
+
+1956년 IBM 704 매뉴얼은 FORTRAN을 704에서 실행되는 프로그램으로 설명한다. 이 프로그램은 FORTRAN 언어 소스를 받아 704 기계어 목적 프로그램을 만든다. 이 정의는 현대 컴파일러 개념의 핵심과 맞닿아 있다. 소스 언어, 목적 언어, 번역기, 실행 대상 기계가 분명하게 구분되기 때문이다.
+
+1957년 논문은 컴파일러가 단순한 문장 변환기가 아니었음을 보여준다. 번역기는 산술식뿐 아니라 `DO` 반복, 첨자 변수, 입출력, FORMAT, 제어 흐름, 인덱스 레지스터 제약을 처리했다. 즉 Fortran 컴파일러의 어려움은 수학식을 기계 명령으로 옮기는 일보다, 사람이 숨기고 싶어 하는 "bookkeeping"을 기계가 대신 처리하게 만드는 데 있었다.
+
+따라서 Fortran의 성공은 [[컴파일러 최적화]]와 분리할 수 없다. 고급 언어가 편하더라도 목적 프로그램이 지나치게 느리면 과학·공학 계산 사용자에게 받아들여지기 어렵다. Fortran은 컴파일러가 기계의 세부 제약을 흡수하면서도 실행 효율을 유지할 수 있음을 보여 주어, 고급 언어의 실용성을 설득했다.
+
+## 효율성에서 수치 계약으로
+
+초기 Fortran의 핵심 과제는 고급 표기를 손코딩에 가까운 속도로 번역하는 것이었다. 그러나 수치 프로그램에서 효율적인 목적 코드가 같은 계산을 뜻하려면 연산의 수치 의미도 보존해야 한다. [[What Every Computer Scientist Should Know About Floating-Point Arithmetic]]은 반올림과 중간 정밀도, 연산 재배열이 결과에 관여함을 보여주고, [[IEEE 754-2019 Standard for Floating-Point Arithmetic]]은 지정된 산술 조건의 공통 기반을 제공한다.
+
+이 역사적 확장은 컴파일러의 약속을 “빠른 코드 생성”에서 “요구한 [[부동소수점 정확성|정확성 계약]] 안에서 빠른 코드 생성”으로 바꾼다. 비트 단위 결과를 유지해야 하는지, 허용 오차 안에서 재배열을 허용하는지는 언어·옵션과 과업이 정해야 한다. [[더 빠른 계산은 같은 답을 내는가]]는 이 조건을 현대 성능 측정과 연결한다.
+
+## 의미
+
+Fortran 이후 프로그래밍의 중심은 사람이 기계 명령을 직접 나열하는 일에서, 사람이 읽을 수 있는 프로그램 텍스트와 이를 처리하는 도구 체계를 함께 설계하는 일로 옮겨간다. 이 변화는 [[어셈블러]], [[링커]], 컴파일러, 빌드 도구, IDE, 정적 분석기까지 이어지는 소프트웨어 도구 사슬의 출발점으로 볼 수 있다.
+
+## 관계
+
+| 관계 | 대상 | 설명 | 근거 |
+|---|---|---|---|
+| synthesizes | [[컴파일러 최적화]] | 수학적 소스 표기를 IBM 704 목적 프로그램으로 바꾸면서 제어 흐름과 기계 자원을 분석해 실행 효율을 유지하려 한 컴파일러의 역할을 종합한다. | [[The FORTRAN Automatic Coding System]] |
+| synthesizes | [[프로그래밍 가능성]] | 문제 영역의 표기와 효율적인 번역기를 결합해 더 많은 사용자가 기계의 계산 능력에 접근하게 한 전환을 종합한다. | [[FORTRAN Automatic Coding System for the IBM 704 EDPM]], [[The FORTRAN Automatic Coding System]] |
+
+## 출처
+
+<!-- wiki-v2:evidence-start -->
+### 근거 ID
+- `ref-001`
+- `ref-015`
+- `ref-016`
+- `ref-017`
+- `ref-050`
+- `ref-051`
+<!-- wiki-v2:evidence-end -->
+
+- [[The Preparation of Programs for an Electronic Digital Computer]]
+- [[FORTRAN Automatic Coding System for the IBM 704 EDPM]]
+- [[The FORTRAN Automatic Coding System]]
+- [[The History of FORTRAN I, II, and III]]
+- [[What Every Computer Scientist Should Know About Floating-Point Arithmetic]]
+- [[IEEE 754-2019 Standard for Floating-Point Arithmetic]]
+
+## 관련 항목
+
+- [[Fortran]] — 수학적 수식과 과학 계산 표현을 IBM 704 목적 프로그램으로 번역하려 한 초기 고급 프로그래밍 언어.
+- [[존 배커스]] — IBM Fortran 프로젝트를 이끌며 고급 언어와 효율적 컴파일러의 결합을 실용화한 컴퓨터 과학자.
+- [[IBM 704]] — 초기 FORTRAN 시스템의 대상 기계로, Fortran 컴파일러가 704 기계어 목적 프로그램을 생성한 실행 환경.
+- [[컴파일러]] — 소스 프로그램을 기계가 실행할 수 있는 목적 프로그램이나 낮은 수준 표현으로 변환하는 프로그램.
+- [[소스 프로그램]] — 사람이 작성하고 컴파일러가 입력으로 받는 프로그램 표현.

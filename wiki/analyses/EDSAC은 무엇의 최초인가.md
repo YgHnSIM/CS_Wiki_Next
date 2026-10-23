@@ -1,0 +1,82 @@
+---
+schema_version: 3
+id: analysis-35a2e99b2b062bf6
+kind: analysis
+title: EDSAC은 무엇의 최초인가
+aliases:
+  - EDSAC 최초성
+  - EDSAC first
+  - first practical stored-program computer
+summary: EDSAC의 최초성을 절대적 최초가 아니라 실용적 범용 저장 프로그램 컴퓨터 기준으로 정리한 분석.
+domains:
+  - computer-history
+  - computer-architecture
+publication_visibility: public
+graph_visibility: public
+created: 2026-07-10
+updated: 2026-10-24
+evidence_ids:
+  - ref-006
+  - ref-007
+  - ref-001
+capability_layers:
+  - programmability
+history:
+  layer: machine
+redirect_from:
+  - /analyses/edsac은-무엇의-최초인가/
+---
+
+## 핵심 주장
+
+[[EDSAC은 무엇의 최초인가]]는 [[EDSAC]]의 역사적 지위를 절대적 "최초 컴퓨터"가 아니라 "실용적 저장 프로그램 컴퓨터"로 정리하는 분석이다. [[Manchester Baby]]가 먼저 저장 프로그램을 실행했고 [[EDVAC]]이 먼저 현대적 저장 프로그램 컴퓨터로 설계되었다면, EDSAC의 강점은 연구자들이 실제 계산에 반복적으로 사용할 수 있는 안정적인 서비스와 소프트웨어 생태계를 제공했다는 데 있다.
+
+## 최초성의 기준
+
+| 표현 | 더 적합한 사례 | 이유 |
+|---|---|---|
+| 처음 설계된 현대적 전자식 저장 프로그램 컴퓨터 | [[EDVAC]] | EDVAC 보고서와 Moore School 논의가 저장 프로그램 구조를 체계화했다. |
+| 처음 저장 프로그램을 실행한 전자식 디지털 컴퓨터 | [[Manchester Baby]] | 1948년 6월 21일 저장된 프로그램을 실행했다. |
+| 처음 실용적으로 운영된 범용 저장 프로그램 전자식 컴퓨터 | [[EDSAC]] | 1949년 5월 6일 첫 프로그램 실행 뒤 연구 계산 서비스로 사용되었다. |
+
+## EDSAC의 실제 의미
+
+EDSAC은 저장 프로그램 개념을 일상적인 계산 도구로 바꾸었다. Cambridge 자료는 EDSAC이 1949년 5월 6일 첫 성공 프로그램을 실행했으며 Baby보다 늦었지만 실험 장치가 아니라 실용적인 과학 계산 도구였다고 설명한다. The National Museum of Computing도 EDSAC을 최초의 실용적 범용 저장 프로그램 전자식 컴퓨터로 정리한다.
+
+이 실용성은 하드웨어의 안정성만을 뜻하지 않는다. EDSAC에서는 [[Initial Orders]]가 프로그램 입력과 적재를 담당했고 [[디버깅]] 루틴이 실행 상태 관찰을 도왔으며 [[서브루틴]]과 [[라이브러리]]가 재사용 가능한 소프트웨어 자산으로 축적되었다. 따라서 EDSAC의 최초성은 "컴퓨터를 한 번 작동시켰다"기보다 "저장 프로그램 컴퓨터를 지속적으로 사용하는 환경을 만들었다"는 데 가깝다.
+
+## 표현 원칙
+
+EDSAC을 설명할 때는 다음 표현을 구분해 쓰는 것이 좋다.
+
+- 피할 표현: "세계 최초의 컴퓨터", "최초의 저장 프로그램 컴퓨터"처럼 기준이 빠진 절대 표현.
+- 권장 표현: "최초의 실용적 범용 저장 프로그램 전자식 컴퓨터", "저장 프로그램 방식 위에서 초기 소프트웨어 계층이 선명하게 드러난 사례".
+
+이 구분은 EDSAC의 중요성을 낮추지 않는다. 오히려 [[저장 프로그램 개념의 여러 기원]] 안에서 EDSAC의 고유한 의미를 더 정확히 드러낸다.
+
+## 관계
+
+| 관계 | 대상 | 설명 | 근거 |
+|---|---|---|---|
+| synthesizes | [[EDSAC]] | 설계·최초 실행·실용 운영의 최초성 기준을 구분해 평가한다. | [[The Manchester Small Scale Experimental Machine - The Baby]] |
+| synthesizes | [[저장 프로그램 컴퓨터]] | 한 종류의 최초로 여러 기계를 합치지 말 것을 주장한다. | [[First Draft of a Report on the EDVAC]] |
+
+## 출처
+<!-- wiki-v2:evidence-start -->
+### 근거 ID
+- `ref-006`
+- `ref-007`
+- `ref-001`
+<!-- wiki-v2:evidence-end -->
+
+- [[First Draft of a Report on the EDVAC]]
+- [[The Manchester Small Scale Experimental Machine - The Baby]]
+
+- [[The Preparation of Programs for an Electronic Digital Computer]]
+## 관련 항목
+
+- [[EDSAC]] — 초기 저장 프로그램 컴퓨터로, 소프트웨어의 입력·적재·디버깅·재사용 계층이 선명하게 드러난 사례.
+- [[저장 프로그램 컴퓨터]] — 프로그램 명령을 데이터처럼 메모리에 저장하고 실행하는 컴퓨터 구조.
+- [[EDVAC]] — 저장 프로그램 컴퓨터의 논리 구조를 문서화하고 후속 기계 설계에 영향을 준 초기 전자식 컴퓨터 설계.
+- [[Manchester Baby]] — 1948년 저장된 프로그램을 전자식 디지털 컴퓨터에서 실제로 실행한 실험 장치.
+- [[폰 노이만 구조]] — 명령과 데이터를 같은 메모리 체계에 두고 제어 장치가 명령을 가져와 실행하는 컴퓨터 구조.

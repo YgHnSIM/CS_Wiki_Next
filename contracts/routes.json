@@ -1,0 +1,4640 @@
+{
+  "schema_version": 1,
+  "source_commit": "3b30fec",
+  "page_count": 440,
+  "redirect_count": 555,
+  "pages": [
+    {
+      "id": "analysis-analytic-geometry-to-pixels-and-maps",
+      "url": "/docs/analysis-analytic-geometry-to-pixels-and-maps/",
+      "kind": "analysis",
+      "publicationVisibility": "unlisted",
+      "legacyUrls": [
+        "/analyses/17세기-해석기하학은-어떻게-디스플레이-픽셀과-지도가-되었는가/"
+      ]
+    },
+    {
+      "id": "concept-availability-recovery",
+      "url": "/docs/concept-availability-recovery/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/가용성과-복구/"
+      ]
+    },
+    {
+      "id": "analysis-llm-slo-resource-cost",
+      "url": "/docs/analysis-llm-slo-resource-cost/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/같은-slo의-llm-서비스는-무엇을-비용으로-세어야-하는가/"
+      ]
+    },
+    {
+      "id": "concept-developer-productivity",
+      "url": "/docs/concept-developer-productivity/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/개발자-생산성/"
+      ]
+    },
+    {
+      "id": "analysis-exponent-notation-delay",
+      "url": "/docs/analysis-exponent-notation-delay/",
+      "kind": "analysis",
+      "publicationVisibility": "unlisted",
+      "legacyUrls": [
+        "/analyses/거듭제곱-법칙을-알고도-지수-기호는-왜-늦게-생겼는가/"
+      ]
+    },
+    {
+      "id": "calculation-checking",
+      "url": "/docs/calculation-checking/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/검산/"
+      ]
+    },
+    {
+      "id": "concept-verification-labor",
+      "url": "/docs/concept-verification-labor/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/검증-노동/"
+      ]
+    },
+    {
+      "id": "concept-fault-tolerance",
+      "url": "/docs/concept-fault-tolerance/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/결함-허용/"
+      ]
+    },
+    {
+      "id": "concept-01f775b8a307802f",
+      "url": "/docs/concept-01f775b8a307802f/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/계산-가능성/"
+      ]
+    },
+    {
+      "id": "stored-results-to-executable-procedures",
+      "url": "/docs/stored-results-to-executable-procedures/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/계산-결과에서-실행-가능한-절차로/"
+      ]
+    },
+    {
+      "id": "concept-computational-complexity",
+      "url": "/docs/concept-computational-complexity/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/계산-복잡도/"
+      ]
+    },
+    {
+      "id": "concept-computation-communication-overlap",
+      "url": "/docs/concept-computation-communication-overlap/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/계산-통신-중첩/"
+      ]
+    },
+    {
+      "id": "analysis-7058e090e0383cd3",
+      "url": "/docs/analysis-7058e090e0383cd3/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/계산기와-컴퓨터의-차이/"
+      ]
+    },
+    {
+      "id": "analysis-computation-invention-or-natural-phenomenon",
+      "url": "/docs/analysis-computation-invention-or-natural-phenomenon/",
+      "kind": "analysis",
+      "publicationVisibility": "unlisted",
+      "legacyUrls": [
+        "/analyses/계산은-발명인가-자연-현상인가/"
+      ]
+    },
+    {
+      "id": "concept-computational-artificial-life",
+      "url": "/docs/concept-computational-artificial-life/",
+      "kind": "concept",
+      "publicationVisibility": "unlisted",
+      "legacyUrls": [
+        "/concepts/계산적-인공생명/"
+      ]
+    },
+    {
+      "id": "entity-gottfried-wilhelm-leibniz",
+      "url": "/docs/entity-gottfried-wilhelm-leibniz/",
+      "kind": "entity",
+      "publicationVisibility": "unlisted",
+      "legacyUrls": [
+        "/entities/고트프리트-빌헬름-라이프니츠/"
+      ]
+    },
+    {
+      "id": "concept-symbiogenesis",
+      "url": "/docs/concept-symbiogenesis/",
+      "kind": "concept",
+      "publicationVisibility": "unlisted",
+      "legacyUrls": [
+        "/concepts/공생발생/"
+      ]
+    },
+    {
+      "id": "concept-1c13e72137b697ae",
+      "url": "/docs/concept-1c13e72137b697ae/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/구조적-프로그래밍/"
+      ]
+    },
+    {
+      "id": "concept-8e6aa351d4e32f97",
+      "url": "/docs/concept-8e6aa351d4e32f97/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/구조화-프로그램-정리/"
+      ]
+    },
+    {
+      "id": "concept-2913946302b96786",
+      "url": "/docs/concept-2913946302b96786/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/그래핌-클러스터/"
+      ]
+    },
+    {
+      "id": "entity-d28fe0553930f907",
+      "url": "/docs/entity-d28fe0553930f907/",
+      "kind": "entity",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/entities/그레이스-호퍼/"
+      ]
+    },
+    {
+      "id": "analysis-f5a313683050649e",
+      "url": "/docs/analysis-f5a313683050649e/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/기계가-계산한다는-말의-이론적-의미/"
+      ]
+    },
+    {
+      "id": "analysis-functionalism-vs-chinese-room",
+      "url": "/docs/analysis-functionalism-vs-chinese-room/",
+      "kind": "analysis",
+      "publicationVisibility": "unlisted",
+      "legacyUrls": [
+        "/analyses/기능주의와-중국어-방은-어디서-갈라지는가/"
+      ]
+    },
+    {
+      "id": "concept-substrate-independence-functionalism",
+      "url": "/docs/concept-substrate-independence-functionalism/",
+      "kind": "concept",
+      "publicationVisibility": "unlisted",
+      "legacyUrls": [
+        "/concepts/기질-독립성과-기능주의/"
+      ]
+    },
+    {
+      "id": "analysis-geometry-to-computation-descartes-vs-fermat",
+      "url": "/docs/analysis-geometry-to-computation-descartes-vs-fermat/",
+      "kind": "analysis",
+      "publicationVisibility": "unlisted",
+      "legacyUrls": [
+        "/analyses/기하는-어떻게-계산이-되었고-왜-데카르트의-표기가-페르마를-이겼는가/"
+      ]
+    },
+    {
+      "id": "src-010",
+      "url": "/docs/src-010/",
+      "kind": "source",
+      "publicationVisibility": "unlisted",
+      "legacyUrls": [
+        "/sources/기하학과-대수학의-위대한-번역/"
+      ]
+    },
+    {
+      "id": "concept-c7fabfe3dff4e5d5",
+      "url": "/docs/concept-c7fabfe3dff4e5d5/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/기호-조작/"
+      ]
+    },
+    {
+      "id": "analysis-symbols-from-aid-to-computation-engine",
+      "url": "/docs/analysis-symbols-from-aid-to-computation-engine/",
+      "kind": "analysis",
+      "publicationVisibility": "unlisted",
+      "legacyUrls": [
+        "/analyses/기호는-어떻게-생각의-보조-도구에서-계산-엔진이-되었는가/"
+      ]
+    },
+    {
+      "id": "concept-f57f54a4895add44",
+      "url": "/docs/concept-f57f54a4895add44/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/꼬리-지연-시간/"
+      ]
+    },
+    {
+      "id": "analysis-low-bit-llm-inference",
+      "url": "/docs/analysis-low-bit-llm-inference/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/낮은-비트는-왜-llm-추론-속도를-보장하지-않는가/"
+      ]
+    },
+    {
+      "id": "analysis-operational-energy-sustainable-computing",
+      "url": "/docs/analysis-operational-energy-sustainable-computing/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/낮은-운영-에너지는-지속-가능한-컴퓨팅을-보장하는가/"
+      ]
+    },
+    {
+      "id": "analysis-low-precision-ai-result-contract",
+      "url": "/docs/analysis-low-precision-ai-result-contract/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/낮은-정밀도는-ai의-컴퓨팅-능력을-어떻게-바꾸는가/"
+      ]
+    },
+    {
+      "id": "concept-f019ffbfafa82d67",
+      "url": "/docs/concept-f019ffbfafa82d67/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/논리-게이트/"
+      ]
+    },
+    {
+      "id": "analysis-0c7e244ee605320d",
+      "url": "/docs/analysis-0c7e244ee605320d/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/논리-회로와-이진-표현/"
+      ]
+    },
+    {
+      "id": "concept-7fcb10ccbdb06070",
+      "url": "/docs/concept-7fcb10ccbdb06070/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/다크-실리콘/"
+      ]
+    },
+    {
+      "id": "concept-polynomial-time-reduction",
+      "url": "/docs/concept-polynomial-time-reduction/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/다항-시간-환원/"
+      ]
+    },
+    {
+      "id": "concept-723508cf4e8d30ee",
+      "url": "/docs/concept-723508cf4e8d30ee/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/단계적-정제/"
+      ]
+    },
+    {
+      "id": "concept-unit-segment-dimension-reduction",
+      "url": "/docs/concept-unit-segment-dimension-reduction/",
+      "kind": "concept",
+      "publicationVisibility": "unlisted",
+      "legacyUrls": [
+        "/concepts/단위-선분과-차원-환원/"
+      ]
+    },
+    {
+      "id": "concept-queueing-load-control",
+      "url": "/docs/concept-queueing-load-control/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/대기열과-부하-제어/"
+      ]
+    },
+    {
+      "id": "analysis-8f48231deb7289cb",
+      "url": "/docs/analysis-8f48231deb7289cb/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/더-빠른-계산은-같은-답을-내는가/"
+      ]
+    },
+    {
+      "id": "analysis-2b56fedc2ec5e743",
+      "url": "/docs/analysis-2b56fedc2ec5e743/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/더-빠른-프로세서는-왜-더-빠른-프로그램을-보장하지-않는가/"
+      ]
+    },
+    {
+      "id": "analysis-hardware-vs-algorithmic-improvement",
+      "url": "/docs/analysis-hardware-vs-algorithmic-improvement/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/더-빠른-하드웨어는-더-나은-알고리즘을-대신할-수-있는가/"
+      ]
+    },
+    {
+      "id": "entity-11912d3c997bcb12",
+      "url": "/docs/entity-11912d3c997bcb12/",
+      "kind": "entity",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/entities/더글러스-매킬로이/"
+      ]
+    },
+    {
+      "id": "entity-3e83a021b00264fc",
+      "url": "/docs/entity-3e83a021b00264fc/",
+      "kind": "entity",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/entities/데니스-리치/"
+      ]
+    },
+    {
+      "id": "entity-7de052ed12219bf9",
+      "url": "/docs/entity-7de052ed12219bf9/",
+      "kind": "entity",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/entities/데이비드-파나스/"
+      ]
+    },
+    {
+      "id": "entity-e8a9bb25328ec94e",
+      "url": "/docs/entity-e8a9bb25328ec94e/",
+      "kind": "entity",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/entities/데이비드-휠러/"
+      ]
+    },
+    {
+      "id": "concept-93fca2ee9dac9fb6",
+      "url": "/docs/concept-93fca2ee9dac9fb6/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/데이터-표현/"
+      ]
+    },
+    {
+      "id": "src-006",
+      "url": "/docs/src-006/",
+      "kind": "source",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/sources/데이터-표현과-인코딩/"
+      ]
+    },
+    {
+      "id": "entity-9452931b4cae505b",
+      "url": "/docs/entity-9452931b4cae505b/",
+      "kind": "entity",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/entities/도널드-커누스/"
+      ]
+    },
+    {
+      "id": "concept-dc2142ecaccdc1e9",
+      "url": "/docs/concept-dc2142ecaccdc1e9/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/도메인-특화-가속기/"
+      ]
+    },
+    {
+      "id": "concept-concurrency",
+      "url": "/docs/concept-concurrency/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/동시성/"
+      ]
+    },
+    {
+      "id": "concept-cb68fc615e46376e",
+      "url": "/docs/concept-cb68fc615e46376e/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/동형이의-문자/"
+      ]
+    },
+    {
+      "id": "concept-a1be87c0f839094f",
+      "url": "/docs/concept-a1be87c0f839094f/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/디버깅/"
+      ]
+    },
+    {
+      "id": "concept-464cd2bb0d306cc3",
+      "url": "/docs/concept-464cd2bb0d306cc3/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/라이브러리/"
+      ]
+    },
+    {
+      "id": "concept-16d053e669459261",
+      "url": "/docs/concept-16d053e669459261/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/라이브러리-카탈로그/"
+      ]
+    },
+    {
+      "id": "concept-landauer-principle",
+      "url": "/docs/concept-landauer-principle/",
+      "kind": "concept",
+      "publicationVisibility": "unlisted",
+      "legacyUrls": [
+        "/concepts/란다우어-원리/"
+      ]
+    },
+    {
+      "id": "concept-941343176ad7e60c",
+      "url": "/docs/concept-941343176ad7e60c/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/로더/"
+      ]
+    },
+    {
+      "id": "analysis-local-interface-remote-state",
+      "url": "/docs/analysis-local-interface-remote-state/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/로컬-호출과-파일은-원격-상태가-될-때-무엇을-잃는가/"
+      ]
+    },
+    {
+      "id": "concept-littles-law",
+      "url": "/docs/concept-littles-law/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/리틀의-법칙/"
+      ]
+    },
+    {
+      "id": "entity-lynn-margulis",
+      "url": "/docs/entity-lynn-margulis/",
+      "kind": "entity",
+      "publicationVisibility": "unlisted",
+      "legacyUrls": [
+        "/entities/린-마굴리스/"
+      ]
+    },
+    {
+      "id": "concept-0d04f3f7f3648be5",
+      "url": "/docs/concept-0d04f3f7f3648be5/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/릴레이-회로/"
+      ]
+    },
+    {
+      "id": "concept-46257ebec8e7274c",
+      "url": "/docs/concept-46257ebec8e7274c/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/링커/"
+      ]
+    },
+    {
+      "id": "concept-c9c7cad93930dc6c",
+      "url": "/docs/concept-c9c7cad93930dc6c/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/마이크로프로그래밍/"
+      ]
+    },
+    {
+      "id": "concept-cogitatio-caeca",
+      "url": "/docs/concept-cogitatio-caeca/",
+      "kind": "concept",
+      "publicationVisibility": "unlisted",
+      "legacyUrls": [
+        "/concepts/맹목적-사고와-기호적-인식/"
+      ]
+    },
+    {
+      "id": "concept-0939ab2408573c58",
+      "url": "/docs/concept-0939ab2408573c58/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/메모리-안전성/"
+      ]
+    },
+    {
+      "id": "concept-memory-movement-bottleneck-shift",
+      "url": "/docs/concept-memory-movement-bottleneck-shift/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/메모리-이동과-병목-이동/"
+      ]
+    },
+    {
+      "id": "concept-df7e932b999f444f",
+      "url": "/docs/concept-df7e932b999f444f/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/메모리-장벽/"
+      ]
+    },
+    {
+      "id": "concept-idempotency",
+      "url": "/docs/concept-idempotency/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/멱등성/"
+      ]
+    },
+    {
+      "id": "concept-f047e0039fc9a9c0",
+      "url": "/docs/concept-f047e0039fc9a9c0/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/모듈화/"
+      ]
+    },
+    {
+      "id": "entity-7e280fd99a7b35d0",
+      "url": "/docs/entity-7e280fd99a7b35d0/",
+      "kind": "entity",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/entities/모리스-윌크스/"
+      ]
+    },
+    {
+      "id": "concept-d2f652046668c971",
+      "url": "/docs/concept-d2f652046668c971/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/목적-프로그램/"
+      ]
+    },
+    {
+      "id": "concept-time-to-quality",
+      "url": "/docs/concept-time-to-quality/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/목표-품질-도달-시간/"
+      ]
+    },
+    {
+      "id": "concept-0b68e8bcd6a95a79",
+      "url": "/docs/concept-0b68e8bcd6a95a79/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/무어의-법칙/"
+      ]
+    },
+    {
+      "id": "concept-5163a00379489f02",
+      "url": "/docs/concept-5163a00379489f02/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/바이트-순서-표식/"
+      ]
+    },
+    {
+      "id": "analysis-63baea1fd8a3a197",
+      "url": "/docs/analysis-63baea1fd8a3a197/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/범용성은-어떻게-컴퓨팅-능력이-되었는가/"
+      ]
+    },
+    {
+      "id": "concept-benchmark-contract",
+      "url": "/docs/concept-benchmark-contract/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/벤치마크-계약/"
+      ]
+    },
+    {
+      "id": "analysis-benchmark-numbers-not-directly-comparable",
+      "url": "/docs/analysis-benchmark-numbers-not-directly-comparable/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/벤치마크-숫자는-왜-직접-비교되지-않는가/"
+      ]
+    },
+    {
+      "id": "analysis-3d25f4823ef50776",
+      "url": "/docs/analysis-3d25f4823ef50776/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/병렬-컴퓨팅은-시간을-줄이는가-문제를-키우는가/"
+      ]
+    },
+    {
+      "id": "concept-d4ef040697b43518",
+      "url": "/docs/concept-d4ef040697b43518/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/병렬-확장성/"
+      ]
+    },
+    {
+      "id": "concept-characteristica-calculus",
+      "url": "/docs/concept-characteristica-calculus/",
+      "kind": "concept",
+      "publicationVisibility": "unlisted",
+      "legacyUrls": [
+        "/concepts/보편-기호법과-사유의-계산/"
+      ]
+    },
+    {
+      "id": "concept-676372e6cb31537d",
+      "url": "/docs/concept-676372e6cb31537d/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/보편-튜링-기계/"
+      ]
+    },
+    {
+      "id": "concept-47ba75def6a810da",
+      "url": "/docs/concept-47ba75def6a810da/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/복귀-주소/"
+      ]
+    },
+    {
+      "id": "concept-replicated-log-consensus",
+      "url": "/docs/concept-replicated-log-consensus/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/복제-로그와-합의/"
+      ]
+    },
+    {
+      "id": "concept-essential-accidental-complexity",
+      "url": "/docs/concept-essential-accidental-complexity/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/본질적-복잡성과-부수적-복잡성/"
+      ]
+    },
+    {
+      "id": "concept-d4fdbd19616560c0",
+      "url": "/docs/concept-d4fdbd19616560c0/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/부동소수점-정확성/"
+      ]
+    },
+    {
+      "id": "concept-partial-failure",
+      "url": "/docs/concept-partial-failure/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/부분-실패/"
+      ]
+    },
+    {
+      "id": "concept-873d18c3be4404fb",
+      "url": "/docs/concept-873d18c3be4404fb/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/부트스트랩/"
+      ]
+    },
+    {
+      "id": "analysis-distributed-consistency-latency",
+      "url": "/docs/analysis-distributed-consistency-latency/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/분산-서비스는-빠른-응답과-같은-상태를-어떻게-함께-보장하는가/"
+      ]
+    },
+    {
+      "id": "concept-distributed-file-system",
+      "url": "/docs/concept-distributed-file-system/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/분산-파일-시스템/"
+      ]
+    },
+    {
+      "id": "concept-918ae6f1f0969df3",
+      "url": "/docs/concept-918ae6f1f0969df3/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/불-대수/"
+      ]
+    },
+    {
+      "id": "entity-aguera-y-arcas",
+      "url": "/docs/entity-aguera-y-arcas/",
+      "kind": "entity",
+      "publicationVisibility": "unlisted",
+      "legacyUrls": [
+        "/entities/블레즈-아구에라-이-아르카스/"
+      ]
+    },
+    {
+      "id": "concept-byzantine-fault",
+      "url": "/docs/concept-byzantine-fault/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/비잔틴-장애/"
+      ]
+    },
+    {
+      "id": "concept-38dd11a2bcc6049f",
+      "url": "/docs/concept-38dd11a2bcc6049f/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/비트-연산/"
+      ]
+    },
+    {
+      "id": "analysis-d01616805eb5bcb3",
+      "url": "/docs/analysis-d01616805eb5bcb3/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/비트-패턴과-해석-규칙/"
+      ]
+    },
+    {
+      "id": "concept-d7da5df4d36a970c",
+      "url": "/docs/concept-d7da5df4d36a970c/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/비트와-바이트/"
+      ]
+    },
+    {
+      "id": "analysis-service-speed-vs-availability",
+      "url": "/docs/analysis-service-speed-vs-availability/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/빠른-서비스는-왜-가용한-서비스를-보장하지-않는가/"
+      ]
+    },
+    {
+      "id": "concept-mutual-exclusion-synchronization",
+      "url": "/docs/concept-mutual-exclusion-synchronization/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/상호-배제와-동기화/"
+      ]
+    },
+    {
+      "id": "src-008",
+      "url": "/docs/src-008/",
+      "kind": "source",
+      "publicationVisibility": "unlisted",
+      "legacyUrls": [
+        "/sources/생명은-계산이며-공생발생으로-진화한다/"
+      ]
+    },
+    {
+      "id": "concept-446e9f53b7a0dab2",
+      "url": "/docs/concept-446e9f53b7a0dab2/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/서브루틴/"
+      ]
+    },
+    {
+      "id": "analysis-4095b0c80dbee408",
+      "url": "/docs/analysis-4095b0c80dbee408/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/서브루틴-라이브러리에서-api로/"
+      ]
+    },
+    {
+      "id": "src-004",
+      "url": "/docs/src-004/",
+      "kind": "source",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/sources/서브루틴과-스택-stack-의-원리/"
+      ]
+    },
+    {
+      "id": "concept-linearizability",
+      "url": "/docs/concept-linearizability/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/선형화-가능성/"
+      ]
+    },
+    {
+      "id": "concept-performance-portability",
+      "url": "/docs/concept-performance-portability/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/성능-이식성/"
+      ]
+    },
+    {
+      "id": "concept-3e1313946067714a",
+      "url": "/docs/concept-3e1313946067714a/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/소스-프로그램/"
+      ]
+    },
+    {
+      "id": "concept-432b4756227c6ef2",
+      "url": "/docs/concept-432b4756227c6ef2/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/소프트웨어-공학/"
+      ]
+    },
+    {
+      "id": "concept-65669d1c4c32c693",
+      "url": "/docs/concept-65669d1c4c32c693/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/소프트웨어-재사용/"
+      ]
+    },
+    {
+      "id": "analysis-0b0061867a466b88",
+      "url": "/docs/analysis-0b0061867a466b88/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/소프트웨어-재사용의-역사/"
+      ]
+    },
+    {
+      "id": "concept-fa0c6ecb3f94fe4c",
+      "url": "/docs/concept-fa0c6ecb3f94fe4c/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/소프트웨어-컴포넌트/"
+      ]
+    },
+    {
+      "id": "concept-lifecycle-assessment-boundary",
+      "url": "/docs/concept-lifecycle-assessment-boundary/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/수명-주기-평가-경계/"
+      ]
+    },
+    {
+      "id": "mathematical-tables",
+      "url": "/docs/mathematical-tables/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/수학-표/"
+      ]
+    },
+    {
+      "id": "from-mathematical-tables-to-spreadsheets",
+      "url": "/docs/from-mathematical-tables-to-spreadsheets/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/수학-표에서-스프레드시트로/"
+      ]
+    },
+    {
+      "id": "from-table-checking-to-numerical-result-contracts",
+      "url": "/docs/from-table-checking-to-numerical-result-contracts/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/수학-표의-검산에서-수치-결과-계약으로/"
+      ]
+    },
+    {
+      "id": "concept-sequential-consistency",
+      "url": "/docs/concept-sequential-consistency/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/순차-일관성/"
+      ]
+    },
+    {
+      "id": "concept-8ae81e59373c00f2",
+      "url": "/docs/concept-8ae81e59373c00f2/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/스위칭-회로/"
+      ]
+    },
+    {
+      "id": "concept-c297dc5b421f48a3",
+      "url": "/docs/concept-c297dc5b421f48a3/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/스택/"
+      ]
+    },
+    {
+      "id": "concept-f6e983b17cae80b7",
+      "url": "/docs/concept-f6e983b17cae80b7/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/스택-프레임/"
+      ]
+    },
+    {
+      "id": "entity-899388142c701ab0",
+      "url": "/docs/entity-899388142c701ab0/",
+      "kind": "entity",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/entities/스탠리-길/"
+      ]
+    },
+    {
+      "id": "entity-2f17a71c2815f89f",
+      "url": "/docs/entity-2f17a71c2815f89f/",
+      "kind": "entity",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/entities/스티븐-c-존슨/"
+      ]
+    },
+    {
+      "id": "spreadsheet",
+      "url": "/docs/spreadsheet/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/스프레드시트/"
+      ]
+    },
+    {
+      "id": "concept-141883d0f8048c7e",
+      "url": "/docs/concept-141883d0f8048c7e/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/시스템-프로그래밍/"
+      ]
+    },
+    {
+      "id": "concept-d61f7b46dc608713",
+      "url": "/docs/concept-d61f7b46dc608713/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/시스템-호출/"
+      ]
+    },
+    {
+      "id": "concept-algorithm-schedule-separation",
+      "url": "/docs/concept-algorithm-schedule-separation/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/알고리즘과-스케줄-분리/"
+      ]
+    },
+    {
+      "id": "concept-e2b63e6394d296b1",
+      "url": "/docs/concept-e2b63e6394d296b1/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/알고리즘적-사고/"
+      ]
+    },
+    {
+      "id": "entity-b7b72330d3a62500",
+      "url": "/docs/entity-b7b72330d3a62500/",
+      "kind": "entity",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/entities/알론조-처치/"
+      ]
+    },
+    {
+      "id": "entity-07a5de25c325b6f0",
+      "url": "/docs/entity-07a5de25c325b6f0/",
+      "kind": "entity",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/entities/앨런-튜링/"
+      ]
+    },
+    {
+      "id": "concept-efde1ed2c65b5416",
+      "url": "/docs/concept-efde1ed2c65b5416/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/어셈블러/"
+      ]
+    },
+    {
+      "id": "concept-494620a1e7c73b24",
+      "url": "/docs/concept-494620a1e7c73b24/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/에너지-비례-컴퓨팅/"
+      ]
+    },
+    {
+      "id": "entity-970046b84bf0f7e1",
+      "url": "/docs/entity-970046b84bf0f7e1/",
+      "kind": "entity",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/entities/에이다-러브레이스/"
+      ]
+    },
+    {
+      "id": "entity-b215332ddbebab35",
+      "url": "/docs/entity-b215332ddbebab35/",
+      "kind": "entity",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/entities/에츠허르-데이크스트라/"
+      ]
+    },
+    {
+      "id": "concept-continuous-batching",
+      "url": "/docs/concept-continuous-batching/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/연속-배칭/"
+      ]
+    },
+    {
+      "id": "entity-e23557a759d62f70",
+      "url": "/docs/entity-e23557a759d62f70/",
+      "kind": "entity",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/entities/올레요한-달/"
+      ]
+    },
+    {
+      "id": "concept-external-consistency-time-uncertainty",
+      "url": "/docs/concept-external-consistency-time-uncertainty/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/외부-일관성과-시간-불확실성/"
+      ]
+    },
+    {
+      "id": "concept-operational-embodied-carbon",
+      "url": "/docs/concept-operational-embodied-carbon/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/운영-탄소와-내재-탄소/"
+      ]
+    },
+    {
+      "id": "concept-c7e0c2c53cb04fba",
+      "url": "/docs/concept-c7e0c2c53cb04fba/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/운영체제/"
+      ]
+    },
+    {
+      "id": "concept-remote-procedure-call",
+      "url": "/docs/concept-remote-procedure-call/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/원격-프로시저-호출/"
+      ]
+    },
+    {
+      "id": "concept-superscript-exponent",
+      "url": "/docs/concept-superscript-exponent/",
+      "kind": "concept",
+      "publicationVisibility": "unlisted",
+      "legacyUrls": [
+        "/concepts/위첨자-지수-표기/"
+      ]
+    },
+    {
+      "id": "meta-overview",
+      "url": "/docs/meta-overview/",
+      "kind": "meta",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/meta/위키-개요/"
+      ]
+    },
+    {
+      "id": "meta-index",
+      "url": "/docs/meta-index/",
+      "kind": "meta",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/meta/위키-색인/"
+      ]
+    },
+    {
+      "id": "concept-496b0829073c279a",
+      "url": "/docs/concept-496b0829073c279a/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/유니코드/"
+      ]
+    },
+    {
+      "id": "concept-9351a6279b74d274",
+      "url": "/docs/concept-9351a6279b74d274/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/유니코드-정규화/"
+      ]
+    },
+    {
+      "id": "concept-d86dcb525d6a2843",
+      "url": "/docs/concept-d86dcb525d6a2843/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/유닉스-파이프/"
+      ]
+    },
+    {
+      "id": "concept-5cd779cec1e9716b",
+      "url": "/docs/concept-5cd779cec1e9716b/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/유한-차분법/"
+      ]
+    },
+    {
+      "id": "concept-adequality",
+      "url": "/docs/concept-adequality/",
+      "kind": "concept",
+      "publicationVisibility": "unlisted",
+      "legacyUrls": [
+        "/concepts/의사의법/"
+      ]
+    },
+    {
+      "id": "concept-heterogeneous-execution-model",
+      "url": "/docs/concept-heterogeneous-execution-model/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/이기종-실행-모델/"
+      ]
+    },
+    {
+      "id": "concept-5063ca2b2057b092",
+      "url": "/docs/concept-5063ca2b2057b092/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/이식성/"
+      ]
+    },
+    {
+      "id": "concept-59604f5365047afb",
+      "url": "/docs/concept-59604f5365047afb/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/이진-덧셈-회로/"
+      ]
+    },
+    {
+      "id": "concept-90428fe85dfd3403",
+      "url": "/docs/concept-90428fe85dfd3403/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/이진법/"
+      ]
+    },
+    {
+      "id": "human-computers",
+      "url": "/docs/human-computers/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/인간-계산자/"
+      ]
+    },
+    {
+      "id": "human-computers-and-computation-factories",
+      "url": "/docs/human-computers-and-computation-factories/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/인간-계산자와-계산-공장/"
+      ]
+    },
+    {
+      "id": "meta-quote-locator-audit",
+      "url": "/docs/meta-quote-locator-audit/",
+      "kind": "meta",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/meta/인용-위치-감사/"
+      ]
+    },
+    {
+      "id": "concept-a446fe7ee6ca59f2",
+      "url": "/docs/concept-a446fe7ee6ca59f2/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/인코딩/"
+      ]
+    },
+    {
+      "id": "analysis-9241eb4539243823",
+      "url": "/docs/analysis-9241eb4539243823/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/인코딩-심화/"
+      ]
+    },
+    {
+      "id": "concept-6c282053efbb112b",
+      "url": "/docs/concept-6c282053efbb112b/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/인코딩-오류/"
+      ]
+    },
+    {
+      "id": "concept-input-validation",
+      "url": "/docs/concept-input-validation/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/입력-검증/"
+      ]
+    },
+    {
+      "id": "analysis-interpretation-security-boundary",
+      "url": "/docs/analysis-interpretation-security-boundary/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/입력을-해석하는-경계는-왜-보안-경계인가/"
+      ]
+    },
+    {
+      "id": "concept-io-aware-attention",
+      "url": "/docs/concept-io-aware-attention/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/입출력-인지-어텐션/"
+      ]
+    },
+    {
+      "id": "concept-4a63d3dfa96ba65a",
+      "url": "/docs/concept-4a63d3dfa96ba65a/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/자기-수정-코드/"
+      ]
+    },
+    {
+      "id": "concept-self-attention",
+      "url": "/docs/concept-self-attention/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/자기-주의/"
+      ]
+    },
+    {
+      "id": "concept-self-reproducing-automata",
+      "url": "/docs/concept-self-reproducing-automata/",
+      "kind": "concept",
+      "publicationVisibility": "unlisted",
+      "legacyUrls": [
+        "/concepts/자기복제-오토마타/"
+      ]
+    },
+    {
+      "id": "concept-1bbfe00922d38ab1",
+      "url": "/docs/concept-1bbfe00922d38ab1/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/자동-프로그래밍/"
+      ]
+    },
+    {
+      "id": "concept-automation-boundary",
+      "url": "/docs/concept-automation-boundary/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/자동화-경계/"
+      ]
+    },
+    {
+      "id": "analysis-automation-labor-responsibility",
+      "url": "/docs/analysis-automation-labor-responsibility/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/자동화는-계산-노동을-없애는가-책임을-옮기는가/"
+      ]
+    },
+    {
+      "id": "meta-log",
+      "url": "/docs/meta-log/",
+      "kind": "meta",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/meta/작업-로그/"
+      ]
+    },
+    {
+      "id": "concept-failure-detection",
+      "url": "/docs/concept-failure-detection/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/장애-감지/"
+      ]
+    },
+    {
+      "id": "analysis-failure-detection-gray-metastable",
+      "url": "/docs/analysis-failure-detection-gray-metastable/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/장애-감지는-실패와-느림을-어떻게-구분하는가/"
+      ]
+    },
+    {
+      "id": "concept-d679e8f4343f66ba",
+      "url": "/docs/concept-d679e8f4343f66ba/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/재배치/"
+      ]
+    },
+    {
+      "id": "analysis-llm-reuse-speculation-work",
+      "url": "/docs/analysis-llm-reuse-speculation-work/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/재사용과-추측은-llm-추론-작업량을-어떻게-바꾸는가/"
+      ]
+    },
+    {
+      "id": "concept-retries",
+      "url": "/docs/concept-retries/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/재시도/"
+      ]
+    },
+    {
+      "id": "analysis-retry-amplification-and-control",
+      "url": "/docs/analysis-retry-amplification-and-control/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/재시도는-실패를-줄이면서-부하를-어디로-옮기는가/"
+      ]
+    },
+    {
+      "id": "concept-reproducible-builds",
+      "url": "/docs/concept-reproducible-builds/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/재현-가능한-빌드/"
+      ]
+    },
+    {
+      "id": "analysis-reproducible-build-boundary",
+      "url": "/docs/analysis-reproducible-build-boundary/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/재현-가능한-빌드는-무엇을-같게-만드는가/"
+      ]
+    },
+    {
+      "id": "analysis-3259f99bb25a494c",
+      "url": "/docs/analysis-3259f99bb25a494c/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/저장-프로그램-개념의-여러-기원/"
+      ]
+    },
+    {
+      "id": "concept-ef02c2bc7dc5ea9b",
+      "url": "/docs/concept-ef02c2bc7dc5ea9b/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/저장-프로그램-컴퓨터/"
+      ]
+    },
+    {
+      "id": "concept-power-usage-effectiveness",
+      "url": "/docs/concept-power-usage-effectiveness/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/전력-사용-효율/"
+      ]
+    },
+    {
+      "id": "analysis-353b4b2d38841a24",
+      "url": "/docs/analysis-353b4b2d38841a24/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/전력-장벽은-성능-향상의-의미를-어떻게-바꾸었는가/"
+      ]
+    },
+    {
+      "id": "analysis-specialized-vs-general-pendulum",
+      "url": "/docs/analysis-specialized-vs-general-pendulum/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/전용-연산기와-범용-제어기의-진자-운동/"
+      ]
+    },
+    {
+      "id": "concept-prefix-kv-caching",
+      "url": "/docs/concept-prefix-kv-caching/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/접두사-kv-캐싱/"
+      ]
+    },
+    {
+      "id": "concept-099497b965b35d3a",
+      "url": "/docs/concept-099497b965b35d3a/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/정보-은닉/"
+      ]
+    },
+    {
+      "id": "concept-9ecf6d54b1e384b0",
+      "url": "/docs/concept-9ecf6d54b1e384b0/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/정수-오버플로/"
+      ]
+    },
+    {
+      "id": "concept-dc1573dca7d35049",
+      "url": "/docs/concept-dc1573dca7d35049/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/정지-문제/"
+      ]
+    },
+    {
+      "id": "analysis-exactly-once-boundary",
+      "url": "/docs/analysis-exactly-once-boundary/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/정확히-한-번은-어디까지-가능한가/"
+      ]
+    },
+    {
+      "id": "concept-7cc49c1806726804",
+      "url": "/docs/concept-7cc49c1806726804/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/제어-구조/"
+      ]
+    },
+    {
+      "id": "concept-830fb7209f3c8247",
+      "url": "/docs/concept-830fb7209f3c8247/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/제어-흐름/"
+      ]
+    },
+    {
+      "id": "entity-73f5398f704a53a7",
+      "url": "/docs/entity-73f5398f704a53a7/",
+      "kind": "entity",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/entities/조지-불/"
+      ]
+    },
+    {
+      "id": "entity-4e28b2707c1117c0",
+      "url": "/docs/entity-4e28b2707c1117c0/",
+      "kind": "entity",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/entities/존-배커스/"
+      ]
+    },
+    {
+      "id": "entity-john-searle",
+      "url": "/docs/entity-john-searle/",
+      "kind": "entity",
+      "publicationVisibility": "unlisted",
+      "legacyUrls": [
+        "/entities/존-설/"
+      ]
+    },
+    {
+      "id": "entity-ef144988cc7f1512",
+      "url": "/docs/entity-ef144988cc7f1512/",
+      "kind": "entity",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/entities/존-폰-노이만/"
+      ]
+    },
+    {
+      "id": "concept-quantity-species-pairs",
+      "url": "/docs/concept-quantity-species-pairs/",
+      "kind": "concept",
+      "publicationVisibility": "unlisted",
+      "legacyUrls": [
+        "/concepts/종-수량-쌍/"
+      ]
+    },
+    {
+      "id": "concept-end-to-end-principle",
+      "url": "/docs/concept-end-to-end-principle/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/종단-간-원칙/"
+      ]
+    },
+    {
+      "id": "entity-3765181834c9ce12",
+      "url": "/docs/entity-3765181834c9ce12/",
+      "kind": "entity",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/entities/주세페-야코피니/"
+      ]
+    },
+    {
+      "id": "concept-intermediate-representation",
+      "url": "/docs/concept-intermediate-representation/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/중간-표현/"
+      ]
+    },
+    {
+      "id": "concept-chinese-room-syntax-semantics",
+      "url": "/docs/concept-chinese-room-syntax-semantics/",
+      "kind": "concept",
+      "publicationVisibility": "unlisted",
+      "legacyUrls": [
+        "/concepts/중국어-방과-구문-의미-간극/"
+      ]
+    },
+    {
+      "id": "src-009",
+      "url": "/docs/src-009/",
+      "kind": "source",
+      "publicationVisibility": "unlisted",
+      "legacyUrls": [
+        "/sources/지수-기호-하나를-얻기까지-왜-1877년이나-걸렸는가/"
+      ]
+    },
+    {
+      "id": "meta-knowledge-graph-schema",
+      "url": "/docs/meta-knowledge-graph-schema/",
+      "kind": "meta",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/meta/지식-그래프-관계-스키마/"
+      ]
+    },
+    {
+      "id": "concept-serializability",
+      "url": "/docs/concept-serializability/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/직렬-가능성/"
+      ]
+    },
+    {
+      "id": "concept-83b76a0498d798aa",
+      "url": "/docs/concept-83b76a0498d798aa/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/차분-기관/"
+      ]
+    },
+    {
+      "id": "entity-b47da9a0362c46e5",
+      "url": "/docs/entity-b47da9a0362c46e5/",
+      "kind": "entity",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/entities/찰스-배비지/"
+      ]
+    },
+    {
+      "id": "entity-1a2d36f59369083d",
+      "url": "/docs/entity-1a2d36f59369083d/",
+      "kind": "entity",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/entities/찰스-w-크루거/"
+      ]
+    },
+    {
+      "id": "concept-b95bdd2d77f6f194",
+      "url": "/docs/concept-b95bdd2d77f6f194/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/처치-튜링-논제/"
+      ]
+    },
+    {
+      "id": "analysis-6a13ea1dd48b1014",
+      "url": "/docs/analysis-6a13ea1dd48b1014/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/초기-소프트웨어의-계층화/"
+      ]
+    },
+    {
+      "id": "src-002",
+      "url": "/docs/src-002/",
+      "kind": "source",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/sources/초기-소프트웨어의-탄생/"
+      ]
+    },
+    {
+      "id": "analysis-token-rate-service-capability",
+      "url": "/docs/analysis-token-rate-service-capability/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/초당-토큰-수는-왜-llm-서비스-능력을-설명하지-못하는가/"
+      ]
+    },
+    {
+      "id": "concept-speculative-decoding",
+      "url": "/docs/concept-speculative-decoding/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/추측-디코딩/"
+      ]
+    },
+    {
+      "id": "concept-613958ec8891ac2d",
+      "url": "/docs/concept-613958ec8891ac2d/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/축소-명령어-집합-컴퓨터/"
+      ]
+    },
+    {
+      "id": "concept-6aaebafb1aacc624",
+      "url": "/docs/concept-6aaebafb1aacc624/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/캐시-메모리/"
+      ]
+    },
+    {
+      "id": "concept-8d4656f333ec153d",
+      "url": "/docs/concept-8d4656f333ec153d/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/컴파일러/"
+      ]
+    },
+    {
+      "id": "concept-eb050b34d56c0961",
+      "url": "/docs/concept-eb050b34d56c0961/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/컴파일러-최적화/"
+      ]
+    },
+    {
+      "id": "meta-9bc0d3d686763690",
+      "url": "/docs/meta-9bc0d3d686763690/",
+      "kind": "meta",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/meta/컴퓨팅-능력-독서-지도/"
+      ]
+    },
+    {
+      "id": "analysis-f822354704bc38bb",
+      "url": "/docs/analysis-f822354704bc38bb/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/컴퓨팅-능력의-발달사/"
+      ]
+    },
+    {
+      "id": "computing-capability",
+      "url": "/docs/computing-capability/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/컴퓨팅-능력이란-무엇인가/"
+      ]
+    },
+    {
+      "id": "src-001",
+      "url": "/docs/src-001/",
+      "kind": "source",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/sources/컴퓨팅의-기원-배비지와-러브레이스/"
+      ]
+    },
+    {
+      "id": "entity-ef60b71b4f5fba86",
+      "url": "/docs/entity-ef60b71b4f5fba86/",
+      "kind": "entity",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/entities/켄-톰프슨/"
+      ]
+    },
+    {
+      "id": "analysis-code-volume-developer-productivity",
+      "url": "/docs/analysis-code-volume-developer-productivity/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/코드-생산량은-왜-개발-생산성을-설명하지-못하는가/"
+      ]
+    },
+    {
+      "id": "concept-9574348ae704d682",
+      "url": "/docs/concept-9574348ae704d682/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/코드-유닛/"
+      ]
+    },
+    {
+      "id": "concept-e589f64b6639a460",
+      "url": "/docs/concept-e589f64b6639a460/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/코드-포인트/"
+      ]
+    },
+    {
+      "id": "entity-6c7519108429a099",
+      "url": "/docs/entity-6c7519108429a099/",
+      "kind": "entity",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/entities/코라도-뵘/"
+      ]
+    },
+    {
+      "id": "entity-1cd37570ca9acab2",
+      "url": "/docs/entity-1cd37570ca9acab2/",
+      "kind": "entity",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/entities/클로드-섀넌/"
+      ]
+    },
+    {
+      "id": "entity-c645c95848b4d51e",
+      "url": "/docs/entity-c645c95848b4d51e/",
+      "kind": "entity",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/entities/토니-호어/"
+      ]
+    },
+    {
+      "id": "entity-thomas-hobbes",
+      "url": "/docs/entity-thomas-hobbes/",
+      "kind": "entity",
+      "publicationVisibility": "unlisted",
+      "legacyUrls": [
+        "/entities/토머스-홉스/"
+      ]
+    },
+    {
+      "id": "concept-c617f2098bd57016",
+      "url": "/docs/concept-c617f2098bd57016/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/튜링-기계/"
+      ]
+    },
+    {
+      "id": "analysis-transaction-ordering-guarantees",
+      "url": "/docs/analysis-transaction-ordering-guarantees/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/트랜잭션-시스템은-어떤-순서-보장을-제공하는가/"
+      ]
+    },
+    {
+      "id": "concept-7c33e4cb9fd49f6c",
+      "url": "/docs/concept-7c33e4cb9fd49f6c/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/파일-시스템/"
+      ]
+    },
+    {
+      "id": "analysis-01dd444cf0037615",
+      "url": "/docs/analysis-01dd444cf0037615/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/평균-성능은-왜-서비스의-컴퓨팅-능력을-설명하지-못하는가/"
+      ]
+    },
+    {
+      "id": "src-005",
+      "url": "/docs/src-005/",
+      "kind": "source",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/sources/폐쇄형-서브루틴과-wheeler-jump/"
+      ]
+    },
+    {
+      "id": "concept-325f29bd4557260c",
+      "url": "/docs/concept-325f29bd4557260c/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/포스트모템-루틴/"
+      ]
+    },
+    {
+      "id": "concept-7d1c4861fc9f4cd5",
+      "url": "/docs/concept-7d1c4861fc9f4cd5/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/폰-노이만-구조/"
+      ]
+    },
+    {
+      "id": "analysis-representation-placement-contract",
+      "url": "/docs/analysis-representation-placement-contract/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/표현-배치-계약은-어떻게-컴퓨팅-능력을-만드는가/"
+      ]
+    },
+    {
+      "id": "analysis-stablehlo-mlir-abi-boundary",
+      "url": "/docs/analysis-stablehlo-mlir-abi-boundary/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/표현-ir-abi-경계는-무엇을-보존하는가/"
+      ]
+    },
+    {
+      "id": "concept-framebuffer-memory-mapping",
+      "url": "/docs/concept-framebuffer-memory-mapping/",
+      "kind": "concept",
+      "publicationVisibility": "unlisted",
+      "legacyUrls": [
+        "/concepts/프레임버퍼-메모리-사상/"
+      ]
+    },
+    {
+      "id": "concept-569257e7cbee4eb8",
+      "url": "/docs/concept-569257e7cbee4eb8/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/프로그래밍-가능성/"
+      ]
+    },
+    {
+      "id": "concept-26360c8b4141acb4",
+      "url": "/docs/concept-26360c8b4141acb4/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/프로그래밍-언어/"
+      ]
+    },
+    {
+      "id": "concept-prefill-decode",
+      "url": "/docs/concept-prefill-decode/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/프리필과-디코드/"
+      ]
+    },
+    {
+      "id": "concept-e83f2a1b94d76c01",
+      "url": "/docs/concept-e83f2a1b94d76c01/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/하드웨어-실행-모델/"
+      ]
+    },
+    {
+      "id": "analysis-7a3b4c5d6e7f8091",
+      "url": "/docs/analysis-7a3b4c5d6e7f8091/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/하드웨어-실행-모델은-어떻게-제어와-상태를-엮는가/"
+      ]
+    },
+    {
+      "id": "analysis-source-semantics-accelerator-performance",
+      "url": "/docs/analysis-source-semantics-accelerator-performance/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/한-소스의-의미와-성능은-가속기로-어떻게-번역되는가/"
+      ]
+    },
+    {
+      "id": "analysis-concurrent-order-shared-state",
+      "url": "/docs/analysis-concurrent-order-shared-state/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/한-프로그램의-순서는-여러-실행-주체에서-어떻게-보존되는가/"
+      ]
+    },
+    {
+      "id": "concept-4b367720c4a42e5a",
+      "url": "/docs/concept-4b367720c4a42e5a/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/해석-기관/"
+      ]
+    },
+    {
+      "id": "concept-analytic-geometry",
+      "url": "/docs/concept-analytic-geometry/",
+      "kind": "concept",
+      "publicationVisibility": "unlisted",
+      "legacyUrls": [
+        "/concepts/해석기하학/"
+      ]
+    },
+    {
+      "id": "concept-mixed-precision",
+      "url": "/docs/concept-mixed-precision/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/혼합-정밀도/"
+      ]
+    },
+    {
+      "id": "src-007",
+      "url": "/docs/src-007/",
+      "kind": "source",
+      "publicationVisibility": "unlisted",
+      "legacyUrls": [
+        "/sources/홉스와-라이프니츠-기호에서-ai까지/"
+      ]
+    },
+    {
+      "id": "ref-142",
+      "url": "/docs/ref-142/",
+      "kind": "reference",
+      "publicationVisibility": "unlisted",
+      "legacyUrls": [
+        "/references/홉스와-라이프니츠-기호의-기능/"
+      ]
+    },
+    {
+      "id": "ref-011",
+      "url": "/docs/ref-011/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/a-case-against-the-go-to-statement/",
+        "/sources/a-case-against-the-go-to-statement/"
+      ]
+    },
+    {
+      "id": "ref-111",
+      "url": "/docs/ref-111/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/a-critique-of-ansi-sql-isolation-levels/"
+      ]
+    },
+    {
+      "id": "ref-138",
+      "url": "/docs/ref-138/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/a-new-golden-age-for-computer-architecture/",
+        "/sources/a-new-golden-age-for-computer-architecture/"
+      ]
+    },
+    {
+      "id": "ref-053",
+      "url": "/docs/ref-053/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/a-note-respecting-the-application-of-machinery-to-the-calculation-of-astronomical-tables/",
+        "/sources/a-note-respecting-the-application-of-machinery-to-the-calculation-of-astronomical-tables/"
+      ]
+    },
+    {
+      "id": "ref-085",
+      "url": "/docs/ref-085/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/a-proof-for-the-queuing-formula-l-λ-w/",
+        "/sources/a-proof-for-the-queuing-formula-l-λ-w/"
+      ]
+    },
+    {
+      "id": "ref-008",
+      "url": "/docs/ref-008/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/a-symbolic-analysis-of-relay-and-switching-circuits/",
+        "/sources/a-symbolic-analysis-of-relay-and-switching-circuits/"
+      ]
+    },
+    {
+      "id": "ref-154",
+      "url": "/docs/ref-154/",
+      "kind": "reference",
+      "publicationVisibility": "unlisted",
+      "legacyUrls": [
+        "/references/absent-qualia-fading-qualia-dancing-qualia/"
+      ]
+    },
+    {
+      "id": "analysis-agi-criteria-shift",
+      "url": "/docs/analysis-agi-criteria-shift/",
+      "kind": "analysis",
+      "publicationVisibility": "unlisted",
+      "legacyUrls": [
+        "/analyses/agi-판정-기준은-누가-옮기는가/"
+      ]
+    },
+    {
+      "id": "analysis-ai-bottleneck-shifting",
+      "url": "/docs/analysis-ai-bottleneck-shifting/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/ai-시스템은-병목을-어떻게-이동시키는가/"
+      ]
+    },
+    {
+      "id": "analysis-ai-bottleneck-lineage",
+      "url": "/docs/analysis-ai-bottleneck-lineage/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/ai-인프라의-병목-계보/"
+      ]
+    },
+    {
+      "id": "concept-ai-computing-bottlenecks",
+      "url": "/docs/concept-ai-computing-bottlenecks/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/ai-컴퓨팅-병목/"
+      ]
+    },
+    {
+      "id": "concept-ai-coding-assistance",
+      "url": "/docs/concept-ai-coding-assistance/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/ai-코딩-지원/"
+      ]
+    },
+    {
+      "id": "ref-030",
+      "url": "/docs/ref-030/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/an-investigation-of-the-laws-of-thought/",
+        "/sources/an-investigation-of-the-laws-of-thought/"
+      ]
+    },
+    {
+      "id": "ref-010",
+      "url": "/docs/ref-010/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/an-unsolvable-problem-of-elementary-number-theory/",
+        "/sources/an-unsolvable-problem-of-elementary-number-theory/"
+      ]
+    },
+    {
+      "id": "concept-2ff6633d43e61407",
+      "url": "/docs/concept-2ff6633d43e61407/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/api/"
+      ]
+    },
+    {
+      "id": "ref-151",
+      "url": "/docs/ref-151/",
+      "kind": "reference",
+      "publicationVisibility": "unlisted",
+      "legacyUrls": [
+        "/references/artificial-general-intelligence-is-already-here/"
+      ]
+    },
+    {
+      "id": "concept-6a0c16a9841c87e8",
+      "url": "/docs/concept-6a0c16a9841c87e8/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/ascii/"
+      ]
+    },
+    {
+      "id": "aslr",
+      "url": "/docs/aslr/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/aslr-address-space-layout-randomization/",
+        "/concepts/aslr/"
+      ]
+    },
+    {
+      "id": "ref-137",
+      "url": "/docs/ref-137/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/aslr-1차-자료-묶음/"
+      ]
+    },
+    {
+      "id": "ref-073",
+      "url": "/docs/ref-073/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/attention-is-all-you-need/",
+        "/sources/attention-is-all-you-need/"
+      ]
+    },
+    {
+      "id": "ref-082",
+      "url": "/docs/ref-082/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/awq-activation-aware-weight-quantization-for-on-device-llm-compression-and-acceleration/",
+        "/sources/awq-activation-aware-weight-quantization-for-on-device-llm-compression-and-acceleration/"
+      ]
+    },
+    {
+      "id": "ref-126",
+      "url": "/docs/ref-126/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/bazel-build-files-and-hermeticity/"
+      ]
+    },
+    {
+      "id": "ref-147",
+      "url": "/docs/ref-147/",
+      "kind": "reference",
+      "publicationVisibility": "unlisted",
+      "legacyUrls": [
+        "/references/blaise-agüera-y-arcas-big-think-인터뷰-원문/"
+      ]
+    },
+    {
+      "id": "ref-087",
+      "url": "/docs/ref-087/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/brewer-s-conjecture-and-the-feasibility-of-consistent-available-partition-tolerant-web-services/",
+        "/sources/brewer-s-conjecture-and-the-feasibility-of-consistent-available-partition-tolerant-web-services/"
+      ]
+    },
+    {
+      "id": "concept-3d371068dd880445",
+      "url": "/docs/concept-3d371068dd880445/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/c-문자열/"
+      ]
+    },
+    {
+      "id": "concept-f438fd4127b48dbb",
+      "url": "/docs/concept-f438fd4127b48dbb/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/c-언어/"
+      ]
+    },
+    {
+      "id": "ref-029",
+      "url": "/docs/ref-029/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/c-integer-and-shift-semantics/",
+        "/sources/c-integer-and-shift-semantics/"
+      ]
+    },
+    {
+      "id": "ref-028",
+      "url": "/docs/ref-028/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/cambridge-computer-laboratory-the-history-of-the-computer-lab/",
+        "/sources/cambridge-computer-laboratory-the-history-of-the-computer-lab/"
+      ]
+    },
+    {
+      "id": "concept-cap-theorem",
+      "url": "/docs/concept-cap-theorem/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/cap-정리/"
+      ]
+    },
+    {
+      "id": "ref-110",
+      "url": "/docs/ref-110/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/carbon-emissions-and-large-neural-network-training/",
+        "/sources/carbon-emissions-and-large-neural-network-training/"
+      ]
+    },
+    {
+      "id": "ref-109",
+      "url": "/docs/ref-109/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/chasing-carbon-the-elusive-environmental-footprint-of-computing/",
+        "/sources/chasing-carbon-the-elusive-environmental-footprint-of-computing/"
+      ]
+    },
+    {
+      "id": "ref-148",
+      "url": "/docs/ref-148/",
+      "kind": "reference",
+      "publicationVisibility": "unlisted",
+      "legacyUrls": [
+        "/references/computational-life/"
+      ]
+    },
+    {
+      "id": "ref-092",
+      "url": "/docs/ref-092/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/cooperating-sequential-processes/",
+        "/sources/cooperating-sequential-processes/"
+      ]
+    },
+    {
+      "id": "ref-037",
+      "url": "/docs/ref-037/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/cramming-more-components-onto-integrated-circuits/",
+        "/sources/cramming-more-components-onto-integrated-circuits/"
+      ]
+    },
+    {
+      "id": "ref-091",
+      "url": "/docs/ref-091/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/cwe-190-integer-overflow-or-wraparound/",
+        "/sources/cwe-190-integer-overflow-or-wraparound/"
+      ]
+    },
+    {
+      "id": "ref-090",
+      "url": "/docs/ref-090/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/cwe-20-improper-input-validation/",
+        "/sources/cwe-20-improper-input-validation/"
+      ]
+    },
+    {
+      "id": "ref-048",
+      "url": "/docs/ref-048/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/dark-silicon-and-the-end-of-multicore-scaling/",
+        "/sources/dark-silicon-and-the-end-of-multicore-scaling/"
+      ]
+    },
+    {
+      "id": "ref-098",
+      "url": "/docs/ref-098/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/decoupling-algorithms-from-schedules-for-easy-optimization-of-image-processing-pipelines/",
+        "/sources/decoupling-algorithms-from-schedules-for-easy-optimization-of-image-processing-pipelines/"
+      ]
+    },
+    {
+      "id": "concept-3b07c7d6f11aed09",
+      "url": "/docs/concept-3b07c7d6f11aed09/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/dennard-스케일링/"
+      ]
+    },
+    {
+      "id": "concept-dependency-provenance",
+      "url": "/docs/concept-dependency-provenance/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/dependency-provenance와-registry-identity/"
+      ]
+    },
+    {
+      "id": "ref-044",
+      "url": "/docs/ref-044/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/design-and-implementation-of-risc-i/",
+        "/sources/design-and-implementation-of-risc-i/"
+      ]
+    },
+    {
+      "id": "ref-139",
+      "url": "/docs/ref-139/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/design-and-implementation-of-the-sun-network-filesystem/",
+        "/sources/design-and-implementation-of-the-sun-network-filesystem/"
+      ]
+    },
+    {
+      "id": "ref-038",
+      "url": "/docs/ref-038/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/design-of-ion-implanted-mosfet-s-with-very-small-physical-dimensions/",
+        "/sources/design-of-ion-implanted-mosfet-s-with-very-small-physical-dimensions/"
+      ]
+    },
+    {
+      "id": "ref-077",
+      "url": "/docs/ref-077/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/distserve-disaggregating-prefill-and-decoding-for-goodput-optimized-large-language-model-serving/",
+        "/sources/distserve-disaggregating-prefill-and-decoding-for-goodput-optimized-large-language-model-serving/"
+      ]
+    },
+    {
+      "id": "ref-060",
+      "url": "/docs/ref-060/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/dlmf-standard-reference-tables-on-demand/",
+        "/sources/dlmf-standard-reference-tables-on-demand/"
+      ]
+    },
+    {
+      "id": "ref-104",
+      "url": "/docs/ref-104/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/dynamo-amazon-s-highly-available-key-value-store/",
+        "/sources/dynamo-amazon-s-highly-available-key-value-store/"
+      ]
+    },
+    {
+      "id": "concept-00b55ff0f7a3581b",
+      "url": "/docs/concept-00b55ff0f7a3581b/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/edsac/"
+      ]
+    },
+    {
+      "id": "src-003",
+      "url": "/docs/src-003/",
+      "kind": "source",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/sources/edsac과-initial-orders/"
+      ]
+    },
+    {
+      "id": "analysis-35a2e99b2b062bf6",
+      "url": "/docs/analysis-35a2e99b2b062bf6/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/edsac은-무엇의-최초인가/"
+      ]
+    },
+    {
+      "id": "concept-4ac13a0d4fe8ec32",
+      "url": "/docs/concept-4ac13a0d4fe8ec32/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/edvac/"
+      ]
+    },
+    {
+      "id": "ref-076",
+      "url": "/docs/ref-076/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/efficient-memory-management-for-large-language-model-serving-with-pagedattention/",
+        "/sources/efficient-memory-management-for-large-language-model-serving-with-pagedattention/"
+      ]
+    },
+    {
+      "id": "ref-143",
+      "url": "/docs/ref-143/",
+      "kind": "reference",
+      "publicationVisibility": "unlisted",
+      "legacyUrls": [
+        "/references/elementorum-philosophiae-sectio-prima-de-corpore/"
+      ]
+    },
+    {
+      "id": "ref-101",
+      "url": "/docs/ref-101/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/end-to-end-arguments-in-system-design/",
+        "/sources/end-to-end-arguments-in-system-design/"
+      ]
+    },
+    {
+      "id": "concept-145622bcdc913103",
+      "url": "/docs/concept-145622bcdc913103/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/entscheidungsproblem/"
+      ]
+    },
+    {
+      "id": "ref-062",
+      "url": "/docs/ref-062/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/excel-formula-recalculation-and-dependencies/",
+        "/sources/excel-formula-recalculation-and-dependencies/"
+      ]
+    },
+    {
+      "id": "ref-105",
+      "url": "/docs/ref-105/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/expectation-vs-experience-evaluating-the-usability-of-code-generation-tools-powered-by-large-language-models/",
+        "/sources/expectation-vs-experience-evaluating-the-usability-of-code-generation-tools-powered-by-large-language-models/"
+      ]
+    },
+    {
+      "id": "ref-145",
+      "url": "/docs/ref-145/",
+      "kind": "reference",
+      "publicationVisibility": "unlisted",
+      "legacyUrls": [
+        "/references/explication-de-l-arithmétique-binaire/"
+      ]
+    },
+    {
+      "id": "ref-079",
+      "url": "/docs/ref-079/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/fast-inference-from-transformers-via-speculative-decoding/",
+        "/sources/fast-inference-from-transformers-via-speculative-decoding/"
+      ]
+    },
+    {
+      "id": "ref-006",
+      "url": "/docs/ref-006/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/first-draft-of-a-report-on-the-edvac/",
+        "/sources/first-draft-of-a-report-on-the-edvac/"
+      ]
+    },
+    {
+      "id": "ref-074",
+      "url": "/docs/ref-074/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/flashattention-fast-and-memory-efficient-exact-attention-with-io-awareness/",
+        "/sources/flashattention-fast-and-memory-efficient-exact-attention-with-io-awareness/"
+      ]
+    },
+    {
+      "id": "ref-012",
+      "url": "/docs/ref-012/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/flow-diagrams-turing-machines-and-languages-with-only-two-formation-rules/",
+        "/sources/flow-diagrams-turing-machines-and-languages-with-only-two-formation-rules/"
+      ]
+    },
+    {
+      "id": "concept-72af5ee2350eff99",
+      "url": "/docs/concept-72af5ee2350eff99/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/fortran/"
+      ]
+    },
+    {
+      "id": "ref-015",
+      "url": "/docs/ref-015/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/fortran-automatic-coding-system-for-the-ibm-704-edpm/",
+        "/sources/fortran-automatic-coding-system-for-the-ibm-704-edpm/"
+      ]
+    },
+    {
+      "id": "analysis-866096c7a9c8c715",
+      "url": "/docs/analysis-866096c7a9c8c715/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/fortran과-컴파일러/"
+      ]
+    },
+    {
+      "id": "ref-116",
+      "url": "/docs/ref-116/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/foundationdb-transactions-with-unknown-results/"
+      ]
+    },
+    {
+      "id": "ref-108",
+      "url": "/docs/ref-108/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/ghg-protocol-product-life-cycle-accounting-and-reporting-standard/",
+        "/sources/ghg-protocol-product-life-cycle-accounting-and-reporting-standard/"
+      ]
+    },
+    {
+      "id": "ref-128",
+      "url": "/docs/ref-128/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/github-artifact-attestations/"
+      ]
+    },
+    {
+      "id": "ref-117",
+      "url": "/docs/ref-117/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/google-sre-addressing-cascading-failures/"
+      ]
+    },
+    {
+      "id": "ref-118",
+      "url": "/docs/ref-118/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/google-sre-error-budget-policy/"
+      ]
+    },
+    {
+      "id": "concept-60bcdf34d9470eea",
+      "url": "/docs/concept-60bcdf34d9470eea/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/goto-문/"
+      ]
+    },
+    {
+      "id": "analysis-fc1fa74eef57ee33",
+      "url": "/docs/analysis-fc1fa74eef57ee33/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/goto와-점프에서-구조적-프로그래밍으로/"
+      ]
+    },
+    {
+      "id": "ref-081",
+      "url": "/docs/ref-081/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/gptq-accurate-post-training-quantization-for-generative-pre-trained-transformers/",
+        "/sources/gptq-accurate-post-training-quantization-for-generative-pre-trained-transformers/"
+      ]
+    },
+    {
+      "id": "ref-120",
+      "url": "/docs/ref-120/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/gray-failure-the-achilles-heel-of-cloud-scale-systems/"
+      ]
+    },
+    {
+      "id": "ref-054",
+      "url": "/docs/ref-054/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/handbook-of-mathematical-functions-with-formulas-graphs-and-mathematical-tables/",
+        "/sources/handbook-of-mathematical-functions-with-formulas-graphs-and-mathematical-tables/"
+      ]
+    },
+    {
+      "id": "ref-039",
+      "url": "/docs/ref-039/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/hitting-the-memory-wall/",
+        "/sources/hitting-the-memory-wall/"
+      ]
+    },
+    {
+      "id": "ref-094",
+      "url": "/docs/ref-094/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/how-to-make-a-multiprocessor-computer-that-correctly-executes-multiprocess-programs/",
+        "/sources/how-to-make-a-multiprocessor-computer-that-correctly-executes-multiprocess-programs/"
+      ]
+    },
+    {
+      "id": "ref-058",
+      "url": "/docs/ref-058/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/human-computer-project/",
+        "/sources/human-computer-project/"
+      ]
+    },
+    {
+      "id": "concept-2a99ca9c01ed5ad8",
+      "url": "/docs/concept-2a99ca9c01ed5ad8/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/ibm-704/"
+      ]
+    },
+    {
+      "id": "ref-051",
+      "url": "/docs/ref-051/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/ieee-754-2019-standard-for-floating-point-arithmetic/",
+        "/sources/ieee-754-2019-standard-for-floating-point-arithmetic/"
+      ]
+    },
+    {
+      "id": "ref-102",
+      "url": "/docs/ref-102/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/implementing-remote-procedure-calls/",
+        "/sources/implementing-remote-procedure-calls/"
+      ]
+    },
+    {
+      "id": "ref-047",
+      "url": "/docs/ref-047/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/implications-of-historical-trends-in-the-electrical-efficiency-of-computing/",
+        "/sources/implications-of-historical-trends-in-the-electrical-efficiency-of-computing/"
+      ]
+    },
+    {
+      "id": "ref-088",
+      "url": "/docs/ref-088/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/in-search-of-an-understandable-consensus-algorithm/",
+        "/sources/in-search-of-an-understandable-consensus-algorithm/"
+      ]
+    },
+    {
+      "id": "ref-042",
+      "url": "/docs/ref-042/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/in-datacenter-performance-analysis-of-a-tensor-processing-unit/",
+        "/sources/in-datacenter-performance-analysis-of-a-tensor-processing-unit/"
+      ]
+    },
+    {
+      "id": "concept-ef0b337a520af324",
+      "url": "/docs/concept-ef0b337a520af324/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/initial-orders/"
+      ]
+    },
+    {
+      "id": "ref-150",
+      "url": "/docs/ref-150/",
+      "kind": "reference",
+      "publicationVisibility": "unlisted",
+      "legacyUrls": [
+        "/references/irreversibility-and-heat-generation-in-the-computing-process/"
+      ]
+    },
+    {
+      "id": "concept-0fdf8f46e0e7b677",
+      "url": "/docs/concept-0fdf8f46e0e7b677/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/koomey의-법칙/"
+      ]
+    },
+    {
+      "id": "concept-kv-cache",
+      "url": "/docs/concept-kv-cache/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/kv-캐시/"
+      ]
+    },
+    {
+      "id": "analysis-kv-cache-throughput",
+      "url": "/docs/analysis-kv-cache-throughput/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/kv-캐시는-왜-llm-추론-처리량을-제한하는가/"
+      ]
+    },
+    {
+      "id": "ref-095",
+      "url": "/docs/ref-095/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/linearizability-a-correctness-condition-for-concurrent-objects/",
+        "/sources/linearizability-a-correctness-condition-for-concurrent-objects/"
+      ]
+    },
+    {
+      "id": "concept-llm-weight-quantization",
+      "url": "/docs/concept-llm-weight-quantization/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/llm-가중치-양자화/"
+      ]
+    },
+    {
+      "id": "analysis-llm-throughput-latency-queueing",
+      "url": "/docs/analysis-llm-throughput-latency-queueing/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/llm-서빙에서-처리량과-지연은-왜-함께-움직이는가/"
+      ]
+    },
+    {
+      "id": "concept-llm-inference-service-metrics",
+      "url": "/docs/concept-llm-inference-service-metrics/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/llm-추론-서비스-지표/"
+      ]
+    },
+    {
+      "id": "concept-llm-inference-energy-metrics",
+      "url": "/docs/concept-llm-inference-energy-metrics/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/llm-추론-에너지-지표/"
+      ]
+    },
+    {
+      "id": "ref-133",
+      "url": "/docs/ref-133/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/llvm-language-reference/"
+      ]
+    },
+    {
+      "id": "ref-096",
+      "url": "/docs/ref-096/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/llvm-a-compilation-framework-for-lifelong-program-analysis-transformation/",
+        "/sources/llvm-a-compilation-framework-for-lifelong-program-analysis-transformation/"
+      ]
+    },
+    {
+      "id": "concept-30fac639582288be",
+      "url": "/docs/concept-30fac639582288be/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/manchester-baby/"
+      ]
+    },
+    {
+      "id": "ref-002",
+      "url": "/docs/ref-002/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/mass-produced-software-components/",
+        "/sources/mass-produced-software-components/"
+      ]
+    },
+    {
+      "id": "ref-055",
+      "url": "/docs/ref-055/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/mathematical-tables-containing-the-common-hyperbolic-and-logistic-logarithms/",
+        "/sources/mathematical-tables-containing-the-common-hyperbolic-and-logistic-logarithms/"
+      ]
+    },
+    {
+      "id": "ref-107",
+      "url": "/docs/ref-107/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/measuring-the-impact-of-early-2025-ai-on-experienced-open-source-developer-productivity/",
+        "/sources/measuring-the-impact-of-early-2025-ai-on-experienced-open-source-developer-productivity/"
+      ]
+    },
+    {
+      "id": "ref-144",
+      "url": "/docs/ref-144/",
+      "kind": "reference",
+      "publicationVisibility": "unlisted",
+      "legacyUrls": [
+        "/references/meditationes-de-cognitione-veritate-et-ideis/"
+      ]
+    },
+    {
+      "id": "ref-121",
+      "url": "/docs/ref-121/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/metastable-failures/"
+      ]
+    },
+    {
+      "id": "ref-146",
+      "url": "/docs/ref-146/",
+      "kind": "reference",
+      "publicationVisibility": "unlisted",
+      "legacyUrls": [
+        "/references/minds-brains-and-programs/"
+      ]
+    },
+    {
+      "id": "ref-069",
+      "url": "/docs/ref-069/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/mixed-precision-training/",
+        "/sources/mixed-precision-training/"
+      ]
+    },
+    {
+      "id": "ref-132",
+      "url": "/docs/ref-132/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/mlir-language-reference/"
+      ]
+    },
+    {
+      "id": "ref-078",
+      "url": "/docs/ref-078/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/mlperf-inference-benchmark/",
+        "/sources/mlperf-inference-benchmark/"
+      ]
+    },
+    {
+      "id": "ref-084",
+      "url": "/docs/ref-084/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/mlperf-inference-power-measurement/",
+        "/sources/mlperf-inference-power-measurement/"
+      ]
+    },
+    {
+      "id": "ref-070",
+      "url": "/docs/ref-070/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/mlperf-training-benchmark/",
+        "/sources/mlperf-training-benchmark/"
+      ]
+    },
+    {
+      "id": "ref-093",
+      "url": "/docs/ref-093/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/monitors-an-operating-system-structuring-concept/",
+        "/sources/monitors-an-operating-system-structuring-concept/"
+      ]
+    },
+    {
+      "id": "ref-071",
+      "url": "/docs/ref-071/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/no-silver-bullet-essence-and-accidents-of-software-engineering/",
+        "/sources/no-silver-bullet-essence-and-accidents-of-software-engineering/"
+      ]
+    },
+    {
+      "id": "concept-np-completeness",
+      "url": "/docs/concept-np-completeness/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/np-완전/"
+      ]
+    },
+    {
+      "id": "ref-127",
+      "url": "/docs/ref-127/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/npm-package-provenance-statements/"
+      ]
+    },
+    {
+      "id": "ref-129",
+      "url": "/docs/ref-129/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/oci-distribution-specification/"
+      ]
+    },
+    {
+      "id": "ref-136",
+      "url": "/docs/ref-136/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/oci-runtime-specification/"
+      ]
+    },
+    {
+      "id": "ref-009",
+      "url": "/docs/ref-009/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/on-computable-numbers-with-an-application-to-the-entscheidungsproblem/",
+        "/sources/on-computable-numbers-with-an-application-to-the-entscheidungsproblem/"
+      ]
+    },
+    {
+      "id": "ref-031",
+      "url": "/docs/ref-031/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/on-the-computational-complexity-of-algorithms/",
+        "/sources/on-the-computational-complexity-of-algorithms/"
+      ]
+    },
+    {
+      "id": "ref-003",
+      "url": "/docs/ref-003/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/on-the-criteria-to-be-used-in-decomposing-systems-into-modules/",
+        "/sources/on-the-criteria-to-be-used-in-decomposing-systems-into-modules/"
+      ]
+    },
+    {
+      "id": "ref-149",
+      "url": "/docs/ref-149/",
+      "kind": "reference",
+      "publicationVisibility": "unlisted",
+      "legacyUrls": [
+        "/references/on-the-origin-of-mitosing-cells/"
+      ]
+    },
+    {
+      "id": "ref-135",
+      "url": "/docs/ref-135/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/onnx-runtime-execution-providers/"
+      ]
+    },
+    {
+      "id": "ref-122",
+      "url": "/docs/ref-122/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/opentelemetry-trace-api/"
+      ]
+    },
+    {
+      "id": "ref-075",
+      "url": "/docs/ref-075/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/orca-a-distributed-serving-system-for-transformer-based-generative-models/",
+        "/sources/orca-a-distributed-serving-system-for-transformer-based-generative-models/"
+      ]
+    },
+    {
+      "id": "concept-18a0ce4363c25093",
+      "url": "/docs/concept-18a0ce4363c25093/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/pdp-11/"
+      ]
+    },
+    {
+      "id": "ref-021",
+      "url": "/docs/ref-021/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/portability-of-c-programs-and-the-unix-system/",
+        "/sources/portability-of-c-programs-and-the-unix-system/"
+      ]
+    },
+    {
+      "id": "ref-113",
+      "url": "/docs/ref-113/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/postgresql-17-transaction-isolation/"
+      ]
+    },
+    {
+      "id": "ref-036",
+      "url": "/docs/ref-036/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/power-measurement-tutorial-for-the-green500-list/",
+        "/sources/power-measurement-tutorial-for-the-green500-list/"
+      ]
+    },
+    {
+      "id": "ref-057",
+      "url": "/docs/ref-057/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/prehistory-the-math-tables-project/",
+        "/sources/prehistory-the-math-tables-project/"
+      ]
+    },
+    {
+      "id": "ref-065",
+      "url": "/docs/ref-065/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/recovery-oriented-computing-roc/",
+        "/sources/recovery-oriented-computing-roc/"
+      ]
+    },
+    {
+      "id": "ref-067",
+      "url": "/docs/ref-067/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/reducibility-among-combinatorial-problems/",
+        "/sources/reducibility-among-combinatorial-problems/"
+      ]
+    },
+    {
+      "id": "ref-045",
+      "url": "/docs/ref-045/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/reevaluating-amdahl-s-law/",
+        "/sources/reevaluating-amdahl-s-law/"
+      ]
+    },
+    {
+      "id": "analysis-dependency-provenance-registry",
+      "url": "/docs/analysis-dependency-provenance-registry/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/registry는-의존성의-출처와-동일성을-어떻게-증명하는가/"
+      ]
+    },
+    {
+      "id": "ref-140",
+      "url": "/docs/ref-140/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/remote-procedure-call-protocols-in-historical-perspective/",
+        "/sources/remote-procedure-call-protocols-in-historical-perspective/"
+      ]
+    },
+    {
+      "id": "ref-123",
+      "url": "/docs/ref-123/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/reproducible-builds-definition/"
+      ]
+    },
+    {
+      "id": "ref-023",
+      "url": "/docs/ref-023/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/rfc-3629-utf-8/",
+        "/sources/rfc-3629-utf-8/"
+      ]
+    },
+    {
+      "id": "ref-114",
+      "url": "/docs/ref-114/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/rfc-9110-http-semantics/"
+      ]
+    },
+    {
+      "id": "ref-034",
+      "url": "/docs/ref-034/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/roofline-an-insightful-visual-performance-model/",
+        "/sources/roofline-an-insightful-visual-performance-model/"
+      ]
+    },
+    {
+      "id": "concept-runtime-contract",
+      "url": "/docs/concept-runtime-contract/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/runtime-contract/"
+      ]
+    },
+    {
+      "id": "analysis-runtime-contract",
+      "url": "/docs/analysis-runtime-contract/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/runtime-contract는-무엇을-보장해야-하는가/"
+      ]
+    },
+    {
+      "id": "ref-097",
+      "url": "/docs/ref-097/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/scalable-parallel-programming-with-cuda/",
+        "/sources/scalable-parallel-programming-with-cuda/"
+      ]
+    },
+    {
+      "id": "ref-112",
+      "url": "/docs/ref-112/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/serializable-isolation-for-snapshot-databases/"
+      ]
+    },
+    {
+      "id": "ref-086",
+      "url": "/docs/ref-086/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/serving-dnns-like-clockwork-performance-predictability-from-the-bottom-up/",
+        "/sources/serving-dnns-like-clockwork-performance-predictability-from-the-bottom-up/"
+      ]
+    },
+    {
+      "id": "ref-080",
+      "url": "/docs/ref-080/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/sglang-efficient-execution-of-structured-language-model-programs/",
+        "/sources/sglang-efficient-execution-of-structured-language-model-programs/"
+      ]
+    },
+    {
+      "id": "ref-005",
+      "url": "/docs/ref-005/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/sixteen-questions-about-software-reuse/",
+        "/sources/sixteen-questions-about-software-reuse/"
+      ]
+    },
+    {
+      "id": "ref-043",
+      "url": "/docs/ref-043/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/slave-memories-and-dynamic-storage-allocation/",
+        "/sources/slave-memories-and-dynamic-storage-allocation/"
+      ]
+    },
+    {
+      "id": "ref-125",
+      "url": "/docs/ref-125/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/slsa-build-provenance-specification/"
+      ]
+    },
+    {
+      "id": "ref-004",
+      "url": "/docs/ref-004/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/software-reuse/",
+        "/sources/software-reuse/"
+      ]
+    },
+    {
+      "id": "ref-124",
+      "url": "/docs/ref-124/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/source-date-epoch-specification/"
+      ]
+    },
+    {
+      "id": "ref-089",
+      "url": "/docs/ref-089/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/spanner-google-s-globally-distributed-database/",
+        "/sources/spanner-google-s-globally-distributed-database/"
+      ]
+    },
+    {
+      "id": "ref-032",
+      "url": "/docs/ref-032/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/spec-cpu-2026-overview/",
+        "/sources/spec-cpu-2026-overview/"
+      ]
+    },
+    {
+      "id": "ref-131",
+      "url": "/docs/ref-131/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/stablehlo-compatibility/"
+      ]
+    },
+    {
+      "id": "ref-130",
+      "url": "/docs/ref-130/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/stablehlo-specification/"
+      ]
+    },
+    {
+      "id": "concept-stablehlo-mlir-abi",
+      "url": "/docs/concept-stablehlo-mlir-abi/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/stablehlo-mlir-abi-경계/"
+      ]
+    },
+    {
+      "id": "ref-059",
+      "url": "/docs/ref-059/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/standards-eastern-automatic-computer/",
+        "/sources/standards-eastern-automatic-computer/"
+      ]
+    },
+    {
+      "id": "ref-115",
+      "url": "/docs/ref-115/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/stripe-idempotent-requests/"
+      ]
+    },
+    {
+      "id": "ref-013",
+      "url": "/docs/ref-013/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/structured-programming/",
+        "/sources/structured-programming/"
+      ]
+    },
+    {
+      "id": "ref-014",
+      "url": "/docs/ref-014/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/structured-programming-with-go-to-statements/",
+        "/sources/structured-programming-with-go-to-statements/"
+      ]
+    },
+    {
+      "id": "ref-134",
+      "url": "/docs/ref-134/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/tensorflow-savedmodel-signatures/"
+      ]
+    },
+    {
+      "id": "ref-063",
+      "url": "/docs/ref-063/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/the-byzantine-generals-problem/",
+        "/sources/the-byzantine-generals-problem/"
+      ]
+    },
+    {
+      "id": "ref-046",
+      "url": "/docs/ref-046/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/the-case-for-energy-proportional-computing/",
+        "/sources/the-case-for-energy-proportional-computing/"
+      ]
+    },
+    {
+      "id": "ref-066",
+      "url": "/docs/ref-066/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/the-complexity-of-theorem-proving-procedures/",
+        "/sources/the-complexity-of-theorem-proving-procedures/"
+      ]
+    },
+    {
+      "id": "ref-056",
+      "url": "/docs/ref-056/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/the-computation-factory-de-prony-s-project-for-making-tables-in-the-1790s/",
+        "/sources/the-computation-factory-de-prony-s-project-for-making-tables-in-the-1790s/"
+      ]
+    },
+    {
+      "id": "ref-041",
+      "url": "/docs/ref-041/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/the-datacenter-as-a-computer/",
+        "/sources/the-datacenter-as-a-computer/"
+      ]
+    },
+    {
+      "id": "ref-141",
+      "url": "/docs/ref-141/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/the-design-philosophy-of-the-darpa-internet-protocols/",
+        "/sources/the-design-philosophy-of-the-darpa-internet-protocols/"
+      ]
+    },
+    {
+      "id": "ref-019",
+      "url": "/docs/ref-019/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/the-development-of-the-c-language/",
+        "/sources/the-development-of-the-c-language/"
+      ]
+    },
+    {
+      "id": "ref-020",
+      "url": "/docs/ref-020/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/the-evolution-of-the-unix-time-sharing-system/",
+        "/sources/the-evolution-of-the-unix-time-sharing-system/"
+      ]
+    },
+    {
+      "id": "ref-016",
+      "url": "/docs/ref-016/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/the-fortran-automatic-coding-system/",
+        "/sources/the-fortran-automatic-coding-system/"
+      ]
+    },
+    {
+      "id": "ref-103",
+      "url": "/docs/ref-103/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/the-google-file-system/",
+        "/sources/the-google-file-system/"
+      ]
+    },
+    {
+      "id": "ref-017",
+      "url": "/docs/ref-017/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/the-history-of-fortran-i-ii-and-iii/",
+        "/sources/the-history-of-fortran-i-ii-and-iii/"
+      ]
+    },
+    {
+      "id": "ref-052",
+      "url": "/docs/ref-052/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/the-history-of-mathematical-tables-from-sumer-to-spreadsheets/",
+        "/sources/the-history-of-mathematical-tables-from-sumer-to-spreadsheets/"
+      ]
+    },
+    {
+      "id": "ref-106",
+      "url": "/docs/ref-106/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/the-impact-of-ai-on-developer-productivity-evidence-from-github-copilot/",
+        "/sources/the-impact-of-ai-on-developer-productivity-evidence-from-github-copilot/"
+      ]
+    },
+    {
+      "id": "ref-040",
+      "url": "/docs/ref-040/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/the-landscape-of-parallel-computing-research-a-view-from-berkeley/",
+        "/sources/the-landscape-of-parallel-computing-research-a-view-from-berkeley/"
+      ]
+    },
+    {
+      "id": "ref-033",
+      "url": "/docs/ref-033/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/the-linpack-benchmark/",
+        "/sources/the-linpack-benchmark/"
+      ]
+    },
+    {
+      "id": "ref-153",
+      "url": "/docs/ref-153/",
+      "kind": "reference",
+      "publicationVisibility": "unlisted",
+      "legacyUrls": [
+        "/references/the-major-transitions-in-evolution/"
+      ]
+    },
+    {
+      "id": "ref-007",
+      "url": "/docs/ref-007/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/the-manchester-small-scale-experimental-machine-the-baby/",
+        "/sources/the-manchester-small-scale-experimental-machine-the-baby/"
+      ]
+    },
+    {
+      "id": "ref-119",
+      "url": "/docs/ref-119/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/the-phi-accrual-failure-detector/"
+      ]
+    },
+    {
+      "id": "ref-001",
+      "url": "/docs/ref-001/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/the-preparation-of-programs-for-an-electronic-digital-computer/",
+        "/sources/the-preparation-of-programs-for-an-electronic-digital-computer/"
+      ]
+    },
+    {
+      "id": "ref-072",
+      "url": "/docs/ref-072/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/the-space-of-developer-productivity/",
+        "/sources/the-space-of-developer-productivity/"
+      ]
+    },
+    {
+      "id": "ref-049",
+      "url": "/docs/ref-049/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/the-tail-at-scale/",
+        "/sources/the-tail-at-scale/"
+      ]
+    },
+    {
+      "id": "ref-022",
+      "url": "/docs/ref-022/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/the-unicode-standard-17-0-0/",
+        "/sources/the-unicode-standard-17-0-0/"
+      ]
+    },
+    {
+      "id": "ref-018",
+      "url": "/docs/ref-018/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/the-unix-time-sharing-system/",
+        "/sources/the-unix-time-sharing-system/"
+      ]
+    },
+    {
+      "id": "ref-152",
+      "url": "/docs/ref-152/",
+      "kind": "reference",
+      "publicationVisibility": "unlisted",
+      "legacyUrls": [
+        "/references/theory-of-self-reproducing-automata/"
+      ]
+    },
+    {
+      "id": "ref-068",
+      "url": "/docs/ref-068/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/there-s-plenty-of-room-at-the-top/",
+        "/sources/there-s-plenty-of-room-at-the-top/"
+      ]
+    },
+    {
+      "id": "ref-100",
+      "url": "/docs/ref-100/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/time-clocks-and-the-ordering-of-events-in-a-distributed-system/",
+        "/sources/time-clocks-and-the-ordering-of-events-in-a-distributed-system/"
+      ]
+    },
+    {
+      "id": "ref-083",
+      "url": "/docs/ref-083/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/tokenpowerbench-benchmarking-the-power-consumption-of-llm-inference/",
+        "/sources/tokenpowerbench-benchmarking-the-power-consumption-of-llm-inference/"
+      ]
+    },
+    {
+      "id": "concept-transformer",
+      "url": "/docs/concept-transformer/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/transformer/"
+      ]
+    },
+    {
+      "id": "analysis-transformer-io-bottleneck",
+      "url": "/docs/analysis-transformer-io-bottleneck/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/transformer-추론은-왜-연산량만으로-설명되지-않는가/"
+      ]
+    },
+    {
+      "id": "ref-099",
+      "url": "/docs/ref-099/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/tvm-an-automated-end-to-end-optimizing-compiler-for-deep-learning/",
+        "/sources/tvm-an-automated-end-to-end-optimizing-compiler-for-deep-learning/"
+      ]
+    },
+    {
+      "id": "ref-024",
+      "url": "/docs/ref-024/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/unicode-normalization-forms/",
+        "/sources/unicode-normalization-forms/"
+      ]
+    },
+    {
+      "id": "concept-be5e965404a672d3",
+      "url": "/docs/concept-be5e965404a672d3/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/unicode-scalar-value/"
+      ]
+    },
+    {
+      "id": "ref-027",
+      "url": "/docs/ref-027/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/unicode-security-mechanisms/",
+        "/sources/unicode-security-mechanisms/"
+      ]
+    },
+    {
+      "id": "ref-025",
+      "url": "/docs/ref-025/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/unicode-text-segmentation/",
+        "/sources/unicode-text-segmentation/"
+      ]
+    },
+    {
+      "id": "concept-092a889f122121cb",
+      "url": "/docs/concept-092a889f122121cb/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/unix/"
+      ]
+    },
+    {
+      "id": "analysis-8d320775b8ff83eb",
+      "url": "/docs/analysis-8d320775b8ff83eb/",
+      "kind": "analysis",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/analyses/unix와-c/"
+      ]
+    },
+    {
+      "id": "concept-c854e2f6358212d1",
+      "url": "/docs/concept-c854e2f6358212d1/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/utf-16/"
+      ]
+    },
+    {
+      "id": "concept-f4f7573102f01723",
+      "url": "/docs/concept-f4f7573102f01723/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/utf-8/"
+      ]
+    },
+    {
+      "id": "ref-035",
+      "url": "/docs/ref-035/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/validity-of-the-single-processor-approach-to-achieving-large-scale-computing-capabilities/",
+        "/sources/validity-of-the-single-processor-approach-to-achieving-large-scale-computing-capabilities/"
+      ]
+    },
+    {
+      "id": "ref-061",
+      "url": "/docs/ref-061/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/visicalc-apple-ii-version-1-0-manual/",
+        "/sources/visicalc-apple-ii-version-1-0-manual/"
+      ]
+    },
+    {
+      "id": "ref-050",
+      "url": "/docs/ref-050/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/what-every-computer-scientist-should-know-about-floating-point-arithmetic/",
+        "/sources/what-every-computer-scientist-should-know-about-floating-point-arithmetic/"
+      ]
+    },
+    {
+      "id": "ref-026",
+      "url": "/docs/ref-026/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/whatwg-encoding-standard/",
+        "/sources/whatwg-encoding-standard/"
+      ]
+    },
+    {
+      "id": "concept-2397a193cf79979b",
+      "url": "/docs/concept-2397a193cf79979b/",
+      "kind": "concept",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/concepts/wheeler-jump/"
+      ]
+    },
+    {
+      "id": "ref-064",
+      "url": "/docs/ref-064/",
+      "kind": "reference",
+      "publicationVisibility": "public",
+      "legacyUrls": [
+        "/references/why-do-internet-services-fail-and-what-can-be-done-about-it/",
+        "/sources/why-do-internet-services-fail-and-what-can-be-done-about-it/"
+      ]
+    }
+  ],
+  "redirects": {
+    "/analyses/17세기-해석기하학은-어떻게-디스플레이-픽셀과-지도가-되었는가/": "/docs/analysis-analytic-geometry-to-pixels-and-maps/",
+    "/concepts/가용성과-복구/": "/docs/concept-availability-recovery/",
+    "/analyses/같은-slo의-llm-서비스는-무엇을-비용으로-세어야-하는가/": "/docs/analysis-llm-slo-resource-cost/",
+    "/concepts/개발자-생산성/": "/docs/concept-developer-productivity/",
+    "/analyses/거듭제곱-법칙을-알고도-지수-기호는-왜-늦게-생겼는가/": "/docs/analysis-exponent-notation-delay/",
+    "/concepts/검산/": "/docs/calculation-checking/",
+    "/concepts/검증-노동/": "/docs/concept-verification-labor/",
+    "/concepts/결함-허용/": "/docs/concept-fault-tolerance/",
+    "/concepts/계산-가능성/": "/docs/concept-01f775b8a307802f/",
+    "/analyses/계산-결과에서-실행-가능한-절차로/": "/docs/stored-results-to-executable-procedures/",
+    "/concepts/계산-복잡도/": "/docs/concept-computational-complexity/",
+    "/concepts/계산-통신-중첩/": "/docs/concept-computation-communication-overlap/",
+    "/analyses/계산기와-컴퓨터의-차이/": "/docs/analysis-7058e090e0383cd3/",
+    "/analyses/계산은-발명인가-자연-현상인가/": "/docs/analysis-computation-invention-or-natural-phenomenon/",
+    "/concepts/계산적-인공생명/": "/docs/concept-computational-artificial-life/",
+    "/entities/고트프리트-빌헬름-라이프니츠/": "/docs/entity-gottfried-wilhelm-leibniz/",
+    "/concepts/공생발생/": "/docs/concept-symbiogenesis/",
+    "/concepts/구조적-프로그래밍/": "/docs/concept-1c13e72137b697ae/",
+    "/concepts/구조화-프로그램-정리/": "/docs/concept-8e6aa351d4e32f97/",
+    "/concepts/그래핌-클러스터/": "/docs/concept-2913946302b96786/",
+    "/entities/그레이스-호퍼/": "/docs/entity-d28fe0553930f907/",
+    "/analyses/기계가-계산한다는-말의-이론적-의미/": "/docs/analysis-f5a313683050649e/",
+    "/analyses/기능주의와-중국어-방은-어디서-갈라지는가/": "/docs/analysis-functionalism-vs-chinese-room/",
+    "/concepts/기질-독립성과-기능주의/": "/docs/concept-substrate-independence-functionalism/",
+    "/analyses/기하는-어떻게-계산이-되었고-왜-데카르트의-표기가-페르마를-이겼는가/": "/docs/analysis-geometry-to-computation-descartes-vs-fermat/",
+    "/sources/기하학과-대수학의-위대한-번역/": "/docs/src-010/",
+    "/concepts/기호-조작/": "/docs/concept-c7fabfe3dff4e5d5/",
+    "/analyses/기호는-어떻게-생각의-보조-도구에서-계산-엔진이-되었는가/": "/docs/analysis-symbols-from-aid-to-computation-engine/",
+    "/concepts/꼬리-지연-시간/": "/docs/concept-f57f54a4895add44/",
+    "/analyses/낮은-비트는-왜-llm-추론-속도를-보장하지-않는가/": "/docs/analysis-low-bit-llm-inference/",
+    "/analyses/낮은-운영-에너지는-지속-가능한-컴퓨팅을-보장하는가/": "/docs/analysis-operational-energy-sustainable-computing/",
+    "/analyses/낮은-정밀도는-ai의-컴퓨팅-능력을-어떻게-바꾸는가/": "/docs/analysis-low-precision-ai-result-contract/",
+    "/concepts/논리-게이트/": "/docs/concept-f019ffbfafa82d67/",
+    "/analyses/논리-회로와-이진-표현/": "/docs/analysis-0c7e244ee605320d/",
+    "/concepts/다크-실리콘/": "/docs/concept-7fcb10ccbdb06070/",
+    "/concepts/다항-시간-환원/": "/docs/concept-polynomial-time-reduction/",
+    "/concepts/단계적-정제/": "/docs/concept-723508cf4e8d30ee/",
+    "/concepts/단위-선분과-차원-환원/": "/docs/concept-unit-segment-dimension-reduction/",
+    "/concepts/대기열과-부하-제어/": "/docs/concept-queueing-load-control/",
+    "/analyses/더-빠른-계산은-같은-답을-내는가/": "/docs/analysis-8f48231deb7289cb/",
+    "/analyses/더-빠른-프로세서는-왜-더-빠른-프로그램을-보장하지-않는가/": "/docs/analysis-2b56fedc2ec5e743/",
+    "/analyses/더-빠른-하드웨어는-더-나은-알고리즘을-대신할-수-있는가/": "/docs/analysis-hardware-vs-algorithmic-improvement/",
+    "/entities/더글러스-매킬로이/": "/docs/entity-11912d3c997bcb12/",
+    "/entities/데니스-리치/": "/docs/entity-3e83a021b00264fc/",
+    "/entities/데이비드-파나스/": "/docs/entity-7de052ed12219bf9/",
+    "/entities/데이비드-휠러/": "/docs/entity-e8a9bb25328ec94e/",
+    "/concepts/데이터-표현/": "/docs/concept-93fca2ee9dac9fb6/",
+    "/sources/데이터-표현과-인코딩/": "/docs/src-006/",
+    "/entities/도널드-커누스/": "/docs/entity-9452931b4cae505b/",
+    "/concepts/도메인-특화-가속기/": "/docs/concept-dc2142ecaccdc1e9/",
+    "/concepts/동시성/": "/docs/concept-concurrency/",
+    "/concepts/동형이의-문자/": "/docs/concept-cb68fc615e46376e/",
+    "/concepts/디버깅/": "/docs/concept-a1be87c0f839094f/",
+    "/concepts/라이브러리/": "/docs/concept-464cd2bb0d306cc3/",
+    "/concepts/라이브러리-카탈로그/": "/docs/concept-16d053e669459261/",
+    "/concepts/란다우어-원리/": "/docs/concept-landauer-principle/",
+    "/concepts/로더/": "/docs/concept-941343176ad7e60c/",
+    "/analyses/로컬-호출과-파일은-원격-상태가-될-때-무엇을-잃는가/": "/docs/analysis-local-interface-remote-state/",
+    "/concepts/리틀의-법칙/": "/docs/concept-littles-law/",
+    "/entities/린-마굴리스/": "/docs/entity-lynn-margulis/",
+    "/concepts/릴레이-회로/": "/docs/concept-0d04f3f7f3648be5/",
+    "/concepts/링커/": "/docs/concept-46257ebec8e7274c/",
+    "/concepts/마이크로프로그래밍/": "/docs/concept-c9c7cad93930dc6c/",
+    "/concepts/맹목적-사고와-기호적-인식/": "/docs/concept-cogitatio-caeca/",
+    "/concepts/메모리-안전성/": "/docs/concept-0939ab2408573c58/",
+    "/concepts/메모리-이동과-병목-이동/": "/docs/concept-memory-movement-bottleneck-shift/",
+    "/concepts/메모리-장벽/": "/docs/concept-df7e932b999f444f/",
+    "/concepts/멱등성/": "/docs/concept-idempotency/",
+    "/concepts/모듈화/": "/docs/concept-f047e0039fc9a9c0/",
+    "/entities/모리스-윌크스/": "/docs/entity-7e280fd99a7b35d0/",
+    "/concepts/목적-프로그램/": "/docs/concept-d2f652046668c971/",
+    "/concepts/목표-품질-도달-시간/": "/docs/concept-time-to-quality/",
+    "/concepts/무어의-법칙/": "/docs/concept-0b68e8bcd6a95a79/",
+    "/concepts/바이트-순서-표식/": "/docs/concept-5163a00379489f02/",
+    "/analyses/범용성은-어떻게-컴퓨팅-능력이-되었는가/": "/docs/analysis-63baea1fd8a3a197/",
+    "/concepts/벤치마크-계약/": "/docs/concept-benchmark-contract/",
+    "/analyses/벤치마크-숫자는-왜-직접-비교되지-않는가/": "/docs/analysis-benchmark-numbers-not-directly-comparable/",
+    "/analyses/병렬-컴퓨팅은-시간을-줄이는가-문제를-키우는가/": "/docs/analysis-3d25f4823ef50776/",
+    "/concepts/병렬-확장성/": "/docs/concept-d4ef040697b43518/",
+    "/concepts/보편-기호법과-사유의-계산/": "/docs/concept-characteristica-calculus/",
+    "/concepts/보편-튜링-기계/": "/docs/concept-676372e6cb31537d/",
+    "/concepts/복귀-주소/": "/docs/concept-47ba75def6a810da/",
+    "/concepts/복제-로그와-합의/": "/docs/concept-replicated-log-consensus/",
+    "/concepts/본질적-복잡성과-부수적-복잡성/": "/docs/concept-essential-accidental-complexity/",
+    "/concepts/부동소수점-정확성/": "/docs/concept-d4fdbd19616560c0/",
+    "/concepts/부분-실패/": "/docs/concept-partial-failure/",
+    "/concepts/부트스트랩/": "/docs/concept-873d18c3be4404fb/",
+    "/analyses/분산-서비스는-빠른-응답과-같은-상태를-어떻게-함께-보장하는가/": "/docs/analysis-distributed-consistency-latency/",
+    "/concepts/분산-파일-시스템/": "/docs/concept-distributed-file-system/",
+    "/concepts/불-대수/": "/docs/concept-918ae6f1f0969df3/",
+    "/entities/블레즈-아구에라-이-아르카스/": "/docs/entity-aguera-y-arcas/",
+    "/concepts/비잔틴-장애/": "/docs/concept-byzantine-fault/",
+    "/concepts/비트-연산/": "/docs/concept-38dd11a2bcc6049f/",
+    "/analyses/비트-패턴과-해석-규칙/": "/docs/analysis-d01616805eb5bcb3/",
+    "/concepts/비트와-바이트/": "/docs/concept-d7da5df4d36a970c/",
+    "/analyses/빠른-서비스는-왜-가용한-서비스를-보장하지-않는가/": "/docs/analysis-service-speed-vs-availability/",
+    "/concepts/상호-배제와-동기화/": "/docs/concept-mutual-exclusion-synchronization/",
+    "/sources/생명은-계산이며-공생발생으로-진화한다/": "/docs/src-008/",
+    "/concepts/서브루틴/": "/docs/concept-446e9f53b7a0dab2/",
+    "/analyses/서브루틴-라이브러리에서-api로/": "/docs/analysis-4095b0c80dbee408/",
+    "/sources/서브루틴과-스택-stack-의-원리/": "/docs/src-004/",
+    "/concepts/선형화-가능성/": "/docs/concept-linearizability/",
+    "/concepts/성능-이식성/": "/docs/concept-performance-portability/",
+    "/concepts/소스-프로그램/": "/docs/concept-3e1313946067714a/",
+    "/concepts/소프트웨어-공학/": "/docs/concept-432b4756227c6ef2/",
+    "/concepts/소프트웨어-재사용/": "/docs/concept-65669d1c4c32c693/",
+    "/analyses/소프트웨어-재사용의-역사/": "/docs/analysis-0b0061867a466b88/",
+    "/concepts/소프트웨어-컴포넌트/": "/docs/concept-fa0c6ecb3f94fe4c/",
+    "/concepts/수명-주기-평가-경계/": "/docs/concept-lifecycle-assessment-boundary/",
+    "/concepts/수학-표/": "/docs/mathematical-tables/",
+    "/analyses/수학-표에서-스프레드시트로/": "/docs/from-mathematical-tables-to-spreadsheets/",
+    "/analyses/수학-표의-검산에서-수치-결과-계약으로/": "/docs/from-table-checking-to-numerical-result-contracts/",
+    "/concepts/순차-일관성/": "/docs/concept-sequential-consistency/",
+    "/concepts/스위칭-회로/": "/docs/concept-8ae81e59373c00f2/",
+    "/concepts/스택/": "/docs/concept-c297dc5b421f48a3/",
+    "/concepts/스택-프레임/": "/docs/concept-f6e983b17cae80b7/",
+    "/entities/스탠리-길/": "/docs/entity-899388142c701ab0/",
+    "/entities/스티븐-c-존슨/": "/docs/entity-2f17a71c2815f89f/",
+    "/concepts/스프레드시트/": "/docs/spreadsheet/",
+    "/concepts/시스템-프로그래밍/": "/docs/concept-141883d0f8048c7e/",
+    "/concepts/시스템-호출/": "/docs/concept-d61f7b46dc608713/",
+    "/concepts/알고리즘과-스케줄-분리/": "/docs/concept-algorithm-schedule-separation/",
+    "/concepts/알고리즘적-사고/": "/docs/concept-e2b63e6394d296b1/",
+    "/entities/알론조-처치/": "/docs/entity-b7b72330d3a62500/",
+    "/entities/앨런-튜링/": "/docs/entity-07a5de25c325b6f0/",
+    "/concepts/어셈블러/": "/docs/concept-efde1ed2c65b5416/",
+    "/concepts/에너지-비례-컴퓨팅/": "/docs/concept-494620a1e7c73b24/",
+    "/entities/에이다-러브레이스/": "/docs/entity-970046b84bf0f7e1/",
+    "/entities/에츠허르-데이크스트라/": "/docs/entity-b215332ddbebab35/",
+    "/concepts/연속-배칭/": "/docs/concept-continuous-batching/",
+    "/entities/올레요한-달/": "/docs/entity-e23557a759d62f70/",
+    "/concepts/외부-일관성과-시간-불확실성/": "/docs/concept-external-consistency-time-uncertainty/",
+    "/concepts/운영-탄소와-내재-탄소/": "/docs/concept-operational-embodied-carbon/",
+    "/concepts/운영체제/": "/docs/concept-c7e0c2c53cb04fba/",
+    "/concepts/원격-프로시저-호출/": "/docs/concept-remote-procedure-call/",
+    "/concepts/위첨자-지수-표기/": "/docs/concept-superscript-exponent/",
+    "/meta/위키-개요/": "/docs/meta-overview/",
+    "/meta/위키-색인/": "/docs/meta-index/",
+    "/concepts/유니코드/": "/docs/concept-496b0829073c279a/",
+    "/concepts/유니코드-정규화/": "/docs/concept-9351a6279b74d274/",
+    "/concepts/유닉스-파이프/": "/docs/concept-d86dcb525d6a2843/",
+    "/concepts/유한-차분법/": "/docs/concept-5cd779cec1e9716b/",
+    "/concepts/의사의법/": "/docs/concept-adequality/",
+    "/concepts/이기종-실행-모델/": "/docs/concept-heterogeneous-execution-model/",
+    "/concepts/이식성/": "/docs/concept-5063ca2b2057b092/",
+    "/concepts/이진-덧셈-회로/": "/docs/concept-59604f5365047afb/",
+    "/concepts/이진법/": "/docs/concept-90428fe85dfd3403/",
+    "/concepts/인간-계산자/": "/docs/human-computers/",
+    "/analyses/인간-계산자와-계산-공장/": "/docs/human-computers-and-computation-factories/",
+    "/meta/인용-위치-감사/": "/docs/meta-quote-locator-audit/",
+    "/concepts/인코딩/": "/docs/concept-a446fe7ee6ca59f2/",
+    "/analyses/인코딩-심화/": "/docs/analysis-9241eb4539243823/",
+    "/concepts/인코딩-오류/": "/docs/concept-6c282053efbb112b/",
+    "/concepts/입력-검증/": "/docs/concept-input-validation/",
+    "/analyses/입력을-해석하는-경계는-왜-보안-경계인가/": "/docs/analysis-interpretation-security-boundary/",
+    "/concepts/입출력-인지-어텐션/": "/docs/concept-io-aware-attention/",
+    "/concepts/자기-수정-코드/": "/docs/concept-4a63d3dfa96ba65a/",
+    "/concepts/자기-주의/": "/docs/concept-self-attention/",
+    "/concepts/자기복제-오토마타/": "/docs/concept-self-reproducing-automata/",
+    "/concepts/자동-프로그래밍/": "/docs/concept-1bbfe00922d38ab1/",
+    "/concepts/자동화-경계/": "/docs/concept-automation-boundary/",
+    "/analyses/자동화는-계산-노동을-없애는가-책임을-옮기는가/": "/docs/analysis-automation-labor-responsibility/",
+    "/meta/작업-로그/": "/docs/meta-log/",
+    "/concepts/장애-감지/": "/docs/concept-failure-detection/",
+    "/analyses/장애-감지는-실패와-느림을-어떻게-구분하는가/": "/docs/analysis-failure-detection-gray-metastable/",
+    "/concepts/재배치/": "/docs/concept-d679e8f4343f66ba/",
+    "/analyses/재사용과-추측은-llm-추론-작업량을-어떻게-바꾸는가/": "/docs/analysis-llm-reuse-speculation-work/",
+    "/concepts/재시도/": "/docs/concept-retries/",
+    "/analyses/재시도는-실패를-줄이면서-부하를-어디로-옮기는가/": "/docs/analysis-retry-amplification-and-control/",
+    "/concepts/재현-가능한-빌드/": "/docs/concept-reproducible-builds/",
+    "/analyses/재현-가능한-빌드는-무엇을-같게-만드는가/": "/docs/analysis-reproducible-build-boundary/",
+    "/analyses/저장-프로그램-개념의-여러-기원/": "/docs/analysis-3259f99bb25a494c/",
+    "/concepts/저장-프로그램-컴퓨터/": "/docs/concept-ef02c2bc7dc5ea9b/",
+    "/concepts/전력-사용-효율/": "/docs/concept-power-usage-effectiveness/",
+    "/analyses/전력-장벽은-성능-향상의-의미를-어떻게-바꾸었는가/": "/docs/analysis-353b4b2d38841a24/",
+    "/analyses/전용-연산기와-범용-제어기의-진자-운동/": "/docs/analysis-specialized-vs-general-pendulum/",
+    "/concepts/접두사-kv-캐싱/": "/docs/concept-prefix-kv-caching/",
+    "/concepts/정보-은닉/": "/docs/concept-099497b965b35d3a/",
+    "/concepts/정수-오버플로/": "/docs/concept-9ecf6d54b1e384b0/",
+    "/concepts/정지-문제/": "/docs/concept-dc1573dca7d35049/",
+    "/analyses/정확히-한-번은-어디까지-가능한가/": "/docs/analysis-exactly-once-boundary/",
+    "/concepts/제어-구조/": "/docs/concept-7cc49c1806726804/",
+    "/concepts/제어-흐름/": "/docs/concept-830fb7209f3c8247/",
+    "/entities/조지-불/": "/docs/entity-73f5398f704a53a7/",
+    "/entities/존-배커스/": "/docs/entity-4e28b2707c1117c0/",
+    "/entities/존-설/": "/docs/entity-john-searle/",
+    "/entities/존-폰-노이만/": "/docs/entity-ef144988cc7f1512/",
+    "/concepts/종-수량-쌍/": "/docs/concept-quantity-species-pairs/",
+    "/concepts/종단-간-원칙/": "/docs/concept-end-to-end-principle/",
+    "/entities/주세페-야코피니/": "/docs/entity-3765181834c9ce12/",
+    "/concepts/중간-표현/": "/docs/concept-intermediate-representation/",
+    "/concepts/중국어-방과-구문-의미-간극/": "/docs/concept-chinese-room-syntax-semantics/",
+    "/sources/지수-기호-하나를-얻기까지-왜-1877년이나-걸렸는가/": "/docs/src-009/",
+    "/meta/지식-그래프-관계-스키마/": "/docs/meta-knowledge-graph-schema/",
+    "/concepts/직렬-가능성/": "/docs/concept-serializability/",
+    "/concepts/차분-기관/": "/docs/concept-83b76a0498d798aa/",
+    "/entities/찰스-배비지/": "/docs/entity-b47da9a0362c46e5/",
+    "/entities/찰스-w-크루거/": "/docs/entity-1a2d36f59369083d/",
+    "/concepts/처치-튜링-논제/": "/docs/concept-b95bdd2d77f6f194/",
+    "/analyses/초기-소프트웨어의-계층화/": "/docs/analysis-6a13ea1dd48b1014/",
+    "/sources/초기-소프트웨어의-탄생/": "/docs/src-002/",
+    "/analyses/초당-토큰-수는-왜-llm-서비스-능력을-설명하지-못하는가/": "/docs/analysis-token-rate-service-capability/",
+    "/concepts/추측-디코딩/": "/docs/concept-speculative-decoding/",
+    "/concepts/축소-명령어-집합-컴퓨터/": "/docs/concept-613958ec8891ac2d/",
+    "/concepts/캐시-메모리/": "/docs/concept-6aaebafb1aacc624/",
+    "/concepts/컴파일러/": "/docs/concept-8d4656f333ec153d/",
+    "/concepts/컴파일러-최적화/": "/docs/concept-eb050b34d56c0961/",
+    "/meta/컴퓨팅-능력-독서-지도/": "/docs/meta-9bc0d3d686763690/",
+    "/analyses/컴퓨팅-능력의-발달사/": "/docs/analysis-f822354704bc38bb/",
+    "/concepts/컴퓨팅-능력이란-무엇인가/": "/docs/computing-capability/",
+    "/sources/컴퓨팅의-기원-배비지와-러브레이스/": "/docs/src-001/",
+    "/entities/켄-톰프슨/": "/docs/entity-ef60b71b4f5fba86/",
+    "/analyses/코드-생산량은-왜-개발-생산성을-설명하지-못하는가/": "/docs/analysis-code-volume-developer-productivity/",
+    "/concepts/코드-유닛/": "/docs/concept-9574348ae704d682/",
+    "/concepts/코드-포인트/": "/docs/concept-e589f64b6639a460/",
+    "/entities/코라도-뵘/": "/docs/entity-6c7519108429a099/",
+    "/entities/클로드-섀넌/": "/docs/entity-1cd37570ca9acab2/",
+    "/entities/토니-호어/": "/docs/entity-c645c95848b4d51e/",
+    "/entities/토머스-홉스/": "/docs/entity-thomas-hobbes/",
+    "/concepts/튜링-기계/": "/docs/concept-c617f2098bd57016/",
+    "/analyses/트랜잭션-시스템은-어떤-순서-보장을-제공하는가/": "/docs/analysis-transaction-ordering-guarantees/",
+    "/concepts/파일-시스템/": "/docs/concept-7c33e4cb9fd49f6c/",
+    "/analyses/평균-성능은-왜-서비스의-컴퓨팅-능력을-설명하지-못하는가/": "/docs/analysis-01dd444cf0037615/",
+    "/sources/폐쇄형-서브루틴과-wheeler-jump/": "/docs/src-005/",
+    "/concepts/포스트모템-루틴/": "/docs/concept-325f29bd4557260c/",
+    "/concepts/폰-노이만-구조/": "/docs/concept-7d1c4861fc9f4cd5/",
+    "/analyses/표현-배치-계약은-어떻게-컴퓨팅-능력을-만드는가/": "/docs/analysis-representation-placement-contract/",
+    "/analyses/표현-ir-abi-경계는-무엇을-보존하는가/": "/docs/analysis-stablehlo-mlir-abi-boundary/",
+    "/concepts/프레임버퍼-메모리-사상/": "/docs/concept-framebuffer-memory-mapping/",
+    "/concepts/프로그래밍-가능성/": "/docs/concept-569257e7cbee4eb8/",
+    "/concepts/프로그래밍-언어/": "/docs/concept-26360c8b4141acb4/",
+    "/concepts/프리필과-디코드/": "/docs/concept-prefill-decode/",
+    "/concepts/하드웨어-실행-모델/": "/docs/concept-e83f2a1b94d76c01/",
+    "/analyses/하드웨어-실행-모델은-어떻게-제어와-상태를-엮는가/": "/docs/analysis-7a3b4c5d6e7f8091/",
+    "/analyses/한-소스의-의미와-성능은-가속기로-어떻게-번역되는가/": "/docs/analysis-source-semantics-accelerator-performance/",
+    "/analyses/한-프로그램의-순서는-여러-실행-주체에서-어떻게-보존되는가/": "/docs/analysis-concurrent-order-shared-state/",
+    "/concepts/해석-기관/": "/docs/concept-4b367720c4a42e5a/",
+    "/concepts/해석기하학/": "/docs/concept-analytic-geometry/",
+    "/concepts/혼합-정밀도/": "/docs/concept-mixed-precision/",
+    "/sources/홉스와-라이프니츠-기호에서-ai까지/": "/docs/src-007/",
+    "/references/홉스와-라이프니츠-기호의-기능/": "/docs/ref-142/",
+    "/references/a-case-against-the-go-to-statement/": "/docs/ref-011/",
+    "/sources/a-case-against-the-go-to-statement/": "/docs/ref-011/",
+    "/references/a-critique-of-ansi-sql-isolation-levels/": "/docs/ref-111/",
+    "/references/a-new-golden-age-for-computer-architecture/": "/docs/ref-138/",
+    "/sources/a-new-golden-age-for-computer-architecture/": "/docs/ref-138/",
+    "/references/a-note-respecting-the-application-of-machinery-to-the-calculation-of-astronomical-tables/": "/docs/ref-053/",
+    "/sources/a-note-respecting-the-application-of-machinery-to-the-calculation-of-astronomical-tables/": "/docs/ref-053/",
+    "/references/a-proof-for-the-queuing-formula-l-λ-w/": "/docs/ref-085/",
+    "/sources/a-proof-for-the-queuing-formula-l-λ-w/": "/docs/ref-085/",
+    "/references/a-symbolic-analysis-of-relay-and-switching-circuits/": "/docs/ref-008/",
+    "/sources/a-symbolic-analysis-of-relay-and-switching-circuits/": "/docs/ref-008/",
+    "/references/absent-qualia-fading-qualia-dancing-qualia/": "/docs/ref-154/",
+    "/analyses/agi-판정-기준은-누가-옮기는가/": "/docs/analysis-agi-criteria-shift/",
+    "/analyses/ai-시스템은-병목을-어떻게-이동시키는가/": "/docs/analysis-ai-bottleneck-shifting/",
+    "/analyses/ai-인프라의-병목-계보/": "/docs/analysis-ai-bottleneck-lineage/",
+    "/concepts/ai-컴퓨팅-병목/": "/docs/concept-ai-computing-bottlenecks/",
+    "/concepts/ai-코딩-지원/": "/docs/concept-ai-coding-assistance/",
+    "/references/an-investigation-of-the-laws-of-thought/": "/docs/ref-030/",
+    "/sources/an-investigation-of-the-laws-of-thought/": "/docs/ref-030/",
+    "/references/an-unsolvable-problem-of-elementary-number-theory/": "/docs/ref-010/",
+    "/sources/an-unsolvable-problem-of-elementary-number-theory/": "/docs/ref-010/",
+    "/concepts/api/": "/docs/concept-2ff6633d43e61407/",
+    "/references/artificial-general-intelligence-is-already-here/": "/docs/ref-151/",
+    "/concepts/ascii/": "/docs/concept-6a0c16a9841c87e8/",
+    "/concepts/aslr-address-space-layout-randomization/": "/docs/aslr/",
+    "/concepts/aslr/": "/docs/aslr/",
+    "/references/aslr-1차-자료-묶음/": "/docs/ref-137/",
+    "/references/attention-is-all-you-need/": "/docs/ref-073/",
+    "/sources/attention-is-all-you-need/": "/docs/ref-073/",
+    "/references/awq-activation-aware-weight-quantization-for-on-device-llm-compression-and-acceleration/": "/docs/ref-082/",
+    "/sources/awq-activation-aware-weight-quantization-for-on-device-llm-compression-and-acceleration/": "/docs/ref-082/",
+    "/references/bazel-build-files-and-hermeticity/": "/docs/ref-126/",
+    "/references/blaise-agüera-y-arcas-big-think-인터뷰-원문/": "/docs/ref-147/",
+    "/references/brewer-s-conjecture-and-the-feasibility-of-consistent-available-partition-tolerant-web-services/": "/docs/ref-087/",
+    "/sources/brewer-s-conjecture-and-the-feasibility-of-consistent-available-partition-tolerant-web-services/": "/docs/ref-087/",
+    "/concepts/c-문자열/": "/docs/concept-3d371068dd880445/",
+    "/concepts/c-언어/": "/docs/concept-f438fd4127b48dbb/",
+    "/references/c-integer-and-shift-semantics/": "/docs/ref-029/",
+    "/sources/c-integer-and-shift-semantics/": "/docs/ref-029/",
+    "/references/cambridge-computer-laboratory-the-history-of-the-computer-lab/": "/docs/ref-028/",
+    "/sources/cambridge-computer-laboratory-the-history-of-the-computer-lab/": "/docs/ref-028/",
+    "/concepts/cap-정리/": "/docs/concept-cap-theorem/",
+    "/references/carbon-emissions-and-large-neural-network-training/": "/docs/ref-110/",
+    "/sources/carbon-emissions-and-large-neural-network-training/": "/docs/ref-110/",
+    "/references/chasing-carbon-the-elusive-environmental-footprint-of-computing/": "/docs/ref-109/",
+    "/sources/chasing-carbon-the-elusive-environmental-footprint-of-computing/": "/docs/ref-109/",
+    "/references/computational-life/": "/docs/ref-148/",
+    "/references/cooperating-sequential-processes/": "/docs/ref-092/",
+    "/sources/cooperating-sequential-processes/": "/docs/ref-092/",
+    "/references/cramming-more-components-onto-integrated-circuits/": "/docs/ref-037/",
+    "/sources/cramming-more-components-onto-integrated-circuits/": "/docs/ref-037/",
+    "/references/cwe-190-integer-overflow-or-wraparound/": "/docs/ref-091/",
+    "/sources/cwe-190-integer-overflow-or-wraparound/": "/docs/ref-091/",
+    "/references/cwe-20-improper-input-validation/": "/docs/ref-090/",
+    "/sources/cwe-20-improper-input-validation/": "/docs/ref-090/",
+    "/references/dark-silicon-and-the-end-of-multicore-scaling/": "/docs/ref-048/",
+    "/sources/dark-silicon-and-the-end-of-multicore-scaling/": "/docs/ref-048/",
+    "/references/decoupling-algorithms-from-schedules-for-easy-optimization-of-image-processing-pipelines/": "/docs/ref-098/",
+    "/sources/decoupling-algorithms-from-schedules-for-easy-optimization-of-image-processing-pipelines/": "/docs/ref-098/",
+    "/concepts/dennard-스케일링/": "/docs/concept-3b07c7d6f11aed09/",
+    "/concepts/dependency-provenance와-registry-identity/": "/docs/concept-dependency-provenance/",
+    "/references/design-and-implementation-of-risc-i/": "/docs/ref-044/",
+    "/sources/design-and-implementation-of-risc-i/": "/docs/ref-044/",
+    "/references/design-and-implementation-of-the-sun-network-filesystem/": "/docs/ref-139/",
+    "/sources/design-and-implementation-of-the-sun-network-filesystem/": "/docs/ref-139/",
+    "/references/design-of-ion-implanted-mosfet-s-with-very-small-physical-dimensions/": "/docs/ref-038/",
+    "/sources/design-of-ion-implanted-mosfet-s-with-very-small-physical-dimensions/": "/docs/ref-038/",
+    "/references/distserve-disaggregating-prefill-and-decoding-for-goodput-optimized-large-language-model-serving/": "/docs/ref-077/",
+    "/sources/distserve-disaggregating-prefill-and-decoding-for-goodput-optimized-large-language-model-serving/": "/docs/ref-077/",
+    "/references/dlmf-standard-reference-tables-on-demand/": "/docs/ref-060/",
+    "/sources/dlmf-standard-reference-tables-on-demand/": "/docs/ref-060/",
+    "/references/dynamo-amazon-s-highly-available-key-value-store/": "/docs/ref-104/",
+    "/sources/dynamo-amazon-s-highly-available-key-value-store/": "/docs/ref-104/",
+    "/concepts/edsac/": "/docs/concept-00b55ff0f7a3581b/",
+    "/sources/edsac과-initial-orders/": "/docs/src-003/",
+    "/analyses/edsac은-무엇의-최초인가/": "/docs/analysis-35a2e99b2b062bf6/",
+    "/concepts/edvac/": "/docs/concept-4ac13a0d4fe8ec32/",
+    "/references/efficient-memory-management-for-large-language-model-serving-with-pagedattention/": "/docs/ref-076/",
+    "/sources/efficient-memory-management-for-large-language-model-serving-with-pagedattention/": "/docs/ref-076/",
+    "/references/elementorum-philosophiae-sectio-prima-de-corpore/": "/docs/ref-143/",
+    "/references/end-to-end-arguments-in-system-design/": "/docs/ref-101/",
+    "/sources/end-to-end-arguments-in-system-design/": "/docs/ref-101/",
+    "/concepts/entscheidungsproblem/": "/docs/concept-145622bcdc913103/",
+    "/references/excel-formula-recalculation-and-dependencies/": "/docs/ref-062/",
+    "/sources/excel-formula-recalculation-and-dependencies/": "/docs/ref-062/",
+    "/references/expectation-vs-experience-evaluating-the-usability-of-code-generation-tools-powered-by-large-language-models/": "/docs/ref-105/",
+    "/sources/expectation-vs-experience-evaluating-the-usability-of-code-generation-tools-powered-by-large-language-models/": "/docs/ref-105/",
+    "/references/explication-de-l-arithmétique-binaire/": "/docs/ref-145/",
+    "/references/fast-inference-from-transformers-via-speculative-decoding/": "/docs/ref-079/",
+    "/sources/fast-inference-from-transformers-via-speculative-decoding/": "/docs/ref-079/",
+    "/references/first-draft-of-a-report-on-the-edvac/": "/docs/ref-006/",
+    "/sources/first-draft-of-a-report-on-the-edvac/": "/docs/ref-006/",
+    "/references/flashattention-fast-and-memory-efficient-exact-attention-with-io-awareness/": "/docs/ref-074/",
+    "/sources/flashattention-fast-and-memory-efficient-exact-attention-with-io-awareness/": "/docs/ref-074/",
+    "/references/flow-diagrams-turing-machines-and-languages-with-only-two-formation-rules/": "/docs/ref-012/",
+    "/sources/flow-diagrams-turing-machines-and-languages-with-only-two-formation-rules/": "/docs/ref-012/",
+    "/concepts/fortran/": "/docs/concept-72af5ee2350eff99/",
+    "/references/fortran-automatic-coding-system-for-the-ibm-704-edpm/": "/docs/ref-015/",
+    "/sources/fortran-automatic-coding-system-for-the-ibm-704-edpm/": "/docs/ref-015/",
+    "/analyses/fortran과-컴파일러/": "/docs/analysis-866096c7a9c8c715/",
+    "/references/foundationdb-transactions-with-unknown-results/": "/docs/ref-116/",
+    "/references/ghg-protocol-product-life-cycle-accounting-and-reporting-standard/": "/docs/ref-108/",
+    "/sources/ghg-protocol-product-life-cycle-accounting-and-reporting-standard/": "/docs/ref-108/",
+    "/references/github-artifact-attestations/": "/docs/ref-128/",
+    "/references/google-sre-addressing-cascading-failures/": "/docs/ref-117/",
+    "/references/google-sre-error-budget-policy/": "/docs/ref-118/",
+    "/concepts/goto-문/": "/docs/concept-60bcdf34d9470eea/",
+    "/analyses/goto와-점프에서-구조적-프로그래밍으로/": "/docs/analysis-fc1fa74eef57ee33/",
+    "/references/gptq-accurate-post-training-quantization-for-generative-pre-trained-transformers/": "/docs/ref-081/",
+    "/sources/gptq-accurate-post-training-quantization-for-generative-pre-trained-transformers/": "/docs/ref-081/",
+    "/references/gray-failure-the-achilles-heel-of-cloud-scale-systems/": "/docs/ref-120/",
+    "/references/handbook-of-mathematical-functions-with-formulas-graphs-and-mathematical-tables/": "/docs/ref-054/",
+    "/sources/handbook-of-mathematical-functions-with-formulas-graphs-and-mathematical-tables/": "/docs/ref-054/",
+    "/references/hitting-the-memory-wall/": "/docs/ref-039/",
+    "/sources/hitting-the-memory-wall/": "/docs/ref-039/",
+    "/references/how-to-make-a-multiprocessor-computer-that-correctly-executes-multiprocess-programs/": "/docs/ref-094/",
+    "/sources/how-to-make-a-multiprocessor-computer-that-correctly-executes-multiprocess-programs/": "/docs/ref-094/",
+    "/references/human-computer-project/": "/docs/ref-058/",
+    "/sources/human-computer-project/": "/docs/ref-058/",
+    "/concepts/ibm-704/": "/docs/concept-2a99ca9c01ed5ad8/",
+    "/references/ieee-754-2019-standard-for-floating-point-arithmetic/": "/docs/ref-051/",
+    "/sources/ieee-754-2019-standard-for-floating-point-arithmetic/": "/docs/ref-051/",
+    "/references/implementing-remote-procedure-calls/": "/docs/ref-102/",
+    "/sources/implementing-remote-procedure-calls/": "/docs/ref-102/",
+    "/references/implications-of-historical-trends-in-the-electrical-efficiency-of-computing/": "/docs/ref-047/",
+    "/sources/implications-of-historical-trends-in-the-electrical-efficiency-of-computing/": "/docs/ref-047/",
+    "/references/in-search-of-an-understandable-consensus-algorithm/": "/docs/ref-088/",
+    "/sources/in-search-of-an-understandable-consensus-algorithm/": "/docs/ref-088/",
+    "/references/in-datacenter-performance-analysis-of-a-tensor-processing-unit/": "/docs/ref-042/",
+    "/sources/in-datacenter-performance-analysis-of-a-tensor-processing-unit/": "/docs/ref-042/",
+    "/concepts/initial-orders/": "/docs/concept-ef0b337a520af324/",
+    "/references/irreversibility-and-heat-generation-in-the-computing-process/": "/docs/ref-150/",
+    "/concepts/koomey의-법칙/": "/docs/concept-0fdf8f46e0e7b677/",
+    "/concepts/kv-캐시/": "/docs/concept-kv-cache/",
+    "/analyses/kv-캐시는-왜-llm-추론-처리량을-제한하는가/": "/docs/analysis-kv-cache-throughput/",
+    "/references/linearizability-a-correctness-condition-for-concurrent-objects/": "/docs/ref-095/",
+    "/sources/linearizability-a-correctness-condition-for-concurrent-objects/": "/docs/ref-095/",
+    "/concepts/llm-가중치-양자화/": "/docs/concept-llm-weight-quantization/",
+    "/analyses/llm-서빙에서-처리량과-지연은-왜-함께-움직이는가/": "/docs/analysis-llm-throughput-latency-queueing/",
+    "/concepts/llm-추론-서비스-지표/": "/docs/concept-llm-inference-service-metrics/",
+    "/concepts/llm-추론-에너지-지표/": "/docs/concept-llm-inference-energy-metrics/",
+    "/references/llvm-language-reference/": "/docs/ref-133/",
+    "/references/llvm-a-compilation-framework-for-lifelong-program-analysis-transformation/": "/docs/ref-096/",
+    "/sources/llvm-a-compilation-framework-for-lifelong-program-analysis-transformation/": "/docs/ref-096/",
+    "/concepts/manchester-baby/": "/docs/concept-30fac639582288be/",
+    "/references/mass-produced-software-components/": "/docs/ref-002/",
+    "/sources/mass-produced-software-components/": "/docs/ref-002/",
+    "/references/mathematical-tables-containing-the-common-hyperbolic-and-logistic-logarithms/": "/docs/ref-055/",
+    "/sources/mathematical-tables-containing-the-common-hyperbolic-and-logistic-logarithms/": "/docs/ref-055/",
+    "/references/measuring-the-impact-of-early-2025-ai-on-experienced-open-source-developer-productivity/": "/docs/ref-107/",
+    "/sources/measuring-the-impact-of-early-2025-ai-on-experienced-open-source-developer-productivity/": "/docs/ref-107/",
+    "/references/meditationes-de-cognitione-veritate-et-ideis/": "/docs/ref-144/",
+    "/references/metastable-failures/": "/docs/ref-121/",
+    "/references/minds-brains-and-programs/": "/docs/ref-146/",
+    "/references/mixed-precision-training/": "/docs/ref-069/",
+    "/sources/mixed-precision-training/": "/docs/ref-069/",
+    "/references/mlir-language-reference/": "/docs/ref-132/",
+    "/references/mlperf-inference-benchmark/": "/docs/ref-078/",
+    "/sources/mlperf-inference-benchmark/": "/docs/ref-078/",
+    "/references/mlperf-inference-power-measurement/": "/docs/ref-084/",
+    "/sources/mlperf-inference-power-measurement/": "/docs/ref-084/",
+    "/references/mlperf-training-benchmark/": "/docs/ref-070/",
+    "/sources/mlperf-training-benchmark/": "/docs/ref-070/",
+    "/references/monitors-an-operating-system-structuring-concept/": "/docs/ref-093/",
+    "/sources/monitors-an-operating-system-structuring-concept/": "/docs/ref-093/",
+    "/references/no-silver-bullet-essence-and-accidents-of-software-engineering/": "/docs/ref-071/",
+    "/sources/no-silver-bullet-essence-and-accidents-of-software-engineering/": "/docs/ref-071/",
+    "/concepts/np-완전/": "/docs/concept-np-completeness/",
+    "/references/npm-package-provenance-statements/": "/docs/ref-127/",
+    "/references/oci-distribution-specification/": "/docs/ref-129/",
+    "/references/oci-runtime-specification/": "/docs/ref-136/",
+    "/references/on-computable-numbers-with-an-application-to-the-entscheidungsproblem/": "/docs/ref-009/",
+    "/sources/on-computable-numbers-with-an-application-to-the-entscheidungsproblem/": "/docs/ref-009/",
+    "/references/on-the-computational-complexity-of-algorithms/": "/docs/ref-031/",
+    "/sources/on-the-computational-complexity-of-algorithms/": "/docs/ref-031/",
+    "/references/on-the-criteria-to-be-used-in-decomposing-systems-into-modules/": "/docs/ref-003/",
+    "/sources/on-the-criteria-to-be-used-in-decomposing-systems-into-modules/": "/docs/ref-003/",
+    "/references/on-the-origin-of-mitosing-cells/": "/docs/ref-149/",
+    "/references/onnx-runtime-execution-providers/": "/docs/ref-135/",
+    "/references/opentelemetry-trace-api/": "/docs/ref-122/",
+    "/references/orca-a-distributed-serving-system-for-transformer-based-generative-models/": "/docs/ref-075/",
+    "/sources/orca-a-distributed-serving-system-for-transformer-based-generative-models/": "/docs/ref-075/",
+    "/concepts/pdp-11/": "/docs/concept-18a0ce4363c25093/",
+    "/references/portability-of-c-programs-and-the-unix-system/": "/docs/ref-021/",
+    "/sources/portability-of-c-programs-and-the-unix-system/": "/docs/ref-021/",
+    "/references/postgresql-17-transaction-isolation/": "/docs/ref-113/",
+    "/references/power-measurement-tutorial-for-the-green500-list/": "/docs/ref-036/",
+    "/sources/power-measurement-tutorial-for-the-green500-list/": "/docs/ref-036/",
+    "/references/prehistory-the-math-tables-project/": "/docs/ref-057/",
+    "/sources/prehistory-the-math-tables-project/": "/docs/ref-057/",
+    "/references/recovery-oriented-computing-roc/": "/docs/ref-065/",
+    "/sources/recovery-oriented-computing-roc/": "/docs/ref-065/",
+    "/references/reducibility-among-combinatorial-problems/": "/docs/ref-067/",
+    "/sources/reducibility-among-combinatorial-problems/": "/docs/ref-067/",
+    "/references/reevaluating-amdahl-s-law/": "/docs/ref-045/",
+    "/sources/reevaluating-amdahl-s-law/": "/docs/ref-045/",
+    "/analyses/registry는-의존성의-출처와-동일성을-어떻게-증명하는가/": "/docs/analysis-dependency-provenance-registry/",
+    "/references/remote-procedure-call-protocols-in-historical-perspective/": "/docs/ref-140/",
+    "/sources/remote-procedure-call-protocols-in-historical-perspective/": "/docs/ref-140/",
+    "/references/reproducible-builds-definition/": "/docs/ref-123/",
+    "/references/rfc-3629-utf-8/": "/docs/ref-023/",
+    "/sources/rfc-3629-utf-8/": "/docs/ref-023/",
+    "/references/rfc-9110-http-semantics/": "/docs/ref-114/",
+    "/references/roofline-an-insightful-visual-performance-model/": "/docs/ref-034/",
+    "/sources/roofline-an-insightful-visual-performance-model/": "/docs/ref-034/",
+    "/concepts/runtime-contract/": "/docs/concept-runtime-contract/",
+    "/analyses/runtime-contract는-무엇을-보장해야-하는가/": "/docs/analysis-runtime-contract/",
+    "/references/scalable-parallel-programming-with-cuda/": "/docs/ref-097/",
+    "/sources/scalable-parallel-programming-with-cuda/": "/docs/ref-097/",
+    "/references/serializable-isolation-for-snapshot-databases/": "/docs/ref-112/",
+    "/references/serving-dnns-like-clockwork-performance-predictability-from-the-bottom-up/": "/docs/ref-086/",
+    "/sources/serving-dnns-like-clockwork-performance-predictability-from-the-bottom-up/": "/docs/ref-086/",
+    "/references/sglang-efficient-execution-of-structured-language-model-programs/": "/docs/ref-080/",
+    "/sources/sglang-efficient-execution-of-structured-language-model-programs/": "/docs/ref-080/",
+    "/references/sixteen-questions-about-software-reuse/": "/docs/ref-005/",
+    "/sources/sixteen-questions-about-software-reuse/": "/docs/ref-005/",
+    "/references/slave-memories-and-dynamic-storage-allocation/": "/docs/ref-043/",
+    "/sources/slave-memories-and-dynamic-storage-allocation/": "/docs/ref-043/",
+    "/references/slsa-build-provenance-specification/": "/docs/ref-125/",
+    "/references/software-reuse/": "/docs/ref-004/",
+    "/sources/software-reuse/": "/docs/ref-004/",
+    "/references/source-date-epoch-specification/": "/docs/ref-124/",
+    "/references/spanner-google-s-globally-distributed-database/": "/docs/ref-089/",
+    "/sources/spanner-google-s-globally-distributed-database/": "/docs/ref-089/",
+    "/references/spec-cpu-2026-overview/": "/docs/ref-032/",
+    "/sources/spec-cpu-2026-overview/": "/docs/ref-032/",
+    "/references/stablehlo-compatibility/": "/docs/ref-131/",
+    "/references/stablehlo-specification/": "/docs/ref-130/",
+    "/concepts/stablehlo-mlir-abi-경계/": "/docs/concept-stablehlo-mlir-abi/",
+    "/references/standards-eastern-automatic-computer/": "/docs/ref-059/",
+    "/sources/standards-eastern-automatic-computer/": "/docs/ref-059/",
+    "/references/stripe-idempotent-requests/": "/docs/ref-115/",
+    "/references/structured-programming/": "/docs/ref-013/",
+    "/sources/structured-programming/": "/docs/ref-013/",
+    "/references/structured-programming-with-go-to-statements/": "/docs/ref-014/",
+    "/sources/structured-programming-with-go-to-statements/": "/docs/ref-014/",
+    "/references/tensorflow-savedmodel-signatures/": "/docs/ref-134/",
+    "/references/the-byzantine-generals-problem/": "/docs/ref-063/",
+    "/sources/the-byzantine-generals-problem/": "/docs/ref-063/",
+    "/references/the-case-for-energy-proportional-computing/": "/docs/ref-046/",
+    "/sources/the-case-for-energy-proportional-computing/": "/docs/ref-046/",
+    "/references/the-complexity-of-theorem-proving-procedures/": "/docs/ref-066/",
+    "/sources/the-complexity-of-theorem-proving-procedures/": "/docs/ref-066/",
+    "/references/the-computation-factory-de-prony-s-project-for-making-tables-in-the-1790s/": "/docs/ref-056/",
+    "/sources/the-computation-factory-de-prony-s-project-for-making-tables-in-the-1790s/": "/docs/ref-056/",
+    "/references/the-datacenter-as-a-computer/": "/docs/ref-041/",
+    "/sources/the-datacenter-as-a-computer/": "/docs/ref-041/",
+    "/references/the-design-philosophy-of-the-darpa-internet-protocols/": "/docs/ref-141/",
+    "/sources/the-design-philosophy-of-the-darpa-internet-protocols/": "/docs/ref-141/",
+    "/references/the-development-of-the-c-language/": "/docs/ref-019/",
+    "/sources/the-development-of-the-c-language/": "/docs/ref-019/",
+    "/references/the-evolution-of-the-unix-time-sharing-system/": "/docs/ref-020/",
+    "/sources/the-evolution-of-the-unix-time-sharing-system/": "/docs/ref-020/",
+    "/references/the-fortran-automatic-coding-system/": "/docs/ref-016/",
+    "/sources/the-fortran-automatic-coding-system/": "/docs/ref-016/",
+    "/references/the-google-file-system/": "/docs/ref-103/",
+    "/sources/the-google-file-system/": "/docs/ref-103/",
+    "/references/the-history-of-fortran-i-ii-and-iii/": "/docs/ref-017/",
+    "/sources/the-history-of-fortran-i-ii-and-iii/": "/docs/ref-017/",
+    "/references/the-history-of-mathematical-tables-from-sumer-to-spreadsheets/": "/docs/ref-052/",
+    "/sources/the-history-of-mathematical-tables-from-sumer-to-spreadsheets/": "/docs/ref-052/",
+    "/references/the-impact-of-ai-on-developer-productivity-evidence-from-github-copilot/": "/docs/ref-106/",
+    "/sources/the-impact-of-ai-on-developer-productivity-evidence-from-github-copilot/": "/docs/ref-106/",
+    "/references/the-landscape-of-parallel-computing-research-a-view-from-berkeley/": "/docs/ref-040/",
+    "/sources/the-landscape-of-parallel-computing-research-a-view-from-berkeley/": "/docs/ref-040/",
+    "/references/the-linpack-benchmark/": "/docs/ref-033/",
+    "/sources/the-linpack-benchmark/": "/docs/ref-033/",
+    "/references/the-major-transitions-in-evolution/": "/docs/ref-153/",
+    "/references/the-manchester-small-scale-experimental-machine-the-baby/": "/docs/ref-007/",
+    "/sources/the-manchester-small-scale-experimental-machine-the-baby/": "/docs/ref-007/",
+    "/references/the-phi-accrual-failure-detector/": "/docs/ref-119/",
+    "/references/the-preparation-of-programs-for-an-electronic-digital-computer/": "/docs/ref-001/",
+    "/sources/the-preparation-of-programs-for-an-electronic-digital-computer/": "/docs/ref-001/",
+    "/references/the-space-of-developer-productivity/": "/docs/ref-072/",
+    "/sources/the-space-of-developer-productivity/": "/docs/ref-072/",
+    "/references/the-tail-at-scale/": "/docs/ref-049/",
+    "/sources/the-tail-at-scale/": "/docs/ref-049/",
+    "/references/the-unicode-standard-17-0-0/": "/docs/ref-022/",
+    "/sources/the-unicode-standard-17-0-0/": "/docs/ref-022/",
+    "/references/the-unix-time-sharing-system/": "/docs/ref-018/",
+    "/sources/the-unix-time-sharing-system/": "/docs/ref-018/",
+    "/references/theory-of-self-reproducing-automata/": "/docs/ref-152/",
+    "/references/there-s-plenty-of-room-at-the-top/": "/docs/ref-068/",
+    "/sources/there-s-plenty-of-room-at-the-top/": "/docs/ref-068/",
+    "/references/time-clocks-and-the-ordering-of-events-in-a-distributed-system/": "/docs/ref-100/",
+    "/sources/time-clocks-and-the-ordering-of-events-in-a-distributed-system/": "/docs/ref-100/",
+    "/references/tokenpowerbench-benchmarking-the-power-consumption-of-llm-inference/": "/docs/ref-083/",
+    "/sources/tokenpowerbench-benchmarking-the-power-consumption-of-llm-inference/": "/docs/ref-083/",
+    "/concepts/transformer/": "/docs/concept-transformer/",
+    "/analyses/transformer-추론은-왜-연산량만으로-설명되지-않는가/": "/docs/analysis-transformer-io-bottleneck/",
+    "/references/tvm-an-automated-end-to-end-optimizing-compiler-for-deep-learning/": "/docs/ref-099/",
+    "/sources/tvm-an-automated-end-to-end-optimizing-compiler-for-deep-learning/": "/docs/ref-099/",
+    "/references/unicode-normalization-forms/": "/docs/ref-024/",
+    "/sources/unicode-normalization-forms/": "/docs/ref-024/",
+    "/concepts/unicode-scalar-value/": "/docs/concept-be5e965404a672d3/",
+    "/references/unicode-security-mechanisms/": "/docs/ref-027/",
+    "/sources/unicode-security-mechanisms/": "/docs/ref-027/",
+    "/references/unicode-text-segmentation/": "/docs/ref-025/",
+    "/sources/unicode-text-segmentation/": "/docs/ref-025/",
+    "/concepts/unix/": "/docs/concept-092a889f122121cb/",
+    "/analyses/unix와-c/": "/docs/analysis-8d320775b8ff83eb/",
+    "/concepts/utf-16/": "/docs/concept-c854e2f6358212d1/",
+    "/concepts/utf-8/": "/docs/concept-f4f7573102f01723/",
+    "/references/validity-of-the-single-processor-approach-to-achieving-large-scale-computing-capabilities/": "/docs/ref-035/",
+    "/sources/validity-of-the-single-processor-approach-to-achieving-large-scale-computing-capabilities/": "/docs/ref-035/",
+    "/references/visicalc-apple-ii-version-1-0-manual/": "/docs/ref-061/",
+    "/sources/visicalc-apple-ii-version-1-0-manual/": "/docs/ref-061/",
+    "/references/what-every-computer-scientist-should-know-about-floating-point-arithmetic/": "/docs/ref-050/",
+    "/sources/what-every-computer-scientist-should-know-about-floating-point-arithmetic/": "/docs/ref-050/",
+    "/references/whatwg-encoding-standard/": "/docs/ref-026/",
+    "/sources/whatwg-encoding-standard/": "/docs/ref-026/",
+    "/concepts/wheeler-jump/": "/docs/concept-2397a193cf79979b/",
+    "/references/why-do-internet-services-fail-and-what-can-be-done-about-it/": "/docs/ref-064/",
+    "/sources/why-do-internet-services-fail-and-what-can-be-done-about-it/": "/docs/ref-064/"
+  }
+}

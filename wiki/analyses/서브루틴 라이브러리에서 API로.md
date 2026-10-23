@@ -1,0 +1,84 @@
+---
+schema_version: 3
+id: analysis-4095b0c80dbee408
+kind: analysis
+title: 서브루틴 라이브러리에서 API로
+aliases:
+  - EDSAC API
+  - API의 전신
+  - 서브루틴과 API
+summary: EDSAC 서브루틴 라이브러리의 카탈로그, 사용 규약, 비용 정보, 오류 진단을 현대 API의 전신으로 해석한 분석.
+domains:
+  - software-engineering
+  - computer-history
+publication_visibility: public
+graph_visibility: public
+created: 2026-07-09
+updated: 2026-10-24
+evidence_ids:
+  - ref-001
+  - ref-003
+  - ref-016
+capability_layers:
+  - programmability
+history:
+  layer: software
+redirect_from:
+  - /analyses/서브루틴-라이브러리에서-api로/
+---
+
+## 핵심 주장
+
+[[서브루틴 라이브러리에서 API로]]는 EDSAC의 [[서브루틴]] 체계가 현대 [[API]]의 전신으로 읽힐 수 있다는 분석이다. 핵심은 이름 붙은 루틴 자체가 아니라 그 루틴을 사용하기 위한 명세·호출 규약·비용 정보·오류 진단 도구·교체 가능한 구현이 함께 형성되었다는 점이다.
+
+## 연결 구조
+
+| 초기 EDSAC 체계 | 현대적 대응 |
+|---|---|
+| 폐쇄형 서브루틴 | 함수, 프로시저, 메서드 |
+| [[라이브러리 카탈로그]] | API 문서, 레퍼런스 매뉴얼 |
+| 실행 시간·정밀도·저장 공간 정보 | 성능 특성, 복잡도, 리소스 요구사항 |
+| 여러 버전의 유사 루틴 | 구현 선택, 최적화 버전, feature variant |
+| [[포스트모템 루틴]] | crash dump, 로그, 장애 분석 도구 |
+| [[자동 프로그래밍]]의 변환 루틴 | 어셈블러, 컴파일러, 링커, 빌드 도구 |
+
+## 분석
+
+EDSAC의 라이브러리는 단순히 자주 쓰는 코드를 모아 둔 창고가 아니었다. [[The Preparation of Programs for an Electronic Digital Computer]]는 라이브러리가 그룹의 경험을 보존하고 새 사용자에게 효과적인 방법을 전달하며 반복 작업을 줄이는 지식 체계라고 본다. 이 점에서 라이브러리는 코드·문서·운영 경험이 결합된 공유 자산이었다.
+
+[[API]]적 성격은 사용자가 내부 구현을 모두 알 필요가 없다는 데서 드러난다. 프로그래머는 카탈로그가 제공하는 동작 명세와 사용 규약에 기대어 루틴을 호출한다. 이는 구현과 사용의 경계를 만들고, 그 경계가 안정적이면 내부 루틴은 개선되거나 교체될 수 있다.
+
+또한 EDSAC의 카탈로그는 단순한 "무엇을 하는가"를 넘어 "얼마나 비싼가"를 함께 제공했다. 실행 시간·저장 공간·정밀도는 제한된 메모리와 느린 입출력 환경에서 핵심 설계 정보였다. 현대 API에서도 시간 복잡도·메모리 사용량·정확도·부작용·안정성 보장은 같은 역할을 한다.
+
+이 분석은 [[라이브러리]]를 [[소프트웨어 공학]]의 주변 요소가 아니라 중심 요소로 보게 한다. 소프트웨어는 긴 명령열에서 모듈의 조합으로 바뀌었고, 모듈의 조합은 다시 문서화된 인터페이스와 도구 체계를 요구했다. 따라서 API의 역사는 웹 서비스나 객체지향 이후에 갑자기 시작된 것이 아니라, 초기 저장 프로그램 컴퓨터에서 이미 싹트고 있었다.
+
+## 한계
+
+EDSAC 라이브러리를 현대 API와 그대로 동일시하면 안 된다. 당시 루틴은 특정 기계의 메모리 구조, 종이 테이프 입력, 절대·상대 주소, 제한된 저장 공간에 강하게 묶여 있었다. 또한 버전 관리, 타입 시스템, 네트워크 호출, 권한 모델 같은 현대 API의 많은 요소는 아직 없었다. 따라서 정확한 표현은 "API 그 자체"가 아니라 "API적 사고의 전사"다.
+
+## 관계
+
+| 관계 | 대상 | 설명 | 근거 |
+|---|---|---|---|
+| synthesizes | [[라이브러리 카탈로그]] | 루틴 명세가 호출 계약으로 바뀌는 과정을 추적한다. | [[The Preparation of Programs for an Electronic Digital Computer]] |
+| synthesizes | [[API]] | 구현 은닉과 사용 규약이 재사용 단위를 만드는 조건을 정리한다. | [[The Preparation of Programs for an Electronic Digital Computer]] |
+
+## 출처
+<!-- wiki-v2:evidence-start -->
+### 근거 ID
+- `ref-001`
+- `ref-003`
+- `ref-016`
+<!-- wiki-v2:evidence-end -->
+
+- [[The Preparation of Programs for an Electronic Digital Computer]]
+
+- [[On the Criteria To Be Used in Decomposing Systems into Modules]]
+- [[The FORTRAN Automatic Coding System]]
+## 관련 항목
+
+- [[EDSAC]] — 초기 저장 프로그램 컴퓨터로, 소프트웨어의 입력·적재·디버깅·재사용 계층이 선명하게 드러난 사례.
+- [[서브루틴]] — 호출 후 원래 위치로 돌아오는 재사용 가능한 코드 단위.
+- [[Wheeler Jump]] — 호출부 명령을 이용해 복귀 점프를 만들어내는 EDSAC의 초기 서브루틴 호출 기법.
+- [[라이브러리]] — 검증된 재사용 코드 단위를 모아 공동체의 소프트웨어 자산으로 만든 체계.
+- [[라이브러리 카탈로그]] — 서브루틴의 동작, 사용법, 실행 시간, 정밀도, 저장 공간을 문서화한 초기 API 문서형 체계.
