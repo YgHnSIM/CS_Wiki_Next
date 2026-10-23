@@ -6,9 +6,9 @@
 
 ## 디자인
 
-- 문서 페이지: 기존 CS Wiki의 터미널 스타일(D2Coding, green/amber, article rail·prose)을 복원
-- 색인·검색·홈: 단순한 새 UI 유지
-- 문서 페이지에서만 `legacy-page` 셸과 `legacy-doc` 테마를 적용
+- 홈·문서 페이지: 기존 CS Wiki의 터미널 스타일(D2Coding, green/amber, article rail·prose, hero circuit)을 복원
+- 색인·검색: 단순한 새 UI 유지
+- 홈은 `home-page`·`legacy-home.css`, 문서는 `legacy-page`·`legacy-doc.css`로 테마를 분리
 
 ## 실행
 

@@ -24,7 +24,7 @@ for (const documents of groups.values()) documents.sort((a, b) => a.title.locale
   <p class="lede">공개 문서 {publicDocuments.length}개를 유형별로 정렬했습니다. unlisted 문서는 이 목록에 나오지 않습니다.</p>
 
   {[...groups.entries()].sort(([a], [b]) => a.localeCompare(b)).map(([kind, documents]) => (
-    <section>
+    <section id={kind}>
       <h2>{kindLabels[kind] || kind} <small>({documents.length})</small></h2>
       <DocumentList documents={documents} />
     </section>
