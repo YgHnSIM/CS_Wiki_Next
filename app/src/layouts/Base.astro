@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import { documents, graph } from "../lib/data";
 
 interface Props {
   title: string;
@@ -50,7 +51,7 @@ const currentPath = Astro.url.pathname;
     <a class="skip-link" href="#main">본문으로 건너뛰기</a>
     <header class="site-header">
       <div class="shell header-inner">
-        <a class="brand" href={base}>
+        <a class="brand" href={base} aria-label="CS Wiki 홈">
           <span class="brand-mark">CS</span>
           <span>CS Wiki</span>
         </a>
@@ -67,7 +68,7 @@ const currentPath = Astro.url.pathname;
     <footer class="site-footer">
       <div class="shell footer-inner">
         <span>CS Wiki Next · 지식 그래프 기반 정적 위키</span>
-        <span>440 documents · 887 statements</span>
+        <span>{documents.length} documents · {graph.statements.length} statements</span>
       </div>
     </footer>
   </body>

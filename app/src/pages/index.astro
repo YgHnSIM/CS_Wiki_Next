@@ -57,7 +57,7 @@ const domainLabels: Record<string, string> = {
 };
 const domains = [...domainCounts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 6);
 
-const routes = ["source", "reference", "concept", "entity", "analysis"].map((kind) => ({
+const routes = ["concept", "entity", "analysis", "source", "reference"].map((kind) => ({
   kind,
   label: kindLabels[kind] || kind,
   count: counts[kind] || 0,
@@ -90,7 +90,7 @@ const routes = ["source", "reference", "concept", "entity", "analysis"].map((kin
           <a href={withBase("/index/")}>전체 색인 보기</a>
         </div>
         <dl class="hero-stats">
-          <div><dt>전체 문서</dt><dd>{publicDocuments.length}</dd></div>
+          <div><dt>공개 문서</dt><dd>{publicDocuments.length}</dd></div>
           <div><dt>개념</dt><dd>{counts.concept || 0}</dd></div>
           <div><dt>관계</dt><dd>{graph.statements.length}</dd></div>
           <div><dt>핵심 분석</dt><dd>{counts.analysis || 0}</dd></div>

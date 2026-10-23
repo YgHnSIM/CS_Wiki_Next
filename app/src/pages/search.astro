@@ -1,12 +1,24 @@
 ---
 import Base from "../layouts/Base.astro";
-import { publicDocuments, withBase } from "../lib/data";
+import { documentUrl, graph, nodeDocument, withBase } from "../lib/data";
+
+const degree = new Map<string, number>();
+for (const statement of graph.statements) {
+  degree.set(statement.subject, (degree.get(statement.subject) || 0) + 1);
+  degree.set(statement.target, (degree.get(statement.target) || 0) + 1);
+}
+const suggestions = [...degree.entries()]
+  .map(([key, count]) => ({ document: nodeDocument(key), count }))
+  .filter((item) => item.document && item.document.publication_visibility === "public")
+  .sort((a, b) => b.count - a.count)
+  .slice(0, 8);
 ---
 
 <Base title="검색" description="CS Wiki 문서 검색">
   <p class="eyebrow">Search</p>
   <h1>검색</h1>
-  <p class="lede">제목·요약·별칭·주제로 공개 문서를 찾습니다.</p>
+  <p class="lede">제목·요약·별칭·주제로 공개 문서를 찾습니다. <kbd>/</kbd> 키로 검색어 입력란에 바로 이동할 수 있습니다.</p>
+  <label class="sr-only" for="site-search">검색어</label>
   <input
     id="site-search"
     class="search-box"
@@ -17,14 +29,36 @@ import { publicDocuments, withBase } from "../lib/data";
   />
   <p id="search-status" role="status" aria-live="polite"></p>
   <p id="search-empty" class="search-empty" hidden>일치하는 문서가 없습니다. 다른 검색어를 시도해 보세요.</p>
+
+  <section class="search-suggestions" aria-labelledby="search-suggestions-title">
+    <h2 id="search-suggestions-title">자주 찾는 문서</h2>
+    <div class="grid">
+      {suggestions.map((item) => (
+        <a class="card" href={documentUrl(item.document!)}>
+          <p class="eyebrow">{item.document!.kind} · 연결 {item.count}</p>
+          <h3>{item.document!.title}</h3>
+          <p>{item.document!.summary}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+
   <div id="search-results" class="search-results"></div>
   <script>
     const input = document.querySelector("#site-search");
     const status = document.querySelector("#search-status");
     const empty = document.querySelector("#search-empty");
+    const suggestions = document.querySelector(".search-suggestions");
     const results = document.querySelector("#search-results");
     let index = [];
     if (input) {
+      document.addEventListener("keydown", (event) => {
+        if (event.key !== "/" || event.metaKey || event.ctrlKey || event.altKey) return;
+        if (event.target instanceof HTMLInputElement) return;
+        event.preventDefault();
+        input.focus();
+      });
+
       fetch(`${input.dataset.base}search.json`)
         .then((response) => response.json())
         .then((data) => { index = data; status.textContent = `${index.length}개 문서`; })
@@ -33,6 +67,7 @@ import { publicDocuments, withBase } from "../lib/data";
       input.addEventListener("input", () => {
         const query = input.value.trim().toLocaleLowerCase("ko-KR");
         results.replaceChildren();
+        if (suggestions) suggestions.hidden = Boolean(query);
         if (empty) empty.hidden = true;
         if (!query) { status.textContent = `${index.length}개 문서`; return; }
         const words = query.split(/\s+/).filter(Boolean);

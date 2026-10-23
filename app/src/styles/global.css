@@ -1,16 +1,32 @@
+@font-face {
+  font-family: "D2Coding";
+  src: url("./fonts/D2Coding.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "D2Coding";
+  src: url("./fonts/D2Coding-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
 :root {
   --bg: #0a0014;
-  --panel: #130a22;
-  --panel-2: #1b1030;
-  --text: #f3ecff;
-  --muted: #b7a8ce;
-  --line: #3b2a55;
-  --accent: #d6a8ff;
-  --accent-2: #7de2d1;
+  --panel: #0d140f;
+  --panel-2: #142417;
+  --text: #e7ffe9;
+  --muted: #8cb393;
+  --line: rgba(0, 255, 65, 0.26);
+  --accent: #00ff41;
+  --accent-2: #ffb000;
   --danger: #ffb4a8;
   --radius: 16px;
   --shell: min(1120px, calc(100vw - 2.5rem));
-  font-family: "Pretendard", "Noto Sans KR", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --mono: "D2Coding", "IBM Plex Mono", "Nanum Gothic Coding", ui-monospace, monospace;
+  --display: "Space Mono", "D2Coding", ui-monospace, monospace;
 }
 
 * { box-sizing: border-box; }
@@ -25,14 +41,21 @@ body {
   margin: 0;
   min-height: 100vh;
   background:
-    radial-gradient(circle at 15% 0%, rgba(120, 78, 190, 0.24), transparent 38rem),
-    radial-gradient(circle at 85% 20%, rgba(42, 160, 150, 0.12), transparent 32rem),
+    radial-gradient(circle at 78% 8%, rgba(0, 255, 65, 0.07), transparent 30rem),
+    radial-gradient(circle at 10% 90%, rgba(255, 176, 0, 0.04), transparent 26rem),
     var(--bg);
+  color: var(--text);
+  font-family: var(--mono);
   line-height: 1.7;
 }
 
-a { color: var(--accent-2); text-underline-offset: 0.2em; }
+a { color: var(--accent); text-underline-offset: 0.2em; }
 a:hover { color: #fff; }
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
 
 .shell {
   width: var(--shell);
@@ -277,6 +300,27 @@ h3 { margin-top: 1.8rem; }
 }
 .search-results { margin-top: 1rem; }
 .search-empty { color: var(--muted); margin-top: 1rem; }
+.search-suggestions { margin-top: 2rem; }
+.search-suggestions h2 { margin-top: 0; }
+kbd {
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  padding: 0.05em 0.4em;
+  color: var(--text);
+  font-family: var(--mono);
+  font-size: 0.86em;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 .search-results a { display: block; padding: 0.7rem 0; border-bottom: 1px solid var(--line); text-decoration: none; }
 .search-results small { color: var(--muted); }
 
@@ -292,4 +336,12 @@ h3 { margin-top: 1.8rem; }
   .layout-doc { grid-template-columns: 1fr; }
   .sidebar { position: static; order: 2; }
   .header-inner { min-height: 0; padding-block: 0.8rem; align-items: flex-start; flex-direction: column; gap: 0.6rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }

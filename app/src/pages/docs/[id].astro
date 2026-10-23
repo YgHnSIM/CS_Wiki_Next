@@ -125,4 +125,9 @@ const relationTitle = (key) => nodeDocument(key)?.title || key;
       </aside>
     </div>
   </div>
+  <script is:inline>
+    if (window.matchMedia("(max-width: 600px)").matches) {
+      document.querySelectorAll("details.article-meta[open]").forEach((details) => details.removeAttribute("open"));
+    }
+  </script>
 </Base>
