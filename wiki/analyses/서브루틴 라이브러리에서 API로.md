@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: analysis-4095b0c80dbee408
+key: analysis:page-4095b0c8
 kind: analysis
 title: 서브루틴 라이브러리에서 API로
 aliases:
@@ -25,6 +26,17 @@ history:
   layer: software
 redirect_from:
   - /analyses/서브루틴-라이브러리에서-api로/
+relations:
+  - predicate: synthesizes
+    target: concept:page-16d053e6
+    note: 루틴 명세가 호출 계약으로 바뀌는 과정을 추적한다.
+    evidence:
+      - source: ref-001
+  - predicate: synthesizes
+    target: concept:page-2ff6633d
+    note: 구현 은닉과 사용 규약이 재사용 단위를 만드는 조건을 정리한다.
+    evidence:
+      - source: ref-001
 ---
 
 ## 핵심 주장
@@ -58,10 +70,12 @@ EDSAC 라이브러리를 현대 API와 그대로 동일시하면 안 된다. 당
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | synthesizes | [[라이브러리 카탈로그]] | 루틴 명세가 호출 계약으로 바뀌는 과정을 추적한다. | [[The Preparation of Programs for an Electronic Digital Computer]] |
 | synthesizes | [[API]] | 구현 은닉과 사용 규약이 재사용 단위를 만드는 조건을 정리한다. | [[The Preparation of Programs for an Electronic Digital Computer]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 <!-- wiki-v2:evidence-start -->

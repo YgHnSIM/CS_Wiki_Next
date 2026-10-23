@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: analysis-stablehlo-mlir-abi-boundary
+key: analysis:stablehlo-mlir-abi-boundary
 kind: analysis
 title: 표현·IR·ABI 경계는 무엇을 보존하는가
 aliases:
@@ -25,6 +26,29 @@ capability_layers:
   - reliable-results
 history:
   layer: software
+relations:
+  - predicate: synthesizes
+    target: concept:stablehlo-mlir-abi
+    note: 표현·IR·ABI의 보존 항목을 하나의 경계 모델로 정리한다.
+    evidence:
+      - source: ref-131
+      - source: ref-132
+      - source: ref-133
+  - predicate: responds_to
+    target: analysis:dependency-provenance-registry
+    note: compiler와 toolchain dependency가 고정된 뒤 representation compatibility를 검증한다.
+    evidence:
+      - source: ref-125
+  - predicate: precedes
+    target: concept:runtime-contract
+    note: ABI 이후 device capability·buffer ownership·lifecycle 계약으로 이어진다.
+    evidence:
+      - source: ref-133
+  - predicate: constrains
+    target: concept:compiler
+    note: lowering pass의 verifier와 target-specific assumptions를 검증 대상으로 둔다.
+    evidence:
+      - source: ref-132
 ---
 
 ## 분석 질문
@@ -63,12 +87,14 @@ StableHLO spec는 ML operation의 semantics를 정의하고, compatibility 문�
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | synthesizes | [[StableHLO·MLIR·ABI 경계]] | 표현·IR·ABI의 보존 항목을 하나의 경계 모델로 정리한다. | [[StableHLO Compatibility]], [[MLIR Language Reference]], [[LLVM Language Reference]] |
 | responds_to | [[registry는 의존성의 출처와 동일성을 어떻게 증명하는가]] | compiler와 toolchain dependency가 고정된 뒤 representation compatibility를 검증한다. | [[SLSA Build Provenance Specification]] |
 | precedes | [[runtime contract]] | ABI 이후 device capability·buffer ownership·lifecycle 계약으로 이어진다. | [[LLVM Language Reference]] |
 | constrains | [[컴파일러]] | lowering pass의 verifier와 target-specific assumptions를 검증 대상으로 둔다. | [[MLIR Language Reference]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

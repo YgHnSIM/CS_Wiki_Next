@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: analysis-token-rate-service-capability
+key: analysis:token-rate-service-capability
 kind: analysis
 title: 초당 토큰 수는 왜 LLM 서비스 능력을 설명하지 못하는가
 aliases:
@@ -33,6 +34,39 @@ history:
   layer: measurement
 redirect_from:
   - /analyses/초당-토큰-수는-왜-llm-서비스-능력을-설명하지-못하는가/
+relations:
+  - predicate: synthesizes
+    target: concept:llm-inference-service-metrics
+    note: 토큰률을 TTFT·TPOT·종단 지연, SLO 달성률·goodput과 자원 비용의 벡터 안에 배치한다.
+    evidence:
+      - source: ref-077
+      - source: ref-078
+  - predicate: synthesizes
+    target: concept:prefill-decode
+    note: 입력과 출력 토큰이 서로 다른 병렬성·지연 의미를 가진 두 단계에서 처리됨을 비교한다.
+    evidence:
+      - source: ref-077
+  - predicate: synthesizes
+    target: concept:continuous-batching
+    note: 배치 처리량 향상이 개별 요청의 큐·토큰 지연과 같은 방향으로 움직이지 않을 수 있음을 설명한다.
+    evidence:
+      - source: ref-075
+  - predicate: synthesizes
+    target: concept:kv-cache
+    note: 캐시 메모리 효율이 활성 배치와 처리량을 바꾸지만 사용자 SLO 충족 여부를 단독으로 보장하지 않음을 설명한다.
+    evidence:
+      - source: ref-076
+  - predicate: responds_to
+    target: concept:tail-latency
+    note: 평균 토큰률이 숨기는 요청별 높은 백분위와 기한 초과를 서비스 능력에 다시 포함한다.
+    evidence:
+      - source: ref-049
+  - predicate: synthesizes
+    target: concept:queueing-load-control
+    note: 요청·토큰 단위를 구분하고 배치 처리율, 기한 초과·거부, SLO 안에 완료한 goodput을 하나의 운영 결과로 비교한다.
+    evidence:
+      - source: ref-085
+      - source: ref-086
 ---
 
 ## 문제 제기
@@ -101,14 +135,16 @@ MLPerf Inference는 모델·데이터셋·품질과 생성 길이 기준, 시스
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
-| synthesizes | [[LLM 추론 서비스 지표]] | 토큰률을 TTFT·TPOT·종단 지연, SLO 달성률·goodput과 자원 비용의 벡터 안에 배치한다. | [[DistServe - Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving]]; [[MLPerf Inference Benchmark]] |
-| synthesizes | [[프리필과 디코드]] | 입력과 출력 토큰이 서로 다른 병렬성·지연 의미를 가진 두 단계에서 처리됨을 비교한다. | [[DistServe - Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving]] |
-| synthesizes | [[연속 배칭]] | 배치 처리량 향상이 개별 요청의 큐·토큰 지연과 같은 방향으로 움직이지 않을 수 있음을 설명한다. | [[Orca - A Distributed Serving System for Transformer-Based Generative Models]] |
+| synthesizes | [[LLM 추론 서비스 지표]] | 토큰률을 TTFT·TPOT·종단 지연, SLO 달성률·goodput과 자원 비용의 벡터 안에 배치한다. | [[DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving]], [[MLPerf Inference Benchmark]] |
+| synthesizes | [[프리필과 디코드]] | 입력과 출력 토큰이 서로 다른 병렬성·지연 의미를 가진 두 단계에서 처리됨을 비교한다. | [[DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving]] |
+| synthesizes | [[연속 배칭]] | 배치 처리량 향상이 개별 요청의 큐·토큰 지연과 같은 방향으로 움직이지 않을 수 있음을 설명한다. | [[Orca: A Distributed Serving System for Transformer-Based Generative Models]] |
 | synthesizes | [[KV 캐시]] | 캐시 메모리 효율이 활성 배치와 처리량을 바꾸지만 사용자 SLO 충족 여부를 단독으로 보장하지 않음을 설명한다. | [[Efficient Memory Management for Large Language Model Serving with PagedAttention]] |
 | responds_to | [[꼬리 지연 시간]] | 평균 토큰률이 숨기는 요청별 높은 백분위와 기한 초과를 서비스 능력에 다시 포함한다. | [[The Tail at Scale]] |
-| synthesizes | [[대기열과 부하 제어]] | 요청·토큰 단위를 구분하고 배치 처리율, 기한 초과·거부, SLO 안에 완료한 goodput을 하나의 운영 결과로 비교한다. | [[A Proof for the Queuing Formula L = λW]], [[Serving DNNs like Clockwork Performance Predictability from the Bottom Up]] |
+| synthesizes | [[대기열과 부하 제어]] | 요청·토큰 단위를 구분하고 배치 처리율, 기한 초과·거부, SLO 안에 완료한 goodput을 하나의 운영 결과로 비교한다. | [[A Proof for the Queuing Formula: L = λ W]], [[Serving DNNs like Clockwork: Performance Predictability from the Bottom Up]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

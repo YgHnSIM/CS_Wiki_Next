@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: analysis-llm-reuse-speculation-work
+key: analysis:llm-reuse-speculation-work
 kind: analysis
 title: 재사용과 추측은 LLM 추론 작업량을 어떻게 바꾸는가
 aliases:
@@ -31,6 +32,27 @@ history:
   layer: service
 redirect_from:
   - /analyses/재사용과-추측은-llm-추론-작업량을-어떻게-바꾸는가/
+relations:
+  - predicate: synthesizes
+    target: concept:kv-cache
+    note: 요청 내부 재계산 절감과 요청 수명 동안의 메모리 점유를 하나의 작업량 교환으로 정리한다.
+    evidence:
+      - source: ref-076
+  - predicate: synthesizes
+    target: concept:prefix-kv-caching
+    note: 호출 사이에서 피한 프리필과 캐시 보존·검색·퇴거 비용을 같은 경계에서 센다.
+    evidence:
+      - source: ref-080
+  - predicate: synthesizes
+    target: concept:speculative-decoding
+    note: 줄어든 타깃 직렬 실행과 추가 드래프트·검증·거부 작업, 분포 보존 계약을 함께 비교한다.
+    evidence:
+      - source: ref-079
+  - predicate: measures
+    target: concept:llm-inference-service-metrics
+    note: 작업량 변화가 TTFT·TPOT·goodput과 결과 품질로 이어지는지를 동일 SLO에서 평가한다.
+    evidence:
+      - source: ref-077
 ---
 
 ## 문제 제기
@@ -87,12 +109,14 @@ LLM 추론 최적화는 흔히 “계산을 줄인다”라고 묶이지만 [[KV
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | synthesizes | [[KV 캐시]] | 요청 내부 재계산 절감과 요청 수명 동안의 메모리 점유를 하나의 작업량 교환으로 정리한다. | [[Efficient Memory Management for Large Language Model Serving with PagedAttention]] |
-| synthesizes | [[접두사 KV 캐싱]] | 호출 사이에서 피한 프리필과 캐시 보존·검색·퇴거 비용을 같은 경계에서 센다. | [[SGLang - Efficient Execution of Structured Language Model Programs]] |
+| synthesizes | [[접두사 KV 캐싱]] | 호출 사이에서 피한 프리필과 캐시 보존·검색·퇴거 비용을 같은 경계에서 센다. | [[SGLang: Efficient Execution of Structured Language Model Programs]] |
 | synthesizes | [[추측 디코딩]] | 줄어든 타깃 직렬 실행과 추가 드래프트·검증·거부 작업, 분포 보존 계약을 함께 비교한다. | [[Fast Inference from Transformers via Speculative Decoding]] |
-| measures | [[LLM 추론 서비스 지표]] | 작업량 변화가 TTFT·TPOT·goodput과 결과 품질로 이어지는지를 동일 SLO에서 평가한다. | [[DistServe - Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving]] |
+| measures | [[LLM 추론 서비스 지표]] | 작업량 변화가 TTFT·TPOT·goodput과 결과 품질로 이어지는지를 동일 SLO에서 평가한다. | [[DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 
