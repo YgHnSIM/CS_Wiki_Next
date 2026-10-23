@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: analysis-kv-cache-throughput
+key: analysis:kv-cache-throughput
 kind: analysis
 title: KV 캐시는 왜 LLM 추론 처리량을 제한하는가
 aliases:
@@ -29,6 +30,27 @@ history:
   layer: system
 redirect_from:
   - /analyses/kv-캐시는-왜-llm-추론-처리량을-제한하는가/
+relations:
+  - predicate: synthesizes
+    target: concept:kv-cache
+    note: 과거 토큰 재계산 절감과 요청별 GPU 상태 증가를 하나의 계산–메모리 교환으로 종합한다.
+    evidence:
+      - source: ref-076
+  - predicate: synthesizes
+    target: concept:continuous-batching
+    note: 반복마다 계산 슬롯을 재사용하는 스케줄링이 캐시 수용량 안에서만 활성 요청을 늘릴 수 있음을 설명한다.
+    evidence:
+      - source: ref-075
+  - predicate: responds_to
+    target: concept:memory-wall
+    note: GPU 메모리 용량·단편화·배치 수용량을 LLM 서비스 처리량의 직접 병목으로 다룬다.
+    evidence:
+      - source: ref-076
+  - predicate: synthesizes
+    target: concept:io-aware-attention
+    note: 한 연산의 HBM 이동 최적화와 여러 요청 수명에 걸친 KV 캐시 배치 최적화의 경계를 구분한다.
+    evidence:
+      - source: ref-074
 ---
 
 ## 문제 제기
@@ -88,12 +110,14 @@ KV 캐시는 계산을 저장 공간으로 바꾸는 최적화다. 한 요청에
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | synthesizes | [[KV 캐시]] | 과거 토큰 재계산 절감과 요청별 GPU 상태 증가를 하나의 계산–메모리 교환으로 종합한다. | [[Efficient Memory Management for Large Language Model Serving with PagedAttention]] |
-| synthesizes | [[연속 배칭]] | 반복마다 계산 슬롯을 재사용하는 스케줄링이 캐시 수용량 안에서만 활성 요청을 늘릴 수 있음을 설명한다. | [[Orca - A Distributed Serving System for Transformer-Based Generative Models]] |
+| synthesizes | [[연속 배칭]] | 반복마다 계산 슬롯을 재사용하는 스케줄링이 캐시 수용량 안에서만 활성 요청을 늘릴 수 있음을 설명한다. | [[Orca: A Distributed Serving System for Transformer-Based Generative Models]] |
 | responds_to | [[메모리 장벽]] | GPU 메모리 용량·단편화·배치 수용량을 LLM 서비스 처리량의 직접 병목으로 다룬다. | [[Efficient Memory Management for Large Language Model Serving with PagedAttention]] |
-| synthesizes | [[입출력 인지 어텐션]] | 한 연산의 HBM 이동 최적화와 여러 요청 수명에 걸친 KV 캐시 배치 최적화의 경계를 구분한다. | [[FlashAttention - Fast and Memory-Efficient Exact Attention with IO-Awareness]] |
+| synthesizes | [[입출력 인지 어텐션]] | 한 연산의 HBM 이동 최적화와 여러 요청 수명에 걸친 KV 캐시 배치 최적화의 경계를 구분한다. | [[FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

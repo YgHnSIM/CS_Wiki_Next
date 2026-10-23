@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: analysis-35a2e99b2b062bf6
+key: analysis:page-35a2e99b
 kind: analysis
 title: EDSAC은 무엇의 최초인가
 aliases:
@@ -25,6 +26,17 @@ history:
   layer: machine
 redirect_from:
   - /analyses/edsac은-무엇의-최초인가/
+relations:
+  - predicate: synthesizes
+    target: concept:page-00b55ff0
+    note: 설계·최초 실행·실용 운영의 최초성 기준을 구분해 평가한다.
+    evidence:
+      - source: ref-007
+  - predicate: synthesizes
+    target: concept:stored-program-computer
+    note: 한 종류의 최초로 여러 기계를 합치지 말 것을 주장한다.
+    evidence:
+      - source: ref-006
 ---
 
 ## 핵심 주장
@@ -56,10 +68,12 @@ EDSAC을 설명할 때는 다음 표현을 구분해 쓰는 것이 좋다.
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | synthesizes | [[EDSAC]] | 설계·최초 실행·실용 운영의 최초성 기준을 구분해 평가한다. | [[The Manchester Small Scale Experimental Machine - The Baby]] |
 | synthesizes | [[저장 프로그램 컴퓨터]] | 한 종류의 최초로 여러 기계를 합치지 말 것을 주장한다. | [[First Draft of a Report on the EDVAC]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 <!-- wiki-v2:evidence-start -->

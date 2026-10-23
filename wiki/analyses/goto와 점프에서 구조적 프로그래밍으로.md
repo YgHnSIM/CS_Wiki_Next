@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: analysis-fc1fa74eef57ee33
+key: analysis:page-fc1fa74e
 kind: analysis
 title: goto와 점프에서 구조적 프로그래밍으로
 aliases:
@@ -27,6 +28,17 @@ history:
   layer: software
 redirect_from:
   - /analyses/goto와-점프에서-구조적-프로그래밍으로/
+relations:
+  - predicate: synthesizes
+    target: concept:page-60bcdf34
+    note: 기계 점프와 고급 언어 goto를 구분해 비판의 대상을 한정한다.
+    evidence:
+      - source: ref-011
+  - predicate: synthesizes
+    target: concept:structured-programming
+    note: 형성 규칙으로 제어를 제한하는 전환을 추적한다.
+    evidence:
+      - source: ref-013
 ---
 
 ## 핵심 주장
@@ -59,10 +71,12 @@ redirect_from:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | synthesizes | [[GOTO 문]] | 기계 점프와 고급 언어 goto를 구분해 비판의 대상을 한정한다. | [[A Case against the GO TO Statement]] |
 | synthesizes | [[구조적 프로그래밍]] | 형성 규칙으로 제어를 제한하는 전환을 추적한다. | [[Structured Programming]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 <!-- wiki-v2:evidence-start -->

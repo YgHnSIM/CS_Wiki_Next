@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: analysis-dependency-provenance-registry
+key: analysis:dependency-provenance-registry
 kind: analysis
 title: registry는 의존성의 출처와 동일성을 어떻게 증명하는가
 aliases:
@@ -24,6 +25,23 @@ capability_layers:
   - reliable-results
 history:
   layer: software
+relations:
+  - predicate: synthesizes
+    target: concept:dependency-provenance
+    note: 네 가지 identity를 소비자 검증 순서로 정리한다.
+    evidence:
+      - source: ref-129
+      - source: ref-127
+  - predicate: precedes
+    target: concept:stablehlo-mlir-abi
+    note: compiler artifact가 의존하는 package·toolchain identity를 먼저 고정한다.
+    evidence:
+      - source: ref-125
+  - predicate: constrains
+    target: analysis:reproducible-build-boundary
+    note: build input의 외부 dependency를 digest와 provenance로 관찰 가능하게 한다.
+    evidence:
+      - source: ref-125
 ---
 
 ## 분석 질문
@@ -60,11 +78,13 @@ registry는 dependency를 찾아 내려받는 장소지만, 그 자체가 모든
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | synthesizes | [[dependency provenance와 registry identity]] | 네 가지 identity를 소비자 검증 순서로 정리한다. | [[OCI Distribution Specification]], [[npm Package Provenance Statements]] |
 | precedes | [[StableHLO·MLIR·ABI 경계]] | compiler artifact가 의존하는 package·toolchain identity를 먼저 고정한다. | [[SLSA Build Provenance Specification]] |
 | constrains | [[재현 가능한 빌드는 무엇을 같게 만드는가]] | build input의 외부 dependency를 digest와 provenance로 관찰 가능하게 한다. | [[SLSA Build Provenance Specification]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

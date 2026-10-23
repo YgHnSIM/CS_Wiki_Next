@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: analysis-agi-criteria-shift
+key: analysis:agi-criteria-shift
 kind: analysis
 title: AGI 판정 기준은 누가 옮기는가
 aliases:
@@ -23,6 +24,17 @@ capability_layers:
   - reliable-results
 history:
   layer: service
+relations:
+  - predicate: synthesizes
+    target: concept:chinese-room-syntax-semantics
+    note: 행동의 유창함이 이해를 보증하지 않는다는 비판이 AGI 판정에 갖는 함의를 연결한다.
+    evidence:
+      - source: ref-146
+  - predicate: synthesizes
+    target: concept:verification-labor
+    note: 범용성과 신뢰성의 간극이 사람에게 남기는 검증 책임을 연결한다.
+    evidence:
+      - source: ref-151
 ---
 
 ## 핵심 질문
@@ -68,10 +80,12 @@ history:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | synthesizes | [[중국어 방과 구문-의미 간극]] | 행동의 유창함이 이해를 보증하지 않는다는 비판이 AGI 판정에 갖는 함의를 연결한다. | [[Minds, Brains, and Programs]] |
 | synthesizes | [[검증 노동]] | 범용성과 신뢰성의 간극이 사람에게 남기는 검증 책임을 연결한다. | [[Artificial General Intelligence Is Already Here]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

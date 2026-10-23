@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: analysis-8d320775b8ff83eb
+key: analysis:page-8d320775
 kind: analysis
 title: Unix와 C
 aliases:
@@ -27,6 +28,18 @@ history:
   layer: software
 redirect_from:
   - /analyses/unix와-c/
+relations:
+  - predicate: synthesizes
+    target: concept:page-5063ca2b
+    note: C와 Unix의 공통 언어·인터페이스, 기계 의존 부분의 제한이 프로그램과 운영체제를 다른 하드웨어로 옮기는 비용을 낮춘 전환을 종합한다.
+    evidence:
+      - source: ref-021
+  - predicate: synthesizes
+    target: concept:page-141883d0
+    note: C가 Unix의 파일·프로세스·시스템 호출 환경을 어셈블리보다 높은 수준에서 구현하고 도구 생태계와 결합한 방식을 종합한다.
+    evidence:
+      - source: ref-018
+      - source: ref-019
 ---
 
 ## 핵심 주장
@@ -59,10 +72,12 @@ Unix와 C의 결합은 이후 운영체제, 컴파일러, 셸, 라이브러리, 
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | synthesizes | [[이식성]] | C와 Unix의 공통 언어·인터페이스, 기계 의존 부분의 제한이 프로그램과 운영체제를 다른 하드웨어로 옮기는 비용을 낮춘 전환을 종합한다. | [[Portability of C Programs and the UNIX System]] |
 | synthesizes | [[시스템 프로그래밍]] | C가 Unix의 파일·프로세스·시스템 호출 환경을 어셈블리보다 높은 수준에서 구현하고 도구 생태계와 결합한 방식을 종합한다. | [[The UNIX Time-Sharing System]], [[The Development of the C Language]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

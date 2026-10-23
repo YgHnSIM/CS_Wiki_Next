@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: analysis-ai-bottleneck-shifting
+key: analysis:ai-bottleneck-shifting
 kind: analysis
 title: AI 시스템은 병목을 어떻게 이동시키는가
 aliases:
@@ -28,6 +29,27 @@ capability_layers:
   - resource-efficiency
 history:
   layer: system
+relations:
+  - predicate: synthesizes
+    target: concept:memory-movement-bottleneck-shift
+    note: 메모리 최적화가 다음 계층의 비용을 드러내는 공통 구조를 분석한다.
+    evidence:
+      - source: ref-074
+  - predicate: synthesizes
+    target: analysis:transformer-io-bottleneck
+    note: 커널 수준 IO와 서비스 수준 캐시·단계 분리를 함께 읽는다.
+    evidence:
+      - source: ref-076
+  - predicate: synthesizes
+    target: concept:ai-computing-bottlenecks
+    note: 메모리·통신·입출력·전력 병목을 하나의 관측 틀로 묶는다.
+    evidence:
+      - source: ref-084
+  - predicate: responds_to
+    target: concept:parallel-scalability
+    note: 자원 확장으로 생기는 통신·동기화 비용에 대응하는 재배치 전략을 분석한다.
+    evidence:
+      - source: ref-070
 ---
 
 ## 분석 틀
@@ -56,12 +78,14 @@ AI 병목 최적화의 핵심은 첫 병목을 찾고, 그 최적화가 만든 �
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
-| synthesizes | [[메모리 이동과 병목 이동]] | 메모리 최적화가 다음 계층의 비용을 드러내는 공통 구조를 분석한다. | [[FlashAttention - Fast and Memory-Efficient Exact Attention with IO-Awareness]] |
+| synthesizes | [[메모리 이동과 병목 이동]] | 메모리 최적화가 다음 계층의 비용을 드러내는 공통 구조를 분석한다. | [[FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness]] |
 | synthesizes | [[Transformer 추론은 왜 연산량만으로 설명되지 않는가]] | 커널 수준 IO와 서비스 수준 캐시·단계 분리를 함께 읽는다. | [[Efficient Memory Management for Large Language Model Serving with PagedAttention]] |
 | synthesizes | [[AI 컴퓨팅 병목]] | 메모리·통신·입출력·전력 병목을 하나의 관측 틀로 묶는다. | [[MLPerf Inference Power Measurement]] |
 | responds_to | [[병렬 확장성]] | 자원 확장으로 생기는 통신·동기화 비용에 대응하는 재배치 전략을 분석한다. | [[MLPerf Training Benchmark]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

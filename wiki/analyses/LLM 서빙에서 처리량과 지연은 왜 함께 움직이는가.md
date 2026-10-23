@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: analysis-llm-throughput-latency-queueing
+key: analysis:llm-throughput-latency-queueing
 kind: analysis
 title: LLM 서빙에서 처리량과 지연은 왜 함께 움직이는가
 aliases:
@@ -32,6 +33,34 @@ history:
   layer: service
 redirect_from:
   - /analyses/llm-서빙에서-처리량과-지연은-왜-함께-움직이는가/
+relations:
+  - predicate: synthesizes
+    target: concept:littles-law
+    note: 평균 활성 작업·유효 처리율·체류 시간을 같은 단위와 서비스 경계에서 해석해 처리율과 지연의 공동 변화를 설명한다.
+    evidence:
+      - source: ref-085
+  - predicate: synthesizes
+    target: concept:queueing-load-control
+    note: 배치·승인·거부·큐 상한이 처리율과 기한 초과를 함께 바꾸는 운영 선택임을 종합한다.
+    evidence:
+      - source: ref-086
+      - source: ref-075
+  - predicate: synthesizes
+    target: concept:llm-inference-service-metrics
+    note: 요청·토큰 처리율을 TTFT·TPOT·goodput과 같은 측정 벡터 안에 배치한다.
+    evidence:
+      - source: ref-077
+  - predicate: responds_to
+    target: concept:tail-latency
+    note: 평균 토큰률이 숨기는 높은 백분위와 기한 초과를 SLO 통과 요청의 유효 처리량에 다시 포함한다.
+    evidence:
+      - source: ref-049
+  - predicate: constrains
+    target: concept:energy-proportional-computing
+    note: 짧은 큐를 위한 여유 용량이 낮은 부하의 기저 전력과 자원 비용을 남긴다는 조건을 서비스 처리량 비교에 포함한다.
+    evidence:
+      - source: ref-086
+      - source: ref-046
 ---
 
 ## 문제 제기
@@ -87,13 +116,15 @@ LLM 서빙의 처리량과 지연은 같은 시스템을 두 번 보는 값이�
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
-| synthesizes | [[리틀의 법칙]] | 평균 활성 작업·유효 처리율·체류 시간을 같은 단위와 서비스 경계에서 해석해 처리율과 지연의 공동 변화를 설명한다. | [[A Proof for the Queuing Formula L = λW]] |
-| synthesizes | [[대기열과 부하 제어]] | 배치·승인·거부·큐 상한이 처리율과 기한 초과를 함께 바꾸는 운영 선택임을 종합한다. | [[Serving DNNs like Clockwork Performance Predictability from the Bottom Up]], [[Orca - A Distributed Serving System for Transformer-Based Generative Models]] |
-| synthesizes | [[LLM 추론 서비스 지표]] | 요청·토큰 처리율을 TTFT·TPOT·goodput과 같은 측정 벡터 안에 배치한다. | [[DistServe - Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving]] |
+| synthesizes | [[리틀의 법칙]] | 평균 활성 작업·유효 처리율·체류 시간을 같은 단위와 서비스 경계에서 해석해 처리율과 지연의 공동 변화를 설명한다. | [[A Proof for the Queuing Formula: L = λ W]] |
+| synthesizes | [[대기열과 부하 제어]] | 배치·승인·거부·큐 상한이 처리율과 기한 초과를 함께 바꾸는 운영 선택임을 종합한다. | [[Serving DNNs like Clockwork: Performance Predictability from the Bottom Up]], [[Orca: A Distributed Serving System for Transformer-Based Generative Models]] |
+| synthesizes | [[LLM 추론 서비스 지표]] | 요청·토큰 처리율을 TTFT·TPOT·goodput과 같은 측정 벡터 안에 배치한다. | [[DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving]] |
 | responds_to | [[꼬리 지연 시간]] | 평균 토큰률이 숨기는 높은 백분위와 기한 초과를 SLO 통과 요청의 유효 처리량에 다시 포함한다. | [[The Tail at Scale]] |
-| constrains | [[에너지 비례 컴퓨팅]] | 짧은 큐를 위한 여유 용량이 낮은 부하의 기저 전력과 자원 비용을 남긴다는 조건을 서비스 처리량 비교에 포함한다. | [[Serving DNNs like Clockwork Performance Predictability from the Bottom Up]], [[The Case for Energy-Proportional Computing]] |
+| constrains | [[에너지 비례 컴퓨팅]] | 짧은 큐를 위한 여유 용량이 낮은 부하의 기저 전력과 자원 비용을 남긴다는 조건을 서비스 처리량 비교에 포함한다. | [[Serving DNNs like Clockwork: Performance Predictability from the Bottom Up]], [[The Case for Energy-Proportional Computing]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

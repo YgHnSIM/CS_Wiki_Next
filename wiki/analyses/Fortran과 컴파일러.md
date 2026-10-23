@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: analysis-866096c7a9c8c715
+key: analysis:page-866096c7
 kind: analysis
 title: Fortran과 컴파일러
 aliases:
@@ -29,6 +30,18 @@ history:
   layer: software
 redirect_from:
   - /analyses/fortran과-컴파일러/
+relations:
+  - predicate: synthesizes
+    target: concept:page-eb050b34
+    note: 수학적 소스 표기를 IBM 704 목적 프로그램으로 바꾸면서 제어 흐름과 기계 자원을 분석해 실행 효율을 유지하려 한 컴파일러의 역할을 종합한다.
+    evidence:
+      - source: ref-016
+  - predicate: synthesizes
+    target: concept:programmability
+    note: 문제 영역의 표기와 효율적인 번역기를 결합해 더 많은 사용자가 기계의 계산 능력에 접근하게 한 전환을 종합한다.
+    evidence:
+      - source: ref-015
+      - source: ref-016
 ---
 
 ## 핵심 주장
@@ -67,10 +80,12 @@ Fortran 이후 프로그래밍의 중심은 사람이 기계 명령을 직접 �
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | synthesizes | [[컴파일러 최적화]] | 수학적 소스 표기를 IBM 704 목적 프로그램으로 바꾸면서 제어 흐름과 기계 자원을 분석해 실행 효율을 유지하려 한 컴파일러의 역할을 종합한다. | [[The FORTRAN Automatic Coding System]] |
 | synthesizes | [[프로그래밍 가능성]] | 문제 영역의 표기와 효율적인 번역기를 결합해 더 많은 사용자가 기계의 계산 능력에 접근하게 한 전환을 종합한다. | [[FORTRAN Automatic Coding System for the IBM 704 EDPM]], [[The FORTRAN Automatic Coding System]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

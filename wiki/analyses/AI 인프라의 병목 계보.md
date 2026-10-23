@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: analysis-ai-bottleneck-lineage
+key: analysis:ai-bottleneck-lineage
 kind: analysis
 title: AI 인프라의 병목 계보
 aliases:
@@ -28,6 +29,27 @@ capability_layers:
   - resource-efficiency
 history:
   layer: architecture
+relations:
+  - predicate: synthesizes
+    target: concept:parallel-scalability
+    note: Amdahl식 순차 구간과 AI의 통신·동기화 비용을 연결한다.
+    evidence:
+      - source: ref-045
+  - predicate: synthesizes
+    target: concept:memory-wall
+    note: memory wall을 대규모 모델의 가중치·상태 이동으로 확장한다.
+    evidence:
+      - source: ref-039
+  - predicate: synthesizes
+    target: concept:ai-computing-bottlenecks
+    note: 역사적 개념들을 현대 AI의 종단 병목 분류로 종합한다.
+    evidence:
+      - source: ref-042
+  - predicate: constrains
+    target: analysis:power-wall-performance
+    note: 시설 전력과 에너지를 성능의 외부 조건이 아닌 병목 계층으로 본다.
+    evidence:
+      - source: ref-084
 ---
 
 ## 질문
@@ -54,12 +76,14 @@ AI 학습은 대규모 행렬 계산만의 문제가 아니다. 장치 수가 �
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | synthesizes | [[병렬 확장성]] | Amdahl식 순차 구간과 AI의 통신·동기화 비용을 연결한다. | [[Reevaluating Amdahl's Law]] |
 | synthesizes | [[메모리 장벽]] | memory wall을 대규모 모델의 가중치·상태 이동으로 확장한다. | [[Hitting the Memory Wall]] |
 | synthesizes | [[AI 컴퓨팅 병목]] | 역사적 개념들을 현대 AI의 종단 병목 분류로 종합한다. | [[In-Datacenter Performance Analysis of a Tensor Processing Unit]] |
 | constrains | [[전력 장벽은 성능 향상의 의미를 어떻게 바꾸었는가]] | 시설 전력과 에너지를 성능의 외부 조건이 아닌 병목 계층으로 본다. | [[MLPerf Inference Power Measurement]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: analysis-transformer-io-bottleneck
+key: analysis:transformer-io-bottleneck
 kind: analysis
 title: Transformer 추론은 왜 연산량만으로 설명되지 않는가
 aliases:
@@ -29,6 +30,22 @@ history:
   layer: architecture
 redirect_from:
   - /analyses/transformer-추론은-왜-연산량만으로-설명되지-않는가/
+relations:
+  - predicate: synthesizes
+    target: concept:transformer
+    note: 학습 위치의 병렬 계산과 자동회귀 생성의 순차 의존성을 한 실행 경계에서 구분한다.
+    evidence:
+      - source: ref-073
+  - predicate: synthesizes
+    target: concept:io-aware-attention
+    note: 타일링·재계산이 산술량보다 데이터 이동을 줄여 실제 시간을 바꾸는 원리를 종합한다.
+    evidence:
+      - source: ref-074
+  - predicate: responds_to
+    target: concept:memory-wall
+    note: Transformer 성능 비교에 HBM 이동·부가 메모리와 벽시계 시간을 포함한다.
+    evidence:
+      - source: ref-074
 ---
 
 ## 문제 제기
@@ -86,11 +103,13 @@ Transformer의 컴퓨팅 능력은 모델의 산술 복잡도만으로 결정되
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | synthesizes | [[Transformer]] | 학습 위치의 병렬 계산과 자동회귀 생성의 순차 의존성을 한 실행 경계에서 구분한다. | [[Attention Is All You Need]] |
-| synthesizes | [[입출력 인지 어텐션]] | 타일링·재계산이 산술량보다 데이터 이동을 줄여 실제 시간을 바꾸는 원리를 종합한다. | [[FlashAttention - Fast and Memory-Efficient Exact Attention with IO-Awareness]] |
-| responds_to | [[메모리 장벽]] | Transformer 성능 비교에 HBM 이동·부가 메모리와 벽시계 시간을 포함한다. | [[FlashAttention - Fast and Memory-Efficient Exact Attention with IO-Awareness]] |
+| synthesizes | [[입출력 인지 어텐션]] | 타일링·재계산이 산술량보다 데이터 이동을 줄여 실제 시간을 바꾸는 원리를 종합한다. | [[FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness]] |
+| responds_to | [[메모리 장벽]] | Transformer 성능 비교에 HBM 이동·부가 메모리와 벽시계 시간을 포함한다. | [[FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 
