@@ -37,7 +37,7 @@ app/                  Astro 사이트 (예정)
 
 ## 다음 단계
 
-1. Phase 1-B 배치 02–05: 나머지 337개 관계 문서
+1. Phase 1-B 배치 02+: 나머지 337개 관계 문서를 20~30쪽 단위로 이관
 2. generated block 전체 동기화
 3. `packages/knowledge` 컴파일러와 parity 테스트
 4. Astro 앱 구축
