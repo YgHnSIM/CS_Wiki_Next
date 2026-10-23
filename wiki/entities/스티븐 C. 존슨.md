@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: entity-2f17a71c2815f89f
+key: person:stephen-c-johnson
 kind: entity
 title: 스티븐 C. 존슨
 aliases:
@@ -25,6 +26,13 @@ history:
   layer: software
 redirect_from:
   - /entities/스티븐-c-존슨/
+relations:
+  - predicate: enables
+    target: concept:page-5063ca2b
+    note: C의 언어 확장과 비이식적 구성을 찾아내는 도구는 Unix와 C 프로그램을 다른 기계 환경으로 옮기는 비용을 낮췄다.
+    evidence:
+      - source: ref-021
+      - source: ref-019
 ---
 
 ## 개요
@@ -37,9 +45,11 @@ Johnson의 기여는 C와 Unix의 성공이 언어 문법만으로 이루어진 
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | enables | [[이식성]] | C의 언어 확장과 비이식적 구성을 찾아내는 도구는 Unix와 C 프로그램을 다른 기계 환경으로 옮기는 비용을 낮췄다. | [[Portability of C Programs and the UNIX System]], [[The Development of the C Language]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

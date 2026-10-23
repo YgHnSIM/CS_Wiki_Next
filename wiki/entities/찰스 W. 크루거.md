@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: entity-1a2d36f59369083d
+key: person:charles-w-krueger
 kind: entity
 title: 찰스 W. 크루거
 aliases:
@@ -23,6 +24,12 @@ history:
   layer: software
 redirect_from:
   - /entities/찰스-w-크루거/
+relations:
+  - predicate: synthesizes
+    target: concept:software-reuse
+    note: 재사용 접근을 재사용물의 추상화·선택·특수화·통합 방식으로 비교하고, 인지적 거리를 활용 난이도의 기준으로 제시했다.
+    evidence:
+      - source: ref-004
 ---
 
 ## 개요
@@ -35,9 +42,11 @@ Krueger의 논의는 McIlroy의 컴포넌트 구상을 1990년대 재사용 연�
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | synthesizes | [[소프트웨어 재사용]] | 재사용 접근을 재사용물의 추상화·선택·특수화·통합 방식으로 비교하고, 인지적 거리를 활용 난이도의 기준으로 제시했다. | [[Software Reuse]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 
