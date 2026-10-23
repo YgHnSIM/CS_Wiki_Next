@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-117
+key: source:ref-117
 kind: reference
 title: Google SRE Addressing Cascading Failures
 aliases:
@@ -39,6 +40,17 @@ access:
     url: https://web.archive.org/web/20261001130414/https://sre.google/sre-book/addressing-cascading-failures/
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-10-01
+relations:
+  - predicate: enables
+    target: concept:retries
+    note: backoff·jitter·attempt limit·retry budget을 재시도 안전성의 운영 조건으로 제공한다.
+    evidence:
+      - source: ref-117
+  - predicate: constrains
+    target: concept:queueing-load-control
+    note: 재시도와 큐 증가가 서로를 증폭시킬 수 있으므로 admission·load shedding을 함께 설계하게 한다.
+    evidence:
+      - source: ref-117
 ---
 
 ## 개요
@@ -53,10 +65,12 @@ access:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | enables | [[재시도]] | backoff·jitter·attempt limit·retry budget을 재시도 안전성의 운영 조건으로 제공한다. | [[Google SRE Addressing Cascading Failures]] |
 | constrains | [[대기열과 부하 제어]] | 재시도와 큐 증가가 서로를 증폭시킬 수 있으므로 admission·load shedding을 함께 설계하게 한다. | [[Google SRE Addressing Cascading Failures]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

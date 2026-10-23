@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-069
+key: source:ref-069
 kind: reference
 title: Mixed Precision Training
 aliases:
@@ -57,6 +58,17 @@ access:
     url: https://web.archive.org/web/20260930084119/https://arxiv.org/abs/1710.03740
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-09-30
+relations:
+  - predicate: exemplifies
+    target: concept:mixed-precision
+    note: 반정밀도 저장과 단정밀도 마스터 가중치·손실 스케일링을 조합한 학습 구성을 제시한다.
+    evidence:
+      - source: ref-069
+  - predicate: constrains
+    target: concept:page-d4fdbd19
+    note: 낮은 정밀도의 범위·반올림 손실을 관리하지 않으면 학습 결과 계약을 만족하지 못할 수 있음을 보여준다.
+    evidence:
+      - source: ref-069
 ---
 
 ## 개요
@@ -88,10 +100,12 @@ access:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | exemplifies | [[혼합 정밀도]] | 반정밀도 저장과 단정밀도 마스터 가중치·손실 스케일링을 조합한 학습 구성을 제시한다. | [[Mixed Precision Training]] |
 | constrains | [[부동소수점 정확성]] | 낮은 정밀도의 범위·반올림 손실을 관리하지 않으면 학습 결과 계약을 만족하지 못할 수 있음을 보여준다. | [[Mixed Precision Training]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

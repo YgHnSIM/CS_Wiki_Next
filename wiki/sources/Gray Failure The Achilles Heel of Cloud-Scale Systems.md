@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-120
+key: source:ref-120
 kind: reference
 title: "Gray Failure: The Achilles' Heel of Cloud-Scale Systems"
 aliases:
@@ -40,6 +41,17 @@ access:
     url: https://web.archive.org/web/20261010191819/https://www.microsoft.com/en-us/research/publication/gray-failure-achilles-heel-cloud-scale-systems/
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-10-10
+relations:
+  - predicate: enables
+    target: concept:failure-detection
+    note: binary liveness를 넘어 경로·요청별 차이를 관찰해야 하는 failure detection 범위를 제공한다.
+    evidence:
+      - source: ref-120
+  - predicate: constrains
+    target: concept:partial-failure
+    note: 일부 경로만 느리거나 잘못된 결과를 내는 상태를 전체 장애와 분리한다.
+    evidence:
+      - source: ref-120
 ---
 
 ## 개요
@@ -54,10 +66,12 @@ Gray failure는 binary up/down detector가 놓치기 쉬운 차이를 만든다.
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | enables | [[장애 감지]] | binary liveness를 넘어 경로·요청별 차이를 관찰해야 하는 failure detection 범위를 제공한다. | [[Gray Failure: The Achilles' Heel of Cloud-Scale Systems]] |
 | constrains | [[부분 실패]] | 일부 경로만 느리거나 잘못된 결과를 내는 상태를 전체 장애와 분리한다. | [[Gray Failure: The Achilles' Heel of Cloud-Scale Systems]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

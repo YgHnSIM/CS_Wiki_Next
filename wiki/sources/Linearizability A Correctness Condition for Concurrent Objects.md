@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-095
+key: source:ref-095
 kind: reference
 title: "Linearizability: A Correctness Condition for Concurrent Objects"
 aliases:
@@ -59,6 +60,17 @@ access:
     url: https://web.archive.org/web/20250414144918/https://dl.acm.org/doi/10.1145/78969.78972
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2025-04-14
+relations:
+  - predicate: enables
+    target: concept:linearizability
+    note: 동시 객체의 연산 이력을 순차 명세와 실제 시간 순서에 맞춰 설명하는 정확성 조건을 정의한다.
+    evidence:
+      - source: ref-095
+  - predicate: constrains
+    target: concept:concurrency
+    note: 겹치지 않은 객체 연산의 실제 시간 선후관계를 보존해야 하므로, 동시 실행의 관찰 가능한 결과에 안전성 조건을 부과한다.
+    evidence:
+      - source: ref-095
 ---
 
 ## 개요
@@ -90,10 +102,12 @@ access:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | enables | [[선형화 가능성]] | 동시 객체의 연산 이력을 순차 명세와 실제 시간 순서에 맞춰 설명하는 정확성 조건을 정의한다. | [[Linearizability: A Correctness Condition for Concurrent Objects]] |
 | constrains | [[동시성]] | 겹치지 않은 객체 연산의 실제 시간 선후관계를 보존해야 하므로, 동시 실행의 관찰 가능한 결과에 안전성 조건을 부과한다. | [[Linearizability: A Correctness Condition for Concurrent Objects]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

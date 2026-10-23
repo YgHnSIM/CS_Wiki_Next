@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-051
+key: source:ref-051
 kind: reference
 title: IEEE 754-2019 Standard for Floating-Point Arithmetic
 aliases:
@@ -76,6 +77,12 @@ access:
     url: https://web.archive.org/web/20261022092729/https://standards.ieee.org/ieee/754/6210/
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-10-22
+relations:
+  - predicate: responds_to
+    target: concept:page-d4fdbd19
+    note: 구현마다 달랐던 형식·반올림·예외 조건을 공통 연산 계약으로 규정해 결과를 추론하고 교환하는 문제에 대응한다.
+    evidence:
+      - source: ref-051
 ---
 
 ## 개요
@@ -127,9 +134,11 @@ IEEE의 공개 카탈로그에는 754-2019에 별도 amendment나 corrigendum이
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | responds_to | [[부동소수점 정확성]] | 구현마다 달랐던 형식·반올림·예외 조건을 공통 연산 계약으로 규정해 결과를 추론하고 교환하는 문제에 대응한다. | [[IEEE 754-2019 Standard for Floating-Point Arithmetic]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-081
+key: source:ref-081
 kind: reference
 title: "GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers"
 aliases:
@@ -50,6 +51,22 @@ access:
     url: https://web.archive.org/web/20261012174050/https://arxiv.org/abs/2210.17323
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-10-12
+relations:
+  - predicate: implements
+    target: concept:llm-weight-quantization
+    note: 근사 2차 정보를 사용해 대규모 Transformer 가중치를 재학습 없이 낮은 비트로 압축한다.
+    evidence:
+      - source: ref-081
+  - predicate: responds_to
+    target: concept:memory-wall
+    note: 모델 가중치의 저장량과 추론 시 메모리 전송량을 줄여 대규모 모델의 적재·생성 병목에 대응한다.
+    evidence:
+      - source: ref-081
+  - predicate: exemplifies
+    target: concept:mixed-precision
+    note: 낮은 비트 가중치와 더 높은 정밀도의 활성값·누산을 역할별로 조합한다.
+    evidence:
+      - source: ref-081
 ---
 
 ## 개요
@@ -83,11 +100,13 @@ GPTQ가 학습 중 정밀도를 혼합하는 방법이 아니라, 이미 학습�
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
-| implements | [[LLM 가중치 양자화]] | 근사 2차 정보를 사용해 대규모 Transformer 가중치를 재학습 없이 낮은 비트로 압축한다. | [[GPTQ - Accurate Post-Training Quantization for Generative Pre-trained Transformers]] |
-| responds_to | [[메모리 장벽]] | 모델 가중치의 저장량과 추론 시 메모리 전송량을 줄여 대규모 모델의 적재·생성 병목에 대응한다. | [[GPTQ - Accurate Post-Training Quantization for Generative Pre-trained Transformers]] |
-| exemplifies | [[혼합 정밀도]] | 낮은 비트 가중치와 더 높은 정밀도의 활성값·누산을 역할별로 조합한다. | [[GPTQ - Accurate Post-Training Quantization for Generative Pre-trained Transformers]] |
+| implements | [[LLM 가중치 양자화]] | 근사 2차 정보를 사용해 대규모 Transformer 가중치를 재학습 없이 낮은 비트로 압축한다. | [[GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers]] |
+| responds_to | [[메모리 장벽]] | 모델 가중치의 저장량과 추론 시 메모리 전송량을 줄여 대규모 모델의 적재·생성 병목에 대응한다. | [[GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers]] |
+| exemplifies | [[혼합 정밀도]] | 낮은 비트 가중치와 더 높은 정밀도의 활성값·누산을 역할별로 조합한다. | [[GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

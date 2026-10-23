@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-084
+key: source:ref-084
 kind: reference
 title: MLPerf Inference Power Measurement
 aliases:
@@ -74,6 +75,22 @@ access:
     url: https://web.archive.org/web/20261016131236/https://docs.mlcommons.org/inference/power/
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-10-16
+relations:
+  - predicate: implements
+    target: concept:llm-inference-energy-metrics
+    note: 인증 전력 분석기와 공통 수집 절차로 벤치마크 실행 구간의 전체 시스템 AC 전력·에너지를 측정한다.
+    evidence:
+      - source: ref-084
+  - predicate: measures
+    target: concept:llm-inference-service-metrics
+    note: 모델 품질·요청 시나리오와 지연 조건을 통과한 추론 성능에 시스템 전력·에너지 측정을 결합한다.
+    evidence:
+      - source: ref-084
+  - predicate: exemplifies
+    target: concept:computing-capability
+    note: 지정 작업과 결과 계약, 시스템 경계를 고정한 뒤 성능과 자원 효율을 함께 비교하는 사례다.
+    evidence:
+      - source: ref-084
 ---
 
 ## 개요
@@ -107,11 +124,13 @@ access:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | implements | [[LLM 추론 에너지 지표]] | 인증 전력 분석기와 공통 수집 절차로 벤치마크 실행 구간의 전체 시스템 AC 전력·에너지를 측정한다. | [[MLPerf Inference Power Measurement]] |
 | measures | [[LLM 추론 서비스 지표]] | 모델 품질·요청 시나리오와 지연 조건을 통과한 추론 성능에 시스템 전력·에너지 측정을 결합한다. | [[MLPerf Inference Power Measurement]] |
 | exemplifies | [[컴퓨팅 능력이란 무엇인가]] | 지정 작업과 결과 계약, 시스템 경계를 고정한 뒤 성능과 자원 효율을 함께 비교하는 사례다. | [[MLPerf Inference Power Measurement]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

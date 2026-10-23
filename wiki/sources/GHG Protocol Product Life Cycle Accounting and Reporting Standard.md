@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-108
+key: source:ref-108
 kind: reference
 title: GHG Protocol Product Life Cycle Accounting and Reporting Standard
 aliases:
@@ -53,6 +54,17 @@ access:
     url: https://web.archive.org/web/20261006134040/https://ghgprotocol.org/product-standard
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-10-06
+relations:
+  - predicate: enables
+    target: concept:lifecycle-assessment-boundary
+    note: 제품 생애주기의 단계, 기능 단위와 보고 경계를 명시하는 회계 틀을 제공한다.
+    evidence:
+      - source: ref-108
+  - predicate: constrains
+    target: concept:operational-embodied-carbon
+    note: 운영 단계만 관찰한 값을 제품·서비스 전체 수명 주기 영향으로 일반화하지 않게 한다.
+    evidence:
+      - source: ref-108
 ---
 
 ## 개요
@@ -81,10 +93,12 @@ access:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | enables | [[수명 주기 평가 경계]] | 제품 생애주기의 단계, 기능 단위와 보고 경계를 명시하는 회계 틀을 제공한다. | [[GHG Protocol Product Life Cycle Accounting and Reporting Standard]] |
 | constrains | [[운영 탄소와 내재 탄소]] | 운영 단계만 관찰한 값을 제품·서비스 전체 수명 주기 영향으로 일반화하지 않게 한다. | [[GHG Protocol Product Life Cycle Accounting and Reporting Standard]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

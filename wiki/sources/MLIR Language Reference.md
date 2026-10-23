@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-132
+key: source:ref-132
 kind: reference
 title: MLIR Language Reference
 aliases:
@@ -36,6 +37,17 @@ access:
     url: https://web.archive.org/web/20260905220639/https://mlir.llvm.org/docs/LangRef/
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-09-05
+relations:
+  - predicate: synthesizes
+    target: concept:stablehlo-mlir-abi
+    note: operation·type·dialect를 통해 중간 표현의 구조적 경계를 제공한다.
+    evidence:
+      - source: ref-132
+  - predicate: constrains
+    target: analysis:stablehlo-mlir-abi-boundary
+    note: dialect conversion이 보존해야 할 type·operation·region semantics를 분리한다.
+    evidence:
+      - source: ref-132
 ---
 
 ## 개요
@@ -48,10 +60,12 @@ MLIR은 operation, value, type, block, region을 이용해 서로 다른 abstrac
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | synthesizes | [[StableHLO·MLIR·ABI 경계]] | operation·type·dialect를 통해 중간 표현의 구조적 경계를 제공한다. | [[MLIR Language Reference]] |
 | constrains | [[표현·IR·ABI 경계는 무엇을 보존하는가]] | dialect conversion이 보존해야 할 type·operation·region semantics를 분리한다. | [[MLIR Language Reference]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

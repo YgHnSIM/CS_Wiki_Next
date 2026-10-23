@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-128
+key: source:ref-128
 kind: reference
 title: GitHub Artifact Attestations
 aliases:
@@ -36,6 +37,17 @@ access:
     url: https://web.archive.org/web/20261016122727/https://docs.github.com/en/actions/how-tos/secure-your-work/use-artifact-attestations/use-artifact-attestations
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-10-16
+relations:
+  - predicate: exemplifies
+    target: concept:dependency-provenance
+    note: subject digest와 workflow provenance를 함께 검증하는 CI 구현 사례다.
+    evidence:
+      - source: ref-128
+  - predicate: constrains
+    target: analysis:dependency-provenance-registry
+    note: attestation 생성만으로 보안 이득이 생기지 않고 소비자 검증이 필요함을 명시한다.
+    evidence:
+      - source: ref-128
 ---
 
 ## 개요
@@ -48,10 +60,12 @@ GitHub artifact attestations는 바이너리와 컨테이너 이미지의 subjec
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | exemplifies | [[dependency provenance와 registry identity]] | subject digest와 workflow provenance를 함께 검증하는 CI 구현 사례다. | [[GitHub Artifact Attestations]] |
 | constrains | [[registry는 의존성의 출처와 동일성을 어떻게 증명하는가]] | attestation 생성만으로 보안 이득이 생기지 않고 소비자 검증이 필요함을 명시한다. | [[GitHub Artifact Attestations]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

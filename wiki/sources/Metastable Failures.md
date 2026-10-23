@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-121
+key: source:ref-121
 kind: reference
 title: Metastable Failures
 aliases:
@@ -35,6 +36,17 @@ access:
     url: https://doi.org/10.1145/3458336.3465286
     retrieved: 2026-08-05
     version: HotOS 2021 paper PDF
+relations:
+  - predicate: constrains
+    target: concept:failure-detection
+    note: 관찰·의심·복구 신호와 자기 유지되는 overload causal chain을 분리하게 한다.
+    evidence:
+      - source: ref-121
+  - predicate: constrains
+    target: concept:queueing-load-control
+    note: 큐·재시도·admission 정책이 안정화 조건과 회복 경로를 바꿀 수 있음을 드러낸다.
+    evidence:
+      - source: ref-121
 ---
 
 ## 개요
@@ -49,10 +61,12 @@ access:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | constrains | [[장애 감지]] | 관찰·의심·복구 신호와 자기 유지되는 overload causal chain을 분리하게 한다. | [[Metastable Failures]] |
 | constrains | [[대기열과 부하 제어]] | 큐·재시도·admission 정책이 안정화 조건과 회복 경로를 바꿀 수 있음을 드러낸다. | [[Metastable Failures]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

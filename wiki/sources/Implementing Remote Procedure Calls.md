@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-102
+key: source:ref-102
 kind: reference
 title: Implementing Remote Procedure Calls
 aliases:
@@ -54,6 +55,17 @@ access:
     url: https://doi.org/10.1145/2080.357392
     retrieved: 2026-07-25
     version: ACM Transactions on Computer Systems 2(1), February 1984, pp. 39–59
+relations:
+  - predicate: enables
+    target: concept:remote-procedure-call
+    note: 스텁·바인딩·메시지 교환·재전송과 중복 호출 처리를 포함하는 RPC 런타임의 구현 구조를 제공한다.
+    evidence:
+      - source: ref-102
+  - predicate: enables
+    target: analysis:local-interface-remote-state
+    note: 로컬 호출과 유사한 인터페이스가 원격 통신·재시작·응답 손실의 관찰 불가능성을 없애지 않는 사례를 제공한다.
+    evidence:
+      - source: ref-102
 ---
 
 ## 개요
@@ -87,10 +99,12 @@ RPC의 목적은 네트워크를 없애는 것이 아니라, 프로그램이 원
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | enables | [[원격 프로시저 호출]] | 스텁·바인딩·메시지 교환·재전송과 중복 호출 처리를 포함하는 RPC 런타임의 구현 구조를 제공한다. | [[Implementing Remote Procedure Calls]] |
 | enables | [[로컬 호출과 파일은 원격 상태가 될 때 무엇을 잃는가]] | 로컬 호출과 유사한 인터페이스가 원격 통신·재시작·응답 손실의 관찰 불가능성을 없애지 않는 사례를 제공한다. | [[Implementing Remote Procedure Calls]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

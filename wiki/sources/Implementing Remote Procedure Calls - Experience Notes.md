@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-140
+key: source:ref-140
 kind: reference
 title: Remote Procedure Call protocols in historical perspective
 aliases:
@@ -46,6 +47,17 @@ access:
     url: https://web.archive.org/web/20240605130045/http://bitsavers.org/pdf/xerox/xns/standards/XSIS_038112_Courier_The_Remote_Procedure_Call_Protocol_Dec1981.pdf
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2024-06-05
+relations:
+  - predicate: synthesizes
+    target: concept:remote-procedure-call
+    note: RPC의 스텁·마샬링·실패 의미론을 초기 형태로 정식화한다.
+    evidence:
+      - source: ref-140
+  - predicate: enables
+    target: source:ref-102
+    note: 같은 시대의 구현 경험 보고와 상호 보완된다.
+    evidence:
+      - source: ref-140
 ---
 
 ## 개요
@@ -58,10 +70,12 @@ access:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | synthesizes | [[원격 프로시저 호출]] | RPC의 스텁·마샬링·실패 의미론을 초기 형태로 정식화한다. | [[Remote Procedure Call protocols in historical perspective]] |
 | enables | [[Implementing Remote Procedure Calls]] | 같은 시대의 구현 경험 보고와 상호 보완된다. | [[Remote Procedure Call protocols in historical perspective]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

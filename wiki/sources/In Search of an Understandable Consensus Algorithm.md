@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-088
+key: source:ref-088
 kind: reference
 title: In Search of an Understandable Consensus Algorithm
 aliases:
@@ -55,6 +56,17 @@ access:
     url: https://web.archive.org/web/20260929234557/https://www.usenix.org/conference/atc14/technical-sessions/presentation/ongaro
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-09-29
+relations:
+  - predicate: enables
+    target: concept:replicated-log-consensus
+    note: 리더 선출, 리더에서 팔로워로의 로그 복제, 확정된 로그의 안전성이라는 Raft의 구조를 제공한다.
+    evidence:
+      - source: ref-088
+  - predicate: constrains
+    target: concept:fault-tolerance
+    note: 정지·재시작을 가정한 Raft의 보장을 비잔틴 행동까지 포함하는 일반 결함 허용으로 확대하지 않도록 실패 모형을 제한한다.
+    evidence:
+      - source: ref-088
 ---
 
 ## 개요
@@ -86,10 +98,12 @@ Raft가 합의 문제를 세 부분으로 분해해 설명하는 핵심 구성�
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | enables | [[복제 로그와 합의]] | 리더 선출, 리더에서 팔로워로의 로그 복제, 확정된 로그의 안전성이라는 Raft의 구조를 제공한다. | [[In Search of an Understandable Consensus Algorithm]] |
 | constrains | [[결함 허용]] | 정지·재시작을 가정한 Raft의 보장을 비잔틴 행동까지 포함하는 일반 결함 허용으로 확대하지 않도록 실패 모형을 제한한다. | [[In Search of an Understandable Consensus Algorithm]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

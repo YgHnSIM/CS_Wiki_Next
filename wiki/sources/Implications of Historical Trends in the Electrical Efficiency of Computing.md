@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-047
+key: source:ref-047
 kind: reference
 title: Implications of Historical Trends in the Electrical Efficiency of Computing
 aliases:
@@ -80,6 +81,17 @@ access:
     url: https://github.com/AABoyles/AIPredict/blob/master/data-raw/koomeycomputertrendsreleaseversion-v36.xlsx
     retrieved: 2026-07-16
     version: IEEE Annals of the History of Computing 33(3), July–September 2011, pp. 46–54
+relations:
+  - predicate: measures
+    target: concept:page-0fdf8f46
+    note: 1946–2009년 컴퓨터 표본의 최고 부하 계산량과 전력을 공통 단위로 환산해 계산/에너지의 장기 추세를 측정한다.
+    evidence:
+      - source: ref-047
+  - predicate: exemplifies
+    target: analysis:power-wall-performance
+    note: 세대 간 계산/J의 향상이 순간 전력·실제 부하 곡선과 구분되어야 하는 역사적 측정 축을 제공한다.
+    evidence:
+      - source: ref-047
 ---
 
 ## 개요
@@ -148,10 +160,12 @@ access:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | measures | [[Koomey의 법칙]] | 1946–2009년 컴퓨터 표본의 최고 부하 계산량과 전력을 공통 단위로 환산해 계산/에너지의 장기 추세를 측정한다. | [[Implications of Historical Trends in the Electrical Efficiency of Computing]] |
 | exemplifies | [[전력 장벽은 성능 향상의 의미를 어떻게 바꾸었는가]] | 세대 간 계산/J의 향상이 순간 전력·실제 부하 곡선과 구분되어야 하는 역사적 측정 축을 제공한다. | [[Implications of Historical Trends in the Electrical Efficiency of Computing]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

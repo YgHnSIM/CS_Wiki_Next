@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-070
+key: source:ref-070
 kind: reference
 title: MLPerf Training Benchmark
 aliases:
@@ -54,6 +55,17 @@ access:
     url: https://web.archive.org/web/20260309183704/https://proceedings.mlsys.org/paper_files/paper/2020/hash/411e39b117e885341f25efb8912945f7-Abstract.html
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-03-09
+relations:
+  - predicate: measures
+    target: concept:time-to-quality
+    note: 학습 성능을 규정한 품질 목표에 도달하는 시간으로 비교하는 벤치마크 규칙을 제시한다.
+    evidence:
+      - source: ref-070
+  - predicate: constrains
+    target: analysis:low-precision-ai-result-contract
+    note: 처리량만으로 학습 성능을 판단하지 않고 목표 품질까지의 시간과 규칙을 함께 보고하게 한다.
+    evidence:
+      - source: ref-070
 ---
 
 ## 개요
@@ -85,10 +97,12 @@ access:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | measures | [[목표 품질 도달 시간]] | 학습 성능을 규정한 품질 목표에 도달하는 시간으로 비교하는 벤치마크 규칙을 제시한다. | [[MLPerf Training Benchmark]] |
 | constrains | [[낮은 정밀도는 AI의 컴퓨팅 능력을 어떻게 바꾸는가]] | 처리량만으로 학습 성능을 판단하지 않고 목표 품질까지의 시간과 규칙을 함께 보고하게 한다. | [[MLPerf Training Benchmark]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

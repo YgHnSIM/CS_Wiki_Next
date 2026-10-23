@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-107
+key: source:ref-107
 kind: reference
 title: Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity
 aliases:
@@ -58,6 +59,17 @@ access:
     url: https://web.archive.org/web/20261017154818/https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-10-17
+relations:
+  - predicate: constrains
+    target: concept:developer-productivity
+    note: 숙련도, 코드베이스 친숙도, 작업 정의, 도구 시점이 다른 시간 결과를 하나의 보편 생산성 수치로 읽지 않게 한다.
+    evidence:
+      - source: ref-107
+  - predicate: exemplifies
+    target: concept:verification-labor
+    note: 사람이 만족할 PR의 성공 정의가 테스트·문서·스타일과 통합 비용을 시간 측정에 포함한다.
+    evidence:
+      - source: ref-107
 ---
 
 ## 개요
@@ -83,10 +95,12 @@ access:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | constrains | [[개발자 생산성]] | 숙련도, 코드베이스 친숙도, 작업 정의, 도구 시점이 다른 시간 결과를 하나의 보편 생산성 수치로 읽지 않게 한다. | [[Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity]] |
 | exemplifies | [[검증 노동]] | 사람이 만족할 PR의 성공 정의가 테스트·문서·스타일과 통합 비용을 시간 측정에 포함한다. | [[Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

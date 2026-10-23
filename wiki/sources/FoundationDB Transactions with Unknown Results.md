@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-116
+key: source:ref-116
 kind: reference
 title: FoundationDB Transactions with Unknown Results
 aliases:
@@ -40,6 +41,17 @@ access:
     url: https://web.archive.org/web/20260925124802/https://apple.github.io/foundationdb/developer-guide.html
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-09-25
+relations:
+  - predicate: constrains
+    target: concept:idempotency
+    note: unknown commit 결과 뒤의 재시도가 데이터베이스·외부 부작용에 서로 다른 중복 위험을 남긴다는 경계를 제공한다.
+    evidence:
+      - source: ref-116
+  - predicate: exemplifies
+    target: concept:partial-failure
+    note: 통신 단절 뒤에도 서버의 실제 커밋 상태가 관찰자에게 미확정으로 남는 사례다.
+    evidence:
+      - source: ref-116
 ---
 
 ## 개요
@@ -54,10 +66,12 @@ FoundationDB의 데이터베이스 트랜잭션 원자성은 일반 클라이언
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | constrains | [[멱등성]] | unknown commit 결과 뒤의 재시도가 데이터베이스·외부 부작용에 서로 다른 중복 위험을 남긴다는 경계를 제공한다. | [[FoundationDB Transactions with Unknown Results]] |
 | exemplifies | [[부분 실패]] | 통신 단절 뒤에도 서버의 실제 커밋 상태가 관찰자에게 미확정으로 남는 사례다. | [[FoundationDB Transactions with Unknown Results]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

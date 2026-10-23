@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-093
+key: source:ref-093
 kind: reference
 title: "Monitors: An Operating System Structuring Concept"
 aliases:
@@ -60,6 +61,17 @@ access:
     url: https://web.archive.org/web/20250309155009/https://dl.acm.org/doi/10.1145/355620.361161
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2025-03-09
+relations:
+  - predicate: implements
+    target: concept:mutual-exclusion-synchronization
+    note: 지역 상태·절차·조건 변수로 공유 자원에 대한 배타적 접근과 조건 대기를 모듈 안에서 구현한다.
+    evidence:
+      - source: ref-093
+  - predicate: exemplifies
+    target: concept:page-c7e0c2c5
+    note: 공유 자원 관리와 프로세스 대기를 운영체제의 구조화 문제로 다루는 사례를 제시한다.
+    evidence:
+      - source: ref-093
 ---
 
 ## 개요
@@ -91,10 +103,12 @@ Hoare의 모니터는 특정 언어의 `synchronized` 키워드나 현대 런타
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | implements | [[상호 배제와 동기화]] | 지역 상태·절차·조건 변수로 공유 자원에 대한 배타적 접근과 조건 대기를 모듈 안에서 구현한다. | [[Monitors: An Operating System Structuring Concept]] |
 | exemplifies | [[운영체제]] | 공유 자원 관리와 프로세스 대기를 운영체제의 구조화 문제로 다루는 사례를 제시한다. | [[Monitors: An Operating System Structuring Concept]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

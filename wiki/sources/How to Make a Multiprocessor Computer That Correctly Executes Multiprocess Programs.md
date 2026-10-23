@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-094
+key: source:ref-094
 kind: reference
 title: How to Make a Multiprocessor Computer That Correctly Executes Multiprocess Programs
 aliases:
@@ -57,6 +58,17 @@ access:
     url: https://web.archive.org/web/20261010155206/https://www.microsoft.com/en-us/research/publication/make-multiprocessor-computer-correctly-executes-multiprocess-programs/
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-10-10
+relations:
+  - predicate: enables
+    target: concept:sequential-consistency
+    note: 각 프로세서의 프로그램 순서를 보존하면서 모든 메모리 연산이 하나의 순차적 순서로 보이는 정확성 조건을 정의한다.
+    evidence:
+      - source: ref-094
+  - predicate: constrains
+    target: concept:concurrency
+    note: 공유 메모리에서 겹쳐 진행하는 프로세서의 읽기·쓰기가 관찰될 수 있는 순서에 전역 조건을 부과한다.
+    evidence:
+      - source: ref-094
 ---
 
 ## 개요
@@ -88,10 +100,12 @@ access:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | enables | [[순차 일관성]] | 각 프로세서의 프로그램 순서를 보존하면서 모든 메모리 연산이 하나의 순차적 순서로 보이는 정확성 조건을 정의한다. | [[How to Make a Multiprocessor Computer That Correctly Executes Multiprocess Programs]] |
 | constrains | [[동시성]] | 공유 메모리에서 겹쳐 진행하는 프로세서의 읽기·쓰기가 관찰될 수 있는 순서에 전역 조건을 부과한다. | [[How to Make a Multiprocessor Computer That Correctly Executes Multiprocess Programs]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

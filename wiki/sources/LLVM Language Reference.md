@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-133
+key: source:ref-133
 kind: reference
 title: LLVM Language Reference
 aliases:
@@ -37,6 +38,17 @@ access:
     url: https://web.archive.org/web/20261016085320/https://llvm.org/docs/LangRef.html
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-10-16
+relations:
+  - predicate: constrains
+    target: concept:stablehlo-mlir-abi
+    note: target data layout과 calling convention을 최종 ABI 검증 대상으로 둔다.
+    evidence:
+      - source: ref-133
+  - predicate: constrains
+    target: analysis:stablehlo-mlir-abi-boundary
+    note: IR semantics 보존과 binary-level 호출 호환성을 분리한다.
+    evidence:
+      - source: ref-133
 ---
 
 ## 개요
@@ -49,10 +61,12 @@ LLVM Language Reference는 target의 data layout과 calling convention을 IR·co
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | constrains | [[StableHLO·MLIR·ABI 경계]] | target data layout과 calling convention을 최종 ABI 검증 대상으로 둔다. | [[LLVM Language Reference]] |
 | constrains | [[표현·IR·ABI 경계는 무엇을 보존하는가]] | IR semantics 보존과 binary-level 호출 호환성을 분리한다. | [[LLVM Language Reference]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

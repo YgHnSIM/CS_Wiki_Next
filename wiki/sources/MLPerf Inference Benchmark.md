@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-078
+key: source:ref-078
 kind: reference
 title: MLPerf Inference Benchmark
 aliases:
@@ -71,6 +72,27 @@ access:
     url: https://web.archive.org/web/20260930153116/https://arxiv.org/abs/1911.02549
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-09-30
+relations:
+  - predicate: measures
+    target: concept:llm-inference-service-metrics
+    note: LLM 작업의 품질·생성 길이와 TTFT·TPOT 조건 아래 시나리오별 처리량을 계산한다.
+    evidence:
+      - source: ref-078
+  - predicate: measures
+    target: concept:tail-latency
+    note: Server/Interactive와 스트림 시나리오에서 높은 백분위 지연 또는 지연 제한을 성능 계약에 포함한다.
+    evidence:
+      - source: ref-078
+  - predicate: measures
+    target: concept:computing-capability
+    note: 하드웨어와 소프트웨어를 포함한 시스템이 지정 작업·품질·시나리오에서 달성한 추론 능력을 비교한다.
+    evidence:
+      - source: ref-078
+  - predicate: constrains
+    target: concept:time-to-quality
+    note: 학습의 품질 도달 시간과 달리 추론에서는 이미 정한 모델 품질·출력 조건을 통과한 실행의 지연·처리량만 유효하게 센다.
+    evidence:
+      - source: ref-078
 ---
 
 ## 개요
@@ -106,12 +128,14 @@ MLPerf는 운영 중인 모든 LLM 서비스를 그대로 복제하지 않는다
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | measures | [[LLM 추론 서비스 지표]] | LLM 작업의 품질·생성 길이와 TTFT·TPOT 조건 아래 시나리오별 처리량을 계산한다. | [[MLPerf Inference Benchmark]] |
 | measures | [[꼬리 지연 시간]] | Server/Interactive와 스트림 시나리오에서 높은 백분위 지연 또는 지연 제한을 성능 계약에 포함한다. | [[MLPerf Inference Benchmark]] |
 | measures | [[컴퓨팅 능력이란 무엇인가]] | 하드웨어와 소프트웨어를 포함한 시스템이 지정 작업·품질·시나리오에서 달성한 추론 능력을 비교한다. | [[MLPerf Inference Benchmark]] |
 | constrains | [[목표 품질 도달 시간]] | 학습의 품질 도달 시간과 달리 추론에서는 이미 정한 모델 품질·출력 조건을 통과한 실행의 지연·처리량만 유효하게 센다. | [[MLPerf Inference Benchmark]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

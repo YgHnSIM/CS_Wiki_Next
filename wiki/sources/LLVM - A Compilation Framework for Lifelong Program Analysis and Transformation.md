@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-096
+key: source:ref-096
 kind: reference
 title: "LLVM: A Compilation Framework for Lifelong Program Analysis & Transformation"
 aliases:
@@ -55,6 +56,17 @@ access:
     url: https://web.archive.org/web/20261012175813/https://llvm.org/pubs/2004-01-30-CGO-LLVM.html
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-10-12
+relations:
+  - predicate: enables
+    target: concept:intermediate-representation
+    note: 언어 독립적 SSA 기반의 저수준 코드 표현을 여러 분석·변환 단계가 공유하도록 설계했다.
+    evidence:
+      - source: ref-096
+  - predicate: enables
+    target: concept:page-eb050b34
+    note: 정적·링크·실행 시점에 데이터 흐름과 형식 정보를 이용할 수 있는 공통 변환 기반을 제공한다.
+    evidence:
+      - source: ref-096
 ---
 
 ## 개요
@@ -75,10 +87,12 @@ LLVM의 SSA 표현은 값의 정의와 사용 관계를 명시해 데이터 흐�
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
-| enables | [[중간 표현]] | 언어 독립적 SSA 기반의 저수준 코드 표현을 여러 분석·변환 단계가 공유하도록 설계했다. | [[LLVM - A Compilation Framework for Lifelong Program Analysis and Transformation]] |
-| enables | [[컴파일러 최적화]] | 정적·링크·실행 시점에 데이터 흐름과 형식 정보를 이용할 수 있는 공통 변환 기반을 제공한다. | [[LLVM - A Compilation Framework for Lifelong Program Analysis and Transformation]] |
+| enables | [[중간 표현]] | 언어 독립적 SSA 기반의 저수준 코드 표현을 여러 분석·변환 단계가 공유하도록 설계했다. | [[LLVM: A Compilation Framework for Lifelong Program Analysis & Transformation]] |
+| enables | [[컴파일러 최적화]] | 정적·링크·실행 시점에 데이터 흐름과 형식 정보를 이용할 수 있는 공통 변환 기반을 제공한다. | [[LLVM: A Compilation Framework for Lifelong Program Analysis & Transformation]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

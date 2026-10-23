@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: ref-118
+key: source:ref-118
 kind: reference
 title: Google SRE Error Budget Policy
 aliases:
@@ -39,6 +40,17 @@ access:
     url: https://web.archive.org/web/20261015080115/https://sre.google/workbook/error-budget-policy/
     retrieved: 2026-10-24
     version: Internet Archive snapshot 2026-10-15
+relations:
+  - predicate: constrains
+    target: concept:retries
+    note: 재시도 증폭이 SLO 결과와 운영 예산에 미치는 영향을 별도 정책으로 관찰하게 한다.
+    evidence:
+      - source: ref-118
+  - predicate: synthesizes
+    target: concept:availability-recovery
+    note: 정상 응답률을 배포·복구·변경 의사결정의 시간 범위와 연결한다.
+    evidence:
+      - source: ref-118
 ---
 
 ## 개요
@@ -53,10 +65,12 @@ Error budget은 가용성 그 자체가 아니다. 어떤 요청을 성공으로
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | constrains | [[재시도]] | 재시도 증폭이 SLO 결과와 운영 예산에 미치는 영향을 별도 정책으로 관찰하게 한다. | [[Google SRE Error Budget Policy]] |
 | synthesizes | [[가용성과 복구]] | 정상 응답률을 배포·복구·변경 의사결정의 시간 범위와 연결한다. | [[Google SRE Error Budget Policy]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 
