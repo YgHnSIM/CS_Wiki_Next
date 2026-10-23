@@ -10,6 +10,13 @@ function escapeHtml(value) {
     .replaceAll('"', "&quot;");
 }
 
+function stripInternalBlocks(body) {
+  return String(body).replace(
+    /<!--\s*wiki-v2:evidence-start\s*-->[\s\S]*?<!--\s*wiki-v2:evidence-end\s*-->/g,
+    ""
+  );
+}
+
 function protectBody(body, withBase) {
   const lines = String(body).split("\n");
   let inFence = false;
@@ -68,5 +75,5 @@ export function renderMarkdown(body, resolveDocument, withBase) {
     return true;
   });
 
-  return markdown.render(protectBody(body, withBase));
+  return markdown.render(protectBody(stripInternalBlocks(body), withBase));
 }
