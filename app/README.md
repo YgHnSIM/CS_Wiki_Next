@@ -35,11 +35,12 @@ npm run site:links
 | `/` | 홈 |
 | `/index/` | 공개 문서 색인 |
 | `/docs/{id}/` | 440개 문서 |
-| `/map/` | 지식 지도 요약 |
 | `/history/` | 역사 렌즈 |
 | `/evidence/` | 근거 렌즈 |
 | `/search/` | 검색 |
 | `/search.json` | 검색 인덱스 |
+| `/sitemap.xml` | 공개 URL sitemap |
+| `/robots.txt` | robots |
 | 기존 555개 URL | meta refresh 리디렉션 |
 | `/404.html` | 404 |
 

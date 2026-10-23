@@ -3,7 +3,7 @@
 기존 CS Wiki의 **440개 문서와 원본은 그대로** 가져오고, 메타데이터·지식 연결·사이트 도구는 새로 구성하는 저장소다.
 
 - **이전 저장소**: `C:\Vault\CS_Wiki` (백업: `C:\Vault\_backups\CS_Wiki_2026-10-24_0514`)
-- **현재 단계**: Phase 3 코어 완료 (Astro 1,002 pages, 440 docs, 555 redirects, 397 search records)
+- **현재 단계**: Phase 3 코어 + 필수 기능 완료 (Astro 1,001 pages, 440 docs, 555 redirects, 397 search records)
 - **의존성**: `npm audit` 0 vulnerabilities (루트·app)
 - **URL 계약**: `/docs/{id}/` 440개와 리디렉션 555개를 유지한다.
 
@@ -41,7 +41,7 @@ app/                  Astro 사이트
 
 ## 다음 단계
 
-1. Phase 3.1: 그래프 캔버스·연결 경로 탐색기·학습 경로
-2. 검색 랭킹·한국어 검색 품질 개선
-3. 기존 사이트와 컴포넌트·출력 parity 확인
-4. 배포 경로·GitHub Pages cutover
+1. CI·배포 경로·cutover
+2. 콘텐츠 품질: 연도 미상·고아·단일 근거
+3. 검색 품질 측정 후 개선
+4. 그래프 캔버스·경로 탐색기·학습 경로는 사용 수요 확인 후 검토

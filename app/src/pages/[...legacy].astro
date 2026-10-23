@@ -3,7 +3,7 @@ import Base from "../layouts/Base.astro";
 import { routes, withBase } from "../lib/data";
 
 export function getStaticPaths() {
-  const reserved = new Set(["docs", "index", "map", "history", "evidence", "search", "404", "_astro"]);
+  const reserved = new Set(["docs", "index", "history", "evidence", "search", "404", "_astro"]);
   return Object.entries(routes.redirects)
     .map(([from, to]) => {
       const legacy = from.replace(/^\/+|\/+$/g, "");

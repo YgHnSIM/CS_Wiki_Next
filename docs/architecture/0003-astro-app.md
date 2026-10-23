@@ -19,11 +19,12 @@ app/dist/
   index.html
   index/index.html
   docs/{id}/index.html          440
-  map/index.html
   history/index.html
   evidence/index.html
   search/index.html
   search.json                   397
+  sitemap.xml                   402
+  robots.txt
   {legacy}/index.html           555 redirects
   404.html
   assets/                       copied raw assets
@@ -63,10 +64,10 @@ npm run site:links
 
 ## 아직 하지 않은 것
 
-- 기존 그래프 캔버스
+- 그래프 캔버스
 - 연결 경로 탐색기
 - 학습 경로/노선도
 - 검색 랭킹·한국어 형태소 분석
 - 기존 사이트와의 픽셀/컴포넌트 parity
 
-이들은 Phase 3.1 이후의 작업이다.
+이들은 **필수 기능이 아니므로** 채택하지 않았다. 사용 수요가 확인되면 Phase 3.1 이후에 검토한다. sitemap·robots·기본 검색·색인·리디렉션은 필수 범위로 포함했다.
