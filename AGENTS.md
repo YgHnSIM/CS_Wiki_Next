@@ -40,10 +40,12 @@ app/                  Astro 사이트
 
 ```bash
 npm run knowledge:check
+npm run knowledge:schema
 npm run knowledge:report
+npm run knowledge:sync -- --check
 ```
 
-`knowledge:check`는 Registry 정합성, `knowledge:report`는 887개 관계의 preflight를 검사한다. `knowledge:migrate`와 `knowledge:sync`는 Phase 1-B에서 추가한다.
+`knowledge:check`는 Registry 정합성, `knowledge:schema`는 440쪽 frontmatter 스키마, `knowledge:report`는 887개 관계의 preflight, `knowledge:sync --check`는 frontmatter와 generated block의 패리티를 검사한다.
 
 ## 금지
 

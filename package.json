@@ -9,9 +9,14 @@
   "scripts": {
     "knowledge:seed": "node packages/knowledge/src/cli/seed.mjs",
     "knowledge:report": "node packages/knowledge/src/cli/report.mjs",
-    "knowledge:check": "node packages/knowledge/src/cli/check.mjs"
+    "knowledge:check": "node packages/knowledge/src/cli/check.mjs",
+    "knowledge:migrate": "node packages/knowledge/src/cli/migrate.mjs",
+    "knowledge:sync": "node packages/knowledge/src/cli/sync.mjs",
+    "knowledge:schema": "node packages/knowledge/src/cli/schema.mjs"
   },
   "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
     "yaml": "^2.8.1"
   }
 }
