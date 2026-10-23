@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: concept-be5e965404a672d3
+key: concept:page-be5e9654
 kind: concept
 title: Unicode scalar value
 aliases:
@@ -24,6 +25,17 @@ history:
   layer: software
 redirect_from:
   - /concepts/unicode-scalar-value/
+relations:
+  - predicate: narrower
+    target: concept:page-e589f64b
+    note: 서로게이트를 제외한 유효 유니코드 스칼라 값이다.
+    evidence:
+      - source: ref-022
+  - predicate: enables
+    target: concept:page-f4f75731
+    note: 인코딩이 전송할 수 있는 추상 값의 범위를 정한다.
+    evidence:
+      - source: ref-023
 ---
 
 ## 개요
@@ -42,10 +54,12 @@ scalar value라고 해서 반드시 현재 문자에 배정된 값이라는 뜻�
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | narrower | [[코드 포인트]] | 서로게이트를 제외한 유효 유니코드 스칼라 값이다. | [[The Unicode Standard 17.0.0]] |
 | enables | [[UTF-8]] | 인코딩이 전송할 수 있는 추상 값의 범위를 정한다. | [[RFC 3629 UTF-8]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 <!-- wiki-v2:evidence-start -->

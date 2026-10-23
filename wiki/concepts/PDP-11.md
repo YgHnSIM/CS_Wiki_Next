@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: concept-18a0ce4363c25093
+key: concept:page-18a0ce43
 kind: concept
 title: PDP-11
 aliases:
@@ -31,6 +32,12 @@ history:
   layer: machine
 redirect_from:
   - /concepts/pdp-11/
+relations:
+  - predicate: enables
+    target: concept:page-092a889f
+    note: 1974년 논문이 설명한 Unix는 PDP-11/40·/45 위에서 동작했으며, 이 계열은 초기 시스템 설계와 구현의 하드웨어 맥락을 제공했다.
+    evidence:
+      - source: ref-018
 ---
 
 ## 개요
@@ -45,9 +52,11 @@ PDP-11은 C의 발전에 중요한 영향을 주었다. B와 BCPL의 단일 워�
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | enables | [[Unix]] | 1974년 논문이 설명한 Unix는 PDP-11/40·/45 위에서 동작했으며, 이 계열은 초기 시스템 설계와 구현의 하드웨어 맥락을 제공했다. | [[The UNIX Time-Sharing System]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

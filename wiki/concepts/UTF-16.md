@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: concept-c854e2f6358212d1
+key: concept:page-c854e2f6
 kind: concept
 title: UTF-16
 aliases:
@@ -24,6 +25,17 @@ history:
   layer: software
 redirect_from:
   - /concepts/utf-16/
+relations:
+  - predicate: implements
+    target: concept:page-496b0829
+    note: 코드 포인트를 16비트 코드 유닛과 서로게이트 쌍으로 직렬화한다.
+    evidence:
+      - source: ref-022
+  - predicate: constrains
+    target: concept:page-5163a003
+    note: 멀티바이트 유닛의 엔디안을 표시해야 해석이 안정된다.
+    evidence:
+      - source: ref-026
 ---
 
 ## 개요
@@ -44,10 +56,12 @@ UTF-16 코드 유닛은 16비트 값이므로 바이트열로 저장하거나 �
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | implements | [[유니코드]] | 코드 포인트를 16비트 코드 유닛과 서로게이트 쌍으로 직렬화한다. | [[The Unicode Standard 17.0.0]] |
 | constrains | [[바이트 순서 표식]] | 멀티바이트 유닛의 엔디안을 표시해야 해석이 안정된다. | [[WHATWG Encoding Standard]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 <!-- wiki-v2:evidence-start -->

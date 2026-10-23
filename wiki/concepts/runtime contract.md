@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: concept-runtime-contract
+key: concept:runtime-contract
 kind: concept
 title: runtime contract
 aliases:
@@ -25,6 +26,29 @@ capability_layers:
   - reliable-results
 history:
   layer: software
+relations:
+  - predicate: synthesizes
+    target: analysis:runtime-contract
+    note: signature·capability·state·lifecycle·SLO를 검증 틀로 묶는다.
+    evidence:
+      - source: ref-134
+      - source: ref-136
+  - predicate: responds_to
+    target: concept:stablehlo-mlir-abi
+    note: representation과 ABI가 정해진 뒤 실제 실행조건을 명시한다.
+    evidence:
+      - source: ref-133
+      - source: ref-136
+  - predicate: constrains
+    target: concept:ai-computing-bottlenecks
+    note: 성능 지표를 runtime contract의 측정 경계와 SLO에 연결한다.
+    evidence:
+      - source: ref-135
+  - predicate: constrains
+    target: concept:llm-inference-service-metrics
+    note: latency·goodput·fallback을 어떤 endpoint와 상태에서 측정할지 제한한다.
+    evidence:
+      - source: ref-134
 ---
 
 ## 개요
@@ -48,12 +72,14 @@ history:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | synthesizes | [[runtime contract는 무엇을 보장해야 하는가]] | signature·capability·state·lifecycle·SLO를 검증 틀로 묶는다. | [[TensorFlow SavedModel Signatures]], [[OCI Runtime Specification]] |
 | responds_to | [[StableHLO·MLIR·ABI 경계]] | representation과 ABI가 정해진 뒤 실제 실행조건을 명시한다. | [[LLVM Language Reference]], [[OCI Runtime Specification]] |
 | constrains | [[AI 컴퓨팅 병목]] | 성능 지표를 runtime contract의 측정 경계와 SLO에 연결한다. | [[ONNX Runtime Execution Providers]] |
 | constrains | [[LLM 추론 서비스 지표]] | latency·goodput·fallback을 어떤 endpoint와 상태에서 측정할지 제한한다. | [[TensorFlow SavedModel Signatures]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

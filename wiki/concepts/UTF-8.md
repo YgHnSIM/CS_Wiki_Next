@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: concept-f4f7573102f01723
+key: concept:page-f4f75731
 kind: concept
 title: UTF-8
 aliases:
@@ -30,6 +31,17 @@ history:
   layer: system
 redirect_from:
   - /concepts/utf-8/
+relations:
+  - predicate: implements
+    target: concept:page-496b0829
+    note: 스칼라 값을 1–4바이트열로 직렬화한다.
+    evidence:
+      - source: ref-023
+  - predicate: responds_to
+    target: concept:page-6a0c16a9
+    note: 0–127 구간을 단일 바이트로 보존해 하위 호환한다.
+    evidence:
+      - source: ref-023
 ---
 
 ## 개요
@@ -48,10 +60,12 @@ UTF-8은 바이트 순서 문제가 없고, ASCII와 호환되며, 인터넷과 
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | implements | [[유니코드]] | 스칼라 값을 1–4바이트열로 직렬화한다. | [[RFC 3629 UTF-8]] |
 | responds_to | [[ASCII]] | 0–127 구간을 단일 바이트로 보존해 하위 호환한다. | [[RFC 3629 UTF-8]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 <!-- wiki-v2:evidence-start -->

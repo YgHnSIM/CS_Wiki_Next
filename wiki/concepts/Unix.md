@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: concept-092a889f122121cb
+key: concept:page-092a889f
 kind: concept
 title: Unix
 aliases:
@@ -31,6 +32,17 @@ history:
   layer: system
 redirect_from:
   - /concepts/unix/
+relations:
+  - predicate: enables
+    target: concept:page-d61f7b46
+    note: 파일·프로세스·장치를 공통 호출로 접근하게 한다.
+    evidence:
+      - source: ref-018
+  - predicate: enables
+    target: concept:page-f438fd41
+    note: 운영체제와 언어가 같은 도구 환경에서 함께 이식되게 한다.
+    evidence:
+      - source: ref-019
 ---
 
 ## 개요
@@ -47,10 +59,12 @@ Unix의 핵심은 모든 기능을 하나의 거대한 프로그램 안에 넣�
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | enables | [[시스템 호출]] | 파일·프로세스·장치를 공통 호출로 접근하게 한다. | [[The UNIX Time-Sharing System]] |
 | enables | [[C 언어]] | 운영체제와 언어가 같은 도구 환경에서 함께 이식되게 한다. | [[The Development of the C Language]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 <!-- wiki-v2:evidence-start -->

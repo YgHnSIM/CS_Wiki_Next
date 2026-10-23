@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: concept-transformer
+key: concept:transformer
 kind: concept
 title: Transformer
 aliases:
@@ -28,6 +29,22 @@ history:
   layer: architecture
 redirect_from:
   - /concepts/transformer/
+relations:
+  - predicate: implements
+    target: concept:self-attention
+    note: 인코더와 디코더 층에서 같은 시퀀스 위치 사이의 의존성을 계산하는 핵심 연산으로 사용한다.
+    evidence:
+      - source: ref-073
+  - predicate: enables
+    target: concept:continuous-batching
+    note: 한 요청의 토큰은 순차적으로 생성하되 서로 다른 요청의 현재 반복을 같은 실행 배치로 묶을 수 있다.
+    evidence:
+      - source: ref-075
+  - predicate: constrains
+    target: concept:kv-cache
+    note: 자동회귀 디코딩은 과거 위치의 키·값 상태를 요청별로 유지하므로 동시 요청 수가 GPU 메모리에 제한된다.
+    evidence:
+      - source: ref-076
 ---
 
 ## 개요
@@ -58,11 +75,13 @@ redirect_from:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | implements | [[자기 주의]] | 인코더와 디코더 층에서 같은 시퀀스 위치 사이의 의존성을 계산하는 핵심 연산으로 사용한다. | [[Attention Is All You Need]] |
-| enables | [[연속 배칭]] | 한 요청의 토큰은 순차적으로 생성하되 서로 다른 요청의 현재 반복을 같은 실행 배치로 묶을 수 있다. | [[Orca - A Distributed Serving System for Transformer-Based Generative Models]] |
+| enables | [[연속 배칭]] | 한 요청의 토큰은 순차적으로 생성하되 서로 다른 요청의 현재 반복을 같은 실행 배치로 묶을 수 있다. | [[Orca: A Distributed Serving System for Transformer-Based Generative Models]] |
 | constrains | [[KV 캐시]] | 자동회귀 디코딩은 과거 위치의 키·값 상태를 요청별로 유지하므로 동시 요청 수가 GPU 메모리에 제한된다. | [[Efficient Memory Management for Large Language Model Serving with PagedAttention]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

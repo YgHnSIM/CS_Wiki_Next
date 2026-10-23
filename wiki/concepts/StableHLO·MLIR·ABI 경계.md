@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: concept-stablehlo-mlir-abi
+key: concept:stablehlo-mlir-abi
 kind: concept
 title: StableHLO·MLIR·ABI 경계
 aliases:
@@ -25,6 +26,29 @@ capability_layers:
   - reliable-results
 history:
   layer: software
+relations:
+  - predicate: synthesizes
+    target: analysis:stablehlo-mlir-abi-boundary
+    note: StableHLO semantics, MLIR structure, ABI calling convention을 비교 틀로 묶는다.
+    evidence:
+      - source: ref-130
+      - source: ref-132
+      - source: ref-133
+  - predicate: responds_to
+    target: concept:dependency-provenance
+    note: compiler·toolchain dependency가 어떤 representation 경계를 제공하는지 연결한다.
+    evidence:
+      - source: ref-125
+  - predicate: constrains
+    target: concept:compiler
+    note: lowering 단계마다 보존 invariant와 target 조건을 명시하게 한다.
+    evidence:
+      - source: ref-132
+  - predicate: constrains
+    target: concept:page-46257ebe
+    note: ABI symbol·object 결합이 표현 의미와 다른 계약임을 드러낸다.
+    evidence:
+      - source: ref-133
 ---
 
 ## 개요
@@ -51,12 +75,14 @@ history:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | synthesizes | [[표현·IR·ABI 경계는 무엇을 보존하는가]] | StableHLO semantics, MLIR structure, ABI calling convention을 비교 틀로 묶는다. | [[StableHLO Specification]], [[MLIR Language Reference]], [[LLVM Language Reference]] |
 | responds_to | [[dependency provenance와 registry identity]] | compiler·toolchain dependency가 어떤 representation 경계를 제공하는지 연결한다. | [[SLSA Build Provenance Specification]] |
 | constrains | [[컴파일러]] | lowering 단계마다 보존 invariant와 target 조건을 명시하게 한다. | [[MLIR Language Reference]] |
 | constrains | [[링커]] | ABI symbol·object 결합이 표현 의미와 다른 계약임을 드러낸다. | [[LLVM Language Reference]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

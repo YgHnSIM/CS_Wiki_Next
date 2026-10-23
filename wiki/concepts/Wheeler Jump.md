@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: concept-2397a193cf79979b
+key: concept:page-2397a193
 kind: concept
 title: Wheeler Jump
 aliases:
@@ -31,6 +32,17 @@ history:
   layer: software
 redirect_from:
   - /concepts/wheeler-jump/
+relations:
+  - predicate: implements
+    target: concept:subroutine
+    note: 호출부 명령을 복귀 점프로 고쳐 폐쇄형 호출을 구현한다.
+    evidence:
+      - source: src-005
+  - predicate: implements
+    target: concept:page-4a63d3df
+    note: 저장된 명령을 실행 중에 고쳐 복귀 주소를 심는다.
+    evidence:
+      - source: src-004
 ---
 
 ## 개요
@@ -69,10 +81,12 @@ Wheeler Jump는 기계 수준에서 [[제어 흐름]]을 구현하기 위한 호
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | implements | [[서브루틴]] | 호출부 명령을 복귀 점프로 고쳐 폐쇄형 호출을 구현한다. | [[폐쇄형 서브루틴과 Wheeler Jump]] |
 | implements | [[자기 수정 코드]] | 저장된 명령을 실행 중에 고쳐 복귀 주소를 심는다. | [[서브루틴과 스택(Stack)의 원리]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 <!-- wiki-v2:evidence-start -->
