@@ -1,16 +1,19 @@
 ---
 import Base from "../layouts/Base.astro";
-import { docsById, documentUrl, graph } from "../lib/data";
+import { docsById, docsByKey, documentUrl, graph } from "../lib/data";
 
+const statements = graph.statements.filter(
+  (statement) => docsByKey.get(statement.document)?.publication_visibility === "public"
+);
 const evidenceCount = new Map<string, number>();
-for (const statement of graph.statements) {
+for (const statement of statements) {
   for (const item of statement.evidence) {
     evidenceCount.set(item.source, (evidenceCount.get(item.source) || 0) + 1);
   }
 }
 const sources = [...evidenceCount.entries()]
   .map(([id, count]) => ({ source: docsById.get(id), count }))
-  .filter((item) => item.source)
+  .filter((item) => item.source && item.source.publication_visibility === "public")
   .sort((a, b) => b.count - a.count || a.source!.title.localeCompare(b.source!.title, "ko"))
   .slice(0, 60);
 const total = [...evidenceCount.values()].reduce((sum, value) => sum + value, 0);
@@ -22,7 +25,7 @@ const total = [...evidenceCount.values()].reduce((sum, value) => sum + value, 0)
   <p class="lede">관계 statement에 연결된 source/reference 페이지입니다. 인용 위치가 없는 근거는 별도 표시하지 않습니다.</p>
 
   <div class="stat-grid">
-    <div class="stat"><strong>{graph.statements.length}</strong><span>statements</span></div>
+    <div class="stat"><strong>{statements.length}</strong><span>statements</span></div>
     <div class="stat"><strong>{total}</strong><span>evidence references</span></div>
     <div class="stat"><strong>{evidenceCount.size}</strong><span>근거 소스</span></div>
   </div>

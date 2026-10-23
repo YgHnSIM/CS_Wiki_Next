@@ -17,12 +17,15 @@ const kindLabels: Record<string, string> = {
 };
 ---
 
-<div class="grid">
+<div class="doc-list">
   {documents.map((document) => (
-    <a class="card" href={documentUrl(document)}>
-      <p class="eyebrow">{kindLabels[document.kind] || document.kind}</p>
-      <h3>{document.title}</h3>
-      <p>{document.summary}</p>
+    <a class="doc-row" href={documentUrl(document)}>
+      <div>
+        <span class="doc-kind">{kindLabels[document.kind] || document.kind}</span>
+        <h3>{document.title}</h3>
+        <p>{document.summary}</p>
+      </div>
+      <span class="doc-arrow" aria-hidden="true">→</span>
     </a>
   ))}
 </div>

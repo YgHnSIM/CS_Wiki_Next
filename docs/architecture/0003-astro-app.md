@@ -42,10 +42,11 @@ app/dist/
 
 ## 디자인 경계
 
-- 홈은 기존 `00-core.css`의 hero·directory·briefing 스타일을 이식한 `legacy-home.css`와 `home-page` 셸을 사용한다.
-- 문서 페이지는 기존 `00-core.css`의 article/prose 스타일을 이식한 `legacy-doc.css`와 `legacy-page` 셸을 사용한다.
-- 색인·검색은 새 단순 UI를 유지한다.
-- 기존 디자인을 복원하되 데이터·라우트·검색 계층은 새 구조를 유지한다.
+- “Paper & Signal” 에디토리얼 테마를 사용한다.
+- 배경은 종이색, 본문은 먹색, 포인트는 rust/teal.
+- 홈은 serif 헤드라인과 ‘먼저 읽을 세 가지’ 패널, 문서는 메타 rail·prose·연결 rail의 3열 구조.
+- 색인은 유형별 compact list, 검색은 큰 입력과 결과 목록.
+- 색·타이포·간격은 `app/src/styles/global.css` 한 곳에서 관리한다.
 
 ## 데이터 경계
 

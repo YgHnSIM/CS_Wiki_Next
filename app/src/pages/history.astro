@@ -1,11 +1,11 @@
 ---
 import Base from "../layouts/Base.astro";
-import { documentUrl, docsByKey } from "../lib/data";
+import { documentUrl, docsByKey, publicDocuments } from "../lib/data";
 import { graph } from "../lib/data";
 
 const events = [...graph.timeline]
   .map((event) => ({ ...event, document: docsByKey.get(event.document) }))
-  .filter((event) => event.document && (event.event_start !== null || event.publication_year !== null))
+  .filter((event) => event.document?.publication_visibility === "public" && (event.event_start !== null || event.publication_year !== null))
   .sort((a, b) => {
     const left = a.event_start ?? a.publication_year ?? 9999;
     const right = b.event_start ?? b.publication_year ?? 9999;
@@ -20,7 +20,7 @@ const events = [...graph.timeline]
 
   <div class="stat-grid">
     <div class="stat"><strong>{events.length}</strong><span>연도가 있는 문서</span></div>
-    <div class="stat"><strong>{graph.timeline.length - events.length}</strong><span>연도 미상</span></div>
+    <div class="stat"><strong>{publicDocuments.length - events.length}</strong><span>연도 미상</span></div>
   </div>
 
   <ol class="list-plain">

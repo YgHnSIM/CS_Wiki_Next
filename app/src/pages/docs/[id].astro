@@ -1,6 +1,5 @@
 ---
 import Base from "../../layouts/Base.astro";
-import "../../styles/legacy-doc.css";
 import {
   documentUrl,
   documents,
@@ -24,7 +23,7 @@ const { document } = Astro.props;
 const html = renderMarkdown(document.body, resolveDocument, withBase);
 const statements = outgoing(document);
 const backlinks = incoming(document);
-const kindLabels = {
+const kindLabels: Record<string, string> = {
   concept: "개념",
   entity: "개체",
   analysis: "분석",
@@ -36,7 +35,7 @@ const kindLabel = kindLabels[document.kind] || document.kind;
 const event = document.history?.event;
 const year = event?.start ?? document.history?.publication_year ?? null;
 const evidenceCount = new Set(statements.flatMap((statement) => statement.evidence.map((item) => item.source))).size;
-const relationTitle = (key) => nodeDocument(key)?.title || key;
+const relationTitle = (key: string) => nodeDocument(key)?.title || key;
 ---
 
 <Base
@@ -45,89 +44,97 @@ const relationTitle = (key) => nodeDocument(key)?.title || key;
   canonical={withBase(document.url)}
   noindex={document.publication_visibility === "unlisted"}
   wide
-  bodyClass="legacy-page"
 >
-  <div class="legacy-doc">
-    <div class="article-layout">
-      <aside class="article-rail">
-        <a class="back-link" href={withBase("/index/")}>← 색인 목록</a>
-        <details class="article-meta" open>
-          <summary>문서 정보</summary>
-          <dl>
-            <div><dt>유형</dt><dd>{kindLabel}</dd></div>
-            <div><dt>갱신</dt><dd>{document.updated}</dd></div>
-            {year !== null && <div><dt>연도</dt><dd>{year}</dd></div>}
-            {document.history?.layer && <div><dt>층위</dt><dd>{document.history.layer}</dd></div>}
-            <div><dt>근거</dt><dd>{evidenceCount}</dd></div>
-            <div><dt>관계</dt><dd>{statements.length}</dd></div>
-          </dl>
-        </details>
+  <div class="doc-page">
+    <div class="doc-layout">
+      <aside class="doc-rail">
+        <a class="rail-back" href={withBase("/index/")}>← 색인</a>
+        <dl class="rail-list">
+          <div class="rail-block">
+            <dt>유형</dt>
+            <dd>{kindLabel}</dd>
+          </div>
+          <div class="rail-block">
+            <dt>갱신</dt>
+            <dd>{document.updated}</dd>
+          </div>
+          {year !== null && (
+            <div class="rail-block">
+              <dt>연도</dt>
+              <dd>{year}</dd>
+            </div>
+          )}
+          {document.history?.layer && (
+            <div class="rail-block">
+              <dt>층위</dt>
+              <dd>{document.history.layer}</dd>
+            </div>
+          )}
+          <div class="rail-block">
+            <dt>근거</dt>
+            <dd>{evidenceCount}</dd>
+          </div>
+          <div class="rail-block">
+            <dt>관계</dt>
+            <dd>{statements.length}</dd>
+          </div>
+        </dl>
       </aside>
 
-      <article class="article">
+      <article class="doc-main">
         {document.publication_visibility === "unlisted" && (
-          <aside class="article-notice" role="note">
+          <aside class="notice" role="note">
             <strong>미등록 문서</strong> 이 문서는 공개 목록에 등록되지 않았습니다. 검색·사이트맵에는 노출되지 않으며, 링크로만 접근할 수 있습니다.
           </aside>
         )}
 
-        <header class="article-header">
-          <div class="article-category">{kindLabel}</div>
+        <header class="doc-header">
+          <p class="eyebrow">{kindLabel}</p>
           <h1>{document.title}</h1>
-          <p>{document.summary}</p>
-          {document.aliases.length > 0 && (
-            <div class="aliases">
-              <span>다른 이름</span>
-              {document.aliases.map((alias) => <span>{alias}</span>)}
-            </div>
-          )}
+          <p class="doc-summary">{document.summary}</p>
+          <div class="doc-meta">
+            {document.domains.map((domain) => <span>{domain}</span>)}
+            {document.aliases.map((alias) => <span>{alias}</span>)}
+          </div>
         </header>
 
         <div class="prose" set:html={html} />
       </article>
 
-      <aside class="related-rail">
+      <aside class="doc-aside">
         <h2>나가는 관계</h2>
         {statements.length === 0 ? (
           <p>기록된 관계가 없습니다.</p>
         ) : (
-          <ol>
+          <ul class="connection-list">
             {statements.slice(0, 12).map((statement) => (
               <li>
                 <a href={nodeDocument(statement.target) ? documentUrl(nodeDocument(statement.target)!) : undefined}>
                   {relationTitle(statement.target)}
-                  <span>{statement.predicate}</span>
                 </a>
-                {statement.note && <p>{statement.note}</p>}
+                <span>{statement.predicate}</span>
               </li>
             ))}
-          </ol>
+          </ul>
         )}
 
         <h2>들어오는 관계</h2>
         {backlinks.length === 0 ? (
           <p>들어오는 관계가 없습니다.</p>
         ) : (
-          <ol>
+          <ul class="connection-list">
             {backlinks.slice(0, 12).map((link) => {
               const source = nodeDocument(link.source);
               return (
                 <li>
-                  <a href={source ? documentUrl(source) : undefined}>
-                    {source ? source.title : link.source}
-                    <span>{link.predicate}</span>
-                  </a>
+                  <a href={source ? documentUrl(source) : undefined}>{source ? source.title : link.source}</a>
+                  <span>{link.predicate}</span>
                 </li>
               );
             })}
-          </ol>
+          </ul>
         )}
       </aside>
     </div>
   </div>
-  <script is:inline>
-    if (window.matchMedia("(max-width: 600px)").matches) {
-      document.querySelectorAll("details.article-meta[open]").forEach((details) => details.removeAttribute("open"));
-    }
-  </script>
 </Base>

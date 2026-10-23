@@ -6,9 +6,11 @@
 
 ## 디자인
 
-- 홈·문서 페이지: 기존 CS Wiki의 터미널 스타일(D2Coding, green/amber, article rail·prose, hero circuit)을 복원
-- 색인·검색: 단순한 새 UI 유지
-- 홈은 `home-page`·`legacy-home.css`, 문서는 `legacy-page`·`legacy-doc.css`로 테마를 분리
+- “Paper & Signal” 에디토리얼 테마: 종이색 배경, 먹색 본문, rust/teal 포인트
+- 홈: 큰 serif 헤드라인 + 오른쪽 ‘먼저 읽을 세 가지’ 패널
+- 문서: 왼쪽 메타 rail, 가운데 prose, 오른쪽 연결 rail
+- 색인: 유형별 compact list
+- Noto Sans KR / Noto Serif KR / IBM Plex Mono 사용
 
 ## 실행
 

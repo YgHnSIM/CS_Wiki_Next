@@ -32,15 +32,18 @@ const currentPath = Astro.url.pathname;
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="color-scheme" content="dark" />
-    <meta name="theme-color" content="#0A0014" />
+    <meta name="color-scheme" content="light" />
+    <meta name="theme-color" content="#f4efe5" />
     <title>{title} · CS Wiki</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalHref} />
     <link rel="icon" href={`${base}favicon.svg`} type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&family=Noto+Serif+KR:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
     {refresh && <meta http-equiv="refresh" content={`0; url=${refresh}`} />}
     {noindex && <meta name="robots" content="noindex" />}
     <meta property="og:title" content={`${title} · CS Wiki`} />
@@ -53,7 +56,8 @@ const currentPath = Astro.url.pathname;
       <div class="shell header-inner">
         <a class="brand" href={base} aria-label="CS Wiki 홈">
           <span class="brand-mark">CS</span>
-          <span>CS Wiki</span>
+          <span class="brand-name">CS Wiki</span>
+          <span class="brand-sub">Knowledge Atlas</span>
         </a>
         <nav class="site-nav" aria-label="주요 탐색">
           {nav.map(([label, href]) => (
@@ -67,7 +71,7 @@ const currentPath = Astro.url.pathname;
     </main>
     <footer class="site-footer">
       <div class="shell footer-inner">
-        <span>CS Wiki Next · 지식 그래프 기반 정적 위키</span>
+        <span>CS Wiki · 원본에서 지식으로</span>
         <span>{documents.length} documents · {graph.statements.length} statements</span>
       </div>
     </footer>
