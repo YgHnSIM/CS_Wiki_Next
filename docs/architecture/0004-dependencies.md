@@ -25,13 +25,14 @@ npm run security:audit
 |---|---|
 | `astro` | 정적 사이트 생성 |
 | `markdown-it` | 문서 본문 Markdown 렌더링 |
+| `@emnapi/core`, `@emnapi/runtime` | Linux wasm compiler optional dependency의 lock 일관성. `npm ci`가 Linux에서 누락 패키지를 요구하지 않도록 고정 |
 
 ## 원칙
 
 - 새 의존성은 **빌드 도구**에만 추가한다. 브라우저 런타임 라이브러리는 원칙적으로 추가하지 않는다.
 - `npm audit --audit-level=moderate`에서 0 vulnerabilities를 유지한다.
 - major 업그레이드는 `knowledge:build`, `npm test`, `site:build`, `site:parity`, `site:links`를 모두 통과해야 한다.
-- Astro·Markdown-it 업그레이드 후에는 1,002 페이지와 440/555/397 parity를 다시 확인한다.
+- Astro·Markdown-it 업그레이드 후에는 1,001 페이지와 440/555/397 parity를 다시 확인한다.
 - Dependabot은 루트와 `app/`을 별도로 주간 검사한다.
 
 ## 2026-10-24 업그레이드
