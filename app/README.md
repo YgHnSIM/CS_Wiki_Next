@@ -21,8 +21,8 @@ npm run site:links
 배포 경로를 바꿀 때:
 
 ```powershell
-$env:SITE_BASE="/CS_Wiki"
-$env:SITE_URL="https://example.github.io"
+$env:SITE_BASE="/CS_Wiki_Next"
+$env:SITE_URL="https://yghnsim.github.io"
 npm run site:build
 npm run site:parity
 npm run site:links

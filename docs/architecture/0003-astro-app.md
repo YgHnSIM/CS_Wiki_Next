@@ -35,7 +35,7 @@ app/dist/
 
 - 문서 URL은 `/docs/{id}/`다.
 - 기존 유형별 URL 555개는 meta refresh + canonical로 이동한다.
-- `SITE_BASE`가 `/CS_Wiki`이면 링크·자산·canonical에 base를 붙인다.
+- `SITE_BASE`가 `/CS_Wiki_Next`이면 링크·자산·canonical에 base를 붙인다.
 - `SITE_URL`은 canonical origin으로 사용한다.
 
 ## 데이터 경계
