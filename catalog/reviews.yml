@@ -1,0 +1,262 @@
+schema_version: 1
+reviewed:
+  - analysis:geometry-to-computation-descartes-vs-fermat
+  - analysis:local-interface-remote-state
+  - analysis:power-wall-performance
+  - analysis:representation-placement-contract
+  - analysis:reproducible-build-boundary
+  - analysis:stablehlo-mlir-abi-boundary
+  - concept:ai-computing-bottlenecks
+  - concept:availability-recovery
+  - concept:chinese-room-syntax-semantics
+  - concept:cogitatio-caeca
+  - concept:compiler
+  - concept:computability
+  - concept:computational-complexity
+  - concept:computing-capability
+  - concept:concurrency
+  - concept:continuous-batching
+  - concept:dependency-provenance
+  - concept:developer-productivity
+  - concept:domain-specific-accelerator
+  - concept:energy-proportional-computing
+  - concept:failure-detection
+  - concept:fault-tolerance
+  - concept:hardware-execution-model
+  - concept:idempotency
+  - concept:input-validation
+  - concept:io-aware-attention
+  - concept:kv-cache
+  - concept:library
+  - concept:llm-inference-energy-metrics
+  - concept:llm-inference-service-metrics
+  - concept:llm-weight-quantization
+  - concept:mathematical-tables
+  - concept:memory-wall
+  - concept:mixed-precision
+  - concept:parallel-scalability
+  - concept:partial-failure
+  - concept:prefill-decode
+  - concept:programmability
+  - concept:queueing-load-control
+  - concept:remote-procedure-call
+  - concept:replicated-log-consensus
+  - concept:reproducible-builds
+  - concept:software-reuse
+  - concept:stablehlo-mlir-abi
+  - concept:stored-program-computer
+  - concept:structured-programming
+  - concept:subroutine
+  - concept:symbolic-manipulation
+  - concept:tail-latency
+  - concept:transformer
+  - person:ada-lovelace
+  - person:aguera-y-arcas
+  - person:alan-turing
+  - person:alonzo-church
+  - person:charles-babbage
+  - person:charles-w-krueger
+  - person:claude-shannon
+  - person:corrado-bohm
+  - person:david-parnas
+  - person:david-wheeler
+  - person:dennis-ritchie
+  - person:donald-knuth
+  - person:douglas-mcilroy
+  - person:edsger-dijkstra
+  - person:george-boole
+  - person:giuseppe-jacopini
+  - person:gottfried-wilhelm-leibniz
+  - person:grace-hopper
+  - person:john-backus
+  - person:john-searle
+  - person:john-von-neumann
+  - person:ken-thompson
+  - person:lynn-margulis
+  - person:maurice-wilkes
+  - person:ole-johan-dahl
+  - person:stanley-gill
+  - person:stephen-c-johnson
+  - person:thomas-hobbes
+  - person:tony-hoare
+overrides:
+  concept:page-df7e932b:
+    key: concept:memory-wall
+    type: concept
+    status: reviewed
+  concept:page-569257e7:
+    key: concept:programmability
+    type: concept
+    status: reviewed
+  concept:page-01f775b8:
+    key: concept:computability
+    type: concept
+    status: reviewed
+  concept:page-f57f54a4:
+    key: concept:tail-latency
+    type: concept
+    status: reviewed
+  concept:page-494620a1:
+    key: concept:energy-proportional-computing
+    type: concept
+    status: reviewed
+  concept:page-8d4656f3:
+    key: concept:compiler
+    type: concept
+    status: reviewed
+  concept:page-464cd2bb:
+    key: concept:library
+    type: concept
+    status: reviewed
+  concept:page-d4ef0406:
+    key: concept:parallel-scalability
+    type: concept
+    status: reviewed
+  concept:page-ef02c2bc:
+    key: concept:stored-program-computer
+    type: concept
+    status: reviewed
+  concept:page-dc2142ec:
+    key: concept:domain-specific-accelerator
+    type: concept
+    status: reviewed
+  concept:page-1c13e721:
+    key: concept:structured-programming
+    type: concept
+    status: reviewed
+  concept:page-446e9f53:
+    key: concept:subroutine
+    type: concept
+    status: reviewed
+  concept:page-65669d1c:
+    key: concept:software-reuse
+    type: concept
+    status: reviewed
+  concept:page-c7fabfe3:
+    key: concept:symbolic-manipulation
+    type: concept
+    status: reviewed
+  concept:page-e83f2a1b:
+    key: concept:hardware-execution-model
+    type: concept
+    status: reviewed
+  analysis:page-353b4b2d:
+    key: analysis:power-wall-performance
+    type: analysis
+    status: reviewed
+  entity:aguera-y-arcas:
+    key: person:aguera-y-arcas
+    type: person
+    status: reviewed
+  entity:gottfried-wilhelm-leibniz:
+    key: person:gottfried-wilhelm-leibniz
+    type: person
+    status: reviewed
+  entity:john-searle:
+    key: person:john-searle
+    type: person
+    status: reviewed
+  entity:lynn-margulis:
+    key: person:lynn-margulis
+    type: person
+    status: reviewed
+  entity:page-07a5de25:
+    key: person:alan-turing
+    type: person
+    status: reviewed
+  entity:page-11912d3c:
+    key: person:douglas-mcilroy
+    type: person
+    status: reviewed
+  entity:page-1a2d36f5:
+    key: person:charles-w-krueger
+    type: person
+    status: reviewed
+  entity:page-1cd37570:
+    key: person:claude-shannon
+    type: person
+    status: reviewed
+  entity:page-2f17a71c:
+    key: person:stephen-c-johnson
+    type: person
+    status: reviewed
+  entity:page-37651818:
+    key: person:giuseppe-jacopini
+    type: person
+    status: reviewed
+  entity:page-3e83a021:
+    key: person:dennis-ritchie
+    type: person
+    status: reviewed
+  entity:page-4e28b270:
+    key: person:john-backus
+    type: person
+    status: reviewed
+  entity:page-6c751910:
+    key: person:corrado-bohm
+    type: person
+    status: reviewed
+  entity:page-73f5398f:
+    key: person:george-boole
+    type: person
+    status: reviewed
+  entity:page-7de052ed:
+    key: person:david-parnas
+    type: person
+    status: reviewed
+  entity:page-7e280fd9:
+    key: person:maurice-wilkes
+    type: person
+    status: reviewed
+  entity:page-89938814:
+    key: person:stanley-gill
+    type: person
+    status: reviewed
+  entity:page-9452931b:
+    key: person:donald-knuth
+    type: person
+    status: reviewed
+  entity:page-970046b8:
+    key: person:ada-lovelace
+    type: person
+    status: reviewed
+  entity:page-b215332d:
+    key: person:edsger-dijkstra
+    type: person
+    status: reviewed
+  entity:page-b47da9a0:
+    key: person:charles-babbage
+    type: person
+    status: reviewed
+  entity:page-b7b72330:
+    key: person:alonzo-church
+    type: person
+    status: reviewed
+  entity:page-c645c958:
+    key: person:tony-hoare
+    type: person
+    status: reviewed
+  entity:page-d28fe055:
+    key: person:grace-hopper
+    type: person
+    status: reviewed
+  entity:page-e23557a7:
+    key: person:ole-johan-dahl
+    type: person
+    status: reviewed
+  entity:page-e8a9bb25:
+    key: person:david-wheeler
+    type: person
+    status: reviewed
+  entity:page-ef144988:
+    key: person:john-von-neumann
+    type: person
+    status: reviewed
+  entity:page-ef60b71b:
+    key: person:ken-thompson
+    type: person
+    status: reviewed
+  entity:thomas-hobbes:
+    key: person:thomas-hobbes
+    type: person
+    status: reviewed

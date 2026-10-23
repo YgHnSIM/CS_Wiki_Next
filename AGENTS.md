@@ -38,14 +38,12 @@ app/                  Astro 사이트
 
 ## 검증
 
-구현 전까지는 다음을 수동 기준으로 사용한다.
-
 ```bash
-node packages/knowledge/src/cli/check.mjs
-node packages/knowledge/src/cli/sync.mjs --check
+npm run knowledge:check
+npm run knowledge:report
 ```
 
-명령은 Phase 1에서 추가한다. 그전까지는 `contracts/routes.json`과 `docs/architecture/phase-1-relations-migration.md`의 수용 기준을 따른다.
+`knowledge:check`는 Registry 정합성, `knowledge:report`는 887개 관계의 preflight를 검사한다. `knowledge:migrate`와 `knowledge:sync`는 Phase 1-B에서 추가한다.
 
 ## 금지
 

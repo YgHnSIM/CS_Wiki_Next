@@ -4,7 +4,6 @@ import YAML from "yaml";
 
 const root = process.cwd();
 const dryRun = process.argv.includes("--dry-run");
-const PAGE_LIMIT = 440;
 
 const prefixByKind = {
   concept: "concept",
@@ -69,28 +68,45 @@ for (const file of files.sort()) {
   const kind = typeof data.kind === "string" ? data.kind : "";
   const prefix = prefixByKind[kind];
   if (!prefix) throw new Error(`unsupported kind '${kind}': ${file}`);
-  pages.push({ id, kind, prefix, title: data.title || id, aliases: data.aliases || [] });
+  pages.push({
+    id,
+    kind,
+    prefix,
+    title: data.title || id,
+    aliases: data.aliases || [],
+    filename: path.basename(file, ".md")
+  });
 }
 
-if (pages.length !== PAGE_LIMIT) {
-  throw new Error(`expected ${PAGE_LIMIT} pages, found ${pages.length}`);
+if (pages.length === 0) {
+  throw new Error("no wiki pages found");
 }
 
 const nodes = [];
 const keys = new Set();
 const aliasMap = new Map();
 const collisions = [];
+const reviews = await readFile(path.join(root, "catalog", "reviews.yml"), "utf8")
+  .then((text) => YAML.parse(text) || {})
+  .catch(() => ({}));
+const reviewed = new Set(Array.isArray(reviews.reviewed) ? reviews.reviewed : []);
+const overrides = reviews.overrides && typeof reviews.overrides === "object" ? reviews.overrides : {};
 
 for (const page of pages) {
   const base = `${page.prefix}:${slugFromId(page.id, page.kind)}`;
-  let key = base;
-  let suffix = 2;
-  while (keys.has(key)) key = `${base}-${suffix++}`;
+  const override = overrides[base] && typeof overrides[base] === "object" ? overrides[base] : {};
+  let key = override.key || base;
+  if (keys.has(key)) throw new Error(`registry key collision: ${key}`);
   keys.add(key);
 
-  const aliases = [...new Set([page.title, ...(Array.isArray(page.aliases) ? page.aliases : []), page.id]
-    .filter((value) => typeof value === "string" && value.trim())
-    .map((value) => value.trim()))];
+  const aliases = [...new Set([
+    page.title,
+    ...(Array.isArray(page.aliases) ? page.aliases : []),
+    page.id,
+    page.filename,
+    base,
+    ...(Array.isArray(override.aliases) ? override.aliases : [])
+  ].filter((value) => typeof value === "string" && value.trim()).map((value) => value.trim()))];
 
   for (const alias of aliases) {
     if (!aliasMap.has(alias)) aliasMap.set(alias, key);
@@ -101,12 +117,12 @@ for (const page of pages) {
 
   nodes.push({
     key,
-    type: page.prefix,
-    labels: { ko: page.title },
+    type: override.type || page.prefix,
+    labels: override.labels || { ko: page.title },
     aliases,
-    external_ids: {},
-    same_as: [],
-    status: "auto",
+    external_ids: override.external_ids || {},
+    same_as: override.same_as || [],
+    status: override.status || (reviewed.has(key) ? "reviewed" : "auto"),
     page_id: page.id
   });
 }

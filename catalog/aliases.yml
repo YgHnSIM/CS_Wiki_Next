@@ -20,8 +20,8 @@ aliases:
   결정 문제: concept:page-145622bc
   결함 내성: concept:fault-tolerance
   결함 허용: concept:fault-tolerance
-  계산 가능: concept:page-01f775b8
-  계산 가능성: concept:page-01f775b8
+  계산 가능: concept:computability
+  계산 가능성: concept:computability
   계산 결과에서 실행 가능한 절차로: analysis:stored-results-to-executable-procedures
   계산 공장에서 전자식 컴퓨터까지: analysis:human-computers-and-computation-factories
   계산 과정의 비가역성과 열 발생: source:ref-150
@@ -44,8 +44,8 @@ aliases:
   계산적 인공생명: concept:computational-artificial-life
   계산표: concept:mathematical-tables
   고급 프로그래밍 언어: concept:page-26360c8b
-  고정 크기 확장: concept:page-d4ef0406
-  고트프리트 빌헬름 라이프니츠: entity:gottfried-wilhelm-leibniz
+  고정 크기 확장: concept:parallel-scalability
+  고트프리트 빌헬름 라이프니츠: person:gottfried-wilhelm-leibniz
   공간의 대수화: source:src-010
   공생발생: concept:symbiogenesis
   공유 상태의 순서 계약: analysis:concurrent-order-shared-state
@@ -55,14 +55,14 @@ aliases:
   구문론이 새 수를 만들 때: analysis:exponent-notation-delay
   구문론이 의미론을 이끈다: source:src-009
   구스타프슨 법칙 논문: source:ref-045
-  구조적 프로그래밍: concept:page-1c13e721
+  구조적 프로그래밍: concept:structured-programming
   구조화 프로그램 정리: concept:page-8e6aa351
   구현 은닉: concept:page-099497b9
   규모에서의 꼬리 지연: source:ref-049
   그래핌 클러스터: concept:page-29139463
-  그레이스 호퍼: entity:page-d28fe055
+  그레이스 호퍼: person:grace-hopper
   기계 계산: analysis:page-f5a31368
-  기계 실행 모델: concept:page-e83f2a1b
+  기계 실행 모델: concept:hardware-execution-model
   기계가 계산한다는 말의 이론적 의미: analysis:page-f5a31368
   기능주의: concept:substrate-independence-functionalism
   기능주의 대 중국어 방: analysis:functionalism-vs-chinese-room
@@ -73,15 +73,15 @@ aliases:
   기하는 어떻게 계산이 되었고 왜 데카르트의 표기가 페르마를 이겼는가: analysis:geometry-to-computation-descartes-vs-fermat
   기하학과 대수학의 위대한 번역: source:src-010
   기호 조립기: concept:page-efde1ed2
-  기호 조작: concept:page-c7fabfe3
+  기호 조작: concept:symbolic-manipulation
   기호 착지 문제: concept:chinese-room-syntax-semantics
-  기호 처리: concept:page-c7fabfe3
+  기호 처리: concept:symbolic-manipulation
   기호는 어떻게 생각의 보조 도구에서 계산 엔진이 되었는가: analysis:symbols-from-aid-to-computation-engine
   기호에서 AI까지: source:src-007
   기호적 인식: concept:cogitatio-caeca
-  길: entity:page-89938814
-  꼬리 지연: concept:page-f57f54a4
-  꼬리 지연 시간: concept:page-f57f54a4
+  길: person:stanley-gill
+  꼬리 지연: concept:tail-latency
+  꼬리 지연 시간: concept:tail-latency
   낮은 비트는 왜 LLM 추론 속도를 보장하지 않는가: analysis:low-bit-llm-inference
   낮은 운영 에너지는 지속 가능한 컴퓨팅을 보장하는가: analysis:operational-energy-sustainable-computing
   낮은 정밀도는 AI의 컴퓨팅 능력을 어떻게 바꾸는가: analysis:low-precision-ai-result-contract
@@ -109,11 +109,11 @@ aliases:
   더 빠른 프로세서는 왜 더 빠른 프로그램을 보장하지 않는가: analysis:page-2b56fedc
   더 빠른 프로세서의 조건: analysis:page-2b56fedc
   더 빠른 하드웨어는 더 나은 알고리즘을 대신할 수 있는가: analysis:hardware-vs-algorithmic-improvement
-  더글러스 매킬로이: entity:page-11912d3c
+  더글러스 매킬로이: person:douglas-mcilroy
   데나드 스케일링: concept:page-3b07c7d6
-  데니스 리치: entity:page-3e83a021
-  데이비드 파나스: entity:page-7de052ed
-  데이비드 휠러: entity:page-e8a9bb25
+  데니스 리치: person:dennis-ritchie
+  데이비드 파나스: person:david-parnas
+  데이비드 휠러: person:david-wheeler
   데이터 표현: concept:page-93fca2ee
   데이터 표현과 인코딩: source:src-006
   데이터 해석 규칙: analysis:page-d0161680
@@ -121,9 +121,9 @@ aliases:
   데이터센터를 하나의 컴퓨터로: source:ref-041
   데카르트와 페르마의 기하학 번역: analysis:geometry-to-computation-descartes-vs-fermat
   데카르트와 페르마의 해석기하학: source:src-010
-  도널드 커누스: entity:page-9452931b
-  도메인 전용 가속기: concept:page-dc2142ec
-  도메인 특화 가속기: concept:page-dc2142ec
+  도널드 커누스: person:donald-knuth
+  도메인 전용 가속기: concept:domain-specific-accelerator
+  도메인 특화 가속기: concept:domain-specific-accelerator
   동시 객체의 선형화 가능성: source:ref-095
   동시 실행: concept:concurrency
   동시성: concept:concurrency
@@ -134,20 +134,20 @@ aliases:
   드 프로니의 계산 공장: source:ref-056
   드래프트-타깃 디코딩: concept:speculative-decoding
   디버깅: concept:page-a1be87c0
-  라이브러리: concept:page-464cd2bb
+  라이브러리: concept:library
   라이브러리 카탈로그: concept:page-16d053e6
-  라이프니츠: entity:gottfried-wilhelm-leibniz
+  라이프니츠: person:gottfried-wilhelm-leibniz
   란다우어 원리: concept:landauer-principle
   란다우어의 원리: concept:landauer-principle
   래핑: concept:page-9ecf6d54
-  러브레이스: entity:page-970046b8
+  러브레이스: person:ada-lovelace
   런타임 계약: concept:runtime-contract
   로더: concept:page-94134317
   로컬 인터페이스와 원격 상태: analysis:local-interface-remote-state
   로컬 호출과 파일은 원격 상태가 될 때 무엇을 잃는가: analysis:local-interface-remote-state
   리스크: concept:page-613958ec
   리틀의 법칙: concept:littles-law
-  린 마굴리스: entity:lynn-margulis
+  린 마굴리스: person:lynn-margulis
   릴레이 접점: concept:page-0d04f3f7
   릴레이 회로: concept:page-0d04f3f7
   링커: concept:page-46257ebe
@@ -165,9 +165,9 @@ aliases:
   메모리 덤프: concept:page-325f29bd
   메모리 보안: concept:page-0939ab24
   메모리 안전성: concept:page-0939ab24
-  메모리 월: concept:page-df7e932b
+  메모리 월: concept:memory-wall
   메모리 이동과 병목 이동: concept:memory-movement-bottleneck-shift
-  메모리 장벽: concept:page-df7e932b
+  메모리 장벽: concept:memory-wall
   메모리 장벽 논문: source:ref-039
   메타안정 장애: source:ref-121
   멱등성: concept:idempotency
@@ -176,7 +176,7 @@ aliases:
   모듈러 프로그래밍: concept:page-f047e003
   모듈화: concept:page-f047e003
   모든 컴퓨터 과학자가 부동소수점 연산에 대해 알아야 할 것: source:ref-050
-  모리스 윌크스: entity:page-7e280fd9
+  모리스 윌크스: person:maurice-wilkes
   목적 코드: concept:page-d2f65204
   목적 프로그램: concept:page-d2f65204
   목표 품질 도달 시간: concept:time-to-quality
@@ -190,13 +190,13 @@ aliases:
   바이트: concept:page-d7da5df4
   바이트 순서 표식: concept:page-5163a003
   반환 주소: concept:page-47ba75de
-  배비지: entity:page-b47da9a0
+  배비지: person:charles-babbage
   배비지 1822년 차분 기관 발표문: source:ref-053
   배비지와 러브레이스: source:src-001
   배비지의 차분 기관: concept:page-83b76a04
   배비지의 해석 기관: concept:page-4b367720
-  백분위 지연 시간: concept:page-f57f54a4
-  번역기: concept:page-8d4656f3
+  백분위 지연 시간: concept:tail-latency
+  번역기: concept:compiler
   범용 컴퓨터의 형성: analysis:page-63baea1f
   범용성과 특수 목적: analysis:page-7058e090
   범용성은 어떻게 컴퓨팅 능력이 되었는가: analysis:page-63baea1f
@@ -206,10 +206,10 @@ aliases:
   변경 기록: document:log
   변환 루틴: concept:page-1bbfe009
   병렬 가속의 두 관점: analysis:page-3d25f482
-  병렬 스케일링: concept:page-d4ef0406
+  병렬 스케일링: concept:parallel-scalability
   병렬 컴퓨팅은 시간을 줄이는가 문제를 키우는가: analysis:page-3d25f482
   병렬 컴퓨팅의 전망: source:ref-040
-  병렬 확장성: concept:page-d4ef0406
+  병렬 확장성: concept:parallel-scalability
   병목 이동 분석: analysis:ai-bottleneck-shifting
   보편 기계: concept:page-676372e6
   보편 기호법과 사유의 계산: concept:characteristica-calculus
@@ -237,10 +237,10 @@ aliases:
   분산 서비스의 일관성과 지연: analysis:distributed-consistency-latency
   분산 파일 시스템: concept:distributed-file-system
   분산 파일 저장소: concept:distributed-file-system
-  불: entity:page-73f5398f
+  불: person:george-boole
   불 대수: concept:page-918ae6f1
-  블레즈 아구에라: entity:aguera-y-arcas
-  블레즈 아구에라 이 아르카스: entity:aguera-y-arcas
+  블레즈 아구에라: person:aguera-y-arcas
+  블레즈 아구에라 이 아르카스: person:aguera-y-arcas
   비교 가능한 측정: concept:benchmark-contract
   비잔틴 장군 문제: source:ref-063
   비잔틴 장애: concept:byzantine-fault
@@ -269,10 +269,10 @@ aliases:
   생성 결과 검증: concept:verification-labor
   생성형 AI 코딩 도구: concept:ai-coding-assistance
   생애주기 회계 경계: concept:lifecycle-assessment-boundary
-  섀넌: entity:page-1cd37570
+  섀넌: person:claude-shannon
   서로게이트 페어: concept:page-c854e2f6
-  서브루틴: concept:page-446e9f53
-  서브루틴 라이브러리: concept:page-464cd2bb
+  서브루틴: concept:subroutine
+  서브루틴 라이브러리: concept:library
   서브루틴 라이브러리에서 API로: analysis:page-4095b0c8
   서브루틴 카탈로그: concept:page-16d053e6
   서브루틴과 스택: source:src-004
@@ -282,7 +282,7 @@ aliases:
   서비스 컴퓨팅 능력과 꼬리 지연: analysis:page-01dd444c
   선형 프레임버퍼 사상: concept:framebuffer-memory-mapping
   선형화 가능성: concept:linearizability
-  설: entity:john-searle
+  설: person:john-searle
   성능 비교 계약: concept:benchmark-contract
   성능 숫자 비교: analysis:benchmark-numbers-not-directly-comparable
   성능 이식성: concept:performance-portability
@@ -299,7 +299,7 @@ aliases:
   소프트웨어 공학의 본질과 부수성: source:ref-071
   소프트웨어 부품: concept:page-fa0c6ecb
   소프트웨어 엔지니어링: concept:page-432b4756
-  소프트웨어 재사용: concept:page-65669d1c
+  소프트웨어 재사용: concept:software-reuse
   소프트웨어 재사용 16문답: source:ref-005
   소프트웨어 재사용 Krueger: source:ref-004
   소프트웨어 재사용의 역사: analysis:page-0b006186
@@ -322,8 +322,8 @@ aliases:
   스칼라 값: concept:page-be5e9654
   스택: concept:page-c297dc5b
   스택 프레임: concept:page-f6e983b1
-  스탠리 길: entity:page-89938814
-  스티븐 C. 존슨: entity:page-2f17a71c
+  스탠리 길: person:stanley-gill
+  스티븐 C. 존슨: person:stephen-c-johnson
   스프레드시트: concept:spreadsheet
   승인 제어: concept:queueing-load-control
   시각적 혼동 문자: concept:page-cb68fc61
@@ -343,24 +343,24 @@ aliases:
   알고리즘 복잡도: concept:computational-complexity
   알고리즘과 스케줄 분리: concept:algorithm-schedule-separation
   알고리즘적 사고: concept:page-e2b63e63
-  알론조 처치: entity:page-b7b72330
+  알론조 처치: person:alonzo-church
   암달과 구스타프슨의 두 질문: analysis:page-3d25f482
-  앨런 튜링: entity:page-07a5de25
+  앨런 튜링: person:alan-turing
   어두운 실리콘: concept:page-7fcb10cc
   어셈블러: concept:page-efde1ed2
   어텐션 메모리 병목: analysis:transformer-io-bottleneck
   어텐션 KV 캐시: concept:kv-cache
-  에너지 비례 컴퓨팅: concept:page-494620a1
+  에너지 비례 컴퓨팅: concept:energy-proportional-computing
   에너지 비례 컴퓨팅 논문: source:ref-046
-  에너지 비례성: concept:page-494620a1
-  에너지 효율과 활성 면적의 역사: analysis:page-353b4b2d
-  에이다 러브레이스: entity:page-970046b8
-  에츠허르 데이크스트라: entity:page-b215332d
+  에너지 비례성: concept:energy-proportional-computing
+  에너지 효율과 활성 면적의 역사: analysis:power-wall-performance
+  에이다 러브레이스: person:ada-lovelace
+  에츠허르 데이크스트라: person:edsger-dijkstra
   연속 배칭: concept:continuous-batching
   오류 수정: concept:page-a1be87c0
   오류 예산 정책: source:ref-118
   오에스: concept:page-c7e0c2c5
-  올레요한 달: entity:page-e23557a7
+  올레요한 달: person:ole-johan-dahl
   외부 일관성: concept:external-consistency-time-uncertainty
   외부 일관성과 시간 불확실성: concept:external-consistency-time-uncertainty
   운영 배출과 제조 배출: concept:operational-embodied-carbon
@@ -377,7 +377,7 @@ aliases:
   위첨자 지수 표기: concept:superscript-exponent
   위키 개요: document:overview
   위키 색인: document:index
-  윌크스: entity:page-7e280fd9
+  윌크스: person:maurice-wilkes
   유니코드: concept:page-496b0829
   유니코드 보안 메커니즘: source:ref-027
   유니코드 스칼라 값: concept:page-be5e9654
@@ -452,7 +452,7 @@ aliases:
   재시도: concept:retries
   재시도 폭풍과 부하 제어: analysis:retry-amplification-and-control
   재시도는 실패를 줄이면서 부하를 어디로 옮기는가: analysis:retry-amplification-and-control
-  재프로그래밍 가능성: concept:page-569257e7
+  재프로그래밍 가능성: concept:programmability
   재현 가능한 빌드: concept:reproducible-builds
   재현 가능한 빌드 경계 분석: analysis:reproducible-build-boundary
   재현 가능한 빌드 정의: source:ref-123
@@ -462,14 +462,14 @@ aliases:
   저비트 LLM 가중치: concept:llm-weight-quantization
   저장 프로그램 개념의 여러 기원: analysis:page-3259f99b
   저장 프로그램 계보: analysis:page-3259f99b
-  저장 프로그램 방식: concept:page-ef02c2bc
-  저장 프로그램 컴퓨터: concept:page-ef02c2bc
+  저장 프로그램 방식: concept:stored-program-computer
+  저장 프로그램 컴퓨터: concept:stored-program-computer
   저장 프로그램 컴퓨터의 계보: analysis:page-3259f99b
   저장과 재사용의 단위: analysis:stored-results-to-executable-procedures
-  전력 비례 컴퓨팅: concept:page-494620a1
+  전력 비례 컴퓨팅: concept:energy-proportional-computing
   전력 사용 효율: concept:power-usage-effectiveness
-  전력 장벽 이후의 컴퓨팅 능력: analysis:page-353b4b2d
-  전력 장벽은 성능 향상의 의미를 어떻게 바꾸었는가: analysis:page-353b4b2d
+  전력 장벽 이후의 컴퓨팅 능력: analysis:power-wall-performance
+  전력 장벽은 성능 향상의 의미를 어떻게 바꾸었는가: analysis:power-wall-performance
   전용 연산기와 범용 제어기: analysis:specialized-vs-general-pendulum
   전용 연산기와 범용 제어기의 진자 운동: analysis:specialized-vs-general-pendulum
   전자 스프레드시트: concept:spreadsheet
@@ -489,19 +489,19 @@ aliases:
   제어 흐름: concept:page-830fb720
   제어문: concept:page-7cc49c18
   제품 수명 주기 회계 표준: source:ref-108
-  조지 불: entity:page-73f5398f
+  조지 불: person:george-boole
   조합 문제 사이의 환원성: source:ref-067
-  존 배커스: entity:page-4e28b270
-  존 설: entity:john-searle
-  존 폰 노이만: entity:page-ef144988
-  존 R. 설: entity:john-searle
+  존 배커스: person:john-backus
+  존 설: person:john-searle
+  존 폰 노이만: person:john-von-neumann
+  존 R. 설: person:john-searle
   종-수량 쌍: concept:quantity-species-pairs
   종과 수량: concept:quantity-species-pairs
   종단 간 원칙: concept:end-to-end-principle
   종단간 논증 원 논문: source:ref-101
   종단간 원칙: concept:end-to-end-principle
   좌표기하학: concept:analytic-geometry
-  주세페 야코피니: entity:page-37651818
+  주세페 야코피니: person:giuseppe-jacopini
   주소 공간 배치 무작위화: concept:aslr
   주소 공간 배치 무작위화 1차 자료: source:ref-137
   주소 재배치: concept:page-d679e8f4
@@ -522,9 +522,9 @@ aliases:
   집적도 증가 법칙: concept:page-0b68e8bc
   차분 기관: concept:page-83b76a04
   차원 환원: concept:unit-segment-dimension-reduction
-  찰스 배비지: entity:page-b47da9a0
-  찰스 W. 크루거: entity:page-1a2d36f5
-  처치: entity:page-b7b72330
+  찰스 배비지: person:charles-babbage
+  찰스 W. 크루거: person:charles-w-krueger
+  처치: person:alonzo-church
   처치-튜링 논제: concept:page-b95bdd2d
   초기 명령: concept:page-ef0b337a
   초기 소프트웨어 계층: analysis:page-6a13ea1d
@@ -544,7 +544,7 @@ aliases:
   캐시: concept:page-6aaebafb
   캐시 메모리: concept:page-6aaebafb
   캐싱과 추측 디코딩 비교: analysis:llm-reuse-speculation-work
-  컴파일러: concept:page-8d4656f3
+  컴파일러: concept:compiler
   컴파일러 최적화: concept:page-eb050b34
   컴퓨팅 능력: concept:computing-capability
   컴퓨팅 능력 독서 지도: document:page-9bc0d3d6
@@ -559,33 +559,33 @@ aliases:
   컴퓨팅의 기원: source:src-001
   컴퓨팅의 기원 - 배비지와 러브레이스: source:src-001
   케임브리지 컴퓨터 연구소 역사: source:ref-028
-  켄 톰프슨: entity:page-ef60b71b
-  코드 라이브러리: concept:page-464cd2bb
+  켄 톰프슨: person:ken-thompson
+  코드 라이브러리: concept:library
   코드 생산량은 왜 개발 생산성을 설명하지 못하는가: analysis:code-volume-developer-productivity
   코드 생성 지원: concept:ai-coding-assistance
   코드 유닛: concept:page-9574348a
-  코드 재사용: concept:page-65669d1c
+  코드 재사용: concept:software-reuse
   코드 재사용의 역사: analysis:page-0b006186
   코드 포인트: concept:page-e589f64b
   코드량 지표의 한계: analysis:code-volume-developer-productivity
-  코라도 뵘: entity:page-6c751910
+  코라도 뵘: person:corrado-bohm
   쿠미의 법칙: concept:page-0fdf8f46
   큐 관리: concept:queueing-load-control
-  클로드 섀넌: entity:page-1cd37570
+  클로드 섀넌: person:claude-shannon
   키-값 캐시: concept:kv-cache
   테세우스의 뇌: concept:substrate-independence-functionalism
-  토니 호어: entity:page-c645c958
-  토머스 홉스: entity:thomas-hobbes
+  토니 호어: person:tony-hoare
+  토머스 홉스: person:thomas-hobbes
   토큰률과 LLM 서비스 능력: analysis:token-rate-service-capability
   토큰파워벤치: source:ref-083
   통신 은닉: concept:computation-communication-overlap
-  튜링: entity:page-07a5de25
+  튜링: person:alan-turing
   튜링 기계: concept:page-c617f209
   트랜스포머: concept:transformer
   트랜잭션 순서 보장: analysis:transaction-ordering-guarantees
   트랜잭션 시스템은 어떤 순서 보장을 제공하는가: analysis:transaction-ordering-guarantees
   특수 목적 계산기와 범용 컴퓨터: analysis:page-7058e090
-  특화 가속기: concept:page-dc2142ec
+  특화 가속기: concept:domain-specific-accelerator
   특화와 범용의 진자 운동: analysis:specialized-vs-general-pendulum
   파이프: concept:page-d86dcb52
   파일 시스템: concept:page-7c33e4cb
@@ -593,13 +593,13 @@ aliases:
   평균 성능은 왜 서비스의 컴퓨팅 능력을 설명하지 못하는가: analysis:page-01dd444c
   평균 성능의 한계: analysis:page-01dd444c
   평균 지연과 꼬리 지연: analysis:page-01dd444c
-  폐쇄형 서브루틴: concept:page-446e9f53
+  폐쇄형 서브루틴: concept:subroutine
   폐쇄형 서브루틴과 Wheeler Jump: source:src-005
   포스트 무어 시대의 성능: source:ref-068
   포스트모템 루틴: concept:page-325f29bd
   포터빌리티: concept:page-5063ca2b
   포트란: concept:page-72af5ee2
-  폰 노이만: entity:page-ef144988
+  폰 노이만: person:john-von-neumann
   폰 노이만 구성자: concept:self-reproducing-automata
   폰 노이만 구조: concept:page-7d1c4861
   표 계산 프로그램: concept:spreadsheet
@@ -609,10 +609,10 @@ aliases:
   표현·IR·ABI 경계는 무엇을 보존하는가: analysis:stablehlo-mlir-abi-boundary
   프레임버퍼 메모리 사상: concept:framebuffer-memory-mapping
   프레임버퍼 주소 변환: concept:framebuffer-memory-mapping
-  프로그래밍 가능성: concept:page-569257e7
+  프로그래밍 가능성: concept:programmability
   프로그래밍 언어: concept:page-26360c8b
   프로그래밍 언어 설계: concept:page-26360c8b
-  프로그램 가능성: concept:page-569257e7
+  프로그램 가능성: concept:programmability
   프로그램 가능성의 역사: analysis:page-63baea1f
   프로그램 로더: concept:page-94134317
   프로그램 오류 추적: concept:page-a1be87c0
@@ -620,14 +620,14 @@ aliases:
   프롬프트 처리와 토큰 생성: concept:prefill-decode
   프리필·디코딩: concept:prefill-decode
   프리필과 디코드: concept:prefill-decode
-  하드웨어 실행 모델: concept:page-e83f2a1b
+  하드웨어 실행 모델: concept:hardware-execution-model
   하드웨어 실행 모델과 제어·상태의 직조: analysis:page-7a3b4c5d
   하드웨어 실행 모델은 어떻게 제어와 상태를 엮는가: analysis:page-7a3b4c5d
   하드웨어와 알고리즘의 비교: analysis:hardware-vs-algorithmic-improvement
   한 소스의 의미와 성능은 가속기로 어떻게 번역되는가: analysis:source-semantics-accelerator-performance
   한 프로그램의 순서는 여러 실행 주체에서 어떻게 보존되는가: analysis:concurrent-order-shared-state
   함수 프레임: concept:page-f6e983b1
-  함수 호출: concept:page-446e9f53
+  함수 호출: concept:subroutine
   합의와 서비스 응답: analysis:distributed-consistency-latency
   해석 기관: concept:page-4b367720
   해석기하학: concept:analytic-geometry
@@ -636,16 +636,17 @@ aliases:
   허턴과 그레고리의 수학 표: source:ref-055
   협력하는 순차 프로세스: source:ref-092
   호출 스택: concept:page-c297dc5b
-  호퍼: entity:page-d28fe055
+  호퍼: person:grace-hopper
   혼합 정밀도: concept:mixed-precision
   혼합 정밀도와 모델 품질: analysis:low-precision-ai-result-contract
   홈페이지: document:overview
-  홉스: entity:thomas-hobbes
+  홉스: person:thomas-hobbes
+  홉스와 라이프니츠 - 기호의 기능: source:ref-142
   홉스와 라이프니츠, 기호에서 AI까지: source:src-007
   "홉스와 라이프니츠: 기호의 기능": source:ref-142
-  확대 크기 확장: concept:page-d4ef0406
+  확대 크기 확장: concept:parallel-scalability
   회색 장애: source:ref-120
-  휠러: entity:page-e8a9bb25
+  휠러: person:david-wheeler
   휠러 점프: concept:page-2397a193
   희미해지는 감각질: source:ref-154
   힐베르트 결정 문제: concept:page-145622bc
@@ -658,7 +659,7 @@ aliases:
   "A Proof for the Queuing Formula: L = λ W": source:ref-085
   A Symbolic Analysis of Relay and Switching Circuits: source:ref-008
   a-machine: concept:page-c617f209
-  A. M. Turing: entity:page-07a5de25
+  A. M. Turing: person:alan-turing
   A&S: source:ref-054
   Abramowitz and Stegun: source:ref-054
   Absent Qualia, Fading Qualia, Dancing Qualia: source:ref-154
@@ -666,7 +667,7 @@ aliases:
   ACM Computing Surveys Software Reuse: source:ref-004
   Activation-aware Weight Quantization: source:ref-082
   activity is not productivity: analysis:code-volume-developer-productivity
-  Ada Lovelace: entity:page-970046b8
+  Ada Lovelace: person:ada-lovelace
   adæqualitas: concept:adequality
   address relocation: concept:page-d679e8f4
   Address Space Layout Randomization: concept:aslr
@@ -692,11 +693,11 @@ aliases:
   AI bottlenecks: concept:ai-computing-bottlenecks
   AI coding assistance: concept:ai-coding-assistance
   AI pair programming: concept:ai-coding-assistance
-  Alan Turing: entity:page-07a5de25
+  Alan Turing: person:alan-turing
   Algorithm schedule separation: concept:algorithm-schedule-separation
   Algorithmic Thinking: concept:page-e2b63e63
   allowlist validation: concept:input-validation
-  Alonzo Church: entity:page-b7b72330
+  Alonzo Church: person:alonzo-church
   Amazon Dynamo: source:ref-104
   Amdahl 1967: source:ref-035
   Amdahl single processor paper: source:ref-035
@@ -708,7 +709,7 @@ aliases:
   analysis-0c7e244ee605320d: analysis:page-0c7e244e
   analysis-2b56fedc2ec5e743: analysis:page-2b56fedc
   analysis-3259f99bb25a494c: analysis:page-3259f99b
-  analysis-353b4b2d38841a24: analysis:page-353b4b2d
+  analysis-353b4b2d38841a24: analysis:power-wall-performance
   analysis-35a2e99b2b062bf6: analysis:page-35a2e99b
   analysis-3d25f4823ef50776: analysis:page-3d25f482
   analysis-4095b0c80dbee408: analysis:page-4095b0c8
@@ -762,6 +763,69 @@ aliases:
   analysis-token-rate-service-capability: analysis:token-rate-service-capability
   analysis-transaction-ordering-guarantees: analysis:transaction-ordering-guarantees
   analysis-transformer-io-bottleneck: analysis:transformer-io-bottleneck
+  analysis:agi-criteria-shift: analysis:agi-criteria-shift
+  analysis:ai-bottleneck-lineage: analysis:ai-bottleneck-lineage
+  analysis:ai-bottleneck-shifting: analysis:ai-bottleneck-shifting
+  analysis:analytic-geometry-to-pixels-and-maps: analysis:analytic-geometry-to-pixels-and-maps
+  analysis:automation-labor-responsibility: analysis:automation-labor-responsibility
+  analysis:benchmark-numbers-not-directly-comparable: analysis:benchmark-numbers-not-directly-comparable
+  analysis:code-volume-developer-productivity: analysis:code-volume-developer-productivity
+  analysis:computation-invention-or-natural-phenomenon: analysis:computation-invention-or-natural-phenomenon
+  analysis:concurrent-order-shared-state: analysis:concurrent-order-shared-state
+  analysis:dependency-provenance-registry: analysis:dependency-provenance-registry
+  analysis:distributed-consistency-latency: analysis:distributed-consistency-latency
+  analysis:exactly-once-boundary: analysis:exactly-once-boundary
+  analysis:exponent-notation-delay: analysis:exponent-notation-delay
+  analysis:failure-detection-gray-metastable: analysis:failure-detection-gray-metastable
+  analysis:from-mathematical-tables-to-spreadsheets: analysis:from-mathematical-tables-to-spreadsheets
+  analysis:from-table-checking-to-numerical-result-contracts: analysis:from-table-checking-to-numerical-result-contracts
+  analysis:functionalism-vs-chinese-room: analysis:functionalism-vs-chinese-room
+  analysis:geometry-to-computation-descartes-vs-fermat: analysis:geometry-to-computation-descartes-vs-fermat
+  analysis:hardware-vs-algorithmic-improvement: analysis:hardware-vs-algorithmic-improvement
+  analysis:human-computers-and-computation-factories: analysis:human-computers-and-computation-factories
+  analysis:interpretation-security-boundary: analysis:interpretation-security-boundary
+  analysis:kv-cache-throughput: analysis:kv-cache-throughput
+  analysis:llm-reuse-speculation-work: analysis:llm-reuse-speculation-work
+  analysis:llm-slo-resource-cost: analysis:llm-slo-resource-cost
+  analysis:llm-throughput-latency-queueing: analysis:llm-throughput-latency-queueing
+  analysis:local-interface-remote-state: analysis:local-interface-remote-state
+  analysis:low-bit-llm-inference: analysis:low-bit-llm-inference
+  analysis:low-precision-ai-result-contract: analysis:low-precision-ai-result-contract
+  analysis:operational-energy-sustainable-computing: analysis:operational-energy-sustainable-computing
+  analysis:page-01dd444c: analysis:page-01dd444c
+  analysis:page-0b006186: analysis:page-0b006186
+  analysis:page-0c7e244e: analysis:page-0c7e244e
+  analysis:page-2b56fedc: analysis:page-2b56fedc
+  analysis:page-3259f99b: analysis:page-3259f99b
+  analysis:page-353b4b2d: analysis:power-wall-performance
+  analysis:page-35a2e99b: analysis:page-35a2e99b
+  analysis:page-3d25f482: analysis:page-3d25f482
+  analysis:page-4095b0c8: analysis:page-4095b0c8
+  analysis:page-63baea1f: analysis:page-63baea1f
+  analysis:page-6a13ea1d: analysis:page-6a13ea1d
+  analysis:page-7058e090: analysis:page-7058e090
+  analysis:page-7a3b4c5d: analysis:page-7a3b4c5d
+  analysis:page-866096c7: analysis:page-866096c7
+  analysis:page-8d320775: analysis:page-8d320775
+  analysis:page-8f48231d: analysis:page-8f48231d
+  analysis:page-9241eb45: analysis:page-9241eb45
+  analysis:page-d0161680: analysis:page-d0161680
+  analysis:page-f5a31368: analysis:page-f5a31368
+  analysis:page-f8223547: analysis:page-f8223547
+  analysis:page-fc1fa74e: analysis:page-fc1fa74e
+  analysis:representation-placement-contract: analysis:representation-placement-contract
+  analysis:reproducible-build-boundary: analysis:reproducible-build-boundary
+  analysis:retry-amplification-and-control: analysis:retry-amplification-and-control
+  analysis:runtime-contract: analysis:runtime-contract
+  analysis:service-speed-vs-availability: analysis:service-speed-vs-availability
+  analysis:source-semantics-accelerator-performance: analysis:source-semantics-accelerator-performance
+  analysis:specialized-vs-general-pendulum: analysis:specialized-vs-general-pendulum
+  analysis:stablehlo-mlir-abi-boundary: analysis:stablehlo-mlir-abi-boundary
+  analysis:stored-results-to-executable-procedures: analysis:stored-results-to-executable-procedures
+  analysis:symbols-from-aid-to-computation-engine: analysis:symbols-from-aid-to-computation-engine
+  analysis:token-rate-service-capability: analysis:token-rate-service-capability
+  analysis:transaction-ordering-guarantees: analysis:transaction-ordering-guarantees
+  analysis:transformer-io-bottleneck: analysis:transformer-io-bottleneck
   analytic geometry: concept:analytic-geometry
   Analytic Geometry to Pixels and Maps: analysis:analytic-geometry-to-pixels-and-maps
   Analytical Engine: concept:page-4b367720
@@ -776,6 +840,7 @@ aliases:
   arXiv 2406.19108: source:ref-148
   ASCII: concept:page-6a0c16a9
   aslr: concept:aslr
+  ASLR: concept:aslr
   ASLR (Address Space Layout Randomization): concept:aslr
   ASLR 1차 자료 묶음: source:ref-137
   ASLR primary sources: source:ref-137
@@ -783,12 +848,13 @@ aliases:
   assembly: concept:page-efde1ed2
   atomic consistency: concept:linearizability
   Attention Is All You Need: source:ref-073
-  Augusta Ada King: entity:page-970046b8
+  Augusta Ada King: person:ada-lovelace
   automatic machine: concept:page-c617f209
   Automatic Programming: concept:page-1bbfe009
   automation boundary: concept:automation-boundary
   automation labor responsibility: analysis:automation-labor-responsibility
   availability and recovery: concept:availability-recovery
+  AWQ - Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration: source:ref-082
   AWQ paper: source:ref-082
   "AWQ: Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration": source:ref-082
   Babbage 1822: source:ref-053
@@ -817,7 +883,7 @@ aliases:
   Bit Operation: concept:page-38dd11a2
   bit patterns and interpretation rules: analysis:page-d0161680
   Bitwise Operation: concept:page-38dd11a2
-  Blaise Agüera y Arcas: entity:aguera-y-arcas
+  Blaise Agüera y Arcas: person:aguera-y-arcas
   Blaise Agüera y Arcas Big Think 인터뷰 원문: source:ref-147
   Blaise_transcript: source:ref-147
   blind thought: concept:cogitatio-caeca
@@ -825,7 +891,7 @@ aliases:
   Bohm-Jacopini theorem: concept:page-8e6aa351
   Böhm-Jacopini theorem: concept:page-8e6aa351
   BOM: concept:page-5163a003
-  Boole: entity:page-73f5398f
+  Boole: person:george-boole
   Boole 1854: source:ref-030
   Boolean: concept:page-918ae6f1
   Boolean Algebra: concept:page-918ae6f1
@@ -854,8 +920,8 @@ aliases:
   C programming language: concept:page-f438fd41
   C string: concept:page-3d371068
   C-style string: concept:page-3d371068
-  C. A. R. Hoare: entity:page-c645c958
-  C. W. Krueger: entity:page-1a2d36f5
+  C. A. R. Hoare: person:tony-hoare
+  C. W. Krueger: person:charles-w-krueger
   Cache memory: concept:page-6aaebafb
   Cahill Röhm Fekete SSI: source:ref-112
   Calculation checking: concept:calculation-checking
@@ -875,37 +941,38 @@ aliases:
   Cedar RPC: source:ref-102
   Chalmers 1995: source:ref-154
   Characteristica Universalis and Calculus Ratiocinator: concept:characteristica-calculus
-  Charles Antony Richard Hoare: entity:page-c645c958
-  Charles Babbage: entity:page-b47da9a0
-  Charles Krueger: entity:page-1a2d36f5
-  Charles W. Krueger: entity:page-1a2d36f5
+  Charles Antony Richard Hoare: person:tony-hoare
+  Charles Babbage: person:charles-babbage
+  Charles Krueger: person:charles-w-krueger
+  Charles W. Krueger: person:charles-w-krueger
   Chasing Carbon: source:ref-109
+  Chasing Carbon — The Elusive Environmental Footprint of Computing: source:ref-109
   "Chasing Carbon: The Elusive Environmental Footprint of Computing": source:ref-109
   Chen et al. 2018: source:ref-099
   Chinese Room: concept:chinese-room-syntax-semantics
-  Church: entity:page-b7b72330
+  Church: person:alonzo-church
   Church 1936: source:ref-010
   Church-Turing Thesis: concept:page-b95bdd2d
   Church's theorem: source:ref-010
   Church's thesis: concept:page-b95bdd2d
   Clark 1988: source:ref-141
-  Claude E. Shannon: entity:page-1cd37570
-  Claude Shannon: entity:page-1cd37570
+  Claude E. Shannon: person:claude-shannon
+  Claude Shannon: person:claude-shannon
   Clockwork: source:ref-086
   Clockwork serving system: source:ref-086
-  closed subroutine: concept:page-446e9f53
+  closed subroutine: concept:subroutine
   Closed Subroutine and Wheeler Jump: source:src-005
   Code Point: concept:page-e589f64b
   Code Unit: concept:page-9574348a
   code unit sequence: concept:page-9574348a
   Cogitatio Caeca: concept:cogitatio-caeca
   commit wait: concept:external-consistency-time-uncertainty
-  compilation: concept:page-8d4656f3
-  Compiler: concept:page-8d4656f3
+  compilation: concept:compiler
+  Compiler: concept:compiler
   compiler boundary preservation: analysis:stablehlo-mlir-abi-boundary
   Compiler optimization: concept:page-eb050b34
-  Computability: concept:page-01f775b8
-  computable: concept:page-01f775b8
+  Computability: concept:computability
+  computable: concept:computability
   computable numbers: source:ref-009
   computation as basic science: analysis:computation-invention-or-natural-phenomenon
   computation-communication overlap: concept:computation-communication-overlap
@@ -924,7 +991,7 @@ aliases:
   computing power: concept:computing-capability
   computing-capability: concept:computing-capability
   concept-00b55ff0f7a3581b: concept:page-00b55ff0
-  concept-01f775b8a307802f: concept:page-01f775b8
+  concept-01f775b8a307802f: concept:computability
   concept-092a889f122121cb: concept:page-092a889f
   concept-0939ab2408573c58: concept:page-0939ab24
   concept-099497b965b35d3a: concept:page-099497b9
@@ -936,7 +1003,7 @@ aliases:
   concept-16d053e669459261: concept:page-16d053e6
   concept-18a0ce4363c25093: concept:page-18a0ce43
   concept-1bbfe00922d38ab1: concept:page-1bbfe009
-  concept-1c13e72137b697ae: concept:page-1c13e721
+  concept-1c13e72137b697ae: concept:structured-programming
   concept-2397a193cf79979b: concept:page-2397a193
   concept-26360c8b4141acb4: concept:page-26360c8b
   concept-2913946302b96786: concept:page-29139463
@@ -949,23 +1016,23 @@ aliases:
   concept-3d371068dd880445: concept:page-3d371068
   concept-3e1313946067714a: concept:page-3e131394
   concept-432b4756227c6ef2: concept:page-432b4756
-  concept-446e9f53b7a0dab2: concept:page-446e9f53
+  concept-446e9f53b7a0dab2: concept:subroutine
   concept-46257ebec8e7274c: concept:page-46257ebe
-  concept-464cd2bb0d306cc3: concept:page-464cd2bb
+  concept-464cd2bb0d306cc3: concept:library
   concept-47ba75def6a810da: concept:page-47ba75de
-  concept-494620a1e7c73b24: concept:page-494620a1
+  concept-494620a1e7c73b24: concept:energy-proportional-computing
   concept-496b0829073c279a: concept:page-496b0829
   concept-4a63d3dfa96ba65a: concept:page-4a63d3df
   concept-4ac13a0d4fe8ec32: concept:page-4ac13a0d
   concept-4b367720c4a42e5a: concept:page-4b367720
   concept-5063ca2b2057b092: concept:page-5063ca2b
   concept-5163a00379489f02: concept:page-5163a003
-  concept-569257e7cbee4eb8: concept:page-569257e7
+  concept-569257e7cbee4eb8: concept:programmability
   concept-59604f5365047afb: concept:page-59604f53
   concept-5cd779cec1e9716b: concept:page-5cd779ce
   concept-60bcdf34d9470eea: concept:page-60bcdf34
   concept-613958ec8891ac2d: concept:page-613958ec
-  concept-65669d1c4c32c693: concept:page-65669d1c
+  concept-65669d1c4c32c693: concept:software-reuse
   concept-676372e6cb31537d: concept:page-676372e6
   concept-6a0c16a9841c87e8: concept:page-6a0c16a9
   concept-6aaebafb1aacc624: concept:page-6aaebafb
@@ -980,7 +1047,7 @@ aliases:
   concept-83b76a0498d798aa: concept:page-83b76a04
   concept-873d18c3be4404fb: concept:page-873d18c3
   concept-8ae81e59373c00f2: concept:page-8ae81e59
-  concept-8d4656f333ec153d: concept:page-8d4656f3
+  concept-8d4656f333ec153d: concept:compiler
   concept-8e6aa351d4e32f97: concept:page-8e6aa351
   concept-90428fe85dfd3403: concept:page-90428fe8
   concept-918ae6f1f0969df3: concept:page-918ae6f1
@@ -1005,7 +1072,7 @@ aliases:
   concept-c297dc5b421f48a3: concept:page-c297dc5b
   concept-c617f2098bd57016: concept:page-c617f209
   concept-c7e0c2c53cb04fba: concept:page-c7e0c2c5
-  concept-c7fabfe3dff4e5d5: concept:page-c7fabfe3
+  concept-c7fabfe3dff4e5d5: concept:symbolic-manipulation
   concept-c854e2f6358212d1: concept:page-c854e2f6
   concept-c9c7cad93930dc6c: concept:page-c9c7cad9
   concept-cap-theorem: concept:cap-theorem
@@ -1019,23 +1086,23 @@ aliases:
   concept-concurrency: concept:concurrency
   concept-continuous-batching: concept:continuous-batching
   concept-d2f652046668c971: concept:page-d2f65204
-  concept-d4ef040697b43518: concept:page-d4ef0406
+  concept-d4ef040697b43518: concept:parallel-scalability
   concept-d4fdbd19616560c0: concept:page-d4fdbd19
   concept-d61f7b46dc608713: concept:page-d61f7b46
   concept-d679e8f4343f66ba: concept:page-d679e8f4
   concept-d7da5df4d36a970c: concept:page-d7da5df4
   concept-d86dcb525d6a2843: concept:page-d86dcb52
   concept-dc1573dca7d35049: concept:page-dc1573dc
-  concept-dc2142ecaccdc1e9: concept:page-dc2142ec
+  concept-dc2142ecaccdc1e9: concept:domain-specific-accelerator
   concept-dependency-provenance: concept:dependency-provenance
   concept-developer-productivity: concept:developer-productivity
-  concept-df7e932b999f444f: concept:page-df7e932b
+  concept-df7e932b999f444f: concept:memory-wall
   concept-distributed-file-system: concept:distributed-file-system
   concept-e2b63e6394d296b1: concept:page-e2b63e63
   concept-e589f64b6639a460: concept:page-e589f64b
-  concept-e83f2a1b94d76c01: concept:page-e83f2a1b
+  concept-e83f2a1b94d76c01: concept:hardware-execution-model
   concept-eb050b34d56c0961: concept:page-eb050b34
-  concept-ef02c2bc7dc5ea9b: concept:page-ef02c2bc
+  concept-ef02c2bc7dc5ea9b: concept:stored-program-computer
   concept-ef0b337a520af324: concept:page-ef0b337a
   concept-efde1ed2c65b5416: concept:page-efde1ed2
   concept-end-to-end-principle: concept:end-to-end-principle
@@ -1045,7 +1112,7 @@ aliases:
   concept-f047e0039fc9a9c0: concept:page-f047e003
   concept-f438fd4127b48dbb: concept:page-f438fd41
   concept-f4f7573102f01723: concept:page-f4f75731
-  concept-f57f54a4895add44: concept:page-f57f54a4
+  concept-f57f54a4895add44: concept:tail-latency
   concept-f6e983b17cae80b7: concept:page-f6e983b1
   concept-fa0c6ecb3f94fe4c: concept:page-fa0c6ecb
   concept-failure-detection: concept:failure-detection
@@ -1095,6 +1162,184 @@ aliases:
   concept-transformer: concept:transformer
   concept-unit-segment-dimension-reduction: concept:unit-segment-dimension-reduction
   concept-verification-labor: concept:verification-labor
+  concept:adequality: concept:adequality
+  concept:ai-coding-assistance: concept:ai-coding-assistance
+  concept:ai-computing-bottlenecks: concept:ai-computing-bottlenecks
+  concept:algorithm-schedule-separation: concept:algorithm-schedule-separation
+  concept:analytic-geometry: concept:analytic-geometry
+  concept:aslr: concept:aslr
+  concept:automation-boundary: concept:automation-boundary
+  concept:availability-recovery: concept:availability-recovery
+  concept:benchmark-contract: concept:benchmark-contract
+  concept:byzantine-fault: concept:byzantine-fault
+  concept:calculation-checking: concept:calculation-checking
+  concept:cap-theorem: concept:cap-theorem
+  concept:characteristica-calculus: concept:characteristica-calculus
+  concept:chinese-room-syntax-semantics: concept:chinese-room-syntax-semantics
+  concept:cogitatio-caeca: concept:cogitatio-caeca
+  concept:computation-communication-overlap: concept:computation-communication-overlap
+  concept:computational-artificial-life: concept:computational-artificial-life
+  concept:computational-complexity: concept:computational-complexity
+  concept:computing-capability: concept:computing-capability
+  concept:concurrency: concept:concurrency
+  concept:continuous-batching: concept:continuous-batching
+  concept:dependency-provenance: concept:dependency-provenance
+  concept:developer-productivity: concept:developer-productivity
+  concept:distributed-file-system: concept:distributed-file-system
+  concept:end-to-end-principle: concept:end-to-end-principle
+  concept:essential-accidental-complexity: concept:essential-accidental-complexity
+  concept:external-consistency-time-uncertainty: concept:external-consistency-time-uncertainty
+  concept:failure-detection: concept:failure-detection
+  concept:fault-tolerance: concept:fault-tolerance
+  concept:framebuffer-memory-mapping: concept:framebuffer-memory-mapping
+  concept:heterogeneous-execution-model: concept:heterogeneous-execution-model
+  concept:human-computers: concept:human-computers
+  concept:idempotency: concept:idempotency
+  concept:input-validation: concept:input-validation
+  concept:intermediate-representation: concept:intermediate-representation
+  concept:io-aware-attention: concept:io-aware-attention
+  concept:kv-cache: concept:kv-cache
+  concept:landauer-principle: concept:landauer-principle
+  concept:lifecycle-assessment-boundary: concept:lifecycle-assessment-boundary
+  concept:linearizability: concept:linearizability
+  concept:littles-law: concept:littles-law
+  concept:llm-inference-energy-metrics: concept:llm-inference-energy-metrics
+  concept:llm-inference-service-metrics: concept:llm-inference-service-metrics
+  concept:llm-weight-quantization: concept:llm-weight-quantization
+  concept:mathematical-tables: concept:mathematical-tables
+  concept:memory-movement-bottleneck-shift: concept:memory-movement-bottleneck-shift
+  concept:mixed-precision: concept:mixed-precision
+  concept:mutual-exclusion-synchronization: concept:mutual-exclusion-synchronization
+  concept:np-completeness: concept:np-completeness
+  concept:operational-embodied-carbon: concept:operational-embodied-carbon
+  concept:page-00b55ff0: concept:page-00b55ff0
+  concept:page-01f775b8: concept:computability
+  concept:page-092a889f: concept:page-092a889f
+  concept:page-0939ab24: concept:page-0939ab24
+  concept:page-099497b9: concept:page-099497b9
+  concept:page-0b68e8bc: concept:page-0b68e8bc
+  concept:page-0d04f3f7: concept:page-0d04f3f7
+  concept:page-0fdf8f46: concept:page-0fdf8f46
+  concept:page-141883d0: concept:page-141883d0
+  concept:page-145622bc: concept:page-145622bc
+  concept:page-16d053e6: concept:page-16d053e6
+  concept:page-18a0ce43: concept:page-18a0ce43
+  concept:page-1bbfe009: concept:page-1bbfe009
+  concept:page-1c13e721: concept:structured-programming
+  concept:page-2397a193: concept:page-2397a193
+  concept:page-26360c8b: concept:page-26360c8b
+  concept:page-29139463: concept:page-29139463
+  concept:page-2a99ca9c: concept:page-2a99ca9c
+  concept:page-2ff6633d: concept:page-2ff6633d
+  concept:page-30fac639: concept:page-30fac639
+  concept:page-325f29bd: concept:page-325f29bd
+  concept:page-38dd11a2: concept:page-38dd11a2
+  concept:page-3b07c7d6: concept:page-3b07c7d6
+  concept:page-3d371068: concept:page-3d371068
+  concept:page-3e131394: concept:page-3e131394
+  concept:page-432b4756: concept:page-432b4756
+  concept:page-446e9f53: concept:subroutine
+  concept:page-46257ebe: concept:page-46257ebe
+  concept:page-464cd2bb: concept:library
+  concept:page-47ba75de: concept:page-47ba75de
+  concept:page-494620a1: concept:energy-proportional-computing
+  concept:page-496b0829: concept:page-496b0829
+  concept:page-4a63d3df: concept:page-4a63d3df
+  concept:page-4ac13a0d: concept:page-4ac13a0d
+  concept:page-4b367720: concept:page-4b367720
+  concept:page-5063ca2b: concept:page-5063ca2b
+  concept:page-5163a003: concept:page-5163a003
+  concept:page-569257e7: concept:programmability
+  concept:page-59604f53: concept:page-59604f53
+  concept:page-5cd779ce: concept:page-5cd779ce
+  concept:page-60bcdf34: concept:page-60bcdf34
+  concept:page-613958ec: concept:page-613958ec
+  concept:page-65669d1c: concept:software-reuse
+  concept:page-676372e6: concept:page-676372e6
+  concept:page-6a0c16a9: concept:page-6a0c16a9
+  concept:page-6aaebafb: concept:page-6aaebafb
+  concept:page-6c282053: concept:page-6c282053
+  concept:page-723508cf: concept:page-723508cf
+  concept:page-72af5ee2: concept:page-72af5ee2
+  concept:page-7c33e4cb: concept:page-7c33e4cb
+  concept:page-7cc49c18: concept:page-7cc49c18
+  concept:page-7d1c4861: concept:page-7d1c4861
+  concept:page-7fcb10cc: concept:page-7fcb10cc
+  concept:page-830fb720: concept:page-830fb720
+  concept:page-83b76a04: concept:page-83b76a04
+  concept:page-873d18c3: concept:page-873d18c3
+  concept:page-8ae81e59: concept:page-8ae81e59
+  concept:page-8d4656f3: concept:compiler
+  concept:page-8e6aa351: concept:page-8e6aa351
+  concept:page-90428fe8: concept:page-90428fe8
+  concept:page-918ae6f1: concept:page-918ae6f1
+  concept:page-9351a627: concept:page-9351a627
+  concept:page-93fca2ee: concept:page-93fca2ee
+  concept:page-94134317: concept:page-94134317
+  concept:page-9574348a: concept:page-9574348a
+  concept:page-9ecf6d54: concept:page-9ecf6d54
+  concept:page-a1be87c0: concept:page-a1be87c0
+  concept:page-a446fe7e: concept:page-a446fe7e
+  concept:page-b95bdd2d: concept:page-b95bdd2d
+  concept:page-be5e9654: concept:page-be5e9654
+  concept:page-c297dc5b: concept:page-c297dc5b
+  concept:page-c617f209: concept:page-c617f209
+  concept:page-c7e0c2c5: concept:page-c7e0c2c5
+  concept:page-c7fabfe3: concept:symbolic-manipulation
+  concept:page-c854e2f6: concept:page-c854e2f6
+  concept:page-c9c7cad9: concept:page-c9c7cad9
+  concept:page-cb68fc61: concept:page-cb68fc61
+  concept:page-d2f65204: concept:page-d2f65204
+  concept:page-d4ef0406: concept:parallel-scalability
+  concept:page-d4fdbd19: concept:page-d4fdbd19
+  concept:page-d61f7b46: concept:page-d61f7b46
+  concept:page-d679e8f4: concept:page-d679e8f4
+  concept:page-d7da5df4: concept:page-d7da5df4
+  concept:page-d86dcb52: concept:page-d86dcb52
+  concept:page-dc1573dc: concept:page-dc1573dc
+  concept:page-dc2142ec: concept:domain-specific-accelerator
+  concept:page-df7e932b: concept:memory-wall
+  concept:page-e2b63e63: concept:page-e2b63e63
+  concept:page-e589f64b: concept:page-e589f64b
+  concept:page-e83f2a1b: concept:hardware-execution-model
+  concept:page-eb050b34: concept:page-eb050b34
+  concept:page-ef02c2bc: concept:stored-program-computer
+  concept:page-ef0b337a: concept:page-ef0b337a
+  concept:page-efde1ed2: concept:page-efde1ed2
+  concept:page-f019ffbf: concept:page-f019ffbf
+  concept:page-f047e003: concept:page-f047e003
+  concept:page-f438fd41: concept:page-f438fd41
+  concept:page-f4f75731: concept:page-f4f75731
+  concept:page-f57f54a4: concept:tail-latency
+  concept:page-f6e983b1: concept:page-f6e983b1
+  concept:page-fa0c6ecb: concept:page-fa0c6ecb
+  concept:partial-failure: concept:partial-failure
+  concept:performance-portability: concept:performance-portability
+  concept:polynomial-time-reduction: concept:polynomial-time-reduction
+  concept:power-usage-effectiveness: concept:power-usage-effectiveness
+  concept:prefill-decode: concept:prefill-decode
+  concept:prefix-kv-caching: concept:prefix-kv-caching
+  concept:quantity-species-pairs: concept:quantity-species-pairs
+  concept:queueing-load-control: concept:queueing-load-control
+  concept:remote-procedure-call: concept:remote-procedure-call
+  concept:replicated-log-consensus: concept:replicated-log-consensus
+  concept:reproducible-builds: concept:reproducible-builds
+  concept:retries: concept:retries
+  concept:runtime-contract: concept:runtime-contract
+  concept:self-attention: concept:self-attention
+  concept:self-reproducing-automata: concept:self-reproducing-automata
+  concept:sequential-consistency: concept:sequential-consistency
+  concept:serializability: concept:serializability
+  concept:speculative-decoding: concept:speculative-decoding
+  concept:spreadsheet: concept:spreadsheet
+  concept:stablehlo-mlir-abi: concept:stablehlo-mlir-abi
+  concept:substrate-independence-functionalism: concept:substrate-independence-functionalism
+  concept:superscript-exponent: concept:superscript-exponent
+  concept:symbiogenesis: concept:symbiogenesis
+  concept:time-to-quality: concept:time-to-quality
+  concept:transformer: concept:transformer
+  concept:unit-segment-dimension-reduction: concept:unit-segment-dimension-reduction
+  concept:verification-labor: concept:verification-labor
   Concurrency: concept:concurrency
   concurrent execution: concept:concurrency
   concurrent programming: concept:concurrency
@@ -1114,8 +1359,8 @@ aliases:
   Copilot 생산성 실험: source:ref-106
   Copilot usability study: source:ref-105
   Corbett et al. 2012: source:ref-089
-  Corrado Bohm: entity:page-6c751910
-  Corrado Böhm: entity:page-6c751910
+  Corrado Bohm: person:corrado-bohm
+  Corrado Böhm: person:corrado-bohm
   Courier RPC: source:ref-140
   CPU cache: concept:page-6aaebafb
   Cramming More Components: source:ref-037
@@ -1131,8 +1376,8 @@ aliases:
   CWE-20: source:ref-090
   CWE-20 Improper Input Validation: source:ref-090
   "CWE-20: Improper Input Validation": source:ref-090
-  D. L. Parnas: entity:page-7de052ed
-  D. M. Ritchie: entity:page-3e83a021
+  D. L. Parnas: person:david-parnas
+  D. M. Ritchie: person:dennis-ritchie
   Dahl Dijkstra Hoare 1972: source:ref-013
   Dao et al. 2022: source:ref-074
   Dark silicon: concept:page-7fcb10cc
@@ -1140,9 +1385,9 @@ aliases:
   DARPA Internet Protocols: source:ref-141
   Data Representation: concept:page-93fca2ee
   Data Representation and Encoding: source:src-006
-  David Lorge Parnas: entity:page-7de052ed
-  David Parnas: entity:page-7de052ed
-  David Wheeler: entity:page-e8a9bb25
+  David Lorge Parnas: person:david-parnas
+  David Parnas: person:david-parnas
+  David Wheeler: person:david-wheeler
   De Corpore: source:ref-143
   de Prony computation factory: source:ref-056
   Dean and Barroso 2013: source:ref-049
@@ -1157,8 +1402,8 @@ aliases:
   Dennard et al. 1974: source:ref-038
   Dennard scaling: concept:page-3b07c7d6
   Dennard scaling paper: source:ref-038
-  Dennis M. Ritchie: entity:page-3e83a021
-  Dennis Ritchie: entity:page-3e83a021
+  Dennis M. Ritchie: person:dennis-ritchie
+  Dennis Ritchie: person:dennis-ritchie
   dependency provenance: concept:dependency-provenance
   dependency provenance registry analysis: analysis:dependency-provenance-registry
   dependency provenance와 registry identity: concept:dependency-provenance
@@ -1170,25 +1415,32 @@ aliases:
   Development of C: source:ref-019
   DFS: concept:distributed-file-system
   Difference Engine: concept:page-83b76a04
-  Dijkstra: entity:page-b215332d
+  Dijkstra: person:edsger-dijkstra
   Dijkstra 1968: source:ref-092
   dimension reduction in geometry: concept:unit-segment-dimension-reduction
   distributed consistency and latency: analysis:distributed-consistency-latency
   Distributed File System: concept:distributed-file-system
   DistServe: source:ref-077
+  DistServe - Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving: source:ref-077
   DistServe paper: source:ref-077
   "DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving": source:ref-077
   DLMF 표준 참조표: source:ref-060
   DLMF on-demand tables: source:ref-060
   DLMF Standard Reference Tables on Demand: source:ref-060
   DLMF Tables: source:ref-060
-  Domain-specific accelerator: concept:page-dc2142ec
+  document:index: document:index
+  document:knowledge-graph-schema: document:knowledge-graph-schema
+  document:log: document:log
+  document:overview: document:overview
+  document:page-9bc0d3d6: document:page-9bc0d3d6
+  document:quote-locator-audit: document:quote-locator-audit
+  Domain-specific accelerator: concept:domain-specific-accelerator
   Domain-Specific Architectures: source:ref-138
-  Donald E. Knuth: entity:page-9452931b
-  Donald Knuth: entity:page-9452931b
-  Doug McIlroy: entity:page-11912d3c
-  Douglas McIlroy: entity:page-11912d3c
-  DSA: concept:page-dc2142ec
+  Donald E. Knuth: person:donald-knuth
+  Donald Knuth: person:donald-knuth
+  Doug McIlroy: person:douglas-mcilroy
+  Douglas McIlroy: person:douglas-mcilroy
+  DSA: concept:domain-specific-accelerator
   Dynamo - Amazon's Highly Available Key-value Store: source:ref-104
   Dynamo 논문: source:ref-104
   "Dynamo: Amazon's Highly Available Key-value Store": source:ref-104
@@ -1203,11 +1455,11 @@ aliases:
   EDSAC과 Initial Orders: source:src-003
   EDSAC에서 프로그래밍 언어까지: source:src-002
   EDSAC은 무엇의 최초인가: analysis:page-35a2e99b
-  Edsger Dijkstra: entity:page-b215332d
-  Edsger W. Dijkstra: entity:page-b215332d
+  Edsger Dijkstra: person:edsger-dijkstra
+  Edsger W. Dijkstra: person:edsger-dijkstra
   EDVAC: concept:page-4ac13a0d
   EDVAC 보고서: source:ref-006
-  effective calculability: concept:page-01f775b8
+  effective calculability: concept:computability
   Efficient Memory Management for Large Language Model Serving with PagedAttention: source:ref-076
   electric adder to the base two: concept:page-59604f53
   Electronic Delay Storage Automatic Calculator: concept:page-00b55ff0
@@ -1218,37 +1470,66 @@ aliases:
   End-to-End Argument: concept:end-to-end-principle
   End-to-End Arguments in System Design: source:ref-101
   End-to-End Principle: concept:end-to-end-principle
-  Energy-proportional computing: concept:page-494620a1
+  Energy-proportional computing: concept:energy-proportional-computing
   Energy-proportional computing paper: source:ref-046
-  entity-07a5de25c325b6f0: entity:page-07a5de25
-  entity-11912d3c997bcb12: entity:page-11912d3c
-  entity-1a2d36f59369083d: entity:page-1a2d36f5
-  entity-1cd37570ca9acab2: entity:page-1cd37570
-  entity-2f17a71c2815f89f: entity:page-2f17a71c
-  entity-3765181834c9ce12: entity:page-37651818
-  entity-3e83a021b00264fc: entity:page-3e83a021
-  entity-4e28b2707c1117c0: entity:page-4e28b270
-  entity-6c7519108429a099: entity:page-6c751910
-  entity-73f5398f704a53a7: entity:page-73f5398f
-  entity-7de052ed12219bf9: entity:page-7de052ed
-  entity-7e280fd99a7b35d0: entity:page-7e280fd9
-  entity-899388142c701ab0: entity:page-89938814
-  entity-9452931b4cae505b: entity:page-9452931b
-  entity-970046b84bf0f7e1: entity:page-970046b8
-  entity-aguera-y-arcas: entity:aguera-y-arcas
-  entity-b215332ddbebab35: entity:page-b215332d
-  entity-b47da9a0362c46e5: entity:page-b47da9a0
-  entity-b7b72330d3a62500: entity:page-b7b72330
-  entity-c645c95848b4d51e: entity:page-c645c958
-  entity-d28fe0553930f907: entity:page-d28fe055
-  entity-e23557a759d62f70: entity:page-e23557a7
-  entity-e8a9bb25328ec94e: entity:page-e8a9bb25
-  entity-ef144988cc7f1512: entity:page-ef144988
-  entity-ef60b71b4f5fba86: entity:page-ef60b71b
-  entity-gottfried-wilhelm-leibniz: entity:gottfried-wilhelm-leibniz
-  entity-john-searle: entity:john-searle
-  entity-lynn-margulis: entity:lynn-margulis
-  entity-thomas-hobbes: entity:thomas-hobbes
+  entity-07a5de25c325b6f0: person:alan-turing
+  entity-11912d3c997bcb12: person:douglas-mcilroy
+  entity-1a2d36f59369083d: person:charles-w-krueger
+  entity-1cd37570ca9acab2: person:claude-shannon
+  entity-2f17a71c2815f89f: person:stephen-c-johnson
+  entity-3765181834c9ce12: person:giuseppe-jacopini
+  entity-3e83a021b00264fc: person:dennis-ritchie
+  entity-4e28b2707c1117c0: person:john-backus
+  entity-6c7519108429a099: person:corrado-bohm
+  entity-73f5398f704a53a7: person:george-boole
+  entity-7de052ed12219bf9: person:david-parnas
+  entity-7e280fd99a7b35d0: person:maurice-wilkes
+  entity-899388142c701ab0: person:stanley-gill
+  entity-9452931b4cae505b: person:donald-knuth
+  entity-970046b84bf0f7e1: person:ada-lovelace
+  entity-aguera-y-arcas: person:aguera-y-arcas
+  entity-b215332ddbebab35: person:edsger-dijkstra
+  entity-b47da9a0362c46e5: person:charles-babbage
+  entity-b7b72330d3a62500: person:alonzo-church
+  entity-c645c95848b4d51e: person:tony-hoare
+  entity-d28fe0553930f907: person:grace-hopper
+  entity-e23557a759d62f70: person:ole-johan-dahl
+  entity-e8a9bb25328ec94e: person:david-wheeler
+  entity-ef144988cc7f1512: person:john-von-neumann
+  entity-ef60b71b4f5fba86: person:ken-thompson
+  entity-gottfried-wilhelm-leibniz: person:gottfried-wilhelm-leibniz
+  entity-john-searle: person:john-searle
+  entity-lynn-margulis: person:lynn-margulis
+  entity-thomas-hobbes: person:thomas-hobbes
+  entity:aguera-y-arcas: person:aguera-y-arcas
+  entity:gottfried-wilhelm-leibniz: person:gottfried-wilhelm-leibniz
+  entity:john-searle: person:john-searle
+  entity:lynn-margulis: person:lynn-margulis
+  entity:page-07a5de25: person:alan-turing
+  entity:page-11912d3c: person:douglas-mcilroy
+  entity:page-1a2d36f5: person:charles-w-krueger
+  entity:page-1cd37570: person:claude-shannon
+  entity:page-2f17a71c: person:stephen-c-johnson
+  entity:page-37651818: person:giuseppe-jacopini
+  entity:page-3e83a021: person:dennis-ritchie
+  entity:page-4e28b270: person:john-backus
+  entity:page-6c751910: person:corrado-bohm
+  entity:page-73f5398f: person:george-boole
+  entity:page-7de052ed: person:david-parnas
+  entity:page-7e280fd9: person:maurice-wilkes
+  entity:page-89938814: person:stanley-gill
+  entity:page-9452931b: person:donald-knuth
+  entity:page-970046b8: person:ada-lovelace
+  entity:page-b215332d: person:edsger-dijkstra
+  entity:page-b47da9a0: person:charles-babbage
+  entity:page-b7b72330: person:alonzo-church
+  entity:page-c645c958: person:tony-hoare
+  entity:page-d28fe055: person:grace-hopper
+  entity:page-e23557a7: person:ole-johan-dahl
+  entity:page-e8a9bb25: person:david-wheeler
+  entity:page-ef144988: person:john-von-neumann
+  entity:page-ef60b71b: person:ken-thompson
+  entity:thomas-hobbes: person:thomas-hobbes
   Entscheidungsproblem: concept:page-145622bc
   error budget: source:ref-118
   Esmaeilzadeh et al. 2011: source:ref-048
@@ -1263,6 +1544,7 @@ aliases:
   Excel formula recalculation and dependencies: source:ref-062
   Excel recalculation: source:ref-062
   execution provider contract: source:ref-135
+  Expectation vs. Experience — Evaluating the Usability of Code Generation Tools Powered by Large Language Models: source:ref-105
   "Expectation vs. Experience: Evaluating the Usability of Code Generation Tools Powered by Large Language Models": source:ref-105
   experienced OSS developers and AI: source:ref-107
   Explication de l'Arithmétique Binaire: source:ref-145
@@ -1284,6 +1566,7 @@ aliases:
   first practical stored-program computer: analysis:page-35a2e99b
   Fixed-size versus scaled-size speedup: analysis:page-3d25f482
   FlashAttention: source:ref-074
+  FlashAttention - Fast and Memory-Efficient Exact Attention with IO-Awareness: source:ref-074
   "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness": source:ref-074
   floating-point accuracy: concept:page-d4fdbd19
   floating-point correctness: concept:page-d4fdbd19
@@ -1314,11 +1597,11 @@ aliases:
   from-table-checking-to-numerical-result-contracts: analysis:from-table-checking-to-numerical-result-contracts
   Functionalism: concept:substrate-independence-functionalism
   functionalism vs Chinese room: analysis:functionalism-vs-chinese-room
-  G. Jacopini: entity:page-37651818
+  G. Jacopini: person:giuseppe-jacopini
   gate: concept:page-f019ffbf
   Generality as computing capability: analysis:page-63baea1f
   geometry to computation: analysis:geometry-to-computation-descartes-vs-fermat
-  George Boole: entity:page-73f5398f
+  George Boole: person:george-boole
   GFS 논문: source:ref-103
   Ghemawat Gobioff Leung 2003: source:ref-103
   GHG Protocol Product Life Cycle Accounting and Reporting Standard: source:ref-108
@@ -1328,7 +1611,7 @@ aliases:
   GitHub artifact attestation: source:ref-128
   GitHub Artifact Attestations: source:ref-128
   GitHub Copilot productivity experiment: source:ref-106
-  Giuseppe Jacopini: entity:page-37651818
+  Giuseppe Jacopini: person:giuseppe-jacopini
   go to statement: concept:page-60bcdf34
   Go To Statement Considered Harmful: source:ref-011
   Goldberg 1991: source:ref-050
@@ -1343,14 +1626,16 @@ aliases:
   goto/점프에서 구조적 프로그래밍으로: analysis:page-fc1fa74e
   goto에서 구조적 프로그래밍으로: analysis:page-fc1fa74e
   goto와 점프에서 구조적 프로그래밍으로: analysis:page-fc1fa74e
-  Gottfried Wilhelm Leibniz: entity:gottfried-wilhelm-leibniz
+  Gottfried Wilhelm Leibniz: person:gottfried-wilhelm-leibniz
   GPTQ: source:ref-081
+  GPTQ - Accurate Post-Training Quantization for Generative Pre-trained Transformers: source:ref-081
   GPTQ paper: source:ref-081
   "GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers": source:ref-081
-  Grace Hopper: entity:page-d28fe055
+  Grace Hopper: person:grace-hopper
   Grapheme Cluster: concept:page-29139463
   gray failure: source:ref-120
   Gray Failure: source:ref-120
+  Gray Failure The Achilles Heel of Cloud-Scale Systems: source:ref-120
   "Gray Failure: The Achilles' Heel of Cloud-Scale Systems": source:ref-120
   Green500 power tutorial 2007: source:ref-036
   Gujarati et al. 2020: source:ref-086
@@ -1364,8 +1649,8 @@ aliases:
   Halting Problem: concept:page-dc1573dc
   Handbook of Mathematical Functions: source:ref-054
   Handbook of Mathematical Functions with Formulas, Graphs, and Mathematical Tables: source:ref-054
-  hardware execution architecture: concept:page-e83f2a1b
-  Hardware execution model: concept:page-e83f2a1b
+  hardware execution architecture: concept:hardware-execution-model
+  Hardware execution model: concept:hardware-execution-model
   hardware execution model analysis: analysis:page-7a3b4c5d
   Hartmanis-Stearns 1965: source:ref-031
   Hennessy-Patterson 2019: source:ref-138
@@ -1379,7 +1664,7 @@ aliases:
   Hitting the Memory Wall: source:ref-039
   Hoare 1974: source:ref-093
   Hoare monitors: source:ref-093
-  Hobbes: entity:thomas-hobbes
+  Hobbes: person:thomas-hobbes
   Hobbes 1655: source:ref-143
   "Hobbes and Leibniz: Functions of Signs": source:ref-142
   homoglyph: concept:page-cb68fc61
@@ -1406,6 +1691,7 @@ aliases:
   IEEE 부동소수점 표준: source:ref-051
   IEEE Standard for Floating-Point Arithmetic: source:ref-051
   Implementing Remote Procedure Calls: source:ref-102
+  Implementing Remote Procedure Calls - Experience Notes: source:ref-140
   Implications of Historical Trends in the Electrical Efficiency of Computing: source:ref-047
   In Search of an Understandable Consensus Algorithm: source:ref-088
   In-Datacenter Performance Analysis of a Tensor Processing Unit: source:ref-042
@@ -1428,25 +1714,25 @@ aliases:
   ISCA dark silicon paper: source:ref-048
   iteration-level batching: concept:continuous-batching
   iteration-level scheduling: concept:continuous-batching
-  J. W. Backus: entity:page-4e28b270
-  John Backus: entity:page-4e28b270
+  J. W. Backus: person:john-backus
+  John Backus: person:john-backus
   John D. C. Little 1961: source:ref-085
-  John R. Searle: entity:john-searle
-  John Searle: entity:john-searle
-  John von Neumann: entity:page-ef144988
-  John W. Backus: entity:page-4e28b270
+  John R. Searle: person:john-searle
+  John Searle: person:john-searle
+  John von Neumann: person:john-von-neumann
+  John W. Backus: person:john-backus
   Johnson Ritchie portability paper: source:ref-021
   Jouppi et al. 2017: source:ref-042
   jump to structured programming: analysis:page-fc1fa74e
-  K. Thompson: entity:page-ef60b71b
+  K. Thompson: person:ken-thompson
   Karp 1972: source:ref-067
   Karp reduction: concept:polynomial-time-reduction
   Karp's 21 problems: source:ref-067
-  Ken Thompson: entity:page-ef60b71b
-  Kenneth Thompson: entity:page-ef60b71b
+  Ken Thompson: person:ken-thompson
+  Kenneth Thompson: person:ken-thompson
   key-value cache: concept:kv-cache
   Knowledge graph relation schema: document:knowledge-graph-schema
-  Knuth: entity:page-9452931b
+  Knuth: person:donald-knuth
   Knuth 1974: source:ref-014
   Koomey et al. 2011: source:ref-047
   Koomey's law: concept:page-0fdf8f46
@@ -1468,17 +1754,17 @@ aliases:
   Landauer 1961: source:ref-150
   Landauer limit: concept:landauer-principle
   Landauer's principle: concept:landauer-principle
-  latency tail: concept:page-f57f54a4
+  latency tail: concept:tail-latency
   Lattner and Adve 2004: source:ref-096
   Law of Homogeneity: concept:unit-segment-dimension-reduction
   Laws of Thought: source:ref-030
   LCA boundary: concept:lifecycle-assessment-boundary
-  Leibniz: entity:gottfried-wilhelm-leibniz
+  Leibniz: person:gottfried-wilhelm-leibniz
   Leibniz 1684: source:ref-144
   Leibniz 1703: source:ref-145
   Leiserson et al. 2020: source:ref-068
   Leviathan et al. 2023: source:ref-079
-  Library: concept:page-464cd2bb
+  Library: concept:library
   Library Catalog: concept:page-16d053e6
   library catalogue: concept:page-16d053e6
   life computation symbiogenesis agi: source:src-008
@@ -1523,6 +1809,7 @@ aliases:
   LLM throughput latency queueing analysis: analysis:llm-throughput-latency-queueing
   LLM weight quantization: concept:llm-weight-quantization
   LLVM: source:ref-096
+  LLVM - A Compilation Framework for Lifelong Program Analysis and Transformation: source:ref-096
   LLVM IR: source:ref-096
   LLVM IR ABI reference: source:ref-133
   LLVM LangRef: source:ref-133
@@ -1537,20 +1824,21 @@ aliases:
   logical once physical many: analysis:exactly-once-boundary
   low precision AI capability: analysis:low-precision-ai-result-contract
   low-bit LLM inference analysis: analysis:low-bit-llm-inference
-  Lynn Margulis: entity:lynn-margulis
-  Lynn Sagan: entity:lynn-margulis
-  M. D. McIlroy: entity:page-11912d3c
+  Lynn Margulis: person:lynn-margulis
+  Lynn Sagan: person:lynn-margulis
+  M. D. McIlroy: person:douglas-mcilroy
   Manchester Baby: concept:page-30fac639
   Manchester Baby source: source:ref-007
   Margulis 1967: source:ref-149
   Mass Produced Software Components: source:ref-002
   Mass-Produced Software Components: source:ref-002
   Mathematical tables: concept:mathematical-tables
+  Mathematical Tables - Containing the Common, Hyperbolic, and Logistic Logarithms: source:ref-055
   Mathematical Tables Project: source:ref-057
   "Mathematical Tables: Containing the Common, Hyperbolic, and Logistic Logarithms": source:ref-055
   mathematical-tables: concept:mathematical-tables
   Mattson et al. 2020: source:ref-070
-  Maurice Wilkes: entity:page-7e280fd9
+  Maurice Wilkes: person:maurice-wilkes
   Maynard Smith and Szathmáry 1995: source:ref-153
   McIlroy software components: source:ref-002
   meaning of machine computation: analysis:page-f5a31368
@@ -1561,7 +1849,7 @@ aliases:
   memory movement: concept:memory-movement-bottleneck-shift
   memory safety: concept:page-0939ab24
   Memory Safety: concept:page-0939ab24
-  Memory wall: concept:page-df7e932b
+  Memory wall: concept:memory-wall
   Memory wall paper: source:ref-039
   meta-9bc0d3d686763690: document:page-9bc0d3d6
   meta-index: document:index
@@ -1631,7 +1919,7 @@ aliases:
   npm provenance: source:ref-127
   Null terminator: concept:page-3d371068
   numerical correctness and performance: analysis:page-8f48231d
-  O.-J. Dahl: entity:page-e23557a7
+  O.-J. Dahl: person:ole-johan-dahl
   object code: concept:page-d2f65204
   Object program: concept:page-d2f65204
   OCI 런타임 명세: source:ref-136
@@ -1642,7 +1930,7 @@ aliases:
   OCI runtime contract: source:ref-136
   OCI Runtime Specification: source:ref-136
   OCI runtime-spec: source:ref-136
-  Ole-Johan Dahl: entity:page-e23557a7
+  Ole-Johan Dahl: person:ole-johan-dahl
   On Computable Numbers: source:ref-009
   On Computable Numbers with an Application to the Entscheidungsproblem: source:ref-009
   On the Computational Complexity of Algorithms: source:ref-031
@@ -1662,6 +1950,7 @@ aliases:
   optimizing compiler: concept:page-eb050b34
   Orca: source:ref-075
   ORCA: source:ref-075
+  Orca - A Distributed Serving System for Transformer-Based Generative Models: source:ref-075
   Orca serving system: source:ref-075
   "Orca: A Distributed Serving System for Transformer-Based Generative Models": source:ref-075
   OS: concept:page-c7e0c2c5
@@ -1671,7 +1960,7 @@ aliases:
   package provenance: concept:dependency-provenance
   PagedAttention: source:ref-076
   PagedAttention paper: source:ref-076
-  Parallel scalability: concept:page-d4ef0406
+  Parallel scalability: concept:parallel-scalability
   Parnas modularization paper: source:ref-003
   Partial failure: concept:partial-failure
   partial failures: concept:partial-failure
@@ -1698,7 +1987,7 @@ aliases:
   PostgreSQL transaction isolation documentation: source:ref-113
   Power Measurement Tutorial for the Green500 List: source:ref-036
   power usage effectiveness: concept:power-usage-effectiveness
-  Power wall and computing capability: analysis:page-353b4b2d
+  Power wall and computing capability: analysis:power-wall-performance
   prefill and decode: concept:prefill-decode
   prefill phase: concept:prefill-decode
   prefix caching: concept:prefix-kv-caching
@@ -1707,9 +1996,9 @@ aliases:
   "Prehistory: The Math Tables Project": source:ref-057
   Preparation of Programs: source:ref-001
   Princeton architecture: concept:page-7d1c4861
-  processor-memory performance gap: concept:page-df7e932b
+  processor-memory performance gap: concept:memory-wall
   Product Life Cycle Standard: source:ref-108
-  Programmability: concept:page-569257e7
+  Programmability: concept:programmability
   Programming Language: concept:page-26360c8b
   prompt KV cache reuse: concept:prefix-kv-caching
   PUE: concept:power-usage-effectiveness
@@ -1904,7 +2193,7 @@ aliases:
   retry budget: concept:retries
   retry storm: concept:retries
   Return address: concept:page-47ba75de
-  reuse: concept:page-65669d1c
+  reuse: concept:software-reuse
   RFC 3629: source:ref-023
   RFC 3629 UTF-8: source:ref-023
   RFC 9110: source:ref-114
@@ -1925,7 +2214,7 @@ aliases:
   runtime contract: concept:runtime-contract
   runtime contract analysis: analysis:runtime-contract
   runtime contract는 무엇을 보장해야 하는가: analysis:runtime-contract
-  S. C. Johnson: entity:page-2f17a71c
+  S. C. Johnson: person:stephen-c-johnson
   Sagan 1967: source:ref-149
   Saltzer Reed Clark 1984: source:ref-101
   Sandberg et al. 1985: source:ref-139
@@ -1948,9 +2237,10 @@ aliases:
   Serializable Snapshot Isolation: source:ref-112
   Serving DNNs like Clockwork Performance Predictability from the Bottom Up: source:ref-086
   "Serving DNNs like Clockwork: Performance Predictability from the Bottom Up": source:ref-086
+  SGLang - Efficient Execution of Structured Language Model Programs: source:ref-080
   SGLang paper: source:ref-080
   "SGLang: Efficient Execution of Structured Language Model Programs": source:ref-080
-  Shannon: entity:page-1cd37570
+  Shannon: person:claude-shannon
   Shannon 1938: source:ref-008
   single program to concurrent order: analysis:concurrent-order-shared-state
   Sixteen Questions about Software Reuse: source:ref-005
@@ -1967,7 +2257,7 @@ aliases:
   software layers: analysis:page-6a13ea1d
   software portability: concept:page-5063ca2b
   Software Reuse: source:ref-004
-  Software reuse concept: concept:page-65669d1c
+  Software reuse concept: concept:software-reuse
   software reuse history: analysis:page-0b006186
   source code: concept:page-3e131394
   Source program: concept:page-3e131394
@@ -1975,6 +2265,170 @@ aliases:
   SOURCE_DATE_EPOCH: source:ref-124
   SOURCE_DATE_EPOCH 명세: source:ref-124
   SOURCE_DATE_EPOCH Specification: source:ref-124
+  source:ref-001: source:ref-001
+  source:ref-002: source:ref-002
+  source:ref-003: source:ref-003
+  source:ref-004: source:ref-004
+  source:ref-005: source:ref-005
+  source:ref-006: source:ref-006
+  source:ref-007: source:ref-007
+  source:ref-008: source:ref-008
+  source:ref-009: source:ref-009
+  source:ref-010: source:ref-010
+  source:ref-011: source:ref-011
+  source:ref-012: source:ref-012
+  source:ref-013: source:ref-013
+  source:ref-014: source:ref-014
+  source:ref-015: source:ref-015
+  source:ref-016: source:ref-016
+  source:ref-017: source:ref-017
+  source:ref-018: source:ref-018
+  source:ref-019: source:ref-019
+  source:ref-020: source:ref-020
+  source:ref-021: source:ref-021
+  source:ref-022: source:ref-022
+  source:ref-023: source:ref-023
+  source:ref-024: source:ref-024
+  source:ref-025: source:ref-025
+  source:ref-026: source:ref-026
+  source:ref-027: source:ref-027
+  source:ref-028: source:ref-028
+  source:ref-029: source:ref-029
+  source:ref-030: source:ref-030
+  source:ref-031: source:ref-031
+  source:ref-032: source:ref-032
+  source:ref-033: source:ref-033
+  source:ref-034: source:ref-034
+  source:ref-035: source:ref-035
+  source:ref-036: source:ref-036
+  source:ref-037: source:ref-037
+  source:ref-038: source:ref-038
+  source:ref-039: source:ref-039
+  source:ref-040: source:ref-040
+  source:ref-041: source:ref-041
+  source:ref-042: source:ref-042
+  source:ref-043: source:ref-043
+  source:ref-044: source:ref-044
+  source:ref-045: source:ref-045
+  source:ref-046: source:ref-046
+  source:ref-047: source:ref-047
+  source:ref-048: source:ref-048
+  source:ref-049: source:ref-049
+  source:ref-050: source:ref-050
+  source:ref-051: source:ref-051
+  source:ref-052: source:ref-052
+  source:ref-053: source:ref-053
+  source:ref-054: source:ref-054
+  source:ref-055: source:ref-055
+  source:ref-056: source:ref-056
+  source:ref-057: source:ref-057
+  source:ref-058: source:ref-058
+  source:ref-059: source:ref-059
+  source:ref-060: source:ref-060
+  source:ref-061: source:ref-061
+  source:ref-062: source:ref-062
+  source:ref-063: source:ref-063
+  source:ref-064: source:ref-064
+  source:ref-065: source:ref-065
+  source:ref-066: source:ref-066
+  source:ref-067: source:ref-067
+  source:ref-068: source:ref-068
+  source:ref-069: source:ref-069
+  source:ref-070: source:ref-070
+  source:ref-071: source:ref-071
+  source:ref-072: source:ref-072
+  source:ref-073: source:ref-073
+  source:ref-074: source:ref-074
+  source:ref-075: source:ref-075
+  source:ref-076: source:ref-076
+  source:ref-077: source:ref-077
+  source:ref-078: source:ref-078
+  source:ref-079: source:ref-079
+  source:ref-080: source:ref-080
+  source:ref-081: source:ref-081
+  source:ref-082: source:ref-082
+  source:ref-083: source:ref-083
+  source:ref-084: source:ref-084
+  source:ref-085: source:ref-085
+  source:ref-086: source:ref-086
+  source:ref-087: source:ref-087
+  source:ref-088: source:ref-088
+  source:ref-089: source:ref-089
+  source:ref-090: source:ref-090
+  source:ref-091: source:ref-091
+  source:ref-092: source:ref-092
+  source:ref-093: source:ref-093
+  source:ref-094: source:ref-094
+  source:ref-095: source:ref-095
+  source:ref-096: source:ref-096
+  source:ref-097: source:ref-097
+  source:ref-098: source:ref-098
+  source:ref-099: source:ref-099
+  source:ref-100: source:ref-100
+  source:ref-101: source:ref-101
+  source:ref-102: source:ref-102
+  source:ref-103: source:ref-103
+  source:ref-104: source:ref-104
+  source:ref-105: source:ref-105
+  source:ref-106: source:ref-106
+  source:ref-107: source:ref-107
+  source:ref-108: source:ref-108
+  source:ref-109: source:ref-109
+  source:ref-110: source:ref-110
+  source:ref-111: source:ref-111
+  source:ref-112: source:ref-112
+  source:ref-113: source:ref-113
+  source:ref-114: source:ref-114
+  source:ref-115: source:ref-115
+  source:ref-116: source:ref-116
+  source:ref-117: source:ref-117
+  source:ref-118: source:ref-118
+  source:ref-119: source:ref-119
+  source:ref-120: source:ref-120
+  source:ref-121: source:ref-121
+  source:ref-122: source:ref-122
+  source:ref-123: source:ref-123
+  source:ref-124: source:ref-124
+  source:ref-125: source:ref-125
+  source:ref-126: source:ref-126
+  source:ref-127: source:ref-127
+  source:ref-128: source:ref-128
+  source:ref-129: source:ref-129
+  source:ref-130: source:ref-130
+  source:ref-131: source:ref-131
+  source:ref-132: source:ref-132
+  source:ref-133: source:ref-133
+  source:ref-134: source:ref-134
+  source:ref-135: source:ref-135
+  source:ref-136: source:ref-136
+  source:ref-137: source:ref-137
+  source:ref-138: source:ref-138
+  source:ref-139: source:ref-139
+  source:ref-140: source:ref-140
+  source:ref-141: source:ref-141
+  source:ref-142: source:ref-142
+  source:ref-143: source:ref-143
+  source:ref-144: source:ref-144
+  source:ref-145: source:ref-145
+  source:ref-146: source:ref-146
+  source:ref-147: source:ref-147
+  source:ref-148: source:ref-148
+  source:ref-149: source:ref-149
+  source:ref-150: source:ref-150
+  source:ref-151: source:ref-151
+  source:ref-152: source:ref-152
+  source:ref-153: source:ref-153
+  source:ref-154: source:ref-154
+  source:src-001: source:src-001
+  source:src-002: source:src-002
+  source:src-003: source:src-003
+  source:src-004: source:src-004
+  source:src-005: source:src-005
+  source:src-006: source:src-006
+  source:src-007: source:src-007
+  source:src-008: source:src-008
+  source:src-009: source:src-009
+  source:src-010: source:src-010
   SPACE 생산성 프레임워크: source:ref-072
   SPACE framework: source:ref-072
   Spanner: source:ref-089
@@ -2016,12 +2470,12 @@ aliases:
   Stack frame: concept:page-f6e983b1
   Standards Eastern Automatic Computer: source:ref-059
   Standards Electronic Automatic Computer: source:ref-059
-  Stanley Gill: entity:page-89938814
+  Stanley Gill: person:stanley-gill
   step-wise program composition: concept:page-723508cf
-  Stephen C. Johnson: entity:page-2f17a71c
+  Stephen C. Johnson: person:stephen-c-johnson
   Stepwise refinement: concept:page-723508cf
-  Steve Johnson: entity:page-2f17a71c
-  Stored-program computer: concept:page-ef02c2bc
+  Steve Johnson: person:stephen-c-johnson
+  Stored-program computer: concept:stored-program-computer
   stored-program lineage: analysis:page-3259f99b
   stored-results-to-executable-procedures: analysis:stored-results-to-executable-procedures
   Stripe 멱등 요청: source:ref-115
@@ -2031,11 +2485,11 @@ aliases:
   structured control: concept:page-7cc49c18
   Structured program theorem: concept:page-8e6aa351
   Structured Programming: source:ref-013
-  Structured programming concept: concept:page-1c13e721
-  structured programming methodology: concept:page-1c13e721
+  Structured programming concept: concept:structured-programming
+  structured programming methodology: concept:structured-programming
   Structured Programming with go to Statements: source:ref-014
   structured programming with goto: source:ref-014
-  Subroutine: concept:page-446e9f53
+  Subroutine: concept:subroutine
   Subroutine and Stack: source:src-004
   Substrate independence: concept:substrate-independence-functionalism
   Sun NFS: source:ref-139
@@ -2045,10 +2499,10 @@ aliases:
   switching network: concept:page-8ae81e59
   Symbiogenesis: concept:symbiogenesis
   symbiosis: concept:symbiogenesis
-  Symbol Manipulation: concept:page-c7fabfe3
+  Symbol Manipulation: concept:symbolic-manipulation
   Symbolic Analysis: source:ref-008
   Symbolic Cognition: concept:cogitatio-caeca
-  symbolic manipulation: concept:page-c7fabfe3
+  symbolic manipulation: concept:symbolic-manipulation
   symbols as computation engine: analysis:symbols-from-aid-to-computation-engine
   synchronization: concept:mutual-exclusion-synchronization
   syntax leads semantics: analysis:exponent-notation-delay
@@ -2058,7 +2512,7 @@ aliases:
   system programming: concept:page-141883d0
   Systems programming: concept:page-141883d0
   Tail at Scale: source:ref-049
-  tail latency: concept:page-f57f54a4
+  tail latency: concept:tail-latency
   Tensor Processing Unit performance: source:ref-042
   TensorFlow SavedModel Signatures: source:ref-134
   TensorFlow serving signature: source:ref-134
@@ -2078,6 +2532,7 @@ aliases:
   The History of Mathematical Tables: source:ref-052
   The History of Mathematical Tables - From Sumer to Spreadsheets: source:ref-052
   "The History of Mathematical Tables: From Sumer to Spreadsheets": source:ref-052
+  The Impact of AI on Developer Productivity — Evidence from GitHub Copilot: source:ref-106
   "The Impact of AI on Developer Productivity: Evidence from GitHub Copilot": source:ref-106
   The Landscape of Parallel Computing Research - A View from Berkeley: source:ref-040
   The Laws of Thought: source:ref-030
@@ -2096,7 +2551,7 @@ aliases:
   Theory of Self-Reproducing Automata: source:ref-152
   There's Plenty of Room at the Top: source:ref-068
   "There’s plenty of room at the Top: What will drive computer performance after Moore’s law?": source:ref-068
-  Thomas Hobbes: entity:thomas-hobbes
+  Thomas Hobbes: person:thomas-hobbes
   time to quality: concept:time-to-quality
   time to train: concept:time-to-quality
   time-to-quality: concept:time-to-quality
@@ -2104,9 +2559,10 @@ aliases:
   Time, Clocks: source:ref-100
   Time, Clocks, and the Ordering of Events in a Distributed System: source:ref-100
   TokenPowerBench: source:ref-083
+  TokenPowerBench - Benchmarking the Power Consumption of LLM Inference: source:ref-083
   "TokenPowerBench: Benchmarking the Power Consumption of LLM Inference": source:ref-083
   tokens per second is not enough: analysis:token-rate-service-capability
-  Tony Hoare: entity:page-c645c958
+  Tony Hoare: person:tony-hoare
   TOP500 Linpack benchmark page: source:ref-033
   TPU paper: source:ref-042
   Transaction ordering guarantees: analysis:transaction-ordering-guarantees
@@ -2119,16 +2575,17 @@ aliases:
   Transformer IO 병목: analysis:transformer-io-bottleneck
   Transformer paper: source:ref-073
   transistor under-utilization: concept:page-7fcb10cc
-  translator: concept:page-8d4656f3
+  translator: concept:compiler
   TrueTime: concept:external-consistency-time-uncertainty
   TTFT와 TPOT: concept:llm-inference-service-metrics
   TTT: concept:time-to-quality
-  Turing: entity:page-07a5de25
+  Turing: person:alan-turing
   Turing 1936: source:ref-009
   Turing Lecture 2018: source:ref-138
   Turing Machine: concept:page-c617f209
   Turing thesis: concept:page-b95bdd2d
   TVM: source:ref-099
+  TVM - An Automated End-to-End Optimizing Compiler for Deep Learning: source:ref-099
   TVM compiler: source:ref-099
   "TVM: An Automated End-to-End Optimizing Compiler for Deep Learning": source:ref-099
   "UAX #15": source:ref-024
@@ -2180,7 +2637,7 @@ aliases:
   VisiCalc Apple II Version 1.0 Manual: source:ref-061
   VisiCalc manual: source:ref-061
   vLLM paper: source:ref-076
-  von Neumann: entity:page-ef144988
+  von Neumann: person:john-von-neumann
   von Neumann 1966: source:ref-152
   Von Neumann Architecture: concept:page-7d1c4861
   von Neumann model: concept:page-7d1c4861

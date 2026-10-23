@@ -4,6 +4,7 @@
 
 ```text
 nodes.yml                 인물·개념·작품·사건 노드
+reviews.yml               상위 50개 검토·key/type override
 works.yml                 문헌·판본
 aliases.yml               제목·별칭·이전 key → key
 vocabularies/

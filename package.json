@@ -7,7 +7,9 @@
     "node": ">=22"
   },
   "scripts": {
-    "knowledge:seed": "node packages/knowledge/src/cli/seed.mjs"
+    "knowledge:seed": "node packages/knowledge/src/cli/seed.mjs",
+    "knowledge:report": "node packages/knowledge/src/cli/report.mjs",
+    "knowledge:check": "node packages/knowledge/src/cli/check.mjs"
   },
   "dependencies": {
     "yaml": "^2.8.1"
