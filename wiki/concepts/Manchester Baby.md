@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: concept-30fac639582288be
+key: concept:page-30fac639
 kind: concept
 title: Manchester Baby
 aliases:
@@ -29,6 +30,12 @@ history:
   layer: machine
 redirect_from:
   - /concepts/manchester-baby/
+relations:
+  - predicate: precedes
+    target: concept:page-00b55ff0
+    note: 1948년 저장 프로그램 실행은 1949년 EDSAC의 정규 계산 서비스와 실용 운영보다 앞선다.
+    evidence:
+      - source: ref-007
 ---
 
 ## 개요
@@ -47,9 +54,11 @@ Baby는 "처음 저장 프로그램을 실행한 전자식 디지털 컴퓨터"�
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | precedes | [[EDSAC]] | 1948년 저장 프로그램 실행은 1949년 EDSAC의 정규 계산 서비스와 실용 운영보다 앞선다. | [[The Manchester Small Scale Experimental Machine - The Baby]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: concept-60bcdf34d9470eea
+key: concept:page-60bcdf34
 kind: concept
 title: GOTO 문
 aliases:
@@ -25,6 +26,17 @@ history:
   layer: software
 redirect_from:
   - /concepts/goto-문/
+relations:
+  - predicate: implements
+    target: concept:page-830fb720
+    note: 실행 위치를 임의 표지로 옮기는 점프다.
+    evidence:
+      - source: ref-011
+  - predicate: constrains
+    target: concept:structured-programming
+    note: 무제한 점프가 프로그램 이해를 해친다는 비판의 대상이다.
+    evidence:
+      - source: ref-013
 ---
 
 ## 개요
@@ -41,10 +53,12 @@ Dijkstra의 비판은 `goto`가 계산 능력에 필요 없다는 주장에 머�
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | implements | [[제어 흐름]] | 실행 위치를 임의 표지로 옮기는 점프다. | [[A Case against the GO TO Statement]] |
 | constrains | [[구조적 프로그래밍]] | 무제한 점프가 프로그램 이해를 해친다는 비판의 대상이다. | [[Structured Programming]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 <!-- wiki-v2:evidence-start -->

@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: concept-f438fd4127b48dbb
+key: concept:page-f438fd41
 kind: concept
 title: C 언어
 aliases:
@@ -32,6 +33,17 @@ history:
   layer: software
 redirect_from:
   - /concepts/c-언어/
+relations:
+  - predicate: enables
+    target: concept:page-141883d0
+    note: 운영체제 자원을 이식 가능한 표기로 다루게 한다.
+    evidence:
+      - source: ref-019
+  - predicate: enables
+    target: concept:page-5063ca2b
+    note: 같은 소스를 여러 Unix 구현에서 번역하게 한다.
+    evidence:
+      - source: ref-021
 ---
 
 ## 개요
@@ -52,10 +64,12 @@ C는 기계에 가까운 표현력을 제공하는 만큼 [[메모리 안전성]
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | enables | [[시스템 프로그래밍]] | 운영체제 자원을 이식 가능한 표기로 다루게 한다. | [[The Development of the C Language]] |
 | enables | [[이식성]] | 같은 소스를 여러 Unix 구현에서 번역하게 한다. | [[Portability of C Programs and the UNIX System]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 <!-- wiki-v2:evidence-start -->

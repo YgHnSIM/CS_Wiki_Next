@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: concept-ai-coding-assistance
+key: concept:ai-coding-assistance
 kind: concept
 title: AI 코딩 지원
 aliases:
@@ -27,6 +28,19 @@ history:
   layer: software
 redirect_from:
   - /concepts/ai-코딩-지원/
+relations:
+  - predicate: exemplifies
+    target: concept:automation-boundary
+    note: AI 도구가 구현 후보를 생성해도 사람의 요구 해석·선택·검증과 책임이 남는 분업을 보여 준다.
+    evidence:
+      - source: ref-105
+      - source: ref-106
+  - predicate: enables
+    target: concept:verification-labor
+    note: 생성된 제안을 실제 시스템에 사용할지 판단하기 위한 이해·편집·테스트·리뷰 작업을 발생시킨다.
+    evidence:
+      - source: ref-105
+      - source: ref-107
 ---
 
 ## 개요
@@ -46,10 +60,12 @@ AI 코딩 지원의 효과는 제안 생성 속도뿐 아니라 요청의 경계
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | exemplifies | [[자동화 경계]] | AI 도구가 구현 후보를 생성해도 사람의 요구 해석·선택·검증과 책임이 남는 분업을 보여 준다. | [[Expectation vs. Experience: Evaluating the Usability of Code Generation Tools Powered by Large Language Models]], [[The Impact of AI on Developer Productivity: Evidence from GitHub Copilot]] |
 | enables | [[검증 노동]] | 생성된 제안을 실제 시스템에 사용할지 판단하기 위한 이해·편집·테스트·리뷰 작업을 발생시킨다. | [[Expectation vs. Experience: Evaluating the Usability of Code Generation Tools Powered by Large Language Models]], [[Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

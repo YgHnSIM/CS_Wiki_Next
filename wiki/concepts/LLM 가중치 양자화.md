@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: concept-llm-weight-quantization
+key: concept:llm-weight-quantization
 kind: concept
 title: LLM 가중치 양자화
 aliases:
@@ -29,6 +30,27 @@ history:
   layer: system
 redirect_from:
   - /concepts/llm-가중치-양자화/
+relations:
+  - predicate: narrower
+    target: concept:mixed-precision
+    note: LLM의 가중치 저장·전송에 낮은 비트를 배치하고 활성값·누산에는 더 높은 정밀도를 유지하는 특화 설계다.
+    evidence:
+      - source: ref-081
+  - predicate: responds_to
+    target: concept:memory-wall
+    note: 모델 가중치의 용량과 HBM 읽기 바이트를 줄여 생성 단계의 가중치 대역폭 제약에 대응한다.
+    evidence:
+      - source: ref-081
+  - predicate: implements
+    target: concept:transformer
+    note: Transformer 선형층의 가중치 표현을 낮은 비트와 그룹별 스케일로 바꾸되 모델 구조는 유지한다.
+    evidence:
+      - source: ref-082
+  - predicate: constrains
+    target: concept:computing-capability
+    note: 압축률·커널 속도와 모델 과업 품질을 함께 만족한 실행만 유효한 능력 향상으로 셀 수 있다.
+    evidence:
+      - source: ref-082
 ---
 
 ## 개요
@@ -63,12 +85,14 @@ redirect_from:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
-| narrower | [[혼합 정밀도]] | LLM의 가중치 저장·전송에 낮은 비트를 배치하고 활성값·누산에는 더 높은 정밀도를 유지하는 특화 설계다. | [[GPTQ - Accurate Post-Training Quantization for Generative Pre-trained Transformers]] |
-| responds_to | [[메모리 장벽]] | 모델 가중치의 용량과 HBM 읽기 바이트를 줄여 생성 단계의 가중치 대역폭 제약에 대응한다. | [[GPTQ - Accurate Post-Training Quantization for Generative Pre-trained Transformers]] |
-| implements | [[Transformer]] | Transformer 선형층의 가중치 표현을 낮은 비트와 그룹별 스케일로 바꾸되 모델 구조는 유지한다. | [[AWQ - Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration]] |
-| constrains | [[컴퓨팅 능력이란 무엇인가]] | 압축률·커널 속도와 모델 과업 품질을 함께 만족한 실행만 유효한 능력 향상으로 셀 수 있다. | [[AWQ - Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration]] |
+| narrower | [[혼합 정밀도]] | LLM의 가중치 저장·전송에 낮은 비트를 배치하고 활성값·누산에는 더 높은 정밀도를 유지하는 특화 설계다. | [[GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers]] |
+| responds_to | [[메모리 장벽]] | 모델 가중치의 용량과 HBM 읽기 바이트를 줄여 생성 단계의 가중치 대역폭 제약에 대응한다. | [[GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers]] |
+| implements | [[Transformer]] | Transformer 선형층의 가중치 표현을 낮은 비트와 그룹별 스케일로 바꾸되 모델 구조는 유지한다. | [[AWQ: Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration]] |
+| constrains | [[컴퓨팅 능력이란 무엇인가]] | 압축률·커널 속도와 모델 과업 품질을 함께 만족한 실행만 유효한 능력 향상으로 셀 수 있다. | [[AWQ: Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

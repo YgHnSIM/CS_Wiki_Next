@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: concept-00b55ff0f7a3581b
+key: concept:page-00b55ff0
 kind: concept
 title: EDSAC
 aliases:
@@ -32,6 +33,17 @@ history:
   layer: machine
 redirect_from:
   - /concepts/edsac/
+relations:
+  - predicate: exemplifies
+    target: concept:stored-program-computer
+    note: 저장된 프로그램을 실용 과학 계산 서비스로 운용한 사례다.
+    evidence:
+      - source: src-002
+  - predicate: enables
+    target: concept:library
+    note: 서브루틴 카탈로그와 적재 절차를 소프트웨어 계층으로 정착시켰다.
+    evidence:
+      - source: src-003
 ---
 
 ## 개요
@@ -60,10 +72,12 @@ Wilkes의 EDSAC 설계는 [[First Draft of a Report on the EDVAC]]와 Moore Scho
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | exemplifies | [[저장 프로그램 컴퓨터]] | 저장된 프로그램을 실용 과학 계산 서비스로 운용한 사례다. | [[초기 소프트웨어의 탄생]] |
 | enables | [[라이브러리]] | 서브루틴 카탈로그와 적재 절차를 소프트웨어 계층으로 정착시켰다. | [[EDSAC과 Initial Orders]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 <!-- wiki-v2:evidence-start -->

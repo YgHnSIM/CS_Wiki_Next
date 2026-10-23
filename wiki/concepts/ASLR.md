@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: aslr
+key: concept:aslr
 kind: concept
 title: ASLR (Address Space Layout Randomization)
 aliases:
@@ -25,6 +26,19 @@ history:
   layer: system
 redirect_from:
   - /concepts/aslr/
+relations:
+  - predicate: constrains
+    target: concept:page-c297dc5b
+    note: ASLR은 스택의 기준 위치를 달리해 고정된 스택 주소를 전제로 한 추측을 어렵게 만든다.
+    evidence:
+      - source: ref-137
+      - source: src-004
+  - predicate: constrains
+    target: concept:page-47ba75de
+    note: 복귀 주소가 놓이는 주변 스택의 절대 위치가 달라질 수 있지만, ASLR이 복귀 주소의 무결성 자체를 보장하는 것은 아니다.
+    evidence:
+      - source: ref-137
+      - source: src-004
 ---
 
 ## 개요
@@ -108,10 +122,12 @@ ASLR의 설계와 적용은 운영체제 보안 완화의 역사 속에서 발�
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | constrains | [[스택]] | ASLR은 스택의 기준 위치를 달리해 고정된 스택 주소를 전제로 한 추측을 어렵게 만든다. | [[ASLR 1차 자료 묶음]], [[서브루틴과 스택(Stack)의 원리]] |
 | constrains | [[복귀 주소]] | 복귀 주소가 놓이는 주변 스택의 절대 위치가 달라질 수 있지만, ASLR이 복귀 주소의 무결성 자체를 보장하는 것은 아니다. | [[ASLR 1차 자료 묶음]], [[서브루틴과 스택(Stack)의 원리]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

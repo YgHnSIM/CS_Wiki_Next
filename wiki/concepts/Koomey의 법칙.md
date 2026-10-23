@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: concept-0fdf8f46e0e7b677
+key: concept:page-0fdf8f46
 kind: concept
 title: Koomey의 법칙
 aliases:
@@ -27,6 +28,12 @@ history:
   layer: measurement
 redirect_from:
   - /concepts/koomey의-법칙/
+relations:
+  - predicate: narrower
+    target: concept:computing-capability
+    note: 컴퓨팅 능력의 여러 층위 가운데 같은 에너지로 수행 가능한 환산 계산량의 역사적 변화에 초점을 맞춘다.
+    evidence:
+      - source: ref-047
 ---
 
 ## 개요
@@ -102,9 +109,11 @@ Koomey의 법칙이 보여주는 중요한 변화는 컴퓨팅 능력이 속도�
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | narrower | [[컴퓨팅 능력이란 무엇인가]] | 컴퓨팅 능력의 여러 층위 가운데 같은 에너지로 수행 가능한 환산 계산량의 역사적 변화에 초점을 맞춘다. | [[Implications of Historical Trends in the Electrical Efficiency of Computing]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

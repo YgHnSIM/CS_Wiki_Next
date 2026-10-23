@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: concept-kv-cache
+key: concept:kv-cache
 kind: concept
 title: KV 캐시
 aliases:
@@ -31,6 +32,32 @@ history:
   layer: system
 redirect_from:
   - /concepts/kv-캐시/
+relations:
+  - predicate: implements
+    target: concept:self-attention
+    note: 이전 위치의 키와 값을 보존해 새 질의가 과거 문맥을 참조하는 증분 어텐션을 구현한다.
+    evidence:
+      - source: ref-075
+  - predicate: enables
+    target: concept:continuous-batching
+    note: 요청별 어텐션 상태를 반복 사이에 유지해 스케줄러가 선택한 요청만 다음 토큰으로 전진시킬 수 있게 한다.
+    evidence:
+      - source: ref-075
+  - predicate: enables
+    target: concept:prefix-kv-caching
+    note: 동일 토큰 접두사의 키·값 상태를 요청·호출 사이에 보존해 프리필 재계산을 피할 수 있게 한다.
+    evidence:
+      - source: ref-080
+  - predicate: exemplifies
+    target: concept:memory-wall
+    note: GPU 메모리 용량·단편화·데이터 배치가 연산기의 잠재 처리량보다 활성 배치 수를 먼저 제한할 수 있다.
+    evidence:
+      - source: ref-076
+  - predicate: constrains
+    target: concept:computing-capability
+    note: 토큰당 계산 절감과 요청당 상태 증가가 같은 시스템의 지연·처리량·자원 효율을 서로 다르게 바꾼다.
+    evidence:
+      - source: ref-076
 ---
 
 ## 개요
@@ -65,13 +92,15 @@ PagedAttention은 논리 캐시를 고정 크기 블록으로 나누고 각 논�
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
-| implements | [[자기 주의]] | 이전 위치의 키와 값을 보존해 새 질의가 과거 문맥을 참조하는 증분 어텐션을 구현한다. | [[Orca - A Distributed Serving System for Transformer-Based Generative Models]] |
-| enables | [[연속 배칭]] | 요청별 어텐션 상태를 반복 사이에 유지해 스케줄러가 선택한 요청만 다음 토큰으로 전진시킬 수 있게 한다. | [[Orca - A Distributed Serving System for Transformer-Based Generative Models]] |
-| enables | [[접두사 KV 캐싱]] | 동일 토큰 접두사의 키·값 상태를 요청·호출 사이에 보존해 프리필 재계산을 피할 수 있게 한다. | [[SGLang - Efficient Execution of Structured Language Model Programs]] |
+| implements | [[자기 주의]] | 이전 위치의 키와 값을 보존해 새 질의가 과거 문맥을 참조하는 증분 어텐션을 구현한다. | [[Orca: A Distributed Serving System for Transformer-Based Generative Models]] |
+| enables | [[연속 배칭]] | 요청별 어텐션 상태를 반복 사이에 유지해 스케줄러가 선택한 요청만 다음 토큰으로 전진시킬 수 있게 한다. | [[Orca: A Distributed Serving System for Transformer-Based Generative Models]] |
+| enables | [[접두사 KV 캐싱]] | 동일 토큰 접두사의 키·값 상태를 요청·호출 사이에 보존해 프리필 재계산을 피할 수 있게 한다. | [[SGLang: Efficient Execution of Structured Language Model Programs]] |
 | exemplifies | [[메모리 장벽]] | GPU 메모리 용량·단편화·데이터 배치가 연산기의 잠재 처리량보다 활성 배치 수를 먼저 제한할 수 있다. | [[Efficient Memory Management for Large Language Model Serving with PagedAttention]] |
 | constrains | [[컴퓨팅 능력이란 무엇인가]] | 토큰당 계산 절감과 요청당 상태 증가가 같은 시스템의 지연·처리량·자원 효율을 서로 다르게 바꾼다. | [[Efficient Memory Management for Large Language Model Serving with PagedAttention]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

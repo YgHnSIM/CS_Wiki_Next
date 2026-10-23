@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: concept-ai-computing-bottlenecks
+key: concept:ai-computing-bottlenecks
 kind: concept
 title: AI 컴퓨팅 병목
 aliases:
@@ -28,6 +29,27 @@ capability_layers:
   - resource-efficiency
 history:
   layer: architecture
+relations:
+  - predicate: synthesizes
+    target: concept:memory-wall
+    note: AI의 메모리 용량·대역폭 제약을 일반적인 프로세서-메모리 격차와 연결한다.
+    evidence:
+      - source: ref-039
+  - predicate: synthesizes
+    target: concept:parallel-scalability
+    note: 자원 증가가 통신·동기화 비용을 함께 키우는 조건을 포함한다.
+    evidence:
+      - source: ref-035
+  - predicate: measures
+    target: concept:llm-inference-service-metrics
+    note: 지연·처리량·goodput을 실제 서비스 병목의 관측값으로 사용한다.
+    evidence:
+      - source: ref-077
+  - predicate: constrains
+    target: concept:energy-proportional-computing
+    note: AI 시설의 전력과 냉각이 자원 효율과 배치 가능성을 제한한다.
+    evidence:
+      - source: ref-084
 ---
 
 ## 개요
@@ -58,12 +80,14 @@ LLM 학습에서는 장치 간 gradient·parameter 통신, 입력 파이프라�
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | synthesizes | [[메모리 장벽]] | AI의 메모리 용량·대역폭 제약을 일반적인 프로세서-메모리 격차와 연결한다. | [[Hitting the Memory Wall]] |
 | synthesizes | [[병렬 확장성]] | 자원 증가가 통신·동기화 비용을 함께 키우는 조건을 포함한다. | [[Validity of the Single Processor Approach to Achieving Large Scale Computing Capabilities]] |
-| measures | [[LLM 추론 서비스 지표]] | 지연·처리량·goodput을 실제 서비스 병목의 관측값으로 사용한다. | [[DistServe - Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving]] |
+| measures | [[LLM 추론 서비스 지표]] | 지연·처리량·goodput을 실제 서비스 병목의 관측값으로 사용한다. | [[DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving]] |
 | constrains | [[에너지 비례 컴퓨팅]] | AI 시설의 전력과 냉각이 자원 효율과 배치 가능성을 제한한다. | [[MLPerf Inference Power Measurement]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

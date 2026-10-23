@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: concept-2ff6633d43e61407
+key: concept:page-2ff6633d
 kind: concept
 title: API
 aliases:
@@ -25,6 +26,22 @@ history:
   layer: software
 redirect_from:
   - /concepts/api/
+relations:
+  - predicate: synthesizes
+    target: concept:page-16d053e6
+    note: 루틴의 동작·비용·정밀도를 명세로 분리한 초기 사용 계약을 API적 사고로 읽는다.
+    evidence:
+      - source: ref-001
+  - predicate: enables
+    target: concept:software-reuse
+    note: 구현을 숨긴 호출 규약으로 검증된 단위를 선택·통합하게 한다.
+    evidence:
+      - source: ref-004
+  - predicate: implements
+    target: concept:page-099497b9
+    note: 변경 가능한 설계 결정을 인터페이스 뒤에 감추는 모듈 경계를 프로그래밍 계약으로 구체화한다.
+    evidence:
+      - source: ref-003
 ---
 
 ## 개요
@@ -58,11 +75,13 @@ API는 [[소프트웨어 공학]]의 추상화와 책임 분리를 구체화한�
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | synthesizes | [[라이브러리 카탈로그]] | 루틴의 동작·비용·정밀도를 명세로 분리한 초기 사용 계약을 API적 사고로 읽는다. | [[The Preparation of Programs for an Electronic Digital Computer]] |
 | enables | [[소프트웨어 재사용]] | 구현을 숨긴 호출 규약으로 검증된 단위를 선택·통합하게 한다. | [[Software Reuse]] |
 | implements | [[정보 은닉]] | 변경 가능한 설계 결정을 인터페이스 뒤에 감추는 모듈 경계를 프로그래밍 계약으로 구체화한다. | [[On the Criteria To Be Used in Decomposing Systems into Modules]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

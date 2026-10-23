@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: concept-3b07c7d6f11aed09
+key: concept:page-3b07c7d6
 kind: concept
 title: Dennard 스케일링
 aliases:
@@ -33,6 +34,17 @@ history:
   layer: architecture
 redirect_from:
   - /concepts/dennard-스케일링/
+relations:
+  - predicate: constrains
+    target: concept:page-0b68e8bc
+    note: 소자 축소가 전력 밀도를 유지할 때만 클럭·집적 이득이 함께 온다.
+    evidence:
+      - source: ref-038
+  - predicate: precedes
+    target: concept:page-7fcb10cc
+    note: 축소 규칙이 깨진 뒤 활성 면적 제한이 성능 모델이 된다.
+    evidence:
+      - source: ref-040
 ---
 
 ## 개요
@@ -72,10 +84,12 @@ redirect_from:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | constrains | [[무어의 법칙]] | 소자 축소가 전력 밀도를 유지할 때만 클럭·집적 이득이 함께 온다. | [[Design of Ion-Implanted MOSFET's with Very Small Physical Dimensions]] |
 | precedes | [[다크 실리콘]] | 축소 규칙이 깨진 뒤 활성 면적 제한이 성능 모델이 된다. | [[The Landscape of Parallel Computing Research - A View from Berkeley]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 <!-- wiki-v2:evidence-start -->

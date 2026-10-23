@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: concept-4ac13a0d4fe8ec32
+key: concept:page-4ac13a0d
 kind: concept
 title: EDVAC
 aliases:
@@ -26,6 +27,17 @@ history:
   layer: architecture
 redirect_from:
   - /concepts/edvac/
+relations:
+  - predicate: enables
+    target: concept:page-7d1c4861
+    note: 명령과 데이터를 같은 기억장치에 두는 논리 구조를 문서화했다.
+    evidence:
+      - source: ref-006
+  - predicate: enables
+    target: concept:stored-program-computer
+    note: 프로그램 교체를 재배선이 아니라 기억 내용 갱신으로 바꿨다.
+    evidence:
+      - source: ref-006
 ---
 
 ## 개요
@@ -46,10 +58,12 @@ EDVAC은 저장 프로그램 컴퓨터의 초기 설계로 큰 영향을 주었�
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | enables | [[폰 노이만 구조]] | 명령과 데이터를 같은 기억장치에 두는 논리 구조를 문서화했다. | [[First Draft of a Report on the EDVAC]] |
 | enables | [[저장 프로그램 컴퓨터]] | 프로그램 교체를 재배선이 아니라 기억 내용 갱신으로 바꿨다. | [[First Draft of a Report on the EDVAC]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 <!-- wiki-v2:evidence-start -->

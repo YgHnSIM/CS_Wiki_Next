@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: concept-llm-inference-service-metrics
+key: concept:llm-inference-service-metrics
 kind: concept
 title: LLM 추론 서비스 지표
 aliases:
@@ -39,6 +40,53 @@ history:
   layer: measurement
 redirect_from:
   - /concepts/llm-추론-서비스-지표/
+relations:
+  - predicate: measures
+    target: concept:prefill-decode
+    note: 첫 토큰과 이후 토큰 생성의 지연을 TTFT와 TPOT로 나눠 관찰한다.
+    evidence:
+      - source: ref-077
+  - predicate: measures
+    target: concept:continuous-batching
+    note: 동적 배칭이 요청·토큰 처리량을 늘리면서 지연 SLO를 얼마나 유지하는지 평가한다.
+    evidence:
+      - source: ref-077
+  - predicate: measures
+    target: concept:kv-cache
+    note: 캐시 수용량과 배치 정책의 효과를 동일 부하·지연 조건의 goodput과 자원 비용으로 연결한다.
+    evidence:
+      - source: ref-077
+  - predicate: measures
+    target: concept:prefix-kv-caching
+    note: 적중한 프리필 토큰과 캐시 비용이 TTFT·goodput을 실제로 개선하는지 평가한다.
+    evidence:
+      - source: ref-080
+  - predicate: measures
+    target: concept:speculative-decoding
+    note: 후보 수락률과 추가 검증 작업을 TPOT·종단 지연·결과 분포 보존과 함께 평가한다.
+    evidence:
+      - source: ref-079
+  - predicate: enables
+    target: concept:llm-inference-energy-metrics
+    note: 품질·TTFT·TPOT를 만족한 요청을 에너지와 가속기 시간의 유효 분모로 제공한다.
+    evidence:
+      - source: ref-084
+  - predicate: narrower
+    target: concept:computing-capability
+    note: LLM 서비스를 지정 작업·결과 계약·시스템 경계 안에서 비교하는 특화된 측정 틀이다.
+    evidence:
+      - source: ref-078
+  - predicate: measures
+    target: concept:littles-law
+    note: 요청·토큰 처리율과 활성 작업·종단 지연을 같은 단위와 서비스 경계로 맞춰 평균 유량 관계를 점검한다.
+    evidence:
+      - source: ref-085
+  - predicate: enables
+    target: concept:queueing-load-control
+    note: TTFT·TPOT SLO, 기한 초과와 goodput을 승인·대기·완료 정책의 결과로 기록하게 한다.
+    evidence:
+      - source: ref-086
+      - source: ref-077
 ---
 
 ## 개요
@@ -108,17 +156,19 @@ goodput은 실패·시간 초과·지연 위반 요청을 원시 처리량과 �
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
-| measures | [[프리필과 디코드]] | 첫 토큰과 이후 토큰 생성의 지연을 TTFT와 TPOT로 나눠 관찰한다. | [[DistServe - Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving]] |
-| measures | [[연속 배칭]] | 동적 배칭이 요청·토큰 처리량을 늘리면서 지연 SLO를 얼마나 유지하는지 평가한다. | [[DistServe - Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving]] |
-| measures | [[KV 캐시]] | 캐시 수용량과 배치 정책의 효과를 동일 부하·지연 조건의 goodput과 자원 비용으로 연결한다. | [[DistServe - Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving]] |
-| measures | [[접두사 KV 캐싱]] | 적중한 프리필 토큰과 캐시 비용이 TTFT·goodput을 실제로 개선하는지 평가한다. | [[SGLang - Efficient Execution of Structured Language Model Programs]] |
+| measures | [[프리필과 디코드]] | 첫 토큰과 이후 토큰 생성의 지연을 TTFT와 TPOT로 나눠 관찰한다. | [[DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving]] |
+| measures | [[연속 배칭]] | 동적 배칭이 요청·토큰 처리량을 늘리면서 지연 SLO를 얼마나 유지하는지 평가한다. | [[DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving]] |
+| measures | [[KV 캐시]] | 캐시 수용량과 배치 정책의 효과를 동일 부하·지연 조건의 goodput과 자원 비용으로 연결한다. | [[DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving]] |
+| measures | [[접두사 KV 캐싱]] | 적중한 프리필 토큰과 캐시 비용이 TTFT·goodput을 실제로 개선하는지 평가한다. | [[SGLang: Efficient Execution of Structured Language Model Programs]] |
 | measures | [[추측 디코딩]] | 후보 수락률과 추가 검증 작업을 TPOT·종단 지연·결과 분포 보존과 함께 평가한다. | [[Fast Inference from Transformers via Speculative Decoding]] |
 | enables | [[LLM 추론 에너지 지표]] | 품질·TTFT·TPOT를 만족한 요청을 에너지와 가속기 시간의 유효 분모로 제공한다. | [[MLPerf Inference Power Measurement]] |
 | narrower | [[컴퓨팅 능력이란 무엇인가]] | LLM 서비스를 지정 작업·결과 계약·시스템 경계 안에서 비교하는 특화된 측정 틀이다. | [[MLPerf Inference Benchmark]] |
-| measures | [[리틀의 법칙]] | 요청·토큰 처리율과 활성 작업·종단 지연을 같은 단위와 서비스 경계로 맞춰 평균 유량 관계를 점검한다. | [[A Proof for the Queuing Formula L = λW]] |
-| enables | [[대기열과 부하 제어]] | TTFT·TPOT SLO, 기한 초과와 goodput을 승인·대기·완료 정책의 결과로 기록하게 한다. | [[Serving DNNs like Clockwork Performance Predictability from the Bottom Up]], [[DistServe - Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving]] |
+| measures | [[리틀의 법칙]] | 요청·토큰 처리율과 활성 작업·종단 지연을 같은 단위와 서비스 경계로 맞춰 평균 유량 관계를 점검한다. | [[A Proof for the Queuing Formula: L = λ W]] |
+| enables | [[대기열과 부하 제어]] | TTFT·TPOT SLO, 기한 초과와 goodput을 승인·대기·완료 정책의 결과로 기록하게 한다. | [[Serving DNNs like Clockwork: Performance Predictability from the Bottom Up]], [[DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

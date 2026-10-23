@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: concept-ef0b337a520af324
+key: concept:page-ef0b337a
 kind: concept
 title: Initial Orders
 aliases:
@@ -28,6 +29,17 @@ history:
   layer: software
 redirect_from:
   - /concepts/initial-orders/
+relations:
+  - predicate: enables
+    target: concept:page-873d18c3
+    note: 빈 기계가 자기 적재 루틴을 읽어 프로그램을 시작하게 한다.
+    evidence:
+      - source: src-003
+  - predicate: enables
+    target: concept:page-d679e8f4
+    note: 기준 주소로 명령의 주소 필드를 고쳐 라이브러리를 결합한다.
+    evidence:
+      - source: src-002
 ---
 
 ## 개요
@@ -55,10 +67,12 @@ Initial Orders는 오늘날의 부트로더, 로더, 어셈블러, 초기 번역
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | enables | [[부트스트랩]] | 빈 기계가 자기 적재 루틴을 읽어 프로그램을 시작하게 한다. | [[EDSAC과 Initial Orders]] |
 | enables | [[재배치]] | 기준 주소로 명령의 주소 필드를 고쳐 라이브러리를 결합한다. | [[초기 소프트웨어의 탄생]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 <!-- wiki-v2:evidence-start -->

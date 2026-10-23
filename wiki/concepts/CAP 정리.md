@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: concept-cap-theorem
+key: concept:cap-theorem
 kind: concept
 title: CAP 정리
 aliases:
@@ -28,6 +29,12 @@ history:
   layer: theory
 redirect_from:
   - /concepts/cap-정리/
+relations:
+  - predicate: constrains
+    target: concept:availability-recovery
+    note: 분할 중의 응답 보장은 복제 상태의 선형화 가능성과 독립적으로 주장할 수 없으므로, 운영 가용성의 정의에 일관성·응답 의미를 함께 명시하게 한다.
+    evidence:
+      - source: ref-087
 ---
 
 ## 개요
@@ -54,9 +61,11 @@ redirect_from:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | constrains | [[가용성과 복구]] | 분할 중의 응답 보장은 복제 상태의 선형화 가능성과 독립적으로 주장할 수 없으므로, 운영 가용성의 정의에 일관성·응답 의미를 함께 명시하게 한다. | [[Brewer's Conjecture and the Feasibility of Consistent, Available, Partition-Tolerant Web Services]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

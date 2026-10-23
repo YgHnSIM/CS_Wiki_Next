@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: concept-dependency-provenance
+key: concept:dependency-provenance
 kind: concept
 title: dependency provenance와 registry identity
 aliases:
@@ -25,6 +26,28 @@ capability_layers:
   - reliable-results
 history:
   layer: software
+relations:
+  - predicate: synthesizes
+    target: analysis:dependency-provenance-registry
+    note: digest·URI·publisher·provenance를 소비자 검증 흐름으로 묶는다.
+    evidence:
+      - source: ref-129
+      - source: ref-125
+  - predicate: constrains
+    target: concept:reproducible-builds
+    note: 재현성의 build inputs에 registry dependency identity와 digest를 포함시킨다.
+    evidence:
+      - source: ref-125
+  - predicate: constrains
+    target: concept:stablehlo-mlir-abi
+    note: compiler artifact에 포함되는 외부 dependency의 identity를 별도 추적하게 한다.
+    evidence:
+      - source: ref-125
+  - predicate: exemplifies
+    target: source:ref-129
+    note: content address와 registry location을 분리한 표준 사례를 연결한다.
+    evidence:
+      - source: ref-129
 ---
 
 ## 개요
@@ -54,12 +77,14 @@ history:
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | synthesizes | [[registry는 의존성의 출처와 동일성을 어떻게 증명하는가]] | digest·URI·publisher·provenance를 소비자 검증 흐름으로 묶는다. | [[OCI Distribution Specification]], [[SLSA Build Provenance Specification]] |
 | constrains | [[재현 가능한 빌드]] | 재현성의 build inputs에 registry dependency identity와 digest를 포함시킨다. | [[SLSA Build Provenance Specification]] |
 | constrains | [[StableHLO·MLIR·ABI 경계]] | compiler artifact에 포함되는 외부 dependency의 identity를 별도 추적하게 한다. | [[SLSA Build Provenance Specification]] |
 | exemplifies | [[OCI Distribution Specification]] | content address와 registry location을 분리한 표준 사례를 연결한다. | [[OCI Distribution Specification]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

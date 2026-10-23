@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: concept-6a0c16a9841c87e8
+key: concept:page-6a0c16a9
 kind: concept
 title: ASCII
 aliases:
@@ -24,6 +25,17 @@ history:
   layer: software
 redirect_from:
   - /concepts/ascii/
+relations:
+  - predicate: exemplifies
+    target: concept:page-a446fe7e
+    note: 7비트 문자 집합으로 바이트와 문자의 대응을 고정한다.
+    evidence:
+      - source: src-006
+  - predicate: precedes
+    target: concept:page-496b0829
+    note: 이후 코드 공간의 하위 호환 기준이 된다.
+    evidence:
+      - source: ref-022
 ---
 
 ## 개요
@@ -44,10 +56,12 @@ ASCII는 로마자 중심의 7비트 표준이므로 다른 언어의 문자나 
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | exemplifies | [[인코딩]] | 7비트 문자 집합으로 바이트와 문자의 대응을 고정한다. | [[데이터 표현과 인코딩]] |
 | precedes | [[유니코드]] | 이후 코드 공간의 하위 호환 기준이 된다. | [[The Unicode Standard 17.0.0]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 <!-- wiki-v2:evidence-start -->

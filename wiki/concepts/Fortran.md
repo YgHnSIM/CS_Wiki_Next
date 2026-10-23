@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: concept-72af5ee2350eff99
+key: concept:page-72af5ee2
 kind: concept
 title: Fortran
 aliases:
@@ -31,6 +32,17 @@ history:
   layer: software
 redirect_from:
   - /concepts/fortran/
+relations:
+  - predicate: enables
+    target: concept:compiler
+    note: 수학식에 가까운 소스를 효율적인 목적 코드로 번역하게 했다.
+    evidence:
+      - source: ref-016
+  - predicate: exemplifies
+    target: concept:page-26360c8b
+    note: 고급 표기가 실용 성능을 유지하며 작성 비용을 낮춘 사례다.
+    evidence:
+      - source: ref-017
 ---
 
 ## 개요
@@ -55,10 +67,12 @@ Fortran은 [[Initial Orders]]에서 보이던 인간 표기와 기계 실행 사
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | enables | [[컴파일러]] | 수학식에 가까운 소스를 효율적인 목적 코드로 번역하게 했다. | [[The FORTRAN Automatic Coding System]] |
 | exemplifies | [[프로그래밍 언어]] | 고급 표기가 실용 성능을 유지하며 작성 비용을 낮춘 사례다. | [[The History of FORTRAN I, II, and III]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 <!-- wiki-v2:evidence-start -->

@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: concept-np-completeness
+key: concept:np-completeness
 kind: concept
 title: NP-완전
 aliases:
@@ -24,6 +25,17 @@ history:
   layer: theory
 redirect_from:
   - /concepts/np-완전/
+relations:
+  - predicate: narrower
+    target: concept:computational-complexity
+    note: NP-완전성은 복잡도 클래스와 지정한 다항 시간 환원으로 정의되는 대표 난이도다.
+    evidence:
+      - source: ref-066
+  - predicate: prerequisite_for
+    target: analysis:hardware-vs-algorithmic-improvement
+    note: 하드웨어 속도 향상과 알고리즘·문제 구조의 변화가 서로 다른 질문임을 판단하는 이론적 기준을 제공한다.
+    evidence:
+      - source: ref-067
 ---
 
 ## 개요
@@ -55,10 +67,12 @@ NP-완전성은 “더 빠른 기계”라는 말을 해석할 때 입력 규모
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | narrower | [[계산 복잡도]] | NP-완전성은 복잡도 클래스와 지정한 다항 시간 환원으로 정의되는 대표 난이도다. | [[The Complexity of Theorem-Proving Procedures]] |
 | prerequisite_for | [[더 빠른 하드웨어는 더 나은 알고리즘을 대신할 수 있는가]] | 하드웨어 속도 향상과 알고리즘·문제 구조의 변화가 서로 다른 질문임을 판단하는 이론적 기준을 제공한다. | [[Reducibility Among Combinatorial Problems]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

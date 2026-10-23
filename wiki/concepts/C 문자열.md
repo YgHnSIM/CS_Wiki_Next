@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: concept-3d371068dd880445
+key: concept:page-3d371068
 kind: concept
 title: C 문자열
 aliases:
@@ -27,6 +28,13 @@ history:
   layer: software
 redirect_from:
   - /concepts/c-문자열/
+relations:
+  - predicate: constrains
+    target: concept:input-validation
+    note: 바이트열·선언 길이·널 종단·소비 함수가 기대하는 길이 단위가 일치하도록 경계 계약을 요구한다.
+    evidence:
+      - source: ref-090
+      - source: ref-091
 ---
 
 ## 개요
@@ -51,9 +59,11 @@ C 문자열은 [[데이터 표현]]에서 경계 정보가 얼마나 중요한�
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | constrains | [[입력 검증]] | 바이트열·선언 길이·널 종단·소비 함수가 기대하는 길이 단위가 일치하도록 경계 계약을 요구한다. | [[CWE-20 Improper Input Validation]], [[CWE-190 Integer Overflow or Wraparound]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 

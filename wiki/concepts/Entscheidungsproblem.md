@@ -1,6 +1,7 @@
 ---
 schema_version: 3
 id: concept-145622bcdc913103
+key: concept:page-145622bc
 kind: concept
 title: Entscheidungsproblem
 aliases:
@@ -25,6 +26,17 @@ history:
   layer: theory
 redirect_from:
   - /concepts/entscheidungsproblem/
+relations:
+  - predicate: narrower
+    target: concept:computability
+    note: 형식 논리 명제의 타당성을 일반 기계 절차로 판정할 수 없음을 보이는 결정 문제다.
+    evidence:
+      - source: ref-009
+  - predicate: precedes
+    target: concept:page-b95bdd2d
+    note: 일반 판정 절차의 부재를 보인 뒤 서로 다른 형식 모델의 동등성 해석이 따라온다.
+    evidence:
+      - source: ref-010
 ---
 
 ## 개요
@@ -45,10 +57,12 @@ Entscheidungsproblem의 부정적 해결은 계산 가능성 이론의 핵심 �
 
 ## 관계
 
+<!-- knowledge:relations:start -->
 | 관계 | 대상 | 설명 | 근거 |
 |---|---|---|---|
 | narrower | [[계산 가능성]] | 형식 논리 명제의 타당성을 일반 기계 절차로 판정할 수 없음을 보이는 결정 문제다. | [[On Computable Numbers with an Application to the Entscheidungsproblem]] |
 | precedes | [[처치-튜링 논제]] | 일반 판정 절차의 부재를 보인 뒤 서로 다른 형식 모델의 동등성 해석이 따라온다. | [[An Unsolvable Problem of Elementary Number Theory]] |
+<!-- knowledge:relations:end -->
 
 ## 출처
 
