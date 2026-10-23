@@ -23,3 +23,10 @@ src/
 ```
 
 Phase 1에서는 `seed`, `report`, `migrate`, `check`, `sync` 순서로 구현한다.
+
+현재 구현: `src/cli/seed.mjs` — 440개 페이지에서 `catalog/nodes.yml`과 `catalog/aliases.yml`을 생성한다.
+
+```bash
+npm run knowledge:seed -- --dry-run
+npm run knowledge:seed
+```

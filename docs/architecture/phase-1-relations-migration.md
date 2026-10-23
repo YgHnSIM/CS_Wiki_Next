@@ -85,7 +85,7 @@ evidence:
 type:slug
 ```
 
-- type: `person | organization | concept | work | event | place | artifact | analysis | document | source`
+- type: `person | organization | concept | entity | work | event | place | artifact | analysis | document | source`
 - slug: 소문자 ASCII, 숫자, 하이픈
 - 예: `person:alan-turing`, `concept:turing-machine`, `source:ref-010`
 - 페이지의 `id`는 URL용으로 유지한다.

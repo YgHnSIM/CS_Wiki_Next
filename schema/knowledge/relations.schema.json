@@ -8,7 +8,7 @@
   "$defs": {
     "key": {
       "type": "string",
-      "pattern": "^(person|organization|concept|work|event|place|artifact|analysis|document|source):[a-z0-9][a-z0-9-]*$"
+      "pattern": "^(person|organization|concept|entity|work|event|place|artifact|analysis|document|source):[a-z0-9][a-z0-9-]*$"
     },
     "sourceId": {
       "type": "string",
