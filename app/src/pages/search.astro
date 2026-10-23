@@ -16,10 +16,12 @@ import { publicDocuments, withBase } from "../lib/data";
     data-base={withBase("/")}
   />
   <p id="search-status" role="status" aria-live="polite"></p>
+  <p id="search-empty" class="search-empty" hidden>일치하는 문서가 없습니다. 다른 검색어를 시도해 보세요.</p>
   <div id="search-results" class="search-results"></div>
   <script>
     const input = document.querySelector("#site-search");
     const status = document.querySelector("#search-status");
+    const empty = document.querySelector("#search-empty");
     const results = document.querySelector("#search-results");
     let index = [];
     if (input) {
@@ -31,6 +33,7 @@ import { publicDocuments, withBase } from "../lib/data";
       input.addEventListener("input", () => {
         const query = input.value.trim().toLocaleLowerCase("ko-KR");
         results.replaceChildren();
+        if (empty) empty.hidden = true;
         if (!query) { status.textContent = `${index.length}개 문서`; return; }
         const words = query.split(/\s+/).filter(Boolean);
         const matches = index.filter((item) => {
@@ -40,6 +43,7 @@ import { publicDocuments, withBase } from "../lib/data";
           return words.every((word) => haystack.includes(word));
         }).slice(0, 40);
         status.textContent = `${matches.length}개 결과`;
+        if (empty) empty.hidden = matches.length > 0;
         for (const item of matches) {
           const link = document.createElement("a");
           link.href = item.url;

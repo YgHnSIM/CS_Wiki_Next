@@ -23,6 +23,7 @@ const nav = [
   ["근거", `${base}evidence/`],
   ["검색", `${base}search/`]
 ];
+const currentPath = Astro.url.pathname;
 ---
 
 <!doctype html>
@@ -55,7 +56,7 @@ const nav = [
         </a>
         <nav class="site-nav" aria-label="주요 탐색">
           {nav.map(([label, href]) => (
-            <a href={href}>{label}</a>
+            <a href={href} aria-current={currentPath === href || (href !== base && currentPath.startsWith(href)) ? "page" : undefined}>{label}</a>
           ))}
         </nav>
       </div>
