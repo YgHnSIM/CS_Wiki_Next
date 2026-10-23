@@ -487,3 +487,14 @@ body.legacy-page::before {
     padding: 8px;
   }
 }
+.legacy-doc .article-header h1 {
+  word-spacing: -0.08em;
+}
+
+@media (max-width: 600px) {
+  .legacy-doc .prose table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}

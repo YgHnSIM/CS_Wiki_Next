@@ -2668,3 +2668,7 @@ kbd {
 .home-page .hero-intro {
   max-width: 820px;
 }
+
+.home-page .hero h1 {
+  word-spacing: -0.08em;
+}
