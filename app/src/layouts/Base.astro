@@ -164,7 +164,7 @@ const activeView = currentPath.includes("/search/") ? "search" : currentPath.inc
           if (!commandIndex.length) {
             fetch(`${commandInput.dataset.base}search.json`)
               .then((response) => response.json())
-              .then((data) => { commandIndex = data; render(""); })
+              .then((data) => { commandIndex = data; render(commandInput.value); })
               .catch(() => { commandResults.textContent = "검색 색인을 불러오지 못했습니다."; });
           }
         };
