@@ -169,6 +169,7 @@ redirect_from:
 - [2026-10-24 update | Reading Trace 3개 추가 — 인코딩·트랜잭션·AI 인프라](logs/log-2026-10-24-142-traces-encoding-db-ai.md)
 - [2026-10-24 update | 프로그래밍 언어 Trace와 coverage 25%](logs/log-2026-10-24-143-programming-languages-trace.md)
 - [2026-10-24 update | Trace quality budget](logs/log-2026-10-24-144-trace-quality-budget.md)
+- [2026-10-24 update | 접근성·성능 점검](logs/log-2026-10-24-145-a11y-performance.md)
 
 ## 출처
 

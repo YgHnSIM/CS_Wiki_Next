@@ -6,7 +6,7 @@
   --line: #3c3c3c;
   --line-soft: #2b2b2b;
   --text: #d4d4d4;
-  --muted: #858585;
+  --muted: #9a9a9a;
   --blue: #569cd6;
   --orange: #ce9178;
   --green: #b5cea8;
@@ -818,3 +818,22 @@ kbd { border: 1px solid var(--line); padding: 0 0.25rem; color: var(--muted); fo
 
 .command-group-title { padding: 0.4rem 0.8rem 0.2rem; color: var(--muted); font-size: 0.58rem; letter-spacing: 0.1em; }
 .command-group + .command-group { border-top: 1px solid var(--line); }
+
+@media print {
+  :root { --bg: #fff; --bg-2: #fff; --bg-3: #fff; --text: #000; --muted: #333; --line: #bbb; }
+  body { padding: 0; background: #fff; color: #000; }
+  .activity-bar, .sidebar, .tabbar, .breadcrumb, .statusbar, .command-backdrop, .skip-link { display: none !important; }
+  .workbench { display: block; height: auto; min-height: 0; overflow: visible; }
+  .editor { display: block; height: auto; overflow: visible; }
+  .editor-scroll { overflow: visible; padding: 0; }
+  .man-page, .welcome, .index-page, .search-page, .lens-page, .trace-page, .guide-page { max-width: none; }
+  .man-aside { display: none; }
+  h1, h2, h3, .man-title, .man-head, .prose h2, .prose h3, .prose p, .prose li { color: #000; }
+  .prose { max-width: none; font-size: 10.5pt; line-height: 1.6; }
+  .prose a { color: #000; text-decoration: underline; }
+  .prose pre, .prose code { background: #f4f4f4; color: #000; border-color: #bbb; }
+  .notice { border-color: #000; background: #fff; color: #000; }
+  .trace-card, .guide-card, .start-panel, .doc-row { break-inside: avoid; }
+}
+
+.doc-row { content-visibility: auto; contain-intrinsic-size: 1px 88px; }

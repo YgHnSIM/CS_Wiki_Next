@@ -81,7 +81,7 @@ const relationTitle = (key: string) => nodeDocument(key)?.title || key;
         </div>
       </article>
 
-      <aside class="man-aside">
+      <aside class="man-aside" aria-label="관계와 역링크">
         <h2>RELATIONS</h2>
         {statements.length === 0 ? (
           <p>기록된 관계가 없습니다.</p>

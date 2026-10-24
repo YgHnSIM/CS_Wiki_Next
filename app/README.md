@@ -14,6 +14,7 @@
 - Reading Trace: `catalog/traces.json`을 읽어 `/traces/`와 `/traces/{id}/`를 생성하고, 진도는 localStorage에만 저장
 - Guides: `/guides/reading/`과 `/guides/evidence/`에서 문서 층위와 근거 읽기 안내
 - 색인은 explorer형 compact file list
+- Command Palette·Trace 진행률은 키보드/스크린리더용 ARIA를 갖추고, 인쇄 시 Workbench chrome을 숨김
 - IBM Plex Mono / Noto Sans KR 사용, VS Code Dark+ 계열 팔레트
 
 ## 실행

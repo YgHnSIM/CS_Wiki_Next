@@ -42,9 +42,17 @@ const roleLabels: Record<string, string> = {
           return document ? <a href={documentUrl(document)}>{document.title} 선행</a> : null;
         })}
       </div>
-      <div class="trace-progress">
-        <span data-trace-progress>0 / {trace.steps.length}</span>
-        <div class="trace-progress-bar"><span data-trace-progress-bar></span></div>
+      <div
+        class="trace-progress"
+        role="progressbar"
+        aria-valuemin="0"
+        aria-valuemax={trace.steps.length}
+        aria-valuenow="0"
+        aria-valuetext={`0 / ${trace.steps.length}`}
+        data-trace-progressbar
+      >
+        <span data-trace-progress aria-live="polite">0 / {trace.steps.length}</span>
+        <div class="trace-progress-bar" aria-hidden="true"><span data-trace-progress-bar></span></div>
       </div>
       <a class="trace-continue" href={firstUrl} data-trace-continue>첫 단계 시작 →</a>
     </header>
@@ -85,7 +93,15 @@ const roleLabels: Record<string, string> = {
                   </p>
                 </details>
               </div>
-              <button class="trace-check" type="button" data-step-check data-step-url={stepUrl} aria-pressed="false">
+              <button
+                class="trace-check"
+                type="button"
+                data-step-check
+                data-step-url={stepUrl}
+                data-step-title={document.title}
+                aria-pressed="false"
+                aria-label={`${document.title} 읽음 표시`}
+              >
                 읽음
               </button>
             </li>
@@ -126,6 +142,7 @@ const roleLabels: Record<string, string> = {
       const key = `cswiki:trace:${id}`;
       const checks = [...root.querySelectorAll("[data-step-check]")];
       const progress = root.querySelector("[data-trace-progress]");
+      const progressbar = root.querySelector("[data-trace-progressbar]");
       const bar = root.querySelector("[data-trace-progress-bar]");
       const continueLink = root.querySelector("[data-trace-continue]");
       let read = [];
@@ -137,10 +154,15 @@ const roleLabels: Record<string, string> = {
         checks.forEach((check, index) => {
           const done = complete.has(index);
           check.setAttribute("aria-pressed", String(done));
+          check.setAttribute("aria-label", `${check.dataset.stepTitle} ${done ? "읽음 취소" : "읽음 표시"}`);
           check.textContent = done ? "읽음 ✓" : "읽음";
           check.closest("[data-step-index]")?.classList.toggle("completed", done);
         });
         if (progress) progress.textContent = `${read.length} / ${checks.length}`;
+        if (progressbar) {
+          progressbar.setAttribute("aria-valuenow", String(read.length));
+          progressbar.setAttribute("aria-valuetext", `${read.length} / ${checks.length}`);
+        }
         if (bar) bar.style.width = `${checks.length ? (read.length / checks.length) * 100 : 0}%`;
         if (continueLink) {
           const next = checks.find((_, index) => !complete.has(index));

@@ -80,12 +80,12 @@ const guideCommands = [
         <a class="activity-brand" href={base} aria-label="CS Wiki 홈">CS</a>
         <nav class="activity-nav">
           <a href={withBase("/index/")} aria-label="탐색기" title="Explorer" aria-current={activeView === "explorer" ? "page" : undefined}>▤</a>
-          <button type="button" data-command-open aria-label="검색" title="Search" aria-current={activeView === "search" ? "page" : undefined}>⌕</button>
+          <button type="button" data-command-open aria-label="검색" aria-haspopup="dialog" aria-expanded="false" aria-controls="command-palette" title="Search" aria-current={activeView === "search" ? "page" : undefined}>⌕</button>
           <a href={withBase("/traces/")} aria-label="읽기 트레이스" title="Reading Traces" aria-current={activeView === "traces" ? "page" : undefined}>⤳</a>
           <a href={withBase("/history/")} aria-label="역사" title="History" aria-current={activeView === "history" ? "page" : undefined}>◷</a>
           <a href={withBase("/evidence/")} aria-label="근거" title="Evidence" aria-current={activeView === "evidence" ? "page" : undefined}>◈</a>
         </nav>
-        <button class="activity-command" type="button" data-command-open aria-label="명령 팔레트" title="Command Palette">⌘</button>
+        <button class="activity-command" type="button" data-command-open aria-label="명령 팔레트" aria-haspopup="dialog" aria-expanded="false" aria-controls="command-palette" title="Command Palette">⌘</button>
       </aside>
 
       <aside class="sidebar" aria-label="탐색기">
@@ -155,13 +155,15 @@ const guideCommands = [
       {noindex && <span class="status-warning">noindex</span>}
     </footer>
 
-    <div class="command-backdrop" data-command-palette data-traces={JSON.stringify(traceCommands)} data-guides={JSON.stringify(guideCommands)} hidden>
-      <div class="command" role="dialog" aria-modal="true" aria-label="명령 팔레트">
+    <div class="command-backdrop" id="command-palette" data-command-palette data-traces={JSON.stringify(traceCommands)} data-guides={JSON.stringify(guideCommands)} hidden>
+      <div class="command" role="dialog" aria-modal="true" aria-labelledby="command-title">
+        <h2 class="sr-only" id="command-title">명령 팔레트</h2>
         <input
           type="search"
           class="command-input"
           placeholder="문서 검색..."
           aria-label="문서 검색"
+          aria-autocomplete="list"
           data-command-input
           data-base={withBase("/")}
           aria-controls="command-results"
@@ -189,6 +191,7 @@ const guideCommands = [
         const open = () => {
           lastFocus = document.activeElement;
           palette.hidden = false;
+          document.querySelectorAll("[data-command-open]").forEach((button) => button.setAttribute("aria-expanded", "true"));
           commandInput.value = "";
           render("");
           commandInput.focus();
@@ -201,6 +204,7 @@ const guideCommands = [
         };
         const close = () => {
           palette.hidden = true;
+          document.querySelectorAll("[data-command-open]").forEach((button) => button.setAttribute("aria-expanded", "false"));
           if (lastFocus instanceof HTMLElement) lastFocus.focus();
         };
         const render = (query) => {
@@ -218,6 +222,8 @@ const guideCommands = [
             if (!items.length) return;
             const group = document.createElement("div");
             group.className = "command-group";
+            group.setAttribute("role", "group");
+            group.setAttribute("aria-label", label);
             const heading = document.createElement("div");
             heading.className = "command-group-title";
             heading.textContent = label;

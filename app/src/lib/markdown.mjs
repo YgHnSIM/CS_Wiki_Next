@@ -30,7 +30,7 @@ function protectBody(body, withBase) {
       /!\[\[([^\]|#\n]+)(?:#[^\]|\n]*)?(?:\|([^\]\n]*))?\]\]/g,
       (_, target, alt) => {
         const file = String(target).replace(/^\/+/, "");
-        return `<img src="${escapeHtml(withBase(`/assets/${encodeURI(file)}`))}" alt="${escapeHtml(alt || file)}" loading="lazy" />`;
+        return `<img src="${escapeHtml(withBase(`/assets/${encodeURI(file)}`))}" alt="${escapeHtml(alt || file)}" loading="lazy" decoding="async" />`;
       }
     );
     return withImages.replace(/\[\[([^\]\n]+?)\]\]/g, (_, inner) => `[[${inner.replaceAll("|", PIPE)}]]`);
