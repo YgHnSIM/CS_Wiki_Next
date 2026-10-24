@@ -40,6 +40,7 @@ app/                  Astro 사이트
 - [ADR 0005: Reading Traces](docs/architecture/0005-reading-traces.md)
 - [ADR 0006: Search Quality](docs/architecture/0006-search-quality.md)
 - [ADR 0007: Accessibility and Performance](docs/architecture/0007-accessibility-performance.md)
+- [Trace checkpoint review — Batch 1](docs/architecture/trace-checkpoint-review-batch-1.md)
 - [Phase 1 relations 마이그레이션](docs/architecture/phase-1-relations-migration.md)
 - [relations 스키마](schema/knowledge/relations.schema.json)
 - [Registry 스키마](schema/knowledge/registry.schema.json)

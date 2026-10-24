@@ -12,6 +12,7 @@
 - 검색 랭킹은 `src/lib/search.mjs`를 공유하며, `npm run search:eval`이 Top-1/Top-3/MRR을 검사
 - `/search/?q=...`로 검색어를 공유하고, 결과에 Trace/Guide 경로를 함께 제안
 - Reading Trace: `catalog/traces.json`을 읽어 `/traces/`와 `/traces/{id}/`를 생성하고, 진도는 localStorage에만 저장
+- `npm run traces:review`가 70개 체크포인트 검수용 `output/trace-checkpoints.md`를 생성
 - Guides: `/guides/reading/`과 `/guides/evidence/`에서 문서 층위와 근거 읽기 안내
 - 색인은 explorer형 compact file list
 - Command Palette·Trace 진행률은 키보드/스크린리더용 ARIA를 갖추고, 인쇄 시 Workbench chrome을 숨김

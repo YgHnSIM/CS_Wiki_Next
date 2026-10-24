@@ -171,6 +171,7 @@ redirect_from:
 - [2026-10-24 update | Trace quality budget](logs/log-2026-10-24-144-trace-quality-budget.md)
 - [2026-10-24 update | 접근성·성능 점검](logs/log-2026-10-24-145-a11y-performance.md)
 - [2026-10-24 update | 동시성 Trace와 coverage 28.3%](logs/log-2026-10-24-146-concurrency-trace.md)
+- [2026-10-24 update | Trace checkpoint review — Batch 1](logs/log-2026-10-24-147-trace-review-batch-1.md)
 
 ## 출처
 
