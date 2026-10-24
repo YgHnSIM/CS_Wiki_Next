@@ -5,26 +5,33 @@ import path from "node:path";
 import { buildGraph } from "../src/build.mjs";
 
 const root = process.cwd();
-const baseline = JSON.parse(await readFile(path.join(root, "contracts", "migration-baseline.json"), "utf8"));
 const routes = JSON.parse(await readFile(path.join(root, "contracts", "routes.json"), "utf8"));
+const removedCatalog = JSON.parse(await readFile(path.join(root, "contracts", "removed-documents.json"), "utf8"));
 const result = await buildGraph(root);
+const documentIds = new Set(result.documents.map((document) => document.id));
+const removedById = new Map((removedCatalog.removed || []).map((entry) => [entry.id, entry]));
 
-test("legacy migration baseline is preserved as a lower bound", () => {
-  assert.ok(result.report.documents >= baseline.documents);
-  assert.ok(result.report.relation_documents >= baseline.relation_documents);
-  assert.ok(result.report.statements >= baseline.statements);
-  assert.ok(result.report.redirects >= baseline.redirects);
-  assert.deepEqual(result.graph.parity, {
-    documents: true,
-    relation_documents: true,
-    statements: true,
-    redirects: true
-  });
+test("every legacy route is active, archived, or explicitly purged", () => {
+  for (const page of routes.pages) {
+    if (documentIds.has(page.id)) continue;
+    const removed = removedById.get(page.id);
+    assert.ok(removed, `missing legacy page ${page.id} without removal entry`);
+    assert.equal(removed.mode, "purge", `legacy page ${page.id} missing without purge mode`);
+    assert.equal(removed.break_url, true, `legacy page ${page.id} purged without break_url`);
+  }
 });
 
-test("every legacy route still has a document", () => {
-  const ids = new Set(result.documents.map((document) => document.id));
-  for (const page of routes.pages) assert.ok(ids.has(page.id), `missing legacy page ${page.id}`);
+test("removed document registry is internally consistent", () => {
+  const ids = new Set();
+  for (const entry of removedCatalog.removed || []) {
+    assert.ok(!ids.has(entry.id), `duplicate removal ${entry.id}`);
+    ids.add(entry.id);
+    if (entry.mode === "archive") assert.ok(documentIds.has(entry.id), `archived page missing: ${entry.id}`);
+    if (entry.mode === "purge") {
+      assert.equal(entry.break_url, true, `purged page missing break_url: ${entry.id}`);
+      assert.ok(!documentIds.has(entry.id), `purged page still built: ${entry.id}`);
+    }
+  }
 });
 
 test("every document has a generated /docs/{id}/ URL", () => {

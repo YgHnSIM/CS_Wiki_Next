@@ -72,9 +72,15 @@ site:parity 442 docs / 555 redirects / 397 search / 418 sitemap
 
 확인 후 임시 문서와 registry 변경을 제거했다.
 
+## 다음 단계
+
+실제 삭제는 [ADR 0010](0010-archive-purge.md)의 `content:delete`를 사용한다.
+
+- archive: 원문을 `archive/removed`에 보존하고 tombstone 유지
+- purge: `--break-url` 예외로 URL 제거
+
 ## 하지 않은 것
 
-- 기존 문서의 물리 삭제
-- retired 본문의 별도 archive 파일 이동
+- retired 본문의 별도 archive 파일 이동 (archive delete에서 처리)
 - retirement undo CLI
 - 자동 대체 문서 추천

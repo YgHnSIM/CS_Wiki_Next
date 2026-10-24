@@ -1,14 +1,17 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import YAML from "yaml";
+import { loadWorkspace } from "../compile/relations.mjs";
 
 const root = process.cwd();
+const workspace = await loadWorkspace(root);
 const nodesFile = YAML.parse(await readFile(path.join(root, "catalog", "nodes.yml"), "utf8"));
 const aliasesFile = YAML.parse(await readFile(path.join(root, "catalog", "aliases.yml"), "utf8"));
 const reviews = await readFile(path.join(root, "catalog", "reviews.yml"), "utf8")
   .then((text) => YAML.parse(text) || {})
   .catch(() => ({}));
 const routes = JSON.parse(await readFile(path.join(root, "contracts", "routes.json"), "utf8"));
+const removed = JSON.parse(await readFile(path.join(root, "contracts", "removed-documents.json"), "utf8"));
 
 const nodes = Array.isArray(nodesFile.nodes) ? nodesFile.nodes : [];
 const aliases = aliasesFile.aliases && typeof aliasesFile.aliases === "object" ? aliasesFile.aliases : {};
@@ -40,6 +43,21 @@ for (const [alias, key] of Object.entries(aliases)) {
 
 for (const pageId of routes.pages.map((page) => page.id)) {
   if (!pages.has(pageId)) errors.push(`route page has no registry node: ${pageId}`);
+}
+const workspacePageIds = new Set(workspace.pages.map((page) => page.id));
+for (const page of workspace.pages) {
+  if (!pages.has(page.id)) errors.push(`page has no registry node: ${page.id}`);
+}
+for (const node of nodes) {
+  if (!workspacePageIds.has(node.page_id)) errors.push(`registry node has no page: ${node.key}`);
+}
+const removedIds = new Set();
+for (const entry of removed.removed || []) {
+  if (removedIds.has(entry.id)) errors.push(`duplicate removed id: ${entry.id}`);
+  removedIds.add(entry.id);
+  if (entry.mode === "archive" && !workspacePageIds.has(entry.id)) errors.push(`archived page missing: ${entry.id}`);
+  if (entry.mode === "purge" && workspacePageIds.has(entry.id)) errors.push(`purged page still present: ${entry.id}`);
+  if (entry.mode === "purge" && entry.break_url !== true) errors.push(`purged page has no break_url: ${entry.id}`);
 }
 
 const reviewed = new Set(Array.isArray(reviews.reviewed) ? reviews.reviewed : []);

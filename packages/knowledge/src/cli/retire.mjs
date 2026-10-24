@@ -1,5 +1,6 @@
 import { writeFile } from "node:fs/promises";
 import { loadWorkspace, renderPage } from "../compile/relations.mjs";
+import { traceReferences } from "./trace-refs.mjs";
 
 const args = process.argv.slice(2);
 const value = (name) => {
@@ -32,6 +33,12 @@ if (!page) {
 }
 if (page.data.retirement) {
   console.error(`already retired: ${page.id}`);
+  process.exit(1);
+}
+const traceRefs = await traceReferences(process.cwd(), page.key);
+if (traceRefs.length) {
+  console.error(`cannot retire ${page.id}; referenced by traces: ${traceRefs.join(", ")}`);
+  console.error("update catalog/traces.json first");
   process.exit(1);
 }
 

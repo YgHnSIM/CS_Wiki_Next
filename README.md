@@ -42,6 +42,7 @@ app/                  Astro 사이트
 - [ADR 0007: Accessibility and Performance](docs/architecture/0007-accessibility-performance.md)
 - [ADR 0008: Living Content after Migration](docs/architecture/0008-living-content.md)
 - [ADR 0009: Content Retirement](docs/architecture/0009-retirement.md)
+- [ADR 0010: Archive Delete and Purge](docs/architecture/0010-archive-purge.md)
 - [Trace checkpoint review — Batch 1](docs/architecture/trace-checkpoint-review-batch-1.md)
 - [Trace checkpoint review — Batch 2](docs/architecture/trace-checkpoint-review-batch-2.md)
 - [Trace checkpoint review — Batch 3](docs/architecture/trace-checkpoint-review-batch-3.md)

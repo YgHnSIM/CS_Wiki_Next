@@ -6,10 +6,25 @@ const dist = path.join(root, "app", "dist");
 const routes = JSON.parse(await readFile(path.join(root, "contracts", "routes.json"), "utf8"));
 const traceCatalog = JSON.parse(await readFile(path.join(root, "catalog", "traces.json"), "utf8"));
 const documents = JSON.parse(await readFile(path.join(root, "data", "build", "documents.json"), "utf8"));
+const removed = JSON.parse(await readFile(path.join(root, "contracts", "removed-documents.json"), "utf8"));
+const documentIds = new Set(documents.map((document) => document.id));
+const removedById = new Map((removed.removed || []).map((entry) => [entry.id, entry]));
 const missing = [];
 
 async function exists(file) {
   try { await access(file); return true; } catch { return false; }
+}
+
+for (const page of routes.pages) {
+  if (documentIds.has(page.id)) continue;
+  const entry = removedById.get(page.id);
+  if (!entry || entry.mode !== "purge" || entry.break_url !== true) {
+    missing.push(`legacy doc ${page.id} without purge entry`);
+  }
+}
+for (const entry of removed.removed || []) {
+  if (entry.mode === "archive" && !documentIds.has(entry.id)) missing.push(`archived doc ${entry.id} not built`);
+  if (entry.mode === "purge" && documentIds.has(entry.id)) missing.push(`purged doc ${entry.id} still built`);
 }
 
 for (const document of documents) {

@@ -12,6 +12,8 @@
 
 기존 문서를 더 이상 유지하지 않을 때는 삭제하지 않고 `npm run content:retire`로 tombstone 또는 redirect 처리한다. route 파일은 그대로 둔다.
 
+실제 삭제는 `npm run content:delete -- --id <id> --mode archive`가 기본이다. `--mode purge --break-url`은 예외이며 `contracts/removed-documents.json`에 기록한다.
+
 ## `migration-baseline.json`
 
 2026-10-24 마이그레이션 수용 시점의 **역사적 스냅샷**이다.

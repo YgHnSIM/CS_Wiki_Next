@@ -55,6 +55,8 @@
 
 새 문서의 URL은 `id`에서 자동 생성된다.
 
+삭제는 [ADR 0010](0010-archive-purge.md)을 따른다. 공개 문서는 retire 후 archive가 기본이며, purge는 `--break-url` 예외다.
+
 ## 결과
 
 - 새 문서 추가가 더 이상 parity 위반이 아님

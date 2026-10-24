@@ -69,6 +69,7 @@ npm run site:links
 - `app/src/pages/[...legacy].astro`: 기존 URL 리디렉션
 - `app/scripts/check-routes.mjs`: 현재 docs/search/sitemap 무결성과 legacy redirect 검사
 - `content:retire`: 기존 URL을 유지한 tombstone/redirect 은퇴 처리
+- `content:delete`: archive 원문 보존 + tombstone, 또는 `--break-url` 기반 purge
 - `app/scripts/check-links.mjs`: 내부 링크 검사
 
 ## 현재 범위
