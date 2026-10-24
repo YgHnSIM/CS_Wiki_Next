@@ -93,11 +93,22 @@ CI에서 `knowledge:check`·`knowledge:schema` 다음에 실행한다.
 
 기존 `/docs/{id}/`와 리디렉션 계약은 변경하지 않는다.
 
+## Quality budget
+
+`traces:check`는 다음 기준을 CI에서 강제한다.
+
+- coverage ≥ 25%
+- single-evidence step ≤ 3
+- undated step ≤ 24
+
+기준을 넘으면 실패한다. 새 Trace나 문서 보강으로 지표가 변하면 예산을 의도적으로 갱신해야 한다.
+
 ## 결과
 
 - 10 traces, 63 steps, 430 minutes
 - coverage: 62/244 public knowledge (25.4%), 95 referenced documents
 - single-evidence steps 3, undated steps 24
+- quality budget: pass
 - 2 guides: 이 위키를 읽는 법, 근거와 관계 읽기
 - sitemap 402 → 416 URLs
 - search records 397 유지 (Trace는 문서 검색과 분리)

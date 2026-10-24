@@ -99,6 +99,15 @@ if (errors.length) {
     });
   }
 
+  const qualityBudget = {
+    min_coverage_percent: 25,
+    max_single_evidence_steps: 3,
+    max_undated_steps: 24
+  };
+  const coveragePercent = publicKnowledge.length ? Number(((stepDocuments.size / publicKnowledge.length) * 100).toFixed(1)) : 0;
+  const budgetOk = coveragePercent >= qualityBudget.min_coverage_percent
+    && singleEvidenceSteps.length <= qualityBudget.max_single_evidence_steps
+    && undatedSteps.length <= qualityBudget.max_undated_steps;
   const coverage = {
     generated_at: new Date().toISOString(),
     traces: catalog.traces.length,
@@ -106,11 +115,13 @@ if (errors.length) {
     minutes: catalog.traces.reduce((sum, trace) => sum + trace.minutes, 0),
     public_knowledge: publicKnowledge.length,
     unique_step_documents: stepDocuments.size,
-    coverage_percent: publicKnowledge.length ? Number(((stepDocuments.size / publicKnowledge.length) * 100).toFixed(1)) : 0,
+    coverage_percent: coveragePercent,
     referenced_documents: referencedDocuments.size,
     roles: roleCounts,
     single_evidence_steps: singleEvidenceSteps,
     undated_steps: undatedSteps,
+    quality_budget: qualityBudget,
+    budget_ok: budgetOk,
     tests: traceReports
   };
 
@@ -120,5 +131,9 @@ if (errors.length) {
   console.log(`Trace check: ${coverage.traces} traces, ${coverage.steps} steps, ${coverage.minutes} minutes`);
   console.log(`Coverage: ${coverage.unique_step_documents}/${coverage.public_knowledge} public knowledge (${coverage.coverage_percent}%), ${coverage.referenced_documents} referenced documents`);
   console.log(`Single-evidence steps: ${singleEvidenceSteps.length}, undated steps: ${undatedSteps.length}`);
+  if (!budgetOk) {
+    console.error(`Trace quality budget failed: coverage >= ${qualityBudget.min_coverage_percent}%, single <= ${qualityBudget.max_single_evidence_steps}, undated <= ${qualityBudget.max_undated_steps}`);
+    process.exitCode = 1;
+  }
   console.log("wrote output/trace-coverage.json");
 }
