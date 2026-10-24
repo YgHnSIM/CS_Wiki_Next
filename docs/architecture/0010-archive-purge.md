@@ -46,6 +46,28 @@ Purge 전 차단 조건:
 - 들어오는 관계
 - 들어오는 위키링크
 
+## Archive restore
+
+```bash
+npm run content:restore -- --id <id> [--public]
+```
+
+- `archive` entry만 복원
+- `archive/removed/{id}.md`를 원래 `wiki/` 경로로 복원
+- tombstone 페이지가 있으면 교체
+- `--public`이 없으면 unlisted로 복원
+- `removed-documents.json`에서 제거
+- 실행 후 `npm run knowledge:seed` 필요
+
+## Archive 목록 UI
+
+`/archive/`에서 다음을 보여준다.
+
+- **RETIRED** — retire만 하고 삭제하지 않은 문서
+- **ARCHIVED** — archive delete된 문서 (tombstone 링크)
+- **PURGED** — purge된 문서 (URL 없음, 기록만)
+- Archive count는 사이드바에도 표시
+
 ## Removed registry
 
 `contracts/removed-documents.json`

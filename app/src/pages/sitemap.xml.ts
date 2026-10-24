@@ -12,7 +12,8 @@ const staticPaths = [
   ...traces.map((trace) => `/traces/${trace.id}/`),
   "/guides/",
   "/guides/reading/",
-  "/guides/evidence/"
+  "/guides/evidence/",
+  "/archive/"
 ];
 
 function escapeXml(value: string) {

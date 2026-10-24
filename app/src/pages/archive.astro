@@ -1,0 +1,89 @@
+---
+import Base from "../layouts/Base.astro";
+import { documents, withBase } from "../lib/data";
+import { removedDocuments } from "../lib/removed";
+
+const removedById = new Map(removedDocuments.map((entry) => [entry.id, entry]));
+const retired = documents
+  .filter((document) => document.retirement && !removedById.has(document.id))
+  .sort((a, b) => (b.retirement?.retired_at || "").localeCompare(a.retirement?.retired_at || "") || a.title.localeCompare(b.title, "ko"));
+const archived = removedDocuments
+  .filter((entry) => entry.mode === "archive")
+  .map((entry) => ({ entry, document: documents.find((document) => document.id === entry.id) }))
+  .sort((a, b) => b.entry.removed_at.localeCompare(a.entry.removed_at) || a.entry.title.localeCompare(b.entry.title, "ko"));
+const purged = removedDocuments
+  .filter((entry) => entry.mode === "purge")
+  .sort((a, b) => b.removed_at.localeCompare(a.removed_at) || a.title.localeCompare(b.title, "ko"));
+const targetTitle = (id?: string | null) => documents.find((document) => document.id === id)?.title || id || "";
+---
+
+<Base title="Archive" description="은퇴·삭제된 CS Wiki 문서 목록">
+  <div class="archive-page">
+    <header class="archive-head">
+      <p class="eyebrow">ARCHIVE</p>
+      <h1>은퇴와 삭제</h1>
+      <p class="lede">더 이상 현재 지식으로 유지하지 않는 문서를 기록합니다. Tombstone/redirect는 URL을 유지하고, purge는 기록만 남깁니다.</p>
+      <div class="archive-stats">
+        <div><strong>{retired.length}</strong><span>retired</span></div>
+        <div><strong>{archived.length}</strong><span>archived</span></div>
+        <div><strong>{purged.length}</strong><span>purged</span></div>
+      </div>
+    </header>
+
+    <section class="archive-section">
+      <h2>RETIRED</h2>
+      {retired.length === 0 ? <p class="archive-empty">아직 은퇴한 문서가 없습니다.</p> : (
+        <ul class="archive-list">
+          {retired.map((document) => (
+            <li class="archive-item">
+              <div>
+                <span class="archive-kind">{document.kind}</span>
+                <a href={withBase(document.url)}>{document.title}</a>
+                <small>{document.retirement?.mode} · {document.retirement?.retired_at}</small>
+              </div>
+              {document.retirement?.superseded_by && (
+                <small>→ {targetTitle(document.retirement.superseded_by)}</small>
+              )}
+            </li>
+          ))}
+        </ul>
+      )}
+    </section>
+
+    <section class="archive-section">
+      <h2>ARCHIVED</h2>
+      {archived.length === 0 ? <p class="archive-empty">아직 archive된 문서가 없습니다.</p> : (
+        <ul class="archive-list">
+          {archived.map(({ entry, document }) => (
+            <li class="archive-item">
+              <div>
+                <span class="archive-kind">{entry.kind}</span>
+                {document ? <a href={withBase(document.url)}>{entry.title}</a> : <strong>{entry.title}</strong>}
+                <small>{entry.removed_at}{entry.reason ? ` · ${entry.reason}` : ""}</small>
+              </div>
+              <small>tombstone</small>
+            </li>
+          ))}
+        </ul>
+      )}
+    </section>
+
+    <section class="archive-section">
+      <h2>PURGED</h2>
+      {purged.length === 0 ? <p class="archive-empty">아직 purge된 문서가 없습니다.</p> : (
+        <ul class="archive-list">
+          {purged.map((entry) => (
+            <li class="archive-item">
+              <div>
+                <span class="archive-kind">{entry.kind}</span>
+                <strong>{entry.title}</strong>
+                <small>{entry.removed_at}{entry.reason ? ` · ${entry.reason}` : ""}</small>
+              </div>
+              <small>URL removed</small>
+            </li>
+          ))}
+        </ul>
+      )}
+    </section>
+  </div>
+</Base>

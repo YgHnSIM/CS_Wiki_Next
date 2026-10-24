@@ -89,6 +89,7 @@ const entry = {
   kind: page.kind,
   mode,
   removed_at: today,
+  source_path: path.relative(root, page.filePath).split(path.sep).join("/"),
   replaced_by: page.data.retirement?.superseded_by || null,
   reason,
   break_url: mode === "purge"

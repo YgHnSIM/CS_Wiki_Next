@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import { documents, graph, publicDocuments, withBase } from "../lib/data";
 import { traces } from "../lib/traces";
+import { removedDocuments } from "../lib/removed";
 
 interface Props {
   title: string;
@@ -115,6 +116,7 @@ const guideCommands = [
         <div class="sidebar-section">GUIDES</div>
         <a class="tree-item" href={withBase("/guides/reading/")}><span class="tree-icon">?</span><span>이 위키를 읽는 법</span></a>
         <a class="tree-item" href={withBase("/guides/evidence/")}><span class="tree-icon">?</span><span>근거와 관계 읽기</span></a>
+        <a class="tree-item" href={withBase("/archive/")}><span class="tree-icon">▣</span><span>Archive</span><span class="tree-count">{removedDocuments.length}</span></a>
         <div class="sidebar-section">SHORTCUTS</div>
         <button class="sidebar-shortcut" type="button" data-command-open>
           <span>Command Palette</span><kbd>Ctrl K</kbd>

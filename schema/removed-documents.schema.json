@@ -20,6 +20,7 @@
           "kind": { "enum": ["source", "reference", "entity", "concept", "analysis", "meta"] },
           "mode": { "enum": ["archive", "purge"] },
           "removed_at": { "type": "string", "format": "date" },
+          "source_path": { "type": "string", "pattern": "^wiki/" },
           "replaced_by": { "type": ["string", "null"] },
           "reason": { "type": "string", "maxLength": 300 },
           "break_url": { "type": "boolean" }

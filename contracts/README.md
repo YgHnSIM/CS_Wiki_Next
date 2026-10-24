@@ -14,6 +14,8 @@
 
 실제 삭제는 `npm run content:delete -- --id <id> --mode archive`가 기본이다. `--mode purge --break-url`은 예외이며 `contracts/removed-documents.json`에 기록한다.
 
+archive 복원은 `npm run content:restore -- --id <id> [--public]`로 수행하고 `npm run knowledge:seed`를 다시 실행한다.
+
 ## `migration-baseline.json`
 
 2026-10-24 마이그레이션 수용 시점의 **역사적 스냅샷**이다.

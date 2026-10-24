@@ -112,9 +112,9 @@ CI에서 `knowledge:check`·`knowledge:schema` 다음에 실행한다.
 - single-evidence steps 3, undated steps 24
 - quality budget: pass
 - 2 guides: 이 위키를 읽는 법, 근거와 관계 읽기
-- sitemap 402 → 418 URLs
+- sitemap 402 → 419 URLs
 - search records 397 유지 (Trace는 문서 검색과 분리)
-- 페이지 1,001 → 1,017
+- 페이지 1,001 → 1,018
 
 ## 하지 않은 것
 

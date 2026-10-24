@@ -59,6 +59,8 @@ npm run security:audit
 
 실제 삭제는 `npm run content:delete -- --id <id> --mode archive`가 기본이다. purge는 `--mode purge --break-url`로만 허용하고 `contracts/removed-documents.json`에 기록한다.
 
+archive 복원은 `npm run content:restore -- --id <id> [--public]`를 사용하고, 이후 `npm run knowledge:seed`를 실행한다. `/archive/`는 retired/archived/purged 목록을 보여준다.
+
 `knowledge:check`는 Registry 정합성, `knowledge:schema`는 전체 페이지 frontmatter 스키마, `knowledge:report`는 전체 관계의 preflight, `knowledge:sync --check`는 generated block 패리티, `knowledge:build`는 정규 그래프와 invariant를 검사한다. `knowledge:quality`는 연도 미상·고아·단일 근거를, `traces:check`는 `catalog/traces.json`의 문서·근거·역할 정합성과 coverage/quality budget을 검사한다. `site:build`는 Astro 사이트를 만들고, `site:parity`는 현재 docs·redirects·search·sitemap의 무결성, `search:eval`은 32개 쿼리의 Top-1/Top-3/MRR, `site:links`는 내부 링크, `security:audit`는 루트·app 의존성 취약점을 검사한다.
 
 ## 금지

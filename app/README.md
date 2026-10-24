@@ -55,6 +55,7 @@ npm run site:links
 | `/history/` | 역사 렌즈 |
 | `/evidence/` | 근거 렌즈 |
 | `/search/` | 검색 |
+| `/archive/` | retired/archived/purged 문서 목록 |
 | `/search.json` | 검색 인덱스 |
 | `/sitemap.xml` | 공개 URL sitemap |
 | `/robots.txt` | robots |
@@ -70,6 +71,7 @@ npm run site:links
 - `app/scripts/check-routes.mjs`: 현재 docs/search/sitemap 무결성과 legacy redirect 검사
 - `content:retire`: 기존 URL을 유지한 tombstone/redirect 은퇴 처리
 - `content:delete`: archive 원문 보존 + tombstone, 또는 `--break-url` 기반 purge
+- `content:restore`: archive 원문을 wiki로 복원하고 tombstone을 교체
 - `app/scripts/check-links.mjs`: 내부 링크 검사
 
 ## 현재 범위

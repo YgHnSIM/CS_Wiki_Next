@@ -837,3 +837,22 @@ kbd { border: 1px solid var(--line); padding: 0 0.25rem; color: var(--muted); fo
 }
 
 .doc-row { content-visibility: auto; contain-intrinsic-size: 1px 88px; }
+
+/* archive */
+.archive-page { max-width: 1000px; }
+.archive-head { padding-bottom: 1.4rem; border-bottom: 1px solid var(--line); }
+.archive-stats { display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 1.2rem; }
+.archive-stats div { display: flex; flex-direction: column; }
+.archive-stats strong { color: var(--blue); font-family: var(--mono); font-size: 1.5rem; }
+.archive-stats span { color: var(--muted); font-size: 0.66rem; }
+.archive-section { margin-top: 2rem; }
+.archive-section h2 { color: var(--blue); font-size: 0.7rem; letter-spacing: 0.12em; }
+.archive-list { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
+.archive-item { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; padding: 0.75rem 0; border-bottom: 1px solid var(--line); }
+.archive-item > div { display: flex; flex-direction: column; gap: 0.15rem; min-width: 0; }
+.archive-kind { color: var(--orange); font-family: var(--mono); font-size: 0.62rem; text-transform: uppercase; }
+.archive-item a, .archive-item strong { color: var(--text); font-family: var(--sans); font-size: 0.86rem; text-decoration: none; }
+.archive-item a:hover { color: var(--blue); }
+.archive-item small { color: var(--muted); font-size: 0.66rem; }
+.archive-item > small { flex: none; }
+.archive-empty { color: var(--muted); font-size: 0.8rem; }

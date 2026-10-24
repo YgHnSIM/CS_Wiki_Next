@@ -4,7 +4,7 @@
 
 - **이전 저장소**: `C:\Vault\CS_Wiki` (백업: `C:\Vault\_backups\CS_Wiki_2026-10-24_0514`)
 - **공개 사이트**: https://yghnsim.github.io/CS_Wiki_Next/
-- **현재 단계**: Phase 3 코어 + 필수 기능 + Reading Trace 12개/Guide 2개 배포 (Astro 1,017 pages, 440 docs, 555 redirects, 397 search records, 418 sitemap URLs)
+- **현재 단계**: Phase 3 코어 + 필수 기능 + Reading Trace 12개/Guide 2개/Archive 배포 (Astro 1,018 pages, 440 docs, 555 redirects, 397 search records, 419 sitemap URLs)
 - **디자인**: “VS Code Workbench” 셸 — activity bar, explorer, tabs, status bar, man-page 본문, command palette
 - **의존성**: `npm audit` 0 vulnerabilities (루트·app)
 - **URL 계약**: 기존 `/docs/{id}/` 440개와 리디렉션 555개를 유지한다. 새 문서는 추가할 수 있고, migration baseline과 현재 콘텐츠 수는 분리한다.

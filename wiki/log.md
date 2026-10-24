@@ -178,6 +178,7 @@ redirect_from:
 - [2026-10-24 update | Living content baseline 분리](logs/log-2026-10-24-151-living-content.md)
 - [2026-10-24 update | Content retirement workflow](logs/log-2026-10-24-152-retirement.md)
 - [2026-10-25 update | Archive delete와 purge 예외](logs/log-2026-10-25-153-archive-purge.md)
+- [2026-10-25 update | Archive restore와 Archive 목록 UI](logs/log-2026-10-25-154-archive-restore-ui.md)
 
 ## 출처
 

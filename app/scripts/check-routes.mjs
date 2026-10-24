@@ -38,7 +38,7 @@ for (const from of Object.keys(routes.redirects)) {
   if (!(await exists(path.join(dist, legacy, "index.html")))) missing.push(`redirect ${from}`);
 }
 
-const staticPages = ["index.html", "index/index.html", "history/index.html", "evidence/index.html", "search/index.html", "traces/index.html", ...traceCatalog.traces.map((trace) => `traces/${trace.id}/index.html`), "guides/index.html", "guides/reading/index.html", "guides/evidence/index.html", "404.html"];
+const staticPages = ["index.html", "index/index.html", "history/index.html", "evidence/index.html", "search/index.html", "traces/index.html", ...traceCatalog.traces.map((trace) => `traces/${trace.id}/index.html`), "guides/index.html", "guides/reading/index.html", "guides/evidence/index.html", "archive/index.html", "404.html"];
 for (const page of staticPages) if (!(await exists(path.join(dist, page)))) missing.push(`static ${page}`);
 if (!(await exists(path.join(dist, "robots.txt")))) missing.push("robots.txt");
 if (!(await exists(path.join(dist, "sitemap.xml")))) missing.push("sitemap.xml");
@@ -58,7 +58,7 @@ const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) =>
 for (const document of publicDocuments) {
   if (!sitemapUrls.some((url) => url.endsWith(document.url))) missing.push(`sitemap ${document.url}`);
 }
-const staticSitemapPaths = ["/", "/index/", "/history/", "/evidence/", "/search/", "/traces/", ...traceCatalog.traces.map((trace) => `/traces/${trace.id}/`), "/guides/", "/guides/reading/", "/guides/evidence/"];
+const staticSitemapPaths = ["/", "/index/", "/history/", "/evidence/", "/search/", "/traces/", ...traceCatalog.traces.map((trace) => `/traces/${trace.id}/`), "/guides/", "/guides/reading/", "/guides/evidence/", "/archive/"];
 for (const route of staticSitemapPaths) {
   if (!sitemapUrls.some((url) => url.endsWith(route))) missing.push(`sitemap ${route}`);
 }
