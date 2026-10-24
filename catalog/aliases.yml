@@ -80,6 +80,7 @@ aliases:
   기호 착지 문제: concept:chinese-room-syntax-semantics
   기호 처리: concept:symbolic-manipulation
   기호는 어떻게 생각의 보조 도구에서 계산 엔진이 되었는가: analysis:symbols-from-aid-to-computation-engine
+  기호식의 재귀 함수와 기계에 의한 계산: source:ref-155
   기호에서 AI까지: source:src-007
   기호적 인식: concept:cogitatio-caeca
   길: person:stanley-gill
@@ -640,6 +641,7 @@ aliases:
   해석기하학의 탄생과 표기법 전쟁: analysis:geometry-to-computation-descartes-vs-fermat
   허턴과 그레고리의 수학 표: source:ref-055
   협력하는 순차 프로세스: source:ref-092
+  호모아이코니시티와 메타순환 평가기: analysis:mccarthy-eval-symbolic-computation
   호출 스택: concept:page-c297dc5b
   호퍼: person:grace-hopper
   혼합 정밀도: concept:mixed-precision
@@ -1855,6 +1857,7 @@ aliases:
   Maynard Smith and Szathmáry 1995: source:ref-153
   McCarthy 1960: source:ref-155
   McCarthy eval: analysis:mccarthy-eval-symbolic-computation
+  McCarthy LISP paper: source:ref-155
   McIlroy software components: source:ref-002
   meaning of machine computation: analysis:page-f5a31368
   measurement contract: concept:benchmark-contract
@@ -2234,6 +2237,7 @@ aliases:
   runtime contract: concept:runtime-contract
   runtime contract analysis: analysis:runtime-contract
   runtime contract는 무엇을 보장해야 하는가: analysis:runtime-contract
+  S-표현과 eval은 어떻게 프로그램과 데이터의 경계를 지웠는가: analysis:mccarthy-eval-symbolic-computation
   S-표현과 eval은 왜 프로그램과 데이터의 경계를 지우는가: analysis:mccarthy-eval-symbolic-computation
   S. C. Johnson: person:stephen-c-johnson
   Sagan 1967: source:ref-149

@@ -53,11 +53,21 @@ source already ingested as <id> (<title>); update that source instead
 
 - source: `ref-155` (Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I)
 - analysis: `analysis-mccarthy-eval-symbolic-computation` (S-표현과 eval은 왜 프로그램과 데이터의 경계를 지우는가)
-- concept: `concept:symbolic-manipulation`
-- concept: `concept:programmability`
-- concept: `concept:computability` (관계 합성)
+- 관련 지식 문서 fan-out 통합:
+  - `concept:symbolic-manipulation` (기호 조작)
+  - `concept:programmability` (프로그래밍 가능성)
+  - `concept:computability` (계산 가능성)
+  - `concept:page-676372e6` (보편 튜링 기계)
+  - `concept:page-26360c8b` (프로그래밍 언어)
+  - `concept:page-2a99ca9c` (IBM 704)
+  - `concept:page-c297dc5b` (스택)
+  - `concept:subroutine` (서브루틴)
+  - `concept:compiler` (컴파일러)
+  - `concept:page-7cc49c18` (제어 구조)
+  - `person:alonzo-church` (알론조 처치)
+  - `document:computation-reading-guide` (계산 독서 지도)
 
-source·analysis는 새로 추가하고, 두 concept는 본문·evidence_ids·관련 항목을 갱신했다.
+source·analysis를 원문 PDF(34쪽, 1995년 저자 주석 포함) 기준으로 작성하고, 관련 개념·인물·독서 지도 문서의 본문·evidence_ids·출처·관련 항목을 함께 갱신했다.
 
 ## 결과
 

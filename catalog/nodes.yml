@@ -425,8 +425,10 @@ nodes:
     aliases:
       - S-표현과 eval은 왜 프로그램과 데이터의 경계를 지우는가
       - eval은 왜 프로그램과 데이터의 경계를 지우는가
+      - S-표현과 eval은 어떻게 프로그램과 데이터의 경계를 지웠는가
       - McCarthy eval
       - Lisp eval analysis
+      - 호모아이코니시티와 메타순환 평가기
       - analysis-mccarthy-eval-symbolic-computation
       - analysis:mccarthy-eval-symbolic-computation
     external_ids: {}
@@ -6540,6 +6542,8 @@ nodes:
       - McCarthy 1960
       - Recursive Functions of Symbolic Expressions
       - LISP 1960 paper
+      - McCarthy LISP paper
+      - 기호식의 재귀 함수와 기계에 의한 계산
       - ref-155
       - source:ref-155
     external_ids: {}
