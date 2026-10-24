@@ -36,9 +36,11 @@
 
 ```text
 npm test
-tests 14
-pass 14
+tests 19
+pass 19
 ```
+
+graph 7 + lifecycle 7 + wiki tools 5.
 
 graph 테스트 7개 + lifecycle 테스트 7개.
 

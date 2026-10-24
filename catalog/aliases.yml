@@ -190,6 +190,7 @@ aliases:
   문자 깨짐: concept:page-6c282053
   문자 인코딩 심화: analysis:page-9241eb45
   물체론: source:ref-143
+  미작성 개념: document:gaps
   바이트: concept:page-d7da5df4
   바이트 순서 표식: concept:page-5163a003
   반환 주소: concept:page-47ba75de
@@ -517,6 +518,7 @@ aliases:
   지수 기호 하나를 얻기까지 왜 1877년이나 걸렸는가: source:src-009
   지수 기호는 왜 늦었는가: analysis:exponent-notation-delay
   지수 표기: concept:superscript-exponent
+  지식 공백: document:gaps
   지식 그래프 관계 스키마: document:knowledge-graph-schema
   지식 지도 작성 규칙: document:knowledge-graph-schema
   직렬 가능 격리: concept:serializability
@@ -1432,6 +1434,7 @@ aliases:
   DLMF Standard Reference Tables on Demand: source:ref-060
   DLMF Tables: source:ref-060
   document:computation-reading-guide: document:computation-reading-guide
+  document:gaps: document:gaps
   document:index: document:index
   document:knowledge-graph-schema: document:knowledge-graph-schema
   document:log: document:log
@@ -1602,6 +1605,7 @@ aliases:
   Functionalism: concept:substrate-independence-functionalism
   functionalism vs Chinese room: analysis:functionalism-vs-chinese-room
   G. Jacopini: person:giuseppe-jacopini
+  gaps: document:gaps
   gate: concept:page-f019ffbf
   Generality as computing capability: analysis:page-63baea1f
   geometry to computation: analysis:geometry-to-computation-descartes-vs-fermat
@@ -1857,6 +1861,7 @@ aliases:
   Memory wall paper: source:ref-039
   meta-9bc0d3d686763690: document:page-9bc0d3d6
   meta-computation-reading-guide: document:computation-reading-guide
+  meta-gaps: document:gaps
   meta-index: document:index
   meta-knowledge-graph-schema: document:knowledge-graph-schema
   meta-log: document:log

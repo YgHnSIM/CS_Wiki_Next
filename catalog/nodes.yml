@@ -3674,6 +3674,20 @@ nodes:
     same_as: []
     status: auto
     page_id: meta-computation-reading-guide
+  - key: document:gaps
+    type: document
+    labels:
+      ko: 지식 공백
+    aliases:
+      - 지식 공백
+      - gaps
+      - 미작성 개념
+      - meta-gaps
+      - document:gaps
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: meta-gaps
   - key: document:index
     type: document
     labels:

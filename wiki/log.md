@@ -182,6 +182,7 @@ redirect_from:
 - [2026-10-25 update | 계산 독서 지도 추가](logs/log-2026-10-25-155-computation-reading-guide.md)
 - [2026-10-25 update | Lifecycle integration tests](logs/log-2026-10-25-156-lifecycle-tests.md)
 - [2026-10-25 update | LLM Wiki 운영 프로토콜](logs/log-2026-10-25-157-llm-wiki-protocol.md)
+- [2026-10-25 update | Wiki lint, index, log, gaps](logs/log-2026-10-25-158-wiki-maintenance-tools.md)
 
 ## 출처
 

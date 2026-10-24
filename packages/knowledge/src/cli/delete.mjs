@@ -2,6 +2,7 @@ import { mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { loadWorkspace, renderPage, resolvePage } from "../compile/relations.mjs";
 import { traceReferences } from "./trace-refs.mjs";
+import { today } from "./today.mjs";
 
 const args = process.argv.slice(2);
 const value = (name) => {
@@ -79,7 +80,7 @@ if (existing?.mode === "archive" && mode === "archive") {
   process.exit(1);
 }
 
-const today = new Date().toISOString().slice(0, 10);
+const todayDate = today();
 const archivePath = path.join(root, "archive", "removed", `${page.id}.md`);
 const archiveText = await readFile(page.filePath, "utf8");
 const entry = {
@@ -88,7 +89,7 @@ const entry = {
   title: page.title,
   kind: page.kind,
   mode,
-  removed_at: today,
+  removed_at: todayDate,
   source_path: path.relative(root, page.filePath).split(path.sep).join("/"),
   replaced_by: page.data.retirement?.superseded_by || null,
   reason,
@@ -109,15 +110,15 @@ if (mode === "archive") {
   page.data.retirement = {
     ...(page.data.retirement || {}),
     mode: "tombstone",
-    retired_at: today,
+    retired_at: todayDate,
     ...(reason ? { note: reason } : {})
   };
   page.data.publication_visibility = "unlisted";
-  page.data.updated = today;
+  page.data.updated = todayDate;
   const body = [
     "## 은퇴",
     "",
-    `이 문서는 ${today}에 삭제되었습니다. 원문은 \`archive/removed/${page.id}.md\`에 보존되어 있습니다.`,
+    `이 문서는 ${todayDate}에 삭제되었습니다. 원문은 \`archive/removed/${page.id}.md\`에 보존되어 있습니다.`,
     reason ? `\n삭제 사유: ${reason}` : ""
   ].join("\n");
   if (!dryRun) await writeFile(page.filePath, renderPage(page.data, body), "utf8");

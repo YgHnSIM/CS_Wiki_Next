@@ -114,7 +114,7 @@ CI에서 `knowledge:check`·`knowledge:schema` 다음에 실행한다.
 - 2 guides: 이 위키를 읽는 법, 근거와 관계 읽기
 - sitemap 402 → 420 URLs
 - search records 398 (새 문서 포함, Trace는 문서 검색과 분리)
-- 페이지 1,001 → 1,019
+- 페이지 1,001 → 1,020
 
 ## 하지 않은 것
 

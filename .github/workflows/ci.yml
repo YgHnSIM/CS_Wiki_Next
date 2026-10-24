@@ -46,6 +46,12 @@ jobs:
       - name: Generated relations parity
         run: npm run knowledge:sync -- --check
 
+      - name: LLM Wiki lint
+        run: |
+          npm run wiki:index
+          npm run wiki:log
+          npm run wiki:lint
+
       - name: Graph tests
         run: npm test
 

@@ -4,7 +4,7 @@
 
 - **이전 저장소**: `C:\Vault\CS_Wiki` (백업: `C:\Vault\_backups\CS_Wiki_2026-10-24_0514`)
 - **공개 사이트**: https://yghnsim.github.io/CS_Wiki_Next/
-- **현재 단계**: Phase 3 코어 + 필수 기능 + Reading Trace 12개/Guide 2개/Archive 배포 (Astro 1,019 pages, 441 docs, 555 redirects, 398 search records, 420 sitemap URLs)
+- **현재 단계**: Phase 3 코어 + 필수 기능 + Reading Trace 12개/Guide 2개/Archive/LLM Wiki lint 배포 (Astro 1,020 pages, 442 docs, 555 redirects, 398 search records, 420 sitemap URLs)
 - **디자인**: “VS Code Workbench” 셸 — activity bar, explorer, tabs, status bar, man-page 본문, command palette
 - **의존성**: `npm audit` 0 vulnerabilities (루트·app)
 - **URL 계약**: 기존 `/docs/{id}/` 440개와 리디렉션 555개를 유지한다. 새 문서는 추가할 수 있고, migration baseline과 현재 콘텐츠 수는 분리한다.
@@ -45,6 +45,7 @@ app/                  Astro 사이트
 - [ADR 0010: Archive Delete and Purge](docs/architecture/0010-archive-purge.md)
 - [ADR 0011: Lifecycle Integration Tests](docs/architecture/0011-lifecycle-tests.md)
 - [ADR 0012: LLM Wiki Operations](docs/architecture/0012-llm-wiki-operations.md)
+- [ADR 0013: Wiki Maintenance Tools](docs/architecture/0013-wiki-maintenance-tools.md)
 - [Trace checkpoint review — Batch 1](docs/architecture/trace-checkpoint-review-batch-1.md)
 - [Trace checkpoint review — Batch 2](docs/architecture/trace-checkpoint-review-batch-2.md)
 - [Trace checkpoint review — Batch 3](docs/architecture/trace-checkpoint-review-batch-3.md)

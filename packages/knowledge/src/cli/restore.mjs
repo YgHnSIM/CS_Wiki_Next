@@ -2,6 +2,7 @@ import { mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 import YAML from "yaml";
 import { renderPage } from "../compile/relations.mjs";
+import { today } from "./today.mjs";
 
 const args = process.argv.slice(2);
 const value = (name) => {
@@ -74,7 +75,7 @@ delete data.retirement;
 delete data.superseded_by;
 data.publication_visibility = makePublic ? "public" : "unlisted";
 if (makePublic) data.graph_visibility = "public";
-data.updated = new Date().toISOString().slice(0, 10);
+data.updated = today();
 
 if (!dryRun) {
   await mkdir(path.dirname(absoluteSource), { recursive: true });

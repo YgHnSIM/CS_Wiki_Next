@@ -1,6 +1,7 @@
 import { writeFile } from "node:fs/promises";
 import { loadWorkspace, renderPage } from "../compile/relations.mjs";
 import { traceReferences } from "./trace-refs.mjs";
+import { today } from "./today.mjs";
 
 const args = process.argv.slice(2);
 const value = (name) => {
@@ -59,15 +60,15 @@ if (mode === "redirect") {
   }
 }
 
-const today = new Date().toISOString().slice(0, 10);
+const todayDate = today();
 page.data.retirement = {
   mode,
-  retired_at: today,
+  retired_at: todayDate,
   ...(target ? { superseded_by: target.id } : {}),
   ...(note ? { note } : {})
 };
 page.data.publication_visibility = "unlisted";
-page.data.updated = today;
+page.data.updated = todayDate;
 
 if (!dryRun) {
   await writeFile(page.filePath, renderPage(page.data, page.body), "utf8");
