@@ -4,7 +4,7 @@
 
 - **이전 저장소**: `C:\Vault\CS_Wiki` (백업: `C:\Vault\_backups\CS_Wiki_2026-10-24_0514`)
 - **공개 사이트**: https://yghnsim.github.io/CS_Wiki_Next/
-- **현재 단계**: Phase 3 코어 + 필수 기능 + Reading Trace 11개/Guide 2개 배포 (Astro 1,016 pages, 440 docs, 555 redirects, 397 search records, 417 sitemap URLs)
+- **현재 단계**: Phase 3 코어 + 필수 기능 + Reading Trace 12개/Guide 2개 배포 (Astro 1,017 pages, 440 docs, 555 redirects, 397 search records, 418 sitemap URLs)
 - **디자인**: “VS Code Workbench” 셸 — activity bar, explorer, tabs, status bar, man-page 본문, command palette
 - **의존성**: `npm audit` 0 vulnerabilities (루트·app)
 - **URL 계약**: `/docs/{id}/` 440개와 리디렉션 555개를 유지한다.
@@ -43,6 +43,7 @@ app/                  Astro 사이트
 - [Trace checkpoint review — Batch 1](docs/architecture/trace-checkpoint-review-batch-1.md)
 - [Trace checkpoint review — Batch 2](docs/architecture/trace-checkpoint-review-batch-2.md)
 - [Trace checkpoint review — Batch 3](docs/architecture/trace-checkpoint-review-batch-3.md)
+- [Trace gap report](docs/architecture/trace-gap-report.md)
 - [Phase 1 relations 마이그레이션](docs/architecture/phase-1-relations-migration.md)
 - [relations 스키마](schema/knowledge/relations.schema.json)
 - [Registry 스키마](schema/knowledge/registry.schema.json)
