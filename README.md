@@ -44,6 +44,7 @@ app/                  Astro 사이트
 - [ADR 0009: Content Retirement](docs/architecture/0009-retirement.md)
 - [ADR 0010: Archive Delete and Purge](docs/architecture/0010-archive-purge.md)
 - [ADR 0011: Lifecycle Integration Tests](docs/architecture/0011-lifecycle-tests.md)
+- [ADR 0012: LLM Wiki Operations](docs/architecture/0012-llm-wiki-operations.md)
 - [Trace checkpoint review — Batch 1](docs/architecture/trace-checkpoint-review-batch-1.md)
 - [Trace checkpoint review — Batch 2](docs/architecture/trace-checkpoint-review-batch-2.md)
 - [Trace checkpoint review — Batch 3](docs/architecture/trace-checkpoint-review-batch-3.md)

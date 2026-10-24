@@ -6,6 +6,8 @@
 
 `publication_visibility: public` 문서만 목록·검색·사이트맵·홈·그래프 렌즈·학습 경로에 노출한다. `unlisted` 문서는 URL과 직접 링크로 접근할 수 있도록 빌드하되 `noindex`를 붙이고 위 발견 경로에서 제외한다. `private`는 지원하지 않으며, 진짜 비공개 문서는 공개 저장소에 두지 않는다. 은퇴한 문서는 `retirement`(`tombstone`/`redirect`)로 표시하고, 삭제된 문서는 `contracts/removed-documents.json`에 기록한다.
 
+LLM Wiki 운영을 위해 선택 필드 `status`(`current`/`stale`/`disputed`)와 `page_role`(`knowledge`/`synthesis`)를 둔다. 기존 문서는 기본값 `current`/`knowledge`로 해석한다. 지식 대체는 `status: stale` + `superseded_by`를 사용하고, URL 은퇴의 `retirement.superseded_by`와 혼용하지 않는다.
+
 ## 검증과 생성
 
 ```powershell

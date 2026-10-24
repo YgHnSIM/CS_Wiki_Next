@@ -63,6 +63,17 @@ archive 복원은 `npm run content:restore -- --id <id> [--public]`를 사용하
 
 `knowledge:check`는 Registry 정합성, `knowledge:schema`는 전체 페이지 frontmatter 스키마, `knowledge:report`는 전체 관계의 preflight, `knowledge:sync --check`는 generated block 패리티, `knowledge:build`는 정규 그래프와 invariant를 검사한다. `npm test`는 graph invariant와 lifecycle CLI(retire/delete/restore/purge)를 임시 fixture에서 검사한다. `knowledge:quality`는 연도 미상·고아·단일 근거를, `traces:check`는 `catalog/traces.json`의 문서·근거·역할 정합성과 coverage/quality budget을 검사한다. `site:build`는 Astro 사이트를 만들고, `site:parity`는 현재 docs·redirects·search·sitemap의 무결성, `search:eval`은 32개 쿼리의 Top-1/Top-3/MRR, `site:links`는 내부 링크, `security:audit`는 루트·app 의존성 취약점을 검사한다.
 
+## LLM Wiki 운영
+
+- `wiki:index`는 `wiki/index.md`의 공개 문서 누락을 검사한다. `--write`에서만 수정한다.
+- `wiki:log`는 `wiki/log.md`와 `wiki/logs/` 항목의 수·순서를 검사한다.
+- `wiki:gaps`는 `wiki/gaps.md`의 wanted/question을 관리한다. 자동 삭제하지 않는다.
+- `wiki:lint`는 schema·raw·evidence·link·index/log·gaps를 deterministic하게 검사한다.
+- `wiki:ingest`는 raw 저장·source skeleton·proposal까지만 자동화하고, wiki 본문은 사람이 승인한 뒤 적용한다.
+- `wiki:query`는 index → search → relations 순으로 읽고 citation을 붙인다. `--save`일 때만 synthesis 페이지를 만든다.
+- `wiki:audit`은 claim을 raw와 대조해 보고만 하고 수정하지 않는다.
+- 지식 대체는 `status: stale` + `superseded_by`, 삭제·URL 은퇴는 `content:retire`/`content:delete`를 사용한다.
+
 ## 금지
 
 - 기존 저장소를 수정하거나 덮어쓰지 않는다.

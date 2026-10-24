@@ -24,6 +24,8 @@ export type Document = {
   domains: string[];
   publication_visibility: "public" | "unlisted";
   graph_visibility: string;
+  status: "current" | "stale" | "disputed";
+  page_role: "knowledge" | "synthesis";
   created: string;
   updated: string;
   url: string;

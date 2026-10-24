@@ -54,6 +54,8 @@
     },
     "publication_visibility": { "enum": ["public", "unlisted"] },
     "graph_visibility": { "enum": ["public", "context", "hidden"] },
+    "status": { "enum": ["current", "stale", "disputed"] },
+    "page_role": { "enum": ["knowledge", "synthesis"] },
     "created": { "type": "string", "format": "date" },
     "updated": { "type": "string", "format": "date" },
     "superseded_by": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },

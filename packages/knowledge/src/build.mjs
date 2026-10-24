@@ -36,6 +36,8 @@ export async function buildGraph(root = process.cwd()) {
       domains: page.data.domains || [],
       publication_visibility: page.data.publication_visibility,
       graph_visibility: page.data.graph_visibility,
+      status: page.data.status || "current",
+      page_role: page.data.page_role || "knowledge",
       created: page.data.created,
       updated: page.data.updated,
       url: route?.url || `/docs/${page.id}/`,
