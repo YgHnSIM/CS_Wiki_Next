@@ -1,0 +1,88 @@
+---
+schema_version: 3
+id: concept-f4f7573102f01723
+key: concept:page-f4f75731
+kind: concept
+title: UTF-8
+aliases:
+  - Unicode Transformation Format 8-bit
+  - UTF8
+summary: Unicode scalar value를 1-4개의 8비트 코드 유닛으로 표현하는 ASCII 호환 가변 길이 인코딩.
+domains:
+  - computer-science
+  - internet
+  - text-processing
+publication_visibility: public
+graph_visibility: public
+created: 2026-07-10
+updated: 2026-10-24
+evidence_ids:
+  - ref-022
+  - ref-023
+  - ref-026
+capability_layers:
+  - reliable-results
+history:
+  event:
+    start: 1992
+    basis: representative
+    evidence_id: ref-022
+  note: UTF-8 설계가 제안된 1992년을 대표 시점으로 둔다.
+  layer: system
+redirect_from:
+  - /concepts/utf-8/
+relations:
+  - predicate: implements
+    target: concept:page-496b0829
+    note: 스칼라 값을 1–4바이트열로 직렬화한다.
+    evidence:
+      - source: ref-023
+  - predicate: responds_to
+    target: concept:page-6a0c16a9
+    note: 0–127 구간을 단일 바이트로 보존해 하위 호환한다.
+    evidence:
+      - source: ref-023
+---
+
+## 개요
+
+[[UTF-8]]은 [[Unicode scalar value]]를 1-4개의 8비트 [[코드 유닛]]으로 표현하는 가변 길이 인코딩 형식이다. ASCII 범위인 `U+0000`부터 `U+007F`까지는 같은 값의 한 바이트로 표현되므로 ASCII 텍스트는 그대로 유효한 UTF-8 텍스트가 된다.
+
+## 구조
+
+UTF-8은 선행 바이트가 전체 길이를 나타내고 이어지는 바이트는 `10xxxxxx` 형태의 continuation byte로 이어진다. 이 구조 덕분에 바이트 스트림 중간에서도 문자 경계를 비교적 쉽게 찾을 수 있다.
+
+올바른 UTF-8은 가장 짧은 표현만 허용한다. 과거 보안 문제의 원인이 된 overlong sequence와 surrogate 영역을 가리키는 시퀀스, Unicode 범위 밖의 값은 ill-formed로 다뤄야 한다.
+
+## 장점과 주의점
+
+UTF-8은 바이트 순서 문제가 없고, ASCII와 호환되며, 인터넷과 웹의 기본 텍스트 교환 인코딩으로 적합하다. 그러나 "한 문자 = 한 바이트"는 ASCII 범위에서만 맞다. 한글, 이모지, 결합 문자 시퀀스는 여러 바이트와 여러 코드 포인트가 필요할 수 있다.
+
+## 관계
+
+<!-- knowledge:relations:start -->
+| 관계 | 대상 | 설명 | 근거 |
+|---|---|---|---|
+| implements | [[유니코드]] | 스칼라 값을 1–4바이트열로 직렬화한다. | [[RFC 3629 UTF-8]] |
+| responds_to | [[ASCII]] | 0–127 구간을 단일 바이트로 보존해 하위 호환한다. | [[RFC 3629 UTF-8]] |
+<!-- knowledge:relations:end -->
+
+## 출처
+<!-- wiki-v2:evidence-start -->
+### 근거 ID
+- `ref-022`
+- `ref-023`
+- `ref-026`
+<!-- wiki-v2:evidence-end -->
+
+- [[The Unicode Standard 17.0.0]]
+- [[RFC 3629 UTF-8]]
+- [[WHATWG Encoding Standard]]
+
+## 관련 항목
+
+- [[유니코드]] — 다양한 문자와 기호를 코드 포인트, 인코딩 형식, 정규화, 텍스트 경계 문제로 포괄하는 문자 체계.
+- [[ASCII]] — 문자에 숫자 값을 대응시키는 7비트 문자 인코딩 표준이자 UTF-8 ASCII 범위 호환성의 기반.
+- [[코드 포인트]] — Unicode 문자 공간에서 특정 위치를 가리키는 숫자 값과 scalar value의 구분을 정리한 개념.
+- [[Unicode scalar value]] — Unicode 코드 포인트 가운데 surrogate 영역을 제외해 UTF 인코딩 형식의 입력이 되는 값.
+- [[코드 유닛]] — UTF-8, UTF-16 같은 인코딩 형식이 문자열을 저장·전송할 때 사용하는 최소 단위.

@@ -1,0 +1,84 @@
+---
+schema_version: 3
+id: concept-145622bcdc913103
+key: concept:page-145622bc
+kind: concept
+title: Entscheidungsproblem
+aliases:
+  - 결정 문제
+  - decision problem
+  - Hilbert's Entscheidungsproblem
+  - 힐베르트 결정 문제
+summary: 수학 명제의 증명 가능성을 일반 기계 절차로 판정할 수 있는지를 묻는 결정 문제.
+domains:
+  - computer-science
+  - computer-history
+publication_visibility: public
+graph_visibility: public
+created: 2026-07-10
+updated: 2026-10-24
+evidence_ids:
+  - ref-009
+  - ref-010
+capability_layers:
+  - computability
+history:
+  layer: theory
+redirect_from:
+  - /concepts/entscheidungsproblem/
+relations:
+  - predicate: narrower
+    target: concept:computability
+    note: 형식 논리 명제의 타당성을 일반 기계 절차로 판정할 수 없음을 보이는 결정 문제다.
+    evidence:
+      - source: ref-009
+  - predicate: precedes
+    target: concept:page-b95bdd2d
+    note: 일반 판정 절차의 부재를 보인 뒤 서로 다른 형식 모델의 동등성 해석이 따라온다.
+    evidence:
+      - source: ref-010
+---
+
+## 개요
+
+[[Entscheidungsproblem]]은 형식 논리의 명제가 주어졌을 때 그 명제가 논리적으로 타당한지(동등하게 적절한 형식 체계에서 증명 가능한지)를 유한한 단계로 항상 판정하는 일반적인 절차가 존재하는지를 묻는 문제다. Hilbert 프로그램의 맥락에서 제기된 이 질문은 임의의 수학적 질문의 진위를 판정하라는 요구가 아니라 일차 논리의 공식에 적용할 보편적인 판정 방법을 요구한 것이다.
+
+## Turing의 결론
+
+[[On Computable Numbers with an Application to the Entscheidungsproblem]]에서 [[앨런 튜링]]은 자신의 계산 기계 모델을 사용해 Entscheidungsproblem이 요구하는 일반 절차가 존재하지 않음을 보였다. 논문의 계산 불가능성 결과를 형식 논리의 판정 문제로 환원하면 그러한 절차가 존재한다는 가정으로부터 이미 불가능하다고 증명한 기계 판정 절차를 만들 수 있기 때문이다.
+
+## Church와의 연결
+
+[[알론조 처치]]도 [[An Unsolvable Problem of Elementary Number Theory]]에서 효과적 계산 가능성의 형식화를 통해 유사한 결론에 도달했다. Turing은 자신의 계산 가능성과 Church의 effective calculability가 동등하다고 설명했다.
+
+## 의미
+
+Entscheidungsproblem의 부정적 해결은 계산 가능성 이론의 핵심 전환이다. 이는 단순히 아직 좋은 알고리즘을 찾지 못했다는 뜻이 아니라 명확히 형식화된 문제 중에도 모든 입력에 답하는 일반적인 기계 절차가 존재하지 않는 문제가 있음을 의미한다. 개별 공식의 타당성을 증명하거나 반증할 수 있는 경우가 있다는 사실과 모든 공식에 통하는 하나의 판정 절차가 없다는 사실은 구분해야 한다.
+
+## 관계
+
+<!-- knowledge:relations:start -->
+| 관계 | 대상 | 설명 | 근거 |
+|---|---|---|---|
+| narrower | [[계산 가능성]] | 형식 논리 명제의 타당성을 일반 기계 절차로 판정할 수 없음을 보이는 결정 문제다. | [[On Computable Numbers with an Application to the Entscheidungsproblem]] |
+| precedes | [[처치-튜링 논제]] | 일반 판정 절차의 부재를 보인 뒤 서로 다른 형식 모델의 동등성 해석이 따라온다. | [[An Unsolvable Problem of Elementary Number Theory]] |
+<!-- knowledge:relations:end -->
+
+## 출처
+
+<!-- wiki-v2:evidence-start -->
+### 근거 ID
+- `ref-009`
+- `ref-010`
+<!-- wiki-v2:evidence-end -->
+
+- [[On Computable Numbers with an Application to the Entscheidungsproblem]]
+- [[An Unsolvable Problem of Elementary Number Theory]]
+
+## 관련 항목
+
+- [[계산 가능성]] — 어떤 함수나 문제가 유한한 규칙적 절차로 해결될 수 있는지를 다루는 이론적 개념.
+- [[튜링 기계]] — 테이프, 상태, 기호, 전이 규칙으로 계산 절차를 형식화한 추상 기계 모델.
+- [[정지 문제]] — 임의의 프로그램과 입력에 대해 실행이 멈출지 일반적으로 판정할 수 있는지를 묻는 문제.
+- [[처치-튜링 논제]] — 효과적 계산 가능성의 직관이 튜링 기계 계산 가능성과 일치한다는 해석적 논제.
+- [[앨런 튜링]] — 튜링 기계와 보편 튜링 기계로 계산 절차의 형식화를 제시하고 Entscheidungsproblem의 부정적 해결을 보인 수학자.

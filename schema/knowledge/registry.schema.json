@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cs-wiki.local/schema/knowledge/registry.schema.json",
+  "title": "CS Wiki node registry v1",
+  "description": "Canonical authority records for people, concepts, works, events, and other knowledge nodes.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "nodes"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "nodes": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/node" }
+    }
+  },
+  "$defs": {
+    "key": {
+      "type": "string",
+      "pattern": "^(person|organization|concept|entity|work|event|place|artifact|analysis|document|source):[a-z0-9][a-z0-9-]*$"
+    },
+    "node": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["key", "type", "labels", "aliases", "status"],
+      "properties": {
+        "key": { "$ref": "#/$defs/key" },
+        "type": {
+          "enum": [
+            "person",
+            "organization",
+            "concept",
+            "entity",
+            "work",
+            "event",
+            "place",
+            "artifact",
+            "analysis",
+            "document",
+            "source"
+          ]
+        },
+        "labels": {
+          "type": "object",
+          "additionalProperties": false,
+          "minProperties": 1,
+          "properties": {
+            "ko": { "type": "string", "minLength": 1 },
+            "en": { "type": "string", "minLength": 1 }
+          }
+        },
+        "aliases": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        },
+        "external_ids": {
+          "type": "object",
+          "additionalProperties": { "type": "string", "minLength": 1 }
+        },
+        "same_as": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        },
+        "status": {
+          "enum": ["auto", "reviewed", "deprecated"]
+        },
+        "page_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "notes": { "type": "string", "maxLength": 500 }
+      }
+    }
+  }
+}

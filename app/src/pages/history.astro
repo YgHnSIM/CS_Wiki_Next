@@ -1,0 +1,38 @@
+---
+import Base from "../layouts/Base.astro";
+import { documentUrl, docsByKey, publicDocuments } from "../lib/data";
+import { graph } from "../lib/data";
+
+const events = [...graph.timeline]
+  .map((event) => ({ ...event, document: docsByKey.get(event.document) }))
+  .filter((event) => event.document?.publication_visibility === "public" && (event.event_start !== null || event.publication_year !== null))
+  .sort((a, b) => {
+    const left = a.event_start ?? a.publication_year ?? 9999;
+    const right = b.event_start ?? b.publication_year ?? 9999;
+    return left - right || a.document!.title.localeCompare(b.document!.title, "ko");
+  });
+---
+
+<Base title="역사 렌즈" description="근거가 있는 연도만 배치한 CS Wiki 역사 렌즈">
+  <div class="lens-page">
+  <p class="eyebrow">HISTORY</p>
+  <h1>역사 렌즈</h1>
+  <p class="lede">페이지의 대표 사건 연도와 출판 연도만 사용합니다. 연도가 확인되지 않은 문서는 이 목록에서 제외합니다.</p>
+
+  <div class="stat-grid">
+    <div class="stat"><strong>{events.length}</strong><span>연도가 있는 문서</span></div>
+    <div class="stat"><strong>{publicDocuments.length - events.length}</strong><span>연도 미상</span></div>
+  </div>
+
+  <ol class="list-plain">
+    {events.map((event) => (
+      <li>
+        <strong>{event.event_start ?? event.publication_year}</strong>
+        {" · "}
+        <a href={documentUrl(event.document!)}>{event.document!.title}</a>
+        <small> · {event.document!.kind}{event.layer ? ` · ${event.layer}` : ""}</small>
+      </li>
+    ))}
+  </ol>
+  </div>
+</Base>

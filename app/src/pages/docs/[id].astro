@@ -1,0 +1,188 @@
+---
+import Base from "../../layouts/Base.astro";
+import {
+  documentUrl,
+  documents,
+  incoming,
+  nodeDocument,
+  outgoing,
+  resolveDocument,
+  withBase
+} from "../../lib/data";
+import { renderMarkdown } from "../../lib/markdown.mjs";
+import { extractHeadings } from "../../lib/toc.mjs";
+import { tracesForDocument } from "../../lib/traces";
+
+export function getStaticPaths() {
+  return documents.map((document) => ({
+    params: { id: document.id },
+    props: { document }
+  }));
+}
+
+const { document } = Astro.props;
+const html = renderMarkdown(document.body, resolveDocument, withBase);
+const statements = outgoing(document);
+const backlinks = incoming(document);
+const kindLabels: Record<string, string> = {
+  concept: "개념",
+  entity: "개체",
+  analysis: "분석",
+  source: "소스",
+  reference: "참고 자료",
+  meta: "운영"
+};
+const kindLabel = kindLabels[document.kind] || document.kind;
+const event = document.history?.event;
+const year = event?.start ?? document.history?.publication_year ?? null;
+const evidenceCount = new Set(statements.flatMap((statement) => statement.evidence.map((item) => item.source))).size;
+const toc = extractHeadings(document.body);
+const evidenceEntries = statements.flatMap((statement) => statement.evidence.map((item) => ({
+  source: item.source,
+  sourceTitle: nodeDocument(item.source)?.title || item.source,
+  locator: item.locator,
+  quote: item.quote,
+  predicate: statement.predicate
+}))).slice(0, 40);
+const relatedTraces = tracesForDocument(document.key);
+const relationTitle = (key: string) => nodeDocument(key)?.title || key;
+const retirement = document.retirement;
+const redirectDocument = retirement?.mode === "redirect" && retirement.superseded_by
+  ? documents.find((item) => item.id === retirement.superseded_by)
+  : null;
+const redirectUrl = redirectDocument ? withBase(`/docs/${redirectDocument.id}/`) : undefined;
+---
+
+<Base
+  title={document.title}
+  description={document.summary}
+  canonical={withBase(document.url)}
+  noindex={document.publication_visibility === "unlisted"}
+  refresh={redirectUrl}
+>
+  <div class="man-page">
+    <div class="man-head">
+      <span>CSWIKI(1)</span>
+      <span>CS Wiki Manual</span>
+      <span>CSWIKI(1)</span>
+    </div>
+    <div class="man-layout">
+      <article class="man-main">
+        {retirement && (
+          <aside class="notice" role="note">
+            <strong>은퇴한 문서</strong>
+            {retirement.mode === "redirect" && redirectDocument
+              ? <>이 문서는 <a href={redirectUrl}>{redirectDocument.title}</a>로 대체되었습니다. 잠시 후 이동합니다.</>
+              : <>이 문서는 더 이상 현재 지식으로 유지되지 않습니다. {retirement.note || "보존된 기록으로만 남겨 둡니다."}</>}
+          </aside>
+        )}
+
+        <h1 class="man-title">{document.title}</h1>
+        <div class="man-block">
+          <h2 class="man-label">NAME</h2>
+          <p class="man-summary">{document.summary}</p>
+        </div>
+        <div class="man-block">
+          <h2 class="man-label">SYNOPSIS</h2>
+          <div class="man-meta">
+            <span>{kindLabel}</span>
+            <span>updated {document.updated}</span>
+            {year !== null && <span>{year}</span>}
+            {document.history?.layer && <span>{document.history.layer}</span>}
+            {document.domains.map((domain) => <span>{domain}</span>)}
+            {document.status !== "current" && <span class="status-badge">{document.status}</span>}
+            {document.page_role === "synthesis" && <span class="status-badge">synthesis</span>}
+          </div>
+        </div>
+
+        {document.publication_visibility === "unlisted" && (
+          <aside class="notice" role="note">
+            <strong>미등록 문서</strong> 이 문서는 공개 목록에 등록되지 않았습니다. 검색·사이트맵에는 노출되지 않으며, 링크로만 접근할 수 있습니다.
+          </aside>
+        )}
+
+        <div class="man-description">
+          <h2 class="man-label">DESCRIPTION</h2>
+          <div class="prose" set:html={html} />
+        </div>
+      </article>
+
+      <aside class="man-aside" aria-label="관계와 역링크">
+        {toc.length > 1 && (
+          <>
+            <h2>CONTENTS</h2>
+            <ul class="toc-list">
+              {toc.map((heading) => (
+                <li class:list={{ "toc-depth-3": heading.depth === 3 }}>
+                  <a href={`#${heading.id}`}>{heading.text}</a>
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
+
+        <h2>RELATIONS</h2>
+        {statements.length === 0 ? (
+          <p>기록된 관계가 없습니다.</p>
+        ) : (
+          <ul class="connection-list">
+            {statements.slice(0, 12).map((statement) => (
+              <li>
+                <a href={nodeDocument(statement.target) ? documentUrl(nodeDocument(statement.target)!) : undefined}>
+                  {relationTitle(statement.target)}
+                </a>
+                <span>{statement.predicate}</span>
+              </li>
+            ))}
+          </ul>
+        )}
+
+        <h2>BACKLINKS</h2>
+        {backlinks.length === 0 ? (
+          <p>들어오는 관계가 없습니다.</p>
+        ) : (
+          <ul class="connection-list">
+            {backlinks.slice(0, 12).map((link) => {
+              const source = nodeDocument(link.source);
+              return (
+                <li>
+                  <a href={source ? documentUrl(source) : undefined}>{source ? source.title : link.source}</a>
+                  <span>{link.predicate}</span>
+                </li>
+              );
+            })}
+          </ul>
+        )}
+
+        <h2>EVIDENCE</h2>
+        {evidenceEntries.length === 0 ? (
+          <p>기록된 근거가 없습니다.</p>
+        ) : (
+          <ul class="evidence-list">
+            {evidenceEntries.map((item) => (
+              <li>
+                <a href={nodeDocument(item.source) ? documentUrl(nodeDocument(item.source)!) : undefined}>{item.sourceTitle}</a>
+                <span>{item.predicate}{item.locator ? ` · ${item.locator}` : ""}</span>
+                {item.quote && <q>{item.quote}</q>}
+              </li>
+            ))}
+          </ul>
+        )}
+
+        {relatedTraces.length > 0 && (
+          <>
+            <h2>TRACES</h2>
+            <ul class="connection-list">
+              {relatedTraces.map((trace) => (
+                <li>
+                  <a href={withBase(`/traces/${trace.id}/`)}>{trace.title}</a>
+                  <span>{trace.steps.length} steps</span>
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
+      </aside>
+    </div>
+  </div>
+</Base>

@@ -1,0 +1,93 @@
+---
+schema_version: 3
+id: concept-ef0b337a520af324
+key: concept:page-ef0b337a
+kind: concept
+title: Initial Orders
+aliases:
+  - 초기 명령
+  - EDSAC Initial Orders
+summary: EDSAC에서 종이 테이프 프로그램을 읽고 해석해 메모리에 적재한 초기 로더·어셈블러 절차.
+domains:
+  - computer-history
+  - software-engineering
+publication_visibility: public
+graph_visibility: public
+created: 2026-05-04
+updated: 2026-10-24
+evidence_ids:
+  - src-002
+  - src-003
+capability_layers:
+  - programmability
+history:
+  event:
+    start: 1949
+    basis: representative
+    evidence_id: src-002
+  note: EDSAC의 실용 운전과 함께 Initial Orders가 사용된 1949년을 대표 시점으로 둔다.
+  layer: software
+redirect_from:
+  - /concepts/initial-orders/
+relations:
+  - predicate: enables
+    target: concept:page-873d18c3
+    note: 빈 기계가 자기 적재 루틴을 읽어 프로그램을 시작하게 한다.
+    evidence:
+      - source: src-003
+  - predicate: enables
+    target: concept:page-d679e8f4
+    note: 기준 주소로 명령의 주소 필드를 고쳐 라이브러리를 결합한다.
+    evidence:
+      - source: src-002
+---
+
+## 개요
+
+[[Initial Orders]]는 [[EDSAC]]에서 종이 테이프에 담긴 프로그램을 읽고 해석해 메모리에 적재하던 초기 명령 절차다. 이는 단순한 입력 장치가 아니라, 인간 친화적 표기와 기계 실행 사이를 연결하는 초기 소프트웨어 계층으로 이해된다.
+
+## 기능
+
+- 종이 테이프의 명령과 주소 표기를 읽었다.
+- 인간이 다루기 쉬운 표기를 기계가 처리할 수 있는 형태로 해석했다.
+- 프로그램을 메모리에 배치해 실행 가능한 상태로 만들었다.
+- 더 작은 절차가 더 큰 절차를 불러오는 [[부트스트랩]] 구조를 형성했다.
+
+## Initial Orders 1
+
+Initial Orders 1은 고정 주소 기반의 작은 [[로더]]이자 [[어셈블러]]였다. 입력된 opcode, 십진수 주소, S/L 길이 정보를 조립해 사용자 프로그램을 메모리에 저장했으며, 저장 위치는 `m[25]`의 저장 명령을 직접 고치는 [[자기 수정 코드]]로 갱신했다.
+
+## Initial Orders 2
+
+Initial Orders 2는 `θ`를 현재 서브루틴의 기준 적재 주소로 사용해 주소를 보정했다. 이 [[재배치]] 기능 덕분에 서브루틴을 고정 주소에 묶지 않고 여러 위치에 올릴 수 있었고, 여러 루틴을 순차적으로 결합하는 원시적 [[링커]] 기능도 일부 갖게 됐다.
+
+## 현대적 대응
+
+Initial Orders는 오늘날의 부트로더, 로더, 어셈블러, 초기 번역기의 성격을 기초적인 형태로 함께 갖는다. 중요한 점은 사용자가 기계 내부 상태를 직접 조작하는 대신, 더 높은 수준의 표현을 작성하고 다른 절차가 이를 해석해 실행하게 했다는 것이다.
+
+## 관계
+
+<!-- knowledge:relations:start -->
+| 관계 | 대상 | 설명 | 근거 |
+|---|---|---|---|
+| enables | [[부트스트랩]] | 빈 기계가 자기 적재 루틴을 읽어 프로그램을 시작하게 한다. | [[EDSAC과 Initial Orders]] |
+| enables | [[재배치]] | 기준 주소로 명령의 주소 필드를 고쳐 라이브러리를 결합한다. | [[초기 소프트웨어의 탄생]] |
+<!-- knowledge:relations:end -->
+
+## 출처
+<!-- wiki-v2:evidence-start -->
+### 근거 ID
+- `src-002`
+- `src-003`
+<!-- wiki-v2:evidence-end -->
+
+- [[초기 소프트웨어의 탄생]]
+- [[EDSAC과 Initial Orders]]
+
+## 관련 항목
+
+- [[EDSAC]] — 초기 저장 프로그램 컴퓨터로, 소프트웨어의 입력·적재·디버깅·재사용 계층이 선명하게 드러난 사례.
+- [[저장 프로그램 컴퓨터]] — 프로그램 명령을 데이터처럼 메모리에 저장하고 실행하는 컴퓨터 구조.
+- [[부트스트랩]] — 작은 절차가 더 큰 절차를 불러오며 시스템을 단계적으로 시작하는 구조.
+- [[로더]] — 프로그램을 실행 가능한 위치에 적재하고 실행 흐름을 넘기는 소프트웨어 계층.
+- [[어셈블러]] — 사람이 읽을 수 있는 기호 명령을 기계 명령으로 조립하는 프로그램.

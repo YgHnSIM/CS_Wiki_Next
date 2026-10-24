@@ -1,0 +1,69 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    env:
+      SITE_BASE: /CS_Wiki_Next
+      SITE_URL: https://yghnsim.github.io
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            app/package-lock.json
+
+      - name: Install root dependencies
+        run: npm ci
+
+      - name: Install app dependencies
+        run: npm ci --prefix app
+
+      - name: Audit dependencies
+        run: npm run security:audit
+
+      - name: Registry and page schema
+        run: |
+          npm run knowledge:check
+          npm run knowledge:schema
+
+      - name: Reading traces
+        run: npm run traces:check
+
+      - name: Generated relations parity
+        run: npm run knowledge:sync -- --check
+
+      - name: LLM Wiki lint
+        run: |
+          npm run wiki:index
+          npm run wiki:log
+          npm run wiki:lint
+          npm run wiki:lint -- --semantic
+
+      - name: Graph tests
+        run: npm test
+
+      - name: Build site
+        run: npm run site:build
+
+      - name: Route parity
+        run: npm run site:parity
+
+      - name: Search quality
+        run: npm run search:eval
+
+      - name: Internal links
+        run: npm run site:links

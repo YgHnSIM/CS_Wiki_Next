@@ -1,0 +1,270 @@
+---
+import Base from "../layouts/Base.astro";
+import { documentUrl, graph, nodeDocument, publicDocuments, withBase } from "../lib/data";
+import { traces } from "../lib/traces";
+import { rankSearch } from "../lib/search.mjs";
+
+const degree = new Map<string, number>();
+for (const statement of graph.statements) {
+  degree.set(statement.subject, (degree.get(statement.subject) || 0) + 1);
+  degree.set(statement.target, (degree.get(statement.target) || 0) + 1);
+}
+const suggestions = [...degree.entries()]
+  .map(([key, count]) => ({ document: nodeDocument(key), count }))
+  .filter((item) => item.document && item.document.publication_visibility === "public")
+  .sort((a, b) => b.count - a.count)
+  .slice(0, 8);
+
+const paths = [
+  ...traces.map((trace) => ({
+    title: trace.title,
+    summary: trace.question,
+    kind: "trace",
+    aliases: [trace.id],
+    url: withBase(`/traces/${trace.id}/`)
+  })),
+  { title: "이 위키를 읽는 법", summary: "source·concept·analysis 읽기", kind: "guide", aliases: ["reading guide"], url: withBase("/guides/reading/") },
+  { title: "근거와 관계 읽기", summary: "evidence·relations·연도·unlisted", kind: "guide", aliases: ["evidence guide"], url: withBase("/guides/evidence/") }
+];
+
+const kindLabels: Record<string, string> = {
+  concept: "개념",
+  entity: "개체",
+  analysis: "분석",
+  source: "소스",
+  reference: "참고 자료",
+  meta: "운영"
+};
+const kinds = [...new Set(publicDocuments.map((document) => document.kind))]
+  .sort((a, b) => (kindLabels[a] || a).localeCompare(kindLabels[b] || b, "ko"));
+const domainLabels: Record<string, string> = {
+  "computer-history": "컴퓨터 역사",
+  "software-engineering": "소프트웨어 공학",
+  "computer-science": "컴퓨터 과학",
+  "programming-languages": "프로그래밍 언어",
+  "computer-architecture": "컴퓨터 구조",
+  "text-processing": "텍스트 처리",
+  "operating-systems": "운영체제",
+  security: "보안",
+  systems: "시스템",
+  database: "데이터베이스",
+  "distributed-systems": "분산 시스템",
+  "edge-computing": "엣지 컴퓨팅",
+  performance: "성능",
+  internet: "인터넷",
+  mathematics: "수학",
+  "machine-learning": "기계 학습",
+  web: "웹"
+};
+const domains = [...new Set(publicDocuments.flatMap((document) => document.domains))]
+  .sort((a, b) => (domainLabels[a] || a).localeCompare(domainLabels[b] || b, "ko"));
+---
+
+<Base title="검색" description="CS Wiki 문서 검색">
+  <div class="search-page">
+    <p class="eyebrow">SEARCH</p>
+    <h1 class="search-title">검색</h1>
+    <p class="lede">제목·요약·별칭·주제로 공개 문서를 찾습니다. <kbd>/</kbd> 키로 검색어 입력란에 바로 이동할 수 있습니다.</p>
+    <label class="sr-only" for="site-search">검색어</label>
+    <input
+      id="site-search"
+      class="search-box"
+      type="search"
+      placeholder="예: 튜링, 캐시, LLM"
+      autocomplete="off"
+      aria-label="검색어"
+      aria-controls="search-results"
+      data-base={withBase("/")}
+    />
+    <div class="search-filters" aria-label="검색 필터">
+      <label>유형
+        <select id="filter-kind">
+          <option value="">전체</option>
+          {kinds.map((kind) => <option value={kind}>{kindLabels[kind] || kind}</option>)}
+        </select>
+      </label>
+      <label>분야
+        <select id="filter-domain">
+          <option value="">전체</option>
+          {domains.map((domain) => <option value={domain}>{domainLabels[domain] || domain}</option>)}
+        </select>
+      </label>
+      <label>상태
+        <select id="filter-status">
+          <option value="">전체</option>
+          <option value="current">current</option>
+          <option value="stale">stale</option>
+          <option value="disputed">disputed</option>
+        </select>
+      </label>
+      <label>정렬
+        <select id="sort-mode">
+          <option value="relevance">관련도</option>
+          <option value="updated">최근 갱신</option>
+          <option value="degree">연결 수</option>
+          <option value="title">제목</option>
+        </select>
+      </label>
+    </div>
+    <p id="search-status" role="status" aria-live="polite"></p>
+    <p id="search-empty" class="search-empty" hidden>일치하는 문서가 없습니다. 다른 검색어를 시도해 보세요.</p>
+
+    <section id="search-paths" class="search-paths" hidden data-paths={JSON.stringify(paths)}>
+      <h2>관련 경로</h2>
+      <div id="search-path-results" class="grid"></div>
+    </section>
+
+    <section class="search-suggestions" aria-labelledby="search-suggestions-title">
+      <h2 id="search-suggestions-title">자주 찾는 문서</h2>
+      <div class="grid">
+        {suggestions.map((item) => (
+          <a class="card" href={documentUrl(item.document!)}>
+            <p class="eyebrow">{item.document!.kind} · 연결 {item.count}</p>
+            <h3>{item.document!.title}</h3>
+            <p>{item.document!.summary}</p>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <div id="search-results" class="search-results"></div>
+  </div>
+
+  <script>
+    import { rankSearch } from "../lib/search.mjs";
+
+    const input = document.querySelector("#site-search");
+    const status = document.querySelector("#search-status");
+    const empty = document.querySelector("#search-empty");
+    const suggestions = document.querySelector(".search-suggestions");
+    const results = document.querySelector("#search-results");
+    const paths = document.querySelector("#search-paths");
+    const pathResults = document.querySelector("#search-path-results");
+    const pathData = JSON.parse(paths?.dataset.paths || "[]");
+    const kindSelect = document.querySelector("#filter-kind");
+    const domainSelect = document.querySelector("#filter-domain");
+    const statusSelect = document.querySelector("#filter-status");
+    const sortSelect = document.querySelector("#sort-mode");
+    let index = [];
+
+    const filtersActive = () => Boolean(kindSelect?.value || domainSelect?.value || statusSelect?.value);
+
+    const setQueryParam = (query) => {
+      const url = new URL(window.location.href);
+      if (query) url.searchParams.set("q", query);
+      else url.searchParams.delete("q");
+      if (kindSelect?.value) url.searchParams.set("kind", kindSelect.value);
+      else url.searchParams.delete("kind");
+      if (domainSelect?.value) url.searchParams.set("domain", domainSelect.value);
+      else url.searchParams.delete("domain");
+      if (statusSelect?.value) url.searchParams.set("status", statusSelect.value);
+      else url.searchParams.delete("status");
+      if (sortSelect?.value && sortSelect.value !== "relevance") url.searchParams.set("sort", sortSelect.value);
+      else url.searchParams.delete("sort");
+      window.history.replaceState(null, "", url);
+    };
+
+    const renderPaths = (query) => {
+      if (!paths || !pathResults) return;
+      const matches = query ? rankSearch(pathData, query).slice(0, 4).map((entry) => entry.item) : [];
+      paths.hidden = matches.length === 0;
+      pathResults.replaceChildren();
+      for (const item of matches) {
+        const link = document.createElement("a");
+        link.className = "card";
+        link.href = item.url;
+        const kind = document.createElement("p");
+        kind.className = "eyebrow";
+        kind.textContent = item.kind === "trace" ? "READING TRACE" : "GUIDE";
+        const title = document.createElement("h3");
+        title.textContent = item.title;
+        const summary = document.createElement("p");
+        summary.textContent = item.summary;
+        link.append(kind, title, summary);
+        pathResults.append(link);
+      }
+    };
+
+    const sortItems = (items, query) => {
+      const mode = sortSelect?.value || "relevance";
+      if (mode === "title") return [...items].sort((a, b) => a.title.localeCompare(b.title, "ko"));
+      if (mode === "updated") return [...items].sort((a, b) => (b.updated || "").localeCompare(a.updated || "") || a.title.localeCompare(b.title, "ko"));
+      if (mode === "degree") return [...items].sort((a, b) => (b.degree || 0) - (a.degree || 0) || a.title.localeCompare(b.title, "ko"));
+      if (!query) return [...items].sort((a, b) => (b.degree || 0) - (a.degree || 0) || a.title.localeCompare(b.title, "ko"));
+      return items;
+    };
+
+    const run = (rawQuery) => {
+      const query = rawQuery.trim();
+      results.replaceChildren();
+      const active = Boolean(query) || filtersActive();
+      if (suggestions) suggestions.hidden = active;
+      if (empty) empty.hidden = true;
+      renderPaths(filtersActive() ? "" : query);
+      if (!active) {
+        status.textContent = `${index.length}개 문서`;
+        if (paths) paths.hidden = true;
+        return;
+      }
+      const filtered = index.filter((item) =>
+        (!kindSelect?.value || item.kind === kindSelect.value)
+        && (!domainSelect?.value || (item.domains || []).includes(domainSelect.value))
+        && (!statusSelect?.value || (item.status || "current") === statusSelect.value)
+      );
+      let matches = query
+        ? rankSearch(filtered, query).slice(0, 40).map((entry) => entry.item)
+        : filtered;
+      matches = sortItems(matches, query).slice(0, 40);
+      status.textContent = `${matches.length}개 결과`;
+      if (empty) empty.hidden = matches.length > 0;
+      for (const item of matches) {
+        const link = document.createElement("a");
+        link.href = item.url;
+        link.textContent = item.title;
+        const small = document.createElement("small");
+        const suffix = item.status && item.status !== "current" ? ` · ${item.status}` : "";
+        small.textContent = ` · ${item.kind} · ${item.updated || ""}${suffix} · ${item.summary}`;
+        link.append(small);
+        results.append(link);
+      }
+    };
+
+    if (input) {
+      const params = new URLSearchParams(window.location.search);
+      const initial = params.get("q") || "";
+      if (kindSelect) kindSelect.value = params.get("kind") || "";
+      if (domainSelect) domainSelect.value = params.get("domain") || "";
+      if (statusSelect) statusSelect.value = params.get("status") || "";
+      if (sortSelect) sortSelect.value = params.get("sort") || "relevance";
+      input.value = initial;
+      if (initial || filtersActive()) run(initial);
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key !== "/" || event.metaKey || event.ctrlKey || event.altKey) return;
+        if (event.target instanceof HTMLInputElement) return;
+        event.preventDefault();
+        input.focus();
+      });
+
+      fetch(`${input.dataset.base}search.json`)
+        .then((response) => response.json())
+        .then((data) => {
+          index = data;
+          status.textContent = `${index.length}개 문서`;
+          if (input.value.trim() || filtersActive()) run(input.value);
+        })
+        .catch(() => { status.textContent = "검색 색인을 불러오지 못했습니다."; });
+
+      input.addEventListener("input", () => {
+        setQueryParam(input.value.trim());
+        run(input.value);
+      });
+      for (const select of [kindSelect, domainSelect, statusSelect, sortSelect]) {
+        select?.addEventListener("change", () => {
+          setQueryParam(input.value.trim());
+          run(input.value);
+        });
+      }
+    }
+  </script>
+</Base>

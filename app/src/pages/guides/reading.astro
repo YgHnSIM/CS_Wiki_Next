@@ -1,0 +1,59 @@
+---
+import Base from "../../layouts/Base.astro";
+import { withBase } from "../../lib/data";
+---
+
+<Base title="이 위키를 읽는 법" description="CS Wiki의 source·concept·analysis와 Reading Trace를 읽는 방법">
+  <div class="guide-page">
+    <header class="guide-head">
+      <p class="eyebrow">GUIDE 01 / READING</p>
+      <h1>이 위키를 읽는 법</h1>
+      <p class="guide-intro">
+        문서는 결론만 모아 둔 백과사전이 아니라, 원본과 개념과 분석을 연결한 지도입니다.
+        처음에는 모든 문서를 읽지 말고, 질문 하나를 고른 뒤 Trace를 따라가세요.
+      </p>
+    </header>
+
+    <section class="guide-section">
+      <h2>THREE LAYERS</h2>
+      <div class="guide-flow">
+        <div><strong>SOURCE</strong><span>원문·당시 문서. 문제와 표현을 직접 확인한다.</span></div>
+        <div><strong>CONCEPT</strong><span>반복되는 개념과 용어를 고정한다.</span></div>
+        <div><strong>ANALYSIS</strong><span>원본과 개념을 엮어 질문에 답한다.</span></div>
+      </div>
+    </section>
+
+    <section class="guide-section">
+      <h2>HOW TO START</h2>
+      <p>
+        <a href={withBase("/traces/")}>Reading Trace</a>에서 질문을 하나 고릅니다.
+        각 단계에는 왜 이 문서를 읽는지와 체크포인트가 있으므로, 링크를 따라가며 답을 확인하세요.
+      </p>
+      <p>
+        문서 상단의 <strong>NAME</strong>은 요약, <strong>SYNOPSIS</strong>는 유형·연도·층위,
+        <strong>DESCRIPTION</strong>은 본문입니다. 오른쪽 rail의 <strong>RELATIONS</strong>와
+        <strong>BACKLINKS</strong>는 다음에 읽을 문서를 알려줍니다.
+      </p>
+    </section>
+
+    <section class="guide-section">
+      <h2>READING ORDER</h2>
+      <ul>
+        <li>처음에는 분석보다 원본과 개념을 먼저 읽습니다. 분석은 그 둘을 전제로 합니다.</li>
+        <li>모르는 용어는 개념 문서에서 확인하고, 다시 원문으로 돌아옵니다.</li>
+        <li>관계 이름(<code>measures</code>, <code>responds_to</code>, <code>synthesizes</code>)을 읽으면 문서 사이의 역할이 보입니다.</li>
+        <li>한 Trace를 끝냈다면, 같은 주제의 branch로 깊이를 조절합니다.</li>
+      </ul>
+    </section>
+
+    <section class="guide-section">
+      <h2>SHORTCUTS</h2>
+      <p>
+        <kbd>Ctrl/Cmd K</kbd>로 문서와 Trace를 검색하고, <kbd>/</kbd>로 검색 페이지에 이동합니다.
+        문서 탭 아래의 breadcrumb은 현재 위치를 보여줍니다.
+      </p>
+    </section>
+
+    <a class="guide-back" href={withBase("/guides/")}>← Guides</a>
+  </div>
+</Base>

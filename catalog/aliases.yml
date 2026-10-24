@@ -1,0 +1,2693 @@
+aliases:
+  "704": concept:page-2a99ca9c
+  16 Questions about Software Reuse: source:ref-005
+  17세기 해석기하학은 어떻게 디스플레이 픽셀과 지도가 되었는가: analysis:analytic-geometry-to-pixels-and-maps
+  1877년의 지수 기호: source:src-009
+  2진법: concept:page-90428fe8
+  가용성: concept:availability-recovery
+  가용성과 복구: concept:availability-recovery
+  같은 SLO의 LLM 서비스는 무엇을 비용으로 세어야 하는가: analysis:llm-slo-resource-cost
+  개발 생산성: concept:developer-productivity
+  개발자 생산성: concept:developer-productivity
+  개발자 생산성 SPACE: source:ref-072
+  객체 선형화: concept:linearizability
+  거듭제곱 법칙을 알고도 지수 기호는 왜 늦게 생겼는가: analysis:exponent-notation-delay
+  검산: concept:calculation-checking
+  검산의 컴퓨팅사: analysis:from-table-checking-to-numerical-result-contracts
+  검증 노동: concept:verification-labor
+  검토·테스트 노동: concept:verification-labor
+  결과 재사용과 절차 재사용: analysis:stored-results-to-executable-procedures
+  결정 문제: concept:page-145622bc
+  결함 내성: concept:fault-tolerance
+  결함 허용: concept:fault-tolerance
+  계산 가능: concept:computability
+  계산 가능성: concept:computability
+  계산 결과에서 실행 가능한 절차로: analysis:stored-results-to-executable-procedures
+  계산 공장에서 전자식 컴퓨터까지: analysis:human-computers-and-computation-factories
+  계산 과정의 비가역성과 열 발생: source:ref-150
+  계산 노동의 조직: analysis:human-computers-and-computation-factories
+  계산 능력: concept:computing-capability
+  계산 능력의 역사: analysis:page-f8223547
+  계산 독서 지도: document:computation-reading-guide
+  계산 복잡도: concept:computational-complexity
+  계산 에너지 효율 추세: concept:page-0fdf8f46
+  계산 혹은 논리학: source:ref-143
+  계산 확인: concept:calculation-checking
+  계산-통신 중첩: concept:computation-communication-overlap
+  계산과 스케줄 분리: concept:algorithm-schedule-separation
+  계산기와 컴퓨터: analysis:page-7058e090
+  계산기와 컴퓨터의 차이: analysis:page-7058e090
+  계산은 1945년의 발명인가: analysis:computation-invention-or-natural-phenomenon
+  계산은 발명인가 자연 현상인가: analysis:computation-invention-or-natural-phenomenon
+  계산의 이론과 한계 읽기 순서: document:computation-reading-guide
+  계산의 이론적 의미: analysis:page-f5a31368
+  계산의 존재론: analysis:computation-invention-or-natural-phenomenon
+  계산이란 무엇인가 독서 지도: document:computation-reading-guide
+  계산적 생명: concept:computational-artificial-life
+  계산적 인공생명: concept:computational-artificial-life
+  계산표: concept:mathematical-tables
+  고급 프로그래밍 언어: concept:page-26360c8b
+  고정 크기 확장: concept:parallel-scalability
+  고트프리트 빌헬름 라이프니츠: person:gottfried-wilhelm-leibniz
+  공간의 대수화: source:src-010
+  공생발생: concept:symbiogenesis
+  공유 상태의 순서 계약: analysis:concurrent-order-shared-state
+  관계 메타데이터 규칙: document:knowledge-graph-schema
+  구글 파일 시스템: source:ref-103
+  구문론과 의미론: concept:chinese-room-syntax-semantics
+  구문론이 새 수를 만들 때: analysis:exponent-notation-delay
+  구문론이 의미론을 이끈다: source:src-009
+  구스타프슨 법칙 논문: source:ref-045
+  구조적 프로그래밍: concept:structured-programming
+  구조화 프로그램 정리: concept:page-8e6aa351
+  구현 은닉: concept:page-099497b9
+  규모에서의 꼬리 지연: source:ref-049
+  그래핌 클러스터: concept:page-29139463
+  그레이스 호퍼: person:grace-hopper
+  기계 계산: analysis:page-f5a31368
+  기계 실행 모델: concept:hardware-execution-model
+  기계가 계산한다는 말의 이론적 의미: analysis:page-f5a31368
+  기능주의: concept:substrate-independence-functionalism
+  기능주의 대 중국어 방: analysis:functionalism-vs-chinese-room
+  기능주의와 중국어 방은 어디서 갈라지는가: analysis:functionalism-vs-chinese-room
+  기억장치 캐시: concept:page-6aaebafb
+  기질 독립성: concept:substrate-independence-functionalism
+  기질 독립성과 기능주의: concept:substrate-independence-functionalism
+  기하는 어떻게 계산이 되었고 왜 데카르트의 표기가 페르마를 이겼는가: analysis:geometry-to-computation-descartes-vs-fermat
+  기하학과 대수학의 위대한 번역: source:src-010
+  기호 조립기: concept:page-efde1ed2
+  기호 조작: concept:symbolic-manipulation
+  기호 착지 문제: concept:chinese-room-syntax-semantics
+  기호 처리: concept:symbolic-manipulation
+  기호는 어떻게 생각의 보조 도구에서 계산 엔진이 되었는가: analysis:symbols-from-aid-to-computation-engine
+  기호에서 AI까지: source:src-007
+  기호적 인식: concept:cogitatio-caeca
+  길: person:stanley-gill
+  꼬리 지연: concept:tail-latency
+  꼬리 지연 시간: concept:tail-latency
+  낮은 비트는 왜 LLM 추론 속도를 보장하지 않는가: analysis:low-bit-llm-inference
+  낮은 운영 에너지는 지속 가능한 컴퓨팅을 보장하는가: analysis:operational-energy-sustainable-computing
+  낮은 정밀도는 AI의 컴퓨팅 능력을 어떻게 바꾸는가: analysis:low-precision-ai-result-contract
+  널 종단 문자열: concept:page-3d371068
+  논리 게이트: concept:page-f019ffbf
+  논리 시계: source:ref-100
+  논리 회로 게이트: concept:page-f019ffbf
+  논리 회로와 이진 표현: analysis:page-0c7e244e
+  뇌 시뮬레이터 응답과 테세우스의 뇌: analysis:functionalism-vs-chinese-room
+  다중 프로세서 순차 일관성: source:ref-094
+  다크 실리콘: concept:page-7fcb10cc
+  다크 실리콘 논문: source:ref-048
+  다항 시간 환원: concept:polynomial-time-reduction
+  다항 환원: concept:polynomial-time-reduction
+  단계적 정제: concept:page-723508cf
+  단계적 프로그램 구성: concept:page-723508cf
+  단위 선분: concept:unit-segment-dimension-reduction
+  단위 선분과 의사의법: analysis:geometry-to-computation-descartes-vs-fermat
+  단위 선분과 차원 환원: concept:unit-segment-dimension-reduction
+  대기열 유량 법칙: concept:littles-law
+  대기열과 부하 제어: concept:queueing-load-control
+  대량 생산 소프트웨어 컴포넌트: source:ref-002
+  대형 신경망 학습 탄소 배출: source:ref-110
+  더 빠른 계산은 같은 답을 내는가: analysis:page-8f48231d
+  더 빠른 프로세서는 왜 더 빠른 프로그램을 보장하지 않는가: analysis:page-2b56fedc
+  더 빠른 프로세서의 조건: analysis:page-2b56fedc
+  더 빠른 하드웨어는 더 나은 알고리즘을 대신할 수 있는가: analysis:hardware-vs-algorithmic-improvement
+  더글러스 매킬로이: person:douglas-mcilroy
+  데나드 스케일링: concept:page-3b07c7d6
+  데니스 리치: person:dennis-ritchie
+  데이비드 파나스: person:david-parnas
+  데이비드 휠러: person:david-wheeler
+  데이터 표현: concept:page-93fca2ee
+  데이터 표현과 인코딩: source:src-006
+  데이터 해석 규칙: analysis:page-d0161680
+  데이터센터 전력 효율: concept:power-usage-effectiveness
+  데이터센터를 하나의 컴퓨터로: source:ref-041
+  데카르트와 페르마의 기하학 번역: analysis:geometry-to-computation-descartes-vs-fermat
+  데카르트와 페르마의 해석기하학: source:src-010
+  도널드 커누스: person:donald-knuth
+  도메인 전용 가속기: concept:domain-specific-accelerator
+  도메인 특화 가속기: concept:domain-specific-accelerator
+  동시 객체의 선형화 가능성: source:ref-095
+  동시 실행: concept:concurrency
+  동시성: concept:concurrency
+  동시성의 세 순서 계약: analysis:concurrent-order-shared-state
+  동차성 법칙: concept:unit-segment-dimension-reduction
+  동차성의 법칙: concept:unit-segment-dimension-reduction
+  동형이의 문자: concept:page-cb68fc61
+  드 프로니의 계산 공장: source:ref-056
+  드래프트-타깃 디코딩: concept:speculative-decoding
+  디버깅: concept:page-a1be87c0
+  라이브러리: concept:library
+  라이브러리 카탈로그: concept:page-16d053e6
+  라이프니츠: person:gottfried-wilhelm-leibniz
+  란다우어 원리: concept:landauer-principle
+  란다우어의 원리: concept:landauer-principle
+  래핑: concept:page-9ecf6d54
+  러브레이스: person:ada-lovelace
+  런타임 계약: concept:runtime-contract
+  로더: concept:page-94134317
+  로컬 인터페이스와 원격 상태: analysis:local-interface-remote-state
+  로컬 호출과 파일은 원격 상태가 될 때 무엇을 잃는가: analysis:local-interface-remote-state
+  리스크: concept:page-613958ec
+  리틀의 법칙: concept:littles-law
+  린 마굴리스: person:lynn-margulis
+  릴레이 접점: concept:page-0d04f3f7
+  릴레이 회로: concept:page-0d04f3f7
+  링커: concept:page-46257ebe
+  링킹: concept:page-46257ebe
+  마음 뇌 프로그램: source:ref-146
+  마이크로코드: concept:page-c9c7cad9
+  마이크로프로그래밍: concept:page-c9c7cad9
+  맨체스터 베이비: concept:page-30fac639
+  맹목적 기호 조작의 계보: analysis:symbols-from-aid-to-computation-engine
+  맹목적 사고: concept:cogitatio-caeca
+  맹목적 사고와 기호적 인식: concept:cogitatio-caeca
+  맹목적 사고의 400년사: analysis:symbols-from-aid-to-computation-engine
+  맹목적 사고의 계보학: source:src-007
+  멈춤 문제: concept:page-dc1573dc
+  메모리 덤프: concept:page-325f29bd
+  메모리 보안: concept:page-0939ab24
+  메모리 안전성: concept:page-0939ab24
+  메모리 월: concept:memory-wall
+  메모리 이동과 병목 이동: concept:memory-movement-bottleneck-shift
+  메모리 장벽: concept:memory-wall
+  메모리 장벽 논문: source:ref-039
+  메타안정 장애: source:ref-121
+  멱등성: concept:idempotency
+  멱등성 키: concept:idempotency
+  모듈 분해 기준: source:ref-003
+  모듈러 프로그래밍: concept:page-f047e003
+  모듈화: concept:page-f047e003
+  모든 컴퓨터 과학자가 부동소수점 연산에 대해 알아야 할 것: source:ref-050
+  모리스 윌크스: person:maurice-wilkes
+  목적 코드: concept:page-d2f65204
+  목적 프로그램: concept:page-d2f65204
+  목표 품질 도달 시간: concept:time-to-quality
+  무어 법칙: concept:page-0b68e8bc
+  무어의 법칙: concept:page-0b68e8bc
+  무어의 법칙 원 논문: source:ref-037
+  무조건 분기: concept:page-60bcdf34
+  문자 깨짐: concept:page-6c282053
+  문자 인코딩 심화: analysis:page-9241eb45
+  물체론: source:ref-143
+  미작성 개념: document:gaps
+  바이트: concept:page-d7da5df4
+  바이트 순서 표식: concept:page-5163a003
+  반환 주소: concept:page-47ba75de
+  배비지: person:charles-babbage
+  배비지 1822년 차분 기관 발표문: source:ref-053
+  배비지와 러브레이스: source:src-001
+  배비지의 차분 기관: concept:page-83b76a04
+  배비지의 해석 기관: concept:page-4b367720
+  백분위 지연 시간: concept:tail-latency
+  번역기: concept:compiler
+  범용 컴퓨터의 형성: analysis:page-63baea1f
+  범용성과 특수 목적: analysis:page-7058e090
+  범용성은 어떻게 컴퓨팅 능력이 되었는가: analysis:page-63baea1f
+  벤치마크 계약: concept:benchmark-contract
+  벤치마크 수치 비교: analysis:benchmark-numbers-not-directly-comparable
+  벤치마크 숫자는 왜 직접 비교되지 않는가: analysis:benchmark-numbers-not-directly-comparable
+  변경 기록: document:log
+  변환 루틴: concept:page-1bbfe009
+  병렬 가속의 두 관점: analysis:page-3d25f482
+  병렬 스케일링: concept:parallel-scalability
+  병렬 컴퓨팅은 시간을 줄이는가 문제를 키우는가: analysis:page-3d25f482
+  병렬 컴퓨팅의 전망: source:ref-040
+  병렬 확장성: concept:parallel-scalability
+  병목 이동 분석: analysis:ai-bottleneck-shifting
+  보편 기계: concept:page-676372e6
+  보편 기호법과 사유의 계산: concept:characteristica-calculus
+  보편 튜링 기계: concept:page-676372e6
+  보편기호법: concept:characteristica-calculus
+  복구 시간: concept:availability-recovery
+  복구 지향 컴퓨팅: source:ref-065
+  복귀 주소: concept:page-47ba75de
+  복잡도와 실용 성능: analysis:hardware-vs-algorithmic-improvement
+  복제 로그와 합의: concept:replicated-log-consensus
+  복제 상태 기계: concept:replicated-log-consensus
+  본질과 부수성: concept:essential-accidental-complexity
+  본질적 복잡성과 부수적 복잡성: concept:essential-accidental-complexity
+  부동소수점 오차: concept:page-d4fdbd19
+  부동소수점 정확성: concept:page-d4fdbd19
+  부분 실패: concept:partial-failure
+  부분 장애: concept:partial-failure
+  부분적 실패: concept:partial-failure
+  부울 대수: concept:page-918ae6f1
+  부트스트래핑: concept:page-873d18c3
+  부트스트랩: concept:page-873d18c3
+  부하 제어: concept:queueing-load-control
+  부호화: concept:page-a446fe7e
+  분산 서비스는 빠른 응답과 같은 상태를 어떻게 함께 보장하는가: analysis:distributed-consistency-latency
+  분산 서비스의 일관성과 지연: analysis:distributed-consistency-latency
+  분산 파일 시스템: concept:distributed-file-system
+  분산 파일 저장소: concept:distributed-file-system
+  불: person:george-boole
+  불 대수: concept:page-918ae6f1
+  블레즈 아구에라: person:aguera-y-arcas
+  블레즈 아구에라 이 아르카스: person:aguera-y-arcas
+  비교 가능한 측정: concept:benchmark-contract
+  비잔틴 장군 문제: source:ref-063
+  비잔틴 장애: concept:byzantine-fault
+  비트: concept:page-d7da5df4
+  비트 연산: concept:page-38dd11a2
+  비트 조작: concept:page-38dd11a2
+  비트 패턴과 해석 규칙: analysis:page-d0161680
+  비트와 바이트: concept:page-d7da5df4
+  비활성 실리콘: concept:page-7fcb10cc
+  빌드 provenance: source:ref-125
+  빠른 계산과 같은 답: analysis:page-8f48231d
+  빠른 서비스는 왜 가용한 서비스를 보장하지 않는가: analysis:service-speed-vs-availability
+  빠른 응답과 장애 회복: analysis:service-speed-vs-availability
+  사람 컴퓨터: concept:human-computers
+  사용·제조 탄소: concept:operational-embodied-carbon
+  사용자 지각 문자: concept:page-29139463
+  사유의 계산: concept:characteristica-calculus
+  사후 분석 루틴: concept:page-325f29bd
+  상호 배제와 동기화: concept:mutual-exclusion-synchronization
+  상호배제: concept:mutual-exclusion-synchronization
+  색인: document:index
+  생각은 계산이다: source:src-007
+  생각의 보조 도구에서 계산 엔진으로: analysis:symbols-from-aid-to-computation-engine
+  생명 계산 공생발생 AGI: source:src-008
+  생명은 계산이며 공생발생으로 진화한다: source:src-008
+  생성 결과 검증: concept:verification-labor
+  생성형 AI 코딩 도구: concept:ai-coding-assistance
+  생애주기 회계 경계: concept:lifecycle-assessment-boundary
+  섀넌: person:claude-shannon
+  서로게이트 페어: concept:page-c854e2f6
+  서브루틴: concept:subroutine
+  서브루틴 라이브러리: concept:library
+  서브루틴 라이브러리에서 API로: analysis:page-4095b0c8
+  서브루틴 카탈로그: concept:page-16d053e6
+  서브루틴과 스택: source:src-004
+  서브루틴과 스택(Stack)의 원리: source:src-004
+  서브루틴과 API: analysis:page-4095b0c8
+  서비스 속도와 가용성: analysis:service-speed-vs-availability
+  서비스 컴퓨팅 능력과 꼬리 지연: analysis:page-01dd444c
+  선형 프레임버퍼 사상: concept:framebuffer-memory-mapping
+  선형화 가능성: concept:linearizability
+  설: person:john-searle
+  성능 비교 계약: concept:benchmark-contract
+  성능 숫자 비교: analysis:benchmark-numbers-not-directly-comparable
+  성능 이식성: concept:performance-portability
+  성능 포터빌리티: concept:performance-portability
+  성능과 복구의 구분: analysis:service-speed-vs-availability
+  성능과 부동소수점 정확성: analysis:page-8f48231d
+  세포내 공생설: concept:symbiogenesis
+  셀프 어텐션: concept:self-attention
+  소스 의미와 가속기 성능: analysis:source-semantics-accelerator-performance
+  소스 코드: concept:page-3e131394
+  소스 프로그램: concept:page-3e131394
+  소프트웨어 계층화: analysis:page-6a13ea1d
+  소프트웨어 공학: concept:page-432b4756
+  소프트웨어 공학의 본질과 부수성: source:ref-071
+  소프트웨어 부품: concept:page-fa0c6ecb
+  소프트웨어 엔지니어링: concept:page-432b4756
+  소프트웨어 재사용: concept:software-reuse
+  소프트웨어 재사용 16문답: source:ref-005
+  소프트웨어 재사용 Krueger: source:ref-004
+  소프트웨어 재사용의 역사: analysis:page-0b006186
+  소프트웨어 컴포넌트: concept:page-fa0c6ecb
+  수는 형용사다: concept:quantity-species-pairs
+  수명 주기 평가 경계: concept:lifecycle-assessment-boundary
+  수치 정확성: concept:page-d4fdbd19
+  수학 표: concept:mathematical-tables
+  수학 표 프로젝트: source:ref-057
+  수학 표에서 스프레드시트로: analysis:from-mathematical-tables-to-spreadsheets
+  수학 표와 수치 검증: analysis:from-table-checking-to-numerical-result-contracts
+  수학 표의 검산에서 수치 결과 계약으로: analysis:from-table-checking-to-numerical-result-contracts
+  수학 표의 역사: source:ref-052
+  수학 함수 편람: source:ref-054
+  순차 일관성: concept:sequential-consistency
+  순차적 일관성: concept:sequential-consistency
+  스냅샷 데이터베이스의 직렬 가능 격리: source:ref-112
+  스위치 회로: concept:page-8ae81e59
+  스위칭 회로: concept:page-8ae81e59
+  스칼라 값: concept:page-be5e9654
+  스택: concept:page-c297dc5b
+  스택 프레임: concept:page-f6e983b1
+  스탠리 길: person:stanley-gill
+  스티븐 C. 존슨: person:stephen-c-johnson
+  스프레드시트: concept:spreadsheet
+  승인 제어: concept:queueing-load-control
+  시각적 혼동 문자: concept:page-cb68fc61
+  시간 복잡도: concept:computational-complexity
+  시스템 콜: concept:page-d61f7b46
+  시스템 프로그래밍: concept:page-141883d0
+  시스템 호출: concept:page-d61f7b46
+  시스템과 픽셀의 기하학적 육화: analysis:analytic-geometry-to-pixels-and-maps
+  실행 계약: concept:runtime-contract
+  실행 계약 분석: analysis:runtime-contract
+  실행 흐름: concept:page-830fb720
+  실현 성능의 조건: analysis:page-2b56fedc
+  아구에라 이 아르카스 인터뷰 전사본: source:ref-147
+  아구에라 이 아르카스의 생명 기능주의와 AGI: source:src-008
+  아스키: concept:page-6a0c16a9
+  알고리즘 개선과 하드웨어 개선: analysis:hardware-vs-algorithmic-improvement
+  알고리즘 복잡도: concept:computational-complexity
+  알고리즘과 스케줄 분리: concept:algorithm-schedule-separation
+  알고리즘적 사고: concept:page-e2b63e63
+  알론조 처치: person:alonzo-church
+  암달과 구스타프슨의 두 질문: analysis:page-3d25f482
+  앨런 튜링: person:alan-turing
+  어두운 실리콘: concept:page-7fcb10cc
+  어셈블러: concept:page-efde1ed2
+  어텐션 메모리 병목: analysis:transformer-io-bottleneck
+  어텐션 KV 캐시: concept:kv-cache
+  에너지 비례 컴퓨팅: concept:energy-proportional-computing
+  에너지 비례 컴퓨팅 논문: source:ref-046
+  에너지 비례성: concept:energy-proportional-computing
+  에너지 효율과 활성 면적의 역사: analysis:power-wall-performance
+  에이다 러브레이스: person:ada-lovelace
+  에츠허르 데이크스트라: person:edsger-dijkstra
+  연속 배칭: concept:continuous-batching
+  오류 수정: concept:page-a1be87c0
+  오류 예산 정책: source:ref-118
+  오에스: concept:page-c7e0c2c5
+  올레요한 달: person:ole-johan-dahl
+  외부 일관성: concept:external-consistency-time-uncertainty
+  외부 일관성과 시간 불확실성: concept:external-consistency-time-uncertainty
+  운영 배출과 제조 배출: concept:operational-embodied-carbon
+  운영 에너지와 수명 주기: analysis:operational-energy-sustainable-computing
+  운영 탄소와 내재 탄소: concept:operational-embodied-carbon
+  운영체제: concept:page-c7e0c2c5
+  운영체제 구조화 개념으로서의 모니터: source:ref-093
+  원격 파일 시스템: concept:distributed-file-system
+  원격 프로시저 콜: concept:remote-procedure-call
+  원격 프로시저 호출: concept:remote-procedure-call
+  원격 프로시저 호출 구현: source:ref-102
+  원격 호출: concept:remote-procedure-call
+  원시 수프 실험: concept:computational-artificial-life
+  위첨자 지수 표기: concept:superscript-exponent
+  위키 개요: document:overview
+  위키 색인: document:index
+  윌크스: person:maurice-wilkes
+  유니코드: concept:page-496b0829
+  유니코드 보안 메커니즘: source:ref-027
+  유니코드 스칼라 값: concept:page-be5e9654
+  유니코드 정규화: concept:page-9351a627
+  유니코드 정규화 형식: source:ref-024
+  유닉스: concept:page-092a889f
+  유닉스 파이프: concept:page-d86dcb52
+  유사분열 세포의 기원: source:ref-149
+  유한 차분법: concept:page-5cd779ce
+  은탄환은 없다: source:ref-071
+  응용 프로그래밍 인터페이스: concept:page-2ff6633d
+  의사의: concept:adequality
+  의사의법: concept:adequality
+  의존성 provenance와 registry identity: concept:dependency-provenance
+  이기종 런타임 모델: concept:heterogeneous-execution-model
+  이기종 실행 모델: concept:heterogeneous-execution-model
+  이상명 2016: source:ref-142
+  이식성: concept:page-5063ca2b
+  이진 가산기: concept:page-59604f53
+  이진 덧셈 회로: concept:page-59604f53
+  이진 산술의 해설: source:ref-145
+  이진 표현과 논리 회로: analysis:page-0c7e244e
+  이진법: concept:page-90428fe8
+  이진법 논문: source:ref-145
+  인간 계산자: concept:human-computers
+  인간 계산자 프로젝트: source:ref-058
+  인간 계산자와 계산 공장: analysis:human-computers-and-computation-factories
+  인간-도구 분업: concept:automation-boundary
+  인공지능 컴퓨팅 병목: concept:ai-computing-bottlenecks
+  인식 진리 관념에 관한 성찰: source:ref-144
+  인용 위치 감사: document:quote-locator-audit
+  인코딩: concept:page-a446fe7e
+  인코딩 심화: analysis:page-9241eb45
+  인코딩 오류: concept:page-6c282053
+  인터넷 서비스는 왜 실패하는가: source:ref-064
+  인터페이스: concept:page-2ff6633d
+  일관성 가용성 분할 허용성: concept:cap-theorem
+  일정 전계 스케일링: concept:page-3b07c7d6
+  임계 구역: concept:mutual-exclusion-synchronization
+  임의 장애: concept:byzantine-fault
+  입력 검증: concept:input-validation
+  입력 계약: concept:input-validation
+  입력 유효성 검사: concept:input-validation
+  입력 해석과 보안 경계: analysis:interpretation-security-boundary
+  입력을 해석하는 경계는 왜 보안 경계인가: analysis:interpretation-security-boundary
+  입출력 인지 어텐션: concept:io-aware-attention
+  자기 수정 코드: concept:page-4a63d3df
+  자기 주의: concept:self-attention
+  자기복제 기계: concept:self-reproducing-automata
+  자기복제 오토마타: concept:self-reproducing-automata
+  자기복제 오토마타 이론: source:ref-152
+  자동 프로그래밍: concept:page-1bbfe009
+  자동 프로그래밍 시스템: concept:page-1bbfe009
+  자동화 경계: concept:automation-boundary
+  자동화는 계산 노동을 없애는가 책임을 옮기는가: analysis:automation-labor-responsibility
+  자동화와 검증 노동: analysis:automation-labor-responsibility
+  자동화의 책임 경계: concept:automation-boundary
+  자료 표현: concept:page-93fca2ee
+  작업 기록: document:log
+  작업 로그: document:log
+  작은 MOSFET 설계: source:ref-038
+  장애 감지: concept:failure-detection
+  장애 감지는 실패와 느림을 어떻게 구분하는가: analysis:failure-detection-gray-metastable
+  장애 감지와 회색 장애: analysis:failure-detection-gray-metastable
+  장애 탐지: concept:failure-detection
+  장애 허용: concept:fault-tolerance
+  재계산 가능한 표: analysis:from-mathematical-tables-to-spreadsheets
+  재배치: concept:page-d679e8f4
+  재사용 가능한 소프트웨어의 역사: analysis:page-0b006186
+  재사용 컴포넌트: concept:page-fa0c6ecb
+  재사용과 추측은 LLM 추론 작업량을 어떻게 바꾸는가: analysis:llm-reuse-speculation-work
+  재시도: concept:retries
+  재시도 폭풍과 부하 제어: analysis:retry-amplification-and-control
+  재시도는 실패를 줄이면서 부하를 어디로 옮기는가: analysis:retry-amplification-and-control
+  재프로그래밍 가능성: concept:programmability
+  재현 가능한 빌드: concept:reproducible-builds
+  재현 가능한 빌드 경계 분석: analysis:reproducible-build-boundary
+  재현 가능한 빌드 정의: source:ref-123
+  재현 가능한 빌드는 무엇을 같게 만드는가: analysis:reproducible-build-boundary
+  재현성 빌드: concept:reproducible-builds
+  저비트 추론 병목: analysis:low-bit-llm-inference
+  저비트 LLM 가중치: concept:llm-weight-quantization
+  저장 프로그램 개념의 여러 기원: analysis:page-3259f99b
+  저장 프로그램 계보: analysis:page-3259f99b
+  저장 프로그램 방식: concept:stored-program-computer
+  저장 프로그램 컴퓨터: concept:stored-program-computer
+  저장 프로그램 컴퓨터의 계보: analysis:page-3259f99b
+  저장과 재사용의 단위: analysis:stored-results-to-executable-procedures
+  전력 비례 컴퓨팅: concept:energy-proportional-computing
+  전력 사용 효율: concept:power-usage-effectiveness
+  전력 장벽 이후의 컴퓨팅 능력: analysis:power-wall-performance
+  전력 장벽은 성능 향상의 의미를 어떻게 바꾸었는가: analysis:power-wall-performance
+  전용 연산기와 범용 제어기: analysis:specialized-vs-general-pendulum
+  전용 연산기와 범용 제어기의 진자 운동: analysis:specialized-vs-general-pendulum
+  전자 스프레드시트: concept:spreadsheet
+  전체 개요: document:overview
+  전컴퓨팅 시대: source:src-001
+  절차적 사고: concept:page-e2b63e63
+  점프 문: concept:page-60bcdf34
+  접두사 KV 캐싱: concept:prefix-kv-caching
+  정리 증명 절차의 복잡도: source:ref-066
+  정보 감춤: concept:page-099497b9
+  정보 은닉: concept:page-099497b9
+  정수 오버플로: concept:page-9ecf6d54
+  정적 표에서 실행 모형으로: analysis:from-mathematical-tables-to-spreadsheets
+  정지 문제: concept:page-dc1573dc
+  정확히 한 번은 어디까지 가능한가: analysis:exactly-once-boundary
+  제어 구조: concept:page-7cc49c18
+  제어 흐름: concept:page-830fb720
+  제어문: concept:page-7cc49c18
+  제품 수명 주기 회계 표준: source:ref-108
+  조지 불: person:george-boole
+  조합 문제 사이의 환원성: source:ref-067
+  존 배커스: person:john-backus
+  존 설: person:john-searle
+  존 폰 노이만: person:john-von-neumann
+  존 R. 설: person:john-searle
+  종-수량 쌍: concept:quantity-species-pairs
+  종과 수량: concept:quantity-species-pairs
+  종단 간 원칙: concept:end-to-end-principle
+  종단간 논증 원 논문: source:ref-101
+  종단간 원칙: concept:end-to-end-principle
+  좌표기하학: concept:analytic-geometry
+  주세페 야코피니: person:giuseppe-jacopini
+  주소 공간 배치 무작위화: concept:aslr
+  주소 공간 배치 무작위화 1차 자료: source:ref-137
+  주소 재배치: concept:page-d679e8f4
+  중간 코드: concept:intermediate-representation
+  중간 표현: concept:intermediate-representation
+  중국어 방: concept:chinese-room-syntax-semantics
+  중국어 방과 구문-의미 간극: concept:chinese-room-syntax-semantics
+  지속 가능한 컴퓨팅의 측정 경계: analysis:operational-energy-sustainable-computing
+  지속적 배칭: concept:continuous-batching
+  지수 기호 하나를 얻기까지 왜 1877년이나 걸렸는가: source:src-009
+  지수 기호는 왜 늦었는가: analysis:exponent-notation-delay
+  지수 표기: concept:superscript-exponent
+  지식 공백: document:gaps
+  지식 그래프 관계 스키마: document:knowledge-graph-schema
+  지식 지도 작성 규칙: document:knowledge-graph-schema
+  직렬 가능 격리: concept:serializability
+  직렬 가능성: concept:serializability
+  진화의 주요 전이: source:ref-153
+  집적도 증가 법칙: concept:page-0b68e8bc
+  차분 기관: concept:page-83b76a04
+  차원 환원: concept:unit-segment-dimension-reduction
+  찰스 배비지: person:charles-babbage
+  찰스 W. 크루거: person:charles-w-krueger
+  처치: person:alonzo-church
+  처치-튜링 논제: concept:page-b95bdd2d
+  초기 명령: concept:page-ef0b337a
+  초기 소프트웨어 계층: analysis:page-6a13ea1d
+  초기 소프트웨어의 계층화: analysis:page-6a13ea1d
+  초기 소프트웨어의 탄생: source:src-002
+  초기 캐시 메모리 논문: source:ref-043
+  초기 프로그래밍의 역사: source:src-002
+  초당 토큰 수는 왜 LLM 서비스 능력을 설명하지 못하는가: analysis:token-rate-service-capability
+  최적화 컴파일러: concept:page-eb050b34
+  추측 디코딩: concept:speculative-decoding
+  추측 디코딩 논문: source:ref-079
+  축소 명령어 집합: concept:page-613958ec
+  축소 명령어 집합 컴퓨터: concept:page-613958ec
+  출력 프로그램: concept:page-d2f65204
+  카탈로그: document:index
+  카테시안 기하학: concept:analytic-geometry
+  캐시: concept:page-6aaebafb
+  캐시 메모리: concept:page-6aaebafb
+  캐싱과 추측 디코딩 비교: analysis:llm-reuse-speculation-work
+  컴파일러: concept:compiler
+  컴파일러 최적화: concept:page-eb050b34
+  컴퓨팅 능력: concept:computing-capability
+  컴퓨팅 능력 독서 지도: document:page-9bc0d3d6
+  컴퓨팅 능력 읽기 순서: document:page-9bc0d3d6
+  컴퓨팅 능력 학습 지도: document:page-9bc0d3d6
+  컴퓨팅 능력의 발달사: analysis:page-f8223547
+  컴퓨팅 능력의 세 경계: analysis:representation-placement-contract
+  컴퓨팅 능력이란 무엇인가: concept:computing-capability
+  컴퓨팅 병목의 역사: analysis:ai-bottleneck-lineage
+  컴퓨팅 성능의 발전사: analysis:page-f8223547
+  컴퓨팅 탄소 발자국: source:ref-109
+  컴퓨팅의 기원: source:src-001
+  컴퓨팅의 기원 - 배비지와 러브레이스: source:src-001
+  케임브리지 컴퓨터 연구소 역사: source:ref-028
+  켄 톰프슨: person:ken-thompson
+  코드 라이브러리: concept:library
+  코드 생산량은 왜 개발 생산성을 설명하지 못하는가: analysis:code-volume-developer-productivity
+  코드 생성 지원: concept:ai-coding-assistance
+  코드 유닛: concept:page-9574348a
+  코드 재사용: concept:software-reuse
+  코드 재사용의 역사: analysis:page-0b006186
+  코드 포인트: concept:page-e589f64b
+  코드량 지표의 한계: analysis:code-volume-developer-productivity
+  코라도 뵘: person:corrado-bohm
+  쿠미의 법칙: concept:page-0fdf8f46
+  큐 관리: concept:queueing-load-control
+  클로드 섀넌: person:claude-shannon
+  키-값 캐시: concept:kv-cache
+  테세우스의 뇌: concept:substrate-independence-functionalism
+  토니 호어: person:tony-hoare
+  토머스 홉스: person:thomas-hobbes
+  토큰률과 LLM 서비스 능력: analysis:token-rate-service-capability
+  토큰파워벤치: source:ref-083
+  통신 은닉: concept:computation-communication-overlap
+  튜링: person:alan-turing
+  튜링 기계: concept:page-c617f209
+  트랜스포머: concept:transformer
+  트랜잭션 순서 보장: analysis:transaction-ordering-guarantees
+  트랜잭션 시스템은 어떤 순서 보장을 제공하는가: analysis:transaction-ordering-guarantees
+  특수 목적 계산기와 범용 컴퓨터: analysis:page-7058e090
+  특화 가속기: concept:domain-specific-accelerator
+  특화와 범용의 진자 운동: analysis:specialized-vs-general-pendulum
+  파이프: concept:page-d86dcb52
+  파일 시스템: concept:page-7c33e4cb
+  페르마의 접선법: concept:adequality
+  평균 성능은 왜 서비스의 컴퓨팅 능력을 설명하지 못하는가: analysis:page-01dd444c
+  평균 성능의 한계: analysis:page-01dd444c
+  평균 지연과 꼬리 지연: analysis:page-01dd444c
+  폐쇄형 서브루틴: concept:subroutine
+  폐쇄형 서브루틴과 Wheeler Jump: source:src-005
+  포스트 무어 시대의 성능: source:ref-068
+  포스트모템 루틴: concept:page-325f29bd
+  포터빌리티: concept:page-5063ca2b
+  포트란: concept:page-72af5ee2
+  폰 노이만: person:john-von-neumann
+  폰 노이만 구성자: concept:self-reproducing-automata
+  폰 노이만 구조: concept:page-7d1c4861
+  표 계산 프로그램: concept:spreadsheet
+  표현 배치 계약: analysis:representation-placement-contract
+  표현·배치·계약은 어떻게 컴퓨팅 능력을 만드는가: analysis:representation-placement-contract
+  표현·IR·ABI 경계: concept:stablehlo-mlir-abi
+  표현·IR·ABI 경계는 무엇을 보존하는가: analysis:stablehlo-mlir-abi-boundary
+  프레임버퍼 메모리 사상: concept:framebuffer-memory-mapping
+  프레임버퍼 주소 변환: concept:framebuffer-memory-mapping
+  프로그래밍 가능성: concept:programmability
+  프로그래밍 언어: concept:page-26360c8b
+  프로그래밍 언어 설계: concept:page-26360c8b
+  프로그램 가능성: concept:programmability
+  프로그램 가능성의 역사: analysis:page-63baea1f
+  프로그램 로더: concept:page-94134317
+  프로그램 오류 추적: concept:page-a1be87c0
+  프로그램 준비: source:ref-001
+  프롬프트 처리와 토큰 생성: concept:prefill-decode
+  프리필·디코딩: concept:prefill-decode
+  프리필과 디코드: concept:prefill-decode
+  하드웨어 실행 모델: concept:hardware-execution-model
+  하드웨어 실행 모델과 제어·상태의 직조: analysis:page-7a3b4c5d
+  하드웨어 실행 모델은 어떻게 제어와 상태를 엮는가: analysis:page-7a3b4c5d
+  하드웨어와 알고리즘의 비교: analysis:hardware-vs-algorithmic-improvement
+  한 소스의 의미와 성능은 가속기로 어떻게 번역되는가: analysis:source-semantics-accelerator-performance
+  한 프로그램의 순서는 여러 실행 주체에서 어떻게 보존되는가: analysis:concurrent-order-shared-state
+  함수 프레임: concept:page-f6e983b1
+  함수 호출: concept:subroutine
+  합의와 서비스 응답: analysis:distributed-consistency-latency
+  해석 기관: concept:page-4b367720
+  해석기하학: concept:analytic-geometry
+  해석기하학에서 디스플레이 픽셀과 모바일 지도까지: analysis:analytic-geometry-to-pixels-and-maps
+  해석기하학의 탄생과 표기법 전쟁: analysis:geometry-to-computation-descartes-vs-fermat
+  허턴과 그레고리의 수학 표: source:ref-055
+  협력하는 순차 프로세스: source:ref-092
+  호출 스택: concept:page-c297dc5b
+  호퍼: person:grace-hopper
+  혼합 정밀도: concept:mixed-precision
+  혼합 정밀도와 모델 품질: analysis:low-precision-ai-result-contract
+  홈페이지: document:overview
+  홉스: person:thomas-hobbes
+  홉스와 라이프니츠 - 기호의 기능: source:ref-142
+  홉스와 라이프니츠, 기호에서 AI까지: source:src-007
+  "홉스와 라이프니츠: 기호의 기능": source:ref-142
+  확대 크기 확장: concept:parallel-scalability
+  회색 장애: source:ref-120
+  휠러: person:david-wheeler
+  휠러 점프: concept:page-2397a193
+  희미해지는 감각질: source:ref-154
+  힐베르트 결정 문제: concept:page-145622bc
+  A Case against the GO TO Statement: source:ref-011
+  A Critique of ANSI SQL Isolation Levels: source:ref-111
+  A New Golden Age for Computer Architecture: source:ref-138
+  A Note respecting the Application of Machinery: source:ref-053
+  A Note respecting the Application of Machinery to the Calculation of Astronomical Tables: source:ref-053
+  A Proof for the Queuing Formula L = λW: source:ref-085
+  "A Proof for the Queuing Formula: L = λ W": source:ref-085
+  A Symbolic Analysis of Relay and Switching Circuits: source:ref-008
+  a-machine: concept:page-c617f209
+  A. M. Turing: person:alan-turing
+  A&S: source:ref-054
+  Abramowitz and Stegun: source:ref-054
+  Absent Qualia, Fading Qualia, Dancing Qualia: source:ref-154
+  accidental complexity: concept:essential-accidental-complexity
+  ACM Computing Surveys Software Reuse: source:ref-004
+  Activation-aware Weight Quantization: source:ref-082
+  activity is not productivity: analysis:code-volume-developer-productivity
+  Ada Lovelace: person:ada-lovelace
+  adæqualitas: concept:adequality
+  address relocation: concept:page-d679e8f4
+  Address Space Layout Randomization: concept:aslr
+  adequality: concept:adequality
+  admission control: concept:queueing-load-control
+  advanced encoding: analysis:page-9241eb45
+  AGI 판정 기준은 누가 옮기는가: analysis:agi-criteria-shift
+  AGI goalposts: analysis:agi-criteria-shift
+  AGI는 이미 도래했는가: analysis:agi-criteria-shift
+  AGI는 이미 도래했다: source:ref-151
+  Agüera y Arcas and Norvig 2023: source:ref-151
+  Agüera y Arcas Big Think interview: source:ref-147
+  AI 시스템은 병목을 어떻게 이동시키는가: analysis:ai-bottleneck-shifting
+  AI 인프라의 병목 계보: analysis:ai-bottleneck-lineage
+  AI 저정밀도 성능: analysis:low-precision-ai-result-contract
+  AI 컴퓨팅 병목: concept:ai-computing-bottlenecks
+  AI 코드 생성 도구 사용성: source:ref-105
+  AI 코딩 지원: concept:ai-coding-assistance
+  AI 코딩 지원과 책임: analysis:automation-labor-responsibility
+  AI 하드웨어와 CPU의 재부각: analysis:specialized-vs-general-pendulum
+  AI bottleneck lineage: analysis:ai-bottleneck-lineage
+  AI bottleneck shifting: analysis:ai-bottleneck-shifting
+  AI bottlenecks: concept:ai-computing-bottlenecks
+  AI coding assistance: concept:ai-coding-assistance
+  AI pair programming: concept:ai-coding-assistance
+  Alan Turing: person:alan-turing
+  Algorithm schedule separation: concept:algorithm-schedule-separation
+  Algorithmic Thinking: concept:page-e2b63e63
+  allowlist validation: concept:input-validation
+  Alonzo Church: person:alonzo-church
+  Amazon Dynamo: source:ref-104
+  Amdahl 1967: source:ref-035
+  Amdahl single processor paper: source:ref-035
+  American Standard Code for Information Interchange: concept:page-6a0c16a9
+  An Investigation of the Laws of Thought: source:ref-030
+  An Unsolvable Problem of Elementary Number Theory: source:ref-010
+  analysis-01dd444cf0037615: analysis:page-01dd444c
+  analysis-0b0061867a466b88: analysis:page-0b006186
+  analysis-0c7e244ee605320d: analysis:page-0c7e244e
+  analysis-2b56fedc2ec5e743: analysis:page-2b56fedc
+  analysis-3259f99bb25a494c: analysis:page-3259f99b
+  analysis-353b4b2d38841a24: analysis:power-wall-performance
+  analysis-35a2e99b2b062bf6: analysis:page-35a2e99b
+  analysis-3d25f4823ef50776: analysis:page-3d25f482
+  analysis-4095b0c80dbee408: analysis:page-4095b0c8
+  analysis-63baea1fd8a3a197: analysis:page-63baea1f
+  analysis-6a13ea1dd48b1014: analysis:page-6a13ea1d
+  analysis-7058e090e0383cd3: analysis:page-7058e090
+  analysis-7a3b4c5d6e7f8091: analysis:page-7a3b4c5d
+  analysis-866096c7a9c8c715: analysis:page-866096c7
+  analysis-8d320775b8ff83eb: analysis:page-8d320775
+  analysis-8f48231deb7289cb: analysis:page-8f48231d
+  analysis-9241eb4539243823: analysis:page-9241eb45
+  analysis-agi-criteria-shift: analysis:agi-criteria-shift
+  analysis-ai-bottleneck-lineage: analysis:ai-bottleneck-lineage
+  analysis-ai-bottleneck-shifting: analysis:ai-bottleneck-shifting
+  analysis-analytic-geometry-to-pixels-and-maps: analysis:analytic-geometry-to-pixels-and-maps
+  analysis-automation-labor-responsibility: analysis:automation-labor-responsibility
+  analysis-benchmark-numbers-not-directly-comparable: analysis:benchmark-numbers-not-directly-comparable
+  analysis-code-volume-developer-productivity: analysis:code-volume-developer-productivity
+  analysis-computation-invention-or-natural-phenomenon: analysis:computation-invention-or-natural-phenomenon
+  analysis-concurrent-order-shared-state: analysis:concurrent-order-shared-state
+  analysis-d01616805eb5bcb3: analysis:page-d0161680
+  analysis-dependency-provenance-registry: analysis:dependency-provenance-registry
+  analysis-distributed-consistency-latency: analysis:distributed-consistency-latency
+  analysis-exactly-once-boundary: analysis:exactly-once-boundary
+  analysis-exponent-notation-delay: analysis:exponent-notation-delay
+  analysis-f5a313683050649e: analysis:page-f5a31368
+  analysis-f822354704bc38bb: analysis:page-f8223547
+  analysis-failure-detection-gray-metastable: analysis:failure-detection-gray-metastable
+  analysis-fc1fa74eef57ee33: analysis:page-fc1fa74e
+  analysis-functionalism-vs-chinese-room: analysis:functionalism-vs-chinese-room
+  analysis-geometry-to-computation-descartes-vs-fermat: analysis:geometry-to-computation-descartes-vs-fermat
+  analysis-hardware-vs-algorithmic-improvement: analysis:hardware-vs-algorithmic-improvement
+  analysis-interpretation-security-boundary: analysis:interpretation-security-boundary
+  analysis-kv-cache-throughput: analysis:kv-cache-throughput
+  analysis-llm-reuse-speculation-work: analysis:llm-reuse-speculation-work
+  analysis-llm-slo-resource-cost: analysis:llm-slo-resource-cost
+  analysis-llm-throughput-latency-queueing: analysis:llm-throughput-latency-queueing
+  analysis-local-interface-remote-state: analysis:local-interface-remote-state
+  analysis-low-bit-llm-inference: analysis:low-bit-llm-inference
+  analysis-low-precision-ai-result-contract: analysis:low-precision-ai-result-contract
+  analysis-mccarthy-eval-symbolic-computation: analysis:mccarthy-eval-symbolic-computation
+  analysis-operational-energy-sustainable-computing: analysis:operational-energy-sustainable-computing
+  analysis-representation-placement-contract: analysis:representation-placement-contract
+  analysis-reproducible-build-boundary: analysis:reproducible-build-boundary
+  analysis-retry-amplification-and-control: analysis:retry-amplification-and-control
+  analysis-runtime-contract: analysis:runtime-contract
+  analysis-service-speed-vs-availability: analysis:service-speed-vs-availability
+  analysis-source-semantics-accelerator-performance: analysis:source-semantics-accelerator-performance
+  analysis-specialized-vs-general-pendulum: analysis:specialized-vs-general-pendulum
+  analysis-stablehlo-mlir-abi-boundary: analysis:stablehlo-mlir-abi-boundary
+  analysis-symbols-from-aid-to-computation-engine: analysis:symbols-from-aid-to-computation-engine
+  analysis-token-rate-service-capability: analysis:token-rate-service-capability
+  analysis-transaction-ordering-guarantees: analysis:transaction-ordering-guarantees
+  analysis-transformer-io-bottleneck: analysis:transformer-io-bottleneck
+  analysis:agi-criteria-shift: analysis:agi-criteria-shift
+  analysis:ai-bottleneck-lineage: analysis:ai-bottleneck-lineage
+  analysis:ai-bottleneck-shifting: analysis:ai-bottleneck-shifting
+  analysis:analytic-geometry-to-pixels-and-maps: analysis:analytic-geometry-to-pixels-and-maps
+  analysis:automation-labor-responsibility: analysis:automation-labor-responsibility
+  analysis:benchmark-numbers-not-directly-comparable: analysis:benchmark-numbers-not-directly-comparable
+  analysis:code-volume-developer-productivity: analysis:code-volume-developer-productivity
+  analysis:computation-invention-or-natural-phenomenon: analysis:computation-invention-or-natural-phenomenon
+  analysis:concurrent-order-shared-state: analysis:concurrent-order-shared-state
+  analysis:dependency-provenance-registry: analysis:dependency-provenance-registry
+  analysis:distributed-consistency-latency: analysis:distributed-consistency-latency
+  analysis:exactly-once-boundary: analysis:exactly-once-boundary
+  analysis:exponent-notation-delay: analysis:exponent-notation-delay
+  analysis:failure-detection-gray-metastable: analysis:failure-detection-gray-metastable
+  analysis:from-mathematical-tables-to-spreadsheets: analysis:from-mathematical-tables-to-spreadsheets
+  analysis:from-table-checking-to-numerical-result-contracts: analysis:from-table-checking-to-numerical-result-contracts
+  analysis:functionalism-vs-chinese-room: analysis:functionalism-vs-chinese-room
+  analysis:geometry-to-computation-descartes-vs-fermat: analysis:geometry-to-computation-descartes-vs-fermat
+  analysis:hardware-vs-algorithmic-improvement: analysis:hardware-vs-algorithmic-improvement
+  analysis:human-computers-and-computation-factories: analysis:human-computers-and-computation-factories
+  analysis:interpretation-security-boundary: analysis:interpretation-security-boundary
+  analysis:kv-cache-throughput: analysis:kv-cache-throughput
+  analysis:llm-reuse-speculation-work: analysis:llm-reuse-speculation-work
+  analysis:llm-slo-resource-cost: analysis:llm-slo-resource-cost
+  analysis:llm-throughput-latency-queueing: analysis:llm-throughput-latency-queueing
+  analysis:local-interface-remote-state: analysis:local-interface-remote-state
+  analysis:low-bit-llm-inference: analysis:low-bit-llm-inference
+  analysis:low-precision-ai-result-contract: analysis:low-precision-ai-result-contract
+  analysis:mccarthy-eval-symbolic-computation: analysis:mccarthy-eval-symbolic-computation
+  analysis:operational-energy-sustainable-computing: analysis:operational-energy-sustainable-computing
+  analysis:page-01dd444c: analysis:page-01dd444c
+  analysis:page-0b006186: analysis:page-0b006186
+  analysis:page-0c7e244e: analysis:page-0c7e244e
+  analysis:page-2b56fedc: analysis:page-2b56fedc
+  analysis:page-3259f99b: analysis:page-3259f99b
+  analysis:page-353b4b2d: analysis:power-wall-performance
+  analysis:page-35a2e99b: analysis:page-35a2e99b
+  analysis:page-3d25f482: analysis:page-3d25f482
+  analysis:page-4095b0c8: analysis:page-4095b0c8
+  analysis:page-63baea1f: analysis:page-63baea1f
+  analysis:page-6a13ea1d: analysis:page-6a13ea1d
+  analysis:page-7058e090: analysis:page-7058e090
+  analysis:page-7a3b4c5d: analysis:page-7a3b4c5d
+  analysis:page-866096c7: analysis:page-866096c7
+  analysis:page-8d320775: analysis:page-8d320775
+  analysis:page-8f48231d: analysis:page-8f48231d
+  analysis:page-9241eb45: analysis:page-9241eb45
+  analysis:page-d0161680: analysis:page-d0161680
+  analysis:page-f5a31368: analysis:page-f5a31368
+  analysis:page-f8223547: analysis:page-f8223547
+  analysis:page-fc1fa74e: analysis:page-fc1fa74e
+  analysis:representation-placement-contract: analysis:representation-placement-contract
+  analysis:reproducible-build-boundary: analysis:reproducible-build-boundary
+  analysis:retry-amplification-and-control: analysis:retry-amplification-and-control
+  analysis:runtime-contract: analysis:runtime-contract
+  analysis:service-speed-vs-availability: analysis:service-speed-vs-availability
+  analysis:source-semantics-accelerator-performance: analysis:source-semantics-accelerator-performance
+  analysis:specialized-vs-general-pendulum: analysis:specialized-vs-general-pendulum
+  analysis:stablehlo-mlir-abi-boundary: analysis:stablehlo-mlir-abi-boundary
+  analysis:stored-results-to-executable-procedures: analysis:stored-results-to-executable-procedures
+  analysis:symbols-from-aid-to-computation-engine: analysis:symbols-from-aid-to-computation-engine
+  analysis:token-rate-service-capability: analysis:token-rate-service-capability
+  analysis:transaction-ordering-guarantees: analysis:transaction-ordering-guarantees
+  analysis:transformer-io-bottleneck: analysis:transformer-io-bottleneck
+  analytic geometry: concept:analytic-geometry
+  Analytic Geometry to Pixels and Maps: analysis:analytic-geometry-to-pixels-and-maps
+  Analytical Engine: concept:page-4b367720
+  ANI와 AGI의 구분: analysis:agi-criteria-shift
+  ANSI SQL 격리 수준 비판: source:ref-111
+  ANSI SQL isolation levels critique: source:ref-111
+  API: concept:page-2ff6633d
+  API 문서: concept:page-16d053e6
+  API의 전신: analysis:page-4095b0c8
+  Application Programming Interface: concept:page-2ff6633d
+  Artificial General Intelligence Is Already Here: source:ref-151
+  arXiv 2406.19108: source:ref-148
+  ASCII: concept:page-6a0c16a9
+  aslr: concept:aslr
+  ASLR: concept:aslr
+  ASLR (Address Space Layout Randomization): concept:aslr
+  ASLR 1차 자료 묶음: source:ref-137
+  ASLR primary sources: source:ref-137
+  Assembler: concept:page-efde1ed2
+  assembly: concept:page-efde1ed2
+  atomic consistency: concept:linearizability
+  Attention Is All You Need: source:ref-073
+  Augusta Ada King: person:ada-lovelace
+  automatic machine: concept:page-c617f209
+  Automatic Programming: concept:page-1bbfe009
+  automation boundary: concept:automation-boundary
+  automation labor responsibility: analysis:automation-labor-responsibility
+  availability and recovery: concept:availability-recovery
+  AWQ - Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration: source:ref-082
+  AWQ paper: source:ref-082
+  "AWQ: Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration": source:ref-082
+  Babbage 1822: source:ref-053
+  Baby: concept:page-30fac639
+  Backus 1957 FORTRAN paper: source:ref-016
+  Backus 1978 Fortran history: source:ref-017
+  Barroso-Hölzle 2007: source:ref-046
+  Bazel BUILD files: source:ref-126
+  Bazel BUILD Files and Hermeticity: source:ref-126
+  Bazel hermetic build: source:ref-126
+  Bazel hermeticity: source:ref-126
+  benchmark contract: concept:benchmark-contract
+  benchmark result comparability: analysis:benchmark-numbers-not-directly-comparable
+  Berenson isolation levels: source:ref-111
+  Berkeley parallel computing report: source:ref-040
+  Berkeley RISC I: source:ref-044
+  Berkeley View: source:ref-040
+  BFF 논문: source:ref-148
+  BFF soup: concept:computational-artificial-life
+  Binary: concept:page-90428fe8
+  Binary Adder: concept:page-59604f53
+  Binary Number System: concept:page-90428fe8
+  Birrell Nelson 1984: source:ref-102
+  Bit: concept:page-d7da5df4
+  Bit and Byte: concept:page-d7da5df4
+  Bit Operation: concept:page-38dd11a2
+  bit patterns and interpretation rules: analysis:page-d0161680
+  Bitwise Operation: concept:page-38dd11a2
+  Blaise Agüera y Arcas: person:aguera-y-arcas
+  Blaise Agüera y Arcas Big Think 인터뷰 원문: source:ref-147
+  Blaise_transcript: source:ref-147
+  blind thought: concept:cogitatio-caeca
+  Böhm-Jacopini 1966: source:ref-012
+  Bohm-Jacopini theorem: concept:page-8e6aa351
+  Böhm-Jacopini theorem: concept:page-8e6aa351
+  BOM: concept:page-5163a003
+  Boole: person:george-boole
+  Boole 1854: source:ref-030
+  Boolean: concept:page-918ae6f1
+  Boolean Algebra: concept:page-918ae6f1
+  Boolean logic: concept:page-918ae6f1
+  Bootstrap: concept:page-873d18c3
+  bootstrapping: concept:page-873d18c3
+  bottleneck shifting: concept:memory-movement-bottleneck-shift
+  Brainfuck soup: concept:computational-artificial-life
+  Brewer 정리: concept:cap-theorem
+  Brewer's Conjecture and the Feasibility of Consistent, Available, Partition-Tolerant Web Services: source:ref-087
+  Brooks 1987: source:ref-071
+  Byte: concept:page-d7da5df4
+  Byte Order Mark: concept:page-5163a003
+  byte order signature: concept:page-5163a003
+  Byzantine failure: concept:byzantine-fault
+  Byzantine fault: concept:byzantine-fault
+  C: concept:page-f438fd41
+  C 문자열: concept:page-3d371068
+  C 언어: concept:page-f438fd41
+  C 정수와 시프트 의미론: source:ref-029
+  C and Unix portability: source:ref-021
+  C Integer and Shift Semantics: source:ref-029
+  C integer overflow rules: source:ref-029
+  C language: concept:page-f438fd41
+  C language history: source:ref-019
+  C programming language: concept:page-f438fd41
+  C string: concept:page-3d371068
+  C-style string: concept:page-3d371068
+  C. A. R. Hoare: person:tony-hoare
+  C. W. Krueger: person:charles-w-krueger
+  Cache memory: concept:page-6aaebafb
+  Cahill Röhm Fekete SSI: source:ref-112
+  Calculation checking: concept:calculation-checking
+  calculation-checking: concept:calculation-checking
+  calculator vs computer: analysis:page-7058e090
+  Calculemus: concept:characteristica-calculus
+  call frame: concept:page-f6e983b1
+  call stack: concept:page-c297dc5b
+  Cambridge Computer Lab history: source:ref-028
+  Cambridge Computer Laboratory - The History of the Computer Lab: source:ref-028
+  CAP: concept:cap-theorem
+  CAP 원 논문: source:ref-087
+  CAP 정리: concept:cap-theorem
+  CAP theorem: concept:cap-theorem
+  CAP theorem paper: source:ref-087
+  Carbon Emissions and Large Neural Network Training: source:ref-110
+  Cedar RPC: source:ref-102
+  Chalmers 1995: source:ref-154
+  Characteristica Universalis and Calculus Ratiocinator: concept:characteristica-calculus
+  Charles Antony Richard Hoare: person:tony-hoare
+  Charles Babbage: person:charles-babbage
+  Charles Krueger: person:charles-w-krueger
+  Charles W. Krueger: person:charles-w-krueger
+  Chasing Carbon: source:ref-109
+  Chasing Carbon — The Elusive Environmental Footprint of Computing: source:ref-109
+  "Chasing Carbon: The Elusive Environmental Footprint of Computing": source:ref-109
+  Chen et al. 2018: source:ref-099
+  Chinese Room: concept:chinese-room-syntax-semantics
+  Church: person:alonzo-church
+  Church 1936: source:ref-010
+  Church-Turing Thesis: concept:page-b95bdd2d
+  Church's theorem: source:ref-010
+  Church's thesis: concept:page-b95bdd2d
+  Clark 1988: source:ref-141
+  Claude E. Shannon: person:claude-shannon
+  Claude Shannon: person:claude-shannon
+  Clockwork: source:ref-086
+  Clockwork serving system: source:ref-086
+  closed subroutine: concept:subroutine
+  Closed Subroutine and Wheeler Jump: source:src-005
+  Code Point: concept:page-e589f64b
+  Code Unit: concept:page-9574348a
+  code unit sequence: concept:page-9574348a
+  Cogitatio Caeca: concept:cogitatio-caeca
+  commit wait: concept:external-consistency-time-uncertainty
+  compilation: concept:compiler
+  Compiler: concept:compiler
+  compiler boundary preservation: analysis:stablehlo-mlir-abi-boundary
+  Compiler optimization: concept:page-eb050b34
+  Computability: concept:computability
+  computable: concept:computability
+  computable numbers: source:ref-009
+  computation as basic science: analysis:computation-invention-or-natural-phenomenon
+  computation-communication overlap: concept:computation-communication-overlap
+  computational capability: concept:computing-capability
+  computational complexity: concept:computational-complexity
+  computational complexity of algorithms: source:ref-031
+  Computational Life: source:ref-148
+  Computational Life - How Well-formed, Self-replicating Programs Emerge from Simple Interaction: source:ref-148
+  computations per joule trend: concept:page-0fdf8f46
+  compute schedule separation: concept:algorithm-schedule-separation
+  Computer Was a Job Description: source:ref-058
+  Computing capability: concept:computing-capability
+  Computing capability reading guide: document:page-9bc0d3d6
+  Computing energy efficiency trends: source:ref-047
+  computing machine: concept:page-c617f209
+  computing power: concept:computing-capability
+  computing-capability: concept:computing-capability
+  concept-00b55ff0f7a3581b: concept:page-00b55ff0
+  concept-01f775b8a307802f: concept:computability
+  concept-092a889f122121cb: concept:page-092a889f
+  concept-0939ab2408573c58: concept:page-0939ab24
+  concept-099497b965b35d3a: concept:page-099497b9
+  concept-0b68e8bcd6a95a79: concept:page-0b68e8bc
+  concept-0d04f3f7f3648be5: concept:page-0d04f3f7
+  concept-0fdf8f46e0e7b677: concept:page-0fdf8f46
+  concept-141883d0f8048c7e: concept:page-141883d0
+  concept-145622bcdc913103: concept:page-145622bc
+  concept-16d053e669459261: concept:page-16d053e6
+  concept-18a0ce4363c25093: concept:page-18a0ce43
+  concept-1bbfe00922d38ab1: concept:page-1bbfe009
+  concept-1c13e72137b697ae: concept:structured-programming
+  concept-2397a193cf79979b: concept:page-2397a193
+  concept-26360c8b4141acb4: concept:page-26360c8b
+  concept-2913946302b96786: concept:page-29139463
+  concept-2a99ca9c01ed5ad8: concept:page-2a99ca9c
+  concept-2ff6633d43e61407: concept:page-2ff6633d
+  concept-30fac639582288be: concept:page-30fac639
+  concept-325f29bd4557260c: concept:page-325f29bd
+  concept-38dd11a2bcc6049f: concept:page-38dd11a2
+  concept-3b07c7d6f11aed09: concept:page-3b07c7d6
+  concept-3d371068dd880445: concept:page-3d371068
+  concept-3e1313946067714a: concept:page-3e131394
+  concept-432b4756227c6ef2: concept:page-432b4756
+  concept-446e9f53b7a0dab2: concept:subroutine
+  concept-46257ebec8e7274c: concept:page-46257ebe
+  concept-464cd2bb0d306cc3: concept:library
+  concept-47ba75def6a810da: concept:page-47ba75de
+  concept-494620a1e7c73b24: concept:energy-proportional-computing
+  concept-496b0829073c279a: concept:page-496b0829
+  concept-4a63d3dfa96ba65a: concept:page-4a63d3df
+  concept-4ac13a0d4fe8ec32: concept:page-4ac13a0d
+  concept-4b367720c4a42e5a: concept:page-4b367720
+  concept-5063ca2b2057b092: concept:page-5063ca2b
+  concept-5163a00379489f02: concept:page-5163a003
+  concept-569257e7cbee4eb8: concept:programmability
+  concept-59604f5365047afb: concept:page-59604f53
+  concept-5cd779cec1e9716b: concept:page-5cd779ce
+  concept-60bcdf34d9470eea: concept:page-60bcdf34
+  concept-613958ec8891ac2d: concept:page-613958ec
+  concept-65669d1c4c32c693: concept:software-reuse
+  concept-676372e6cb31537d: concept:page-676372e6
+  concept-6a0c16a9841c87e8: concept:page-6a0c16a9
+  concept-6aaebafb1aacc624: concept:page-6aaebafb
+  concept-6c282053efbb112b: concept:page-6c282053
+  concept-723508cf4e8d30ee: concept:page-723508cf
+  concept-72af5ee2350eff99: concept:page-72af5ee2
+  concept-7c33e4cb9fd49f6c: concept:page-7c33e4cb
+  concept-7cc49c1806726804: concept:page-7cc49c18
+  concept-7d1c4861fc9f4cd5: concept:page-7d1c4861
+  concept-7fcb10ccbdb06070: concept:page-7fcb10cc
+  concept-830fb7209f3c8247: concept:page-830fb720
+  concept-83b76a0498d798aa: concept:page-83b76a04
+  concept-873d18c3be4404fb: concept:page-873d18c3
+  concept-8ae81e59373c00f2: concept:page-8ae81e59
+  concept-8d4656f333ec153d: concept:compiler
+  concept-8e6aa351d4e32f97: concept:page-8e6aa351
+  concept-90428fe85dfd3403: concept:page-90428fe8
+  concept-918ae6f1f0969df3: concept:page-918ae6f1
+  concept-9351a6279b74d274: concept:page-9351a627
+  concept-93fca2ee9dac9fb6: concept:page-93fca2ee
+  concept-941343176ad7e60c: concept:page-94134317
+  concept-9574348ae704d682: concept:page-9574348a
+  concept-9ecf6d54b1e384b0: concept:page-9ecf6d54
+  concept-a1be87c0f839094f: concept:page-a1be87c0
+  concept-a446fe7ee6ca59f2: concept:page-a446fe7e
+  concept-adequality: concept:adequality
+  concept-ai-coding-assistance: concept:ai-coding-assistance
+  concept-ai-computing-bottlenecks: concept:ai-computing-bottlenecks
+  concept-algorithm-schedule-separation: concept:algorithm-schedule-separation
+  concept-analytic-geometry: concept:analytic-geometry
+  concept-automation-boundary: concept:automation-boundary
+  concept-availability-recovery: concept:availability-recovery
+  concept-b95bdd2d77f6f194: concept:page-b95bdd2d
+  concept-be5e965404a672d3: concept:page-be5e9654
+  concept-benchmark-contract: concept:benchmark-contract
+  concept-byzantine-fault: concept:byzantine-fault
+  concept-c297dc5b421f48a3: concept:page-c297dc5b
+  concept-c617f2098bd57016: concept:page-c617f209
+  concept-c7e0c2c53cb04fba: concept:page-c7e0c2c5
+  concept-c7fabfe3dff4e5d5: concept:symbolic-manipulation
+  concept-c854e2f6358212d1: concept:page-c854e2f6
+  concept-c9c7cad93930dc6c: concept:page-c9c7cad9
+  concept-cap-theorem: concept:cap-theorem
+  concept-cb68fc615e46376e: concept:page-cb68fc61
+  concept-characteristica-calculus: concept:characteristica-calculus
+  concept-chinese-room-syntax-semantics: concept:chinese-room-syntax-semantics
+  concept-cogitatio-caeca: concept:cogitatio-caeca
+  concept-computation-communication-overlap: concept:computation-communication-overlap
+  concept-computational-artificial-life: concept:computational-artificial-life
+  concept-computational-complexity: concept:computational-complexity
+  concept-concurrency: concept:concurrency
+  concept-continuous-batching: concept:continuous-batching
+  concept-d2f652046668c971: concept:page-d2f65204
+  concept-d4ef040697b43518: concept:parallel-scalability
+  concept-d4fdbd19616560c0: concept:page-d4fdbd19
+  concept-d61f7b46dc608713: concept:page-d61f7b46
+  concept-d679e8f4343f66ba: concept:page-d679e8f4
+  concept-d7da5df4d36a970c: concept:page-d7da5df4
+  concept-d86dcb525d6a2843: concept:page-d86dcb52
+  concept-dc1573dca7d35049: concept:page-dc1573dc
+  concept-dc2142ecaccdc1e9: concept:domain-specific-accelerator
+  concept-dependency-provenance: concept:dependency-provenance
+  concept-developer-productivity: concept:developer-productivity
+  concept-df7e932b999f444f: concept:memory-wall
+  concept-distributed-file-system: concept:distributed-file-system
+  concept-e2b63e6394d296b1: concept:page-e2b63e63
+  concept-e589f64b6639a460: concept:page-e589f64b
+  concept-e83f2a1b94d76c01: concept:hardware-execution-model
+  concept-eb050b34d56c0961: concept:page-eb050b34
+  concept-ef02c2bc7dc5ea9b: concept:stored-program-computer
+  concept-ef0b337a520af324: concept:page-ef0b337a
+  concept-efde1ed2c65b5416: concept:page-efde1ed2
+  concept-end-to-end-principle: concept:end-to-end-principle
+  concept-essential-accidental-complexity: concept:essential-accidental-complexity
+  concept-external-consistency-time-uncertainty: concept:external-consistency-time-uncertainty
+  concept-f019ffbfafa82d67: concept:page-f019ffbf
+  concept-f047e0039fc9a9c0: concept:page-f047e003
+  concept-f438fd4127b48dbb: concept:page-f438fd41
+  concept-f4f7573102f01723: concept:page-f4f75731
+  concept-f57f54a4895add44: concept:tail-latency
+  concept-f6e983b17cae80b7: concept:page-f6e983b1
+  concept-fa0c6ecb3f94fe4c: concept:page-fa0c6ecb
+  concept-failure-detection: concept:failure-detection
+  concept-fault-tolerance: concept:fault-tolerance
+  concept-framebuffer-memory-mapping: concept:framebuffer-memory-mapping
+  concept-heterogeneous-execution-model: concept:heterogeneous-execution-model
+  concept-idempotency: concept:idempotency
+  concept-input-validation: concept:input-validation
+  concept-intermediate-representation: concept:intermediate-representation
+  concept-io-aware-attention: concept:io-aware-attention
+  concept-kv-cache: concept:kv-cache
+  concept-landauer-principle: concept:landauer-principle
+  concept-lifecycle-assessment-boundary: concept:lifecycle-assessment-boundary
+  concept-linearizability: concept:linearizability
+  concept-littles-law: concept:littles-law
+  concept-llm-inference-energy-metrics: concept:llm-inference-energy-metrics
+  concept-llm-inference-service-metrics: concept:llm-inference-service-metrics
+  concept-llm-weight-quantization: concept:llm-weight-quantization
+  concept-memory-movement-bottleneck-shift: concept:memory-movement-bottleneck-shift
+  concept-mixed-precision: concept:mixed-precision
+  concept-mutual-exclusion-synchronization: concept:mutual-exclusion-synchronization
+  concept-np-completeness: concept:np-completeness
+  concept-operational-embodied-carbon: concept:operational-embodied-carbon
+  concept-partial-failure: concept:partial-failure
+  concept-performance-portability: concept:performance-portability
+  concept-polynomial-time-reduction: concept:polynomial-time-reduction
+  concept-power-usage-effectiveness: concept:power-usage-effectiveness
+  concept-prefill-decode: concept:prefill-decode
+  concept-prefix-kv-caching: concept:prefix-kv-caching
+  concept-quantity-species-pairs: concept:quantity-species-pairs
+  concept-queueing-load-control: concept:queueing-load-control
+  concept-remote-procedure-call: concept:remote-procedure-call
+  concept-replicated-log-consensus: concept:replicated-log-consensus
+  concept-reproducible-builds: concept:reproducible-builds
+  concept-retries: concept:retries
+  concept-runtime-contract: concept:runtime-contract
+  concept-self-attention: concept:self-attention
+  concept-self-reproducing-automata: concept:self-reproducing-automata
+  concept-sequential-consistency: concept:sequential-consistency
+  concept-serializability: concept:serializability
+  concept-speculative-decoding: concept:speculative-decoding
+  concept-stablehlo-mlir-abi: concept:stablehlo-mlir-abi
+  concept-substrate-independence-functionalism: concept:substrate-independence-functionalism
+  concept-superscript-exponent: concept:superscript-exponent
+  concept-symbiogenesis: concept:symbiogenesis
+  concept-time-to-quality: concept:time-to-quality
+  concept-transformer: concept:transformer
+  concept-unit-segment-dimension-reduction: concept:unit-segment-dimension-reduction
+  concept-verification-labor: concept:verification-labor
+  concept:adequality: concept:adequality
+  concept:ai-coding-assistance: concept:ai-coding-assistance
+  concept:ai-computing-bottlenecks: concept:ai-computing-bottlenecks
+  concept:algorithm-schedule-separation: concept:algorithm-schedule-separation
+  concept:analytic-geometry: concept:analytic-geometry
+  concept:aslr: concept:aslr
+  concept:automation-boundary: concept:automation-boundary
+  concept:availability-recovery: concept:availability-recovery
+  concept:benchmark-contract: concept:benchmark-contract
+  concept:byzantine-fault: concept:byzantine-fault
+  concept:calculation-checking: concept:calculation-checking
+  concept:cap-theorem: concept:cap-theorem
+  concept:characteristica-calculus: concept:characteristica-calculus
+  concept:chinese-room-syntax-semantics: concept:chinese-room-syntax-semantics
+  concept:cogitatio-caeca: concept:cogitatio-caeca
+  concept:computation-communication-overlap: concept:computation-communication-overlap
+  concept:computational-artificial-life: concept:computational-artificial-life
+  concept:computational-complexity: concept:computational-complexity
+  concept:computing-capability: concept:computing-capability
+  concept:concurrency: concept:concurrency
+  concept:continuous-batching: concept:continuous-batching
+  concept:dependency-provenance: concept:dependency-provenance
+  concept:developer-productivity: concept:developer-productivity
+  concept:distributed-file-system: concept:distributed-file-system
+  concept:end-to-end-principle: concept:end-to-end-principle
+  concept:essential-accidental-complexity: concept:essential-accidental-complexity
+  concept:external-consistency-time-uncertainty: concept:external-consistency-time-uncertainty
+  concept:failure-detection: concept:failure-detection
+  concept:fault-tolerance: concept:fault-tolerance
+  concept:framebuffer-memory-mapping: concept:framebuffer-memory-mapping
+  concept:heterogeneous-execution-model: concept:heterogeneous-execution-model
+  concept:human-computers: concept:human-computers
+  concept:idempotency: concept:idempotency
+  concept:input-validation: concept:input-validation
+  concept:intermediate-representation: concept:intermediate-representation
+  concept:io-aware-attention: concept:io-aware-attention
+  concept:kv-cache: concept:kv-cache
+  concept:landauer-principle: concept:landauer-principle
+  concept:lifecycle-assessment-boundary: concept:lifecycle-assessment-boundary
+  concept:linearizability: concept:linearizability
+  concept:littles-law: concept:littles-law
+  concept:llm-inference-energy-metrics: concept:llm-inference-energy-metrics
+  concept:llm-inference-service-metrics: concept:llm-inference-service-metrics
+  concept:llm-weight-quantization: concept:llm-weight-quantization
+  concept:mathematical-tables: concept:mathematical-tables
+  concept:memory-movement-bottleneck-shift: concept:memory-movement-bottleneck-shift
+  concept:mixed-precision: concept:mixed-precision
+  concept:mutual-exclusion-synchronization: concept:mutual-exclusion-synchronization
+  concept:np-completeness: concept:np-completeness
+  concept:operational-embodied-carbon: concept:operational-embodied-carbon
+  concept:page-00b55ff0: concept:page-00b55ff0
+  concept:page-01f775b8: concept:computability
+  concept:page-092a889f: concept:page-092a889f
+  concept:page-0939ab24: concept:page-0939ab24
+  concept:page-099497b9: concept:page-099497b9
+  concept:page-0b68e8bc: concept:page-0b68e8bc
+  concept:page-0d04f3f7: concept:page-0d04f3f7
+  concept:page-0fdf8f46: concept:page-0fdf8f46
+  concept:page-141883d0: concept:page-141883d0
+  concept:page-145622bc: concept:page-145622bc
+  concept:page-16d053e6: concept:page-16d053e6
+  concept:page-18a0ce43: concept:page-18a0ce43
+  concept:page-1bbfe009: concept:page-1bbfe009
+  concept:page-1c13e721: concept:structured-programming
+  concept:page-2397a193: concept:page-2397a193
+  concept:page-26360c8b: concept:page-26360c8b
+  concept:page-29139463: concept:page-29139463
+  concept:page-2a99ca9c: concept:page-2a99ca9c
+  concept:page-2ff6633d: concept:page-2ff6633d
+  concept:page-30fac639: concept:page-30fac639
+  concept:page-325f29bd: concept:page-325f29bd
+  concept:page-38dd11a2: concept:page-38dd11a2
+  concept:page-3b07c7d6: concept:page-3b07c7d6
+  concept:page-3d371068: concept:page-3d371068
+  concept:page-3e131394: concept:page-3e131394
+  concept:page-432b4756: concept:page-432b4756
+  concept:page-446e9f53: concept:subroutine
+  concept:page-46257ebe: concept:page-46257ebe
+  concept:page-464cd2bb: concept:library
+  concept:page-47ba75de: concept:page-47ba75de
+  concept:page-494620a1: concept:energy-proportional-computing
+  concept:page-496b0829: concept:page-496b0829
+  concept:page-4a63d3df: concept:page-4a63d3df
+  concept:page-4ac13a0d: concept:page-4ac13a0d
+  concept:page-4b367720: concept:page-4b367720
+  concept:page-5063ca2b: concept:page-5063ca2b
+  concept:page-5163a003: concept:page-5163a003
+  concept:page-569257e7: concept:programmability
+  concept:page-59604f53: concept:page-59604f53
+  concept:page-5cd779ce: concept:page-5cd779ce
+  concept:page-60bcdf34: concept:page-60bcdf34
+  concept:page-613958ec: concept:page-613958ec
+  concept:page-65669d1c: concept:software-reuse
+  concept:page-676372e6: concept:page-676372e6
+  concept:page-6a0c16a9: concept:page-6a0c16a9
+  concept:page-6aaebafb: concept:page-6aaebafb
+  concept:page-6c282053: concept:page-6c282053
+  concept:page-723508cf: concept:page-723508cf
+  concept:page-72af5ee2: concept:page-72af5ee2
+  concept:page-7c33e4cb: concept:page-7c33e4cb
+  concept:page-7cc49c18: concept:page-7cc49c18
+  concept:page-7d1c4861: concept:page-7d1c4861
+  concept:page-7fcb10cc: concept:page-7fcb10cc
+  concept:page-830fb720: concept:page-830fb720
+  concept:page-83b76a04: concept:page-83b76a04
+  concept:page-873d18c3: concept:page-873d18c3
+  concept:page-8ae81e59: concept:page-8ae81e59
+  concept:page-8d4656f3: concept:compiler
+  concept:page-8e6aa351: concept:page-8e6aa351
+  concept:page-90428fe8: concept:page-90428fe8
+  concept:page-918ae6f1: concept:page-918ae6f1
+  concept:page-9351a627: concept:page-9351a627
+  concept:page-93fca2ee: concept:page-93fca2ee
+  concept:page-94134317: concept:page-94134317
+  concept:page-9574348a: concept:page-9574348a
+  concept:page-9ecf6d54: concept:page-9ecf6d54
+  concept:page-a1be87c0: concept:page-a1be87c0
+  concept:page-a446fe7e: concept:page-a446fe7e
+  concept:page-b95bdd2d: concept:page-b95bdd2d
+  concept:page-be5e9654: concept:page-be5e9654
+  concept:page-c297dc5b: concept:page-c297dc5b
+  concept:page-c617f209: concept:page-c617f209
+  concept:page-c7e0c2c5: concept:page-c7e0c2c5
+  concept:page-c7fabfe3: concept:symbolic-manipulation
+  concept:page-c854e2f6: concept:page-c854e2f6
+  concept:page-c9c7cad9: concept:page-c9c7cad9
+  concept:page-cb68fc61: concept:page-cb68fc61
+  concept:page-d2f65204: concept:page-d2f65204
+  concept:page-d4ef0406: concept:parallel-scalability
+  concept:page-d4fdbd19: concept:page-d4fdbd19
+  concept:page-d61f7b46: concept:page-d61f7b46
+  concept:page-d679e8f4: concept:page-d679e8f4
+  concept:page-d7da5df4: concept:page-d7da5df4
+  concept:page-d86dcb52: concept:page-d86dcb52
+  concept:page-dc1573dc: concept:page-dc1573dc
+  concept:page-dc2142ec: concept:domain-specific-accelerator
+  concept:page-df7e932b: concept:memory-wall
+  concept:page-e2b63e63: concept:page-e2b63e63
+  concept:page-e589f64b: concept:page-e589f64b
+  concept:page-e83f2a1b: concept:hardware-execution-model
+  concept:page-eb050b34: concept:page-eb050b34
+  concept:page-ef02c2bc: concept:stored-program-computer
+  concept:page-ef0b337a: concept:page-ef0b337a
+  concept:page-efde1ed2: concept:page-efde1ed2
+  concept:page-f019ffbf: concept:page-f019ffbf
+  concept:page-f047e003: concept:page-f047e003
+  concept:page-f438fd41: concept:page-f438fd41
+  concept:page-f4f75731: concept:page-f4f75731
+  concept:page-f57f54a4: concept:tail-latency
+  concept:page-f6e983b1: concept:page-f6e983b1
+  concept:page-fa0c6ecb: concept:page-fa0c6ecb
+  concept:partial-failure: concept:partial-failure
+  concept:performance-portability: concept:performance-portability
+  concept:polynomial-time-reduction: concept:polynomial-time-reduction
+  concept:power-usage-effectiveness: concept:power-usage-effectiveness
+  concept:prefill-decode: concept:prefill-decode
+  concept:prefix-kv-caching: concept:prefix-kv-caching
+  concept:quantity-species-pairs: concept:quantity-species-pairs
+  concept:queueing-load-control: concept:queueing-load-control
+  concept:remote-procedure-call: concept:remote-procedure-call
+  concept:replicated-log-consensus: concept:replicated-log-consensus
+  concept:reproducible-builds: concept:reproducible-builds
+  concept:retries: concept:retries
+  concept:runtime-contract: concept:runtime-contract
+  concept:self-attention: concept:self-attention
+  concept:self-reproducing-automata: concept:self-reproducing-automata
+  concept:sequential-consistency: concept:sequential-consistency
+  concept:serializability: concept:serializability
+  concept:speculative-decoding: concept:speculative-decoding
+  concept:spreadsheet: concept:spreadsheet
+  concept:stablehlo-mlir-abi: concept:stablehlo-mlir-abi
+  concept:substrate-independence-functionalism: concept:substrate-independence-functionalism
+  concept:superscript-exponent: concept:superscript-exponent
+  concept:symbiogenesis: concept:symbiogenesis
+  concept:time-to-quality: concept:time-to-quality
+  concept:transformer: concept:transformer
+  concept:unit-segment-dimension-reduction: concept:unit-segment-dimension-reduction
+  concept:verification-labor: concept:verification-labor
+  Concurrency: concept:concurrency
+  concurrent execution: concept:concurrency
+  concurrent programming: concept:concurrency
+  Confusable: concept:page-cb68fc61
+  constant-field scaling: concept:page-3b07c7d6
+  continuous batching: concept:continuous-batching
+  Control flow: concept:page-830fb720
+  Control structure: concept:page-7cc49c18
+  control transfer: concept:page-830fb720
+  conversion routine: concept:page-1bbfe009
+  Cook 1971: source:ref-066
+  Cook reduction: concept:polynomial-time-reduction
+  Cook's theorem: source:ref-066
+  Cooperating sequential processes: source:ref-092
+  Cooperating Sequential Processes: source:ref-092
+  coordinate geometry: concept:analytic-geometry
+  Copilot 생산성 실험: source:ref-106
+  Copilot usability study: source:ref-105
+  Corbett et al. 2012: source:ref-089
+  Corrado Bohm: person:corrado-bohm
+  Corrado Böhm: person:corrado-bohm
+  Courier RPC: source:ref-140
+  CPU cache: concept:page-6aaebafb
+  Cramming More Components: source:ref-037
+  Cramming More Components onto Integrated Circuits: source:ref-037
+  Criteria for Modularization: source:ref-003
+  CUDA: source:ref-097
+  CUDA programming model: source:ref-097
+  CWE 입력 검증: source:ref-090
+  CWE 정수 오버플로: source:ref-091
+  CWE-190: source:ref-091
+  CWE-190 Integer Overflow or Wraparound: source:ref-091
+  "CWE-190: Integer Overflow or Wraparound": source:ref-091
+  CWE-20: source:ref-090
+  CWE-20 Improper Input Validation: source:ref-090
+  "CWE-20: Improper Input Validation": source:ref-090
+  D. L. Parnas: person:david-parnas
+  D. M. Ritchie: person:dennis-ritchie
+  Dahl Dijkstra Hoare 1972: source:ref-013
+  Dao et al. 2022: source:ref-074
+  Dark silicon: concept:page-7fcb10cc
+  Dark Silicon and the End of Multicore Scaling: source:ref-048
+  DARPA Internet Protocols: source:ref-141
+  Data Representation: concept:page-93fca2ee
+  Data Representation and Encoding: source:src-006
+  David Lorge Parnas: person:david-parnas
+  David Parnas: person:david-parnas
+  David Wheeler: person:david-wheeler
+  De Corpore: source:ref-143
+  de Prony computation factory: source:ref-056
+  Dean and Barroso 2013: source:ref-049
+  Debugging: concept:page-a1be87c0
+  DEC PDP-11: concept:page-18a0ce43
+  DeCandia et al. 2007: source:ref-104
+  decision problem: concept:page-145622bc
+  decode phase: concept:prefill-decode
+  decoding validation authorization boundary: analysis:interpretation-security-boundary
+  Decoupling Algorithms from Schedules for Easy Optimization of Image Processing Pipelines: source:ref-098
+  Dennard 스케일링: concept:page-3b07c7d6
+  Dennard et al. 1974: source:ref-038
+  Dennard scaling: concept:page-3b07c7d6
+  Dennard scaling paper: source:ref-038
+  Dennis M. Ritchie: person:dennis-ritchie
+  Dennis Ritchie: person:dennis-ritchie
+  dependency provenance: concept:dependency-provenance
+  dependency provenance registry analysis: analysis:dependency-provenance-registry
+  dependency provenance와 registry identity: concept:dependency-provenance
+  Design and Implementation of RISC I: source:ref-044
+  Design and Implementation of the Sun Network Filesystem: source:ref-139
+  Design of Ion-Implanted MOSFET's with Very Small Physical Dimensions: source:ref-038
+  deterministic build: concept:reproducible-builds
+  developer productivity: concept:developer-productivity
+  Development of C: source:ref-019
+  DFS: concept:distributed-file-system
+  Difference Engine: concept:page-83b76a04
+  Dijkstra: person:edsger-dijkstra
+  Dijkstra 1968: source:ref-092
+  dimension reduction in geometry: concept:unit-segment-dimension-reduction
+  distributed consistency and latency: analysis:distributed-consistency-latency
+  Distributed File System: concept:distributed-file-system
+  DistServe: source:ref-077
+  DistServe - Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving: source:ref-077
+  DistServe paper: source:ref-077
+  "DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving": source:ref-077
+  DLMF 표준 참조표: source:ref-060
+  DLMF on-demand tables: source:ref-060
+  DLMF Standard Reference Tables on Demand: source:ref-060
+  DLMF Tables: source:ref-060
+  document:computation-reading-guide: document:computation-reading-guide
+  document:gaps: document:gaps
+  document:index: document:index
+  document:knowledge-graph-schema: document:knowledge-graph-schema
+  document:log: document:log
+  document:overview: document:overview
+  document:page-9bc0d3d6: document:page-9bc0d3d6
+  document:quote-locator-audit: document:quote-locator-audit
+  Domain-specific accelerator: concept:domain-specific-accelerator
+  Domain-Specific Architectures: source:ref-138
+  Donald E. Knuth: person:donald-knuth
+  Donald Knuth: person:donald-knuth
+  Doug McIlroy: person:douglas-mcilroy
+  Douglas McIlroy: person:douglas-mcilroy
+  DSA: concept:domain-specific-accelerator
+  Dynamo - Amazon's Highly Available Key-value Store: source:ref-104
+  Dynamo 논문: source:ref-104
+  "Dynamo: Amazon's Highly Available Key-value Store": source:ref-104
+  E2E 원칙: concept:end-to-end-principle
+  EDSAC: concept:page-00b55ff0
+  EDSAC 최초성: analysis:page-35a2e99b
+  EDSAC API: analysis:page-4095b0c8
+  EDSAC first: analysis:page-35a2e99b
+  EDSAC Initial Orders: concept:page-ef0b337a
+  EDSAC Initial Orders source: source:src-003
+  EDSAC programming textbook: source:ref-001
+  EDSAC과 Initial Orders: source:src-003
+  EDSAC에서 프로그래밍 언어까지: source:src-002
+  EDSAC은 무엇의 최초인가: analysis:page-35a2e99b
+  Edsger Dijkstra: person:edsger-dijkstra
+  Edsger W. Dijkstra: person:edsger-dijkstra
+  EDVAC: concept:page-4ac13a0d
+  EDVAC 보고서: source:ref-006
+  effective calculability: concept:computability
+  Efficient Memory Management for Large Language Model Serving with PagedAttention: source:ref-076
+  electric adder to the base two: concept:page-59604f53
+  Electronic Delay Storage Automatic Calculator: concept:page-00b55ff0
+  Electronic Discrete Variable Automatic Computer: concept:page-4ac13a0d
+  Elementorum Philosophiae Sectio Prima De Corpore: source:ref-143
+  Encoding: concept:page-a446fe7e
+  Encoding Error: concept:page-6c282053
+  End-to-End Argument: concept:end-to-end-principle
+  End-to-End Arguments in System Design: source:ref-101
+  End-to-End Principle: concept:end-to-end-principle
+  Energy-proportional computing: concept:energy-proportional-computing
+  Energy-proportional computing paper: source:ref-046
+  entity-07a5de25c325b6f0: person:alan-turing
+  entity-11912d3c997bcb12: person:douglas-mcilroy
+  entity-1a2d36f59369083d: person:charles-w-krueger
+  entity-1cd37570ca9acab2: person:claude-shannon
+  entity-2f17a71c2815f89f: person:stephen-c-johnson
+  entity-3765181834c9ce12: person:giuseppe-jacopini
+  entity-3e83a021b00264fc: person:dennis-ritchie
+  entity-4e28b2707c1117c0: person:john-backus
+  entity-6c7519108429a099: person:corrado-bohm
+  entity-73f5398f704a53a7: person:george-boole
+  entity-7de052ed12219bf9: person:david-parnas
+  entity-7e280fd99a7b35d0: person:maurice-wilkes
+  entity-899388142c701ab0: person:stanley-gill
+  entity-9452931b4cae505b: person:donald-knuth
+  entity-970046b84bf0f7e1: person:ada-lovelace
+  entity-aguera-y-arcas: person:aguera-y-arcas
+  entity-b215332ddbebab35: person:edsger-dijkstra
+  entity-b47da9a0362c46e5: person:charles-babbage
+  entity-b7b72330d3a62500: person:alonzo-church
+  entity-c645c95848b4d51e: person:tony-hoare
+  entity-d28fe0553930f907: person:grace-hopper
+  entity-e23557a759d62f70: person:ole-johan-dahl
+  entity-e8a9bb25328ec94e: person:david-wheeler
+  entity-ef144988cc7f1512: person:john-von-neumann
+  entity-ef60b71b4f5fba86: person:ken-thompson
+  entity-gottfried-wilhelm-leibniz: person:gottfried-wilhelm-leibniz
+  entity-john-searle: person:john-searle
+  entity-lynn-margulis: person:lynn-margulis
+  entity-thomas-hobbes: person:thomas-hobbes
+  entity:aguera-y-arcas: person:aguera-y-arcas
+  entity:gottfried-wilhelm-leibniz: person:gottfried-wilhelm-leibniz
+  entity:john-searle: person:john-searle
+  entity:lynn-margulis: person:lynn-margulis
+  entity:page-07a5de25: person:alan-turing
+  entity:page-11912d3c: person:douglas-mcilroy
+  entity:page-1a2d36f5: person:charles-w-krueger
+  entity:page-1cd37570: person:claude-shannon
+  entity:page-2f17a71c: person:stephen-c-johnson
+  entity:page-37651818: person:giuseppe-jacopini
+  entity:page-3e83a021: person:dennis-ritchie
+  entity:page-4e28b270: person:john-backus
+  entity:page-6c751910: person:corrado-bohm
+  entity:page-73f5398f: person:george-boole
+  entity:page-7de052ed: person:david-parnas
+  entity:page-7e280fd9: person:maurice-wilkes
+  entity:page-89938814: person:stanley-gill
+  entity:page-9452931b: person:donald-knuth
+  entity:page-970046b8: person:ada-lovelace
+  entity:page-b215332d: person:edsger-dijkstra
+  entity:page-b47da9a0: person:charles-babbage
+  entity:page-b7b72330: person:alonzo-church
+  entity:page-c645c958: person:tony-hoare
+  entity:page-d28fe055: person:grace-hopper
+  entity:page-e23557a7: person:ole-johan-dahl
+  entity:page-e8a9bb25: person:david-wheeler
+  entity:page-ef144988: person:john-von-neumann
+  entity:page-ef60b71b: person:ken-thompson
+  entity:thomas-hobbes: person:thomas-hobbes
+  Entscheidungsproblem: concept:page-145622bc
+  error budget: source:ref-118
+  Esmaeilzadeh et al. 2011: source:ref-048
+  essential and accidental complexity: concept:essential-accidental-complexity
+  essential complexity: concept:essential-accidental-complexity
+  eval은 왜 프로그램과 데이터의 경계를 지우는가: analysis:mccarthy-eval-symbolic-computation
+  Evolution of Unix: source:ref-020
+  EWD 123: source:ref-092
+  EWD215: source:ref-011
+  exactly-once boundary: analysis:exactly-once-boundary
+  Excel 수식 재계산과 의존 관계: source:ref-062
+  Excel formula dependencies: source:ref-062
+  Excel formula recalculation and dependencies: source:ref-062
+  Excel recalculation: source:ref-062
+  execution provider contract: source:ref-135
+  Expectation vs. Experience — Evaluating the Usability of Code Generation Tools Powered by Large Language Models: source:ref-105
+  "Expectation vs. Experience: Evaluating the Usability of Code Generation Tools Powered by Large Language Models": source:ref-105
+  experienced OSS developers and AI: source:ref-107
+  Explication de l'Arithmétique Binaire: source:ref-145
+  exponent notation: concept:superscript-exponent
+  Extended Grapheme Cluster: concept:page-29139463
+  external consistency and time uncertainty: concept:external-consistency-time-uncertainty
+  Failure detection: concept:failure-detection
+  failure detector: concept:failure-detection
+  Failure detector, gray failure, metastable failure: analysis:failure-detection-gray-metastable
+  failure suspicion: concept:failure-detection
+  failure suspicion and semantic failure: analysis:failure-detection-gray-metastable
+  Fast Inference from Transformers via Speculative Decoding: source:ref-079
+  fault tolerance: concept:fault-tolerance
+  File system: concept:page-7c33e4cb
+  filesystem: concept:page-7c33e4cb
+  finite differences: concept:page-5cd779ce
+  First Draft: source:ref-006
+  First Draft of a Report on the EDVAC: source:ref-006
+  first practical stored-program computer: analysis:page-35a2e99b
+  Fixed-size versus scaled-size speedup: analysis:page-3d25f482
+  FlashAttention: source:ref-074
+  FlashAttention - Fast and Memory-Efficient Exact Attention with IO-Awareness: source:ref-074
+  "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness": source:ref-074
+  floating-point accuracy: concept:page-d4fdbd19
+  floating-point correctness: concept:page-d4fdbd19
+  Flow Diagrams, Turing Machines and Languages with Only Two Formation Rules: source:ref-012
+  Formula Translation: concept:page-72af5ee2
+  Forsgren et al. 2021: source:ref-072
+  Fortran: concept:page-72af5ee2
+  FORTRAN: concept:page-72af5ee2
+  FORTRAN 704 Reference Manual: source:ref-015
+  Fortran and compiler: analysis:page-866096c7
+  FORTRAN automatic coding paper: source:ref-016
+  FORTRAN Automatic Coding System for the IBM 704 EDPM: source:ref-015
+  Fortran compiler: analysis:page-866096c7
+  FORTRAN Programmer's Reference Manual: source:ref-015
+  Fortran과 컴파일러: analysis:page-866096c7
+  FORTRAN과 컴파일러: analysis:page-866096c7
+  FoundationDB 미확정 커밋: source:ref-116
+  FoundationDB automatic idempotency: source:ref-116
+  FoundationDB Transactions with Unknown Results: source:ref-116
+  FoundationDB unknown commit result: source:ref-116
+  Frakes Fox software reuse: source:ref-005
+  Framebuffer Memory Mapping: concept:framebuffer-memory-mapping
+  Frantar et al. 2023: source:ref-081
+  From mathematical tables to spreadsheets: analysis:from-mathematical-tables-to-spreadsheets
+  From stored results to executable procedures: analysis:stored-results-to-executable-procedures
+  From table checking to numerical result contracts: analysis:from-table-checking-to-numerical-result-contracts
+  from-mathematical-tables-to-spreadsheets: analysis:from-mathematical-tables-to-spreadsheets
+  from-table-checking-to-numerical-result-contracts: analysis:from-table-checking-to-numerical-result-contracts
+  Functionalism: concept:substrate-independence-functionalism
+  functionalism vs Chinese room: analysis:functionalism-vs-chinese-room
+  G. Jacopini: person:giuseppe-jacopini
+  gaps: document:gaps
+  gate: concept:page-f019ffbf
+  Generality as computing capability: analysis:page-63baea1f
+  geometry to computation: analysis:geometry-to-computation-descartes-vs-fermat
+  George Boole: person:george-boole
+  GFS 논문: source:ref-103
+  Ghemawat Gobioff Leung 2003: source:ref-103
+  GHG Protocol Product Life Cycle Accounting and Reporting Standard: source:ref-108
+  GHG Protocol Product Standard: source:ref-108
+  Gilbert Lynch 2002: source:ref-087
+  GitHub 아티팩트 증명: source:ref-128
+  GitHub artifact attestation: source:ref-128
+  GitHub Artifact Attestations: source:ref-128
+  GitHub Copilot productivity experiment: source:ref-106
+  Giuseppe Jacopini: person:giuseppe-jacopini
+  go to statement: concept:page-60bcdf34
+  Go To Statement Considered Harmful: source:ref-011
+  Goldberg 1991: source:ref-050
+  Google File System: source:ref-103
+  Google SRE 연쇄 장애: source:ref-117
+  Google SRE Addressing Cascading Failures: source:ref-117
+  Google SRE Error Budget Policy: source:ref-118
+  Google SRE retry budget: source:ref-117
+  goto: concept:page-60bcdf34
+  GOTO 문: concept:page-60bcdf34
+  GOTO Considered Harmful: source:ref-011
+  goto/점프에서 구조적 프로그래밍으로: analysis:page-fc1fa74e
+  goto에서 구조적 프로그래밍으로: analysis:page-fc1fa74e
+  goto와 점프에서 구조적 프로그래밍으로: analysis:page-fc1fa74e
+  Gottfried Wilhelm Leibniz: person:gottfried-wilhelm-leibniz
+  GPTQ: source:ref-081
+  GPTQ - Accurate Post-Training Quantization for Generative Pre-trained Transformers: source:ref-081
+  GPTQ paper: source:ref-081
+  "GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers": source:ref-081
+  Grace Hopper: person:grace-hopper
+  Grapheme Cluster: concept:page-29139463
+  gray failure: source:ref-120
+  Gray Failure: source:ref-120
+  Gray Failure The Achilles Heel of Cloud-Scale Systems: source:ref-120
+  "Gray Failure: The Achilles' Heel of Cloud-Scale Systems": source:ref-120
+  Green500 power tutorial 2007: source:ref-036
+  Gujarati et al. 2020: source:ref-086
+  Gupta et al. 2021: source:ref-109
+  Gustafson 1988: source:ref-045
+  Gustafson-Barsis law: source:ref-045
+  Gustafson's law paper: source:ref-045
+  Halide: source:ref-098
+  Halide schedule paper: source:ref-098
+  halting: concept:page-dc1573dc
+  Halting Problem: concept:page-dc1573dc
+  Handbook of Mathematical Functions: source:ref-054
+  Handbook of Mathematical Functions with Formulas, Graphs, and Mathematical Tables: source:ref-054
+  hardware execution architecture: concept:hardware-execution-model
+  Hardware execution model: concept:hardware-execution-model
+  hardware execution model analysis: analysis:page-7a3b4c5d
+  Hartmanis-Stearns 1965: source:ref-031
+  Hennessy-Patterson 2019: source:ref-138
+  Herlihy Wing 1990: source:ref-095
+  heterogeneous compilation analysis: analysis:source-semantics-accelerator-performance
+  Heterogeneous execution model: concept:heterogeneous-execution-model
+  heterogeneous runtime model: concept:heterogeneous-execution-model
+  Hilbert's Entscheidungsproblem: concept:page-145622bc
+  History of computing capability: analysis:page-f8223547
+  History of Fortran I II III: source:ref-017
+  Hitting the Memory Wall: source:ref-039
+  Hoare 1974: source:ref-093
+  Hoare monitors: source:ref-093
+  Hobbes: person:thomas-hobbes
+  Hobbes 1655: source:ref-143
+  "Hobbes and Leibniz: Functions of Signs": source:ref-142
+  homoglyph: concept:page-cb68fc61
+  How to Make a Multiprocessor Computer That Correctly Executes Multiprocess Programs: source:ref-094
+  HTTP 멱등 메서드: source:ref-114
+  HTTP Semantics: source:ref-114
+  human calculator: concept:human-computers
+  Human computer: concept:human-computers
+  Human Computer Project: source:ref-058
+  Human computers and computation factories: analysis:human-computers-and-computation-factories
+  human-computers: concept:human-computers
+  human-computers-and-computation-factories: analysis:human-computers-and-computation-factories
+  Hutton and Gregory Mathematical Tables: source:ref-055
+  Hutton's Mathematical Tables: source:ref-055
+  I/O-aware attention: concept:io-aware-attention
+  IBM 704: concept:page-2a99ca9c
+  IBM 704 EDPM: concept:page-2a99ca9c
+  IBM 704 FORTRAN Manual: source:ref-015
+  Idempotency: concept:idempotency
+  idempotency key: concept:idempotency
+  idempotent operation: concept:idempotency
+  IEEE 754-2019: source:ref-051
+  IEEE 754-2019 Standard for Floating-Point Arithmetic: source:ref-051
+  IEEE 부동소수점 표준: source:ref-051
+  IEEE Standard for Floating-Point Arithmetic: source:ref-051
+  Implementing Remote Procedure Calls: source:ref-102
+  Implementing Remote Procedure Calls - Experience Notes: source:ref-140
+  Implications of Historical Trends in the Electrical Efficiency of Computing: source:ref-047
+  In Search of an Understandable Consensus Algorithm: source:ref-088
+  In-Datacenter Performance Analysis of a Tensor Processing Unit: source:ref-042
+  independent recalculation: concept:calculation-checking
+  index: document:index
+  Information Hiding: concept:page-099497b9
+  Initial Orders: concept:page-ef0b337a
+  input validation: concept:input-validation
+  Integer Overflow: concept:page-9ecf6d54
+  intermediate code: concept:intermediate-representation
+  Intermediate representation: concept:intermediate-representation
+  Internet design philosophy: source:ref-141
+  interpretation security boundary: analysis:interpretation-security-boundary
+  intra-attention: concept:self-attention
+  IO 인지 어텐션: concept:io-aware-attention
+  IO-aware attention: concept:io-aware-attention
+  IO-aware exact attention: source:ref-074
+  IR: concept:intermediate-representation
+  Irreversibility and Heat Generation in the Computing Process: source:ref-150
+  ISCA dark silicon paper: source:ref-048
+  iteration-level batching: concept:continuous-batching
+  iteration-level scheduling: concept:continuous-batching
+  J. W. Backus: person:john-backus
+  John Backus: person:john-backus
+  John D. C. Little 1961: source:ref-085
+  John R. Searle: person:john-searle
+  John Searle: person:john-searle
+  John von Neumann: person:john-von-neumann
+  John W. Backus: person:john-backus
+  Johnson Ritchie portability paper: source:ref-021
+  Jouppi et al. 2017: source:ref-042
+  jump to structured programming: analysis:page-fc1fa74e
+  K. Thompson: person:ken-thompson
+  Karp 1972: source:ref-067
+  Karp reduction: concept:polynomial-time-reduction
+  Karp's 21 problems: source:ref-067
+  Ken Thompson: person:ken-thompson
+  Kenneth Thompson: person:ken-thompson
+  key-value cache: concept:kv-cache
+  Knowledge graph relation schema: document:knowledge-graph-schema
+  Knuth: person:donald-knuth
+  Knuth 1974: source:ref-014
+  Koomey et al. 2011: source:ref-047
+  Koomey's law: concept:page-0fdf8f46
+  Koomey의 법칙: concept:page-0fdf8f46
+  Koomey의 법칙 원전: source:ref-047
+  Krueger Software Reuse: source:ref-004
+  KV 캐시: concept:kv-cache
+  KV 캐시 병목: analysis:kv-cache-throughput
+  KV 캐시는 왜 LLM 추론 처리량을 제한하는가: analysis:kv-cache-throughput
+  KV cache: concept:kv-cache
+  KV cache throughput bottleneck: analysis:kv-cache-throughput
+  Kwon et al. 2023: source:ref-076
+  L = λW: concept:littles-law
+  Lamport 1978: source:ref-100
+  Lamport 1979: source:ref-094
+  Lamport 논리 시계 원 논문: source:ref-100
+  Lamport sequential consistency paper: source:ref-094
+  Lamport Shostak Pease 1982: source:ref-063
+  Landauer 1961: source:ref-150
+  Landauer limit: concept:landauer-principle
+  Landauer's principle: concept:landauer-principle
+  latency tail: concept:tail-latency
+  Lattner and Adve 2004: source:ref-096
+  Law of Homogeneity: concept:unit-segment-dimension-reduction
+  Laws of Thought: source:ref-030
+  LCA boundary: concept:lifecycle-assessment-boundary
+  Leibniz: person:gottfried-wilhelm-leibniz
+  Leibniz 1684: source:ref-144
+  Leibniz 1703: source:ref-145
+  Leiserson et al. 2020: source:ref-068
+  Leviathan et al. 2023: source:ref-079
+  Library: concept:library
+  Library Catalog: concept:page-16d053e6
+  library catalogue: concept:page-16d053e6
+  life computation symbiogenesis agi: source:src-008
+  life-cycle assessment boundary: concept:lifecycle-assessment-boundary
+  Lin et al. 2024: source:ref-082
+  Linearizability: concept:linearizability
+  Linearizability A Correctness Condition for Concurrent Objects: source:ref-095
+  linearizability paper: source:ref-095
+  "Linearizability: A Correctness Condition for Concurrent Objects": source:ref-095
+  linearizable object: concept:linearizability
+  Linker: concept:page-46257ebe
+  linking: concept:page-46257ebe
+  LINPACK benchmark overview: source:ref-033
+  LISP 1960 paper: source:ref-155
+  Lisp eval analysis: analysis:mccarthy-eval-symbolic-computation
+  Little 1961 queueing proof: source:ref-085
+  Little 법칙: concept:littles-law
+  Little's Law: concept:littles-law
+  Little의 법칙 원 논문: source:ref-085
+  LLM 가중치 양자화: concept:llm-weight-quantization
+  LLM 대기열과 SLO: analysis:llm-throughput-latency-queueing
+  LLM 서비스 성능 지표: concept:llm-inference-service-metrics
+  LLM 서빙 부하 제어 분석: analysis:llm-throughput-latency-queueing
+  LLM 서빙에서 처리량과 지연은 왜 함께 움직이는가: analysis:llm-throughput-latency-queueing
+  LLM 양자화 성능 조건: analysis:low-bit-llm-inference
+  LLM 요청당 에너지: concept:llm-inference-energy-metrics
+  LLM 유효 요청당 비용: analysis:llm-slo-resource-cost
+  LLM 작업량 재사용: analysis:llm-reuse-speculation-work
+  LLM 추론 서비스 지표: concept:llm-inference-service-metrics
+  LLM 추론 에너지 지표: concept:llm-inference-energy-metrics
+  LLM 추론 자원 회계: analysis:llm-slo-resource-cost
+  LLM 추론 전력 지표: concept:llm-inference-energy-metrics
+  LLM 캐시와 배치 처리량: analysis:kv-cache-throughput
+  LLM 토큰 처리량의 한계: analysis:token-rate-service-capability
+  LLM energy per token: concept:llm-inference-energy-metrics
+  LLM goodput: concept:llm-inference-service-metrics
+  LLM inference energy metrics: concept:llm-inference-energy-metrics
+  LLM inference power benchmark: source:ref-083
+  LLM inference service metrics: concept:llm-inference-service-metrics
+  LLM PTQ: concept:llm-weight-quantization
+  LLM reuse and speculation analysis: analysis:llm-reuse-speculation-work
+  LLM serving metrics: concept:llm-inference-service-metrics
+  LLM SLO resource cost analysis: analysis:llm-slo-resource-cost
+  LLM throughput latency queueing analysis: analysis:llm-throughput-latency-queueing
+  LLM weight quantization: concept:llm-weight-quantization
+  LLVM: source:ref-096
+  LLVM - A Compilation Framework for Lifelong Program Analysis and Transformation: source:ref-096
+  LLVM IR: source:ref-096
+  LLVM IR ABI reference: source:ref-133
+  LLVM LangRef: source:ref-133
+  LLVM Language Reference: source:ref-133
+  "LLVM: A Compilation Framework for Lifelong Program Analysis & Transformation": source:ref-096
+  Loader: concept:page-94134317
+  LOC와 개발자 생산성: analysis:code-volume-developer-productivity
+  local interface remote state: analysis:local-interface-remote-state
+  log: document:log
+  logic circuits and binary representation: analysis:page-0c7e244e
+  Logic Gate: concept:page-f019ffbf
+  logical once physical many: analysis:exactly-once-boundary
+  low precision AI capability: analysis:low-precision-ai-result-contract
+  low-bit LLM inference analysis: analysis:low-bit-llm-inference
+  Lynn Margulis: person:lynn-margulis
+  Lynn Sagan: person:lynn-margulis
+  M. D. McIlroy: person:douglas-mcilroy
+  Manchester Baby: concept:page-30fac639
+  Manchester Baby source: source:ref-007
+  Margulis 1967: source:ref-149
+  Mass Produced Software Components: source:ref-002
+  Mass-Produced Software Components: source:ref-002
+  Mathematical tables: concept:mathematical-tables
+  Mathematical Tables - Containing the Common, Hyperbolic, and Logistic Logarithms: source:ref-055
+  Mathematical Tables Project: source:ref-057
+  "Mathematical Tables: Containing the Common, Hyperbolic, and Logistic Logarithms": source:ref-055
+  mathematical-tables: concept:mathematical-tables
+  Mattson et al. 2020: source:ref-070
+  Maurice Wilkes: person:maurice-wilkes
+  Maynard Smith and Szathmáry 1995: source:ref-153
+  McCarthy 1960: source:ref-155
+  McCarthy eval: analysis:mccarthy-eval-symbolic-computation
+  McIlroy software components: source:ref-002
+  meaning of machine computation: analysis:page-f5a31368
+  measurement contract: concept:benchmark-contract
+  Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity: source:ref-107
+  Meditationes: source:ref-144
+  Meditationes de Cognitione, Veritate et Ideis: source:ref-144
+  memory movement: concept:memory-movement-bottleneck-shift
+  memory safety: concept:page-0939ab24
+  Memory Safety: concept:page-0939ab24
+  Memory wall: concept:memory-wall
+  Memory wall paper: source:ref-039
+  meta-9bc0d3d686763690: document:page-9bc0d3d6
+  meta-computation-reading-guide: document:computation-reading-guide
+  meta-gaps: document:gaps
+  meta-index: document:index
+  meta-knowledge-graph-schema: document:knowledge-graph-schema
+  meta-log: document:log
+  meta-overview: document:overview
+  meta-quote-locator-audit: document:quote-locator-audit
+  metastable failure: source:ref-121
+  Metastable Failures: source:ref-121
+  metastable failures in distributed systems: source:ref-121
+  Method of Finite Differences: concept:page-5cd779ce
+  METR 2025 AI 생산성 연구: source:ref-107
+  METR developer productivity RCT: source:ref-107
+  Micikevicius et al. 2018: source:ref-069
+  microcode: concept:page-c9c7cad9
+  Microprogramming: concept:page-c9c7cad9
+  Minds, Brains, and Programs: source:ref-146
+  MITRE CWE-190: source:ref-091
+  MITRE CWE-20: source:ref-090
+  mixed precision: concept:mixed-precision
+  Mixed Precision Training: source:ref-069
+  mixed-precision deep learning: source:ref-069
+  mixed-precision training: concept:mixed-precision
+  ML training carbon emissions: source:ref-110
+  MLIR 언어 참조: source:ref-132
+  MLIR LangRef: source:ref-132
+  MLIR Language Reference: source:ref-132
+  MLPerf 추론 벤치마크: source:ref-078
+  MLPerf 추론 전력 측정: source:ref-084
+  MLPerf 학습 벤치마크: source:ref-070
+  MLPerf Inference: source:ref-078
+  MLPerf Inference Benchmark: source:ref-078
+  MLPerf Inference Power: source:ref-084
+  MLPerf Inference Power Measurement: source:ref-084
+  MLPerf Inference rules: source:ref-078
+  MLPerf power methodology: source:ref-084
+  MLPerf Training: source:ref-070
+  MLPerf Training Benchmark: source:ref-070
+  Modular Programming: concept:page-f047e003
+  Modularization: concept:page-f047e003
+  mojibake: concept:page-6c282053
+  Monitors An Operating System Structuring Concept: source:ref-093
+  "Monitors: An Operating System Structuring Concept": source:ref-093
+  Moore 1965: source:ref-037
+  Moore's law: concept:page-0b68e8bc
+  MTTR: concept:availability-recovery
+  mutual exclusion and synchronization: concept:mutual-exclusion-synchronization
+  NBS Math Tables Project: source:ref-057
+  NBS SEAC: source:ref-059
+  Nelson RPC: source:ref-140
+  Network File System: source:ref-139
+  NFC: concept:page-9351a627
+  NFD: concept:page-9351a627
+  NFKC: concept:page-9351a627
+  NFKD: concept:page-9351a627
+  NFS: source:ref-139
+  Nickolls et al. 2008: source:ref-097
+  No Silver Bullet: source:ref-071
+  No Silver Bullet—Essence and Accidents of Software Engineering: source:ref-071
+  Notes on Structured Programming: source:ref-013
+  NP 완전성: concept:np-completeness
+  NP complete: concept:np-completeness
+  NP-완전: concept:np-completeness
+  NP-complete: concept:np-completeness
+  npm 패키지 provenance: source:ref-127
+  npm Package Provenance Statements: source:ref-127
+  npm provenance: source:ref-127
+  Null terminator: concept:page-3d371068
+  numerical correctness and performance: analysis:page-8f48231d
+  O.-J. Dahl: person:ole-johan-dahl
+  object code: concept:page-d2f65204
+  Object program: concept:page-d2f65204
+  OCI 런타임 명세: source:ref-136
+  OCI 배포 명세: source:ref-129
+  OCI Distribution Spec: source:ref-129
+  OCI Distribution Specification: source:ref-129
+  OCI registry distribution: source:ref-129
+  OCI runtime contract: source:ref-136
+  OCI Runtime Specification: source:ref-136
+  OCI runtime-spec: source:ref-136
+  Ole-Johan Dahl: person:ole-johan-dahl
+  On Computable Numbers: source:ref-009
+  On Computable Numbers with an Application to the Entscheidungsproblem: source:ref-009
+  On the Computational Complexity of Algorithms: source:ref-031
+  On the Criteria To Be Used in Decomposing Systems into Modules: source:ref-003
+  On the Origin of Mitosing Cells: source:ref-149
+  Ongaro Ousterhout 2014: source:ref-088
+  ONNX 실행 제공자: source:ref-135
+  ONNX Runtime EP: source:ref-135
+  ONNX Runtime Execution Providers: source:ref-135
+  OpenTelemetry 관측성: source:ref-122
+  OpenTelemetry Trace API: source:ref-122
+  OpenTelemetry tracing specification: source:ref-122
+  Operating system: concept:page-c7e0c2c5
+  operational and embodied carbon: concept:operational-embodied-carbon
+  operational energy sustainable computing: analysis:operational-energy-sustainable-computing
+  Oppenheimer Ganapathi Patterson 2003: source:ref-064
+  optimizing compiler: concept:page-eb050b34
+  Orca: source:ref-075
+  ORCA: source:ref-075
+  Orca - A Distributed Serving System for Transformer-Based Generative Models: source:ref-075
+  Orca serving system: source:ref-075
+  "Orca: A Distributed Serving System for Transformer-Based Generative Models": source:ref-075
+  OS: concept:page-c7e0c2c5
+  OTel Trace API: source:ref-122
+  Overflow: concept:page-9ecf6d54
+  overview: document:overview
+  package provenance: concept:dependency-provenance
+  PagedAttention: source:ref-076
+  PagedAttention paper: source:ref-076
+  Parallel scalability: concept:parallel-scalability
+  Parnas modularization paper: source:ref-003
+  Partial failure: concept:partial-failure
+  partial failures: concept:partial-failure
+  Patterson et al. 2021: source:ref-110
+  PDP-11: concept:page-18a0ce43
+  PDP-11/40: concept:page-18a0ce43
+  PDP-11/45: concept:page-18a0ce43
+  Peak versus realized performance: analysis:page-2b56fedc
+  Peng et al. 2023: source:ref-106
+  Performance portability: concept:performance-portability
+  phi 장애 감지기: source:ref-119
+  phi accrual failure detector: source:ref-119
+  pipe: concept:page-d86dcb52
+  pipeline: concept:page-d86dcb52
+  polynomial-time reduction: concept:polynomial-time-reduction
+  Portability: concept:page-5063ca2b
+  Portability of C Programs and the UNIX System: source:ref-021
+  portable performance: concept:performance-portability
+  post-mortem debugging: concept:page-325f29bd
+  Post-mortem Routine: concept:page-325f29bd
+  PostgreSQL 17 Transaction Isolation: source:ref-113
+  PostgreSQL 격리 수준: source:ref-113
+  PostgreSQL Serializable Snapshot Isolation: source:ref-113
+  PostgreSQL transaction isolation documentation: source:ref-113
+  Power Measurement Tutorial for the Green500 List: source:ref-036
+  power usage effectiveness: concept:power-usage-effectiveness
+  Power wall and computing capability: analysis:power-wall-performance
+  prefill and decode: concept:prefill-decode
+  prefill phase: concept:prefill-decode
+  prefix caching: concept:prefix-kv-caching
+  prefix KV caching: concept:prefix-kv-caching
+  Prehistory - The Math Tables Project: source:ref-057
+  "Prehistory: The Math Tables Project": source:ref-057
+  Preparation of Programs: source:ref-001
+  Princeton architecture: concept:page-7d1c4861
+  processor-memory performance gap: concept:memory-wall
+  Product Life Cycle Standard: source:ref-108
+  Programmability: concept:programmability
+  Programming Language: concept:page-26360c8b
+  prompt KV cache reuse: concept:prefix-kv-caching
+  PUE: concept:power-usage-effectiveness
+  quantity-species pairs: concept:quantity-species-pairs
+  queueing and load control: concept:queueing-load-control
+  RadixAttention: concept:prefix-kv-caching
+  RadixAttention paper: source:ref-080
+  Raft: source:ref-088
+  Raft 논문: source:ref-088
+  Raft 합의: concept:replicated-log-consensus
+  Raft consensus paper: source:ref-088
+  Ragan-Kelley et al. 2012: source:ref-098
+  Recovery-Oriented Computing (ROC): source:ref-065
+  "Recovery-Oriented Computing: Motivation, Definition, Techniques, and Case Studies": source:ref-065
+  Recursive Functions of Symbolic Expressions: source:ref-155
+  Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I: source:ref-155
+  Reddi et al. 2020: source:ref-078
+  Reduced instruction set computer: concept:page-613958ec
+  Reducibility Among Combinatorial Problems: source:ref-067
+  Reevaluating Amdahl's Law: source:ref-045
+  ref-001: source:ref-001
+  ref-002: source:ref-002
+  ref-003: source:ref-003
+  ref-004: source:ref-004
+  ref-005: source:ref-005
+  ref-006: source:ref-006
+  ref-007: source:ref-007
+  ref-008: source:ref-008
+  ref-009: source:ref-009
+  ref-010: source:ref-010
+  ref-011: source:ref-011
+  ref-012: source:ref-012
+  ref-013: source:ref-013
+  ref-014: source:ref-014
+  ref-015: source:ref-015
+  ref-016: source:ref-016
+  ref-017: source:ref-017
+  ref-018: source:ref-018
+  ref-019: source:ref-019
+  ref-020: source:ref-020
+  ref-021: source:ref-021
+  ref-022: source:ref-022
+  ref-023: source:ref-023
+  ref-024: source:ref-024
+  ref-025: source:ref-025
+  ref-026: source:ref-026
+  ref-027: source:ref-027
+  ref-028: source:ref-028
+  ref-029: source:ref-029
+  ref-030: source:ref-030
+  ref-031: source:ref-031
+  ref-032: source:ref-032
+  ref-033: source:ref-033
+  ref-034: source:ref-034
+  ref-035: source:ref-035
+  ref-036: source:ref-036
+  ref-037: source:ref-037
+  ref-038: source:ref-038
+  ref-039: source:ref-039
+  ref-040: source:ref-040
+  ref-041: source:ref-041
+  ref-042: source:ref-042
+  ref-043: source:ref-043
+  ref-044: source:ref-044
+  ref-045: source:ref-045
+  ref-046: source:ref-046
+  ref-047: source:ref-047
+  ref-048: source:ref-048
+  ref-049: source:ref-049
+  ref-050: source:ref-050
+  ref-051: source:ref-051
+  ref-052: source:ref-052
+  ref-053: source:ref-053
+  ref-054: source:ref-054
+  ref-055: source:ref-055
+  ref-056: source:ref-056
+  ref-057: source:ref-057
+  ref-058: source:ref-058
+  ref-059: source:ref-059
+  ref-060: source:ref-060
+  ref-061: source:ref-061
+  ref-062: source:ref-062
+  ref-063: source:ref-063
+  ref-064: source:ref-064
+  ref-065: source:ref-065
+  ref-066: source:ref-066
+  ref-067: source:ref-067
+  ref-068: source:ref-068
+  ref-069: source:ref-069
+  ref-070: source:ref-070
+  ref-071: source:ref-071
+  ref-072: source:ref-072
+  ref-073: source:ref-073
+  ref-074: source:ref-074
+  ref-075: source:ref-075
+  ref-076: source:ref-076
+  ref-077: source:ref-077
+  ref-078: source:ref-078
+  ref-079: source:ref-079
+  ref-080: source:ref-080
+  ref-081: source:ref-081
+  ref-082: source:ref-082
+  ref-083: source:ref-083
+  ref-084: source:ref-084
+  ref-085: source:ref-085
+  ref-086: source:ref-086
+  ref-087: source:ref-087
+  ref-088: source:ref-088
+  ref-089: source:ref-089
+  ref-090: source:ref-090
+  ref-091: source:ref-091
+  ref-092: source:ref-092
+  ref-093: source:ref-093
+  ref-094: source:ref-094
+  ref-095: source:ref-095
+  ref-096: source:ref-096
+  ref-097: source:ref-097
+  ref-098: source:ref-098
+  ref-099: source:ref-099
+  ref-100: source:ref-100
+  ref-101: source:ref-101
+  ref-102: source:ref-102
+  ref-103: source:ref-103
+  ref-104: source:ref-104
+  ref-105: source:ref-105
+  ref-106: source:ref-106
+  ref-107: source:ref-107
+  ref-108: source:ref-108
+  ref-109: source:ref-109
+  ref-110: source:ref-110
+  ref-111: source:ref-111
+  ref-112: source:ref-112
+  ref-113: source:ref-113
+  ref-114: source:ref-114
+  ref-115: source:ref-115
+  ref-116: source:ref-116
+  ref-117: source:ref-117
+  ref-118: source:ref-118
+  ref-119: source:ref-119
+  ref-120: source:ref-120
+  ref-121: source:ref-121
+  ref-122: source:ref-122
+  ref-123: source:ref-123
+  ref-124: source:ref-124
+  ref-125: source:ref-125
+  ref-126: source:ref-126
+  ref-127: source:ref-127
+  ref-128: source:ref-128
+  ref-129: source:ref-129
+  ref-130: source:ref-130
+  ref-131: source:ref-131
+  ref-132: source:ref-132
+  ref-133: source:ref-133
+  ref-134: source:ref-134
+  ref-135: source:ref-135
+  ref-136: source:ref-136
+  ref-137: source:ref-137
+  ref-138: source:ref-138
+  ref-139: source:ref-139
+  ref-140: source:ref-140
+  ref-141: source:ref-141
+  ref-142: source:ref-142
+  ref-143: source:ref-143
+  ref-144: source:ref-144
+  ref-145: source:ref-145
+  ref-146: source:ref-146
+  ref-147: source:ref-147
+  ref-148: source:ref-148
+  ref-149: source:ref-149
+  ref-150: source:ref-150
+  ref-151: source:ref-151
+  ref-152: source:ref-152
+  ref-153: source:ref-153
+  ref-154: source:ref-154
+  ref-155: source:ref-155
+  registry identity analysis: analysis:dependency-provenance-registry
+  registry는 의존성의 출처와 동일성을 어떻게 증명하는가: analysis:dependency-provenance-registry
+  relay and switching circuits: source:ref-008
+  Relay Circuit: concept:page-0d04f3f7
+  relay contact: concept:page-0d04f3f7
+  Relocation: concept:page-d679e8f4
+  Remote Procedure Call: concept:remote-procedure-call
+  Remote Procedure Call protocols in historical perspective: source:ref-140
+  replacement character: concept:page-6c282053
+  replicated log and consensus: concept:replicated-log-consensus
+  replicated state machine: concept:replicated-log-consensus
+  representation placement contract: analysis:representation-placement-contract
+  reproducible builds: concept:reproducible-builds
+  Reproducible Builds - Definition: source:ref-123
+  Reproducible Builds definition: source:ref-123
+  retries: concept:retries
+  Retry: concept:retries
+  retry amplification analysis: analysis:retry-amplification-and-control
+  Retry amplification and control: analysis:retry-amplification-and-control
+  retry budget: concept:retries
+  retry storm: concept:retries
+  Return address: concept:page-47ba75de
+  reuse: concept:software-reuse
+  RFC 3629: source:ref-023
+  RFC 3629 UTF-8: source:ref-023
+  RFC 9110: source:ref-114
+  RFC 9110 HTTP Semantics: source:ref-114
+  RISC: concept:page-613958ec
+  RISC I report: source:ref-044
+  Ritchie C history: source:ref-019
+  Ritchie Thompson Unix paper: source:ref-018
+  Ritchie Unix evolution: source:ref-020
+  ROC: source:ref-065
+  Roofline An Insightful Visual Performance Model: source:ref-034
+  Roofline performance model paper: source:ref-034
+  RPC: concept:remote-procedure-call
+  RPC 원 논문: source:ref-102
+  RPC history: source:ref-140
+  RPC survey: source:ref-140
+  RPC와 분산 파일 시스템: analysis:local-interface-remote-state
+  runtime contract: concept:runtime-contract
+  runtime contract analysis: analysis:runtime-contract
+  runtime contract는 무엇을 보장해야 하는가: analysis:runtime-contract
+  S-표현과 eval은 왜 프로그램과 데이터의 경계를 지우는가: analysis:mccarthy-eval-symbolic-computation
+  S. C. Johnson: person:stephen-c-johnson
+  Sagan 1967: source:ref-149
+  Saltzer Reed Clark 1984: source:ref-101
+  Sandberg et al. 1985: source:ref-139
+  SavedModel 서명: source:ref-134
+  SavedModel signatures: source:ref-134
+  SC memory model: concept:sequential-consistency
+  Scalable Parallel Programming with CUDA: source:ref-097
+  scalar value: concept:page-be5e9654
+  SEAC: source:ref-059
+  Searle 1980: source:ref-146
+  self modifying code: concept:page-4a63d3df
+  self-attention: concept:self-attention
+  Self-modifying code: concept:page-4a63d3df
+  Self-reproducing automata: concept:self-reproducing-automata
+  Sequential consistency: concept:sequential-consistency
+  Serializability: concept:serializability
+  serializability linearizability external consistency: analysis:transaction-ordering-guarantees
+  serializable isolation: concept:serializability
+  Serializable Isolation for Snapshot Databases: source:ref-112
+  Serializable Snapshot Isolation: source:ref-112
+  Serving DNNs like Clockwork Performance Predictability from the Bottom Up: source:ref-086
+  "Serving DNNs like Clockwork: Performance Predictability from the Bottom Up": source:ref-086
+  SGLang - Efficient Execution of Structured Language Model Programs: source:ref-080
+  SGLang paper: source:ref-080
+  "SGLang: Efficient Execution of Structured Language Model Programs": source:ref-080
+  Shannon: person:claude-shannon
+  Shannon 1938: source:ref-008
+  single program to concurrent order: analysis:concurrent-order-shared-state
+  Sixteen Questions about Software Reuse: source:ref-005
+  Slave Memories and Dynamic Storage Allocation: source:ref-043
+  slave memory paper: source:ref-043
+  SLSA Build Provenance: source:ref-125
+  SLSA Build Provenance Specification: source:ref-125
+  SLSA provenance: source:ref-125
+  Small Scale Experimental Machine: concept:page-30fac639
+  Smithsonian Human Computer Project: source:ref-058
+  Software Component: concept:page-fa0c6ecb
+  software developer productivity: concept:developer-productivity
+  Software Engineering: concept:page-432b4756
+  software layers: analysis:page-6a13ea1d
+  software portability: concept:page-5063ca2b
+  Software Reuse: source:ref-004
+  Software reuse concept: concept:software-reuse
+  software reuse history: analysis:page-0b006186
+  source code: concept:page-3e131394
+  Source program: concept:page-3e131394
+  source semantics accelerator performance: analysis:source-semantics-accelerator-performance
+  SOURCE_DATE_EPOCH: source:ref-124
+  SOURCE_DATE_EPOCH 명세: source:ref-124
+  SOURCE_DATE_EPOCH Specification: source:ref-124
+  source:ref-001: source:ref-001
+  source:ref-002: source:ref-002
+  source:ref-003: source:ref-003
+  source:ref-004: source:ref-004
+  source:ref-005: source:ref-005
+  source:ref-006: source:ref-006
+  source:ref-007: source:ref-007
+  source:ref-008: source:ref-008
+  source:ref-009: source:ref-009
+  source:ref-010: source:ref-010
+  source:ref-011: source:ref-011
+  source:ref-012: source:ref-012
+  source:ref-013: source:ref-013
+  source:ref-014: source:ref-014
+  source:ref-015: source:ref-015
+  source:ref-016: source:ref-016
+  source:ref-017: source:ref-017
+  source:ref-018: source:ref-018
+  source:ref-019: source:ref-019
+  source:ref-020: source:ref-020
+  source:ref-021: source:ref-021
+  source:ref-022: source:ref-022
+  source:ref-023: source:ref-023
+  source:ref-024: source:ref-024
+  source:ref-025: source:ref-025
+  source:ref-026: source:ref-026
+  source:ref-027: source:ref-027
+  source:ref-028: source:ref-028
+  source:ref-029: source:ref-029
+  source:ref-030: source:ref-030
+  source:ref-031: source:ref-031
+  source:ref-032: source:ref-032
+  source:ref-033: source:ref-033
+  source:ref-034: source:ref-034
+  source:ref-035: source:ref-035
+  source:ref-036: source:ref-036
+  source:ref-037: source:ref-037
+  source:ref-038: source:ref-038
+  source:ref-039: source:ref-039
+  source:ref-040: source:ref-040
+  source:ref-041: source:ref-041
+  source:ref-042: source:ref-042
+  source:ref-043: source:ref-043
+  source:ref-044: source:ref-044
+  source:ref-045: source:ref-045
+  source:ref-046: source:ref-046
+  source:ref-047: source:ref-047
+  source:ref-048: source:ref-048
+  source:ref-049: source:ref-049
+  source:ref-050: source:ref-050
+  source:ref-051: source:ref-051
+  source:ref-052: source:ref-052
+  source:ref-053: source:ref-053
+  source:ref-054: source:ref-054
+  source:ref-055: source:ref-055
+  source:ref-056: source:ref-056
+  source:ref-057: source:ref-057
+  source:ref-058: source:ref-058
+  source:ref-059: source:ref-059
+  source:ref-060: source:ref-060
+  source:ref-061: source:ref-061
+  source:ref-062: source:ref-062
+  source:ref-063: source:ref-063
+  source:ref-064: source:ref-064
+  source:ref-065: source:ref-065
+  source:ref-066: source:ref-066
+  source:ref-067: source:ref-067
+  source:ref-068: source:ref-068
+  source:ref-069: source:ref-069
+  source:ref-070: source:ref-070
+  source:ref-071: source:ref-071
+  source:ref-072: source:ref-072
+  source:ref-073: source:ref-073
+  source:ref-074: source:ref-074
+  source:ref-075: source:ref-075
+  source:ref-076: source:ref-076
+  source:ref-077: source:ref-077
+  source:ref-078: source:ref-078
+  source:ref-079: source:ref-079
+  source:ref-080: source:ref-080
+  source:ref-081: source:ref-081
+  source:ref-082: source:ref-082
+  source:ref-083: source:ref-083
+  source:ref-084: source:ref-084
+  source:ref-085: source:ref-085
+  source:ref-086: source:ref-086
+  source:ref-087: source:ref-087
+  source:ref-088: source:ref-088
+  source:ref-089: source:ref-089
+  source:ref-090: source:ref-090
+  source:ref-091: source:ref-091
+  source:ref-092: source:ref-092
+  source:ref-093: source:ref-093
+  source:ref-094: source:ref-094
+  source:ref-095: source:ref-095
+  source:ref-096: source:ref-096
+  source:ref-097: source:ref-097
+  source:ref-098: source:ref-098
+  source:ref-099: source:ref-099
+  source:ref-100: source:ref-100
+  source:ref-101: source:ref-101
+  source:ref-102: source:ref-102
+  source:ref-103: source:ref-103
+  source:ref-104: source:ref-104
+  source:ref-105: source:ref-105
+  source:ref-106: source:ref-106
+  source:ref-107: source:ref-107
+  source:ref-108: source:ref-108
+  source:ref-109: source:ref-109
+  source:ref-110: source:ref-110
+  source:ref-111: source:ref-111
+  source:ref-112: source:ref-112
+  source:ref-113: source:ref-113
+  source:ref-114: source:ref-114
+  source:ref-115: source:ref-115
+  source:ref-116: source:ref-116
+  source:ref-117: source:ref-117
+  source:ref-118: source:ref-118
+  source:ref-119: source:ref-119
+  source:ref-120: source:ref-120
+  source:ref-121: source:ref-121
+  source:ref-122: source:ref-122
+  source:ref-123: source:ref-123
+  source:ref-124: source:ref-124
+  source:ref-125: source:ref-125
+  source:ref-126: source:ref-126
+  source:ref-127: source:ref-127
+  source:ref-128: source:ref-128
+  source:ref-129: source:ref-129
+  source:ref-130: source:ref-130
+  source:ref-131: source:ref-131
+  source:ref-132: source:ref-132
+  source:ref-133: source:ref-133
+  source:ref-134: source:ref-134
+  source:ref-135: source:ref-135
+  source:ref-136: source:ref-136
+  source:ref-137: source:ref-137
+  source:ref-138: source:ref-138
+  source:ref-139: source:ref-139
+  source:ref-140: source:ref-140
+  source:ref-141: source:ref-141
+  source:ref-142: source:ref-142
+  source:ref-143: source:ref-143
+  source:ref-144: source:ref-144
+  source:ref-145: source:ref-145
+  source:ref-146: source:ref-146
+  source:ref-147: source:ref-147
+  source:ref-148: source:ref-148
+  source:ref-149: source:ref-149
+  source:ref-150: source:ref-150
+  source:ref-151: source:ref-151
+  source:ref-152: source:ref-152
+  source:ref-153: source:ref-153
+  source:ref-154: source:ref-154
+  source:ref-155: source:ref-155
+  source:src-001: source:src-001
+  source:src-002: source:src-002
+  source:src-003: source:src-003
+  source:src-004: source:src-004
+  source:src-005: source:src-005
+  source:src-006: source:src-006
+  source:src-007: source:src-007
+  source:src-008: source:src-008
+  source:src-009: source:src-009
+  source:src-010: source:src-010
+  SPACE 생산성 프레임워크: source:ref-072
+  SPACE framework: source:ref-072
+  Spanner: source:ref-089
+  Spanner - Google's Globally-Distributed Database: source:ref-089
+  Spanner 논문: source:ref-089
+  "Spanner: Google's Globally-Distributed Database": source:ref-089
+  SPEC CPU 2026 Overview: source:ref-032
+  SPEC CPU2026 overview: source:ref-032
+  speculative decoding: concept:speculative-decoding
+  Speculative Decoding paper: source:ref-079
+  speculative sampling: concept:speculative-decoding
+  spreadsheet: concept:spreadsheet
+  Spreadsheet: concept:spreadsheet
+  src-001: source:src-001
+  src-002: source:src-002
+  src-003: source:src-003
+  src-004: source:src-004
+  src-005: source:src-005
+  src-006: source:src-006
+  src-007: source:src-007
+  src-008: source:src-008
+  src-009: source:src-009
+  src-010: source:src-010
+  SRC84: source:ref-101
+  SRE cascading failures: source:ref-117
+  SRE error budget policy: source:ref-118
+  SSEM: concept:page-30fac639
+  SSEM source: source:ref-007
+  StableHLO 명세: source:ref-130
+  StableHLO 호환성: source:ref-131
+  StableHLO Compatibility: source:ref-131
+  StableHLO compatibility guarantees: source:ref-131
+  StableHLO MLIR ABI boundary: concept:stablehlo-mlir-abi
+  StableHLO MLIR ABI boundary analysis: analysis:stablehlo-mlir-abi-boundary
+  StableHLO spec: source:ref-130
+  StableHLO Specification: source:ref-130
+  StableHLO·MLIR·ABI 경계: concept:stablehlo-mlir-abi
+  Stack: concept:page-c297dc5b
+  Stack frame: concept:page-f6e983b1
+  Standards Eastern Automatic Computer: source:ref-059
+  Standards Electronic Automatic Computer: source:ref-059
+  Stanley Gill: person:stanley-gill
+  step-wise program composition: concept:page-723508cf
+  Stephen C. Johnson: person:stephen-c-johnson
+  Stepwise refinement: concept:page-723508cf
+  Steve Johnson: person:stephen-c-johnson
+  Stored-program computer: concept:stored-program-computer
+  stored-program lineage: analysis:page-3259f99b
+  stored-results-to-executable-procedures: analysis:stored-results-to-executable-procedures
+  Stripe 멱등 요청: source:ref-115
+  Stripe API idempotency: source:ref-115
+  Stripe idempotency keys: source:ref-115
+  Stripe Idempotent Requests: source:ref-115
+  structured control: concept:page-7cc49c18
+  Structured program theorem: concept:page-8e6aa351
+  Structured Programming: source:ref-013
+  Structured programming concept: concept:structured-programming
+  structured programming methodology: concept:structured-programming
+  Structured Programming with go to Statements: source:ref-014
+  structured programming with goto: source:ref-014
+  Subroutine: concept:subroutine
+  Subroutine and Stack: source:src-004
+  Substrate independence: concept:substrate-independence-functionalism
+  Sun NFS: source:ref-139
+  superscript exponent: concept:superscript-exponent
+  surrogate pair: concept:page-c854e2f6
+  Switching Circuit: concept:page-8ae81e59
+  switching network: concept:page-8ae81e59
+  Symbiogenesis: concept:symbiogenesis
+  symbiosis: concept:symbiogenesis
+  Symbol Manipulation: concept:symbolic-manipulation
+  Symbolic Analysis: source:ref-008
+  Symbolic Cognition: concept:cogitatio-caeca
+  symbolic manipulation: concept:symbolic-manipulation
+  symbols as computation engine: analysis:symbols-from-aid-to-computation-engine
+  synchronization: concept:mutual-exclusion-synchronization
+  syntax leads semantics: analysis:exponent-notation-delay
+  Syntax vs Semantics: concept:chinese-room-syntax-semantics
+  syscall: concept:page-d61f7b46
+  System call: concept:page-d61f7b46
+  system programming: concept:page-141883d0
+  Systems programming: concept:page-141883d0
+  Tail at Scale: source:ref-049
+  tail latency: concept:tail-latency
+  Tensor Processing Unit performance: source:ref-042
+  TensorFlow SavedModel Signatures: source:ref-134
+  TensorFlow serving signature: source:ref-134
+  The Byzantine Generals Problem: source:ref-063
+  The Case for Energy-Proportional Computing: source:ref-046
+  The Complexity of Theorem-Proving Procedures: source:ref-066
+  The computation factory - de Prony's project for making tables in the 1790s: source:ref-056
+  "The computation factory: de Prony's project for making tables in the 1790s": source:ref-056
+  The Datacenter as a Computer: source:ref-041
+  The Design Philosophy of the DARPA Internet Protocols: source:ref-141
+  The Development of the C Language: source:ref-019
+  The Evolution of the Unix Time-sharing System: source:ref-020
+  The FORTRAN Automatic Coding System: source:ref-016
+  The Google File System: source:ref-103
+  The Great Mathematical Translation: source:src-010
+  The History of FORTRAN I, II, and III: source:ref-017
+  The History of Mathematical Tables: source:ref-052
+  The History of Mathematical Tables - From Sumer to Spreadsheets: source:ref-052
+  "The History of Mathematical Tables: From Sumer to Spreadsheets": source:ref-052
+  The Impact of AI on Developer Productivity — Evidence from GitHub Copilot: source:ref-106
+  "The Impact of AI on Developer Productivity: Evidence from GitHub Copilot": source:ref-106
+  The Landscape of Parallel Computing Research - A View from Berkeley: source:ref-040
+  The Laws of Thought: source:ref-030
+  The Linpack Benchmark: source:ref-033
+  The Major Transitions in Evolution: source:ref-153
+  The Manchester Small Scale Experimental Machine - The Baby: source:ref-007
+  The Pendulum of Specialization and Generalization: analysis:specialized-vs-general-pendulum
+  The Phi Accrual Failure Detector: source:ref-119
+  The Preparation of Programs for an Electronic Digital Computer: source:ref-001
+  The scope of exactly once: analysis:exactly-once-boundary
+  The SPACE of Developer Productivity: source:ref-072
+  The Tail at Scale: source:ref-049
+  The Unicode Standard: source:ref-022
+  The Unicode Standard 17.0.0: source:ref-022
+  The UNIX Time-Sharing System: source:ref-018
+  Theory of computation reading guide: document:computation-reading-guide
+  Theory of Self-Reproducing Automata: source:ref-152
+  There's Plenty of Room at the Top: source:ref-068
+  "There’s plenty of room at the Top: What will drive computer performance after Moore’s law?": source:ref-068
+  Thomas Hobbes: person:thomas-hobbes
+  time to quality: concept:time-to-quality
+  time to train: concept:time-to-quality
+  time-to-quality: concept:time-to-quality
+  time-to-train: concept:time-to-quality
+  Time, Clocks: source:ref-100
+  Time, Clocks, and the Ordering of Events in a Distributed System: source:ref-100
+  TokenPowerBench: source:ref-083
+  TokenPowerBench - Benchmarking the Power Consumption of LLM Inference: source:ref-083
+  "TokenPowerBench: Benchmarking the Power Consumption of LLM Inference": source:ref-083
+  tokens per second is not enough: analysis:token-rate-service-capability
+  Tony Hoare: person:tony-hoare
+  TOP500 Linpack benchmark page: source:ref-033
+  TPU paper: source:ref-042
+  Transaction ordering guarantees: analysis:transaction-ordering-guarantees
+  transaction serializability: concept:serializability
+  Transformer: concept:transformer
+  Transformer 모델: concept:transformer
+  Transformer 추론은 왜 연산량만으로 설명되지 않는가: analysis:transformer-io-bottleneck
+  Transformer architecture: concept:transformer
+  Transformer inference beyond FLOPs: analysis:transformer-io-bottleneck
+  Transformer IO 병목: analysis:transformer-io-bottleneck
+  Transformer paper: source:ref-073
+  transistor under-utilization: concept:page-7fcb10cc
+  translator: concept:compiler
+  TrueTime: concept:external-consistency-time-uncertainty
+  TTFT와 TPOT: concept:llm-inference-service-metrics
+  TTT: concept:time-to-quality
+  Turing: person:alan-turing
+  Turing 1936: source:ref-009
+  Turing Lecture 2018: source:ref-138
+  Turing Machine: concept:page-c617f209
+  Turing thesis: concept:page-b95bdd2d
+  TVM: source:ref-099
+  TVM - An Automated End-to-End Optimizing Compiler for Deep Learning: source:ref-099
+  TVM compiler: source:ref-099
+  "TVM: An Automated End-to-End Optimizing Compiler for Deep Learning": source:ref-099
+  "UAX #15": source:ref-024
+  "UAX #29": source:ref-025
+  UCB/CSD-82-106: source:ref-044
+  Unicode: concept:page-496b0829
+  Unicode 17.0.0: source:ref-022
+  Unicode code point: concept:page-e589f64b
+  Unicode confusable: concept:page-cb68fc61
+  Unicode deep dive: analysis:page-9241eb45
+  Unicode Normalization: concept:page-9351a627
+  Unicode Normalization Forms: source:ref-024
+  Unicode scalar value: concept:page-be5e9654
+  Unicode Security Mechanisms: source:ref-027
+  "Unicode Standard Annex #15": source:ref-024
+  "Unicode Standard Annex #29": source:ref-025
+  "Unicode Technical Standard #39": source:ref-027
+  Unicode text boundaries: source:ref-025
+  Unicode Text Segmentation: source:ref-025
+  Unicode Transformation Format 16-bit: concept:page-c854e2f6
+  Unicode Transformation Format 8-bit: concept:page-f4f75731
+  unit segment: concept:unit-segment-dimension-reduction
+  universal machine: concept:page-676372e6
+  Universal Turing Machine: concept:page-676372e6
+  Unix: concept:page-092a889f
+  UNIX: concept:page-092a889f
+  Unix 1974: source:ref-018
+  Unix and C: analysis:page-8d320775
+  Unix evolution: source:ref-020
+  Unix pipe: concept:page-d86dcb52
+  UNIX Time-Sharing System: source:ref-018
+  Unix와 C: analysis:page-8d320775
+  UNIX와 C: analysis:page-8d320775
+  Unsolvable Problem: source:ref-010
+  UTF code unit: concept:page-9574348a
+  UTF-16: concept:page-c854e2f6
+  UTF-8: concept:page-f4f75731
+  UTF-8 a transformation format of ISO 10646: source:ref-023
+  UTF-8 RFC: source:ref-023
+  UTF8: concept:page-f4f75731
+  UTM: concept:page-676372e6
+  "UTS #39": source:ref-027
+  Vaithilingam Zhang Glassman 2022: source:ref-105
+  Validity of the Single Processor Approach to Achieving Large Scale Computing Capabilities: source:ref-035
+  Vaswani et al. 2017: source:ref-073
+  verification labor: concept:verification-labor
+  VisiCalc 매뉴얼: source:ref-061
+  VisiCalc Apple II 매뉴얼: source:ref-061
+  VisiCalc Apple II Version 1.0 Manual: source:ref-061
+  VisiCalc manual: source:ref-061
+  vLLM paper: source:ref-076
+  von Neumann: person:john-von-neumann
+  von Neumann 1966: source:ref-152
+  Von Neumann Architecture: concept:page-7d1c4861
+  von Neumann model: concept:page-7d1c4861
+  von Neumann report: source:ref-006
+  von Neumann universal constructor: concept:self-reproducing-automata
+  Warehouse-Scale Computing: source:ref-041
+  Web Encoding Standard: source:ref-026
+  weight-only quantization: concept:llm-weight-quantization
+  WG14 integer semantics: source:ref-029
+  What Every Computer Scientist Should Know About Floating Point Arithmetic: source:ref-050
+  What Every Computer Scientist Should Know About Floating-Point Arithmetic: source:ref-050
+  what reproducible builds make identical: analysis:reproducible-build-boundary
+  WHATWG Encoding: source:ref-026
+  WHATWG Encoding Standard: source:ref-026
+  Wheeler jump: concept:page-2397a193
+  Wheeler Jump: concept:page-2397a193
+  Why Did It Take 1,877 Years to Invent x Squared: source:src-009
+  Why Do Internet Services Fail and What Can Be Done About It: source:ref-064
+  Why Do Internet Services Fail, and What Can Be Done About It?: source:ref-064
+  Wilkes 1965: source:ref-043
+  Williams-Waterman-Patterson 2009: source:ref-034
+  Wrapping: concept:page-9ecf6d54
+  WSC book: source:ref-041
+  Wulf-McKee 1995: source:ref-039
+  WWG: source:ref-001
+  x의 n제곱: concept:superscript-exponent
+  Yu et al. 2022: source:ref-075
+  Zheng et al. 2024: source:ref-080
+  Zhong et al. 2024: source:ref-077
+  φ-accrual failure detector: source:ref-119

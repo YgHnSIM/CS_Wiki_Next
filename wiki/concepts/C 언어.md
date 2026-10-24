@@ -1,0 +1,92 @@
+---
+schema_version: 3
+id: concept-f438fd4127b48dbb
+key: concept:page-f438fd41
+kind: concept
+title: C 언어
+aliases:
+  - C
+  - C programming language
+  - C language
+summary: Unix 구현을 위해 발전한 시스템 프로그래밍 언어로, 포인터와 바이트 단위 제어를 고급 언어 구조와 결합한 언어.
+domains:
+  - programming-languages
+  - software-engineering
+  - computer-history
+publication_visibility: public
+graph_visibility: public
+created: 2026-07-10
+updated: 2026-10-24
+evidence_ids:
+  - ref-019
+  - ref-020
+  - ref-021
+capability_layers:
+  - programmability
+history:
+  event:
+    start: 1969
+    end: 1973
+    basis: representative
+    evidence_id: ref-019
+  note: C가 Unix의 초기 발전과 나란히 형성된 1969~1973년을 사건 범위로 둔다.
+  layer: software
+redirect_from:
+  - /concepts/c-언어/
+relations:
+  - predicate: enables
+    target: concept:page-141883d0
+    note: 운영체제 자원을 이식 가능한 표기로 다루게 한다.
+    evidence:
+      - source: ref-019
+  - predicate: enables
+    target: concept:page-5063ca2b
+    note: 같은 소스를 여러 Unix 구현에서 번역하게 한다.
+    evidence:
+      - source: ref-021
+---
+
+## 개요
+
+[[C 언어]]는 초기 [[Unix]]를 위한 [[시스템 프로그래밍]] 언어로 발전했다. BCPL과 B의 영향을 받았으며 [[PDP-11]]의 바이트 주소 지정과 운영체제 구현 요구에 맞춰 `char`, `int`, 포인터, 배열, 구조체 같은 타입 구조를 갖추었다.
+
+## 시스템 구현 언어
+
+C의 역사적 의미는 고급 언어와 기계에 가까운 제어 사이의 균형에 있다. C는 어셈블리 언어보다 읽고 유지보수하기 쉬우면서도 메모리 주소, 바이트, 포인터, 구조체, 비트 연산 같은 저수준 표현을 직접 다룰 수 있었다. 이러한 성질 덕분에 Unix 커널과 유틸리티를 C로 작성할 수 있었다.
+
+## Unix와의 관계
+
+1973년 Unix 커널을 C로 다시 작성한 일은 C가 운영체제 구현에 충분한 속도와 표현력을 갖췄다는 신뢰를 만들었다. 이후 Unix 유틸리티와 도구도 C로 옮겨졌고 pcc 같은 이식 가능한 컴파일러와 함께 다른 기계로 확산됐다.
+
+## 주의점
+
+C는 기계에 가까운 표현력을 제공하는 만큼 [[메모리 안전성]]의 책임을 프로그래머에게 많이 남긴다. [[C 문자열]]의 널 종단, 포인터 연산, 타입 변환, 정수 범위는 시스템 프로그래밍의 힘이면서 동시에 오류와 취약점의 원천이 될 수 있다.
+
+## 관계
+
+<!-- knowledge:relations:start -->
+| 관계 | 대상 | 설명 | 근거 |
+|---|---|---|---|
+| enables | [[시스템 프로그래밍]] | 운영체제 자원을 이식 가능한 표기로 다루게 한다. | [[The Development of the C Language]] |
+| enables | [[이식성]] | 같은 소스를 여러 Unix 구현에서 번역하게 한다. | [[Portability of C Programs and the UNIX System]] |
+<!-- knowledge:relations:end -->
+
+## 출처
+<!-- wiki-v2:evidence-start -->
+### 근거 ID
+- `ref-019`
+- `ref-020`
+- `ref-021`
+<!-- wiki-v2:evidence-end -->
+
+- [[The Development of the C Language]]
+- [[The Evolution of the Unix Time-sharing System]]
+- [[Portability of C Programs and the UNIX System]]
+
+## 관련 항목
+
+- [[데니스 리치]] — C 언어를 설계하고 Unix 개발에 참여해 운영체제 구현 언어와 이식성의 전환을 이끈 Bell Labs 연구자.
+- [[켄 톰프슨]] — 초기 Unix 개발과 B 언어를 주도하며 Unix와 C 언어 흐름의 바탕을 만든 Bell Labs 연구자.
+- [[Unix]] — 파일, 프로세스, 셸, 파이프, 시스템 호출을 중심으로 구성된 Bell Labs의 다중 사용자 대화형 운영체제.
+- [[PDP-11]] — 초기 Unix와 C 언어가 실용화된 DEC 미니컴퓨터 계열.
+- [[시스템 프로그래밍]] — 운영체제, 컴파일러, 셸, 장치 제어처럼 기반 소프트웨어를 작성하는 프로그래밍 영역.

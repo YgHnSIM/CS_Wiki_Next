@@ -1,0 +1,47 @@
+---
+import Base from "../../layouts/Base.astro";
+import DocumentList from "../../components/DocumentList.astro";
+import { publicDocuments } from "../../lib/data";
+
+const kindLabels: Record<string, string> = {
+  concept: "개념",
+  entity: "개체",
+  analysis: "분석",
+  source: "소스",
+  reference: "참고 자료",
+  meta: "운영"
+};
+const kindOrder = ["concept", "entity", "analysis", "source", "reference", "meta"];
+const groups = new Map<string, typeof publicDocuments>();
+for (const document of publicDocuments) {
+  if (!groups.has(document.kind)) groups.set(document.kind, []);
+  groups.get(document.kind)!.push(document);
+}
+for (const documents of groups.values()) documents.sort((a, b) => a.title.localeCompare(b.title, "ko"));
+const sortedGroups = [...groups.entries()].sort(
+  ([a], [b]) => kindOrder.indexOf(a) - kindOrder.indexOf(b)
+);
+---
+
+<Base title="전체 색인" description="CS Wiki의 공개 문서 전체 색인">
+  <div class="index-page">
+    <header class="index-head">
+      <p class="eyebrow">INDEX</p>
+      <h1 class="index-title">전체 색인</h1>
+      <p class="index-sub">공개 문서 {publicDocuments.length}개를 유형별로 정렬했습니다. unlisted 문서는 이 목록에 나오지 않습니다.</p>
+    </header>
+
+    <nav class="index-jump" aria-label="유형 바로가기">
+      {sortedGroups.map(([kind, documents]) => (
+        <a href={`#${kind}`}>{kindLabels[kind] || kind} <span>{documents.length}</span></a>
+      ))}
+    </nav>
+
+    {sortedGroups.map(([kind, documents]) => (
+      <section id={kind}>
+        <h2>{kindLabels[kind] || kind} <small>({documents.length})</small></h2>
+        <DocumentList documents={documents} />
+      </section>
+    ))}
+  </div>
+</Base>

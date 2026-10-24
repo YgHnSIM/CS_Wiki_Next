@@ -1,0 +1,6690 @@
+schema_version: 1
+nodes:
+  - key: analysis:agi-criteria-shift
+    type: analysis
+    labels:
+      ko: AGI 판정 기준은 누가 옮기는가
+    aliases:
+      - AGI 판정 기준은 누가 옮기는가
+      - AGI는 이미 도래했는가
+      - ANI와 AGI의 구분
+      - AGI goalposts
+      - analysis-agi-criteria-shift
+      - analysis:agi-criteria-shift
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-agi-criteria-shift
+  - key: analysis:ai-bottleneck-lineage
+    type: analysis
+    labels:
+      ko: AI 인프라의 병목 계보
+    aliases:
+      - AI 인프라의 병목 계보
+      - AI bottleneck lineage
+      - 컴퓨팅 병목의 역사
+      - analysis-ai-bottleneck-lineage
+      - analysis:ai-bottleneck-lineage
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-ai-bottleneck-lineage
+  - key: analysis:ai-bottleneck-shifting
+    type: analysis
+    labels:
+      ko: AI 시스템은 병목을 어떻게 이동시키는가
+    aliases:
+      - AI 시스템은 병목을 어떻게 이동시키는가
+      - AI bottleneck shifting
+      - 병목 이동 분석
+      - analysis-ai-bottleneck-shifting
+      - analysis:ai-bottleneck-shifting
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-ai-bottleneck-shifting
+  - key: analysis:analytic-geometry-to-pixels-and-maps
+    type: analysis
+    labels:
+      ko: 17세기 해석기하학은 어떻게 디스플레이 픽셀과 지도가 되었는가
+    aliases:
+      - 17세기 해석기하학은 어떻게 디스플레이 픽셀과 지도가 되었는가
+      - Analytic Geometry to Pixels and Maps
+      - 시스템과 픽셀의 기하학적 육화
+      - 해석기하학에서 디스플레이 픽셀과 모바일 지도까지
+      - analysis-analytic-geometry-to-pixels-and-maps
+      - analysis:analytic-geometry-to-pixels-and-maps
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-analytic-geometry-to-pixels-and-maps
+  - key: analysis:automation-labor-responsibility
+    type: analysis
+    labels:
+      ko: 자동화는 계산 노동을 없애는가 책임을 옮기는가
+    aliases:
+      - 자동화는 계산 노동을 없애는가 책임을 옮기는가
+      - 자동화와 검증 노동
+      - AI 코딩 지원과 책임
+      - automation labor responsibility
+      - analysis-automation-labor-responsibility
+      - analysis:automation-labor-responsibility
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-automation-labor-responsibility
+  - key: analysis:benchmark-numbers-not-directly-comparable
+    type: analysis
+    labels:
+      ko: 벤치마크 숫자는 왜 직접 비교되지 않는가
+    aliases:
+      - 벤치마크 숫자는 왜 직접 비교되지 않는가
+      - 벤치마크 수치 비교
+      - benchmark result comparability
+      - 성능 숫자 비교
+      - analysis-benchmark-numbers-not-directly-comparable
+      - analysis:benchmark-numbers-not-directly-comparable
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-benchmark-numbers-not-directly-comparable
+  - key: analysis:code-volume-developer-productivity
+    type: analysis
+    labels:
+      ko: 코드 생산량은 왜 개발 생산성을 설명하지 못하는가
+    aliases:
+      - 코드 생산량은 왜 개발 생산성을 설명하지 못하는가
+      - LOC와 개발자 생산성
+      - 코드량 지표의 한계
+      - activity is not productivity
+      - analysis-code-volume-developer-productivity
+      - analysis:code-volume-developer-productivity
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-code-volume-developer-productivity
+  - key: analysis:computation-invention-or-natural-phenomenon
+    type: analysis
+    labels:
+      ko: 계산은 발명인가 자연 현상인가
+    aliases:
+      - 계산은 발명인가 자연 현상인가
+      - 계산은 1945년의 발명인가
+      - 계산의 존재론
+      - computation as basic science
+      - analysis-computation-invention-or-natural-phenomenon
+      - analysis:computation-invention-or-natural-phenomenon
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-computation-invention-or-natural-phenomenon
+  - key: analysis:concurrent-order-shared-state
+    type: analysis
+    labels:
+      ko: 한 프로그램의 순서는 여러 실행 주체에서 어떻게 보존되는가
+    aliases:
+      - 한 프로그램의 순서는 여러 실행 주체에서 어떻게 보존되는가
+      - 동시성의 세 순서 계약
+      - single program to concurrent order
+      - 공유 상태의 순서 계약
+      - analysis-concurrent-order-shared-state
+      - analysis:concurrent-order-shared-state
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-concurrent-order-shared-state
+  - key: analysis:dependency-provenance-registry
+    type: analysis
+    labels:
+      ko: registry는 의존성의 출처와 동일성을 어떻게 증명하는가
+    aliases:
+      - registry는 의존성의 출처와 동일성을 어떻게 증명하는가
+      - dependency provenance registry analysis
+      - registry identity analysis
+      - analysis-dependency-provenance-registry
+      - analysis:dependency-provenance-registry
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-dependency-provenance-registry
+  - key: analysis:distributed-consistency-latency
+    type: analysis
+    labels:
+      ko: 분산 서비스는 빠른 응답과 같은 상태를 어떻게 함께 보장하는가
+    aliases:
+      - 분산 서비스는 빠른 응답과 같은 상태를 어떻게 함께 보장하는가
+      - 분산 서비스의 일관성과 지연
+      - distributed consistency and latency
+      - 합의와 서비스 응답
+      - analysis-distributed-consistency-latency
+      - analysis:distributed-consistency-latency
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-distributed-consistency-latency
+  - key: analysis:exactly-once-boundary
+    type: analysis
+    labels:
+      ko: 정확히 한 번은 어디까지 가능한가
+    aliases:
+      - 정확히 한 번은 어디까지 가능한가
+      - The scope of exactly once
+      - logical once physical many
+      - exactly-once boundary
+      - analysis-exactly-once-boundary
+      - analysis:exactly-once-boundary
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-exactly-once-boundary
+  - key: analysis:exponent-notation-delay
+    type: analysis
+    labels:
+      ko: 거듭제곱 법칙을 알고도 지수 기호는 왜 늦게 생겼는가
+    aliases:
+      - 거듭제곱 법칙을 알고도 지수 기호는 왜 늦게 생겼는가
+      - 지수 기호는 왜 늦었는가
+      - syntax leads semantics
+      - 구문론이 새 수를 만들 때
+      - analysis-exponent-notation-delay
+      - analysis:exponent-notation-delay
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-exponent-notation-delay
+  - key: analysis:failure-detection-gray-metastable
+    type: analysis
+    labels:
+      ko: 장애 감지는 실패와 느림을 어떻게 구분하는가
+    aliases:
+      - 장애 감지는 실패와 느림을 어떻게 구분하는가
+      - Failure detector, gray failure, metastable failure
+      - failure suspicion and semantic failure
+      - 장애 감지와 회색 장애
+      - analysis-failure-detection-gray-metastable
+      - analysis:failure-detection-gray-metastable
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-failure-detection-gray-metastable
+  - key: analysis:from-mathematical-tables-to-spreadsheets
+    type: analysis
+    labels:
+      ko: 수학 표에서 스프레드시트로
+    aliases:
+      - 수학 표에서 스프레드시트로
+      - 정적 표에서 실행 모형으로
+      - From mathematical tables to spreadsheets
+      - 재계산 가능한 표
+      - from-mathematical-tables-to-spreadsheets
+      - analysis:from-mathematical-tables-to-spreadsheets
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: from-mathematical-tables-to-spreadsheets
+  - key: analysis:from-table-checking-to-numerical-result-contracts
+    type: analysis
+    labels:
+      ko: 수학 표의 검산에서 수치 결과 계약으로
+    aliases:
+      - 수학 표의 검산에서 수치 결과 계약으로
+      - From table checking to numerical result contracts
+      - 수학 표와 수치 검증
+      - 검산의 컴퓨팅사
+      - from-table-checking-to-numerical-result-contracts
+      - analysis:from-table-checking-to-numerical-result-contracts
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: from-table-checking-to-numerical-result-contracts
+  - key: analysis:functionalism-vs-chinese-room
+    type: analysis
+    labels:
+      ko: 기능주의와 중국어 방은 어디서 갈라지는가
+    aliases:
+      - 기능주의와 중국어 방은 어디서 갈라지는가
+      - 기능주의 대 중국어 방
+      - 뇌 시뮬레이터 응답과 테세우스의 뇌
+      - functionalism vs Chinese room
+      - analysis-functionalism-vs-chinese-room
+      - analysis:functionalism-vs-chinese-room
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-functionalism-vs-chinese-room
+  - key: analysis:geometry-to-computation-descartes-vs-fermat
+    type: analysis
+    labels:
+      ko: 기하는 어떻게 계산이 되었고 왜 데카르트의 표기가 페르마를 이겼는가
+    aliases:
+      - 기하는 어떻게 계산이 되었고 왜 데카르트의 표기가 페르마를 이겼는가
+      - 데카르트와 페르마의 기하학 번역
+      - 해석기하학의 탄생과 표기법 전쟁
+      - 단위 선분과 의사의법
+      - geometry to computation
+      - analysis-geometry-to-computation-descartes-vs-fermat
+      - analysis:geometry-to-computation-descartes-vs-fermat
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: analysis-geometry-to-computation-descartes-vs-fermat
+  - key: analysis:hardware-vs-algorithmic-improvement
+    type: analysis
+    labels:
+      ko: 더 빠른 하드웨어는 더 나은 알고리즘을 대신할 수 있는가
+    aliases:
+      - 더 빠른 하드웨어는 더 나은 알고리즘을 대신할 수 있는가
+      - 하드웨어와 알고리즘의 비교
+      - 알고리즘 개선과 하드웨어 개선
+      - 복잡도와 실용 성능
+      - analysis-hardware-vs-algorithmic-improvement
+      - analysis:hardware-vs-algorithmic-improvement
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-hardware-vs-algorithmic-improvement
+  - key: analysis:human-computers-and-computation-factories
+    type: analysis
+    labels:
+      ko: 인간 계산자와 계산 공장
+    aliases:
+      - 인간 계산자와 계산 공장
+      - Human computers and computation factories
+      - 계산 노동의 조직
+      - 계산 공장에서 전자식 컴퓨터까지
+      - human-computers-and-computation-factories
+      - analysis:human-computers-and-computation-factories
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: human-computers-and-computation-factories
+  - key: analysis:interpretation-security-boundary
+    type: analysis
+    labels:
+      ko: 입력을 해석하는 경계는 왜 보안 경계인가
+    aliases:
+      - 입력을 해석하는 경계는 왜 보안 경계인가
+      - 입력 해석과 보안 경계
+      - interpretation security boundary
+      - decoding validation authorization boundary
+      - analysis-interpretation-security-boundary
+      - analysis:interpretation-security-boundary
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-interpretation-security-boundary
+  - key: analysis:kv-cache-throughput
+    type: analysis
+    labels:
+      ko: KV 캐시는 왜 LLM 추론 처리량을 제한하는가
+    aliases:
+      - KV 캐시는 왜 LLM 추론 처리량을 제한하는가
+      - KV cache throughput bottleneck
+      - LLM 캐시와 배치 처리량
+      - KV 캐시 병목
+      - analysis-kv-cache-throughput
+      - analysis:kv-cache-throughput
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-kv-cache-throughput
+  - key: analysis:llm-reuse-speculation-work
+    type: analysis
+    labels:
+      ko: 재사용과 추측은 LLM 추론 작업량을 어떻게 바꾸는가
+    aliases:
+      - 재사용과 추측은 LLM 추론 작업량을 어떻게 바꾸는가
+      - LLM reuse and speculation analysis
+      - LLM 작업량 재사용
+      - 캐싱과 추측 디코딩 비교
+      - analysis-llm-reuse-speculation-work
+      - analysis:llm-reuse-speculation-work
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-llm-reuse-speculation-work
+  - key: analysis:llm-slo-resource-cost
+    type: analysis
+    labels:
+      ko: 같은 SLO의 LLM 서비스는 무엇을 비용으로 세어야 하는가
+    aliases:
+      - 같은 SLO의 LLM 서비스는 무엇을 비용으로 세어야 하는가
+      - LLM SLO resource cost analysis
+      - LLM 유효 요청당 비용
+      - LLM 추론 자원 회계
+      - analysis-llm-slo-resource-cost
+      - analysis:llm-slo-resource-cost
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-llm-slo-resource-cost
+  - key: analysis:llm-throughput-latency-queueing
+    type: analysis
+    labels:
+      ko: LLM 서빙에서 처리량과 지연은 왜 함께 움직이는가
+    aliases:
+      - LLM 서빙에서 처리량과 지연은 왜 함께 움직이는가
+      - LLM throughput latency queueing analysis
+      - LLM 대기열과 SLO
+      - LLM 서빙 부하 제어 분석
+      - analysis-llm-throughput-latency-queueing
+      - analysis:llm-throughput-latency-queueing
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-llm-throughput-latency-queueing
+  - key: analysis:local-interface-remote-state
+    type: analysis
+    labels:
+      ko: 로컬 호출과 파일은 원격 상태가 될 때 무엇을 잃는가
+    aliases:
+      - 로컬 호출과 파일은 원격 상태가 될 때 무엇을 잃는가
+      - 로컬 인터페이스와 원격 상태
+      - RPC와 분산 파일 시스템
+      - local interface remote state
+      - analysis-local-interface-remote-state
+      - analysis:local-interface-remote-state
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: analysis-local-interface-remote-state
+  - key: analysis:low-bit-llm-inference
+    type: analysis
+    labels:
+      ko: 낮은 비트는 왜 LLM 추론 속도를 보장하지 않는가
+    aliases:
+      - 낮은 비트는 왜 LLM 추론 속도를 보장하지 않는가
+      - low-bit LLM inference analysis
+      - LLM 양자화 성능 조건
+      - 저비트 추론 병목
+      - analysis-low-bit-llm-inference
+      - analysis:low-bit-llm-inference
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-low-bit-llm-inference
+  - key: analysis:low-precision-ai-result-contract
+    type: analysis
+    labels:
+      ko: 낮은 정밀도는 AI의 컴퓨팅 능력을 어떻게 바꾸는가
+    aliases:
+      - 낮은 정밀도는 AI의 컴퓨팅 능력을 어떻게 바꾸는가
+      - AI 저정밀도 성능
+      - 혼합 정밀도와 모델 품질
+      - low precision AI capability
+      - analysis-low-precision-ai-result-contract
+      - analysis:low-precision-ai-result-contract
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-low-precision-ai-result-contract
+  - key: analysis:mccarthy-eval-symbolic-computation
+    type: analysis
+    labels:
+      ko: S-표현과 eval은 왜 프로그램과 데이터의 경계를 지우는가
+    aliases:
+      - S-표현과 eval은 왜 프로그램과 데이터의 경계를 지우는가
+      - eval은 왜 프로그램과 데이터의 경계를 지우는가
+      - McCarthy eval
+      - Lisp eval analysis
+      - analysis-mccarthy-eval-symbolic-computation
+      - analysis:mccarthy-eval-symbolic-computation
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-mccarthy-eval-symbolic-computation
+  - key: analysis:operational-energy-sustainable-computing
+    type: analysis
+    labels:
+      ko: 낮은 운영 에너지는 지속 가능한 컴퓨팅을 보장하는가
+    aliases:
+      - 낮은 운영 에너지는 지속 가능한 컴퓨팅을 보장하는가
+      - 운영 에너지와 수명 주기
+      - 지속 가능한 컴퓨팅의 측정 경계
+      - operational energy sustainable computing
+      - analysis-operational-energy-sustainable-computing
+      - analysis:operational-energy-sustainable-computing
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-operational-energy-sustainable-computing
+  - key: analysis:page-01dd444c
+    type: analysis
+    labels:
+      ko: 평균 성능은 왜 서비스의 컴퓨팅 능력을 설명하지 못하는가
+    aliases:
+      - 평균 성능은 왜 서비스의 컴퓨팅 능력을 설명하지 못하는가
+      - 평균 성능의 한계
+      - 서비스 컴퓨팅 능력과 꼬리 지연
+      - 평균 지연과 꼬리 지연
+      - analysis-01dd444cf0037615
+      - analysis:page-01dd444c
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-01dd444cf0037615
+  - key: analysis:page-0b006186
+    type: analysis
+    labels:
+      ko: 소프트웨어 재사용의 역사
+    aliases:
+      - 소프트웨어 재사용의 역사
+      - software reuse history
+      - 코드 재사용의 역사
+      - 재사용 가능한 소프트웨어의 역사
+      - analysis-0b0061867a466b88
+      - analysis:page-0b006186
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-0b0061867a466b88
+  - key: analysis:page-0c7e244e
+    type: analysis
+    labels:
+      ko: 논리 회로와 이진 표현
+    aliases:
+      - 논리 회로와 이진 표현
+      - logic circuits and binary representation
+      - 이진 표현과 논리 회로
+      - analysis-0c7e244ee605320d
+      - analysis:page-0c7e244e
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-0c7e244ee605320d
+  - key: analysis:page-2b56fedc
+    type: analysis
+    labels:
+      ko: 더 빠른 프로세서는 왜 더 빠른 프로그램을 보장하지 않는가
+    aliases:
+      - 더 빠른 프로세서는 왜 더 빠른 프로그램을 보장하지 않는가
+      - 더 빠른 프로세서의 조건
+      - Peak versus realized performance
+      - 실현 성능의 조건
+      - analysis-2b56fedc2ec5e743
+      - analysis:page-2b56fedc
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-2b56fedc2ec5e743
+  - key: analysis:page-3259f99b
+    type: analysis
+    labels:
+      ko: 저장 프로그램 개념의 여러 기원
+    aliases:
+      - 저장 프로그램 개념의 여러 기원
+      - stored-program lineage
+      - 저장 프로그램 계보
+      - 저장 프로그램 컴퓨터의 계보
+      - analysis-3259f99bb25a494c
+      - analysis:page-3259f99b
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-3259f99bb25a494c
+  - key: analysis:page-35a2e99b
+    type: analysis
+    labels:
+      ko: EDSAC은 무엇의 최초인가
+    aliases:
+      - EDSAC은 무엇의 최초인가
+      - EDSAC 최초성
+      - EDSAC first
+      - first practical stored-program computer
+      - analysis-35a2e99b2b062bf6
+      - analysis:page-35a2e99b
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-35a2e99b2b062bf6
+  - key: analysis:page-3d25f482
+    type: analysis
+    labels:
+      ko: 병렬 컴퓨팅은 시간을 줄이는가 문제를 키우는가
+    aliases:
+      - 병렬 컴퓨팅은 시간을 줄이는가 문제를 키우는가
+      - 암달과 구스타프슨의 두 질문
+      - Fixed-size versus scaled-size speedup
+      - 병렬 가속의 두 관점
+      - analysis-3d25f4823ef50776
+      - analysis:page-3d25f482
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-3d25f4823ef50776
+  - key: analysis:page-4095b0c8
+    type: analysis
+    labels:
+      ko: 서브루틴 라이브러리에서 API로
+    aliases:
+      - 서브루틴 라이브러리에서 API로
+      - EDSAC API
+      - API의 전신
+      - 서브루틴과 API
+      - analysis-4095b0c80dbee408
+      - analysis:page-4095b0c8
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-4095b0c80dbee408
+  - key: analysis:page-63baea1f
+    type: analysis
+    labels:
+      ko: 범용성은 어떻게 컴퓨팅 능력이 되었는가
+    aliases:
+      - 범용성은 어떻게 컴퓨팅 능력이 되었는가
+      - 범용 컴퓨터의 형성
+      - Generality as computing capability
+      - 프로그램 가능성의 역사
+      - analysis-63baea1fd8a3a197
+      - analysis:page-63baea1f
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-63baea1fd8a3a197
+  - key: analysis:page-6a13ea1d
+    type: analysis
+    labels:
+      ko: 초기 소프트웨어의 계층화
+    aliases:
+      - 초기 소프트웨어의 계층화
+      - 소프트웨어 계층화
+      - 초기 소프트웨어 계층
+      - software layers
+      - analysis-6a13ea1dd48b1014
+      - analysis:page-6a13ea1d
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-6a13ea1dd48b1014
+  - key: analysis:page-7058e090
+    type: analysis
+    labels:
+      ko: 계산기와 컴퓨터의 차이
+    aliases:
+      - 계산기와 컴퓨터의 차이
+      - 계산기와 컴퓨터
+      - calculator vs computer
+      - 범용성과 특수 목적
+      - 특수 목적 계산기와 범용 컴퓨터
+      - analysis-7058e090e0383cd3
+      - analysis:page-7058e090
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-7058e090e0383cd3
+  - key: analysis:page-7a3b4c5d
+    type: analysis
+    labels:
+      ko: 하드웨어 실행 모델은 어떻게 제어와 상태를 엮는가
+    aliases:
+      - 하드웨어 실행 모델은 어떻게 제어와 상태를 엮는가
+      - 하드웨어 실행 모델과 제어·상태의 직조
+      - hardware execution model analysis
+      - analysis-7a3b4c5d6e7f8091
+      - analysis:page-7a3b4c5d
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-7a3b4c5d6e7f8091
+  - key: analysis:page-866096c7
+    type: analysis
+    labels:
+      ko: Fortran과 컴파일러
+    aliases:
+      - Fortran과 컴파일러
+      - FORTRAN과 컴파일러
+      - Fortran compiler
+      - Fortran and compiler
+      - analysis-866096c7a9c8c715
+      - analysis:page-866096c7
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-866096c7a9c8c715
+  - key: analysis:page-8d320775
+    type: analysis
+    labels:
+      ko: Unix와 C
+    aliases:
+      - Unix와 C
+      - UNIX와 C
+      - Unix and C
+      - analysis-8d320775b8ff83eb
+      - analysis:page-8d320775
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-8d320775b8ff83eb
+  - key: analysis:page-8f48231d
+    type: analysis
+    labels:
+      ko: 더 빠른 계산은 같은 답을 내는가
+    aliases:
+      - 더 빠른 계산은 같은 답을 내는가
+      - 성능과 부동소수점 정확성
+      - 빠른 계산과 같은 답
+      - numerical correctness and performance
+      - analysis-8f48231deb7289cb
+      - analysis:page-8f48231d
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-8f48231deb7289cb
+  - key: analysis:page-9241eb45
+    type: analysis
+    labels:
+      ko: 인코딩 심화
+    aliases:
+      - 인코딩 심화
+      - advanced encoding
+      - 문자 인코딩 심화
+      - Unicode deep dive
+      - analysis-9241eb4539243823
+      - analysis:page-9241eb45
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-9241eb4539243823
+  - key: analysis:page-d0161680
+    type: analysis
+    labels:
+      ko: 비트 패턴과 해석 규칙
+    aliases:
+      - 비트 패턴과 해석 규칙
+      - bit patterns and interpretation rules
+      - 데이터 해석 규칙
+      - analysis-d01616805eb5bcb3
+      - analysis:page-d0161680
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-d01616805eb5bcb3
+  - key: analysis:page-f5a31368
+    type: analysis
+    labels:
+      ko: 기계가 계산한다는 말의 이론적 의미
+    aliases:
+      - 기계가 계산한다는 말의 이론적 의미
+      - meaning of machine computation
+      - 계산의 이론적 의미
+      - 기계 계산
+      - analysis-f5a313683050649e
+      - analysis:page-f5a31368
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-f5a313683050649e
+  - key: analysis:page-f8223547
+    type: analysis
+    labels:
+      ko: 컴퓨팅 능력의 발달사
+    aliases:
+      - 컴퓨팅 능력의 발달사
+      - History of computing capability
+      - 컴퓨팅 성능의 발전사
+      - 계산 능력의 역사
+      - analysis-f822354704bc38bb
+      - analysis:page-f8223547
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-f822354704bc38bb
+  - key: analysis:page-fc1fa74e
+    type: analysis
+    labels:
+      ko: goto와 점프에서 구조적 프로그래밍으로
+    aliases:
+      - goto와 점프에서 구조적 프로그래밍으로
+      - goto/점프에서 구조적 프로그래밍으로
+      - jump to structured programming
+      - goto에서 구조적 프로그래밍으로
+      - analysis-fc1fa74eef57ee33
+      - analysis:page-fc1fa74e
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-fc1fa74eef57ee33
+  - key: analysis:power-wall-performance
+    type: analysis
+    labels:
+      ko: 전력 장벽은 성능 향상의 의미를 어떻게 바꾸었는가
+    aliases:
+      - 전력 장벽은 성능 향상의 의미를 어떻게 바꾸었는가
+      - 전력 장벽 이후의 컴퓨팅 능력
+      - Power wall and computing capability
+      - 에너지 효율과 활성 면적의 역사
+      - analysis-353b4b2d38841a24
+      - analysis:page-353b4b2d
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: analysis-353b4b2d38841a24
+  - key: analysis:representation-placement-contract
+    type: analysis
+    labels:
+      ko: 표현·배치·계약은 어떻게 컴퓨팅 능력을 만드는가
+    aliases:
+      - 표현·배치·계약은 어떻게 컴퓨팅 능력을 만드는가
+      - 컴퓨팅 능력의 세 경계
+      - 표현 배치 계약
+      - representation placement contract
+      - analysis-representation-placement-contract
+      - analysis:representation-placement-contract
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: analysis-representation-placement-contract
+  - key: analysis:reproducible-build-boundary
+    type: analysis
+    labels:
+      ko: 재현 가능한 빌드는 무엇을 같게 만드는가
+    aliases:
+      - 재현 가능한 빌드는 무엇을 같게 만드는가
+      - what reproducible builds make identical
+      - 재현 가능한 빌드 경계 분석
+      - analysis-reproducible-build-boundary
+      - analysis:reproducible-build-boundary
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: analysis-reproducible-build-boundary
+  - key: analysis:retry-amplification-and-control
+    type: analysis
+    labels:
+      ko: 재시도는 실패를 줄이면서 부하를 어디로 옮기는가
+    aliases:
+      - 재시도는 실패를 줄이면서 부하를 어디로 옮기는가
+      - Retry amplification and control
+      - retry amplification analysis
+      - 재시도 폭풍과 부하 제어
+      - analysis-retry-amplification-and-control
+      - analysis:retry-amplification-and-control
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-retry-amplification-and-control
+  - key: analysis:runtime-contract
+    type: analysis
+    labels:
+      ko: runtime contract는 무엇을 보장해야 하는가
+    aliases:
+      - runtime contract는 무엇을 보장해야 하는가
+      - runtime contract analysis
+      - 실행 계약 분석
+      - analysis-runtime-contract
+      - analysis:runtime-contract
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-runtime-contract
+  - key: analysis:service-speed-vs-availability
+    type: analysis
+    labels:
+      ko: 빠른 서비스는 왜 가용한 서비스를 보장하지 않는가
+    aliases:
+      - 빠른 서비스는 왜 가용한 서비스를 보장하지 않는가
+      - 서비스 속도와 가용성
+      - 성능과 복구의 구분
+      - 빠른 응답과 장애 회복
+      - analysis-service-speed-vs-availability
+      - analysis:service-speed-vs-availability
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-service-speed-vs-availability
+  - key: analysis:source-semantics-accelerator-performance
+    type: analysis
+    labels:
+      ko: 한 소스의 의미와 성능은 가속기로 어떻게 번역되는가
+    aliases:
+      - 한 소스의 의미와 성능은 가속기로 어떻게 번역되는가
+      - 소스 의미와 가속기 성능
+      - source semantics accelerator performance
+      - heterogeneous compilation analysis
+      - analysis-source-semantics-accelerator-performance
+      - analysis:source-semantics-accelerator-performance
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-source-semantics-accelerator-performance
+  - key: analysis:specialized-vs-general-pendulum
+    type: analysis
+    labels:
+      ko: 전용 연산기와 범용 제어기의 진자 운동
+    aliases:
+      - 전용 연산기와 범용 제어기의 진자 운동
+      - 전용 연산기와 범용 제어기
+      - 특화와 범용의 진자 운동
+      - The Pendulum of Specialization and Generalization
+      - AI 하드웨어와 CPU의 재부각
+      - analysis-specialized-vs-general-pendulum
+      - analysis:specialized-vs-general-pendulum
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-specialized-vs-general-pendulum
+  - key: analysis:stablehlo-mlir-abi-boundary
+    type: analysis
+    labels:
+      ko: 표현·IR·ABI 경계는 무엇을 보존하는가
+    aliases:
+      - 표현·IR·ABI 경계는 무엇을 보존하는가
+      - StableHLO MLIR ABI boundary analysis
+      - compiler boundary preservation
+      - analysis-stablehlo-mlir-abi-boundary
+      - analysis:stablehlo-mlir-abi-boundary
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: analysis-stablehlo-mlir-abi-boundary
+  - key: analysis:stored-results-to-executable-procedures
+    type: analysis
+    labels:
+      ko: 계산 결과에서 실행 가능한 절차로
+    aliases:
+      - 계산 결과에서 실행 가능한 절차로
+      - 결과 재사용과 절차 재사용
+      - 저장과 재사용의 단위
+      - From stored results to executable procedures
+      - stored-results-to-executable-procedures
+      - analysis:stored-results-to-executable-procedures
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: stored-results-to-executable-procedures
+  - key: analysis:symbols-from-aid-to-computation-engine
+    type: analysis
+    labels:
+      ko: 기호는 어떻게 생각의 보조 도구에서 계산 엔진이 되었는가
+    aliases:
+      - 기호는 어떻게 생각의 보조 도구에서 계산 엔진이 되었는가
+      - 생각의 보조 도구에서 계산 엔진으로
+      - 맹목적 기호 조작의 계보
+      - symbols as computation engine
+      - 맹목적 사고의 400년사
+      - analysis-symbols-from-aid-to-computation-engine
+      - analysis:symbols-from-aid-to-computation-engine
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-symbols-from-aid-to-computation-engine
+  - key: analysis:token-rate-service-capability
+    type: analysis
+    labels:
+      ko: 초당 토큰 수는 왜 LLM 서비스 능력을 설명하지 못하는가
+    aliases:
+      - 초당 토큰 수는 왜 LLM 서비스 능력을 설명하지 못하는가
+      - tokens per second is not enough
+      - LLM 토큰 처리량의 한계
+      - 토큰률과 LLM 서비스 능력
+      - analysis-token-rate-service-capability
+      - analysis:token-rate-service-capability
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-token-rate-service-capability
+  - key: analysis:transaction-ordering-guarantees
+    type: analysis
+    labels:
+      ko: 트랜잭션 시스템은 어떤 순서 보장을 제공하는가
+    aliases:
+      - 트랜잭션 시스템은 어떤 순서 보장을 제공하는가
+      - Transaction ordering guarantees
+      - serializability linearizability external consistency
+      - 트랜잭션 순서 보장
+      - analysis-transaction-ordering-guarantees
+      - analysis:transaction-ordering-guarantees
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-transaction-ordering-guarantees
+  - key: analysis:transformer-io-bottleneck
+    type: analysis
+    labels:
+      ko: Transformer 추론은 왜 연산량만으로 설명되지 않는가
+    aliases:
+      - Transformer 추론은 왜 연산량만으로 설명되지 않는가
+      - Transformer IO 병목
+      - Transformer inference beyond FLOPs
+      - 어텐션 메모리 병목
+      - analysis-transformer-io-bottleneck
+      - analysis:transformer-io-bottleneck
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-transformer-io-bottleneck
+  - key: concept:adequality
+    type: concept
+    labels:
+      ko: 의사의법
+    aliases:
+      - 의사의법
+      - adequality
+      - adæqualitas
+      - 의사의
+      - 페르마의 접선법
+      - concept-adequality
+      - concept:adequality
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-adequality
+  - key: concept:ai-coding-assistance
+    type: concept
+    labels:
+      ko: AI 코딩 지원
+    aliases:
+      - AI 코딩 지원
+      - AI coding assistance
+      - AI pair programming
+      - 생성형 AI 코딩 도구
+      - 코드 생성 지원
+      - concept-ai-coding-assistance
+      - concept:ai-coding-assistance
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-ai-coding-assistance
+  - key: concept:ai-computing-bottlenecks
+    type: concept
+    labels:
+      ko: AI 컴퓨팅 병목
+    aliases:
+      - AI 컴퓨팅 병목
+      - AI bottlenecks
+      - 인공지능 컴퓨팅 병목
+      - concept-ai-computing-bottlenecks
+      - concept:ai-computing-bottlenecks
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: concept-ai-computing-bottlenecks
+  - key: concept:algorithm-schedule-separation
+    type: concept
+    labels:
+      ko: 알고리즘과 스케줄 분리
+    aliases:
+      - 알고리즘과 스케줄 분리
+      - Algorithm schedule separation
+      - compute schedule separation
+      - 계산과 스케줄 분리
+      - concept-algorithm-schedule-separation
+      - concept:algorithm-schedule-separation
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-algorithm-schedule-separation
+  - key: concept:analytic-geometry
+    type: concept
+    labels:
+      ko: 해석기하학
+    aliases:
+      - 해석기하학
+      - analytic geometry
+      - coordinate geometry
+      - 좌표기하학
+      - 카테시안 기하학
+      - concept-analytic-geometry
+      - concept:analytic-geometry
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-analytic-geometry
+  - key: concept:aslr
+    type: concept
+    labels:
+      ko: ASLR (Address Space Layout Randomization)
+    aliases:
+      - ASLR (Address Space Layout Randomization)
+      - 주소 공간 배치 무작위화
+      - Address Space Layout Randomization
+      - aslr
+      - ASLR
+      - concept:aslr
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: aslr
+  - key: concept:automation-boundary
+    type: concept
+    labels:
+      ko: 자동화 경계
+    aliases:
+      - 자동화 경계
+      - automation boundary
+      - 자동화의 책임 경계
+      - 인간-도구 분업
+      - concept-automation-boundary
+      - concept:automation-boundary
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-automation-boundary
+  - key: concept:availability-recovery
+    type: concept
+    labels:
+      ko: 가용성과 복구
+    aliases:
+      - 가용성과 복구
+      - availability and recovery
+      - 가용성
+      - 복구 시간
+      - MTTR
+      - concept-availability-recovery
+      - concept:availability-recovery
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: concept-availability-recovery
+  - key: concept:benchmark-contract
+    type: concept
+    labels:
+      ko: 벤치마크 계약
+    aliases:
+      - 벤치마크 계약
+      - benchmark contract
+      - measurement contract
+      - 성능 비교 계약
+      - 비교 가능한 측정
+      - concept-benchmark-contract
+      - concept:benchmark-contract
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-benchmark-contract
+  - key: concept:byzantine-fault
+    type: concept
+    labels:
+      ko: 비잔틴 장애
+    aliases:
+      - 비잔틴 장애
+      - Byzantine fault
+      - Byzantine failure
+      - 임의 장애
+      - concept-byzantine-fault
+      - concept:byzantine-fault
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-byzantine-fault
+  - key: concept:calculation-checking
+    type: concept
+    labels:
+      ko: 검산
+    aliases:
+      - 검산
+      - Calculation checking
+      - independent recalculation
+      - 계산 확인
+      - calculation-checking
+      - concept:calculation-checking
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: calculation-checking
+  - key: concept:cap-theorem
+    type: concept
+    labels:
+      ko: CAP 정리
+    aliases:
+      - CAP 정리
+      - CAP theorem
+      - CAP
+      - Brewer 정리
+      - 일관성 가용성 분할 허용성
+      - concept-cap-theorem
+      - concept:cap-theorem
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-cap-theorem
+  - key: concept:characteristica-calculus
+    type: concept
+    labels:
+      ko: 보편 기호법과 사유의 계산
+    aliases:
+      - 보편 기호법과 사유의 계산
+      - Characteristica Universalis and Calculus Ratiocinator
+      - 보편기호법
+      - 사유의 계산
+      - Calculemus
+      - concept-characteristica-calculus
+      - concept:characteristica-calculus
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-characteristica-calculus
+  - key: concept:chinese-room-syntax-semantics
+    type: concept
+    labels:
+      ko: 중국어 방과 구문-의미 간극
+    aliases:
+      - 중국어 방과 구문-의미 간극
+      - Chinese Room
+      - 중국어 방
+      - 구문론과 의미론
+      - Syntax vs Semantics
+      - 기호 착지 문제
+      - concept-chinese-room-syntax-semantics
+      - concept:chinese-room-syntax-semantics
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: concept-chinese-room-syntax-semantics
+  - key: concept:cogitatio-caeca
+    type: concept
+    labels:
+      ko: 맹목적 사고와 기호적 인식
+    aliases:
+      - 맹목적 사고와 기호적 인식
+      - Cogitatio Caeca
+      - 맹목적 사고
+      - 기호적 인식
+      - Symbolic Cognition
+      - blind thought
+      - concept-cogitatio-caeca
+      - concept:cogitatio-caeca
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: concept-cogitatio-caeca
+  - key: concept:compiler
+    type: concept
+    labels:
+      ko: 컴파일러
+    aliases:
+      - 컴파일러
+      - Compiler
+      - translator
+      - 번역기
+      - compilation
+      - concept-8d4656f333ec153d
+      - concept:page-8d4656f3
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: concept-8d4656f333ec153d
+  - key: concept:computability
+    type: concept
+    labels:
+      ko: 계산 가능성
+    aliases:
+      - 계산 가능성
+      - Computability
+      - computable
+      - effective calculability
+      - 계산 가능
+      - concept-01f775b8a307802f
+      - concept:page-01f775b8
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: concept-01f775b8a307802f
+  - key: concept:computation-communication-overlap
+    type: concept
+    labels:
+      ko: 계산-통신 중첩
+    aliases:
+      - 계산-통신 중첩
+      - computation-communication overlap
+      - 통신 은닉
+      - concept-computation-communication-overlap
+      - concept:computation-communication-overlap
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-computation-communication-overlap
+  - key: concept:computational-artificial-life
+    type: concept
+    labels:
+      ko: 계산적 인공생명
+    aliases:
+      - 계산적 인공생명
+      - 계산적 생명
+      - BFF soup
+      - Brainfuck soup
+      - 원시 수프 실험
+      - concept-computational-artificial-life
+      - concept:computational-artificial-life
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-computational-artificial-life
+  - key: concept:computational-complexity
+    type: concept
+    labels:
+      ko: 계산 복잡도
+    aliases:
+      - 계산 복잡도
+      - computational complexity
+      - 알고리즘 복잡도
+      - 시간 복잡도
+      - concept-computational-complexity
+      - concept:computational-complexity
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: concept-computational-complexity
+  - key: concept:computing-capability
+    type: concept
+    labels:
+      ko: 컴퓨팅 능력이란 무엇인가
+    aliases:
+      - 컴퓨팅 능력이란 무엇인가
+      - 컴퓨팅 능력
+      - Computing capability
+      - computational capability
+      - computing power
+      - 계산 능력
+      - computing-capability
+      - concept:computing-capability
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: computing-capability
+  - key: concept:concurrency
+    type: concept
+    labels:
+      ko: 동시성
+    aliases:
+      - 동시성
+      - Concurrency
+      - concurrent execution
+      - concurrent programming
+      - 동시 실행
+      - concept-concurrency
+      - concept:concurrency
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: concept-concurrency
+  - key: concept:continuous-batching
+    type: concept
+    labels:
+      ko: 연속 배칭
+    aliases:
+      - 연속 배칭
+      - continuous batching
+      - iteration-level batching
+      - iteration-level scheduling
+      - 지속적 배칭
+      - concept-continuous-batching
+      - concept:continuous-batching
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: concept-continuous-batching
+  - key: concept:dependency-provenance
+    type: concept
+    labels:
+      ko: dependency provenance와 registry identity
+    aliases:
+      - dependency provenance와 registry identity
+      - dependency provenance
+      - package provenance
+      - 의존성 provenance와 registry identity
+      - concept-dependency-provenance
+      - concept:dependency-provenance
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: concept-dependency-provenance
+  - key: concept:developer-productivity
+    type: concept
+    labels:
+      ko: 개발자 생산성
+    aliases:
+      - 개발자 생산성
+      - developer productivity
+      - software developer productivity
+      - 개발 생산성
+      - concept-developer-productivity
+      - concept:developer-productivity
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: concept-developer-productivity
+  - key: concept:distributed-file-system
+    type: concept
+    labels:
+      ko: 분산 파일 시스템
+    aliases:
+      - 분산 파일 시스템
+      - Distributed File System
+      - DFS
+      - 분산 파일 저장소
+      - 원격 파일 시스템
+      - concept-distributed-file-system
+      - concept:distributed-file-system
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-distributed-file-system
+  - key: concept:domain-specific-accelerator
+    type: concept
+    labels:
+      ko: 도메인 특화 가속기
+    aliases:
+      - 도메인 특화 가속기
+      - Domain-specific accelerator
+      - DSA
+      - 도메인 전용 가속기
+      - 특화 가속기
+      - concept-dc2142ecaccdc1e9
+      - concept:page-dc2142ec
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: concept-dc2142ecaccdc1e9
+  - key: concept:end-to-end-principle
+    type: concept
+    labels:
+      ko: 종단 간 원칙
+    aliases:
+      - 종단 간 원칙
+      - End-to-End Principle
+      - End-to-End Argument
+      - E2E 원칙
+      - 종단간 원칙
+      - concept-end-to-end-principle
+      - concept:end-to-end-principle
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-end-to-end-principle
+  - key: concept:energy-proportional-computing
+    type: concept
+    labels:
+      ko: 에너지 비례 컴퓨팅
+    aliases:
+      - 에너지 비례 컴퓨팅
+      - Energy-proportional computing
+      - 에너지 비례성
+      - 전력 비례 컴퓨팅
+      - concept-494620a1e7c73b24
+      - concept:page-494620a1
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: concept-494620a1e7c73b24
+  - key: concept:essential-accidental-complexity
+    type: concept
+    labels:
+      ko: 본질적 복잡성과 부수적 복잡성
+    aliases:
+      - 본질적 복잡성과 부수적 복잡성
+      - essential and accidental complexity
+      - essential complexity
+      - accidental complexity
+      - 본질과 부수성
+      - concept-essential-accidental-complexity
+      - concept:essential-accidental-complexity
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-essential-accidental-complexity
+  - key: concept:external-consistency-time-uncertainty
+    type: concept
+    labels:
+      ko: 외부 일관성과 시간 불확실성
+    aliases:
+      - 외부 일관성과 시간 불확실성
+      - external consistency and time uncertainty
+      - 외부 일관성
+      - TrueTime
+      - commit wait
+      - concept-external-consistency-time-uncertainty
+      - concept:external-consistency-time-uncertainty
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-external-consistency-time-uncertainty
+  - key: concept:failure-detection
+    type: concept
+    labels:
+      ko: 장애 감지
+    aliases:
+      - 장애 감지
+      - Failure detection
+      - failure detector
+      - failure suspicion
+      - 장애 탐지
+      - concept-failure-detection
+      - concept:failure-detection
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: concept-failure-detection
+  - key: concept:fault-tolerance
+    type: concept
+    labels:
+      ko: 결함 허용
+    aliases:
+      - 결함 허용
+      - fault tolerance
+      - 장애 허용
+      - 결함 내성
+      - concept-fault-tolerance
+      - concept:fault-tolerance
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: concept-fault-tolerance
+  - key: concept:framebuffer-memory-mapping
+    type: concept
+    labels:
+      ko: 프레임버퍼 메모리 사상
+    aliases:
+      - 프레임버퍼 메모리 사상
+      - Framebuffer Memory Mapping
+      - 프레임버퍼 주소 변환
+      - 선형 프레임버퍼 사상
+      - concept-framebuffer-memory-mapping
+      - concept:framebuffer-memory-mapping
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-framebuffer-memory-mapping
+  - key: concept:hardware-execution-model
+    type: concept
+    labels:
+      ko: 하드웨어 실행 모델
+    aliases:
+      - 하드웨어 실행 모델
+      - Hardware execution model
+      - 기계 실행 모델
+      - hardware execution architecture
+      - concept-e83f2a1b94d76c01
+      - concept:page-e83f2a1b
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: concept-e83f2a1b94d76c01
+  - key: concept:heterogeneous-execution-model
+    type: concept
+    labels:
+      ko: 이기종 실행 모델
+    aliases:
+      - 이기종 실행 모델
+      - Heterogeneous execution model
+      - heterogeneous runtime model
+      - 이기종 런타임 모델
+      - concept-heterogeneous-execution-model
+      - concept:heterogeneous-execution-model
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-heterogeneous-execution-model
+  - key: concept:human-computers
+    type: concept
+    labels:
+      ko: 인간 계산자
+    aliases:
+      - 인간 계산자
+      - Human computer
+      - human calculator
+      - 사람 컴퓨터
+      - human-computers
+      - concept:human-computers
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: human-computers
+  - key: concept:idempotency
+    type: concept
+    labels:
+      ko: 멱등성
+    aliases:
+      - 멱등성
+      - Idempotency
+      - idempotent operation
+      - idempotency key
+      - 멱등성 키
+      - concept-idempotency
+      - concept:idempotency
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: concept-idempotency
+  - key: concept:input-validation
+    type: concept
+    labels:
+      ko: 입력 검증
+    aliases:
+      - 입력 검증
+      - input validation
+      - 입력 유효성 검사
+      - allowlist validation
+      - 입력 계약
+      - concept-input-validation
+      - concept:input-validation
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: concept-input-validation
+  - key: concept:intermediate-representation
+    type: concept
+    labels:
+      ko: 중간 표현
+    aliases:
+      - 중간 표현
+      - Intermediate representation
+      - IR
+      - intermediate code
+      - 중간 코드
+      - concept-intermediate-representation
+      - concept:intermediate-representation
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-intermediate-representation
+  - key: concept:io-aware-attention
+    type: concept
+    labels:
+      ko: 입출력 인지 어텐션
+    aliases:
+      - 입출력 인지 어텐션
+      - IO-aware attention
+      - I/O-aware attention
+      - IO 인지 어텐션
+      - concept-io-aware-attention
+      - concept:io-aware-attention
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: concept-io-aware-attention
+  - key: concept:kv-cache
+    type: concept
+    labels:
+      ko: KV 캐시
+    aliases:
+      - KV 캐시
+      - KV cache
+      - key-value cache
+      - 키-값 캐시
+      - 어텐션 KV 캐시
+      - concept-kv-cache
+      - concept:kv-cache
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: concept-kv-cache
+  - key: concept:landauer-principle
+    type: concept
+    labels:
+      ko: 란다우어 원리
+    aliases:
+      - 란다우어 원리
+      - Landauer's principle
+      - 란다우어의 원리
+      - Landauer limit
+      - concept-landauer-principle
+      - concept:landauer-principle
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-landauer-principle
+  - key: concept:library
+    type: concept
+    labels:
+      ko: 라이브러리
+    aliases:
+      - 라이브러리
+      - Library
+      - 서브루틴 라이브러리
+      - 코드 라이브러리
+      - concept-464cd2bb0d306cc3
+      - concept:page-464cd2bb
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: concept-464cd2bb0d306cc3
+  - key: concept:lifecycle-assessment-boundary
+    type: concept
+    labels:
+      ko: 수명 주기 평가 경계
+    aliases:
+      - 수명 주기 평가 경계
+      - life-cycle assessment boundary
+      - LCA boundary
+      - 생애주기 회계 경계
+      - concept-lifecycle-assessment-boundary
+      - concept:lifecycle-assessment-boundary
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-lifecycle-assessment-boundary
+  - key: concept:linearizability
+    type: concept
+    labels:
+      ko: 선형화 가능성
+    aliases:
+      - 선형화 가능성
+      - Linearizability
+      - atomic consistency
+      - 객체 선형화
+      - linearizable object
+      - concept-linearizability
+      - concept:linearizability
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-linearizability
+  - key: concept:littles-law
+    type: concept
+    labels:
+      ko: 리틀의 법칙
+    aliases:
+      - 리틀의 법칙
+      - Little's Law
+      - Little 법칙
+      - L = λW
+      - 대기열 유량 법칙
+      - concept-littles-law
+      - concept:littles-law
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-littles-law
+  - key: concept:llm-inference-energy-metrics
+    type: concept
+    labels:
+      ko: LLM 추론 에너지 지표
+    aliases:
+      - LLM 추론 에너지 지표
+      - LLM inference energy metrics
+      - LLM energy per token
+      - LLM 요청당 에너지
+      - LLM 추론 전력 지표
+      - concept-llm-inference-energy-metrics
+      - concept:llm-inference-energy-metrics
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: concept-llm-inference-energy-metrics
+  - key: concept:llm-inference-service-metrics
+    type: concept
+    labels:
+      ko: LLM 추론 서비스 지표
+    aliases:
+      - LLM 추론 서비스 지표
+      - LLM inference service metrics
+      - LLM serving metrics
+      - TTFT와 TPOT
+      - LLM goodput
+      - LLM 서비스 성능 지표
+      - concept-llm-inference-service-metrics
+      - concept:llm-inference-service-metrics
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: concept-llm-inference-service-metrics
+  - key: concept:llm-weight-quantization
+    type: concept
+    labels:
+      ko: LLM 가중치 양자화
+    aliases:
+      - LLM 가중치 양자화
+      - LLM weight quantization
+      - weight-only quantization
+      - LLM PTQ
+      - 저비트 LLM 가중치
+      - concept-llm-weight-quantization
+      - concept:llm-weight-quantization
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: concept-llm-weight-quantization
+  - key: concept:mathematical-tables
+    type: concept
+    labels:
+      ko: 수학 표
+    aliases:
+      - 수학 표
+      - Mathematical tables
+      - 계산표
+      - mathematical-tables
+      - concept:mathematical-tables
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: mathematical-tables
+  - key: concept:memory-movement-bottleneck-shift
+    type: concept
+    labels:
+      ko: 메모리 이동과 병목 이동
+    aliases:
+      - 메모리 이동과 병목 이동
+      - memory movement
+      - bottleneck shifting
+      - concept-memory-movement-bottleneck-shift
+      - concept:memory-movement-bottleneck-shift
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-memory-movement-bottleneck-shift
+  - key: concept:memory-wall
+    type: concept
+    labels:
+      ko: 메모리 장벽
+    aliases:
+      - 메모리 장벽
+      - Memory wall
+      - 메모리 월
+      - processor-memory performance gap
+      - concept-df7e932b999f444f
+      - concept:page-df7e932b
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: concept-df7e932b999f444f
+  - key: concept:mixed-precision
+    type: concept
+    labels:
+      ko: 혼합 정밀도
+    aliases:
+      - 혼합 정밀도
+      - mixed precision
+      - mixed-precision training
+      - concept-mixed-precision
+      - concept:mixed-precision
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: concept-mixed-precision
+  - key: concept:mutual-exclusion-synchronization
+    type: concept
+    labels:
+      ko: 상호 배제와 동기화
+    aliases:
+      - 상호 배제와 동기화
+      - mutual exclusion and synchronization
+      - 상호배제
+      - synchronization
+      - 임계 구역
+      - concept-mutual-exclusion-synchronization
+      - concept:mutual-exclusion-synchronization
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-mutual-exclusion-synchronization
+  - key: concept:np-completeness
+    type: concept
+    labels:
+      ko: NP-완전
+    aliases:
+      - NP-완전
+      - NP-complete
+      - NP 완전성
+      - NP complete
+      - concept-np-completeness
+      - concept:np-completeness
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-np-completeness
+  - key: concept:operational-embodied-carbon
+    type: concept
+    labels:
+      ko: 운영 탄소와 내재 탄소
+    aliases:
+      - 운영 탄소와 내재 탄소
+      - operational and embodied carbon
+      - 사용·제조 탄소
+      - 운영 배출과 제조 배출
+      - concept-operational-embodied-carbon
+      - concept:operational-embodied-carbon
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-operational-embodied-carbon
+  - key: concept:page-00b55ff0
+    type: concept
+    labels:
+      ko: EDSAC
+    aliases:
+      - EDSAC
+      - Electronic Delay Storage Automatic Calculator
+      - concept-00b55ff0f7a3581b
+      - concept:page-00b55ff0
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-00b55ff0f7a3581b
+  - key: concept:page-092a889f
+    type: concept
+    labels:
+      ko: Unix
+    aliases:
+      - Unix
+      - UNIX
+      - 유닉스
+      - concept-092a889f122121cb
+      - concept:page-092a889f
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-092a889f122121cb
+  - key: concept:page-0939ab24
+    type: concept
+    labels:
+      ko: 메모리 안전성
+    aliases:
+      - 메모리 안전성
+      - Memory Safety
+      - 메모리 보안
+      - memory safety
+      - concept-0939ab2408573c58
+      - concept:page-0939ab24
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-0939ab2408573c58
+  - key: concept:page-099497b9
+    type: concept
+    labels:
+      ko: 정보 은닉
+    aliases:
+      - 정보 은닉
+      - Information Hiding
+      - 정보 감춤
+      - 구현 은닉
+      - concept-099497b965b35d3a
+      - concept:page-099497b9
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-099497b965b35d3a
+  - key: concept:page-0b68e8bc
+    type: concept
+    labels:
+      ko: 무어의 법칙
+    aliases:
+      - 무어의 법칙
+      - Moore's law
+      - 무어 법칙
+      - 집적도 증가 법칙
+      - concept-0b68e8bcd6a95a79
+      - concept:page-0b68e8bc
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-0b68e8bcd6a95a79
+  - key: concept:page-0d04f3f7
+    type: concept
+    labels:
+      ko: 릴레이 회로
+    aliases:
+      - 릴레이 회로
+      - Relay Circuit
+      - relay contact
+      - 릴레이 접점
+      - concept-0d04f3f7f3648be5
+      - concept:page-0d04f3f7
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-0d04f3f7f3648be5
+  - key: concept:page-0fdf8f46
+    type: concept
+    labels:
+      ko: Koomey의 법칙
+    aliases:
+      - Koomey의 법칙
+      - Koomey's law
+      - 쿠미의 법칙
+      - 계산 에너지 효율 추세
+      - computations per joule trend
+      - concept-0fdf8f46e0e7b677
+      - concept:page-0fdf8f46
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-0fdf8f46e0e7b677
+  - key: concept:page-141883d0
+    type: concept
+    labels:
+      ko: 시스템 프로그래밍
+    aliases:
+      - 시스템 프로그래밍
+      - Systems programming
+      - system programming
+      - concept-141883d0f8048c7e
+      - concept:page-141883d0
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-141883d0f8048c7e
+  - key: concept:page-145622bc
+    type: concept
+    labels:
+      ko: Entscheidungsproblem
+    aliases:
+      - Entscheidungsproblem
+      - 결정 문제
+      - decision problem
+      - Hilbert's Entscheidungsproblem
+      - 힐베르트 결정 문제
+      - concept-145622bcdc913103
+      - concept:page-145622bc
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-145622bcdc913103
+  - key: concept:page-16d053e6
+    type: concept
+    labels:
+      ko: 라이브러리 카탈로그
+    aliases:
+      - 라이브러리 카탈로그
+      - Library Catalog
+      - library catalogue
+      - 서브루틴 카탈로그
+      - API 문서
+      - concept-16d053e669459261
+      - concept:page-16d053e6
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-16d053e669459261
+  - key: concept:page-18a0ce43
+    type: concept
+    labels:
+      ko: PDP-11
+    aliases:
+      - PDP-11
+      - DEC PDP-11
+      - PDP-11/40
+      - PDP-11/45
+      - concept-18a0ce4363c25093
+      - concept:page-18a0ce43
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-18a0ce4363c25093
+  - key: concept:page-1bbfe009
+    type: concept
+    labels:
+      ko: 자동 프로그래밍
+    aliases:
+      - 자동 프로그래밍
+      - Automatic Programming
+      - 자동 프로그래밍 시스템
+      - conversion routine
+      - 변환 루틴
+      - concept-1bbfe00922d38ab1
+      - concept:page-1bbfe009
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-1bbfe00922d38ab1
+  - key: concept:page-2397a193
+    type: concept
+    labels:
+      ko: Wheeler Jump
+    aliases:
+      - Wheeler Jump
+      - 휠러 점프
+      - Wheeler jump
+      - concept-2397a193cf79979b
+      - concept:page-2397a193
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-2397a193cf79979b
+  - key: concept:page-26360c8b
+    type: concept
+    labels:
+      ko: 프로그래밍 언어
+    aliases:
+      - 프로그래밍 언어
+      - Programming Language
+      - 프로그래밍 언어 설계
+      - 고급 프로그래밍 언어
+      - concept-26360c8b4141acb4
+      - concept:page-26360c8b
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-26360c8b4141acb4
+  - key: concept:page-29139463
+    type: concept
+    labels:
+      ko: 그래핌 클러스터
+    aliases:
+      - 그래핌 클러스터
+      - Grapheme Cluster
+      - Extended Grapheme Cluster
+      - 사용자 지각 문자
+      - concept-2913946302b96786
+      - concept:page-29139463
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-2913946302b96786
+  - key: concept:page-2a99ca9c
+    type: concept
+    labels:
+      ko: IBM 704
+    aliases:
+      - IBM 704
+      - IBM 704 EDPM
+      - "704"
+      - concept-2a99ca9c01ed5ad8
+      - concept:page-2a99ca9c
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-2a99ca9c01ed5ad8
+  - key: concept:page-2ff6633d
+    type: concept
+    labels:
+      ko: API
+    aliases:
+      - API
+      - Application Programming Interface
+      - 응용 프로그래밍 인터페이스
+      - 인터페이스
+      - concept-2ff6633d43e61407
+      - concept:page-2ff6633d
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-2ff6633d43e61407
+  - key: concept:page-30fac639
+    type: concept
+    labels:
+      ko: Manchester Baby
+    aliases:
+      - Manchester Baby
+      - Small Scale Experimental Machine
+      - SSEM
+      - Baby
+      - 맨체스터 베이비
+      - concept-30fac639582288be
+      - concept:page-30fac639
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-30fac639582288be
+  - key: concept:page-325f29bd
+    type: concept
+    labels:
+      ko: 포스트모템 루틴
+    aliases:
+      - 포스트모템 루틴
+      - Post-mortem Routine
+      - post-mortem debugging
+      - 사후 분석 루틴
+      - 메모리 덤프
+      - concept-325f29bd4557260c
+      - concept:page-325f29bd
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-325f29bd4557260c
+  - key: concept:page-38dd11a2
+    type: concept
+    labels:
+      ko: 비트 연산
+    aliases:
+      - 비트 연산
+      - Bit Operation
+      - Bitwise Operation
+      - 비트 조작
+      - concept-38dd11a2bcc6049f
+      - concept:page-38dd11a2
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-38dd11a2bcc6049f
+  - key: concept:page-3b07c7d6
+    type: concept
+    labels:
+      ko: Dennard 스케일링
+    aliases:
+      - Dennard 스케일링
+      - Dennard scaling
+      - 데나드 스케일링
+      - 일정 전계 스케일링
+      - constant-field scaling
+      - concept-3b07c7d6f11aed09
+      - concept:page-3b07c7d6
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-3b07c7d6f11aed09
+  - key: concept:page-3d371068
+    type: concept
+    labels:
+      ko: C 문자열
+    aliases:
+      - C 문자열
+      - C string
+      - C-style string
+      - Null terminator
+      - 널 종단 문자열
+      - concept-3d371068dd880445
+      - concept:page-3d371068
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-3d371068dd880445
+  - key: concept:page-3e131394
+    type: concept
+    labels:
+      ko: 소스 프로그램
+    aliases:
+      - 소스 프로그램
+      - Source program
+      - source code
+      - 소스 코드
+      - concept-3e1313946067714a
+      - concept:page-3e131394
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-3e1313946067714a
+  - key: concept:page-432b4756
+    type: concept
+    labels:
+      ko: 소프트웨어 공학
+    aliases:
+      - 소프트웨어 공학
+      - Software Engineering
+      - 소프트웨어 엔지니어링
+      - concept-432b4756227c6ef2
+      - concept:page-432b4756
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-432b4756227c6ef2
+  - key: concept:page-46257ebe
+    type: concept
+    labels:
+      ko: 링커
+    aliases:
+      - 링커
+      - Linker
+      - linking
+      - 링킹
+      - concept-46257ebec8e7274c
+      - concept:page-46257ebe
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-46257ebec8e7274c
+  - key: concept:page-47ba75de
+    type: concept
+    labels:
+      ko: 복귀 주소
+    aliases:
+      - 복귀 주소
+      - Return address
+      - 반환 주소
+      - concept-47ba75def6a810da
+      - concept:page-47ba75de
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-47ba75def6a810da
+  - key: concept:page-496b0829
+    type: concept
+    labels:
+      ko: 유니코드
+    aliases:
+      - 유니코드
+      - Unicode
+      - concept-496b0829073c279a
+      - concept:page-496b0829
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-496b0829073c279a
+  - key: concept:page-4a63d3df
+    type: concept
+    labels:
+      ko: 자기 수정 코드
+    aliases:
+      - 자기 수정 코드
+      - Self-modifying code
+      - self modifying code
+      - concept-4a63d3dfa96ba65a
+      - concept:page-4a63d3df
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-4a63d3dfa96ba65a
+  - key: concept:page-4ac13a0d
+    type: concept
+    labels:
+      ko: EDVAC
+    aliases:
+      - EDVAC
+      - Electronic Discrete Variable Automatic Computer
+      - concept-4ac13a0d4fe8ec32
+      - concept:page-4ac13a0d
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-4ac13a0d4fe8ec32
+  - key: concept:page-4b367720
+    type: concept
+    labels:
+      ko: 해석 기관
+    aliases:
+      - 해석 기관
+      - Analytical Engine
+      - 배비지의 해석 기관
+      - concept-4b367720c4a42e5a
+      - concept:page-4b367720
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-4b367720c4a42e5a
+  - key: concept:page-5063ca2b
+    type: concept
+    labels:
+      ko: 이식성
+    aliases:
+      - 이식성
+      - Portability
+      - software portability
+      - 포터빌리티
+      - concept-5063ca2b2057b092
+      - concept:page-5063ca2b
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-5063ca2b2057b092
+  - key: concept:page-5163a003
+    type: concept
+    labels:
+      ko: 바이트 순서 표식
+    aliases:
+      - 바이트 순서 표식
+      - BOM
+      - Byte Order Mark
+      - byte order signature
+      - concept-5163a00379489f02
+      - concept:page-5163a003
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-5163a00379489f02
+  - key: concept:page-59604f53
+    type: concept
+    labels:
+      ko: 이진 덧셈 회로
+    aliases:
+      - 이진 덧셈 회로
+      - Binary Adder
+      - electric adder to the base two
+      - 이진 가산기
+      - concept-59604f5365047afb
+      - concept:page-59604f53
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-59604f5365047afb
+  - key: concept:page-5cd779ce
+    type: concept
+    labels:
+      ko: 유한 차분법
+    aliases:
+      - 유한 차분법
+      - Method of Finite Differences
+      - finite differences
+      - concept-5cd779cec1e9716b
+      - concept:page-5cd779ce
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-5cd779cec1e9716b
+  - key: concept:page-60bcdf34
+    type: concept
+    labels:
+      ko: GOTO 문
+    aliases:
+      - GOTO 문
+      - goto
+      - go to statement
+      - 점프 문
+      - 무조건 분기
+      - concept-60bcdf34d9470eea
+      - concept:page-60bcdf34
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-60bcdf34d9470eea
+  - key: concept:page-613958ec
+    type: concept
+    labels:
+      ko: 축소 명령어 집합 컴퓨터
+    aliases:
+      - 축소 명령어 집합 컴퓨터
+      - RISC
+      - Reduced instruction set computer
+      - 축소 명령어 집합
+      - 리스크
+      - concept-613958ec8891ac2d
+      - concept:page-613958ec
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-613958ec8891ac2d
+  - key: concept:page-676372e6
+    type: concept
+    labels:
+      ko: 보편 튜링 기계
+    aliases:
+      - 보편 튜링 기계
+      - Universal Turing Machine
+      - universal machine
+      - UTM
+      - 보편 기계
+      - concept-676372e6cb31537d
+      - concept:page-676372e6
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-676372e6cb31537d
+  - key: concept:page-6a0c16a9
+    type: concept
+    labels:
+      ko: ASCII
+    aliases:
+      - ASCII
+      - American Standard Code for Information Interchange
+      - 아스키
+      - concept-6a0c16a9841c87e8
+      - concept:page-6a0c16a9
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-6a0c16a9841c87e8
+  - key: concept:page-6aaebafb
+    type: concept
+    labels:
+      ko: 캐시 메모리
+    aliases:
+      - 캐시 메모리
+      - Cache memory
+      - 캐시
+      - CPU cache
+      - 기억장치 캐시
+      - concept-6aaebafb1aacc624
+      - concept:page-6aaebafb
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-6aaebafb1aacc624
+  - key: concept:page-6c282053
+    type: concept
+    labels:
+      ko: 인코딩 오류
+    aliases:
+      - 인코딩 오류
+      - Encoding Error
+      - mojibake
+      - 문자 깨짐
+      - replacement character
+      - concept-6c282053efbb112b
+      - concept:page-6c282053
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-6c282053efbb112b
+  - key: concept:page-723508cf
+    type: concept
+    labels:
+      ko: 단계적 정제
+    aliases:
+      - 단계적 정제
+      - Stepwise refinement
+      - step-wise program composition
+      - 단계적 프로그램 구성
+      - concept-723508cf4e8d30ee
+      - concept:page-723508cf
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-723508cf4e8d30ee
+  - key: concept:page-72af5ee2
+    type: concept
+    labels:
+      ko: Fortran
+    aliases:
+      - Fortran
+      - FORTRAN
+      - Formula Translation
+      - 포트란
+      - concept-72af5ee2350eff99
+      - concept:page-72af5ee2
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-72af5ee2350eff99
+  - key: concept:page-7c33e4cb
+    type: concept
+    labels:
+      ko: 파일 시스템
+    aliases:
+      - 파일 시스템
+      - File system
+      - filesystem
+      - concept-7c33e4cb9fd49f6c
+      - concept:page-7c33e4cb
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-7c33e4cb9fd49f6c
+  - key: concept:page-7cc49c18
+    type: concept
+    labels:
+      ko: 제어 구조
+    aliases:
+      - 제어 구조
+      - Control structure
+      - structured control
+      - 제어문
+      - concept-7cc49c1806726804
+      - concept:page-7cc49c18
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-7cc49c1806726804
+  - key: concept:page-7d1c4861
+    type: concept
+    labels:
+      ko: 폰 노이만 구조
+    aliases:
+      - 폰 노이만 구조
+      - Von Neumann Architecture
+      - von Neumann model
+      - Princeton architecture
+      - concept-7d1c4861fc9f4cd5
+      - concept:page-7d1c4861
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-7d1c4861fc9f4cd5
+  - key: concept:page-7fcb10cc
+    type: concept
+    labels:
+      ko: 다크 실리콘
+    aliases:
+      - 다크 실리콘
+      - Dark silicon
+      - 어두운 실리콘
+      - 비활성 실리콘
+      - transistor under-utilization
+      - concept-7fcb10ccbdb06070
+      - concept:page-7fcb10cc
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-7fcb10ccbdb06070
+  - key: concept:page-830fb720
+    type: concept
+    labels:
+      ko: 제어 흐름
+    aliases:
+      - 제어 흐름
+      - Control flow
+      - 실행 흐름
+      - control transfer
+      - concept-830fb7209f3c8247
+      - concept:page-830fb720
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-830fb7209f3c8247
+  - key: concept:page-83b76a04
+    type: concept
+    labels:
+      ko: 차분 기관
+    aliases:
+      - 차분 기관
+      - Difference Engine
+      - 배비지의 차분 기관
+      - concept-83b76a0498d798aa
+      - concept:page-83b76a04
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-83b76a0498d798aa
+  - key: concept:page-873d18c3
+    type: concept
+    labels:
+      ko: 부트스트랩
+    aliases:
+      - 부트스트랩
+      - Bootstrap
+      - bootstrapping
+      - 부트스트래핑
+      - concept-873d18c3be4404fb
+      - concept:page-873d18c3
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-873d18c3be4404fb
+  - key: concept:page-8ae81e59
+    type: concept
+    labels:
+      ko: 스위칭 회로
+    aliases:
+      - 스위칭 회로
+      - Switching Circuit
+      - switching network
+      - 스위치 회로
+      - concept-8ae81e59373c00f2
+      - concept:page-8ae81e59
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-8ae81e59373c00f2
+  - key: concept:page-8e6aa351
+    type: concept
+    labels:
+      ko: 구조화 프로그램 정리
+    aliases:
+      - 구조화 프로그램 정리
+      - Structured program theorem
+      - Böhm-Jacopini theorem
+      - Bohm-Jacopini theorem
+      - concept-8e6aa351d4e32f97
+      - concept:page-8e6aa351
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-8e6aa351d4e32f97
+  - key: concept:page-90428fe8
+    type: concept
+    labels:
+      ko: 이진법
+    aliases:
+      - 이진법
+      - Binary
+      - Binary Number System
+      - 2진법
+      - concept-90428fe85dfd3403
+      - concept:page-90428fe8
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-90428fe85dfd3403
+  - key: concept:page-918ae6f1
+    type: concept
+    labels:
+      ko: 불 대수
+    aliases:
+      - 불 대수
+      - Boolean Algebra
+      - Boolean logic
+      - 부울 대수
+      - Boolean
+      - concept-918ae6f1f0969df3
+      - concept:page-918ae6f1
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-918ae6f1f0969df3
+  - key: concept:page-9351a627
+    type: concept
+    labels:
+      ko: 유니코드 정규화
+    aliases:
+      - 유니코드 정규화
+      - Unicode Normalization
+      - NFC
+      - NFD
+      - NFKC
+      - NFKD
+      - concept-9351a6279b74d274
+      - concept:page-9351a627
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-9351a6279b74d274
+  - key: concept:page-93fca2ee
+    type: concept
+    labels:
+      ko: 데이터 표현
+    aliases:
+      - 데이터 표현
+      - Data Representation
+      - 자료 표현
+      - concept-93fca2ee9dac9fb6
+      - concept:page-93fca2ee
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-93fca2ee9dac9fb6
+  - key: concept:page-94134317
+    type: concept
+    labels:
+      ko: 로더
+    aliases:
+      - 로더
+      - Loader
+      - 프로그램 로더
+      - concept-941343176ad7e60c
+      - concept:page-94134317
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-941343176ad7e60c
+  - key: concept:page-9574348a
+    type: concept
+    labels:
+      ko: 코드 유닛
+    aliases:
+      - 코드 유닛
+      - Code Unit
+      - code unit sequence
+      - UTF code unit
+      - concept-9574348ae704d682
+      - concept:page-9574348a
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-9574348ae704d682
+  - key: concept:page-9ecf6d54
+    type: concept
+    labels:
+      ko: 정수 오버플로
+    aliases:
+      - 정수 오버플로
+      - Integer Overflow
+      - Overflow
+      - 래핑
+      - Wrapping
+      - concept-9ecf6d54b1e384b0
+      - concept:page-9ecf6d54
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-9ecf6d54b1e384b0
+  - key: concept:page-a1be87c0
+    type: concept
+    labels:
+      ko: 디버깅
+    aliases:
+      - 디버깅
+      - Debugging
+      - 오류 수정
+      - 프로그램 오류 추적
+      - concept-a1be87c0f839094f
+      - concept:page-a1be87c0
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-a1be87c0f839094f
+  - key: concept:page-a446fe7e
+    type: concept
+    labels:
+      ko: 인코딩
+    aliases:
+      - 인코딩
+      - Encoding
+      - 부호화
+      - concept-a446fe7ee6ca59f2
+      - concept:page-a446fe7e
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-a446fe7ee6ca59f2
+  - key: concept:page-b95bdd2d
+    type: concept
+    labels:
+      ko: 처치-튜링 논제
+    aliases:
+      - 처치-튜링 논제
+      - Church-Turing Thesis
+      - Church's thesis
+      - Turing thesis
+      - concept-b95bdd2d77f6f194
+      - concept:page-b95bdd2d
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-b95bdd2d77f6f194
+  - key: concept:page-be5e9654
+    type: concept
+    labels:
+      ko: Unicode scalar value
+    aliases:
+      - Unicode scalar value
+      - 유니코드 스칼라 값
+      - 스칼라 값
+      - scalar value
+      - concept-be5e965404a672d3
+      - concept:page-be5e9654
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-be5e965404a672d3
+  - key: concept:page-c297dc5b
+    type: concept
+    labels:
+      ko: 스택
+    aliases:
+      - 스택
+      - Stack
+      - 호출 스택
+      - call stack
+      - concept-c297dc5b421f48a3
+      - concept:page-c297dc5b
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-c297dc5b421f48a3
+  - key: concept:page-c617f209
+    type: concept
+    labels:
+      ko: 튜링 기계
+    aliases:
+      - 튜링 기계
+      - Turing Machine
+      - a-machine
+      - automatic machine
+      - computing machine
+      - concept-c617f2098bd57016
+      - concept:page-c617f209
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-c617f2098bd57016
+  - key: concept:page-c7e0c2c5
+    type: concept
+    labels:
+      ko: 운영체제
+    aliases:
+      - 운영체제
+      - Operating system
+      - OS
+      - 오에스
+      - concept-c7e0c2c53cb04fba
+      - concept:page-c7e0c2c5
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-c7e0c2c53cb04fba
+  - key: concept:page-c854e2f6
+    type: concept
+    labels:
+      ko: UTF-16
+    aliases:
+      - UTF-16
+      - Unicode Transformation Format 16-bit
+      - surrogate pair
+      - 서로게이트 페어
+      - concept-c854e2f6358212d1
+      - concept:page-c854e2f6
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-c854e2f6358212d1
+  - key: concept:page-c9c7cad9
+    type: concept
+    labels:
+      ko: 마이크로프로그래밍
+    aliases:
+      - 마이크로프로그래밍
+      - Microprogramming
+      - microcode
+      - 마이크로코드
+      - concept-c9c7cad93930dc6c
+      - concept:page-c9c7cad9
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-c9c7cad93930dc6c
+  - key: concept:page-cb68fc61
+    type: concept
+    labels:
+      ko: 동형이의 문자
+    aliases:
+      - 동형이의 문자
+      - Confusable
+      - Unicode confusable
+      - homoglyph
+      - 시각적 혼동 문자
+      - concept-cb68fc615e46376e
+      - concept:page-cb68fc61
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-cb68fc615e46376e
+  - key: concept:page-d2f65204
+    type: concept
+    labels:
+      ko: 목적 프로그램
+    aliases:
+      - 목적 프로그램
+      - Object program
+      - object code
+      - 목적 코드
+      - 출력 프로그램
+      - concept-d2f652046668c971
+      - concept:page-d2f65204
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-d2f652046668c971
+  - key: concept:page-d4fdbd19
+    type: concept
+    labels:
+      ko: 부동소수점 정확성
+    aliases:
+      - 부동소수점 정확성
+      - floating-point accuracy
+      - floating-point correctness
+      - 부동소수점 오차
+      - 수치 정확성
+      - concept-d4fdbd19616560c0
+      - concept:page-d4fdbd19
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-d4fdbd19616560c0
+  - key: concept:page-d61f7b46
+    type: concept
+    labels:
+      ko: 시스템 호출
+    aliases:
+      - 시스템 호출
+      - System call
+      - syscall
+      - 시스템 콜
+      - concept-d61f7b46dc608713
+      - concept:page-d61f7b46
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-d61f7b46dc608713
+  - key: concept:page-d679e8f4
+    type: concept
+    labels:
+      ko: 재배치
+    aliases:
+      - 재배치
+      - Relocation
+      - address relocation
+      - 주소 재배치
+      - concept-d679e8f4343f66ba
+      - concept:page-d679e8f4
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-d679e8f4343f66ba
+  - key: concept:page-d7da5df4
+    type: concept
+    labels:
+      ko: 비트와 바이트
+    aliases:
+      - 비트와 바이트
+      - Bit and Byte
+      - 비트
+      - 바이트
+      - Bit
+      - Byte
+      - concept-d7da5df4d36a970c
+      - concept:page-d7da5df4
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-d7da5df4d36a970c
+  - key: concept:page-d86dcb52
+    type: concept
+    labels:
+      ko: 유닉스 파이프
+    aliases:
+      - 유닉스 파이프
+      - Unix pipe
+      - pipe
+      - pipeline
+      - 파이프
+      - concept-d86dcb525d6a2843
+      - concept:page-d86dcb52
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-d86dcb525d6a2843
+  - key: concept:page-dc1573dc
+    type: concept
+    labels:
+      ko: 정지 문제
+    aliases:
+      - 정지 문제
+      - Halting Problem
+      - halting
+      - 멈춤 문제
+      - concept-dc1573dca7d35049
+      - concept:page-dc1573dc
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-dc1573dca7d35049
+  - key: concept:page-e2b63e63
+    type: concept
+    labels:
+      ko: 알고리즘적 사고
+    aliases:
+      - 알고리즘적 사고
+      - Algorithmic Thinking
+      - 절차적 사고
+      - concept-e2b63e6394d296b1
+      - concept:page-e2b63e63
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-e2b63e6394d296b1
+  - key: concept:page-e589f64b
+    type: concept
+    labels:
+      ko: 코드 포인트
+    aliases:
+      - 코드 포인트
+      - Code Point
+      - Unicode code point
+      - concept-e589f64b6639a460
+      - concept:page-e589f64b
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-e589f64b6639a460
+  - key: concept:page-eb050b34
+    type: concept
+    labels:
+      ko: 컴파일러 최적화
+    aliases:
+      - 컴파일러 최적화
+      - Compiler optimization
+      - optimizing compiler
+      - 최적화 컴파일러
+      - concept-eb050b34d56c0961
+      - concept:page-eb050b34
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-eb050b34d56c0961
+  - key: concept:page-ef0b337a
+    type: concept
+    labels:
+      ko: Initial Orders
+    aliases:
+      - Initial Orders
+      - 초기 명령
+      - EDSAC Initial Orders
+      - concept-ef0b337a520af324
+      - concept:page-ef0b337a
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-ef0b337a520af324
+  - key: concept:page-efde1ed2
+    type: concept
+    labels:
+      ko: 어셈블러
+    aliases:
+      - 어셈블러
+      - Assembler
+      - assembly
+      - 기호 조립기
+      - concept-efde1ed2c65b5416
+      - concept:page-efde1ed2
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-efde1ed2c65b5416
+  - key: concept:page-f019ffbf
+    type: concept
+    labels:
+      ko: 논리 게이트
+    aliases:
+      - 논리 게이트
+      - Logic Gate
+      - gate
+      - 논리 회로 게이트
+      - concept-f019ffbfafa82d67
+      - concept:page-f019ffbf
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-f019ffbfafa82d67
+  - key: concept:page-f047e003
+    type: concept
+    labels:
+      ko: 모듈화
+    aliases:
+      - 모듈화
+      - Modularization
+      - Modular Programming
+      - 모듈러 프로그래밍
+      - concept-f047e0039fc9a9c0
+      - concept:page-f047e003
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-f047e0039fc9a9c0
+  - key: concept:page-f438fd41
+    type: concept
+    labels:
+      ko: C 언어
+    aliases:
+      - C 언어
+      - C
+      - C programming language
+      - C language
+      - concept-f438fd4127b48dbb
+      - concept:page-f438fd41
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-f438fd4127b48dbb
+  - key: concept:page-f4f75731
+    type: concept
+    labels:
+      ko: UTF-8
+    aliases:
+      - UTF-8
+      - Unicode Transformation Format 8-bit
+      - UTF8
+      - concept-f4f7573102f01723
+      - concept:page-f4f75731
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-f4f7573102f01723
+  - key: concept:page-f6e983b1
+    type: concept
+    labels:
+      ko: 스택 프레임
+    aliases:
+      - 스택 프레임
+      - Stack frame
+      - 함수 프레임
+      - call frame
+      - concept-f6e983b17cae80b7
+      - concept:page-f6e983b1
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-f6e983b17cae80b7
+  - key: concept:page-fa0c6ecb
+    type: concept
+    labels:
+      ko: 소프트웨어 컴포넌트
+    aliases:
+      - 소프트웨어 컴포넌트
+      - Software Component
+      - 소프트웨어 부품
+      - 재사용 컴포넌트
+      - concept-fa0c6ecb3f94fe4c
+      - concept:page-fa0c6ecb
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-fa0c6ecb3f94fe4c
+  - key: concept:parallel-scalability
+    type: concept
+    labels:
+      ko: 병렬 확장성
+    aliases:
+      - 병렬 확장성
+      - Parallel scalability
+      - 병렬 스케일링
+      - 고정 크기 확장
+      - 확대 크기 확장
+      - concept-d4ef040697b43518
+      - concept:page-d4ef0406
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: concept-d4ef040697b43518
+  - key: concept:partial-failure
+    type: concept
+    labels:
+      ko: 부분 실패
+    aliases:
+      - 부분 실패
+      - Partial failure
+      - partial failures
+      - 부분 장애
+      - 부분적 실패
+      - concept-partial-failure
+      - concept:partial-failure
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: concept-partial-failure
+  - key: concept:performance-portability
+    type: concept
+    labels:
+      ko: 성능 이식성
+    aliases:
+      - 성능 이식성
+      - Performance portability
+      - portable performance
+      - 성능 포터빌리티
+      - concept-performance-portability
+      - concept:performance-portability
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-performance-portability
+  - key: concept:polynomial-time-reduction
+    type: concept
+    labels:
+      ko: 다항 시간 환원
+    aliases:
+      - 다항 시간 환원
+      - polynomial-time reduction
+      - 다항 환원
+      - Cook reduction
+      - Karp reduction
+      - concept-polynomial-time-reduction
+      - concept:polynomial-time-reduction
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-polynomial-time-reduction
+  - key: concept:power-usage-effectiveness
+    type: concept
+    labels:
+      ko: 전력 사용 효율
+    aliases:
+      - 전력 사용 효율
+      - power usage effectiveness
+      - PUE
+      - 데이터센터 전력 효율
+      - concept-power-usage-effectiveness
+      - concept:power-usage-effectiveness
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-power-usage-effectiveness
+  - key: concept:prefill-decode
+    type: concept
+    labels:
+      ko: 프리필과 디코드
+    aliases:
+      - 프리필과 디코드
+      - prefill and decode
+      - prefill phase
+      - decode phase
+      - 프롬프트 처리와 토큰 생성
+      - 프리필·디코딩
+      - concept-prefill-decode
+      - concept:prefill-decode
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: concept-prefill-decode
+  - key: concept:prefix-kv-caching
+    type: concept
+    labels:
+      ko: 접두사 KV 캐싱
+    aliases:
+      - 접두사 KV 캐싱
+      - prefix KV caching
+      - prefix caching
+      - prompt KV cache reuse
+      - RadixAttention
+      - concept-prefix-kv-caching
+      - concept:prefix-kv-caching
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-prefix-kv-caching
+  - key: concept:programmability
+    type: concept
+    labels:
+      ko: 프로그래밍 가능성
+    aliases:
+      - 프로그래밍 가능성
+      - Programmability
+      - 프로그램 가능성
+      - 재프로그래밍 가능성
+      - concept-569257e7cbee4eb8
+      - concept:page-569257e7
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: concept-569257e7cbee4eb8
+  - key: concept:quantity-species-pairs
+    type: concept
+    labels:
+      ko: 종-수량 쌍
+    aliases:
+      - 종-수량 쌍
+      - quantity-species pairs
+      - 종과 수량
+      - 수는 형용사다
+      - concept-quantity-species-pairs
+      - concept:quantity-species-pairs
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-quantity-species-pairs
+  - key: concept:queueing-load-control
+    type: concept
+    labels:
+      ko: 대기열과 부하 제어
+    aliases:
+      - 대기열과 부하 제어
+      - queueing and load control
+      - admission control
+      - 부하 제어
+      - 승인 제어
+      - 큐 관리
+      - concept-queueing-load-control
+      - concept:queueing-load-control
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: concept-queueing-load-control
+  - key: concept:remote-procedure-call
+    type: concept
+    labels:
+      ko: 원격 프로시저 호출
+    aliases:
+      - 원격 프로시저 호출
+      - Remote Procedure Call
+      - RPC
+      - 원격 호출
+      - 원격 프로시저 콜
+      - concept-remote-procedure-call
+      - concept:remote-procedure-call
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: concept-remote-procedure-call
+  - key: concept:replicated-log-consensus
+    type: concept
+    labels:
+      ko: 복제 로그와 합의
+    aliases:
+      - 복제 로그와 합의
+      - replicated log and consensus
+      - replicated state machine
+      - 복제 상태 기계
+      - Raft 합의
+      - concept-replicated-log-consensus
+      - concept:replicated-log-consensus
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: concept-replicated-log-consensus
+  - key: concept:reproducible-builds
+    type: concept
+    labels:
+      ko: 재현 가능한 빌드
+    aliases:
+      - 재현 가능한 빌드
+      - reproducible builds
+      - deterministic build
+      - 재현성 빌드
+      - concept-reproducible-builds
+      - concept:reproducible-builds
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: concept-reproducible-builds
+  - key: concept:retries
+    type: concept
+    labels:
+      ko: 재시도
+    aliases:
+      - 재시도
+      - Retry
+      - retries
+      - retry budget
+      - retry storm
+      - concept-retries
+      - concept:retries
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-retries
+  - key: concept:runtime-contract
+    type: concept
+    labels:
+      ko: runtime contract
+    aliases:
+      - runtime contract
+      - 실행 계약
+      - 런타임 계약
+      - concept-runtime-contract
+      - concept:runtime-contract
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-runtime-contract
+  - key: concept:self-attention
+    type: concept
+    labels:
+      ko: 자기 주의
+    aliases:
+      - 자기 주의
+      - self-attention
+      - intra-attention
+      - 셀프 어텐션
+      - concept-self-attention
+      - concept:self-attention
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-self-attention
+  - key: concept:self-reproducing-automata
+    type: concept
+    labels:
+      ko: 자기복제 오토마타
+    aliases:
+      - 자기복제 오토마타
+      - Self-reproducing automata
+      - 폰 노이만 구성자
+      - von Neumann universal constructor
+      - 자기복제 기계
+      - concept-self-reproducing-automata
+      - concept:self-reproducing-automata
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-self-reproducing-automata
+  - key: concept:sequential-consistency
+    type: concept
+    labels:
+      ko: 순차 일관성
+    aliases:
+      - 순차 일관성
+      - Sequential consistency
+      - SC memory model
+      - 순차적 일관성
+      - concept-sequential-consistency
+      - concept:sequential-consistency
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-sequential-consistency
+  - key: concept:serializability
+    type: concept
+    labels:
+      ko: 직렬 가능성
+    aliases:
+      - 직렬 가능성
+      - Serializability
+      - serializable isolation
+      - transaction serializability
+      - 직렬 가능 격리
+      - concept-serializability
+      - concept:serializability
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-serializability
+  - key: concept:software-reuse
+    type: concept
+    labels:
+      ko: 소프트웨어 재사용
+    aliases:
+      - 소프트웨어 재사용
+      - Software reuse concept
+      - 코드 재사용
+      - reuse
+      - concept-65669d1c4c32c693
+      - concept:page-65669d1c
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: concept-65669d1c4c32c693
+  - key: concept:speculative-decoding
+    type: concept
+    labels:
+      ko: 추측 디코딩
+    aliases:
+      - 추측 디코딩
+      - speculative decoding
+      - speculative sampling
+      - 드래프트-타깃 디코딩
+      - concept-speculative-decoding
+      - concept:speculative-decoding
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-speculative-decoding
+  - key: concept:spreadsheet
+    type: concept
+    labels:
+      ko: 스프레드시트
+    aliases:
+      - 스프레드시트
+      - Spreadsheet
+      - 전자 스프레드시트
+      - 표 계산 프로그램
+      - spreadsheet
+      - concept:spreadsheet
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: spreadsheet
+  - key: concept:stablehlo-mlir-abi
+    type: concept
+    labels:
+      ko: StableHLO·MLIR·ABI 경계
+    aliases:
+      - StableHLO·MLIR·ABI 경계
+      - StableHLO MLIR ABI boundary
+      - 표현·IR·ABI 경계
+      - concept-stablehlo-mlir-abi
+      - concept:stablehlo-mlir-abi
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: concept-stablehlo-mlir-abi
+  - key: concept:stored-program-computer
+    type: concept
+    labels:
+      ko: 저장 프로그램 컴퓨터
+    aliases:
+      - 저장 프로그램 컴퓨터
+      - Stored-program computer
+      - 저장 프로그램 방식
+      - concept-ef02c2bc7dc5ea9b
+      - concept:page-ef02c2bc
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: concept-ef02c2bc7dc5ea9b
+  - key: concept:structured-programming
+    type: concept
+    labels:
+      ko: 구조적 프로그래밍
+    aliases:
+      - 구조적 프로그래밍
+      - Structured programming concept
+      - structured programming methodology
+      - concept-1c13e72137b697ae
+      - concept:page-1c13e721
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: concept-1c13e72137b697ae
+  - key: concept:subroutine
+    type: concept
+    labels:
+      ko: 서브루틴
+    aliases:
+      - 서브루틴
+      - Subroutine
+      - closed subroutine
+      - 폐쇄형 서브루틴
+      - 함수 호출
+      - concept-446e9f53b7a0dab2
+      - concept:page-446e9f53
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: concept-446e9f53b7a0dab2
+  - key: concept:substrate-independence-functionalism
+    type: concept
+    labels:
+      ko: 기질 독립성과 기능주의
+    aliases:
+      - 기질 독립성과 기능주의
+      - Substrate independence
+      - Functionalism
+      - 기능주의
+      - 기질 독립성
+      - 테세우스의 뇌
+      - concept-substrate-independence-functionalism
+      - concept:substrate-independence-functionalism
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-substrate-independence-functionalism
+  - key: concept:superscript-exponent
+    type: concept
+    labels:
+      ko: 위첨자 지수 표기
+    aliases:
+      - 위첨자 지수 표기
+      - superscript exponent
+      - 지수 표기
+      - x의 n제곱
+      - exponent notation
+      - concept-superscript-exponent
+      - concept:superscript-exponent
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-superscript-exponent
+  - key: concept:symbiogenesis
+    type: concept
+    labels:
+      ko: 공생발생
+    aliases:
+      - 공생발생
+      - Symbiogenesis
+      - 세포내 공생설
+      - symbiosis
+      - concept-symbiogenesis
+      - concept:symbiogenesis
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-symbiogenesis
+  - key: concept:symbolic-manipulation
+    type: concept
+    labels:
+      ko: 기호 조작
+    aliases:
+      - 기호 조작
+      - Symbol Manipulation
+      - symbolic manipulation
+      - 기호 처리
+      - concept-c7fabfe3dff4e5d5
+      - concept:page-c7fabfe3
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: concept-c7fabfe3dff4e5d5
+  - key: concept:tail-latency
+    type: concept
+    labels:
+      ko: 꼬리 지연 시간
+    aliases:
+      - 꼬리 지연 시간
+      - tail latency
+      - latency tail
+      - 꼬리 지연
+      - 백분위 지연 시간
+      - concept-f57f54a4895add44
+      - concept:page-f57f54a4
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: concept-f57f54a4895add44
+  - key: concept:time-to-quality
+    type: concept
+    labels:
+      ko: 목표 품질 도달 시간
+    aliases:
+      - 목표 품질 도달 시간
+      - time to quality
+      - time-to-quality
+      - time to train
+      - time-to-train
+      - TTT
+      - concept-time-to-quality
+      - concept:time-to-quality
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-time-to-quality
+  - key: concept:transformer
+    type: concept
+    labels:
+      ko: Transformer
+    aliases:
+      - Transformer
+      - 트랜스포머
+      - Transformer architecture
+      - Transformer 모델
+      - concept-transformer
+      - concept:transformer
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: concept-transformer
+  - key: concept:unit-segment-dimension-reduction
+    type: concept
+    labels:
+      ko: 단위 선분과 차원 환원
+    aliases:
+      - 단위 선분과 차원 환원
+      - 단위 선분
+      - unit segment
+      - 차원 환원
+      - dimension reduction in geometry
+      - 동차성의 법칙
+      - 동차성 법칙
+      - Law of Homogeneity
+      - concept-unit-segment-dimension-reduction
+      - concept:unit-segment-dimension-reduction
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-unit-segment-dimension-reduction
+  - key: concept:verification-labor
+    type: concept
+    labels:
+      ko: 검증 노동
+    aliases:
+      - 검증 노동
+      - verification labor
+      - 검토·테스트 노동
+      - 생성 결과 검증
+      - concept-verification-labor
+      - concept:verification-labor
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: concept-verification-labor
+  - key: document:computation-reading-guide
+    type: document
+    labels:
+      ko: 계산 독서 지도
+    aliases:
+      - 계산 독서 지도
+      - 계산이란 무엇인가 독서 지도
+      - Theory of computation reading guide
+      - 계산의 이론과 한계 읽기 순서
+      - meta-computation-reading-guide
+      - document:computation-reading-guide
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: meta-computation-reading-guide
+  - key: document:gaps
+    type: document
+    labels:
+      ko: 지식 공백
+    aliases:
+      - 지식 공백
+      - gaps
+      - 미작성 개념
+      - meta-gaps
+      - document:gaps
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: meta-gaps
+  - key: document:index
+    type: document
+    labels:
+      ko: 위키 색인
+    aliases:
+      - 위키 색인
+      - index
+      - 색인
+      - 카탈로그
+      - meta-index
+      - document:index
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: meta-index
+  - key: document:knowledge-graph-schema
+    type: document
+    labels:
+      ko: 지식 그래프 관계 스키마
+    aliases:
+      - 지식 그래프 관계 스키마
+      - Knowledge graph relation schema
+      - 지식 지도 작성 규칙
+      - 관계 메타데이터 규칙
+      - meta-knowledge-graph-schema
+      - document:knowledge-graph-schema
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: meta-knowledge-graph-schema
+  - key: document:log
+    type: document
+    labels:
+      ko: 작업 로그
+    aliases:
+      - 작업 로그
+      - log
+      - 변경 기록
+      - 작업 기록
+      - meta-log
+      - document:log
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: meta-log
+  - key: document:overview
+    type: document
+    labels:
+      ko: 위키 개요
+    aliases:
+      - 위키 개요
+      - overview
+      - 홈페이지
+      - 전체 개요
+      - meta-overview
+      - document:overview
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: meta-overview
+  - key: document:page-9bc0d3d6
+    type: document
+    labels:
+      ko: 컴퓨팅 능력 독서 지도
+    aliases:
+      - 컴퓨팅 능력 독서 지도
+      - 컴퓨팅 능력 학습 지도
+      - Computing capability reading guide
+      - 컴퓨팅 능력 읽기 순서
+      - meta-9bc0d3d686763690
+      - document:page-9bc0d3d6
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: meta-9bc0d3d686763690
+  - key: document:quote-locator-audit
+    type: document
+    labels:
+      ko: 인용 위치 감사
+    aliases:
+      - 인용 위치 감사
+      - meta-quote-locator-audit
+      - document:quote-locator-audit
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: meta-quote-locator-audit
+  - key: person:ada-lovelace
+    type: person
+    labels:
+      ko: 에이다 러브레이스
+    aliases:
+      - 에이다 러브레이스
+      - Ada Lovelace
+      - 러브레이스
+      - Augusta Ada King
+      - entity-970046b84bf0f7e1
+      - entity:page-970046b8
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: entity-970046b84bf0f7e1
+  - key: person:aguera-y-arcas
+    type: person
+    labels:
+      ko: 블레즈 아구에라 이 아르카스
+    aliases:
+      - 블레즈 아구에라 이 아르카스
+      - Blaise Agüera y Arcas
+      - 블레즈 아구에라
+      - entity-aguera-y-arcas
+      - entity:aguera-y-arcas
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: entity-aguera-y-arcas
+  - key: person:alan-turing
+    type: person
+    labels:
+      ko: 앨런 튜링
+    aliases:
+      - 앨런 튜링
+      - Alan Turing
+      - A. M. Turing
+      - Turing
+      - 튜링
+      - entity-07a5de25c325b6f0
+      - entity:page-07a5de25
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: entity-07a5de25c325b6f0
+  - key: person:alonzo-church
+    type: person
+    labels:
+      ko: 알론조 처치
+    aliases:
+      - 알론조 처치
+      - Alonzo Church
+      - Church
+      - 처치
+      - entity-b7b72330d3a62500
+      - entity:page-b7b72330
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: entity-b7b72330d3a62500
+  - key: person:charles-babbage
+    type: person
+    labels:
+      ko: 찰스 배비지
+    aliases:
+      - 찰스 배비지
+      - Charles Babbage
+      - 배비지
+      - entity-b47da9a0362c46e5
+      - entity:page-b47da9a0
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: entity-b47da9a0362c46e5
+  - key: person:charles-w-krueger
+    type: person
+    labels:
+      ko: 찰스 W. 크루거
+    aliases:
+      - 찰스 W. 크루거
+      - Charles W. Krueger
+      - Charles Krueger
+      - C. W. Krueger
+      - entity-1a2d36f59369083d
+      - entity:page-1a2d36f5
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: entity-1a2d36f59369083d
+  - key: person:claude-shannon
+    type: person
+    labels:
+      ko: 클로드 섀넌
+    aliases:
+      - 클로드 섀넌
+      - Claude Shannon
+      - Claude E. Shannon
+      - Shannon
+      - 섀넌
+      - entity-1cd37570ca9acab2
+      - entity:page-1cd37570
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: entity-1cd37570ca9acab2
+  - key: person:corrado-bohm
+    type: person
+    labels:
+      ko: 코라도 뵘
+    aliases:
+      - 코라도 뵘
+      - Corrado Böhm
+      - Corrado Bohm
+      - entity-6c7519108429a099
+      - entity:page-6c751910
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: entity-6c7519108429a099
+  - key: person:david-parnas
+    type: person
+    labels:
+      ko: 데이비드 파나스
+    aliases:
+      - 데이비드 파나스
+      - David Parnas
+      - D. L. Parnas
+      - David Lorge Parnas
+      - entity-7de052ed12219bf9
+      - entity:page-7de052ed
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: entity-7de052ed12219bf9
+  - key: person:david-wheeler
+    type: person
+    labels:
+      ko: 데이비드 휠러
+    aliases:
+      - 데이비드 휠러
+      - David Wheeler
+      - 휠러
+      - entity-e8a9bb25328ec94e
+      - entity:page-e8a9bb25
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: entity-e8a9bb25328ec94e
+  - key: person:dennis-ritchie
+    type: person
+    labels:
+      ko: 데니스 리치
+    aliases:
+      - 데니스 리치
+      - Dennis Ritchie
+      - Dennis M. Ritchie
+      - D. M. Ritchie
+      - entity-3e83a021b00264fc
+      - entity:page-3e83a021
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: entity-3e83a021b00264fc
+  - key: person:donald-knuth
+    type: person
+    labels:
+      ko: 도널드 커누스
+    aliases:
+      - 도널드 커누스
+      - Donald E. Knuth
+      - Donald Knuth
+      - Knuth
+      - entity-9452931b4cae505b
+      - entity:page-9452931b
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: entity-9452931b4cae505b
+  - key: person:douglas-mcilroy
+    type: person
+    labels:
+      ko: 더글러스 매킬로이
+    aliases:
+      - 더글러스 매킬로이
+      - Douglas McIlroy
+      - M. D. McIlroy
+      - Doug McIlroy
+      - entity-11912d3c997bcb12
+      - entity:page-11912d3c
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: entity-11912d3c997bcb12
+  - key: person:edsger-dijkstra
+    type: person
+    labels:
+      ko: 에츠허르 데이크스트라
+    aliases:
+      - 에츠허르 데이크스트라
+      - Edsger W. Dijkstra
+      - Edsger Dijkstra
+      - Dijkstra
+      - entity-b215332ddbebab35
+      - entity:page-b215332d
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: entity-b215332ddbebab35
+  - key: person:george-boole
+    type: person
+    labels:
+      ko: 조지 불
+    aliases:
+      - 조지 불
+      - George Boole
+      - Boole
+      - 불
+      - entity-73f5398f704a53a7
+      - entity:page-73f5398f
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: entity-73f5398f704a53a7
+  - key: person:giuseppe-jacopini
+    type: person
+    labels:
+      ko: 주세페 야코피니
+    aliases:
+      - 주세페 야코피니
+      - Giuseppe Jacopini
+      - G. Jacopini
+      - entity-3765181834c9ce12
+      - entity:page-37651818
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: entity-3765181834c9ce12
+  - key: person:gottfried-wilhelm-leibniz
+    type: person
+    labels:
+      ko: 고트프리트 빌헬름 라이프니츠
+    aliases:
+      - 고트프리트 빌헬름 라이프니츠
+      - Gottfried Wilhelm Leibniz
+      - 라이프니츠
+      - Leibniz
+      - entity-gottfried-wilhelm-leibniz
+      - entity:gottfried-wilhelm-leibniz
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: entity-gottfried-wilhelm-leibniz
+  - key: person:grace-hopper
+    type: person
+    labels:
+      ko: 그레이스 호퍼
+    aliases:
+      - 그레이스 호퍼
+      - Grace Hopper
+      - 호퍼
+      - entity-d28fe0553930f907
+      - entity:page-d28fe055
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: entity-d28fe0553930f907
+  - key: person:john-backus
+    type: person
+    labels:
+      ko: 존 배커스
+    aliases:
+      - 존 배커스
+      - John Backus
+      - J. W. Backus
+      - John W. Backus
+      - entity-4e28b2707c1117c0
+      - entity:page-4e28b270
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: entity-4e28b2707c1117c0
+  - key: person:john-searle
+    type: person
+    labels:
+      ko: 존 설
+    aliases:
+      - 존 설
+      - John Searle
+      - John R. Searle
+      - 존 R. 설
+      - 설
+      - entity-john-searle
+      - entity:john-searle
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: entity-john-searle
+  - key: person:john-von-neumann
+    type: person
+    labels:
+      ko: 존 폰 노이만
+    aliases:
+      - 존 폰 노이만
+      - John von Neumann
+      - von Neumann
+      - 폰 노이만
+      - entity-ef144988cc7f1512
+      - entity:page-ef144988
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: entity-ef144988cc7f1512
+  - key: person:ken-thompson
+    type: person
+    labels:
+      ko: 켄 톰프슨
+    aliases:
+      - 켄 톰프슨
+      - Ken Thompson
+      - Kenneth Thompson
+      - K. Thompson
+      - entity-ef60b71b4f5fba86
+      - entity:page-ef60b71b
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: entity-ef60b71b4f5fba86
+  - key: person:lynn-margulis
+    type: person
+    labels:
+      ko: 린 마굴리스
+    aliases:
+      - 린 마굴리스
+      - Lynn Margulis
+      - Lynn Sagan
+      - entity-lynn-margulis
+      - entity:lynn-margulis
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: entity-lynn-margulis
+  - key: person:maurice-wilkes
+    type: person
+    labels:
+      ko: 모리스 윌크스
+    aliases:
+      - 모리스 윌크스
+      - Maurice Wilkes
+      - 윌크스
+      - entity-7e280fd99a7b35d0
+      - entity:page-7e280fd9
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: entity-7e280fd99a7b35d0
+  - key: person:ole-johan-dahl
+    type: person
+    labels:
+      ko: 올레요한 달
+    aliases:
+      - 올레요한 달
+      - Ole-Johan Dahl
+      - O.-J. Dahl
+      - entity-e23557a759d62f70
+      - entity:page-e23557a7
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: entity-e23557a759d62f70
+  - key: person:stanley-gill
+    type: person
+    labels:
+      ko: 스탠리 길
+    aliases:
+      - 스탠리 길
+      - Stanley Gill
+      - 길
+      - entity-899388142c701ab0
+      - entity:page-89938814
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: entity-899388142c701ab0
+  - key: person:stephen-c-johnson
+    type: person
+    labels:
+      ko: 스티븐 C. 존슨
+    aliases:
+      - 스티븐 C. 존슨
+      - Stephen C. Johnson
+      - S. C. Johnson
+      - Steve Johnson
+      - entity-2f17a71c2815f89f
+      - entity:page-2f17a71c
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: entity-2f17a71c2815f89f
+  - key: person:thomas-hobbes
+    type: person
+    labels:
+      ko: 토머스 홉스
+    aliases:
+      - 토머스 홉스
+      - Thomas Hobbes
+      - 홉스
+      - Hobbes
+      - entity-thomas-hobbes
+      - entity:thomas-hobbes
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: entity-thomas-hobbes
+  - key: person:tony-hoare
+    type: person
+    labels:
+      ko: 토니 호어
+    aliases:
+      - 토니 호어
+      - C. A. R. Hoare
+      - Tony Hoare
+      - Charles Antony Richard Hoare
+      - entity-c645c95848b4d51e
+      - entity:page-c645c958
+    external_ids: {}
+    same_as: []
+    status: reviewed
+    page_id: entity-c645c95848b4d51e
+  - key: source:ref-001
+    type: source
+    labels:
+      ko: The Preparation of Programs for an Electronic Digital Computer
+    aliases:
+      - The Preparation of Programs for an Electronic Digital Computer
+      - WWG
+      - Preparation of Programs
+      - 프로그램 준비
+      - EDSAC programming textbook
+      - ref-001
+      - source:ref-001
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-001
+  - key: source:ref-002
+    type: source
+    labels:
+      ko: Mass Produced Software Components
+    aliases:
+      - Mass Produced Software Components
+      - Mass-Produced Software Components
+      - 대량 생산 소프트웨어 컴포넌트
+      - McIlroy software components
+      - ref-002
+      - source:ref-002
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-002
+  - key: source:ref-003
+    type: source
+    labels:
+      ko: On the Criteria To Be Used in Decomposing Systems into Modules
+    aliases:
+      - On the Criteria To Be Used in Decomposing Systems into Modules
+      - Criteria for Modularization
+      - 모듈 분해 기준
+      - Parnas modularization paper
+      - ref-003
+      - source:ref-003
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-003
+  - key: source:ref-004
+    type: source
+    labels:
+      ko: Software Reuse
+    aliases:
+      - Software Reuse
+      - Krueger Software Reuse
+      - ACM Computing Surveys Software Reuse
+      - 소프트웨어 재사용 Krueger
+      - ref-004
+      - source:ref-004
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-004
+  - key: source:ref-005
+    type: source
+    labels:
+      ko: Sixteen Questions about Software Reuse
+    aliases:
+      - Sixteen Questions about Software Reuse
+      - 16 Questions about Software Reuse
+      - Frakes Fox software reuse
+      - 소프트웨어 재사용 16문답
+      - ref-005
+      - source:ref-005
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-005
+  - key: source:ref-006
+    type: source
+    labels:
+      ko: First Draft of a Report on the EDVAC
+    aliases:
+      - First Draft of a Report on the EDVAC
+      - EDVAC 보고서
+      - First Draft
+      - von Neumann report
+      - ref-006
+      - source:ref-006
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-006
+  - key: source:ref-007
+    type: source
+    labels:
+      ko: The Manchester Small Scale Experimental Machine - The Baby
+    aliases:
+      - The Manchester Small Scale Experimental Machine - The Baby
+      - Manchester Baby source
+      - SSEM source
+      - ref-007
+      - source:ref-007
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-007
+  - key: source:ref-008
+    type: source
+    labels:
+      ko: A Symbolic Analysis of Relay and Switching Circuits
+    aliases:
+      - A Symbolic Analysis of Relay and Switching Circuits
+      - Shannon 1938
+      - Symbolic Analysis
+      - relay and switching circuits
+      - ref-008
+      - source:ref-008
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-008
+  - key: source:ref-009
+    type: source
+    labels:
+      ko: On Computable Numbers with an Application to the Entscheidungsproblem
+    aliases:
+      - On Computable Numbers with an Application to the Entscheidungsproblem
+      - On Computable Numbers
+      - Turing 1936
+      - computable numbers
+      - ref-009
+      - source:ref-009
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-009
+  - key: source:ref-010
+    type: source
+    labels:
+      ko: An Unsolvable Problem of Elementary Number Theory
+    aliases:
+      - An Unsolvable Problem of Elementary Number Theory
+      - Church 1936
+      - Unsolvable Problem
+      - Church's theorem
+      - ref-010
+      - source:ref-010
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-010
+  - key: source:ref-011
+    type: source
+    labels:
+      ko: A Case against the GO TO Statement
+    aliases:
+      - A Case against the GO TO Statement
+      - Go To Statement Considered Harmful
+      - EWD215
+      - GOTO Considered Harmful
+      - ref-011
+      - source:ref-011
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-011
+  - key: source:ref-012
+    type: source
+    labels:
+      ko: Flow Diagrams, Turing Machines and Languages with Only Two Formation Rules
+    aliases:
+      - Flow Diagrams, Turing Machines and Languages with Only Two Formation Rules
+      - Böhm-Jacopini 1966
+      - ref-012
+      - source:ref-012
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-012
+  - key: source:ref-013
+    type: source
+    labels:
+      ko: Structured Programming
+    aliases:
+      - Structured Programming
+      - Dahl Dijkstra Hoare 1972
+      - Notes on Structured Programming
+      - ref-013
+      - source:ref-013
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-013
+  - key: source:ref-014
+    type: source
+    labels:
+      ko: Structured Programming with go to Statements
+    aliases:
+      - Structured Programming with go to Statements
+      - Knuth 1974
+      - structured programming with goto
+      - ref-014
+      - source:ref-014
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-014
+  - key: source:ref-015
+    type: source
+    labels:
+      ko: FORTRAN Automatic Coding System for the IBM 704 EDPM
+    aliases:
+      - FORTRAN Automatic Coding System for the IBM 704 EDPM
+      - FORTRAN Programmer's Reference Manual
+      - IBM 704 FORTRAN Manual
+      - FORTRAN 704 Reference Manual
+      - ref-015
+      - source:ref-015
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-015
+  - key: source:ref-016
+    type: source
+    labels:
+      ko: The FORTRAN Automatic Coding System
+    aliases:
+      - The FORTRAN Automatic Coding System
+      - Backus 1957 FORTRAN paper
+      - FORTRAN automatic coding paper
+      - ref-016
+      - source:ref-016
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-016
+  - key: source:ref-017
+    type: source
+    labels:
+      ko: The History of FORTRAN I, II, and III
+    aliases:
+      - The History of FORTRAN I, II, and III
+      - Backus 1978 Fortran history
+      - History of Fortran I II III
+      - ref-017
+      - source:ref-017
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-017
+  - key: source:ref-018
+    type: source
+    labels:
+      ko: The UNIX Time-Sharing System
+    aliases:
+      - The UNIX Time-Sharing System
+      - UNIX Time-Sharing System
+      - Unix 1974
+      - Ritchie Thompson Unix paper
+      - ref-018
+      - source:ref-018
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-018
+  - key: source:ref-019
+    type: source
+    labels:
+      ko: The Development of the C Language
+    aliases:
+      - The Development of the C Language
+      - Ritchie C history
+      - C language history
+      - Development of C
+      - ref-019
+      - source:ref-019
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-019
+  - key: source:ref-020
+    type: source
+    labels:
+      ko: The Evolution of the Unix Time-sharing System
+    aliases:
+      - The Evolution of the Unix Time-sharing System
+      - Ritchie Unix evolution
+      - Unix evolution
+      - Evolution of Unix
+      - ref-020
+      - source:ref-020
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-020
+  - key: source:ref-021
+    type: source
+    labels:
+      ko: Portability of C Programs and the UNIX System
+    aliases:
+      - Portability of C Programs and the UNIX System
+      - C and Unix portability
+      - Johnson Ritchie portability paper
+      - ref-021
+      - source:ref-021
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-021
+  - key: source:ref-022
+    type: source
+    labels:
+      ko: The Unicode Standard 17.0.0
+    aliases:
+      - The Unicode Standard 17.0.0
+      - Unicode 17.0.0
+      - The Unicode Standard
+      - ref-022
+      - source:ref-022
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-022
+  - key: source:ref-023
+    type: source
+    labels:
+      ko: RFC 3629 UTF-8
+    aliases:
+      - RFC 3629 UTF-8
+      - RFC 3629
+      - UTF-8 RFC
+      - UTF-8 a transformation format of ISO 10646
+      - ref-023
+      - source:ref-023
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-023
+  - key: source:ref-024
+    type: source
+    labels:
+      ko: Unicode Normalization Forms
+    aliases:
+      - Unicode Normalization Forms
+      - "UAX #15"
+      - "Unicode Standard Annex #15"
+      - 유니코드 정규화 형식
+      - ref-024
+      - source:ref-024
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-024
+  - key: source:ref-025
+    type: source
+    labels:
+      ko: Unicode Text Segmentation
+    aliases:
+      - Unicode Text Segmentation
+      - "UAX #29"
+      - "Unicode Standard Annex #29"
+      - Unicode text boundaries
+      - ref-025
+      - source:ref-025
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-025
+  - key: source:ref-026
+    type: source
+    labels:
+      ko: WHATWG Encoding Standard
+    aliases:
+      - WHATWG Encoding Standard
+      - WHATWG Encoding
+      - Web Encoding Standard
+      - ref-026
+      - source:ref-026
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-026
+  - key: source:ref-027
+    type: source
+    labels:
+      ko: Unicode Security Mechanisms
+    aliases:
+      - Unicode Security Mechanisms
+      - "UTS #39"
+      - "Unicode Technical Standard #39"
+      - 유니코드 보안 메커니즘
+      - ref-027
+      - source:ref-027
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-027
+  - key: source:ref-028
+    type: source
+    labels:
+      ko: Cambridge Computer Laboratory - The History of the Computer Lab
+    aliases:
+      - Cambridge Computer Laboratory - The History of the Computer Lab
+      - Cambridge Computer Lab history
+      - 케임브리지 컴퓨터 연구소 역사
+      - ref-028
+      - source:ref-028
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-028
+  - key: source:ref-029
+    type: source
+    labels:
+      ko: C Integer and Shift Semantics
+    aliases:
+      - C Integer and Shift Semantics
+      - C 정수와 시프트 의미론
+      - C integer overflow rules
+      - WG14 integer semantics
+      - ref-029
+      - source:ref-029
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-029
+  - key: source:ref-030
+    type: source
+    labels:
+      ko: An Investigation of the Laws of Thought
+    aliases:
+      - An Investigation of the Laws of Thought
+      - The Laws of Thought
+      - Boole 1854
+      - Laws of Thought
+      - ref-030
+      - source:ref-030
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-030
+  - key: source:ref-031
+    type: source
+    labels:
+      ko: On the Computational Complexity of Algorithms
+    aliases:
+      - On the Computational Complexity of Algorithms
+      - Hartmanis-Stearns 1965
+      - computational complexity of algorithms
+      - ref-031
+      - source:ref-031
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-031
+  - key: source:ref-032
+    type: source
+    labels:
+      ko: SPEC CPU 2026 Overview
+    aliases:
+      - SPEC CPU 2026 Overview
+      - SPEC CPU2026 overview
+      - ref-032
+      - source:ref-032
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-032
+  - key: source:ref-033
+    type: source
+    labels:
+      ko: The Linpack Benchmark
+    aliases:
+      - The Linpack Benchmark
+      - TOP500 Linpack benchmark page
+      - LINPACK benchmark overview
+      - ref-033
+      - source:ref-033
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-033
+  - key: source:ref-034
+    type: source
+    labels:
+      ko: Roofline An Insightful Visual Performance Model
+    aliases:
+      - Roofline An Insightful Visual Performance Model
+      - Williams-Waterman-Patterson 2009
+      - Roofline performance model paper
+      - ref-034
+      - source:ref-034
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-034
+  - key: source:ref-035
+    type: source
+    labels:
+      ko: Validity of the Single Processor Approach to Achieving Large Scale Computing Capabilities
+    aliases:
+      - Validity of the Single Processor Approach to Achieving Large Scale Computing Capabilities
+      - Amdahl 1967
+      - Amdahl single processor paper
+      - ref-035
+      - source:ref-035
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-035
+  - key: source:ref-036
+    type: source
+    labels:
+      ko: Power Measurement Tutorial for the Green500 List
+    aliases:
+      - Power Measurement Tutorial for the Green500 List
+      - Green500 power tutorial 2007
+      - ref-036
+      - source:ref-036
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-036
+  - key: source:ref-037
+    type: source
+    labels:
+      ko: Cramming More Components onto Integrated Circuits
+    aliases:
+      - Cramming More Components onto Integrated Circuits
+      - Moore 1965
+      - 무어의 법칙 원 논문
+      - Cramming More Components
+      - ref-037
+      - source:ref-037
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-037
+  - key: source:ref-038
+    type: source
+    labels:
+      ko: Design of Ion-Implanted MOSFET's with Very Small Physical Dimensions
+    aliases:
+      - Design of Ion-Implanted MOSFET's with Very Small Physical Dimensions
+      - Dennard scaling paper
+      - Dennard et al. 1974
+      - 작은 MOSFET 설계
+      - ref-038
+      - source:ref-038
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-038
+  - key: source:ref-039
+    type: source
+    labels:
+      ko: Hitting the Memory Wall
+    aliases:
+      - Hitting the Memory Wall
+      - Wulf-McKee 1995
+      - 메모리 장벽 논문
+      - Memory wall paper
+      - ref-039
+      - source:ref-039
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-039
+  - key: source:ref-040
+    type: source
+    labels:
+      ko: The Landscape of Parallel Computing Research - A View from Berkeley
+    aliases:
+      - The Landscape of Parallel Computing Research - A View from Berkeley
+      - Berkeley View
+      - Berkeley parallel computing report
+      - 병렬 컴퓨팅의 전망
+      - ref-040
+      - source:ref-040
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-040
+  - key: source:ref-041
+    type: source
+    labels:
+      ko: The Datacenter as a Computer
+    aliases:
+      - The Datacenter as a Computer
+      - Warehouse-Scale Computing
+      - WSC book
+      - 데이터센터를 하나의 컴퓨터로
+      - ref-041
+      - source:ref-041
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-041
+  - key: source:ref-042
+    type: source
+    labels:
+      ko: In-Datacenter Performance Analysis of a Tensor Processing Unit
+    aliases:
+      - In-Datacenter Performance Analysis of a Tensor Processing Unit
+      - TPU paper
+      - Jouppi et al. 2017
+      - Tensor Processing Unit performance
+      - ref-042
+      - source:ref-042
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-042
+  - key: source:ref-043
+    type: source
+    labels:
+      ko: Slave Memories and Dynamic Storage Allocation
+    aliases:
+      - Slave Memories and Dynamic Storage Allocation
+      - Wilkes 1965
+      - 초기 캐시 메모리 논문
+      - slave memory paper
+      - ref-043
+      - source:ref-043
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-043
+  - key: source:ref-044
+    type: source
+    labels:
+      ko: Design and Implementation of RISC I
+    aliases:
+      - Design and Implementation of RISC I
+      - RISC I report
+      - UCB/CSD-82-106
+      - Berkeley RISC I
+      - ref-044
+      - source:ref-044
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-044
+  - key: source:ref-045
+    type: source
+    labels:
+      ko: Reevaluating Amdahl's Law
+    aliases:
+      - Reevaluating Amdahl's Law
+      - Gustafson 1988
+      - Gustafson's law paper
+      - Gustafson-Barsis law
+      - 구스타프슨 법칙 논문
+      - ref-045
+      - source:ref-045
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-045
+  - key: source:ref-046
+    type: source
+    labels:
+      ko: The Case for Energy-Proportional Computing
+    aliases:
+      - The Case for Energy-Proportional Computing
+      - Barroso-Hölzle 2007
+      - Energy-proportional computing paper
+      - 에너지 비례 컴퓨팅 논문
+      - ref-046
+      - source:ref-046
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-046
+  - key: source:ref-047
+    type: source
+    labels:
+      ko: Implications of Historical Trends in the Electrical Efficiency of Computing
+    aliases:
+      - Implications of Historical Trends in the Electrical Efficiency of Computing
+      - Koomey et al. 2011
+      - Koomey의 법칙 원전
+      - Computing energy efficiency trends
+      - ref-047
+      - source:ref-047
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-047
+  - key: source:ref-048
+    type: source
+    labels:
+      ko: Dark Silicon and the End of Multicore Scaling
+    aliases:
+      - Dark Silicon and the End of Multicore Scaling
+      - Esmaeilzadeh et al. 2011
+      - ISCA dark silicon paper
+      - 다크 실리콘 논문
+      - ref-048
+      - source:ref-048
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-048
+  - key: source:ref-049
+    type: source
+    labels:
+      ko: The Tail at Scale
+    aliases:
+      - The Tail at Scale
+      - Dean and Barroso 2013
+      - Tail at Scale
+      - 규모에서의 꼬리 지연
+      - ref-049
+      - source:ref-049
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-049
+  - key: source:ref-050
+    type: source
+    labels:
+      ko: What Every Computer Scientist Should Know About Floating-Point Arithmetic
+    aliases:
+      - What Every Computer Scientist Should Know About Floating-Point Arithmetic
+      - Goldberg 1991
+      - What Every Computer Scientist Should Know About Floating Point Arithmetic
+      - 모든 컴퓨터 과학자가 부동소수점 연산에 대해 알아야 할 것
+      - ref-050
+      - source:ref-050
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-050
+  - key: source:ref-051
+    type: source
+    labels:
+      ko: IEEE 754-2019 Standard for Floating-Point Arithmetic
+    aliases:
+      - IEEE 754-2019 Standard for Floating-Point Arithmetic
+      - IEEE 754-2019
+      - IEEE Standard for Floating-Point Arithmetic
+      - IEEE 부동소수점 표준
+      - ref-051
+      - source:ref-051
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-051
+  - key: source:ref-052
+    type: source
+    labels:
+      ko: "The History of Mathematical Tables: From Sumer to Spreadsheets"
+    aliases:
+      - "The History of Mathematical Tables: From Sumer to Spreadsheets"
+      - The History of Mathematical Tables - From Sumer to Spreadsheets
+      - The History of Mathematical Tables
+      - 수학 표의 역사
+      - ref-052
+      - source:ref-052
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-052
+  - key: source:ref-053
+    type: source
+    labels:
+      ko: A Note respecting the Application of Machinery to the Calculation of Astronomical Tables
+    aliases:
+      - A Note respecting the Application of Machinery to the Calculation of Astronomical Tables
+      - Babbage 1822
+      - 배비지 1822년 차분 기관 발표문
+      - A Note respecting the Application of Machinery
+      - ref-053
+      - source:ref-053
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-053
+  - key: source:ref-054
+    type: source
+    labels:
+      ko: Handbook of Mathematical Functions with Formulas, Graphs, and Mathematical Tables
+    aliases:
+      - Handbook of Mathematical Functions with Formulas, Graphs, and Mathematical Tables
+      - Handbook of Mathematical Functions
+      - Abramowitz and Stegun
+      - A&S
+      - 수학 함수 편람
+      - ref-054
+      - source:ref-054
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-054
+  - key: source:ref-055
+    type: source
+    labels:
+      ko: "Mathematical Tables: Containing the Common, Hyperbolic, and Logistic Logarithms"
+    aliases:
+      - "Mathematical Tables: Containing the Common, Hyperbolic, and Logistic Logarithms"
+      - Hutton's Mathematical Tables
+      - Hutton and Gregory Mathematical Tables
+      - 허턴과 그레고리의 수학 표
+      - ref-055
+      - Mathematical Tables - Containing the Common, Hyperbolic, and Logistic Logarithms
+      - source:ref-055
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-055
+  - key: source:ref-056
+    type: source
+    labels:
+      ko: "The computation factory: de Prony's project for making tables in the 1790s"
+    aliases:
+      - "The computation factory: de Prony's project for making tables in the 1790s"
+      - The computation factory - de Prony's project for making tables in the 1790s
+      - 드 프로니의 계산 공장
+      - de Prony computation factory
+      - ref-056
+      - source:ref-056
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-056
+  - key: source:ref-057
+    type: source
+    labels:
+      ko: "Prehistory: The Math Tables Project"
+    aliases:
+      - "Prehistory: The Math Tables Project"
+      - Prehistory - The Math Tables Project
+      - NBS Math Tables Project
+      - Mathematical Tables Project
+      - 수학 표 프로젝트
+      - ref-057
+      - source:ref-057
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-057
+  - key: source:ref-058
+    type: source
+    labels:
+      ko: Human Computer Project
+    aliases:
+      - Human Computer Project
+      - Smithsonian Human Computer Project
+      - 인간 계산자 프로젝트
+      - Computer Was a Job Description
+      - ref-058
+      - source:ref-058
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-058
+  - key: source:ref-059
+    type: source
+    labels:
+      ko: Standards Eastern Automatic Computer
+    aliases:
+      - Standards Eastern Automatic Computer
+      - SEAC
+      - Standards Electronic Automatic Computer
+      - NBS SEAC
+      - ref-059
+      - source:ref-059
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-059
+  - key: source:ref-060
+    type: source
+    labels:
+      ko: DLMF Standard Reference Tables on Demand
+    aliases:
+      - DLMF Standard Reference Tables on Demand
+      - DLMF Tables
+      - DLMF 표준 참조표
+      - DLMF on-demand tables
+      - ref-060
+      - source:ref-060
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-060
+  - key: source:ref-061
+    type: source
+    labels:
+      ko: VisiCalc Apple II Version 1.0 Manual
+    aliases:
+      - VisiCalc Apple II Version 1.0 Manual
+      - VisiCalc manual
+      - VisiCalc 매뉴얼
+      - VisiCalc Apple II 매뉴얼
+      - ref-061
+      - source:ref-061
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-061
+  - key: source:ref-062
+    type: source
+    labels:
+      ko: Excel formula recalculation and dependencies
+    aliases:
+      - Excel formula recalculation and dependencies
+      - Excel recalculation
+      - Excel formula dependencies
+      - Excel 수식 재계산과 의존 관계
+      - ref-062
+      - source:ref-062
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-062
+  - key: source:ref-063
+    type: source
+    labels:
+      ko: The Byzantine Generals Problem
+    aliases:
+      - The Byzantine Generals Problem
+      - 비잔틴 장군 문제
+      - Lamport Shostak Pease 1982
+      - ref-063
+      - source:ref-063
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-063
+  - key: source:ref-064
+    type: source
+    labels:
+      ko: Why Do Internet Services Fail and What Can Be Done About It
+    aliases:
+      - Why Do Internet Services Fail and What Can Be Done About It
+      - Why Do Internet Services Fail, and What Can Be Done About It?
+      - Oppenheimer Ganapathi Patterson 2003
+      - 인터넷 서비스는 왜 실패하는가
+      - ref-064
+      - source:ref-064
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-064
+  - key: source:ref-065
+    type: source
+    labels:
+      ko: Recovery-Oriented Computing (ROC)
+    aliases:
+      - Recovery-Oriented Computing (ROC)
+      - "Recovery-Oriented Computing: Motivation, Definition, Techniques, and Case Studies"
+      - 복구 지향 컴퓨팅
+      - ROC
+      - ref-065
+      - source:ref-065
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-065
+  - key: source:ref-066
+    type: source
+    labels:
+      ko: The Complexity of Theorem-Proving Procedures
+    aliases:
+      - The Complexity of Theorem-Proving Procedures
+      - Cook 1971
+      - Cook's theorem
+      - 정리 증명 절차의 복잡도
+      - ref-066
+      - source:ref-066
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-066
+  - key: source:ref-067
+    type: source
+    labels:
+      ko: Reducibility Among Combinatorial Problems
+    aliases:
+      - Reducibility Among Combinatorial Problems
+      - Karp 1972
+      - Karp's 21 problems
+      - 조합 문제 사이의 환원성
+      - ref-067
+      - source:ref-067
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-067
+  - key: source:ref-068
+    type: source
+    labels:
+      ko: There's Plenty of Room at the Top
+    aliases:
+      - There's Plenty of Room at the Top
+      - "There’s plenty of room at the Top: What will drive computer performance after Moore’s law?"
+      - Leiserson et al. 2020
+      - 포스트 무어 시대의 성능
+      - ref-068
+      - source:ref-068
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-068
+  - key: source:ref-069
+    type: source
+    labels:
+      ko: Mixed Precision Training
+    aliases:
+      - Mixed Precision Training
+      - Micikevicius et al. 2018
+      - mixed-precision deep learning
+      - ref-069
+      - source:ref-069
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-069
+  - key: source:ref-070
+    type: source
+    labels:
+      ko: MLPerf Training Benchmark
+    aliases:
+      - MLPerf Training Benchmark
+      - Mattson et al. 2020
+      - MLPerf Training
+      - MLPerf 학습 벤치마크
+      - ref-070
+      - source:ref-070
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-070
+  - key: source:ref-071
+    type: source
+    labels:
+      ko: No Silver Bullet—Essence and Accidents of Software Engineering
+    aliases:
+      - No Silver Bullet—Essence and Accidents of Software Engineering
+      - No Silver Bullet
+      - Brooks 1987
+      - 은탄환은 없다
+      - 소프트웨어 공학의 본질과 부수성
+      - ref-071
+      - source:ref-071
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-071
+  - key: source:ref-072
+    type: source
+    labels:
+      ko: The SPACE of Developer Productivity
+    aliases:
+      - The SPACE of Developer Productivity
+      - Forsgren et al. 2021
+      - SPACE framework
+      - SPACE 생산성 프레임워크
+      - 개발자 생산성 SPACE
+      - ref-072
+      - source:ref-072
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-072
+  - key: source:ref-073
+    type: source
+    labels:
+      ko: Attention Is All You Need
+    aliases:
+      - Attention Is All You Need
+      - Vaswani et al. 2017
+      - Transformer paper
+      - ref-073
+      - source:ref-073
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-073
+  - key: source:ref-074
+    type: source
+    labels:
+      ko: "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness"
+    aliases:
+      - "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness"
+      - FlashAttention
+      - Dao et al. 2022
+      - IO-aware exact attention
+      - ref-074
+      - FlashAttention - Fast and Memory-Efficient Exact Attention with IO-Awareness
+      - source:ref-074
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-074
+  - key: source:ref-075
+    type: source
+    labels:
+      ko: "Orca: A Distributed Serving System for Transformer-Based Generative Models"
+    aliases:
+      - "Orca: A Distributed Serving System for Transformer-Based Generative Models"
+      - Orca
+      - ORCA
+      - Yu et al. 2022
+      - Orca serving system
+      - ref-075
+      - Orca - A Distributed Serving System for Transformer-Based Generative Models
+      - source:ref-075
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-075
+  - key: source:ref-076
+    type: source
+    labels:
+      ko: Efficient Memory Management for Large Language Model Serving with PagedAttention
+    aliases:
+      - Efficient Memory Management for Large Language Model Serving with PagedAttention
+      - PagedAttention
+      - vLLM paper
+      - Kwon et al. 2023
+      - PagedAttention paper
+      - ref-076
+      - source:ref-076
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-076
+  - key: source:ref-077
+    type: source
+    labels:
+      ko: "DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving"
+    aliases:
+      - "DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving"
+      - DistServe
+      - DistServe paper
+      - Zhong et al. 2024
+      - ref-077
+      - DistServe - Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving
+      - source:ref-077
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-077
+  - key: source:ref-078
+    type: source
+    labels:
+      ko: MLPerf Inference Benchmark
+    aliases:
+      - MLPerf Inference Benchmark
+      - MLPerf Inference
+      - MLPerf 추론 벤치마크
+      - MLPerf Inference rules
+      - Reddi et al. 2020
+      - ref-078
+      - source:ref-078
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-078
+  - key: source:ref-079
+    type: source
+    labels:
+      ko: Fast Inference from Transformers via Speculative Decoding
+    aliases:
+      - Fast Inference from Transformers via Speculative Decoding
+      - Speculative Decoding paper
+      - Leviathan et al. 2023
+      - 추측 디코딩 논문
+      - ref-079
+      - source:ref-079
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-079
+  - key: source:ref-080
+    type: source
+    labels:
+      ko: "SGLang: Efficient Execution of Structured Language Model Programs"
+    aliases:
+      - "SGLang: Efficient Execution of Structured Language Model Programs"
+      - SGLang paper
+      - RadixAttention paper
+      - Zheng et al. 2024
+      - ref-080
+      - SGLang - Efficient Execution of Structured Language Model Programs
+      - source:ref-080
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-080
+  - key: source:ref-081
+    type: source
+    labels:
+      ko: "GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers"
+    aliases:
+      - "GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers"
+      - GPTQ paper
+      - Frantar et al. 2023
+      - GPTQ
+      - ref-081
+      - GPTQ - Accurate Post-Training Quantization for Generative Pre-trained Transformers
+      - source:ref-081
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-081
+  - key: source:ref-082
+    type: source
+    labels:
+      ko: "AWQ: Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration"
+    aliases:
+      - "AWQ: Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration"
+      - AWQ paper
+      - Activation-aware Weight Quantization
+      - Lin et al. 2024
+      - ref-082
+      - AWQ - Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration
+      - source:ref-082
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-082
+  - key: source:ref-083
+    type: source
+    labels:
+      ko: "TokenPowerBench: Benchmarking the Power Consumption of LLM Inference"
+    aliases:
+      - "TokenPowerBench: Benchmarking the Power Consumption of LLM Inference"
+      - TokenPowerBench
+      - LLM inference power benchmark
+      - 토큰파워벤치
+      - ref-083
+      - TokenPowerBench - Benchmarking the Power Consumption of LLM Inference
+      - source:ref-083
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-083
+  - key: source:ref-084
+    type: source
+    labels:
+      ko: MLPerf Inference Power Measurement
+    aliases:
+      - MLPerf Inference Power Measurement
+      - MLPerf Inference Power
+      - MLPerf 추론 전력 측정
+      - MLPerf power methodology
+      - ref-084
+      - source:ref-084
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-084
+  - key: source:ref-085
+    type: source
+    labels:
+      ko: "A Proof for the Queuing Formula: L = λ W"
+    aliases:
+      - "A Proof for the Queuing Formula: L = λ W"
+      - A Proof for the Queuing Formula L = λW
+      - Little의 법칙 원 논문
+      - John D. C. Little 1961
+      - Little 1961 queueing proof
+      - ref-085
+      - source:ref-085
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-085
+  - key: source:ref-086
+    type: source
+    labels:
+      ko: "Serving DNNs like Clockwork: Performance Predictability from the Bottom Up"
+    aliases:
+      - "Serving DNNs like Clockwork: Performance Predictability from the Bottom Up"
+      - Serving DNNs like Clockwork Performance Predictability from the Bottom Up
+      - Clockwork
+      - Clockwork serving system
+      - Gujarati et al. 2020
+      - ref-086
+      - source:ref-086
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-086
+  - key: source:ref-087
+    type: source
+    labels:
+      ko: Brewer's Conjecture and the Feasibility of Consistent, Available, Partition-Tolerant Web Services
+    aliases:
+      - Brewer's Conjecture and the Feasibility of Consistent, Available, Partition-Tolerant Web Services
+      - CAP 원 논문
+      - Gilbert Lynch 2002
+      - CAP theorem paper
+      - ref-087
+      - source:ref-087
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-087
+  - key: source:ref-088
+    type: source
+    labels:
+      ko: In Search of an Understandable Consensus Algorithm
+    aliases:
+      - In Search of an Understandable Consensus Algorithm
+      - Raft
+      - Raft 논문
+      - Ongaro Ousterhout 2014
+      - Raft consensus paper
+      - ref-088
+      - source:ref-088
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-088
+  - key: source:ref-089
+    type: source
+    labels:
+      ko: "Spanner: Google's Globally-Distributed Database"
+    aliases:
+      - "Spanner: Google's Globally-Distributed Database"
+      - Spanner - Google's Globally-Distributed Database
+      - Spanner
+      - Spanner 논문
+      - Corbett et al. 2012
+      - ref-089
+      - source:ref-089
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-089
+  - key: source:ref-090
+    type: source
+    labels:
+      ko: CWE-20 Improper Input Validation
+    aliases:
+      - CWE-20 Improper Input Validation
+      - "CWE-20: Improper Input Validation"
+      - CWE-20
+      - CWE 입력 검증
+      - MITRE CWE-20
+      - ref-090
+      - source:ref-090
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-090
+  - key: source:ref-091
+    type: source
+    labels:
+      ko: CWE-190 Integer Overflow or Wraparound
+    aliases:
+      - CWE-190 Integer Overflow or Wraparound
+      - "CWE-190: Integer Overflow or Wraparound"
+      - CWE-190
+      - CWE 정수 오버플로
+      - MITRE CWE-190
+      - ref-091
+      - source:ref-091
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-091
+  - key: source:ref-092
+    type: source
+    labels:
+      ko: Cooperating Sequential Processes
+    aliases:
+      - Cooperating Sequential Processes
+      - Dijkstra 1968
+      - EWD 123
+      - Cooperating sequential processes
+      - 협력하는 순차 프로세스
+      - ref-092
+      - source:ref-092
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-092
+  - key: source:ref-093
+    type: source
+    labels:
+      ko: "Monitors: An Operating System Structuring Concept"
+    aliases:
+      - "Monitors: An Operating System Structuring Concept"
+      - Hoare monitors
+      - Hoare 1974
+      - Monitors An Operating System Structuring Concept
+      - 운영체제 구조화 개념으로서의 모니터
+      - ref-093
+      - source:ref-093
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-093
+  - key: source:ref-094
+    type: source
+    labels:
+      ko: How to Make a Multiprocessor Computer That Correctly Executes Multiprocess Programs
+    aliases:
+      - How to Make a Multiprocessor Computer That Correctly Executes Multiprocess Programs
+      - Lamport 1979
+      - Lamport sequential consistency paper
+      - 다중 프로세서 순차 일관성
+      - ref-094
+      - source:ref-094
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-094
+  - key: source:ref-095
+    type: source
+    labels:
+      ko: "Linearizability: A Correctness Condition for Concurrent Objects"
+    aliases:
+      - "Linearizability: A Correctness Condition for Concurrent Objects"
+      - Herlihy Wing 1990
+      - Linearizability A Correctness Condition for Concurrent Objects
+      - linearizability paper
+      - 동시 객체의 선형화 가능성
+      - ref-095
+      - source:ref-095
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-095
+  - key: source:ref-096
+    type: source
+    labels:
+      ko: "LLVM: A Compilation Framework for Lifelong Program Analysis & Transformation"
+    aliases:
+      - "LLVM: A Compilation Framework for Lifelong Program Analysis & Transformation"
+      - LLVM
+      - Lattner and Adve 2004
+      - LLVM IR
+      - ref-096
+      - LLVM - A Compilation Framework for Lifelong Program Analysis and Transformation
+      - source:ref-096
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-096
+  - key: source:ref-097
+    type: source
+    labels:
+      ko: Scalable Parallel Programming with CUDA
+    aliases:
+      - Scalable Parallel Programming with CUDA
+      - CUDA
+      - Nickolls et al. 2008
+      - CUDA programming model
+      - ref-097
+      - source:ref-097
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-097
+  - key: source:ref-098
+    type: source
+    labels:
+      ko: Decoupling Algorithms from Schedules for Easy Optimization of Image Processing Pipelines
+    aliases:
+      - Decoupling Algorithms from Schedules for Easy Optimization of Image Processing Pipelines
+      - Halide
+      - Ragan-Kelley et al. 2012
+      - Halide schedule paper
+      - ref-098
+      - source:ref-098
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-098
+  - key: source:ref-099
+    type: source
+    labels:
+      ko: "TVM: An Automated End-to-End Optimizing Compiler for Deep Learning"
+    aliases:
+      - "TVM: An Automated End-to-End Optimizing Compiler for Deep Learning"
+      - TVM
+      - Chen et al. 2018
+      - TVM compiler
+      - ref-099
+      - TVM - An Automated End-to-End Optimizing Compiler for Deep Learning
+      - source:ref-099
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-099
+  - key: source:ref-100
+    type: source
+    labels:
+      ko: Time, Clocks, and the Ordering of Events in a Distributed System
+    aliases:
+      - Time, Clocks, and the Ordering of Events in a Distributed System
+      - Lamport 논리 시계 원 논문
+      - Time, Clocks
+      - Lamport 1978
+      - 논리 시계
+      - ref-100
+      - source:ref-100
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-100
+  - key: source:ref-101
+    type: source
+    labels:
+      ko: End-to-End Arguments in System Design
+    aliases:
+      - End-to-End Arguments in System Design
+      - Saltzer Reed Clark 1984
+      - SRC84
+      - 종단간 논증 원 논문
+      - ref-101
+      - source:ref-101
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-101
+  - key: source:ref-102
+    type: source
+    labels:
+      ko: Implementing Remote Procedure Calls
+    aliases:
+      - Implementing Remote Procedure Calls
+      - RPC 원 논문
+      - Birrell Nelson 1984
+      - Cedar RPC
+      - 원격 프로시저 호출 구현
+      - ref-102
+      - source:ref-102
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-102
+  - key: source:ref-103
+    type: source
+    labels:
+      ko: The Google File System
+    aliases:
+      - The Google File System
+      - GFS 논문
+      - Google File System
+      - Ghemawat Gobioff Leung 2003
+      - 구글 파일 시스템
+      - ref-103
+      - source:ref-103
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-103
+  - key: source:ref-104
+    type: source
+    labels:
+      ko: "Dynamo: Amazon's Highly Available Key-value Store"
+    aliases:
+      - "Dynamo: Amazon's Highly Available Key-value Store"
+      - Dynamo - Amazon's Highly Available Key-value Store
+      - Dynamo 논문
+      - DeCandia et al. 2007
+      - Amazon Dynamo
+      - ref-104
+      - source:ref-104
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-104
+  - key: source:ref-105
+    type: source
+    labels:
+      ko: "Expectation vs. Experience: Evaluating the Usability of Code Generation Tools Powered by Large Language Models"
+    aliases:
+      - "Expectation vs. Experience: Evaluating the Usability of Code Generation Tools Powered by Large Language Models"
+      - Copilot usability study
+      - Vaithilingam Zhang Glassman 2022
+      - AI 코드 생성 도구 사용성
+      - ref-105
+      - Expectation vs. Experience — Evaluating the Usability of Code Generation Tools Powered by Large Language Models
+      - source:ref-105
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-105
+  - key: source:ref-106
+    type: source
+    labels:
+      ko: "The Impact of AI on Developer Productivity: Evidence from GitHub Copilot"
+    aliases:
+      - "The Impact of AI on Developer Productivity: Evidence from GitHub Copilot"
+      - Peng et al. 2023
+      - GitHub Copilot productivity experiment
+      - Copilot 생산성 실험
+      - ref-106
+      - The Impact of AI on Developer Productivity — Evidence from GitHub Copilot
+      - source:ref-106
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-106
+  - key: source:ref-107
+    type: source
+    labels:
+      ko: Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity
+    aliases:
+      - Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity
+      - METR developer productivity RCT
+      - METR 2025 AI 생산성 연구
+      - experienced OSS developers and AI
+      - ref-107
+      - source:ref-107
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-107
+  - key: source:ref-108
+    type: source
+    labels:
+      ko: GHG Protocol Product Life Cycle Accounting and Reporting Standard
+    aliases:
+      - GHG Protocol Product Life Cycle Accounting and Reporting Standard
+      - GHG Protocol Product Standard
+      - 제품 수명 주기 회계 표준
+      - Product Life Cycle Standard
+      - ref-108
+      - source:ref-108
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-108
+  - key: source:ref-109
+    type: source
+    labels:
+      ko: "Chasing Carbon: The Elusive Environmental Footprint of Computing"
+    aliases:
+      - "Chasing Carbon: The Elusive Environmental Footprint of Computing"
+      - Gupta et al. 2021
+      - Chasing Carbon
+      - 컴퓨팅 탄소 발자국
+      - ref-109
+      - Chasing Carbon — The Elusive Environmental Footprint of Computing
+      - source:ref-109
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-109
+  - key: source:ref-110
+    type: source
+    labels:
+      ko: Carbon Emissions and Large Neural Network Training
+    aliases:
+      - Carbon Emissions and Large Neural Network Training
+      - Patterson et al. 2021
+      - 대형 신경망 학습 탄소 배출
+      - ML training carbon emissions
+      - ref-110
+      - source:ref-110
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-110
+  - key: source:ref-111
+    type: source
+    labels:
+      ko: A Critique of ANSI SQL Isolation Levels
+    aliases:
+      - A Critique of ANSI SQL Isolation Levels
+      - Berenson isolation levels
+      - ANSI SQL isolation levels critique
+      - ANSI SQL 격리 수준 비판
+      - ref-111
+      - source:ref-111
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-111
+  - key: source:ref-112
+    type: source
+    labels:
+      ko: Serializable Isolation for Snapshot Databases
+    aliases:
+      - Serializable Isolation for Snapshot Databases
+      - Cahill Röhm Fekete SSI
+      - Serializable Snapshot Isolation
+      - 스냅샷 데이터베이스의 직렬 가능 격리
+      - ref-112
+      - source:ref-112
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-112
+  - key: source:ref-113
+    type: source
+    labels:
+      ko: PostgreSQL 17 Transaction Isolation
+    aliases:
+      - PostgreSQL 17 Transaction Isolation
+      - PostgreSQL transaction isolation documentation
+      - PostgreSQL 격리 수준
+      - PostgreSQL Serializable Snapshot Isolation
+      - ref-113
+      - source:ref-113
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-113
+  - key: source:ref-114
+    type: source
+    labels:
+      ko: RFC 9110 HTTP Semantics
+    aliases:
+      - RFC 9110 HTTP Semantics
+      - RFC 9110
+      - HTTP Semantics
+      - HTTP 멱등 메서드
+      - ref-114
+      - source:ref-114
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-114
+  - key: source:ref-115
+    type: source
+    labels:
+      ko: Stripe Idempotent Requests
+    aliases:
+      - Stripe Idempotent Requests
+      - Stripe idempotency keys
+      - Stripe API idempotency
+      - Stripe 멱등 요청
+      - ref-115
+      - source:ref-115
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-115
+  - key: source:ref-116
+    type: source
+    labels:
+      ko: FoundationDB Transactions with Unknown Results
+    aliases:
+      - FoundationDB Transactions with Unknown Results
+      - FoundationDB unknown commit result
+      - FoundationDB automatic idempotency
+      - FoundationDB 미확정 커밋
+      - ref-116
+      - source:ref-116
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-116
+  - key: source:ref-117
+    type: source
+    labels:
+      ko: Google SRE Addressing Cascading Failures
+    aliases:
+      - Google SRE Addressing Cascading Failures
+      - SRE cascading failures
+      - Google SRE retry budget
+      - Google SRE 연쇄 장애
+      - ref-117
+      - source:ref-117
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-117
+  - key: source:ref-118
+    type: source
+    labels:
+      ko: Google SRE Error Budget Policy
+    aliases:
+      - Google SRE Error Budget Policy
+      - SRE error budget policy
+      - 오류 예산 정책
+      - error budget
+      - ref-118
+      - source:ref-118
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-118
+  - key: source:ref-119
+    type: source
+    labels:
+      ko: The Phi Accrual Failure Detector
+    aliases:
+      - The Phi Accrual Failure Detector
+      - phi accrual failure detector
+      - φ-accrual failure detector
+      - phi 장애 감지기
+      - ref-119
+      - source:ref-119
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-119
+  - key: source:ref-120
+    type: source
+    labels:
+      ko: "Gray Failure: The Achilles' Heel of Cloud-Scale Systems"
+    aliases:
+      - "Gray Failure: The Achilles' Heel of Cloud-Scale Systems"
+      - Gray Failure
+      - gray failure
+      - 회색 장애
+      - ref-120
+      - Gray Failure The Achilles Heel of Cloud-Scale Systems
+      - source:ref-120
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-120
+  - key: source:ref-121
+    type: source
+    labels:
+      ko: Metastable Failures
+    aliases:
+      - Metastable Failures
+      - metastable failure
+      - metastable failures in distributed systems
+      - 메타안정 장애
+      - ref-121
+      - source:ref-121
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-121
+  - key: source:ref-122
+    type: source
+    labels:
+      ko: OpenTelemetry Trace API
+    aliases:
+      - OpenTelemetry Trace API
+      - OpenTelemetry tracing specification
+      - OTel Trace API
+      - OpenTelemetry 관측성
+      - ref-122
+      - source:ref-122
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-122
+  - key: source:ref-123
+    type: source
+    labels:
+      ko: Reproducible Builds - Definition
+    aliases:
+      - Reproducible Builds - Definition
+      - Reproducible Builds definition
+      - 재현 가능한 빌드 정의
+      - ref-123
+      - source:ref-123
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-123
+  - key: source:ref-124
+    type: source
+    labels:
+      ko: SOURCE_DATE_EPOCH Specification
+    aliases:
+      - SOURCE_DATE_EPOCH Specification
+      - SOURCE_DATE_EPOCH
+      - SOURCE_DATE_EPOCH 명세
+      - ref-124
+      - source:ref-124
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-124
+  - key: source:ref-125
+    type: source
+    labels:
+      ko: SLSA Build Provenance Specification
+    aliases:
+      - SLSA Build Provenance Specification
+      - SLSA Build Provenance
+      - SLSA provenance
+      - 빌드 provenance
+      - ref-125
+      - source:ref-125
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-125
+  - key: source:ref-126
+    type: source
+    labels:
+      ko: Bazel BUILD Files and Hermeticity
+    aliases:
+      - Bazel BUILD Files and Hermeticity
+      - Bazel BUILD files
+      - Bazel hermeticity
+      - Bazel hermetic build
+      - ref-126
+      - source:ref-126
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-126
+  - key: source:ref-127
+    type: source
+    labels:
+      ko: npm Package Provenance Statements
+    aliases:
+      - npm Package Provenance Statements
+      - npm provenance
+      - npm 패키지 provenance
+      - ref-127
+      - source:ref-127
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-127
+  - key: source:ref-128
+    type: source
+    labels:
+      ko: GitHub Artifact Attestations
+    aliases:
+      - GitHub Artifact Attestations
+      - GitHub artifact attestation
+      - GitHub 아티팩트 증명
+      - ref-128
+      - source:ref-128
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-128
+  - key: source:ref-129
+    type: source
+    labels:
+      ko: OCI Distribution Specification
+    aliases:
+      - OCI Distribution Specification
+      - OCI Distribution Spec
+      - OCI registry distribution
+      - OCI 배포 명세
+      - ref-129
+      - source:ref-129
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-129
+  - key: source:ref-130
+    type: source
+    labels:
+      ko: StableHLO Specification
+    aliases:
+      - StableHLO Specification
+      - StableHLO spec
+      - StableHLO 명세
+      - ref-130
+      - source:ref-130
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-130
+  - key: source:ref-131
+    type: source
+    labels:
+      ko: StableHLO Compatibility
+    aliases:
+      - StableHLO Compatibility
+      - StableHLO compatibility guarantees
+      - StableHLO 호환성
+      - ref-131
+      - source:ref-131
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-131
+  - key: source:ref-132
+    type: source
+    labels:
+      ko: MLIR Language Reference
+    aliases:
+      - MLIR Language Reference
+      - MLIR LangRef
+      - MLIR 언어 참조
+      - ref-132
+      - source:ref-132
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-132
+  - key: source:ref-133
+    type: source
+    labels:
+      ko: LLVM Language Reference
+    aliases:
+      - LLVM Language Reference
+      - LLVM LangRef
+      - LLVM IR ABI reference
+      - ref-133
+      - source:ref-133
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-133
+  - key: source:ref-134
+    type: source
+    labels:
+      ko: TensorFlow SavedModel Signatures
+    aliases:
+      - TensorFlow SavedModel Signatures
+      - SavedModel signatures
+      - TensorFlow serving signature
+      - SavedModel 서명
+      - ref-134
+      - source:ref-134
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-134
+  - key: source:ref-135
+    type: source
+    labels:
+      ko: ONNX Runtime Execution Providers
+    aliases:
+      - ONNX Runtime Execution Providers
+      - ONNX Runtime EP
+      - execution provider contract
+      - ONNX 실행 제공자
+      - ref-135
+      - source:ref-135
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-135
+  - key: source:ref-136
+    type: source
+    labels:
+      ko: OCI Runtime Specification
+    aliases:
+      - OCI Runtime Specification
+      - OCI runtime-spec
+      - OCI runtime contract
+      - OCI 런타임 명세
+      - ref-136
+      - source:ref-136
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-136
+  - key: source:ref-137
+    type: source
+    labels:
+      ko: ASLR 1차 자료 묶음
+    aliases:
+      - ASLR 1차 자료 묶음
+      - ASLR primary sources
+      - 주소 공간 배치 무작위화 1차 자료
+      - ref-137
+      - source:ref-137
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-137
+  - key: source:ref-138
+    type: source
+    labels:
+      ko: A New Golden Age for Computer Architecture
+    aliases:
+      - A New Golden Age for Computer Architecture
+      - Hennessy-Patterson 2019
+      - Turing Lecture 2018
+      - Domain-Specific Architectures
+      - ref-138
+      - source:ref-138
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-138
+  - key: source:ref-139
+    type: source
+    labels:
+      ko: Design and Implementation of the Sun Network Filesystem
+    aliases:
+      - Design and Implementation of the Sun Network Filesystem
+      - NFS
+      - Sun NFS
+      - Sandberg et al. 1985
+      - Network File System
+      - ref-139
+      - source:ref-139
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-139
+  - key: source:ref-140
+    type: source
+    labels:
+      ko: Remote Procedure Call protocols in historical perspective
+    aliases:
+      - Remote Procedure Call protocols in historical perspective
+      - RPC survey
+      - Nelson RPC
+      - Courier RPC
+      - RPC history
+      - ref-140
+      - Implementing Remote Procedure Calls - Experience Notes
+      - source:ref-140
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-140
+  - key: source:ref-141
+    type: source
+    labels:
+      ko: The Design Philosophy of the DARPA Internet Protocols
+    aliases:
+      - The Design Philosophy of the DARPA Internet Protocols
+      - Clark 1988
+      - Internet design philosophy
+      - DARPA Internet Protocols
+      - ref-141
+      - source:ref-141
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-141
+  - key: source:ref-142
+    type: source
+    labels:
+      ko: "홉스와 라이프니츠: 기호의 기능"
+    aliases:
+      - "홉스와 라이프니츠: 기호의 기능"
+      - 이상명 2016
+      - "Hobbes and Leibniz: Functions of Signs"
+      - ref-142
+      - 홉스와 라이프니츠 - 기호의 기능
+      - source:ref-142
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-142
+  - key: source:ref-143
+    type: source
+    labels:
+      ko: Elementorum Philosophiae Sectio Prima De Corpore
+    aliases:
+      - Elementorum Philosophiae Sectio Prima De Corpore
+      - De Corpore
+      - 물체론
+      - Hobbes 1655
+      - 계산 혹은 논리학
+      - ref-143
+      - source:ref-143
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-143
+  - key: source:ref-144
+    type: source
+    labels:
+      ko: Meditationes de Cognitione, Veritate et Ideis
+    aliases:
+      - Meditationes de Cognitione, Veritate et Ideis
+      - Meditationes
+      - 인식 진리 관념에 관한 성찰
+      - Leibniz 1684
+      - ref-144
+      - source:ref-144
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-144
+  - key: source:ref-145
+    type: source
+    labels:
+      ko: Explication de l'Arithmétique Binaire
+    aliases:
+      - Explication de l'Arithmétique Binaire
+      - 이진 산술의 해설
+      - Leibniz 1703
+      - 이진법 논문
+      - ref-145
+      - source:ref-145
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-145
+  - key: source:ref-146
+    type: source
+    labels:
+      ko: Minds, Brains, and Programs
+    aliases:
+      - Minds, Brains, and Programs
+      - Searle 1980
+      - 마음 뇌 프로그램
+      - ref-146
+      - source:ref-146
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-146
+  - key: source:ref-147
+    type: source
+    labels:
+      ko: Blaise Agüera y Arcas Big Think 인터뷰 원문
+    aliases:
+      - Blaise Agüera y Arcas Big Think 인터뷰 원문
+      - Blaise_transcript
+      - Agüera y Arcas Big Think interview
+      - 아구에라 이 아르카스 인터뷰 전사본
+      - ref-147
+      - source:ref-147
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-147
+  - key: source:ref-148
+    type: source
+    labels:
+      ko: Computational Life
+    aliases:
+      - Computational Life
+      - Computational Life - How Well-formed, Self-replicating Programs Emerge from Simple Interaction
+      - arXiv 2406.19108
+      - BFF 논문
+      - ref-148
+      - source:ref-148
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-148
+  - key: source:ref-149
+    type: source
+    labels:
+      ko: On the Origin of Mitosing Cells
+    aliases:
+      - On the Origin of Mitosing Cells
+      - Sagan 1967
+      - Margulis 1967
+      - 유사분열 세포의 기원
+      - ref-149
+      - source:ref-149
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-149
+  - key: source:ref-150
+    type: source
+    labels:
+      ko: Irreversibility and Heat Generation in the Computing Process
+    aliases:
+      - Irreversibility and Heat Generation in the Computing Process
+      - Landauer 1961
+      - 계산 과정의 비가역성과 열 발생
+      - ref-150
+      - source:ref-150
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-150
+  - key: source:ref-151
+    type: source
+    labels:
+      ko: Artificial General Intelligence Is Already Here
+    aliases:
+      - Artificial General Intelligence Is Already Here
+      - Agüera y Arcas and Norvig 2023
+      - AGI는 이미 도래했다
+      - ref-151
+      - source:ref-151
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-151
+  - key: source:ref-152
+    type: source
+    labels:
+      ko: Theory of Self-Reproducing Automata
+    aliases:
+      - Theory of Self-Reproducing Automata
+      - von Neumann 1966
+      - 자기복제 오토마타 이론
+      - ref-152
+      - source:ref-152
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-152
+  - key: source:ref-153
+    type: source
+    labels:
+      ko: The Major Transitions in Evolution
+    aliases:
+      - The Major Transitions in Evolution
+      - Maynard Smith and Szathmáry 1995
+      - 진화의 주요 전이
+      - ref-153
+      - source:ref-153
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-153
+  - key: source:ref-154
+    type: source
+    labels:
+      ko: Absent Qualia, Fading Qualia, Dancing Qualia
+    aliases:
+      - Absent Qualia, Fading Qualia, Dancing Qualia
+      - Chalmers 1995
+      - 희미해지는 감각질
+      - ref-154
+      - source:ref-154
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-154
+  - key: source:ref-155
+    type: source
+    labels:
+      ko: Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I
+    aliases:
+      - Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I
+      - McCarthy 1960
+      - Recursive Functions of Symbolic Expressions
+      - LISP 1960 paper
+      - ref-155
+      - source:ref-155
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-155
+  - key: source:src-001
+    type: source
+    labels:
+      ko: 컴퓨팅의 기원 - 배비지와 러브레이스
+    aliases:
+      - 컴퓨팅의 기원 - 배비지와 러브레이스
+      - 컴퓨팅의 기원
+      - 배비지와 러브레이스
+      - 전컴퓨팅 시대
+      - src-001
+      - source:src-001
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: src-001
+  - key: source:src-002
+    type: source
+    labels:
+      ko: 초기 소프트웨어의 탄생
+    aliases:
+      - 초기 소프트웨어의 탄생
+      - EDSAC에서 프로그래밍 언어까지
+      - 초기 프로그래밍의 역사
+      - src-002
+      - source:src-002
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: src-002
+  - key: source:src-003
+    type: source
+    labels:
+      ko: EDSAC과 Initial Orders
+    aliases:
+      - EDSAC과 Initial Orders
+      - EDSAC Initial Orders source
+      - src-003
+      - source:src-003
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: src-003
+  - key: source:src-004
+    type: source
+    labels:
+      ko: 서브루틴과 스택(Stack)의 원리
+    aliases:
+      - 서브루틴과 스택(Stack)의 원리
+      - 서브루틴과 스택
+      - Subroutine and Stack
+      - src-004
+      - source:src-004
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: src-004
+  - key: source:src-005
+    type: source
+    labels:
+      ko: 폐쇄형 서브루틴과 Wheeler Jump
+    aliases:
+      - 폐쇄형 서브루틴과 Wheeler Jump
+      - Closed Subroutine and Wheeler Jump
+      - src-005
+      - source:src-005
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: src-005
+  - key: source:src-006
+    type: source
+    labels:
+      ko: 데이터 표현과 인코딩
+    aliases:
+      - 데이터 표현과 인코딩
+      - Data Representation and Encoding
+      - src-006
+      - source:src-006
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: src-006
+  - key: source:src-007
+    type: source
+    labels:
+      ko: 홉스와 라이프니츠, 기호에서 AI까지
+    aliases:
+      - 홉스와 라이프니츠, 기호에서 AI까지
+      - 생각은 계산이다
+      - 맹목적 사고의 계보학
+      - 기호에서 AI까지
+      - src-007
+      - source:src-007
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: src-007
+  - key: source:src-008
+    type: source
+    labels:
+      ko: 생명은 계산이며 공생발생으로 진화한다
+    aliases:
+      - 생명은 계산이며 공생발생으로 진화한다
+      - 생명 계산 공생발생 AGI
+      - 아구에라 이 아르카스의 생명 기능주의와 AGI
+      - life computation symbiogenesis agi
+      - src-008
+      - source:src-008
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: src-008
+  - key: source:src-009
+    type: source
+    labels:
+      ko: 지수 기호 하나를 얻기까지 왜 1877년이나 걸렸는가
+    aliases:
+      - 지수 기호 하나를 얻기까지 왜 1877년이나 걸렸는가
+      - 1877년의 지수 기호
+      - Why Did It Take 1,877 Years to Invent x Squared
+      - 구문론이 의미론을 이끈다
+      - src-009
+      - source:src-009
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: src-009
+  - key: source:src-010
+    type: source
+    labels:
+      ko: 기하학과 대수학의 위대한 번역
+    aliases:
+      - 기하학과 대수학의 위대한 번역
+      - 데카르트와 페르마의 해석기하학
+      - The Great Mathematical Translation
+      - 공간의 대수화
+      - src-010
+      - source:src-010
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: src-010

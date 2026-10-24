@@ -1,0 +1,43 @@
+{
+  "name": "cs-wiki-next",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "knowledge:seed": "node packages/knowledge/src/cli/seed.mjs",
+    "knowledge:report": "node packages/knowledge/src/cli/report.mjs",
+    "knowledge:check": "node packages/knowledge/src/cli/check.mjs",
+    "knowledge:migrate": "node packages/knowledge/src/cli/migrate.mjs",
+    "knowledge:sync": "node packages/knowledge/src/cli/sync.mjs",
+    "knowledge:schema": "node packages/knowledge/src/cli/schema.mjs",
+    "knowledge:build": "node packages/knowledge/src/build.mjs",
+    "knowledge:quality": "node packages/knowledge/src/cli/quality.mjs",
+    "traces:check": "node packages/knowledge/src/cli/traces.mjs",
+    "traces:review": "node packages/knowledge/src/cli/traces-review.mjs",
+    "traces:gaps": "node packages/knowledge/src/cli/trace-gaps.mjs",
+    "content:retire": "node packages/knowledge/src/cli/retire.mjs",
+    "content:delete": "node packages/knowledge/src/cli/delete.mjs",
+    "content:restore": "node packages/knowledge/src/cli/restore.mjs",
+    "wiki:lint": "node packages/knowledge/src/cli/wiki-lint.mjs",
+    "wiki:index": "node packages/knowledge/src/cli/wiki-index.mjs",
+    "wiki:log": "node packages/knowledge/src/cli/wiki-log.mjs",
+    "wiki:gaps": "node packages/knowledge/src/cli/wiki-gaps.mjs",
+    "wiki:ingest": "node packages/knowledge/src/cli/wiki-ingest.mjs",
+    "wiki:query": "node packages/knowledge/src/cli/wiki-query.mjs",
+    "wiki:audit": "node packages/knowledge/src/cli/wiki-audit.mjs",
+    "test": "node --test packages/knowledge/tests/*.test.mjs",
+    "site:build": "npm run knowledge:build && node app/scripts/copy-assets.mjs && npm --prefix app run build",
+    "site:parity": "node app/scripts/check-routes.mjs",
+    "site:links": "node app/scripts/check-links.mjs",
+    "search:eval": "node app/scripts/eval-search.mjs",
+    "security:audit": "npm audit --audit-level=moderate && npm --prefix app audit --audit-level=moderate"
+  },
+  "dependencies": {
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1",
+    "yaml": "^2.9.1"
+  }
+}

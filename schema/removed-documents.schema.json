@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cswiki.local/schema/removed-documents.schema.json",
+  "title": "CS Wiki removed documents",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "removed"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "removed": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "key", "title", "kind", "mode", "removed_at", "break_url"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+          "key": { "type": "string", "pattern": "^(person|organization|concept|entity|work|event|place|artifact|analysis|document|source):[a-z0-9][a-z0-9-]*$" },
+          "title": { "type": "string", "minLength": 1 },
+          "kind": { "enum": ["source", "reference", "entity", "concept", "analysis", "meta"] },
+          "mode": { "enum": ["archive", "purge"] },
+          "removed_at": { "type": "string", "format": "date" },
+          "source_path": { "type": "string", "pattern": "^wiki/" },
+          "replaced_by": { "type": ["string", "null"] },
+          "reason": { "type": "string", "maxLength": 300 },
+          "break_url": { "type": "boolean" }
+        }
+      }
+    }
+  }
+}

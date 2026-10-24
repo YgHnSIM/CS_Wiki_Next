@@ -1,0 +1,7 @@
+{
+  "name": "@cs-wiki/knowledge",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "CS Wiki metadata, relation, evidence, and graph compiler"
+}

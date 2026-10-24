@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "frozen_at": "2026-10-24",
+  "documents": 440,
+  "public_documents": 397,
+  "unlisted_documents": 43,
+  "relation_documents": 362,
+  "statements": 887,
+  "redirects": 555,
+  "legacy_routes": "contracts/routes.json",
+  "note": "2026-10-24 migration acceptance snapshot. Current content may grow; parity checks are lower bounds, not exact totals."
+}

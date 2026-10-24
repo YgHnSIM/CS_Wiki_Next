@@ -1,0 +1,1308 @@
+{
+  "schema_version": 1,
+  "traces": [
+    {
+      "id": "computation",
+      "title": "계산이란 무엇인가",
+      "question": "기계가 계산한다는 말은 무엇을 보장하고, 무엇을 보장하지 않는가?",
+      "outcome": "튜링 기계와 보편 튜링 기계의 차이를 설명하고, 계산 가능성과 효율을 구분할 수 있다.",
+      "audience": "계산 가능성의 출발점을 원문부터 따라가고 싶은 독자",
+      "minutes": 40,
+      "prerequisites": [
+        "concept:computing-capability"
+      ],
+      "steps": [
+        {
+          "document": "source:ref-009",
+          "role": "source",
+          "why": "계산 가능성 논의의 원전에서 문제 설정과 형식화를 직접 확인한다.",
+          "checkpoint": {
+            "question": "튜링은 계산 가능한 수를 무엇으로 정의했는가?",
+            "answer": "유한한 규칙에 따라 각 자리를 계산할 수 있는 수로 정의했다. 계산이 끝없이 이어져도 각 단계는 유한한 절차로 수행된다.",
+            "evidence": [
+              "source:ref-009"
+            ]
+          }
+        },
+        {
+          "document": "concept:page-c617f209",
+          "role": "concept",
+          "why": "원문의 절차를 테이프·상태·전이 규칙이라는 최소 모델로 고정한다.",
+          "checkpoint": {
+            "question": "튜링 기계의 계산 능력을 결정하는 핵심 요소는 무엇인가?",
+            "answer": "테이프·기호·헤드·상태·전이 규칙이며, 물리적 구현이나 속도는 정의에 포함되지 않는다.",
+            "evidence": [
+              "concept:page-c617f209",
+              "source:ref-009"
+            ]
+          }
+        },
+        {
+          "document": "concept:page-676372e6",
+          "role": "concept",
+          "why": "개별 기계와 달리 프로그램을 데이터로 읽는 보편 기계의 의미를 이해한다.",
+          "checkpoint": {
+            "question": "보편 튜링 기계는 왜 모든 튜링 기계를 대신할 수 있는가?",
+            "answer": "기계의 설명을 테이프에 부호화해 읽고, 그 설명대로 다른 기계의 계산을 흉내 내기 때문이다.",
+            "evidence": [
+              "concept:page-676372e6",
+              "source:ref-009"
+            ]
+          }
+        },
+        {
+          "document": "concept:page-b95bdd2d",
+          "role": "concept",
+          "why": "튜링 기계·람다 계산·재귀 함수가 같은 계산 가능성 계층을 가리키는지 확인한다.",
+          "checkpoint": {
+            "question": "처치-튜링 논제는 수학적 정리인가, 정의인가?",
+            "answer": "형식적 정리라기보다 ‘효과적으로 계산 가능’이라는 직관을 여러 형식 체계가 공유한다는 논제다.",
+            "evidence": [
+              "concept:page-b95bdd2d"
+            ]
+          }
+        },
+        {
+          "document": "concept:computability",
+          "role": "concept",
+          "why": "계산 가능성과 계산 복잡도·효율을 혼동하지 않도록 경계를 긋는다.",
+          "checkpoint": {
+            "question": "계산 불가능한 문제도 알고리즘으로 다룰 수 있는가?",
+            "answer": "일반적으로는 불가능하다. 다만 문제의 입력을 제한하거나 다른 문제로 환원하면 다룰 수 있는 경우가 있다.",
+            "evidence": [
+              "concept:computability"
+            ]
+          }
+        },
+        {
+          "document": "analysis:page-f5a31368",
+          "role": "analysis",
+          "why": "원문·개념을 ‘기계가 계산한다’는 주장의 철학적·이론적 의미로 종합한다.",
+          "checkpoint": {
+            "question": "‘기계가 계산한다’는 주장에서 기계의 물리적 구현은 어떤 역할을 하는가?",
+            "answer": "계산 가능성의 정의에는 필수 조건이 아니며, 구현은 실행·속도·자원의 문제로 분리된다.",
+            "evidence": [
+              "analysis:page-f5a31368"
+            ]
+          }
+        }
+      ],
+      "branches": [
+        {
+          "id": "church",
+          "label": "알론조 처치와 람다 계산",
+          "documents": [
+            "person:alonzo-church",
+            "concept:computability"
+          ]
+        },
+        {
+          "id": "history",
+          "label": "1936년의 문제 설정",
+          "documents": [
+            "source:ref-009",
+            "person:alan-turing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "performance",
+      "title": "왜 빠른 CPU가 빠른 프로그램을 보장하지 않는가",
+      "question": "프로세서의 클럭이 올라가도 프로그램이 같은 비율로 빨라지지 않는 이유는 무엇인가?",
+      "outcome": "성능을 클럭 하나가 아니라 메모리·캐시·전력·측정의 다층 문제로 설명할 수 있다.",
+      "audience": "하드웨어 성능과 서비스 성능을 함께 이해하고 싶은 독자",
+      "minutes": 45,
+      "prerequisites": [
+        "concept:computing-capability"
+      ],
+      "steps": [
+        {
+          "document": "source:ref-039",
+          "role": "source",
+          "why": "메모리 접근이 프로세서 속도를 따라가지 못한다는 문제를 원문에서 확인한다.",
+          "checkpoint": {
+            "question": "메모리 장벽은 무엇과 무엇의 격차인가?",
+            "answer": "프로세서의 연산 속도 향상과 메모리 접근 지연·대역폭 향상 사이의 격차다.",
+            "evidence": [
+              "source:ref-039"
+            ]
+          }
+        },
+        {
+          "document": "concept:memory-wall",
+          "role": "concept",
+          "why": "메모리 장벽을 캐시·대역폭·지연 시간의 문제로 정의한다.",
+          "checkpoint": {
+            "question": "메모리 장벽이 심해지면 왜 캐시가 더 중요해지는가?",
+            "answer": "느린 주기억장치 접근을 줄이고, 자주 쓰는 데이터를 빠른 캐시에 두어 평균 지연을 낮추기 때문이다.",
+            "evidence": [
+              "concept:memory-wall"
+            ]
+          }
+        },
+        {
+          "document": "concept:page-6aaebafb",
+          "role": "concept",
+          "why": "캐시가 지역성과 계층 구조에 의존하는 이유를 이해한다.",
+          "checkpoint": {
+            "question": "캐시가 효과를 내는 전제는 무엇인가?",
+            "answer": "시간적·공간적 지역성, 즉 최근에 쓰거나 인접한 데이터를 다시 쓸 가능성이다.",
+            "evidence": [
+              "concept:page-6aaebafb"
+            ]
+          }
+        },
+        {
+          "document": "analysis:page-2b56fedc",
+          "role": "analysis",
+          "why": "클럭·IPC·메모리 지연·병렬성이 함께 성능을 결정한다는 것을 종합한다.",
+          "checkpoint": {
+            "question": "클럭을 2배로 올리면 프로그램 실행 시간도 2배 줄어드는가?",
+            "answer": "아니다. 메모리 지연, 명령어 수, 병렬성, 전력·발열 제약 때문에 비례하지 않는다.",
+            "evidence": [
+              "analysis:page-2b56fedc",
+              "source:ref-039"
+            ]
+          }
+        },
+        {
+          "document": "analysis:power-wall-performance",
+          "role": "analysis",
+          "why": "전력·발열이 클럭 향상의 한계를 만들고 성능의 의미를 바꾸는 과정을 본다.",
+          "checkpoint": {
+            "question": "전력 장벽 이후 성능 향상의 중심은 어디로 이동했는가?",
+            "answer": "단일 클럭 향상보다 전력 효율, 활성 면적, 작업 적합성, 세대 간 환산 계산량/에너지 관리로 이동했다.",
+            "evidence": [
+              "analysis:power-wall-performance"
+            ]
+          }
+        },
+        {
+          "document": "analysis:page-01dd444c",
+          "role": "analysis",
+          "why": "평균 성능 지표가 실제 서비스의 컴퓨팅 능력을 가릴 수 있음을 확인한다.",
+          "checkpoint": {
+            "question": "평균 처리량 하나로 서비스 성능을 판단하면 무엇을 놓치는가?",
+            "answer": "팬아웃으로 증폭된 느린 요청, 기한·가용성·품질, 자원 비용을 놓칠 수 있다.",
+            "evidence": [
+              "analysis:page-01dd444c"
+            ]
+          }
+        }
+      ],
+      "branches": [
+        {
+          "id": "roofline",
+          "label": "Roofline 모델로 보기",
+          "documents": [
+            "source:ref-034",
+            "analysis:ai-bottleneck-lineage"
+          ]
+        },
+        {
+          "id": "benchmark",
+          "label": "벤치마크 숫자의 함정",
+          "documents": [
+            "analysis:benchmark-numbers-not-directly-comparable"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unix-legacy",
+      "title": "Unix와 C는 왜 오래 살아남았는가",
+      "question": "Unix와 C는 어떤 설계 선택 덕분에 다른 기종과 시대에도 이어졌는가?",
+      "outcome": "Unix의 시스템 인터페이스, C의 이식성, 도구·런타임의 관계를 설명할 수 있다.",
+      "audience": "운영체제·언어·도구가 함께 발전한 계보를 따라가고 싶은 독자",
+      "minutes": 35,
+      "prerequisites": [
+        "concept:computing-capability"
+      ],
+      "steps": [
+        {
+          "document": "source:ref-018",
+          "role": "source",
+          "why": "Unix의 초기 설계 문서에서 파일·프로세스·셸의 기본 인터페이스를 확인한다.",
+          "checkpoint": {
+            "question": "Unix가 하드웨어와 응용 사이에 제공한 핵심 추상은 무엇인가?",
+            "answer": "파일, 프로세스, 셸·명령 파이프라인 같은 일관된 시스템 인터페이스다.",
+            "evidence": [
+              "source:ref-018"
+            ]
+          }
+        },
+        {
+          "document": "concept:page-092a889f",
+          "role": "concept",
+          "why": "Unix를 단일 프로그램이 아니라 시스템 인터페이스와 도구 생태계로 정리한다.",
+          "checkpoint": {
+            "question": "Unix의 이식성은 무엇에 의존하는가?",
+            "answer": "C로 작성된 커널·도구와, 하드웨어 차이를 감추는 시스템 호출·추상화 계층에 의존한다.",
+            "evidence": [
+              "concept:page-092a889f",
+              "source:ref-021"
+            ]
+          }
+        },
+        {
+          "document": "source:ref-019",
+          "role": "source",
+          "why": "C가 Unix와 함께 성장하며 어떤 언어적 선택을 했는지 원문에서 본다.",
+          "checkpoint": {
+            "question": "C가 시스템 프로그래밍에 적합했던 이유는 무엇인가?",
+            "answer": "하드웨어에 가까운 제어와 이식 가능한 추상화를 함께 제공했기 때문이다.",
+            "evidence": [
+              "source:ref-019"
+            ]
+          }
+        },
+        {
+          "document": "concept:page-f438fd41",
+          "role": "concept",
+          "why": "C의 타입·포인터·컴파일 모델을 이식성과 연결해 정리한다.",
+          "checkpoint": {
+            "question": "C의 ‘이식성’은 소스 코드가 수정 없이 모든 기종에서 동작한다는 뜻인가?",
+            "answer": "아니다. 구현 정의·플랫폼 차이를 다루는 조건과 추상화가 필요하다.",
+            "evidence": [
+              "concept:page-f438fd41",
+              "source:ref-021"
+            ]
+          }
+        },
+        {
+          "document": "concept:page-5063ca2b",
+          "role": "concept",
+          "why": "이식성을 언어 기능이 아니라 인터페이스·도구·환경의 문제로 확장한다.",
+          "checkpoint": {
+            "question": "이식성을 높이려면 무엇을 고정해야 하는가?",
+            "answer": "관찰 가능한 동작과 인터페이스를 고정하고, 플랫폼 의존 부분을 격리해야 한다.",
+            "evidence": [
+              "concept:page-5063ca2b",
+              "source:ref-021"
+            ]
+          }
+        },
+        {
+          "document": "analysis:page-8d320775",
+          "role": "analysis",
+          "why": "Unix와 C의 결합이 도구·커널·언어 생태계를 어떻게 재생산했는지 종합한다.",
+          "checkpoint": {
+            "question": "Unix와 C의 결합은 어떤 재사용 단위를 낳았는가?",
+            "answer": "시스템 호출·도구·라이브러리로 구성된 이식 가능한 개발 환경이다.",
+            "evidence": [
+              "analysis:page-8d320775"
+            ]
+          }
+        }
+      ],
+      "branches": [
+        {
+          "id": "portability",
+          "label": "이식성 원문 읽기",
+          "documents": [
+            "source:ref-021",
+            "concept:page-5063ca2b"
+          ]
+        },
+        {
+          "id": "pipes",
+          "label": "Unix 파이프와 도구 철학",
+          "documents": [
+            "concept:page-d86dcb52",
+            "analysis:page-8d320775"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "failure-recovery",
+      "title": "장애는 왜 감지와 복구 사이에서 더 어려워지는가",
+      "question": "분산 시스템은 장애를 완전히 막을 수 없다면, 무엇을 감지하고 무엇을 복구해야 하는가?",
+      "outcome": "부분 실패·회색 장애·메타스테이블 장애를 구분하고, 감지와 복구가 서로 다른 문제임을 설명할 수 있다.",
+      "audience": "서비스 운영과 분산 시스템의 장애 대응을 이해하고 싶은 독자",
+      "minutes": 45,
+      "prerequisites": [
+        "concept:computing-capability"
+      ],
+      "steps": [
+        {
+          "document": "source:ref-120",
+          "role": "source",
+          "why": "회색 장애가 왜 이진적 장애 감지로 잡히지 않는지 원문에서 확인한다.",
+          "checkpoint": {
+            "question": "회색 장애(gray failure)는 왜 탐지하기 어려운가?",
+            "answer": "구성 요소가 완전히 죽지 않고 느려지거나 부분적으로만 동작해, 증상과 원인이 서로 다른 위치에서 나타나기 때문이다.",
+            "evidence": [
+              "source:ref-120"
+            ]
+          }
+        },
+        {
+          "document": "source:ref-064",
+          "role": "source",
+          "why": "인터넷 서비스 장애의 원인 분포를 보고, 하드웨어 고장만이 문제가 아님을 확인한다.",
+          "checkpoint": {
+            "question": "인터넷 서비스 장애를 하드웨어 고장만으로 설명할 수 있는가?",
+            "answer": "아니다. 하드웨어·소프트웨어·네트워크·운영자 오류가 함께 주요 원인이 된다.",
+            "evidence": [
+              "source:ref-064"
+            ]
+          }
+        },
+        {
+          "document": "concept:availability-recovery",
+          "role": "concept",
+          "why": "가용성과 복구를 같은 말로 쓰지 않도록 정의를 분리한다.",
+          "checkpoint": {
+            "question": "가용성과 복구의 차이는 무엇인가?",
+            "answer": "가용성은 요청을 처리할 수 있는 상태이고, 복구는 장애 후 정상 상태로 돌아오는 과정이다. 높은 가용성이 빠른 복구를 보장하지 않는다.",
+            "evidence": [
+              "concept:availability-recovery"
+            ]
+          }
+        },
+        {
+          "document": "concept:partial-failure",
+          "role": "concept",
+          "why": "일부 구성 요소만 실패하는 상황이 왜 전체 상태를 모호하게 만드는지 이해한다.",
+          "checkpoint": {
+            "question": "부분 실패가 분산 시스템을 어렵게 만드는 이유는 무엇인가?",
+            "answer": "일부는 정상 동작하고 일부는 실패해, 관찰자마다 보는 상태가 달라지고 전역 상태를 단정하기 어려워지기 때문이다.",
+            "evidence": [
+              "concept:partial-failure"
+            ]
+          }
+        },
+        {
+          "document": "concept:failure-detection",
+          "role": "concept",
+          "why": "비동기 네트워크에서 완벽한 장애 감지가 불가능한 이유를 정리한다.",
+          "checkpoint": {
+            "question": "장애 감지기가 완벽할 수 없는 이유는 무엇인가?",
+            "answer": "응답 지연과 실제 장애를 구분할 상한이 없어, 오탐과 미탐 사이에서 판단해야 하기 때문이다.",
+            "evidence": [
+              "concept:failure-detection"
+            ]
+          }
+        },
+        {
+          "document": "analysis:failure-detection-gray-metastable",
+          "role": "analysis",
+          "why": "회색 장애와 메타스테이블 장애를 감지·복구 관점에서 종합한다.",
+          "checkpoint": {
+            "question": "회색 장애와 메타스테이블 장애는 어떻게 연결되는가?",
+            "answer": "회색 장애가 부하·재시도·의존성 피드백을 통해 시스템을 나쁜 상태에 고정시키면 메타스테이블 장애가 된다. 따라서 증상·종단 간 지표를 봐야 한다.",
+            "evidence": [
+              "analysis:failure-detection-gray-metastable",
+              "source:ref-121"
+            ]
+          }
+        }
+      ],
+      "branches": [
+        {
+          "id": "byzantine",
+          "label": "비잔틴 장애와 합의",
+          "documents": [
+            "source:ref-063",
+            "concept:byzantine-fault"
+          ]
+        },
+        {
+          "id": "sre",
+          "label": "SRE 오류 예산",
+          "documents": [
+            "source:ref-118",
+            "source:ref-117"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "llm-serving",
+      "title": "LLM 서빙 비용은 왜 GPU 연산량만으로 설명되지 않는가",
+      "question": "같은 모델과 같은 GPU를 써도 LLM 서비스의 비용과 지연이 달라지는 이유는 무엇인가?",
+      "outcome": "prefill·decode·KV cache·배칭·SLO·큐잉을 연결해 LLM 서빙 비용을 다층적으로 설명할 수 있다.",
+      "audience": "LLM 추론 시스템의 성능과 비용 구조를 이해하고 싶은 독자",
+      "minutes": 50,
+      "prerequisites": [
+        "concept:computing-capability"
+      ],
+      "steps": [
+        {
+          "document": "source:ref-073",
+          "role": "source",
+          "why": "Transformer가 등장한 원 논문에서 attention 구조와 병렬화의 출발점을 확인한다.",
+          "checkpoint": {
+            "question": "Transformer는 기존 순차 모델과 무엇이 달랐는가?",
+            "answer": "순환 없이 self-attention으로 시퀀스 전체를 병렬 처리해, 학습과 추론의 병목을 바꾸었다.",
+            "evidence": [
+              "source:ref-073"
+            ]
+          }
+        },
+        {
+          "document": "concept:transformer",
+          "role": "concept",
+          "why": "Transformer의 구성 요소와 추론 시 어떤 자원이 필요한지 정리한다.",
+          "checkpoint": {
+            "question": "Transformer 추론이 연산량만으로 설명되지 않는 이유는 무엇인가?",
+            "answer": "가중치·attention의 메모리 이동과 시퀀스 길이에 따라 병목이 달라지기 때문이다.",
+            "evidence": [
+              "concept:transformer",
+              "analysis:transformer-io-bottleneck"
+            ]
+          }
+        },
+        {
+          "document": "concept:prefill-decode",
+          "role": "concept",
+          "why": "prefill과 decode가 서로 다른 병목과 지연 특성을 가진다는 것을 이해한다.",
+          "checkpoint": {
+            "question": "prefill과 decode의 차이는 무엇인가?",
+            "answer": "prefill은 입력 전체를 병렬로 처리해 연산 집약적이고, decode는 토큰을 하나씩 생성해 메모리·지연에 민감하다.",
+            "evidence": [
+              "concept:prefill-decode"
+            ]
+          }
+        },
+        {
+          "document": "concept:kv-cache",
+          "role": "concept",
+          "why": "KV cache가 메모리를 차지하고 동시 요청 수를 제한하는 이유를 본다.",
+          "checkpoint": {
+            "question": "KV cache는 왜 LLM 서빙의 메모리 병목이 되는가?",
+            "answer": "각 요청의 과거 key/value를 저장해야 하며, 배치와 시퀀스가 커질수록 GPU 메모리를 많이 차지해 동시 처리량을 제한한다.",
+            "evidence": [
+              "concept:kv-cache"
+            ]
+          }
+        },
+        {
+          "document": "analysis:llm-throughput-latency-queueing",
+          "role": "analysis",
+          "why": "배칭이 처리량을 높이면서 지연과 큐잉을 악화시키는 관계를 종합한다.",
+          "checkpoint": {
+            "question": "배치 크기를 키우면 처리량과 지연은 각각 어떻게 변하는가?",
+            "answer": "처리량은 좋아질 수 있지만 대기 시간과 꼬리 지연이 커질 수 있어, SLO에 따라 최적점이 달라진다.",
+            "evidence": [
+              "analysis:llm-throughput-latency-queueing"
+            ]
+          }
+        },
+        {
+          "document": "analysis:llm-slo-resource-cost",
+          "role": "analysis",
+          "why": "같은 SLO라도 자원 사용·여유율·꼬리 지연에 따라 비용이 달라짐을 정리한다.",
+          "checkpoint": {
+            "question": "같은 SLO를 만족하는 두 서비스의 비용이 달라질 수 있는 이유는 무엇인가?",
+            "answer": "필요한 에너지·가속기 시간, 유휴 용량, 실패 요청 처리 비용이 다르기 때문이다.",
+            "evidence": [
+              "analysis:llm-slo-resource-cost"
+            ]
+          }
+        }
+      ],
+      "branches": [
+        {
+          "id": "paged-attention",
+          "label": "PagedAttention과 KV cache 관리",
+          "documents": [
+            "source:ref-076",
+            "concept:prefix-kv-caching"
+          ]
+        },
+        {
+          "id": "batching",
+          "label": "연속 배칭과 추측 디코딩",
+          "documents": [
+            "concept:continuous-batching",
+            "concept:speculative-decoding"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "software-reuse",
+      "title": "소프트웨어 재사용은 왜 라이브러리 복사에서 인터페이스 문제가 되었는가",
+      "question": "재사용 가능한 소프트웨어를 만들려면 무엇을 고정하고 무엇을 숨겨야 하는가?",
+      "outcome": "서브루틴·라이브러리·모듈·정보 은닉·API가 재사용 문제를 어떻게 이동시키는지 설명할 수 있다.",
+      "audience": "소프트웨어 설계와 재사용의 역사를 함께 읽고 싶은 독자",
+      "minutes": 40,
+      "prerequisites": [
+        "concept:computing-capability"
+      ],
+      "steps": [
+        {
+          "document": "source:ref-001",
+          "role": "source",
+          "why": "초기 EDSAC 라이브러리 카탈로그에서 재사용의 물리적 형태를 확인한다.",
+          "checkpoint": {
+            "question": "초기 서브루틴 라이브러리는 무엇을 재사용 단위로 삼았는가?",
+            "answer": "검증된 서브루틴과 그 사용법을 담은 카탈로그를 재사용 단위로 삼았다.",
+            "evidence": [
+              "source:ref-001"
+            ]
+          }
+        },
+        {
+          "document": "concept:subroutine",
+          "role": "concept",
+          "why": "서브루틴이 코드 재사용의 최소 단위가 되는 방식을 이해한다.",
+          "checkpoint": {
+            "question": "서브루틴은 재사용을 어떻게 가능하게 하는가?",
+            "answer": "호출 규약과 복귀 주소를 약속하고 호출 가능한 단위로 분리해 같은 코드를 여러 곳에서 사용하게 한다.",
+            "evidence": [
+              "concept:subroutine"
+            ]
+          }
+        },
+        {
+          "document": "concept:page-16d053e6",
+          "role": "concept",
+          "why": "라이브러리 카탈로그가 재사용을 문서·검색·계약의 문제로 확장하는 과정을 본다.",
+          "checkpoint": {
+            "question": "라이브러리 카탈로그가 단순한 코드 모음과 다른 점은 무엇인가?",
+            "answer": "서브루틴의 용도·입출력·사용 조건을 함께 기록해 다른 사람이 찾아 쓸 수 있게 한다.",
+            "evidence": [
+              "concept:page-16d053e6"
+            ]
+          }
+        },
+        {
+          "document": "concept:page-f047e003",
+          "role": "concept",
+          "why": "모듈화가 재사용 단위를 기술적 경계로 만드는 방식을 이해한다.",
+          "checkpoint": {
+            "question": "모듈화는 재사용과 어떤 관련이 있는가?",
+            "answer": "시스템을 독립적으로 이해·변경할 수 있는 책임 단위로 나누어, 내부 변경이 다른 모듈을 덜 흔들게 한다.",
+            "evidence": [
+              "concept:page-f047e003"
+            ]
+          }
+        },
+        {
+          "document": "concept:page-099497b9",
+          "role": "concept",
+          "why": "정보 은닉이 재사용을 어렵게 하는 결합을 줄이는 원리를 정리한다.",
+          "checkpoint": {
+            "question": "정보 은닉은 왜 재사용성을 높이는가?",
+            "answer": "내부 구현을 숨기고 안정된 인터페이스만 노출해, 구현이 바뀌어도 사용처가 덜 깨지게 한다.",
+            "evidence": [
+              "concept:page-099497b9"
+            ]
+          }
+        },
+        {
+          "document": "concept:page-2ff6633d",
+          "role": "concept",
+          "why": "API가 재사용의 계약이자 경계가 되는 방식을 이해한다.",
+          "checkpoint": {
+            "question": "API는 재사용에서 무엇을 고정하는가?",
+            "answer": "호출 방식·입출력·오류 의미 같은 관찰 가능한 계약을 고정하고 내부 구현은 바꿀 수 있게 한다.",
+            "evidence": [
+              "concept:page-2ff6633d"
+            ]
+          }
+        },
+        {
+          "document": "analysis:page-4095b0c8",
+          "role": "analysis",
+          "why": "서브루틴 라이브러리에서 API로 이동한 재사용 문제를 종합한다.",
+          "checkpoint": {
+            "question": "재사용의 중심이 라이브러리에서 API로 이동한 이유는 무엇인가?",
+            "answer": "재사용이 코드 복사에서 호출 규약·비용·오류 계약을 문서화하는 문제로 이동했기 때문이다.",
+            "evidence": [
+              "analysis:page-4095b0c8"
+            ]
+          }
+        }
+      ],
+      "branches": [
+        {
+          "id": "history",
+          "label": "재사용의 역사",
+          "documents": [
+            "analysis:page-0b006186",
+            "source:ref-002"
+          ]
+        },
+        {
+          "id": "components",
+          "label": "컴포넌트와 패키지",
+          "documents": [
+            "concept:page-fa0c6ecb",
+            "source:ref-004"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-encoding",
+      "title": "문자는 어떻게 바이트가 되고, 왜 같은 텍스트가 다르게 보이는가",
+      "question": "사람이 읽는 문자와 컴퓨터가 저장하는 바이트 사이에는 어떤 약속과 손실이 있는가?",
+      "outcome": "문자 집합·코드 포인트·코드 유닛·인코딩·정규화를 구분하고, 깨진 텍스트와 동형이의 문자를 설명할 수 있다.",
+      "audience": "텍스트 처리와 유니코드의 함정을 원리부터 이해하고 싶은 독자",
+      "minutes": 40,
+      "prerequisites": [
+        "concept:page-93fca2ee"
+      ],
+      "steps": [
+        {
+          "document": "source:ref-022",
+          "role": "source",
+          "why": "Unicode Standard에서 문자 집합과 코드 포인트의 공통 기준을 확인한다.",
+          "checkpoint": {
+            "question": "유니코드 코드 포인트와 인코딩된 바이트는 같은 것인가?",
+            "answer": "아니다. 코드 포인트는 문자에 부여한 번호이고, UTF-8 같은 인코딩이 이를 바이트열로 표현한다.",
+            "evidence": [
+              "source:ref-022"
+            ]
+          }
+        },
+        {
+          "document": "concept:page-496b0829",
+          "role": "concept",
+          "why": "유니코드가 문자 집합과 인코딩을 분리하는 방식을 정리한다.",
+          "checkpoint": {
+            "question": "유니코드가 모든 문자를 같은 바이트 수로 저장하지 않는 이유는 무엇인가?",
+            "answer": "문자 집합과 저장 인코딩을 분리해, 필요한 범위와 효율에 따라 UTF-8·UTF-16 등을 선택하게 하기 때문이다.",
+            "evidence": [
+              "concept:page-496b0829"
+            ]
+          }
+        },
+        {
+          "document": "concept:page-be5e9654",
+          "role": "concept",
+          "why": "scalar value와 surrogate·코드 유닛의 차이를 구분한다.",
+          "checkpoint": {
+            "question": "Unicode scalar value가 아닌 값은 무엇인가?",
+            "answer": "surrogate code point처럼 단독으로 문자를 나타내지 않는 값이다.",
+            "evidence": [
+              "concept:page-be5e9654"
+            ]
+          }
+        },
+        {
+          "document": "concept:page-f4f75731",
+          "role": "concept",
+          "why": "UTF-8이 코드 포인트를 가변 길이 바이트열로 표현하는 규칙을 이해한다.",
+          "checkpoint": {
+            "question": "UTF-8에서 ASCII 문자는 몇 바이트를 쓰는가?",
+            "answer": "1바이트다. ASCII와 호환되도록 설계되었기 때문이다.",
+            "evidence": [
+              "concept:page-f4f75731"
+            ]
+          }
+        },
+        {
+          "document": "concept:page-9574348a",
+          "role": "concept",
+          "why": "코드 유닛이 문자열 길이와 인덱스 계산을 어떻게 왜곡하는지 본다.",
+          "checkpoint": {
+            "question": "문자열 길이를 코드 유닛 수로 세면 왜 사용자에게 보이는 글자 수와 다를 수 있는가?",
+            "answer": "이모지·결합 문자·surrogate pair처럼 여러 코드 유닛이 하나의 사용자 문자를 구성할 수 있기 때문이다.",
+            "evidence": [
+              "concept:page-9574348a"
+            ]
+          }
+        },
+        {
+          "document": "concept:page-9351a627",
+          "role": "concept",
+          "why": "정규화가 같은 글자를 다른 코드 포인트열로 저장하는 문제를 다룬다.",
+          "checkpoint": {
+            "question": "정규화 없이 문자열을 비교하면 왜 같은 글자가 다르게 판정될 수 있는가?",
+            "answer": "같은 사용자 문자를 구성하는 코드 포인트 순서·조합이 여러 가지일 수 있기 때문이다.",
+            "evidence": [
+              "concept:page-9351a627"
+            ]
+          }
+        },
+        {
+          "document": "analysis:page-9241eb45",
+          "role": "analysis",
+          "why": "문자 집합·인코딩·정규화·보안 경계를 하나의 텍스트 처리 문제로 종합한다.",
+          "checkpoint": {
+            "question": "인코딩 오류가 보안 문제로 이어질 수 있는 이유는 무엇인가?",
+            "answer": "검증과 해석이 서로 다른 인코딩·정규화를 사용하면 같은 입력을 다르게 해석해 검증 우회가 생길 수 있기 때문이다.",
+            "evidence": [
+              "analysis:page-9241eb45",
+              "concept:page-6c282053"
+            ]
+          }
+        }
+      ],
+      "branches": [
+        {
+          "id": "utf8",
+          "label": "UTF-8 바이트 규칙",
+          "documents": [
+            "source:ref-023",
+            "concept:page-f4f75731"
+          ]
+        },
+        {
+          "id": "confusables",
+          "label": "동형이의 문자와 보안",
+          "documents": [
+            "concept:page-cb68fc61",
+            "analysis:interpretation-security-boundary"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "database-transactions",
+      "title": "트랜잭션은 어떤 순서와 격리를 보장하는가",
+      "question": "동시에 실행되는 트랜잭션들이 같은 데이터를 다룰 때, 무엇을 보장하고 무엇을 포기하는가?",
+      "outcome": "직렬 가능성·격리 수준·스냅샷 격리를 구분하고, 분산 환경에서 일관성과 지연의 절충을 설명할 수 있다.",
+      "audience": "데이터베이스의 동시성 제어와 분산 일관성을 함께 이해하고 싶은 독자",
+      "minutes": 45,
+      "prerequisites": [
+        "concept:computing-capability"
+      ],
+      "steps": [
+        {
+          "document": "source:ref-111",
+          "role": "source",
+          "why": "ANSI SQL 격리 수준의 정의가 실제 이상 현상을 모두 설명하지 못한다는 비판을 확인한다.",
+          "checkpoint": {
+            "question": "ANSI SQL 격리 수준만으로 실제 트랜잭션 이상 현상을 모두 막을 수 없는 이유는 무엇인가?",
+            "answer": "정의가 모호하고, phantom·write skew 같은 현상을 충분히 구분하지 못하기 때문이다.",
+            "evidence": [
+              "source:ref-111"
+            ]
+          }
+        },
+        {
+          "document": "concept:serializability",
+          "role": "concept",
+          "why": "직렬 가능성이 동시 실행의 정확성을 판단하는 기준임을 이해한다.",
+          "checkpoint": {
+            "question": "직렬 가능성은 무엇을 보장하는가?",
+            "answer": "동시에 실행된 트랜잭션의 결과가 어떤 직렬 실행 순서의 결과와 동등함을 보장한다.",
+            "evidence": [
+              "concept:serializability"
+            ]
+          }
+        },
+        {
+          "document": "analysis:transaction-ordering-guarantees",
+          "role": "analysis",
+          "why": "격리 수준이 순서 보장과 어떤 관계를 가지는지 종합한다.",
+          "checkpoint": {
+            "question": "격리 수준을 높이면 항상 처리량이 좋아지는가?",
+            "answer": "아니다. 충돌 감지·잠금·재시도가 늘어 처리량과 지연이 나빠질 수 있다.",
+            "evidence": [
+              "analysis:transaction-ordering-guarantees"
+            ]
+          }
+        },
+        {
+          "document": "source:ref-112",
+          "role": "source",
+          "why": "스냅샷 격리에서 직렬 가능성을 어떻게 복원하는지 원문으로 확인한다.",
+          "checkpoint": {
+            "question": "스냅샷 격리는 왜 직렬 가능성을 자동으로 보장하지 않는가?",
+            "answer": "각 트랜잭션이 다른 스냅샷을 보면서 write skew 같은 이상 현상이 생길 수 있기 때문이다.",
+            "evidence": [
+              "source:ref-112"
+            ]
+          }
+        },
+        {
+          "document": "source:ref-113",
+          "role": "source",
+          "why": "실제 PostgreSQL의 격리 수준과 이상 현상 표를 확인한다.",
+          "checkpoint": {
+            "question": "PostgreSQL의 격리 수준 선택은 무엇과의 절충인가?",
+            "answer": "동시성·처리량과 직렬 가능성·재시도 비용 사이의 절충이다.",
+            "evidence": [
+              "source:ref-113"
+            ]
+          }
+        },
+        {
+          "document": "analysis:distributed-consistency-latency",
+          "role": "analysis",
+          "why": "단일 데이터베이스의 격리 문제를 분산 일관성과 지연의 문제로 확장한다.",
+          "checkpoint": {
+            "question": "분산 데이터베이스에서 강한 일관성과 낮은 지연을 동시에 얻기 어려운 이유는 무엇인가?",
+            "answer": "복제본 간 합의·조정에 네트워크 왕복이 필요해, 일관성을 높일수록 지연이 커지기 때문이다.",
+            "evidence": [
+              "analysis:distributed-consistency-latency"
+            ]
+          }
+        }
+      ],
+      "branches": [
+        {
+          "id": "spanner",
+          "label": "Spanner와 외부 일관성",
+          "documents": [
+            "source:ref-089",
+            "concept:external-consistency-time-uncertainty"
+          ]
+        },
+        {
+          "id": "unknown-results",
+          "label": "결과를 모르는 트랜잭션",
+          "documents": [
+            "source:ref-116"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ai-infrastructure",
+      "title": "AI 인프라 병목은 왜 연산에서 데이터 이동으로 이동하는가",
+      "question": "GPU 연산량이 늘어나는데도 AI 시스템이 데이터 이동과 메모리에서 막히는 이유는 무엇인가?",
+      "outcome": "Roofline·메모리 장벽·데이터 이동·가속기 병목을 연결해 AI 인프라의 병목 이동을 설명할 수 있다.",
+      "audience": "AI 하드웨어와 시스템 병목을 성능 모델로 이해하고 싶은 독자",
+      "minutes": 50,
+      "prerequisites": [
+        "concept:memory-wall"
+      ],
+      "steps": [
+        {
+          "document": "source:ref-034",
+          "role": "source",
+          "why": "Roofline 모델에서 연산 강도와 메모리 대역폭이 성능 상한을 만드는 방식을 확인한다.",
+          "checkpoint": {
+            "question": "Roofline 모델에서 성능 상한을 결정하는 두 축은 무엇인가?",
+            "answer": "연산 peak와 메모리 대역폭이며, 연산 강도에 따라 어느 쪽이 병목인지 달라진다.",
+            "evidence": [
+              "source:ref-034"
+            ]
+          }
+        },
+        {
+          "document": "concept:memory-wall",
+          "role": "concept",
+          "why": "프로세서·가속기 연산 속도와 메모리 접근 속도의 격차를 정의한다.",
+          "checkpoint": {
+            "question": "메모리 장벽은 AI 워크로드에서 왜 더 두드러질 수 있는가?",
+            "answer": "가중치·활성값·KV cache 등 큰 데이터를 반복 이동해야 해, 연산보다 데이터 이동이 병목이 되기 쉽기 때문이다.",
+            "evidence": [
+              "concept:memory-wall"
+            ]
+          }
+        },
+        {
+          "document": "concept:memory-movement-bottleneck-shift",
+          "role": "concept",
+          "why": "병목이 연산에서 메모리 이동으로 옮겨가는 구조를 정리한다.",
+          "checkpoint": {
+            "question": "연산을 줄이는 최적화가 항상 전체 지연을 줄이는가?",
+            "answer": "아니다. 데이터 이동·동기화·메모리 용량이 병목이면 연산 감소만으로는 충분하지 않다.",
+            "evidence": [
+              "concept:memory-movement-bottleneck-shift"
+            ]
+          }
+        },
+        {
+          "document": "concept:ai-computing-bottlenecks",
+          "role": "concept",
+          "why": "AI 컴퓨팅의 병목을 연산·메모리·통신·전력의 다층 문제로 확장한다.",
+          "checkpoint": {
+            "question": "AI 컴퓨팅 병목을 GPU 연산량 하나로 설명할 수 없는 이유는 무엇인가?",
+            "answer": "메모리 대역폭·용량, 통신, 입출력, 전력·냉각이 함께 성능을 제한하기 때문이다.",
+            "evidence": [
+              "concept:ai-computing-bottlenecks"
+            ]
+          }
+        },
+        {
+          "document": "analysis:transformer-io-bottleneck",
+          "role": "analysis",
+          "why": "Transformer 추론에서 attention과 가중치 이동이 만드는 I/O 병목을 구체화한다.",
+          "checkpoint": {
+            "question": "Transformer 추론이 연산량만으로 설명되지 않는 이유는 무엇인가?",
+            "answer": "attention의 메모리 접근과 가중치·KV cache 이동이 연산량과 별개로 지연을 만들기 때문이다.",
+            "evidence": [
+              "analysis:transformer-io-bottleneck"
+            ]
+          }
+        },
+        {
+          "document": "analysis:ai-bottleneck-lineage",
+          "role": "analysis",
+          "why": "메모리 장벽에서 AI 인프라 병목으로 이어지는 계보를 종합한다.",
+          "checkpoint": {
+            "question": "AI 인프라 병목의 이동을 이해하면 무엇을 설계할 수 있는가?",
+            "answer": "연산·메모리·통신·전력 중 어느 자원이 상한인지 판단해 가속기·알고리즘·데이터센터 구성을 함께 선택할 수 있다.",
+            "evidence": [
+              "analysis:ai-bottleneck-lineage"
+            ]
+          }
+        }
+      ],
+      "branches": [
+        {
+          "id": "tpu",
+          "label": "TPU와 도메인 특화 가속기",
+          "documents": [
+            "source:ref-042",
+            "concept:domain-specific-accelerator"
+          ]
+        },
+        {
+          "id": "flash-attention",
+          "label": "I/O-aware attention",
+          "documents": [
+            "source:ref-074",
+            "concept:io-aware-attention"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "programming-languages",
+      "title": "프로그래밍 언어는 어떻게 사람의 표기와 기계의 실행을 연결하는가",
+      "question": "고급 언어의 표기는 어떤 번역과 제어 구조를 거쳐 기계에서 실행되는가?",
+      "outcome": "Fortran의 번역 문제와 구조적 프로그래밍의 제어 구조를 연결해, 언어 추상화가 기계 실행과 어떻게 만나는지 설명할 수 있다.",
+      "audience": "프로그래밍 언어의 초기 형성과 컴파일러·제어 구조를 함께 읽고 싶은 독자",
+      "minutes": 40,
+      "prerequisites": [
+        "concept:computing-capability"
+      ],
+      "steps": [
+        {
+          "document": "source:ref-016",
+          "role": "source",
+          "why": "Fortran이 사람이 읽는 수식 표기를 기계 명령으로 번역하려 했던 원래 문제를 확인한다.",
+          "checkpoint": {
+            "question": "Fortran이 해결하려 한 핵심 문제는 무엇인가?",
+            "answer": "수식에 가까운 표기를 자동으로 기계 명령으로 번역해 프로그래머의 수작업 부담을 줄이는 것이었다.",
+            "evidence": [
+              "source:ref-016"
+            ]
+          }
+        },
+        {
+          "document": "concept:page-72af5ee2",
+          "role": "concept",
+          "why": "Fortran을 단순한 문법이 아니라 번역·최적화·실행 모델의 묶음으로 정리한다.",
+          "checkpoint": {
+            "question": "Fortran의 등장이 프로그래밍 언어의 역할을 어떻게 바꾸었는가?",
+            "answer": "사람이 수식과 절차를 쓰고 컴파일러가 기계 명령으로 번역하는 분업을 일반화했다.",
+            "evidence": [
+              "concept:page-72af5ee2",
+              "source:ref-016"
+            ]
+          }
+        },
+        {
+          "document": "concept:page-26360c8b",
+          "role": "concept",
+          "why": "프로그래밍 언어를 표기·의미·구현의 계약으로 정의한다.",
+          "checkpoint": {
+            "question": "프로그래밍 언어의 추상화는 무엇을 감추고 무엇을 드러내는가?",
+            "answer": "기계 세부를 감추고, 프로그램의 의미와 조합 규칙을 드러낸다.",
+            "evidence": [
+              "concept:page-26360c8b"
+            ]
+          }
+        },
+        {
+          "document": "source:ref-011",
+          "role": "source",
+          "why": "GOTO 비판이 프로그램의 제어 흐름을 어떻게 문제화했는지 원문에서 확인한다.",
+          "checkpoint": {
+            "question": "GOTO 비판의 핵심은 무엇인가?",
+            "answer": "임의 점프가 프로그램의 국소적 추론과 구조를 어렵게 만든다는 것이다.",
+            "evidence": [
+              "source:ref-011"
+            ]
+          }
+        },
+        {
+          "document": "concept:structured-programming",
+          "role": "concept",
+          "why": "순차·선택·반복으로 제어 구조를 제한하는 설계 원리를 정리한다.",
+          "checkpoint": {
+            "question": "구조적 프로그래밍은 제어 흐름을 어떻게 제한하는가?",
+            "answer": "순차·선택·반복 같은 제한된 구조로 프로그램을 조립하게 한다.",
+            "evidence": [
+              "concept:structured-programming"
+            ]
+          }
+        },
+        {
+          "document": "analysis:page-fc1fa74e",
+          "role": "analysis",
+          "why": "GOTO에서 구조적 프로그래밍으로의 전환이 언어 설계와 검증에 갖는 의미를 종합한다.",
+          "checkpoint": {
+            "question": "구조적 프로그래밍이 언어 설계에 남긴 것은 무엇인가?",
+            "answer": "제한된 제어 구조로 프로그램을 읽고 추론·검증하기 쉽게 했다.",
+            "evidence": [
+              "analysis:page-fc1fa74e"
+            ]
+          }
+        },
+        {
+          "document": "analysis:page-866096c7",
+          "role": "analysis",
+          "why": "Fortran과 컴파일러의 관계를 통해 고급 언어와 기계 실행 사이의 번역 계층을 종합한다.",
+          "checkpoint": {
+            "question": "고급 언어와 기계 실행 사이에서 컴파일러는 무엇을 보장하는가?",
+            "answer": "원시 프로그램의 의미를 보존하면서 목적 기계가 실행할 수 있는 명령으로 번역한다.",
+            "evidence": [
+              "analysis:page-866096c7"
+            ]
+          }
+        }
+      ],
+      "branches": [
+        {
+          "id": "fortran-history",
+          "label": "FORTRAN I·II·III의 역사",
+          "documents": [
+            "source:ref-017",
+            "source:ref-015"
+          ]
+        },
+        {
+          "id": "goto",
+          "label": "GOTO와 점프의 반례",
+          "documents": [
+            "concept:page-60bcdf34",
+            "source:ref-012"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "concurrency-ordering",
+      "title": "동시성은 어떻게 순서와 일관성을 보장하는가",
+      "question": "여러 실행 주체가 같은 상태를 다룰 때, 어떤 순서를 보장할 수 있고 무엇을 포기해야 하는가?",
+      "outcome": "상호 배제·순차 일관성·선형화 가능성·합의의 차이를 구분하고, 동시성 보장이 비용과 지연을 어떻게 바꾸는지 설명할 수 있다.",
+      "audience": "동시성·메모리 모델·분산 합의의 개념을 계보로 이해하고 싶은 독자",
+      "minutes": 45,
+      "prerequisites": [
+        "concept:computing-capability"
+      ],
+      "steps": [
+        {
+          "document": "source:ref-094",
+          "role": "source",
+          "why": "다중 프로세서에서 프로그램 순서를 어떻게 보존할 것인가라는 원래 문제를 확인한다.",
+          "checkpoint": {
+            "question": "순차 일관성은 어떤 순서를 보장하는가?",
+            "answer": "모든 프로세서의 연산이 각 프로세서의 프로그램 순서를 따르는 하나의 전역 순서로 관찰되도록 보장한다.",
+            "evidence": [
+              "source:ref-094"
+            ]
+          }
+        },
+        {
+          "document": "concept:concurrency",
+          "role": "concept",
+          "why": "동시성과 병렬성을 구분하고, 겹치는 실행을 다루는 문제로 정의한다.",
+          "checkpoint": {
+            "question": "동시성과 병렬성은 같은 말인가?",
+            "answer": "아니다. 동시성은 여러 작업이 겹쳐 실행되는 것을 다루는 개념이고, 병렬성은 실제로 동시에 실행하는 것을 뜻한다.",
+            "evidence": [
+              "concept:concurrency"
+            ]
+          }
+        },
+        {
+          "document": "concept:mutual-exclusion-synchronization",
+          "role": "concept",
+          "why": "공유 자원에 대한 임계 구역과 상호 배제가 왜 필요한지 이해한다.",
+          "checkpoint": {
+            "question": "상호 배제는 무엇을 막는가?",
+            "answer": "둘 이상의 실행 주체가 동시에 임계 구역에 들어가 공유 상태를 일관성 없게 바꾸는 것을 막는다.",
+            "evidence": [
+              "concept:mutual-exclusion-synchronization"
+            ]
+          }
+        },
+        {
+          "document": "concept:sequential-consistency",
+          "role": "concept",
+          "why": "메모리 모델이 프로그램 순서와 관찰 순서를 어떻게 연결하는지 정리한다.",
+          "checkpoint": {
+            "question": "순차 일관성이 강한 모델이면 무엇을 얻고 무엇을 잃는가?",
+            "answer": "프로그램 순서를 이해하기 쉬운 대신, 캐시·컴파일러·런타임의 재배치를 제한하고 구현 비용이 커질 수 있다.",
+            "evidence": [
+              "concept:sequential-consistency"
+            ]
+          }
+        },
+        {
+          "document": "concept:linearizability",
+          "role": "concept",
+          "why": "순차 일관성과 달리 실시간 순서까지 보장하는 선형화 가능성을 이해한다.",
+          "checkpoint": {
+            "question": "선형화 가능성은 순차 일관성에 무엇을 더하는가?",
+            "answer": "연산의 실시간 시작·완료 순서를 전역 순서에 반영해, 완료된 연산이 나중 연산보다 앞서도록 보장한다.",
+            "evidence": [
+              "concept:linearizability"
+            ]
+          }
+        },
+        {
+          "document": "concept:replicated-log-consensus",
+          "role": "concept",
+          "why": "여러 복제본이 하나의 순서를 합의하는 문제로 확장한다.",
+          "checkpoint": {
+            "question": "복제 로그와 합의가 필요한 이유는 무엇인가?",
+            "answer": "여러 복제본이 같은 순서로 같은 상태를 적용하도록, 장애가 있어도 하나의 결정을 만들어야 하기 때문이다.",
+            "evidence": [
+              "concept:replicated-log-consensus"
+            ]
+          }
+        },
+        {
+          "document": "analysis:concurrent-order-shared-state",
+          "role": "analysis",
+          "why": "프로그램 순서·메모리 모델·분산 합의를 하나의 순서 보장 문제로 종합한다.",
+          "checkpoint": {
+            "question": "동시성 보장을 높이면 항상 시스템이 좋아지는가?",
+            "answer": "아니다. 동기화·합의·대기 비용이 늘어 지연과 처리량이 나빠질 수 있어, 보장 수준과 비용을 함께 선택해야 한다.",
+            "evidence": [
+              "analysis:concurrent-order-shared-state"
+            ]
+          }
+        }
+      ],
+      "branches": [
+        {
+          "id": "cap",
+          "label": "CAP과 분산 일관성",
+          "documents": [
+            "concept:cap-theorem",
+            "source:ref-087"
+          ]
+        },
+        {
+          "id": "failure",
+          "label": "장애 감지와 부분 실패",
+          "documents": [
+            "concept:failure-detection",
+            "concept:partial-failure"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "llm-service-operations",
+      "title": "LLM 서비스는 무엇을 최적화해야 하는가",
+      "question": "LLM 서비스의 품질·지연·처리량·에너지를 같은 장면에서 비교하려면 무엇을 측정해야 하는가?",
+      "outcome": "TTFT·TPOT·goodput·꼬리 지연·연속 배칭·에너지 지표를 연결해 LLM 서비스의 최적화 목표를 설명할 수 있다.",
+      "audience": "LLM 서빙의 성능 지표와 운영 비용을 함께 이해하고 싶은 독자",
+      "minutes": 50,
+      "prerequisites": [
+        "concept:computing-capability"
+      ],
+      "steps": [
+        {
+          "document": "source:ref-078",
+          "role": "source",
+          "why": "MLPerf Inference가 재현 가능한 비교를 위해 무엇을 고정하는지 확인한다.",
+          "checkpoint": {
+            "question": "MLPerf Inference가 재현 가능한 비교를 위해 고정하는 것은 무엇인가?",
+            "answer": "모델·데이터셋·품질 문턱·시스템 유형과 요청 시나리오를 고정해 서로 다른 시스템의 추론 성능을 비교한다.",
+            "evidence": [
+              "source:ref-078"
+            ]
+          }
+        },
+        {
+          "document": "concept:llm-inference-service-metrics",
+          "role": "concept",
+          "why": "LLM 서비스의 지연·처리량·SLO·goodput을 분리해 정의한다.",
+          "checkpoint": {
+            "question": "LLM 서비스에서 TTFT와 TPOT는 각각 무엇을 측정하는가?",
+            "answer": "TTFT는 첫 토큰까지의 시간, TPOT는 첫 토큰 이후 출력 토큰당 시간을 측정한다.",
+            "evidence": [
+              "concept:llm-inference-service-metrics"
+            ]
+          }
+        },
+        {
+          "document": "concept:queueing-load-control",
+          "role": "concept",
+          "why": "도착한 작업을 모두 실행하는 대신 큐와 수용량으로 SLO를 관리하는 방식을 이해한다.",
+          "checkpoint": {
+            "question": "부하 제어는 처리량을 줄이면서도 왜 서비스 품질을 높일 수 있는가?",
+            "answer": "큐가 무한정 길어지기 전에 승인·대기·거부를 결정해, 기한을 넘기는 요청과 꼬리 지연의 확산을 막기 때문이다.",
+            "evidence": [
+              "concept:queueing-load-control"
+            ]
+          }
+        },
+        {
+          "document": "concept:tail-latency",
+          "role": "concept",
+          "why": "평균이 아니라 느린 상위 구간이 팬아웃과 큐를 통해 증폭되는 방식을 본다.",
+          "checkpoint": {
+            "question": "꼬리 지연이 평균 지연보다 서비스 경험에 더 중요한 이유는 무엇인가?",
+            "answer": "팬아웃·공유 자원·큐를 거치며 느린 요청이 전체 응답 시간과 SLO 위반을 지배할 수 있기 때문이다.",
+            "evidence": [
+              "concept:tail-latency"
+            ]
+          }
+        },
+        {
+          "document": "concept:continuous-batching",
+          "role": "concept",
+          "why": "LLM 요청을 고정 배치가 아니라 반복마다 재구성하는 스케줄링을 이해한다.",
+          "checkpoint": {
+            "question": "연속 배칭은 고정 배칭과 무엇이 다른가?",
+            "answer": "모델 반복마다 완료·대기·신규 요청을 반영해 활성 배치를 다시 구성하므로, 짧은 요청이 긴 요청 뒤에서 기다리는 시간을 줄일 수 있다.",
+            "evidence": [
+              "concept:continuous-batching"
+            ]
+          }
+        },
+        {
+          "document": "concept:llm-inference-energy-metrics",
+          "role": "concept",
+          "why": "지연·처리량뿐 아니라 에너지를 요청·토큰 경계에서 측정하는 방법을 정리한다.",
+          "checkpoint": {
+            "question": "LLM 추론 에너지를 비교할 때 시스템 경계와 작업 조건을 함께 기록해야 하는 이유는 무엇인가?",
+            "answer": "GPU·노드·전체 시스템 경계와 프리필·디코드, 품질·지연 조건이 다르면 같은 토큰 수라도 에너지가 달라지기 때문이다.",
+            "evidence": [
+              "concept:llm-inference-energy-metrics"
+            ]
+          }
+        },
+        {
+          "document": "concept:energy-proportional-computing",
+          "role": "concept",
+          "why": "부하가 줄 때 전력도 줄어드는 설계 원칙으로 서비스 운영을 확장한다.",
+          "checkpoint": {
+            "question": "에너지 비례 컴퓨팅은 유휴 자원을 어떻게 다루는가?",
+            "answer": "부하가 줄면 소비 전력도 함께 줄도록 설계해, 유휴 용량이 에너지 비용을 계속 발생시키지 않게 한다.",
+            "evidence": [
+              "concept:energy-proportional-computing"
+            ]
+          }
+        }
+      ],
+      "branches": [
+        {
+          "id": "slo-cost",
+          "label": "SLO와 물리 자원 비용",
+          "documents": [
+            "analysis:llm-slo-resource-cost",
+            "concept:prefill-decode"
+          ]
+        },
+        {
+          "id": "quality",
+          "label": "목표 품질 도달 시간",
+          "documents": [
+            "concept:time-to-quality"
+          ]
+        }
+      ]
+    }
+  ]
+}

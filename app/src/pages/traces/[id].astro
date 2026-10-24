@@ -1,0 +1,189 @@
+---
+import Base from "../../layouts/Base.astro";
+import { documentUrl, docsByKey, withBase } from "../../lib/data";
+import { traces, type Trace } from "../../lib/traces";
+
+export function getStaticPaths() {
+  return traces.map((trace) => ({
+    params: { id: trace.id },
+    props: { trace }
+  }));
+}
+
+const { trace } = Astro.props as { trace: Trace };
+const traceIndex = traces.findIndex((item) => item.id === trace.id);
+const stepDocuments = trace.steps.map((step) => ({
+  ...step,
+  document: docsByKey.get(step.document)
+}));
+const firstUrl = stepDocuments[0]?.document ? documentUrl(stepDocuments[0].document) : withBase("/index/");
+const roleLabels: Record<string, string> = {
+  source: "SOURCE",
+  concept: "CONCEPT",
+  analysis: "ANALYSIS",
+  entity: "ENTITY"
+};
+---
+
+<Base title={`Trace: ${trace.title}`} description={trace.question}>
+  <div class="trace-page" data-trace-id={trace.id}>
+    <header class="trace-header">
+      <div class="trace-kicker">
+        <span>TRACE {String(traceIndex + 1).padStart(2, "0")}</span>
+        <span>{trace.minutes} MIN</span>
+        <span>{trace.steps.length} STEPS</span>
+      </div>
+      <h1>{trace.title}</h1>
+      <p class="trace-question">{trace.question}</p>
+      <div class="trace-meta">
+        <span>{trace.audience}</span>
+        {trace.prerequisites.map((key) => {
+          const document = docsByKey.get(key);
+          return document ? <a href={documentUrl(document)}>{document.title} 선행</a> : null;
+        })}
+      </div>
+      <div
+        class="trace-progress"
+        role="progressbar"
+        aria-valuemin="0"
+        aria-valuemax={trace.steps.length}
+        aria-valuenow="0"
+        aria-valuetext={`0 / ${trace.steps.length}`}
+        data-trace-progressbar
+      >
+        <span data-trace-progress aria-live="polite">0 / {trace.steps.length}</span>
+        <div class="trace-progress-bar" aria-hidden="true"><span data-trace-progress-bar></span></div>
+      </div>
+      <a class="trace-continue" href={firstUrl} data-trace-continue>첫 단계 시작 →</a>
+    </header>
+
+    <section class="trace-outcome">
+      <h2>OUTCOME</h2>
+      <p>{trace.outcome}</p>
+    </section>
+
+    <section class="trace-route" aria-label="읽기 경로">
+      <div class="trace-route-head">
+        <h2>ROUTE</h2>
+        <span>왜 이 순서인지 확인하며 읽으세요.</span>
+      </div>
+      <ol>
+        {stepDocuments.map((step, index) => {
+          const document = step.document;
+          if (!document) return null;
+          const stepUrl = documentUrl(document);
+          return (
+            <li class="trace-step" data-step-index={index}>
+              <div class="trace-step-marker">
+                <span>{String(index + 1).padStart(2, "0")}</span>
+                <span class={`trace-role role-${step.role}`}>{roleLabels[step.role] || step.role}</span>
+              </div>
+              <div class="trace-step-body">
+                <h2><a href={stepUrl}>{document.title}</a></h2>
+                <p class="trace-why">{step.why}</p>
+                <details class="trace-checkpoint">
+                  <summary>CHECKPOINT</summary>
+                  <p class="trace-question-small">{step.checkpoint.question}</p>
+                  <p class="trace-answer">{step.checkpoint.answer}</p>
+                  <p class="trace-evidence">
+                    근거: {step.checkpoint.evidence.map((key) => {
+                      const source = docsByKey.get(key);
+                      return source ? <a href={documentUrl(source)}>{source.title}</a> : <span>{key}</span>;
+                    })}
+                  </p>
+                </details>
+              </div>
+              <button
+                class="trace-check"
+                type="button"
+                data-step-check
+                data-step-url={stepUrl}
+                data-step-title={document.title}
+                aria-pressed="false"
+                aria-label={`${document.title} 읽음 표시`}
+              >
+                읽음
+              </button>
+            </li>
+          );
+        })}
+      </ol>
+    </section>
+
+    {trace.branches.length > 0 && (
+      <section class="trace-branches">
+        <h2>BRANCHES</h2>
+        <div class="trace-branch-grid">
+          {trace.branches.map((branch) => (
+            <div class="trace-branch">
+              <strong>{branch.label}</strong>
+              <ul>
+                {branch.documents.map((key) => {
+                  const document = docsByKey.get(key);
+                  return document ? <li><a href={documentUrl(document)}>{document.title}</a></li> : null;
+                })}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <footer class="trace-footer">
+      <a href={withBase("/traces/")}>← 모든 Trace</a>
+      <span>진도는 이 브라우저에만 저장됩니다.</span>
+    </footer>
+  </div>
+
+  <script>
+    const root = document.querySelector("[data-trace-id]");
+    if (root) {
+      const id = root.dataset.traceId;
+      const key = `cswiki:trace:${id}`;
+      const checks = [...root.querySelectorAll("[data-step-check]")];
+      const progress = root.querySelector("[data-trace-progress]");
+      const progressbar = root.querySelector("[data-trace-progressbar]");
+      const bar = root.querySelector("[data-trace-progress-bar]");
+      const continueLink = root.querySelector("[data-trace-continue]");
+      let read = [];
+      try { read = JSON.parse(localStorage.getItem(key) || "[]"); } catch { read = []; }
+      read = read.filter((value) => Number.isInteger(value) && value >= 0 && value < checks.length);
+
+      const render = () => {
+        const complete = new Set(read);
+        checks.forEach((check, index) => {
+          const done = complete.has(index);
+          check.setAttribute("aria-pressed", String(done));
+          check.setAttribute("aria-label", `${check.dataset.stepTitle} ${done ? "읽음 취소" : "읽음 표시"}`);
+          check.textContent = done ? "읽음 ✓" : "읽음";
+          check.closest("[data-step-index]")?.classList.toggle("completed", done);
+        });
+        if (progress) progress.textContent = `${read.length} / ${checks.length}`;
+        if (progressbar) {
+          progressbar.setAttribute("aria-valuenow", String(read.length));
+          progressbar.setAttribute("aria-valuetext", `${read.length} / ${checks.length}`);
+        }
+        if (bar) bar.style.width = `${checks.length ? (read.length / checks.length) * 100 : 0}%`;
+        if (continueLink) {
+          const next = checks.find((_, index) => !complete.has(index));
+          if (next) {
+            continueLink.href = next.dataset.stepUrl;
+            continueLink.textContent = read.length ? "다음 단계 계속 →" : "첫 단계 시작 →";
+          } else {
+            continueLink.href = checks[0]?.dataset.stepUrl || continueLink.href;
+            continueLink.textContent = "처음부터 다시 읽기 →";
+          }
+        }
+      };
+
+      checks.forEach((check, index) => {
+        check.addEventListener("click", () => {
+          read = read.includes(index) ? read.filter((value) => value !== index) : [...read, index].sort((a, b) => a - b);
+          try { localStorage.setItem(key, JSON.stringify(read)); } catch { /* optional */ }
+          render();
+        });
+      });
+      render();
+    }
+  </script>
+</Base>

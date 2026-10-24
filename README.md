@@ -1,0 +1,67 @@
+# CS Wiki Next
+
+기존 CS Wiki의 **440개 문서와 원본은 그대로** 가져오고, 메타데이터·지식 연결·사이트 도구는 새로 구성하는 저장소다. 새 문서는 migration baseline과 별도로 계속 추가할 수 있다.
+
+- **이전 저장소**: `C:\Vault\CS_Wiki` (백업: `C:\Vault\_backups\CS_Wiki_2026-10-24_0514`)
+- **공개 사이트**: https://yghnsim.github.io/CS_Wiki_Next/
+- **현재 단계**: Phase 3 코어 + 필수 기능 + Reading Trace 12개/Guide 2개/Archive/LLM Wiki 운영 (Astro 1,022 pages, 444 docs, 555 redirects, 400 search records, 422 sitemap URLs)
+- **디자인**: “VS Code Workbench” 셸 — activity bar, explorer, tabs, status bar, man-page 본문, command palette
+- **의존성**: `npm audit` 0 vulnerabilities (루트·app)
+- **URL 계약**: 기존 `/docs/{id}/` 440개와 리디렉션 555개를 유지한다. 새 문서는 추가할 수 있고, migration baseline과 현재 콘텐츠 수는 분리한다.
+
+## 구조
+
+```text
+wiki/                 기존 Markdown 콘텐츠 (원본)
+raw/                  기존 원본 자료
+schema/               페이지 스키마 v3 + knowledge 초안
+docs/architecture/    ADR과 Phase 1 설계
+catalog/              노드·작품·어휘 Registry + traces.json
+contracts/            URL·리디렉션 계약
+packages/knowledge/   새 지식 컴파일러
+app/                  Astro 사이트
+```
+
+## 핵심 계약
+
+- `id`는 URL 계약이다. 바꾸지 않는다.
+- `key`는 지식 그래프의 의미 ID다. `person:alan-turing` 형식.
+- `relations`는 frontmatter가 canonical이다.
+- 본문 `## 관계` 표는 generated block이며 직접 수정하지 않는다.
+- 공개 지식 문서의 관계는 evidence를 가진다.
+- 그래프는 빌드 시 생성되는 파생물이다. 런타임 DB를 두지 않는다.
+
+## 문서
+
+- [ADR 0001: 지식 그래프와 메타데이터 아키텍처](docs/architecture/0001-knowledge-model.md)
+- [Graph contract v1](docs/architecture/0002-graph-contract.md)
+- [Astro app contract](docs/architecture/0003-astro-app.md)
+- [Dependency policy](docs/architecture/0004-dependencies.md)
+- [ADR 0005: Reading Traces](docs/architecture/0005-reading-traces.md)
+- [ADR 0006: Search Quality](docs/architecture/0006-search-quality.md)
+- [ADR 0007: Accessibility and Performance](docs/architecture/0007-accessibility-performance.md)
+- [ADR 0008: Living Content after Migration](docs/architecture/0008-living-content.md)
+- [ADR 0009: Content Retirement](docs/architecture/0009-retirement.md)
+- [ADR 0010: Archive Delete and Purge](docs/architecture/0010-archive-purge.md)
+- [ADR 0011: Lifecycle Integration Tests](docs/architecture/0011-lifecycle-tests.md)
+- [ADR 0012: LLM Wiki Operations](docs/architecture/0012-llm-wiki-operations.md)
+- [ADR 0013: Wiki Maintenance Tools](docs/architecture/0013-wiki-maintenance-tools.md)
+- [ADR 0014: Wiki Ingest](docs/architecture/0014-wiki-ingest.md)
+- [ADR 0015: Wiki Query and Synthesis](docs/architecture/0015-wiki-query.md)
+- [ADR 0016: Wiki Audit and Semantic Lint](docs/architecture/0016-wiki-audit.md)
+- [ADR 0017: Wiki Discovery UI](docs/architecture/0017-wiki-discovery-ui.md)
+- [ADR 0018: Single-Source Ingest](docs/architecture/0018-source-pilot.md)
+- [Trace checkpoint review — Batch 1](docs/architecture/trace-checkpoint-review-batch-1.md)
+- [Trace checkpoint review — Batch 2](docs/architecture/trace-checkpoint-review-batch-2.md)
+- [Trace checkpoint review — Batch 3](docs/architecture/trace-checkpoint-review-batch-3.md)
+- [Trace gap report](docs/architecture/trace-gap-report.md)
+- [Phase 1 relations 마이그레이션](docs/architecture/phase-1-relations-migration.md)
+- [relations 스키마](schema/knowledge/relations.schema.json)
+- [Registry 스키마](schema/knowledge/registry.schema.json)
+
+## 다음 단계
+
+1. CI·Pages 첫 배포 확인
+2. 콘텐츠 품질: 연도 미상·고아·단일 근거
+3. 검색 품질 측정 후 개선
+4. Reading Trace 추가 및 경로 탐색기 검토

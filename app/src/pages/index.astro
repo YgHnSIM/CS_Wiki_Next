@@ -1,0 +1,173 @@
+---
+import Base from "../layouts/Base.astro";
+import { documentUrl, graph, publicDocuments, withBase } from "../lib/data";
+import { traces } from "../lib/traces";
+
+const kindLabels: Record<string, string> = {
+  concept: "개념",
+  entity: "개체",
+  analysis: "분석",
+  source: "소스",
+  reference: "참고 자료",
+  meta: "운영"
+};
+const counts = publicDocuments.reduce((accumulator, document) => {
+  accumulator[document.kind] = (accumulator[document.kind] || 0) + 1;
+  return accumulator;
+}, {} as Record<string, number>);
+
+const degree = new Map<string, number>();
+for (const statement of graph.statements) {
+  degree.set(statement.subject, (degree.get(statement.subject) || 0) + 1);
+  degree.set(statement.target, (degree.get(statement.target) || 0) + 1);
+}
+
+const featured = publicDocuments
+  .filter((document) => document.kind === "analysis")
+  .sort((a, b) => (degree.get(b.key) || 0) - (degree.get(a.key) || 0) || a.title.localeCompare(b.title, "ko"))
+  .slice(0, 3);
+
+const recent = publicDocuments
+  .filter((document) => document.kind !== "meta")
+  .sort((a, b) => b.updated.localeCompare(a.updated) || a.title.localeCompare(b.title, "ko"))
+  .slice(0, 8);
+
+const domainCounts = new Map<string, number>();
+for (const document of publicDocuments) {
+  for (const domain of document.domains) domainCounts.set(domain, (domainCounts.get(domain) || 0) + 1);
+}
+const domainLabels: Record<string, string> = {
+  "computer-history": "컴퓨터 역사",
+  "software-engineering": "소프트웨어 공학",
+  "computer-science": "컴퓨터 과학",
+  "programming-languages": "프로그래밍 언어",
+  "computer-architecture": "컴퓨터 구조",
+  "text-processing": "텍스트 처리",
+  "operating-systems": "운영체제",
+  security: "보안",
+  systems: "시스템",
+  database: "데이터베이스",
+  "distributed-systems": "분산 시스템",
+  "edge-computing": "엣지 컴퓨팅",
+  performance: "성능",
+  internet: "인터넷",
+  mathematics: "수학",
+  "machine-learning": "기계 학습",
+  web: "웹"
+};
+const domains = [...domainCounts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 8);
+
+const routes = ["concept", "entity", "analysis", "source", "reference"].map((kind) => ({
+  kind,
+  label: kindLabels[kind] || kind,
+  count: counts[kind] || 0,
+  href: `${withBase("/index/")}#${kind}`
+}));
+
+const startEntries = [
+  { kind: "concept", document: publicDocuments.find((document) => document.key === "concept:computing-capability") },
+  { kind: "entity", document: publicDocuments.find((document) => document.key === "person:alan-turing") },
+  { kind: "analysis", document: featured[0] }
+].filter((entry) => Boolean(entry.document));
+---
+
+<Base
+  title="CS Wiki"
+  description="컴퓨터 과학의 역사·이론·시스템을 원본과 지식 연결로 읽는 위키"
+  canonical={withBase("/")}
+>
+  <div class="welcome">
+    <header class="welcome-head">
+      <p class="welcome-kicker">CSWIKI(1) · KNOWLEDGE ATLAS</p>
+      <h1 class="welcome-title">컴퓨팅의 역사를<br /><em>연결해서 읽는다.</em></h1>
+      <p class="welcome-lede">
+        배비지와 러브레이스에서 저장 프로그램 컴퓨터, 구조적 프로그래밍, Unix와 C, 유니코드까지.
+        원본 문헌에서 출발해 개념과 분석을 잇는 기술 위키입니다.
+      </p>
+      <div class="welcome-actions">
+        <a href={withBase("/search/")}>문서 검색</a>
+        <a class="ghost" href={withBase("/index/")}>전체 색인</a>
+      </div>
+      <dl class="welcome-stats">
+        <div><dt>공개 문서</dt><dd>{publicDocuments.length}</dd></div>
+        <div><dt>개념</dt><dd>{counts.concept || 0}</dd></div>
+        <div><dt>관계</dt><dd>{graph.statements.length}</dd></div>
+        <div><dt>분석</dt><dd>{counts.analysis || 0}</dd></div>
+      </dl>
+    </header>
+
+    <div class="welcome-grid">
+      <div>
+        <h2>자료 유형</h2>
+        <div class="type-grid">
+          {routes.map((route, index) => (
+            <a class="type-card" href={route.href}>
+              <span class="type-index">{String(index + 1).padStart(2, "0")}</span>
+              <h3>{route.label}</h3>
+              <strong>{route.count}</strong>
+            </a>
+          ))}
+        </div>
+
+        <div class="section-head">
+          <span>02</span>
+          <h2>지식 범위</h2>
+        </div>
+        <div class="scope-list">
+          {domains.map(([domain, count]) => (
+            <div><span>{domainLabels[domain] || domain}</span><strong>{count}</strong></div>
+          ))}
+        </div>
+      </div>
+
+      <aside class="start-panel" aria-labelledby="start-title">
+        <header class="start-heading">
+          <span>START HERE</span>
+          <h2 id="start-title">먼저 읽을 세 가지</h2>
+        </header>
+        <ol class="start-list">
+          {startEntries.map((entry, index) => (
+            <li>
+              <a href={documentUrl(entry.document!)}>
+                <span class="start-index">{String(index + 1).padStart(2, "0")}</span>
+                <span class="start-kind">{kindLabels[entry.kind] || entry.kind}</span>
+                <strong>{entry.document!.title}</strong>
+                <small>{entry.document!.summary}</small>
+              </a>
+            </li>
+          ))}
+        </ol>
+        <a class="start-all" href={withBase("/index/")}>전체 색인에서 더 찾기 <span>→</span></a>
+      </aside>
+    </div>
+
+    <div class="section-head">
+      <span>03</span>
+      <h2>최근 갱신</h2>
+    </div>
+    <ol class="recent-list">
+      {recent.map((document) => (
+        <li>
+          <a href={documentUrl(document)}>
+            <span>{document.title}</span>
+            <time>{document.updated}</time>
+          </a>
+        </li>
+      ))}
+    </ol>
+
+    <div class="section-head">
+      <span>04</span>
+      <h2>읽기 트레이스</h2>
+    </div>
+    <div class="trace-strip">
+      {traces.map((trace, index) => (
+        <a class="trace-strip-card" href={withBase(`/traces/${trace.id}/`)}>
+          <span>TRACE {String(index + 1).padStart(2, "0")}</span>
+          <strong>{trace.title}</strong>
+          <small>{trace.minutes} min · {trace.steps.length} steps</small>
+        </a>
+      ))}
+    </div>
+  </div>
+</Base>

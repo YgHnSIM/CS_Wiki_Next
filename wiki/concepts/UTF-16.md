@@ -1,0 +1,82 @@
+---
+schema_version: 3
+id: concept-c854e2f6358212d1
+key: concept:page-c854e2f6
+kind: concept
+title: UTF-16
+aliases:
+  - Unicode Transformation Format 16-bit
+  - surrogate pair
+  - 서로게이트 페어
+summary: Unicode scalar value를 16비트 코드 유닛 하나 또는 surrogate pair 두 개로 표현하는 인코딩 형식.
+domains:
+  - computer-science
+  - text-processing
+publication_visibility: public
+graph_visibility: public
+created: 2026-07-10
+updated: 2026-10-24
+evidence_ids:
+  - ref-022
+  - ref-026
+capability_layers:
+  - reliable-results
+history:
+  layer: software
+redirect_from:
+  - /concepts/utf-16/
+relations:
+  - predicate: implements
+    target: concept:page-496b0829
+    note: 코드 포인트를 16비트 코드 유닛과 서로게이트 쌍으로 직렬화한다.
+    evidence:
+      - source: ref-022
+  - predicate: constrains
+    target: concept:page-5163a003
+    note: 멀티바이트 유닛의 엔디안을 표시해야 해석이 안정된다.
+    evidence:
+      - source: ref-026
+---
+
+## 개요
+
+[[UTF-16]]은 [[Unicode scalar value]]를 16비트 [[코드 유닛]] 하나 또는 두 개로 표현하는 인코딩 형식이다. `U+0000`부터 `U+D7FF`, `U+E000`부터 `U+FFFF`까지는 하나의 16비트 코드 유닛으로 표현되고 `U+10000`부터 `U+10FFFF`까지는 surrogate pair인 두 코드 유닛으로 표현된다.
+
+## Surrogate pair
+
+Surrogate pair는 높은 surrogate와 낮은 surrogate가 쌍을 이루어 하나의 scalar value를 나타내는 방식이다. surrogate 코드 포인트 자체는 [[Unicode scalar value]]가 아니므로 단독 surrogate 코드 유닛은 ill-formed UTF-16이다.
+
+## 바이트 직렬화
+
+UTF-16 코드 유닛은 16비트 값이므로 바이트열로 저장하거나 전송할 때 big-endian 또는 little-endian 순서가 필요하다. 이때 [[바이트 순서 표식]]이 있으면 바이트 순서를 구분하는 데 쓸 수 있다. BOM이 없을 때 어떤 순서로 볼지는 형식이나 상위 프로토콜이 정해야 한다.
+
+## 실무적 주의점
+
+많은 플랫폼과 언어가 내부 문자열 표현으로 UTF-16 또는 UTF-16에 가까운 코드 유닛 모델을 사용해 왔다. 이 경우 문자열 길이가 사용자 지각 문자 수가 아니라 UTF-16 코드 유닛 수일 수 있다. 이모지나 일부 역사 문자처럼 surrogate pair가 필요한 문자는 코드 유닛 두 개로 계산된다.
+
+## 관계
+
+<!-- knowledge:relations:start -->
+| 관계 | 대상 | 설명 | 근거 |
+|---|---|---|---|
+| implements | [[유니코드]] | 코드 포인트를 16비트 코드 유닛과 서로게이트 쌍으로 직렬화한다. | [[The Unicode Standard 17.0.0]] |
+| constrains | [[바이트 순서 표식]] | 멀티바이트 유닛의 엔디안을 표시해야 해석이 안정된다. | [[WHATWG Encoding Standard]] |
+<!-- knowledge:relations:end -->
+
+## 출처
+<!-- wiki-v2:evidence-start -->
+### 근거 ID
+- `ref-022`
+- `ref-026`
+<!-- wiki-v2:evidence-end -->
+
+- [[The Unicode Standard 17.0.0]]
+- [[WHATWG Encoding Standard]]
+
+## 관련 항목
+
+- [[유니코드]] — 다양한 문자와 기호를 코드 포인트, 인코딩 형식, 정규화, 텍스트 경계 문제로 포괄하는 문자 체계.
+- [[코드 포인트]] — Unicode 문자 공간에서 특정 위치를 가리키는 숫자 값과 scalar value의 구분을 정리한 개념.
+- [[Unicode scalar value]] — Unicode 코드 포인트 가운데 surrogate 영역을 제외해 UTF 인코딩 형식의 입력이 되는 값.
+- [[코드 유닛]] — UTF-8, UTF-16 같은 인코딩 형식이 문자열을 저장·전송할 때 사용하는 최소 단위.
+- [[UTF-8]] — Unicode scalar value를 1-4개의 8비트 코드 유닛으로 표현하는 ASCII 호환 가변 길이 인코딩.
