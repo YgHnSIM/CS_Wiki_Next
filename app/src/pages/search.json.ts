@@ -16,7 +16,10 @@ export const GET: APIRoute = () => {
     kind: document.kind,
     aliases: document.aliases,
     domains: document.domains,
-    degree: degree.get(document.key) || 0
+    degree: degree.get(document.key) || 0,
+    updated: document.updated,
+    status: document.status,
+    page_role: document.page_role
   }));
   return new Response(JSON.stringify(index), {
     headers: { "content-type": "application/json; charset=utf-8" }

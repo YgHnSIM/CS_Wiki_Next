@@ -1,4 +1,5 @@
 import MarkdownIt from "markdown-it";
+import { headingSlug } from "./toc.mjs";
 
 const PIPE = "\uE000";
 
@@ -43,6 +44,17 @@ export function renderMarkdown(body, resolveDocument, withBase) {
     linkify: false,
     typographer: false
   });
+
+  const headingCounts = new Map();
+  markdown.renderer.rules.heading_open = (tokens, idx, options, env, self) => {
+    const inline = tokens[idx + 1];
+    const text = inline?.content || "";
+    const base = headingSlug(text);
+    const count = (headingCounts.get(base) || 0) + 1;
+    headingCounts.set(base, count);
+    tokens[idx].attrSet("id", count === 1 ? base : `${base}-${count}`);
+    return self.renderToken(tokens, idx, options);
+  };
 
   markdown.inline.ruler.before("link", "wiki_link", (state, silent) => {
     const start = state.pos;

@@ -10,6 +10,7 @@ import {
   withBase
 } from "../../lib/data";
 import { renderMarkdown } from "../../lib/markdown.mjs";
+import { extractHeadings } from "../../lib/toc.mjs";
 import { tracesForDocument } from "../../lib/traces";
 
 export function getStaticPaths() {
@@ -35,6 +36,14 @@ const kindLabel = kindLabels[document.kind] || document.kind;
 const event = document.history?.event;
 const year = event?.start ?? document.history?.publication_year ?? null;
 const evidenceCount = new Set(statements.flatMap((statement) => statement.evidence.map((item) => item.source))).size;
+const toc = extractHeadings(document.body);
+const evidenceEntries = statements.flatMap((statement) => statement.evidence.map((item) => ({
+  source: item.source,
+  sourceTitle: nodeDocument(item.source)?.title || item.source,
+  locator: item.locator,
+  quote: item.quote,
+  predicate: statement.predicate
+}))).slice(0, 40);
 const relatedTraces = tracesForDocument(document.key);
 const relationTitle = (key: string) => nodeDocument(key)?.title || key;
 const retirement = document.retirement;
@@ -81,6 +90,8 @@ const redirectUrl = redirectDocument ? withBase(`/docs/${redirectDocument.id}/`)
             {year !== null && <span>{year}</span>}
             {document.history?.layer && <span>{document.history.layer}</span>}
             {document.domains.map((domain) => <span>{domain}</span>)}
+            {document.status !== "current" && <span class="status-badge">{document.status}</span>}
+            {document.page_role === "synthesis" && <span class="status-badge">synthesis</span>}
           </div>
         </div>
 
@@ -97,6 +108,19 @@ const redirectUrl = redirectDocument ? withBase(`/docs/${redirectDocument.id}/`)
       </article>
 
       <aside class="man-aside" aria-label="관계와 역링크">
+        {toc.length > 1 && (
+          <>
+            <h2>CONTENTS</h2>
+            <ul class="toc-list">
+              {toc.map((heading) => (
+                <li class:list={{ "toc-depth-3": heading.depth === 3 }}>
+                  <a href={`#${heading.id}`}>{heading.text}</a>
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
+
         <h2>RELATIONS</h2>
         {statements.length === 0 ? (
           <p>기록된 관계가 없습니다.</p>
@@ -127,6 +151,21 @@ const redirectUrl = redirectDocument ? withBase(`/docs/${redirectDocument.id}/`)
                 </li>
               );
             })}
+          </ul>
+        )}
+
+        <h2>EVIDENCE</h2>
+        {evidenceEntries.length === 0 ? (
+          <p>기록된 근거가 없습니다.</p>
+        ) : (
+          <ul class="evidence-list">
+            {evidenceEntries.map((item) => (
+              <li>
+                <a href={nodeDocument(item.source) ? documentUrl(nodeDocument(item.source)!) : undefined}>{item.sourceTitle}</a>
+                <span>{item.predicate}{item.locator ? ` · ${item.locator}` : ""}</span>
+                {item.quote && <q>{item.quote}</q>}
+              </li>
+            ))}
           </ul>
         )}
 
