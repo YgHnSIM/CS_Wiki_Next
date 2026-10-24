@@ -1073,6 +1073,121 @@
           ]
         }
       ]
+    },
+    {
+      "id": "concurrency-ordering",
+      "title": "동시성은 어떻게 순서와 일관성을 보장하는가",
+      "question": "여러 실행 주체가 같은 상태를 다룰 때, 어떤 순서를 보장할 수 있고 무엇을 포기해야 하는가?",
+      "outcome": "상호 배제·순차 일관성·선형화 가능성·합의의 차이를 구분하고, 동시성 보장이 비용과 지연을 어떻게 바꾸는지 설명할 수 있다.",
+      "audience": "동시성·메모리 모델·분산 합의의 개념을 계보로 이해하고 싶은 독자",
+      "minutes": 45,
+      "prerequisites": [
+        "concept:computing-capability"
+      ],
+      "steps": [
+        {
+          "document": "source:ref-094",
+          "role": "source",
+          "why": "다중 프로세서에서 프로그램 순서를 어떻게 보존할 것인가라는 원래 문제를 확인한다.",
+          "checkpoint": {
+            "question": "순차 일관성은 어떤 순서를 보장하는가?",
+            "answer": "모든 프로세서의 연산이 각 프로세서의 프로그램 순서를 따르는 하나의 전역 순서로 관찰되도록 보장한다.",
+            "evidence": [
+              "source:ref-094"
+            ]
+          }
+        },
+        {
+          "document": "concept:concurrency",
+          "role": "concept",
+          "why": "동시성과 병렬성을 구분하고, 겹치는 실행을 다루는 문제로 정의한다.",
+          "checkpoint": {
+            "question": "동시성과 병렬성은 같은 말인가?",
+            "answer": "아니다. 동시성은 여러 작업이 겹쳐 실행되는 것을 다루는 개념이고, 병렬성은 실제로 동시에 실행하는 것을 뜻한다.",
+            "evidence": [
+              "concept:concurrency"
+            ]
+          }
+        },
+        {
+          "document": "concept:mutual-exclusion-synchronization",
+          "role": "concept",
+          "why": "공유 자원에 대한 임계 구역과 상호 배제가 왜 필요한지 이해한다.",
+          "checkpoint": {
+            "question": "상호 배제는 무엇을 막는가?",
+            "answer": "둘 이상의 실행 주체가 동시에 임계 구역에 들어가 공유 상태를 일관성 없게 바꾸는 것을 막는다.",
+            "evidence": [
+              "concept:mutual-exclusion-synchronization"
+            ]
+          }
+        },
+        {
+          "document": "concept:sequential-consistency",
+          "role": "concept",
+          "why": "메모리 모델이 프로그램 순서와 관찰 순서를 어떻게 연결하는지 정리한다.",
+          "checkpoint": {
+            "question": "순차 일관성이 강한 모델이면 무엇을 얻고 무엇을 잃는가?",
+            "answer": "프로그램 순서를 이해하기 쉬운 대신, 재배치·캐시·지연을 제한해 성능 비용이 커질 수 있다.",
+            "evidence": [
+              "concept:sequential-consistency"
+            ]
+          }
+        },
+        {
+          "document": "concept:linearizability",
+          "role": "concept",
+          "why": "순차 일관성과 달리 실시간 순서까지 보장하는 선형화 가능성을 이해한다.",
+          "checkpoint": {
+            "question": "선형화 가능성은 순차 일관성에 무엇을 더하는가?",
+            "answer": "연산의 실시간 시작·완료 순서를 전역 순서에 반영해, 완료된 연산이 나중 연산보다 앞서도록 보장한다.",
+            "evidence": [
+              "concept:linearizability"
+            ]
+          }
+        },
+        {
+          "document": "concept:replicated-log-consensus",
+          "role": "concept",
+          "why": "여러 복제본이 하나의 순서를 합의하는 문제로 확장한다.",
+          "checkpoint": {
+            "question": "복제 로그와 합의가 필요한 이유는 무엇인가?",
+            "answer": "여러 복제본이 같은 순서로 같은 상태를 적용하도록, 장애가 있어도 하나의 결정을 만들어야 하기 때문이다.",
+            "evidence": [
+              "concept:replicated-log-consensus"
+            ]
+          }
+        },
+        {
+          "document": "analysis:concurrent-order-shared-state",
+          "role": "analysis",
+          "why": "프로그램 순서·메모리 모델·분산 합의를 하나의 순서 보장 문제로 종합한다.",
+          "checkpoint": {
+            "question": "동시성 보장을 높이면 항상 시스템이 좋아지는가?",
+            "answer": "아니다. 동기화·합의·대기 비용이 늘어 지연과 처리량이 나빠질 수 있어, 보장 수준과 비용을 함께 선택해야 한다.",
+            "evidence": [
+              "analysis:concurrent-order-shared-state"
+            ]
+          }
+        }
+      ],
+      "branches": [
+        {
+          "id": "cap",
+          "label": "CAP과 분산 일관성",
+          "documents": [
+            "concept:cap-theorem",
+            "source:ref-087"
+          ]
+        },
+        {
+          "id": "failure",
+          "label": "장애 감지와 부분 실패",
+          "documents": [
+            "concept:failure-detection",
+            "concept:partial-failure"
+          ]
+        }
+      ]
     }
   ]
 }

@@ -170,6 +170,7 @@ redirect_from:
 - [2026-10-24 update | 프로그래밍 언어 Trace와 coverage 25%](logs/log-2026-10-24-143-programming-languages-trace.md)
 - [2026-10-24 update | Trace quality budget](logs/log-2026-10-24-144-trace-quality-budget.md)
 - [2026-10-24 update | 접근성·성능 점검](logs/log-2026-10-24-145-a11y-performance.md)
+- [2026-10-24 update | 동시성 Trace와 coverage 28.3%](logs/log-2026-10-24-146-concurrency-trace.md)
 
 ## 출처
 
