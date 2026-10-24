@@ -43,6 +43,10 @@ const traceCommands = traces.map((trace) => ({
   kind: "trace",
   url: withBase(`/traces/${trace.id}/`)
 }));
+const guideCommands = [
+  { title: "Guide: 이 위키를 읽는 법", summary: "source·concept·analysis 읽기", kind: "guide", url: withBase("/guides/reading/") },
+  { title: "Guide: 근거와 관계 읽기", summary: "evidence·relations·연도", kind: "guide", url: withBase("/guides/evidence/") }
+];
 ---
 
 <!doctype html>
@@ -107,6 +111,9 @@ const traceCommands = traces.map((trace) => ({
             <span>{trace.title}</span>
           </a>
         ))}
+        <div class="sidebar-section">GUIDES</div>
+        <a class="tree-item" href={withBase("/guides/reading/")}><span class="tree-icon">?</span><span>이 위키를 읽는 법</span></a>
+        <a class="tree-item" href={withBase("/guides/evidence/")}><span class="tree-icon">?</span><span>근거와 관계 읽기</span></a>
         <div class="sidebar-section">SHORTCUTS</div>
         <button class="sidebar-shortcut" type="button" data-command-open>
           <span>Command Palette</span><kbd>Ctrl K</kbd>
@@ -147,7 +154,7 @@ const traceCommands = traces.map((trace) => ({
       {noindex && <span class="status-warning">noindex</span>}
     </footer>
 
-    <div class="command-backdrop" data-command-palette data-traces={JSON.stringify(traceCommands)} hidden>
+    <div class="command-backdrop" data-command-palette data-traces={JSON.stringify(traceCommands)} data-guides={JSON.stringify(guideCommands)} hidden>
       <div class="command" role="dialog" aria-modal="true" aria-label="명령 팔레트">
         <input
           type="search"
@@ -168,6 +175,7 @@ const traceCommands = traces.map((trace) => ({
       const commandInput = document.querySelector("[data-command-input]");
       const commandResults = document.querySelector("[data-command-results]");
       const traceIndex = JSON.parse(palette.dataset.traces || "[]");
+      const guideIndex = JSON.parse(palette.dataset.guides || "[]");
       let commandIndex = [];
       let selected = 0;
 
@@ -187,7 +195,7 @@ const traceCommands = traces.map((trace) => ({
         const close = () => { palette.hidden = true; };
         const render = (query) => {
           const terms = query.trim().toLocaleLowerCase("ko-KR").split(/\s+/).filter(Boolean);
-          const matches = [...traceIndex, ...commandIndex].filter((item) => {
+          const matches = [...traceIndex, ...guideIndex, ...commandIndex].filter((item) => {
             const haystack = [item.title, item.summary, item.kind, ...(item.aliases || [])].join(" ").toLocaleLowerCase("ko-KR");
             return terms.every((term) => haystack.includes(term));
           }).slice(0, 12);

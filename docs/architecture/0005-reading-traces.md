@@ -89,9 +89,10 @@ CI에서 `knowledge:check`·`knowledge:schema` 다음에 실행한다.
 ## 결과
 
 - 3 traces, 18 steps, 120 minutes
-- sitemap 402 → 406 URLs
+- 2 guides: 이 위키를 읽는 법, 근거와 관계 읽기
+- sitemap 402 → 409 URLs
 - search records 397 유지 (Trace는 문서 검색과 분리)
-- 페이지 1,001 → 1,005
+- 페이지 1,001 → 1,008
 
 ## 하지 않은 것
 

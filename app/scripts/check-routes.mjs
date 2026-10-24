@@ -22,7 +22,7 @@ for (const from of Object.keys(routes.redirects)) {
   if (!(await exists(path.join(dist, legacy, "index.html")))) missing.push(`redirect ${from}`);
 }
 
-const staticPages = ["index.html", "index/index.html", "history/index.html", "evidence/index.html", "search/index.html", "traces/index.html", ...traceCatalog.traces.map((trace) => `traces/${trace.id}/index.html`), "404.html"];
+const staticPages = ["index.html", "index/index.html", "history/index.html", "evidence/index.html", "search/index.html", "traces/index.html", ...traceCatalog.traces.map((trace) => `traces/${trace.id}/index.html`), "guides/index.html", "guides/reading/index.html", "guides/evidence/index.html", "404.html"];
 for (const page of staticPages) if (!(await exists(path.join(dist, page)))) missing.push(`static ${page}`);
 if (!(await exists(path.join(dist, "robots.txt")))) missing.push("robots.txt");
 if (!(await exists(path.join(dist, "sitemap.xml")))) missing.push("sitemap.xml");
@@ -31,7 +31,7 @@ const docs = (await readFile(path.join(dist, "search.json"), "utf8"));
 const searchRecords = JSON.parse(docs).length;
 const sitemap = await readFile(path.join(dist, "sitemap.xml"), "utf8");
 const sitemapUrls = [...sitemap.matchAll(/<loc>/g)].length;
-const expectedSitemapUrls = 397 + 5 + 1 + traceCatalog.traces.length;
+const expectedSitemapUrls = 397 + 5 + 1 + traceCatalog.traces.length + 3;
 const noindex = [];
 for (const page of routes.pages.filter((item) => item.publicationVisibility === "unlisted")) {
   const file = path.join(dist, "docs", page.id, "index.html");

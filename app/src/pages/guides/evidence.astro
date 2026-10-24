@@ -1,0 +1,60 @@
+---
+import Base from "../../layouts/Base.astro";
+import { withBase } from "../../lib/data";
+---
+
+<Base title="근거와 관계 읽기" description="CS Wiki의 evidence, relations, 연도, unlisted 문서를 읽는 방법">
+  <div class="guide-page">
+    <header class="guide-head">
+      <p class="eyebrow">GUIDE 02 / EVIDENCE</p>
+      <h1>근거와 관계 읽기</h1>
+      <p class="guide-intro">
+        이 위키의 문서는 “그렇게 주장한다”에서 끝나지 않고, 어떤 원본·관계·연도에 기대는지를 남깁니다.
+        화면에는 독자가 읽을 수 있는 형태로만 표시됩니다.
+      </p>
+    </header>
+
+    <section class="guide-section">
+      <h2>EVIDENCE</h2>
+      <p>
+        본문의 <strong>출처</strong> 목록은 실제 source/reference 문서로 연결됩니다.
+        내부 근거 ID는 데이터에는 남지만 화면에는 표시하지 않습니다.
+        <a href={withBase("/evidence/")}>근거 렌즈</a>에서 어떤 소스가 많은 statement를 뒷받침하는지 볼 수 있습니다.
+      </p>
+    </section>
+
+    <section class="guide-section">
+      <h2>RELATIONS</h2>
+      <p>
+        문서의 오른쪽 rail에는 나가는 관계와 들어오는 관계가 있습니다.
+        관계 이름은 두 문서가 어떤 방식으로 이어지는지를 나타냅니다.
+      </p>
+      <ul>
+        <li><code>measures</code> — 무엇을 측정하거나 평가하는가</li>
+        <li><code>responds_to</code> — 어떤 문제·요구에 대응하는가</li>
+        <li><code>synthesizes</code> — 여러 문서를 종합하는가</li>
+        <li><code>constrains</code> — 무엇을 제약하는가</li>
+      </ul>
+    </section>
+
+    <section class="guide-section">
+      <h2>YEARS</h2>
+      <p>
+        문서 상단의 연도는 대표 사건 또는 출판 연도입니다.
+        생몰년이나 기계의 사용 기간 전체를 뜻하지 않을 수 있으므로,
+        <a href={withBase("/history/")}>역사 렌즈</a>에서 사건의 층위를 함께 확인하세요.
+      </p>
+    </section>
+
+    <section class="guide-section">
+      <h2>UNLISTED</h2>
+      <p>
+        일부 문서는 링크로만 접근할 수 있는 <strong>unlisted</strong> 상태입니다.
+        검색·색인·사이트맵에는 나오지 않으며, 문서 상단에 안내가 표시됩니다.
+        공개 문서와 혼동하지 않도록 상태 표시를 확인하세요.
+      </p>
+    </section>
+
+    <a class="guide-back" href={withBase("/guides/")}>← Guides</a>
+  </div>
+</Base>

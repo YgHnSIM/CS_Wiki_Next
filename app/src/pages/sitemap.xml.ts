@@ -9,7 +9,10 @@ const staticPaths = [
   "/evidence/",
   "/search/",
   "/traces/",
-  ...traces.map((trace) => `/traces/${trace.id}/`)
+  ...traces.map((trace) => `/traces/${trace.id}/`),
+  "/guides/",
+  "/guides/reading/",
+  "/guides/evidence/"
 ];
 
 function escapeXml(value: string) {

@@ -773,3 +773,32 @@ kbd { border: 1px solid var(--line); padding: 0 0.25rem; color: var(--muted); fo
   .trace-strip { grid-template-columns: 1fr; }
   .trace-strip-card { min-height: 0; }
 }
+
+/* guides */
+.guide-page { max-width: 940px; }
+.guide-head { padding-bottom: 1.4rem; border-bottom: 1px solid var(--line); }
+.guide-head h1 { max-width: 26ch; }
+.guide-intro { max-width: 72ch; margin: 0.8rem 0 0; color: var(--muted); font-family: var(--sans); font-size: 0.9rem; line-height: 1.8; }
+.guide-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.7rem; margin-top: 1.4rem; }
+.guide-card { display: flex; flex-direction: column; min-height: 190px; padding: 0.9rem; border: 1px solid var(--line); background: var(--bg-2); color: var(--text); text-decoration: none; }
+.guide-card:hover { border-color: var(--blue); background: #2a2d2e; }
+.guide-card > span { color: var(--orange); font-size: 0.62rem; letter-spacing: 0.08em; }
+.guide-card h2 { margin: 0.8rem 0 0.35rem; font-family: var(--sans); font-size: 0.92rem; }
+.guide-card p { margin: 0; color: var(--muted); font-family: var(--sans); font-size: 0.76rem; line-height: 1.65; }
+.guide-card small { margin-top: auto; padding-top: 1rem; color: var(--blue); font-size: 0.66rem; }
+.guide-section { padding: 1.2rem 0; border-bottom: 1px solid var(--line); }
+.guide-section h2 { margin: 0 0 0.5rem; color: var(--blue); font-size: 0.7rem; letter-spacing: 0.12em; }
+.guide-section p { max-width: 78ch; margin: 0.35rem 0; color: var(--text); font-family: var(--sans); font-size: 0.88rem; line-height: 1.8; }
+.guide-section ul { max-width: 78ch; margin: 0.5rem 0; padding-left: 1.1rem; color: var(--text); font-family: var(--sans); font-size: 0.88rem; line-height: 1.8; }
+.guide-section li { margin: 0.2rem 0; }
+.guide-section a { color: var(--teal); }
+.guide-flow { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; margin-top: 0.8rem; border-top: 1px solid var(--line); }
+.guide-flow div { padding: 0.6rem 0.6rem 0.6rem 0; border-right: 1px solid var(--line); }
+.guide-flow div:last-child { border-right: 0; }
+.guide-flow strong { display: block; color: var(--orange); font-size: 0.64rem; }
+.guide-flow span { color: var(--muted); font-family: var(--sans); font-size: 0.78rem; }
+.guide-back { display: inline-block; margin-top: 1.3rem; color: var(--blue); font-size: 0.7rem; text-decoration: none; }
+@media (max-width: 700px) {
+  .guide-grid, .guide-flow { grid-template-columns: 1fr; }
+  .guide-flow div { border-right: 0; border-bottom: 1px solid var(--line); }
+}
