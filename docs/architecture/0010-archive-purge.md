@@ -110,7 +110,7 @@ site:parity 441 docs / 555 redirects / 397 search / 418 sitemap
 npm test 7 pass
 ```
 
-확인 후 임시 문서·archive·registry를 제거해 현재 440 기준으로 복구했다.
+확인 후 임시 문서·archive·registry를 제거해 현재 441 기준으로 복구했다.
 
 ## 하지 않은 것
 

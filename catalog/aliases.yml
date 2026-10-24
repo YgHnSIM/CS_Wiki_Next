@@ -28,6 +28,7 @@ aliases:
   계산 노동의 조직: analysis:human-computers-and-computation-factories
   계산 능력: concept:computing-capability
   계산 능력의 역사: analysis:page-f8223547
+  계산 독서 지도: document:computation-reading-guide
   계산 복잡도: concept:computational-complexity
   계산 에너지 효율 추세: concept:page-0fdf8f46
   계산 혹은 논리학: source:ref-143
@@ -38,8 +39,10 @@ aliases:
   계산기와 컴퓨터의 차이: analysis:page-7058e090
   계산은 1945년의 발명인가: analysis:computation-invention-or-natural-phenomenon
   계산은 발명인가 자연 현상인가: analysis:computation-invention-or-natural-phenomenon
+  계산의 이론과 한계 읽기 순서: document:computation-reading-guide
   계산의 이론적 의미: analysis:page-f5a31368
   계산의 존재론: analysis:computation-invention-or-natural-phenomenon
+  계산이란 무엇인가 독서 지도: document:computation-reading-guide
   계산적 생명: concept:computational-artificial-life
   계산적 인공생명: concept:computational-artificial-life
   계산표: concept:mathematical-tables
@@ -1428,6 +1431,7 @@ aliases:
   DLMF on-demand tables: source:ref-060
   DLMF Standard Reference Tables on Demand: source:ref-060
   DLMF Tables: source:ref-060
+  document:computation-reading-guide: document:computation-reading-guide
   document:index: document:index
   document:knowledge-graph-schema: document:knowledge-graph-schema
   document:log: document:log
@@ -1852,6 +1856,7 @@ aliases:
   Memory wall: concept:memory-wall
   Memory wall paper: source:ref-039
   meta-9bc0d3d686763690: document:page-9bc0d3d6
+  meta-computation-reading-guide: document:computation-reading-guide
   meta-index: document:index
   meta-knowledge-graph-schema: document:knowledge-graph-schema
   meta-log: document:log
@@ -2548,6 +2553,7 @@ aliases:
   The Unicode Standard: source:ref-022
   The Unicode Standard 17.0.0: source:ref-022
   The UNIX Time-Sharing System: source:ref-018
+  Theory of computation reading guide: document:computation-reading-guide
   Theory of Self-Reproducing Automata: source:ref-152
   There's Plenty of Room at the Top: source:ref-068
   "There’s plenty of room at the Top: What will drive computer performance after Moore’s law?": source:ref-068

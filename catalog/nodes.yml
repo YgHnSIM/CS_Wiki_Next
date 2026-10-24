@@ -3659,6 +3659,21 @@ nodes:
     same_as: []
     status: auto
     page_id: concept-verification-labor
+  - key: document:computation-reading-guide
+    type: document
+    labels:
+      ko: 계산 독서 지도
+    aliases:
+      - 계산 독서 지도
+      - 계산이란 무엇인가 독서 지도
+      - Theory of computation reading guide
+      - 계산의 이론과 한계 읽기 순서
+      - meta-computation-reading-guide
+      - document:computation-reading-guide
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: meta-computation-reading-guide
   - key: document:index
     type: document
     labels:
