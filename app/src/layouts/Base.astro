@@ -41,11 +41,12 @@ const traceCommands = traces.map((trace) => ({
   title: `Trace: ${trace.title}`,
   summary: trace.question,
   kind: "trace",
+  aliases: [trace.id],
   url: withBase(`/traces/${trace.id}/`)
 }));
 const guideCommands = [
-  { title: "Guide: 이 위키를 읽는 법", summary: "source·concept·analysis 읽기", kind: "guide", url: withBase("/guides/reading/") },
-  { title: "Guide: 근거와 관계 읽기", summary: "evidence·relations·연도", kind: "guide", url: withBase("/guides/evidence/") }
+  { title: "Guide: 이 위키를 읽는 법", summary: "source·concept·analysis 읽기", kind: "guide", aliases: ["reading guide"], url: withBase("/guides/reading/") },
+  { title: "Guide: 근거와 관계 읽기", summary: "evidence·relations·연도", kind: "guide", aliases: ["evidence guide"], url: withBase("/guides/evidence/") }
 ];
 ---
 
@@ -163,14 +164,18 @@ const guideCommands = [
           aria-label="문서 검색"
           data-command-input
           data-base={withBase("/")}
+          aria-controls="command-results"
+          aria-activedescendant=""
           autocomplete="off"
         />
-        <div class="command-results" data-command-results role="listbox"></div>
+        <div class="command-results" id="command-results" data-command-results role="listbox"></div>
         <div class="command-footer"><span>↑↓ 이동</span><span>Enter 열기</span><span>Esc 닫기</span></div>
       </div>
     </div>
 
     <script>
+      import { rankSearch } from "../lib/search.mjs";
+
       const palette = document.querySelector("[data-command-palette]");
       const commandInput = document.querySelector("[data-command-input]");
       const commandResults = document.querySelector("[data-command-results]");
@@ -178,9 +183,11 @@ const guideCommands = [
       const guideIndex = JSON.parse(palette.dataset.guides || "[]");
       let commandIndex = [];
       let selected = 0;
+      let lastFocus = null;
 
       if (palette && commandInput && commandResults) {
         const open = () => {
+          lastFocus = document.activeElement;
           palette.hidden = false;
           commandInput.value = "";
           render("");
@@ -192,31 +199,62 @@ const guideCommands = [
               .catch(() => { render(commandInput.value); });
           }
         };
-        const close = () => { palette.hidden = true; };
+        const close = () => {
+          palette.hidden = true;
+          if (lastFocus instanceof HTMLElement) lastFocus.focus();
+        };
         const render = (query) => {
-          const terms = query.trim().toLocaleLowerCase("ko-KR").split(/\s+/).filter(Boolean);
-          const matches = [...traceIndex, ...guideIndex, ...commandIndex].filter((item) => {
-            const haystack = [item.title, item.summary, item.kind, ...(item.aliases || [])].join(" ").toLocaleLowerCase("ko-KR");
-            return terms.every((term) => haystack.includes(term));
-          }).slice(0, 12);
+          const trimmed = query.trim();
+          const pathItems = trimmed
+            ? rankSearch([...traceIndex, ...guideIndex], trimmed).slice(0, 4).map((entry) => entry.item)
+            : [...traceIndex, ...guideIndex];
+          const docItems = trimmed
+            ? rankSearch(commandIndex, trimmed).slice(0, 12).map((entry) => entry.item)
+            : [];
           selected = 0;
           commandResults.replaceChildren();
-          for (const [index, item] of matches.entries()) {
-            const link = document.createElement("a");
-            link.href = item.url;
-            link.setAttribute("role", "option");
-            link.dataset.index = String(index);
-            link.className = index === 0 ? "selected" : "";
-            link.innerHTML = `<span>${item.title}</span><small>${item.kind} · ${item.url}</small>`;
-            commandResults.append(link);
-          }
-          if (!matches.length) commandResults.textContent = "일치하는 문서가 없습니다.";
+          const links = [];
+          const appendGroup = (label, items) => {
+            if (!items.length) return;
+            const group = document.createElement("div");
+            group.className = "command-group";
+            const heading = document.createElement("div");
+            heading.className = "command-group-title";
+            heading.textContent = label;
+            group.append(heading);
+            for (const item of items) {
+              const link = document.createElement("a");
+              link.href = item.url;
+              link.id = `command-result-${links.length}`;
+              link.setAttribute("role", "option");
+              link.setAttribute("aria-selected", "false");
+              const title = document.createElement("span");
+              title.textContent = item.title;
+              const small = document.createElement("small");
+              small.textContent = `${item.kind} · ${item.url}`;
+              link.append(title, small);
+              links.push(link);
+              group.append(link);
+            }
+            commandResults.append(group);
+          };
+          appendGroup("PATHS", pathItems);
+          appendGroup("DOCUMENTS", docItems);
+          if (!links.length) commandResults.textContent = "일치하는 문서가 없습니다.";
+          select(0);
         };
         const select = (next) => {
           const links = [...commandResults.querySelectorAll("a")];
-          if (!links.length) return;
+          if (!links.length) {
+            commandInput.setAttribute("aria-activedescendant", "");
+            return;
+          }
           selected = (next + links.length) % links.length;
-          links.forEach((link, index) => link.classList.toggle("selected", index === selected));
+          links.forEach((link, index) => {
+            link.classList.toggle("selected", index === selected);
+            link.setAttribute("aria-selected", String(index === selected));
+          });
+          commandInput.setAttribute("aria-activedescendant", links[selected].id);
           links[selected].scrollIntoView({ block: "nearest" });
         };
 
@@ -227,6 +265,14 @@ const guideCommands = [
             open();
           }
           if (palette.hidden) return;
+          if (event.key === "Tab") {
+            const links = [...commandResults.querySelectorAll("a")];
+            const focusables = [commandInput, ...links];
+            const current = focusables.indexOf(document.activeElement);
+            event.preventDefault();
+            const next = event.shiftKey ? (current <= 0 ? focusables.length - 1 : current - 1) : (current + 1) % focusables.length;
+            focusables[next].focus();
+          }
           if (event.key === "Escape") close();
           if (event.key === "ArrowDown") { event.preventDefault(); select(selected + 1); }
           if (event.key === "ArrowUp") { event.preventDefault(); select(selected - 1); }

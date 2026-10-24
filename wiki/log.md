@@ -165,6 +165,7 @@ redirect_from:
 - [2026-10-24 update | Reading Guide 2개](logs/log-2026-10-24-138-reading-guides.md)
 - [2026-10-24 update | Reading Trace 3개 추가와 coverage 리포트](logs/log-2026-10-24-139-trace-coverage.md)
 - [2026-10-24 update | Trace 품질 보강 — 연도 4건·근거 1건](logs/log-2026-10-24-140-trace-quality.md)
+- [2026-10-24 update | 검색 P0 — 공유 랭킹·평가·Command Palette 접근성](logs/log-2026-10-24-141-search-quality.md)
 
 ## 출처
 

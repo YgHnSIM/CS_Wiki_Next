@@ -55,5 +55,8 @@ jobs:
       - name: Route parity
         run: npm run site:parity
 
+      - name: Search quality
+        run: npm run search:eval
+
       - name: Internal links
         run: npm run site:links

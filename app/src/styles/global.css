@@ -812,3 +812,9 @@ kbd { border: 1px solid var(--line); padding: 0 0.25rem; color: var(--muted); fo
 .trace-coverage-bar { height: 3px; margin-top: 0.55rem; background: var(--line); }
 .trace-coverage-bar span { display: block; height: 100%; background: var(--green); }
 .trace-coverage-meta { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-top: 0.5rem; color: var(--muted); font-size: 0.64rem; }
+
+.search-paths { margin-top: 2rem; padding-top: 1.2rem; border-top: 1px solid var(--line); }
+.search-paths h2 { margin-top: 0; color: var(--blue); font-size: 0.68rem; letter-spacing: 0.1em; }
+
+.command-group-title { padding: 0.4rem 0.8rem 0.2rem; color: var(--muted); font-size: 0.58rem; letter-spacing: 0.1em; }
+.command-group + .command-group { border-top: 1px solid var(--line); }

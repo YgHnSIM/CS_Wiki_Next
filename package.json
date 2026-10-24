@@ -20,6 +20,7 @@
     "site:build": "npm run knowledge:build && node app/scripts/copy-assets.mjs && npm --prefix app run build",
     "site:parity": "node app/scripts/check-routes.mjs",
     "site:links": "node app/scripts/check-links.mjs",
+    "search:eval": "node app/scripts/eval-search.mjs",
     "security:audit": "npm audit --audit-level=moderate && npm --prefix app audit --audit-level=moderate"
   },
   "dependencies": {

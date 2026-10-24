@@ -38,6 +38,7 @@ app/                  Astro 사이트
 - [Astro app contract](docs/architecture/0003-astro-app.md)
 - [Dependency policy](docs/architecture/0004-dependencies.md)
 - [ADR 0005: Reading Traces](docs/architecture/0005-reading-traces.md)
+- [ADR 0006: Search Quality](docs/architecture/0006-search-quality.md)
 - [Phase 1 relations 마이그레이션](docs/architecture/phase-1-relations-migration.md)
 - [relations 스키마](schema/knowledge/relations.schema.json)
 - [Registry 스키마](schema/knowledge/registry.schema.json)
