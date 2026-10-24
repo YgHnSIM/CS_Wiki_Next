@@ -78,7 +78,7 @@ npm run wiki:lint
 
 ## 테스트
 
-`wiki-tools.test.mjs`는 임시 fixture에서 index/log/gaps/lint를 검증한다. 총 테스트는 20개다.
+`wiki-tools.test.mjs`는 임시 fixture에서 index/log/gaps/lint를 검증한다. 총 테스트는 21개다.
 
 ## 결과
 
