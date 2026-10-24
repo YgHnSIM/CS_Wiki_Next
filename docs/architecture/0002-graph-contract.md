@@ -120,13 +120,14 @@ data/build/report.json      counts + issues + generated_at
 
 `npm test`는 다음을 검증한다.
 
-- legacy baseline 하한
-- 기존 440 route의 문서 존재
+- legacy route의 active/archive/purge 상태
+- removed registry 무결성
 - 모든 문서의 `/docs/{id}/` URL
 - 모든 statement의 subject/target 등록
 - backlink 존재
 - graph invariant 0건
 - timeline의 날짜 타입
+- lifecycle CLI (retire/delete/restore/purge)
 
 ## 다음 단계
 

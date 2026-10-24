@@ -107,7 +107,7 @@ public delete guard: 실패 (retire 먼저)
 archive: tombstone + noindex + archive 원문
 purge: 문서 페이지 없음 + removed registry
 site:parity 441 docs / 555 redirects / 397 search / 418 sitemap
-npm test 7 pass
+npm test 14 pass
 ```
 
 확인 후 임시 문서·archive·registry를 제거해 현재 441 기준으로 복구했다.
