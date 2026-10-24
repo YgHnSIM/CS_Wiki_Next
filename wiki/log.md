@@ -173,6 +173,7 @@ redirect_from:
 - [2026-10-24 update | 동시성 Trace와 coverage 28.3%](logs/log-2026-10-24-146-concurrency-trace.md)
 - [2026-10-24 update | Trace checkpoint review — Batch 1](logs/log-2026-10-24-147-trace-review-batch-1.md)
 - [2026-10-24 update | Trace checkpoint review — Batch 2](logs/log-2026-10-24-148-trace-review-batch-2.md)
+- [2026-10-24 update | Trace checkpoint review — Batch 3](logs/log-2026-10-24-149-trace-review-batch-3.md)
 
 ## 출처
 
