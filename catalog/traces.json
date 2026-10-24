@@ -636,6 +636,327 @@
           ]
         }
       ]
+    },
+    {
+      "id": "text-encoding",
+      "title": "문자는 어떻게 바이트가 되고, 왜 같은 텍스트가 다르게 보이는가",
+      "question": "사람이 읽는 문자와 컴퓨터가 저장하는 바이트 사이에는 어떤 약속과 손실이 있는가?",
+      "outcome": "문자 집합·코드 포인트·코드 유닛·인코딩·정규화를 구분하고, 깨진 텍스트와 동형이의 문자를 설명할 수 있다.",
+      "audience": "텍스트 처리와 유니코드의 함정을 원리부터 이해하고 싶은 독자",
+      "minutes": 40,
+      "prerequisites": [
+        "concept:page-93fca2ee"
+      ],
+      "steps": [
+        {
+          "document": "source:ref-022",
+          "role": "source",
+          "why": "Unicode Standard에서 문자 집합과 코드 포인트의 공통 기준을 확인한다.",
+          "checkpoint": {
+            "question": "유니코드 코드 포인트와 인코딩된 바이트는 같은 것인가?",
+            "answer": "아니다. 코드 포인트는 문자에 부여한 번호이고, UTF-8 같은 인코딩이 이를 바이트열로 표현한다.",
+            "evidence": [
+              "source:ref-022"
+            ]
+          }
+        },
+        {
+          "document": "concept:page-496b0829",
+          "role": "concept",
+          "why": "유니코드가 문자 집합과 인코딩을 분리하는 방식을 정리한다.",
+          "checkpoint": {
+            "question": "유니코드가 모든 문자를 같은 바이트 수로 저장하지 않는 이유는 무엇인가?",
+            "answer": "문자 집합과 저장 인코딩을 분리해, 필요한 범위와 효율에 따라 UTF-8·UTF-16 등을 선택하게 하기 때문이다.",
+            "evidence": [
+              "concept:page-496b0829"
+            ]
+          }
+        },
+        {
+          "document": "concept:page-be5e9654",
+          "role": "concept",
+          "why": "scalar value와 surrogate·코드 유닛의 차이를 구분한다.",
+          "checkpoint": {
+            "question": "Unicode scalar value가 아닌 값은 무엇인가?",
+            "answer": "surrogate code point처럼 단독으로 문자를 나타내지 않는 값이다.",
+            "evidence": [
+              "concept:page-be5e9654"
+            ]
+          }
+        },
+        {
+          "document": "concept:page-f4f75731",
+          "role": "concept",
+          "why": "UTF-8이 코드 포인트를 가변 길이 바이트열로 표현하는 규칙을 이해한다.",
+          "checkpoint": {
+            "question": "UTF-8에서 ASCII 문자는 몇 바이트를 쓰는가?",
+            "answer": "1바이트다. ASCII와 호환되도록 설계되었기 때문이다.",
+            "evidence": [
+              "concept:page-f4f75731"
+            ]
+          }
+        },
+        {
+          "document": "concept:page-9574348a",
+          "role": "concept",
+          "why": "코드 유닛이 문자열 길이와 인덱스 계산을 어떻게 왜곡하는지 본다.",
+          "checkpoint": {
+            "question": "문자열 길이를 코드 유닛 수로 세면 왜 사용자에게 보이는 글자 수와 다를 수 있는가?",
+            "answer": "이모지·결합 문자·surrogate pair처럼 여러 코드 유닛이 하나의 사용자 문자를 구성할 수 있기 때문이다.",
+            "evidence": [
+              "concept:page-9574348a"
+            ]
+          }
+        },
+        {
+          "document": "concept:page-9351a627",
+          "role": "concept",
+          "why": "정규화가 같은 글자를 다른 코드 포인트열로 저장하는 문제를 다룬다.",
+          "checkpoint": {
+            "question": "정규화 없이 문자열을 비교하면 왜 같은 글자가 다르게 판정될 수 있는가?",
+            "answer": "같은 사용자 문자를 구성하는 코드 포인트 순서·조합이 여러 가지일 수 있기 때문이다.",
+            "evidence": [
+              "concept:page-9351a627"
+            ]
+          }
+        },
+        {
+          "document": "analysis:page-9241eb45",
+          "role": "analysis",
+          "why": "문자 집합·인코딩·정규화·보안 경계를 하나의 텍스트 처리 문제로 종합한다.",
+          "checkpoint": {
+            "question": "인코딩 오류가 보안 문제로 이어질 수 있는 이유는 무엇인가?",
+            "answer": "검증과 해석이 서로 다른 인코딩·정규화를 사용하면 같은 입력을 다르게 해석해 검증 우회가 생길 수 있기 때문이다.",
+            "evidence": [
+              "analysis:page-9241eb45",
+              "concept:page-6c282053"
+            ]
+          }
+        }
+      ],
+      "branches": [
+        {
+          "id": "utf8",
+          "label": "UTF-8 바이트 규칙",
+          "documents": [
+            "source:ref-023",
+            "concept:page-f4f75731"
+          ]
+        },
+        {
+          "id": "confusables",
+          "label": "동형이의 문자와 보안",
+          "documents": [
+            "concept:page-cb68fc61",
+            "analysis:interpretation-security-boundary"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "database-transactions",
+      "title": "트랜잭션은 어떤 순서와 격리를 보장하는가",
+      "question": "동시에 실행되는 트랜잭션들이 같은 데이터를 다룰 때, 무엇을 보장하고 무엇을 포기하는가?",
+      "outcome": "직렬 가능성·격리 수준·스냅샷 격리를 구분하고, 분산 환경에서 일관성과 지연의 절충을 설명할 수 있다.",
+      "audience": "데이터베이스의 동시성 제어와 분산 일관성을 함께 이해하고 싶은 독자",
+      "minutes": 45,
+      "prerequisites": [
+        "concept:computing-capability"
+      ],
+      "steps": [
+        {
+          "document": "source:ref-111",
+          "role": "source",
+          "why": "ANSI SQL 격리 수준의 정의가 실제 이상 현상을 모두 설명하지 못한다는 비판을 확인한다.",
+          "checkpoint": {
+            "question": "ANSI SQL 격리 수준만으로 실제 트랜잭션 이상 현상을 모두 막을 수 없는 이유는 무엇인가?",
+            "answer": "정의가 모호하고, phantom·write skew 같은 현상을 충분히 구분하지 못하기 때문이다.",
+            "evidence": [
+              "source:ref-111"
+            ]
+          }
+        },
+        {
+          "document": "concept:serializability",
+          "role": "concept",
+          "why": "직렬 가능성이 동시 실행의 정확성을 판단하는 기준임을 이해한다.",
+          "checkpoint": {
+            "question": "직렬 가능성은 무엇을 보장하는가?",
+            "answer": "동시에 실행된 트랜잭션의 결과가 어떤 직렬 실행 순서의 결과와 동등함을 보장한다.",
+            "evidence": [
+              "concept:serializability"
+            ]
+          }
+        },
+        {
+          "document": "analysis:transaction-ordering-guarantees",
+          "role": "analysis",
+          "why": "격리 수준이 순서 보장과 어떤 관계를 가지는지 종합한다.",
+          "checkpoint": {
+            "question": "격리 수준을 높이면 항상 처리량이 좋아지는가?",
+            "answer": "아니다. 충돌 감지·잠금·재시도가 늘어 처리량과 지연이 나빠질 수 있다.",
+            "evidence": [
+              "analysis:transaction-ordering-guarantees"
+            ]
+          }
+        },
+        {
+          "document": "source:ref-112",
+          "role": "source",
+          "why": "스냅샷 격리에서 직렬 가능성을 어떻게 복원하는지 원문으로 확인한다.",
+          "checkpoint": {
+            "question": "스냅샷 격리는 왜 직렬 가능성을 자동으로 보장하지 않는가?",
+            "answer": "각 트랜잭션이 다른 스냅샷을 보면서 write skew 같은 이상 현상이 생길 수 있기 때문이다.",
+            "evidence": [
+              "source:ref-112"
+            ]
+          }
+        },
+        {
+          "document": "source:ref-113",
+          "role": "source",
+          "why": "실제 PostgreSQL의 격리 수준과 이상 현상 표를 확인한다.",
+          "checkpoint": {
+            "question": "PostgreSQL의 격리 수준 선택은 무엇과의 절충인가?",
+            "answer": "동시성·처리량과 직렬 가능성·재시도 비용 사이의 절충이다.",
+            "evidence": [
+              "source:ref-113"
+            ]
+          }
+        },
+        {
+          "document": "analysis:distributed-consistency-latency",
+          "role": "analysis",
+          "why": "단일 데이터베이스의 격리 문제를 분산 일관성과 지연의 문제로 확장한다.",
+          "checkpoint": {
+            "question": "분산 데이터베이스에서 강한 일관성과 낮은 지연을 동시에 얻기 어려운 이유는 무엇인가?",
+            "answer": "복제본 간 합의·조정에 네트워크 왕복이 필요해, 일관성을 높일수록 지연이 커지기 때문이다.",
+            "evidence": [
+              "analysis:distributed-consistency-latency"
+            ]
+          }
+        }
+      ],
+      "branches": [
+        {
+          "id": "spanner",
+          "label": "Spanner와 외부 일관성",
+          "documents": [
+            "source:ref-089",
+            "concept:external-consistency-time-uncertainty"
+          ]
+        },
+        {
+          "id": "unknown-results",
+          "label": "결과를 모르는 트랜잭션",
+          "documents": [
+            "source:ref-116"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ai-infrastructure",
+      "title": "AI 인프라 병목은 왜 연산에서 데이터 이동으로 이동하는가",
+      "question": "GPU 연산량이 늘어나는데도 AI 시스템이 데이터 이동과 메모리에서 막히는 이유는 무엇인가?",
+      "outcome": "Roofline·메모리 장벽·데이터 이동·가속기 병목을 연결해 AI 인프라의 병목 이동을 설명할 수 있다.",
+      "audience": "AI 하드웨어와 시스템 병목을 성능 모델로 이해하고 싶은 독자",
+      "minutes": 50,
+      "prerequisites": [
+        "concept:memory-wall"
+      ],
+      "steps": [
+        {
+          "document": "source:ref-034",
+          "role": "source",
+          "why": "Roofline 모델에서 연산 강도와 메모리 대역폭이 성능 상한을 만드는 방식을 확인한다.",
+          "checkpoint": {
+            "question": "Roofline 모델에서 성능 상한을 결정하는 두 축은 무엇인가?",
+            "answer": "연산 peak와 메모리 대역폭이며, 연산 강도에 따라 어느 쪽이 병목인지 달라진다.",
+            "evidence": [
+              "source:ref-034"
+            ]
+          }
+        },
+        {
+          "document": "concept:memory-wall",
+          "role": "concept",
+          "why": "프로세서·가속기 연산 속도와 메모리 접근 속도의 격차를 정의한다.",
+          "checkpoint": {
+            "question": "메모리 장벽은 AI 워크로드에서 왜 더 두드러질 수 있는가?",
+            "answer": "가중치·활성값·KV cache 등 큰 데이터를 반복 이동해야 해, 연산보다 데이터 이동이 병목이 되기 쉽기 때문이다.",
+            "evidence": [
+              "concept:memory-wall"
+            ]
+          }
+        },
+        {
+          "document": "concept:memory-movement-bottleneck-shift",
+          "role": "concept",
+          "why": "병목이 연산에서 메모리 이동으로 옮겨가는 구조를 정리한다.",
+          "checkpoint": {
+            "question": "연산을 줄이는 최적화가 항상 전체 지연을 줄이는가?",
+            "answer": "아니다. 데이터 이동·동기화·메모리 용량이 병목이면 연산 감소만으로는 충분하지 않다.",
+            "evidence": [
+              "concept:memory-movement-bottleneck-shift"
+            ]
+          }
+        },
+        {
+          "document": "concept:ai-computing-bottlenecks",
+          "role": "concept",
+          "why": "AI 컴퓨팅의 병목을 연산·메모리·통신·전력의 다층 문제로 확장한다.",
+          "checkpoint": {
+            "question": "AI 컴퓨팅 병목을 GPU 연산량 하나로 설명할 수 없는 이유는 무엇인가?",
+            "answer": "메모리 대역폭·용량, interconnect, 배치, 전력·냉각이 함께 성능을 제한하기 때문이다.",
+            "evidence": [
+              "concept:ai-computing-bottlenecks"
+            ]
+          }
+        },
+        {
+          "document": "analysis:transformer-io-bottleneck",
+          "role": "analysis",
+          "why": "Transformer 추론에서 attention과 가중치 이동이 만드는 I/O 병목을 구체화한다.",
+          "checkpoint": {
+            "question": "Transformer 추론이 연산량만으로 설명되지 않는 이유는 무엇인가?",
+            "answer": "attention의 메모리 접근과 가중치·KV cache 이동이 연산량과 별개로 지연을 만들기 때문이다.",
+            "evidence": [
+              "analysis:transformer-io-bottleneck"
+            ]
+          }
+        },
+        {
+          "document": "analysis:ai-bottleneck-lineage",
+          "role": "analysis",
+          "why": "메모리 장벽에서 AI 인프라 병목으로 이어지는 계보를 종합한다.",
+          "checkpoint": {
+            "question": "AI 인프라 병목의 이동을 이해하면 무엇을 설계할 수 있는가?",
+            "answer": "연산·메모리·통신·전력 중 어느 자원이 상한인지 판단해 가속기·배치·알고리즘을 함께 선택할 수 있다.",
+            "evidence": [
+              "analysis:ai-bottleneck-lineage"
+            ]
+          }
+        }
+      ],
+      "branches": [
+        {
+          "id": "tpu",
+          "label": "TPU와 도메인 특화 가속기",
+          "documents": [
+            "source:ref-042",
+            "concept:domain-specific-accelerator"
+          ]
+        },
+        {
+          "id": "flash-attention",
+          "label": "I/O-aware attention",
+          "documents": [
+            "source:ref-074",
+            "concept:io-aware-attention"
+          ]
+        }
+      ]
     }
   ]
 }
