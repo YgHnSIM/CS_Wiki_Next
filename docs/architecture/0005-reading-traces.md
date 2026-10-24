@@ -90,7 +90,7 @@ CI에서 `knowledge:check`·`knowledge:schema` 다음에 실행한다.
 
 - 6 traces, 37 steps, 255 minutes
 - coverage: 37/244 public knowledge (15.2%), 57 referenced documents
-- single-evidence steps 4, undated steps 14
+- single-evidence steps 3, undated steps 10
 - 2 guides: 이 위키를 읽는 법, 근거와 관계 읽기
 - sitemap 402 → 412 URLs
 - search records 397 유지 (Trace는 문서 검색과 분리)
