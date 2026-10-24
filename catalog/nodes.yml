@@ -421,8 +421,9 @@ nodes:
   - key: analysis:mccarthy-eval-symbolic-computation
     type: analysis
     labels:
-      ko: eval은 왜 프로그램과 데이터의 경계를 지우는가
+      ko: S-표현과 eval은 왜 프로그램과 데이터의 경계를 지우는가
     aliases:
+      - S-표현과 eval은 왜 프로그램과 데이터의 경계를 지우는가
       - eval은 왜 프로그램과 데이터의 경계를 지우는가
       - McCarthy eval
       - Lisp eval analysis

@@ -37,23 +37,25 @@ source already ingested as <id> (<title>); update that source instead
 
 `raw/McCarthy-60.pdf`에서 확인한 내용:
 
-- LISP와 Advice Taker
-- partial function, conditional expression, recursive definition
-- `label`, `lambda`
-- S-expression, `car`/`cdr`/`cons`/`atom`/`eq`
-- M-expression → S-expression 번역
-- `apply[f; args] = eval[cons[f; appq[args]]; NIL]`
-- `eval[e; a]`의 environment
-- IBM 704 list structure, association list, free-storage list
-- garbage collection
-- flowchart recursion
+- LISP와 Advice Taker (프로그래밍 언어와 계산 이론 체계의 동시 확립)
+- partial function(정지 문제의 필연성), non-strict conditional expression(단락 평가)
+- Church λ-대수의 한계와 `label` 연산자
+- S-expression (원자와 순서쌍 DAG), 5대 기본 함수(`car`/`cdr`/`cons`/`atom`/`eq`)와 튜링 완전성
+- M-expression → S-expression 번역 (Homoiconicity)
+- `apply[f; args] = eval[cons[f; appq[args]]; NIL]` (UTM이자 인터프리터)
+- `eval[e; a]`의 environment $a$(속박 변수 충돌 방지)와 고계 함수(`maplist`, `diff`)
+- IBM 704 list structure(address/decrement 필드 매핑), association list, free-storage list
+- 인류 최초의 Mark & Sweep garbage collection
+- 푸시다운 스택(Pushdown Stack) 기반 재귀 컴파일러 (인터프리터 대비 60배 고속화)
+- Linear LISP과의 비교 및 flowchart recursion의 수학적 변환 알고리즘
 
 ## 결과 문서
 
-- source: `ref-155`
-- analysis: `analysis-mccarthy-eval-symbolic-computation`
+- source: `ref-155` (Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I)
+- analysis: `analysis-mccarthy-eval-symbolic-computation` (S-표현과 eval은 왜 프로그램과 데이터의 경계를 지우는가)
 - concept: `concept:symbolic-manipulation`
 - concept: `concept:programmability`
+- concept: `concept:computability` (관계 합성)
 
 source·analysis는 새로 추가하고, 두 concept는 본문·evidence_ids·관련 항목을 갱신했다.
 

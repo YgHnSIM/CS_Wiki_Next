@@ -2234,6 +2234,7 @@ aliases:
   runtime contract: concept:runtime-contract
   runtime contract analysis: analysis:runtime-contract
   runtime contract는 무엇을 보장해야 하는가: analysis:runtime-contract
+  S-표현과 eval은 왜 프로그램과 데이터의 경계를 지우는가: analysis:mccarthy-eval-symbolic-computation
   S. C. Johnson: person:stephen-c-johnson
   Sagan 1967: source:ref-149
   Saltzer Reed Clark 1984: source:ref-101
