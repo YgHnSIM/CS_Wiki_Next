@@ -957,6 +957,122 @@
           ]
         }
       ]
+    },
+    {
+      "id": "programming-languages",
+      "title": "프로그래밍 언어는 어떻게 사람의 표기와 기계의 실행을 연결하는가",
+      "question": "고급 언어의 표기는 어떤 번역과 제어 구조를 거쳐 기계에서 실행되는가?",
+      "outcome": "Fortran의 번역 문제와 구조적 프로그래밍의 제어 구조를 연결해, 언어 추상화가 기계 실행과 어떻게 만나는지 설명할 수 있다.",
+      "audience": "프로그래밍 언어의 초기 형성과 컴파일러·제어 구조를 함께 읽고 싶은 독자",
+      "minutes": 40,
+      "prerequisites": [
+        "concept:computing-capability"
+      ],
+      "steps": [
+        {
+          "document": "source:ref-016",
+          "role": "source",
+          "why": "Fortran이 사람이 읽는 수식 표기를 기계 명령으로 번역하려 했던 원래 문제를 확인한다.",
+          "checkpoint": {
+            "question": "Fortran이 해결하려 한 핵심 문제는 무엇인가?",
+            "answer": "수식에 가까운 표기를 자동으로 기계 명령으로 번역해 프로그래머의 수작업 부담을 줄이는 것이었다.",
+            "evidence": [
+              "source:ref-016"
+            ]
+          }
+        },
+        {
+          "document": "concept:page-72af5ee2",
+          "role": "concept",
+          "why": "Fortran을 단순한 문법이 아니라 번역·최적화·실행 모델의 묶음으로 정리한다.",
+          "checkpoint": {
+            "question": "Fortran의 등장이 프로그래밍 언어의 역할을 어떻게 바꾸었는가?",
+            "answer": "사람이 수식과 절차를 쓰고 컴파일러가 기계 명령으로 번역하는 분업을 일반화했다.",
+            "evidence": [
+              "concept:page-72af5ee2",
+              "source:ref-016"
+            ]
+          }
+        },
+        {
+          "document": "concept:page-26360c8b",
+          "role": "concept",
+          "why": "프로그래밍 언어를 표기·의미·구현의 계약으로 정의한다.",
+          "checkpoint": {
+            "question": "프로그래밍 언어의 추상화는 무엇을 감추고 무엇을 드러내는가?",
+            "answer": "기계 세부를 감추고, 프로그램의 의미와 조합 규칙을 드러낸다.",
+            "evidence": [
+              "concept:page-26360c8b"
+            ]
+          }
+        },
+        {
+          "document": "source:ref-011",
+          "role": "source",
+          "why": "GOTO 비판이 프로그램의 제어 흐름을 어떻게 문제화했는지 원문에서 확인한다.",
+          "checkpoint": {
+            "question": "GOTO 비판의 핵심은 무엇인가?",
+            "answer": "임의 점프가 프로그램의 국소적 추론과 구조를 어렵게 만든다는 것이다.",
+            "evidence": [
+              "source:ref-011"
+            ]
+          }
+        },
+        {
+          "document": "concept:structured-programming",
+          "role": "concept",
+          "why": "순차·선택·반복으로 제어 구조를 제한하는 설계 원리를 정리한다.",
+          "checkpoint": {
+            "question": "구조적 프로그래밍은 제어 흐름을 어떻게 제한하는가?",
+            "answer": "순차·선택·반복 같은 제한된 구조로 프로그램을 조립하게 한다.",
+            "evidence": [
+              "concept:structured-programming"
+            ]
+          }
+        },
+        {
+          "document": "analysis:page-fc1fa74e",
+          "role": "analysis",
+          "why": "GOTO에서 구조적 프로그래밍으로의 전환이 언어 설계와 검증에 갖는 의미를 종합한다.",
+          "checkpoint": {
+            "question": "구조적 프로그래밍이 언어 설계에 남긴 것은 무엇인가?",
+            "answer": "제어 구조를 언어의 일급 구성 요소로 만들어 프로그램의 구조를 읽고 검증하기 쉽게 했다.",
+            "evidence": [
+              "analysis:page-fc1fa74e"
+            ]
+          }
+        },
+        {
+          "document": "analysis:page-866096c7",
+          "role": "analysis",
+          "why": "Fortran과 컴파일러의 관계를 통해 고급 언어와 기계 실행 사이의 번역 계층을 종합한다.",
+          "checkpoint": {
+            "question": "고급 언어와 기계 실행 사이에서 컴파일러는 무엇을 보장하는가?",
+            "answer": "원시 프로그램의 의미를 보존하면서 목적 기계가 실행할 수 있는 명령으로 번역한다.",
+            "evidence": [
+              "analysis:page-866096c7"
+            ]
+          }
+        }
+      ],
+      "branches": [
+        {
+          "id": "fortran-history",
+          "label": "FORTRAN I·II·III의 역사",
+          "documents": [
+            "source:ref-017",
+            "source:ref-015"
+          ]
+        },
+        {
+          "id": "goto",
+          "label": "GOTO와 점프의 반례",
+          "documents": [
+            "concept:page-60bcdf34",
+            "source:ref-012"
+          ]
+        }
+      ]
     }
   ]
 }

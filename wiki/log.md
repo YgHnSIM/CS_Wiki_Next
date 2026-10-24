@@ -167,6 +167,7 @@ redirect_from:
 - [2026-10-24 update | Trace 품질 보강 — 연도 4건·근거 1건](logs/log-2026-10-24-140-trace-quality.md)
 - [2026-10-24 update | 검색 P0 — 공유 랭킹·평가·Command Palette 접근성](logs/log-2026-10-24-141-search-quality.md)
 - [2026-10-24 update | Reading Trace 3개 추가 — 인코딩·트랜잭션·AI 인프라](logs/log-2026-10-24-142-traces-encoding-db-ai.md)
+- [2026-10-24 update | 프로그래밍 언어 Trace와 coverage 25%](logs/log-2026-10-24-143-programming-languages-trace.md)
 
 ## 출처
 

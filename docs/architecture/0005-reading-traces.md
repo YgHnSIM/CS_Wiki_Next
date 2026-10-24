@@ -89,18 +89,19 @@ CI에서 `knowledge:check`·`knowledge:schema` 다음에 실행한다.
 - `/traces/text-encoding/`
 - `/traces/database-transactions/`
 - `/traces/ai-infrastructure/`
+- `/traces/programming-languages/`
 
 기존 `/docs/{id}/`와 리디렉션 계약은 변경하지 않는다.
 
 ## 결과
 
-- 9 traces, 56 steps, 390 minutes
-- coverage: 55/244 public knowledge (22.5%), 84 referenced documents
-- single-evidence steps 3, undated steps 22
+- 10 traces, 63 steps, 430 minutes
+- coverage: 62/244 public knowledge (25.4%), 95 referenced documents
+- single-evidence steps 3, undated steps 24
 - 2 guides: 이 위키를 읽는 법, 근거와 관계 읽기
-- sitemap 402 → 415 URLs
+- sitemap 402 → 416 URLs
 - search records 397 유지 (Trace는 문서 검색과 분리)
-- 페이지 1,001 → 1,014
+- 페이지 1,001 → 1,015
 
 ## 하지 않은 것
 

@@ -21,6 +21,11 @@ capability_layers:
   - reliable-results
 history:
   layer: software
+  event:
+    start: 2024
+    basis: publication-process
+    evidence_id: ref-113
+  note: PostgreSQL 17 문서가 공개된 2024년을 대표 시점으로 둔다.
 origin: external
 works:
   primary:

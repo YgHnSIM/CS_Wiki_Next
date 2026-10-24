@@ -27,8 +27,8 @@ history:
   event:
     start: 1957
     basis: representative
-    evidence_id: src-002
-  note: FORTRAN Automatic Coding System이 배포된 1957년을 대표 시점으로 둔다.
+    evidence_id: ref-016
+  note: FORTRAN Automatic Coding System 논문이 발표된 1957년을 대표 시점으로 둔다.
   layer: software
 redirect_from:
   - /concepts/fortran/
