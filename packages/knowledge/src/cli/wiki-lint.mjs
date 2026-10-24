@@ -5,6 +5,7 @@ import { loadWorkspace, resolvePage } from "../compile/relations.mjs";
 
 const root = process.cwd();
 const jsonOnly = process.argv.includes("--json");
+const semanticEnabled = process.argv.includes("--semantic");
 const workspace = await loadWorkspace(root);
 const pageById = new Map(workspace.pages.map((page) => [page.id, page]));
 const pageByKey = new Map(workspace.pages.map((page) => [page.key, page]));
@@ -100,8 +101,34 @@ const report = {
   generated_at: new Date().toISOString(),
   pages: workspace.pages.length,
   issues,
+  semantic: [],
   errors: issues.length
 };
+
+if (semanticEnabled) {
+  const incoming = new Map();
+  for (const page of workspace.pages) {
+    for (const relation of page.data.relations || []) {
+      incoming.set(relation.target, (incoming.get(relation.target) || 0) + 1);
+    }
+  }
+  for (const page of workspace.pages) {
+    if (page.data.publication_visibility !== "public" || page.kind === "meta") continue;
+    if (!incoming.get(page.key)) {
+      report.semantic.push({ code: "semantic.orphan", path: page.id, message: `${page.title} has no incoming relation` });
+    }
+    if (page.data.status === "stale") {
+      const line = indexText.split("\n").find((item) => item.includes(`[[${page.title}]]`));
+      if (!line || !line.startsWith("- [Stale]")) {
+        report.semantic.push({ code: "semantic.stale_index", path: page.id, message: "stale page is not marked [Stale] in index" });
+      }
+    }
+    if (page.data.status === "disputed") {
+      report.semantic.push({ code: "semantic.disputed", path: page.id, message: "disputed page needs a reader-facing conflict note" });
+    }
+  }
+}
+
 await writeFile(path.join(root, "output", "wiki-lint.json"), JSON.stringify(report, null, 2) + "\n", "utf8");
 if (jsonOnly) {
   console.log(JSON.stringify(report, null, 2));
@@ -109,5 +136,9 @@ if (jsonOnly) {
   console.log(`Wiki lint: ${workspace.pages.length} pages, ${issues.length} issues`);
   for (const issue of issues.slice(0, 50)) console.log(`- [${issue.code}] ${issue.path}: ${issue.message}`);
   if (issues.length > 50) console.log(`... ${issues.length - 50} more`);
+  if (semanticEnabled) {
+    console.log(`Semantic warnings: ${report.semantic.length}`);
+    for (const item of report.semantic.slice(0, 30)) console.log(`- [${item.code}] ${item.path}: ${item.message}`);
+  }
 }
 if (issues.length) process.exitCode = 1;

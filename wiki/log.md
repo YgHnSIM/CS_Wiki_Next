@@ -185,6 +185,7 @@ redirect_from:
 - [2026-10-25 update | Wiki lint, index, log, gaps](logs/log-2026-10-25-158-wiki-maintenance-tools.md)
 - [2026-10-25 update | Wiki ingest](logs/log-2026-10-25-159-wiki-ingest.md)
 - [2026-10-25 update | Wiki query and synthesis](logs/log-2026-10-25-160-wiki-query.md)
+- [2026-10-25 update | Wiki audit and semantic lint](logs/log-2026-10-25-161-wiki-audit.md)
 
 ## 출처
 

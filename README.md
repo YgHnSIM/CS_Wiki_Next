@@ -48,6 +48,7 @@ app/                  Astro 사이트
 - [ADR 0013: Wiki Maintenance Tools](docs/architecture/0013-wiki-maintenance-tools.md)
 - [ADR 0014: Wiki Ingest](docs/architecture/0014-wiki-ingest.md)
 - [ADR 0015: Wiki Query and Synthesis](docs/architecture/0015-wiki-query.md)
+- [ADR 0016: Wiki Audit and Semantic Lint](docs/architecture/0016-wiki-audit.md)
 - [Trace checkpoint review — Batch 1](docs/architecture/trace-checkpoint-review-batch-1.md)
 - [Trace checkpoint review — Batch 2](docs/architecture/trace-checkpoint-review-batch-2.md)
 - [Trace checkpoint review — Batch 3](docs/architecture/trace-checkpoint-review-batch-3.md)

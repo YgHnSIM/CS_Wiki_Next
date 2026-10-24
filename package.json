@@ -27,6 +27,7 @@
     "wiki:gaps": "node packages/knowledge/src/cli/wiki-gaps.mjs",
     "wiki:ingest": "node packages/knowledge/src/cli/wiki-ingest.mjs",
     "wiki:query": "node packages/knowledge/src/cli/wiki-query.mjs",
+    "wiki:audit": "node packages/knowledge/src/cli/wiki-audit.mjs",
     "test": "node --test packages/knowledge/tests/*.test.mjs",
     "site:build": "npm run knowledge:build && node app/scripts/copy-assets.mjs && npm --prefix app run build",
     "site:parity": "node app/scripts/check-routes.mjs",

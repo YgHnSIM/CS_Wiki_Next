@@ -51,6 +51,7 @@ jobs:
           npm run wiki:index
           npm run wiki:log
           npm run wiki:lint
+          npm run wiki:lint -- --semantic
 
       - name: Graph tests
         run: npm test
