@@ -7,7 +7,7 @@
 - **현재 단계**: Phase 3 코어 + 필수 기능 + Reading Trace 12개/Guide 2개 배포 (Astro 1,017 pages, 440 docs, 555 redirects, 397 search records, 418 sitemap URLs)
 - **디자인**: “VS Code Workbench” 셸 — activity bar, explorer, tabs, status bar, man-page 본문, command palette
 - **의존성**: `npm audit` 0 vulnerabilities (루트·app)
-- **URL 계약**: `/docs/{id}/` 440개와 리디렉션 555개를 유지한다.
+- **URL 계약**: 기존 `/docs/{id}/` 440개와 리디렉션 555개를 유지한다. 새 문서는 추가할 수 있고, migration baseline과 현재 콘텐츠 수는 분리한다.
 
 ## 구조
 
@@ -40,6 +40,7 @@ app/                  Astro 사이트
 - [ADR 0005: Reading Traces](docs/architecture/0005-reading-traces.md)
 - [ADR 0006: Search Quality](docs/architecture/0006-search-quality.md)
 - [ADR 0007: Accessibility and Performance](docs/architecture/0007-accessibility-performance.md)
+- [ADR 0008: Living Content after Migration](docs/architecture/0008-living-content.md)
 - [Trace checkpoint review — Batch 1](docs/architecture/trace-checkpoint-review-batch-1.md)
 - [Trace checkpoint review — Batch 2](docs/architecture/trace-checkpoint-review-batch-2.md)
 - [Trace checkpoint review — Batch 3](docs/architecture/trace-checkpoint-review-batch-3.md)

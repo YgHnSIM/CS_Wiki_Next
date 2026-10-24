@@ -20,12 +20,12 @@ raw/assets/
 app/dist/
   index.html
   index/index.html
-  docs/{id}/index.html          440
+  docs/{id}/index.html          현재 문서 수
   history/index.html
   evidence/index.html
   search/index.html
-  search.json                   397
-  sitemap.xml                   402
+  search.json                   현재 public 문서 수
+  sitemap.xml                   현재 public 문서 + static
   robots.txt
   {legacy}/index.html           555 redirects
   404.html
@@ -65,10 +65,14 @@ npm run site:links
 
 `site:parity`는 다음을 확인한다.
 
-- 440 docs
-- 555 redirects
-- 397 search records
-- unlisted 43개 noindex
+- 현재 build의 모든 document page
+- 기존 440 legacy route의 document 존재
+- 기존 555 redirect page
+- search records 수와 현재 public 문서 수의 일치
+- 모든 public 문서의 search·sitemap 포함
+- unlisted 문서의 noindex
+
+총 문서 수·sitemap 수의 정확한 절대값은 검사하지 않는다. 새 문서는 추가할 수 있고, migration baseline은 `contracts/migration-baseline.json`에 동결되어 있다.
 
 `site:links`는 HTML의 내부 `href`/`src`가 실제 파일로 해석되는지 확인한다. raw asset HTML 스냅샷은 검사 대상에서 제외한다.
 
@@ -76,7 +80,6 @@ npm run site:links
 
 - 그래프 캔버스
 - 연결 경로 탐색기
-- 학습 경로/노선도
 - 검색 랭킹·한국어 형태소 분석
 - 기존 사이트와의 픽셀/컴포넌트 parity
 

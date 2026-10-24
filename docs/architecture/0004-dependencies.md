@@ -32,7 +32,7 @@ npm run security:audit
 - 새 의존성은 **빌드 도구**에만 추가한다. 브라우저 런타임 라이브러리는 원칙적으로 추가하지 않는다.
 - `npm audit --audit-level=moderate`에서 0 vulnerabilities를 유지한다.
 - major 업그레이드는 `knowledge:build`, `npm test`, `site:build`, `site:parity`, `site:links`를 모두 통과해야 한다.
-- Astro·Markdown-it 업그레이드 후에는 1,001 페이지와 440/555/397 parity를 다시 확인한다.
+- Astro·Markdown-it 업그레이드 후에는 현재 page build와 legacy route/search/sitemap 무결성을 다시 확인한다.
 - Dependabot은 루트와 `app/`을 별도로 주간 검사한다.
 
 ## 2026-10-24 업그레이드

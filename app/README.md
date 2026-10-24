@@ -51,7 +51,7 @@ npm run site:links
 |---|---|
 | `/` | 홈 |
 | `/index/` | 공개 문서 색인 |
-| `/docs/{id}/` | 440개 문서 |
+| `/docs/{id}/` | 현재 build의 모든 문서 |
 | `/history/` | 역사 렌즈 |
 | `/evidence/` | 근거 렌즈 |
 | `/search/` | 검색 |
@@ -67,7 +67,7 @@ npm run site:links
 - `app/src/lib/markdown.mjs`: Markdown + `[[wiki link]]` + `![[asset]]` 렌더러
 - `app/src/pages/docs/[id].astro`: 문서 페이지
 - `app/src/pages/[...legacy].astro`: 기존 URL 리디렉션
-- `app/scripts/check-routes.mjs`: 440/555/397 parity
+- `app/scripts/check-routes.mjs`: 현재 docs/search/sitemap 무결성과 legacy redirect 검사
 - `app/scripts/check-links.mjs`: 내부 링크 검사
 
 ## 현재 범위

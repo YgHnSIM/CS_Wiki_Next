@@ -26,13 +26,13 @@ Phase 1에서는 `seed`, `report`, `migrate`, `check`, `sync` 순서로 구현�
 
 현재 구현:
 
-- `src/cli/seed.mjs` — 440개 페이지에서 `catalog/nodes.yml`과 `catalog/aliases.yml` 생성
-- `src/cli/report.mjs` — 887개 관계 preflight, unresolved/evidence/중복 리포트
+- `src/cli/seed.mjs` — 전체 페이지에서 `catalog/nodes.yml`과 `catalog/aliases.yml` 생성
+- `src/cli/report.mjs` — 전체 관계 preflight, unresolved/evidence/중복 리포트
 - `src/cli/check.mjs` — Registry key·alias·page_id·reviewed 정합성 검사
 - `src/cli/migrate.mjs` — `## 관계` 표를 frontmatter `relations`로 이관
 - `src/cli/sync.mjs` — frontmatter에서 generated block 재생성·검사
-- `src/cli/schema.mjs` — 440쪽 frontmatter JSON Schema 검증
-- `src/build.mjs` — 정규 graph/documents/report 생성과 parity 검사
+- `src/cli/schema.mjs` — 전체 페이지 frontmatter JSON Schema 검증
+- `src/build.mjs` — 정규 graph/documents/report 생성, migration baseline 하한 검사
 
 ```bash
 npm run knowledge:seed -- --dry-run

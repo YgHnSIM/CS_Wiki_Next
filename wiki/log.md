@@ -175,6 +175,7 @@ redirect_from:
 - [2026-10-24 update | Trace checkpoint review — Batch 2](logs/log-2026-10-24-148-trace-review-batch-2.md)
 - [2026-10-24 update | Trace checkpoint review — Batch 3](logs/log-2026-10-24-149-trace-review-batch-3.md)
 - [2026-10-24 update | LLM 서비스 운영 Trace와 gap report](logs/log-2026-10-24-150-llm-service-operations.md)
+- [2026-10-24 update | Living content baseline 분리](logs/log-2026-10-24-151-living-content.md)
 
 ## 출처
 

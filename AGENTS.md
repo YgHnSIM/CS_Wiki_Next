@@ -30,7 +30,8 @@ app/                  Astro 사이트
 
 ## 마이그레이션 규칙
 
-- 440개 URL과 555개 리디렉션을 유지한다.
+- 기존 440개 URL과 555개 리디렉션은 유지한다. 새 문서는 추가할 수 있다.
+- `contracts/migration-baseline.json`은 동결된 역사적 기준이며, 현재 문서 수는 이보다 클 수 있다.
 - 콘텐츠 본문을 새로 쓰지 않는다. 관계 메타데이터만 재배치한다.
 - 20~30쪽 배치로 변환하고, 배치마다 parity를 확인한다.
 - 대상 미해결·근거 미해결·generated block 불일치가 있으면 다음 배치로 넘어가지 않는다.
@@ -54,7 +55,7 @@ npm run site:links
 npm run security:audit
 ```
 
-`knowledge:check`는 Registry 정합성, `knowledge:schema`는 440쪽 frontmatter 스키마, `knowledge:report`는 887개 관계의 preflight, `knowledge:sync --check`는 generated block 패리티, `knowledge:build`는 정규 그래프와 parity를 검사한다. `knowledge:quality`는 연도 미상·고아·단일 근거를, `traces:check`는 `catalog/traces.json`의 문서·근거·역할 정합성과 coverage/quality budget을 검사한다. `site:build`는 Astro 사이트를 만들고, `site:parity`는 440 docs/555 redirects/397 search records/418 sitemap URLs, `search:eval`은 32개 쿼리의 Top-1/Top-3/MRR, `site:links`는 내부 링크, `security:audit`는 루트·app 의존성 취약점을 검사한다.
+`knowledge:check`는 Registry 정합성, `knowledge:schema`는 전체 페이지 frontmatter 스키마, `knowledge:report`는 전체 관계의 preflight, `knowledge:sync --check`는 generated block 패리티, `knowledge:build`는 정규 그래프와 legacy baseline 하한을 검사한다. `knowledge:quality`는 연도 미상·고아·단일 근거를, `traces:check`는 `catalog/traces.json`의 문서·근거·역할 정합성과 coverage/quality budget을 검사한다. `site:build`는 Astro 사이트를 만들고, `site:parity`는 현재 docs·redirects·search·sitemap의 무결성, `search:eval`은 32개 쿼리의 Top-1/Top-3/MRR, `site:links`는 내부 링크, `security:audit`는 루트·app 의존성 취약점을 검사한다.
 
 ## 금지
 

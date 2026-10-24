@@ -1,22 +1,38 @@
 import test from "node:test";
 import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
+import path from "node:path";
 import { buildGraph } from "../src/build.mjs";
 
-const result = await buildGraph(process.cwd());
+const root = process.cwd();
+const baseline = JSON.parse(await readFile(path.join(root, "contracts", "migration-baseline.json"), "utf8"));
+const routes = JSON.parse(await readFile(path.join(root, "contracts", "routes.json"), "utf8"));
+const result = await buildGraph(root);
 
-test("graph parity matches the migration contract", () => {
-  assert.equal(result.report.documents, 440);
-  assert.equal(result.report.relation_documents, 362);
-  assert.equal(result.report.statements, 887);
-  assert.equal(result.report.redirects, 555);
-  assert.equal(result.report.public_documents, 397);
-  assert.equal(result.report.unlisted_documents, 43);
+test("legacy migration baseline is preserved as a lower bound", () => {
+  assert.ok(result.report.documents >= baseline.documents);
+  assert.ok(result.report.relation_documents >= baseline.relation_documents);
+  assert.ok(result.report.statements >= baseline.statements);
+  assert.ok(result.report.redirects >= baseline.redirects);
+  assert.ok(result.report.public_documents >= baseline.public_documents);
+  assert.ok(result.report.unlisted_documents >= baseline.unlisted_documents);
   assert.deepEqual(result.graph.parity, {
     documents: true,
     relation_documents: true,
     statements: true,
     redirects: true
   });
+});
+
+test("every legacy route still has a document", () => {
+  const ids = new Set(result.documents.map((document) => document.id));
+  for (const page of routes.pages) assert.ok(ids.has(page.id), `missing legacy page ${page.id}`);
+});
+
+test("every document has a generated /docs/{id}/ URL", () => {
+  for (const document of result.documents) {
+    assert.equal(document.url, `/docs/${document.id}/`);
+  }
 });
 
 test("every statement has a registered target and a document", () => {

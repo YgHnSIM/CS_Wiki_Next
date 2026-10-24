@@ -41,9 +41,6 @@ for (const [alias, key] of Object.entries(aliases)) {
 for (const pageId of routes.pages.map((page) => page.id)) {
   if (!pages.has(pageId)) errors.push(`route page has no registry node: ${pageId}`);
 }
-for (const node of nodes) {
-  if (!routes.pages.some((page) => page.id === node.page_id)) warnings.push(`registry node has no route: ${node.key}`);
-}
 
 const reviewed = new Set(Array.isArray(reviews.reviewed) ? reviews.reviewed : []);
 for (const key of reviewed) if (!keys.has(key)) errors.push(`reviewed key missing: ${key}`);
