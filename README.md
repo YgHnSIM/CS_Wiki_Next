@@ -46,6 +46,7 @@ app/                  Astro 사이트
 - [ADR 0011: Lifecycle Integration Tests](docs/architecture/0011-lifecycle-tests.md)
 - [ADR 0012: LLM Wiki Operations](docs/architecture/0012-llm-wiki-operations.md)
 - [ADR 0013: Wiki Maintenance Tools](docs/architecture/0013-wiki-maintenance-tools.md)
+- [ADR 0014: Wiki Ingest](docs/architecture/0014-wiki-ingest.md)
 - [Trace checkpoint review — Batch 1](docs/architecture/trace-checkpoint-review-batch-1.md)
 - [Trace checkpoint review — Batch 2](docs/architecture/trace-checkpoint-review-batch-2.md)
 - [Trace checkpoint review — Batch 3](docs/architecture/trace-checkpoint-review-batch-3.md)
