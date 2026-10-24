@@ -37,6 +37,11 @@ const year = event?.start ?? document.history?.publication_year ?? null;
 const evidenceCount = new Set(statements.flatMap((statement) => statement.evidence.map((item) => item.source))).size;
 const relatedTraces = tracesForDocument(document.key);
 const relationTitle = (key: string) => nodeDocument(key)?.title || key;
+const retirement = document.retirement;
+const redirectDocument = retirement?.mode === "redirect" && retirement.superseded_by
+  ? documents.find((item) => item.id === retirement.superseded_by)
+  : null;
+const redirectUrl = redirectDocument ? withBase(`/docs/${redirectDocument.id}/`) : undefined;
 ---
 
 <Base
@@ -44,6 +49,7 @@ const relationTitle = (key: string) => nodeDocument(key)?.title || key;
   description={document.summary}
   canonical={withBase(document.url)}
   noindex={document.publication_visibility === "unlisted"}
+  refresh={redirectUrl}
 >
   <div class="man-page">
     <div class="man-head">
@@ -53,6 +59,15 @@ const relationTitle = (key: string) => nodeDocument(key)?.title || key;
     </div>
     <div class="man-layout">
       <article class="man-main">
+        {retirement && (
+          <aside class="notice" role="note">
+            <strong>은퇴한 문서</strong>
+            {retirement.mode === "redirect" && redirectDocument
+              ? <>이 문서는 <a href={redirectUrl}>{redirectDocument.title}</a>로 대체되었습니다. 잠시 후 이동합니다.</>
+              : <>이 문서는 더 이상 현재 지식으로 유지되지 않습니다. {retirement.note || "보존된 기록으로만 남겨 둡니다."}</>}
+          </aside>
+        )}
+
         <h1 class="man-title">{document.title}</h1>
         <div class="man-block">
           <h2 class="man-label">NAME</h2>

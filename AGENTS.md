@@ -55,6 +55,8 @@ npm run site:links
 npm run security:audit
 ```
 
+기존 문서를 유지하지 않을 때는 삭제 대신 `npm run content:retire -- --id <id> --mode <tombstone|redirect> [--to <id|key>]`를 사용한다. 기존 URL과 route contract는 유지한다.
+
 `knowledge:check`는 Registry 정합성, `knowledge:schema`는 전체 페이지 frontmatter 스키마, `knowledge:report`는 전체 관계의 preflight, `knowledge:sync --check`는 generated block 패리티, `knowledge:build`는 정규 그래프와 legacy baseline 하한을 검사한다. `knowledge:quality`는 연도 미상·고아·단일 근거를, `traces:check`는 `catalog/traces.json`의 문서·근거·역할 정합성과 coverage/quality budget을 검사한다. `site:build`는 Astro 사이트를 만들고, `site:parity`는 현재 docs·redirects·search·sitemap의 무결성, `search:eval`은 32개 쿼리의 Top-1/Top-3/MRR, `site:links`는 내부 링크, `security:audit`는 루트·app 의존성 취약점을 검사한다.
 
 ## 금지

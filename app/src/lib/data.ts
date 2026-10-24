@@ -29,6 +29,12 @@ export type Document = {
   url: string;
   redirects: string[];
   about: string[];
+  retirement: null | {
+    mode: "tombstone" | "redirect";
+    retired_at: string;
+    superseded_by?: string;
+    note?: string;
+  };
   history: null | {
     publication_year?: number | null;
     event?: { start?: number; end?: number | null; basis?: string; evidence_id?: string | null };

@@ -98,6 +98,17 @@
     "origin": {},
     "works": {},
     "access": {},
+    "retirement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mode", "retired_at"],
+      "properties": {
+        "mode": { "enum": ["tombstone", "redirect"] },
+        "retired_at": { "type": "string", "format": "date" },
+        "superseded_by": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+        "note": { "type": "string", "maxLength": 300 }
+      }
+    },
     "planned_links": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
     "redirect_from": { "type": "array", "items": { "type": "string", "pattern": "^/[^?#]*/*$" }, "uniqueItems": true }
   },
@@ -126,6 +137,15 @@
           "works": { "not": {} },
           "access": { "not": {} }
         }
+      }
+    },
+    {
+      "if": {
+        "required": ["retirement"],
+        "properties": { "retirement": { "properties": { "mode": { "const": "redirect" } } } }
+      },
+      "then": {
+        "properties": { "retirement": { "required": ["superseded_by"] } }
       }
     }
   ],

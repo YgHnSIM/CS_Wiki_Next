@@ -43,6 +43,7 @@ export async function buildGraph(root = process.cwd()) {
       redirects: route?.legacyUrls || [],
       about: Array.isArray(page.data.about) && page.data.about.length ? page.data.about : [page.key],
       evidence_ids: Array.isArray(page.data.evidence_ids) ? page.data.evidence_ids : [],
+      retirement: page.data.retirement || null,
       history: page.data.history || null,
       body: page.body
     };

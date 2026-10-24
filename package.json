@@ -18,6 +18,7 @@
     "traces:check": "node packages/knowledge/src/cli/traces.mjs",
     "traces:review": "node packages/knowledge/src/cli/traces-review.mjs",
     "traces:gaps": "node packages/knowledge/src/cli/trace-gaps.mjs",
+    "content:retire": "node packages/knowledge/src/cli/retire.mjs",
     "test": "node --test packages/knowledge/tests/*.test.mjs",
     "site:build": "npm run knowledge:build && node app/scripts/copy-assets.mjs && npm --prefix app run build",
     "site:parity": "node app/scripts/check-routes.mjs",

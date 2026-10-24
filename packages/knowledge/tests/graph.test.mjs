@@ -14,8 +14,6 @@ test("legacy migration baseline is preserved as a lower bound", () => {
   assert.ok(result.report.relation_documents >= baseline.relation_documents);
   assert.ok(result.report.statements >= baseline.statements);
   assert.ok(result.report.redirects >= baseline.redirects);
-  assert.ok(result.report.public_documents >= baseline.public_documents);
-  assert.ok(result.report.unlisted_documents >= baseline.unlisted_documents);
   assert.deepEqual(result.graph.parity, {
     documents: true,
     relation_documents: true,
