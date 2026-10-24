@@ -1,7 +1,16 @@
 import type { APIRoute } from "astro";
 import { publicDocuments, withBase } from "../lib/data";
+import { traces } from "../lib/traces";
 
-const staticPaths = ["/", "/index/", "/history/", "/evidence/", "/search/"];
+const staticPaths = [
+  "/",
+  "/index/",
+  "/history/",
+  "/evidence/",
+  "/search/",
+  "/traces/",
+  ...traces.map((trace) => `/traces/${trace.id}/`)
+];
 
 function escapeXml(value: string) {
   return value

@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import { documents, graph, publicDocuments, withBase } from "../lib/data";
+import { traces } from "../lib/traces";
 
 interface Props {
   title: string;
@@ -35,7 +36,13 @@ const fileLabel = title === "CS Wiki" ? "welcome.md" : `${title}.md`;
 const pageTitle = title === "CS Wiki" ? "CS Wiki" : `${title} · CS Wiki`;
 const isNotFound = currentPath.endsWith("/404/") || currentPath.endsWith("/404.html");
 const tabHref = isNotFound ? base : currentPath;
-const activeView = currentPath.includes("/search/") ? "search" : currentPath.includes("/history/") ? "history" : currentPath.includes("/evidence/") ? "evidence" : "explorer";
+const activeView = currentPath.includes("/search/") ? "search" : currentPath.includes("/history/") ? "history" : currentPath.includes("/evidence/") ? "evidence" : currentPath.includes("/traces/") ? "traces" : "explorer";
+const traceCommands = traces.map((trace) => ({
+  title: `Trace: ${trace.title}`,
+  summary: trace.question,
+  kind: "trace",
+  url: withBase(`/traces/${trace.id}/`)
+}));
 ---
 
 <!doctype html>
@@ -69,6 +76,7 @@ const activeView = currentPath.includes("/search/") ? "search" : currentPath.inc
         <nav class="activity-nav">
           <a href={withBase("/index/")} aria-label="탐색기" title="Explorer" aria-current={activeView === "explorer" ? "page" : undefined}>▤</a>
           <button type="button" data-command-open aria-label="검색" title="Search" aria-current={activeView === "search" ? "page" : undefined}>⌕</button>
+          <a href={withBase("/traces/")} aria-label="읽기 트레이스" title="Reading Traces" aria-current={activeView === "traces" ? "page" : undefined}>⤳</a>
           <a href={withBase("/history/")} aria-label="역사" title="History" aria-current={activeView === "history" ? "page" : undefined}>◷</a>
           <a href={withBase("/evidence/")} aria-label="근거" title="Evidence" aria-current={activeView === "evidence" ? "page" : undefined}>◈</a>
         </nav>
@@ -92,6 +100,13 @@ const activeView = currentPath.includes("/search/") ? "search" : currentPath.inc
           <span class="dot"></span>
           <span>{fileLabel}</span>
         </a>
+        <div class="sidebar-section">TRACES</div>
+        {traces.map((trace) => (
+          <a class="tree-item" href={withBase(`/traces/${trace.id}/`)}>
+            <span class="tree-icon">⤳</span>
+            <span>{trace.title}</span>
+          </a>
+        ))}
         <div class="sidebar-section">SHORTCUTS</div>
         <button class="sidebar-shortcut" type="button" data-command-open>
           <span>Command Palette</span><kbd>Ctrl K</kbd>
@@ -132,7 +147,7 @@ const activeView = currentPath.includes("/search/") ? "search" : currentPath.inc
       {noindex && <span class="status-warning">noindex</span>}
     </footer>
 
-    <div class="command-backdrop" data-command-palette hidden>
+    <div class="command-backdrop" data-command-palette data-traces={JSON.stringify(traceCommands)} hidden>
       <div class="command" role="dialog" aria-modal="true" aria-label="명령 팔레트">
         <input
           type="search"
@@ -152,6 +167,7 @@ const activeView = currentPath.includes("/search/") ? "search" : currentPath.inc
       const palette = document.querySelector("[data-command-palette]");
       const commandInput = document.querySelector("[data-command-input]");
       const commandResults = document.querySelector("[data-command-results]");
+      const traceIndex = JSON.parse(palette.dataset.traces || "[]");
       let commandIndex = [];
       let selected = 0;
 
@@ -165,13 +181,13 @@ const activeView = currentPath.includes("/search/") ? "search" : currentPath.inc
             fetch(`${commandInput.dataset.base}search.json`)
               .then((response) => response.json())
               .then((data) => { commandIndex = data; render(commandInput.value); })
-              .catch(() => { commandResults.textContent = "검색 색인을 불러오지 못했습니다."; });
+              .catch(() => { render(commandInput.value); });
           }
         };
         const close = () => { palette.hidden = true; };
         const render = (query) => {
           const terms = query.trim().toLocaleLowerCase("ko-KR").split(/\s+/).filter(Boolean);
-          const matches = commandIndex.filter((item) => {
+          const matches = [...traceIndex, ...commandIndex].filter((item) => {
             const haystack = [item.title, item.summary, item.kind, ...(item.aliases || [])].join(" ").toLocaleLowerCase("ko-KR");
             return terms.every((term) => haystack.includes(term));
           }).slice(0, 12);

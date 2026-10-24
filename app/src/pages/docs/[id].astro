@@ -10,6 +10,7 @@ import {
   withBase
 } from "../../lib/data";
 import { renderMarkdown } from "../../lib/markdown.mjs";
+import { tracesForDocument } from "../../lib/traces";
 
 export function getStaticPaths() {
   return documents.map((document) => ({
@@ -34,6 +35,7 @@ const kindLabel = kindLabels[document.kind] || document.kind;
 const event = document.history?.event;
 const year = event?.start ?? document.history?.publication_year ?? null;
 const evidenceCount = new Set(statements.flatMap((statement) => statement.evidence.map((item) => item.source))).size;
+const relatedTraces = tracesForDocument(document.key);
 const relationTitle = (key: string) => nodeDocument(key)?.title || key;
 ---
 
@@ -111,6 +113,20 @@ const relationTitle = (key: string) => nodeDocument(key)?.title || key;
               );
             })}
           </ul>
+        )}
+
+        {relatedTraces.length > 0 && (
+          <>
+            <h2>TRACES</h2>
+            <ul class="connection-list">
+              {relatedTraces.map((trace) => (
+                <li>
+                  <a href={withBase(`/traces/${trace.id}/`)}>{trace.title}</a>
+                  <span>{trace.steps.length} steps</span>
+                </li>
+              ))}
+            </ul>
+          </>
         )}
       </aside>
     </div>

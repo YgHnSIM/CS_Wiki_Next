@@ -44,6 +44,8 @@ npm run knowledge:schema
 npm run knowledge:report
 npm run knowledge:sync -- --check
 npm run knowledge:build
+npm run knowledge:quality
+npm run traces:check
 npm test
 npm run site:build
 npm run site:parity
@@ -51,7 +53,7 @@ npm run site:links
 npm run security:audit
 ```
 
-`knowledge:check`는 Registry 정합성, `knowledge:schema`는 440쪽 frontmatter 스키마, `knowledge:report`는 887개 관계의 preflight, `knowledge:sync --check`는 generated block 패리티, `knowledge:build`는 정규 그래프와 parity를 검사한다. `site:build`는 Astro 사이트를 만들고, `site:parity`는 440 docs/555 redirects/397 search records, `site:links`는 내부 링크, `security:audit`는 루트·app 의존성 취약점을 검사한다.
+`knowledge:check`는 Registry 정합성, `knowledge:schema`는 440쪽 frontmatter 스키마, `knowledge:report`는 887개 관계의 preflight, `knowledge:sync --check`는 generated block 패리티, `knowledge:build`는 정규 그래프와 parity를 검사한다. `knowledge:quality`는 연도 미상·고아·단일 근거를, `traces:check`는 `catalog/traces.json`의 문서·근거·역할 정합성을 검사한다. `site:build`는 Astro 사이트를 만들고, `site:parity`는 440 docs/555 redirects/397 search records/406 sitemap URLs, `site:links`는 내부 링크, `security:audit`는 루트·app 의존성 취약점을 검사한다.
 
 ## 금지
 

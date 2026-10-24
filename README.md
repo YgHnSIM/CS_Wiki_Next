@@ -4,7 +4,7 @@
 
 - **이전 저장소**: `C:\Vault\CS_Wiki` (백업: `C:\Vault\_backups\CS_Wiki_2026-10-24_0514`)
 - **공개 사이트**: https://yghnsim.github.io/CS_Wiki_Next/
-- **현재 단계**: Phase 3 코어 + 필수 기능 완료·배포 (Astro 1,001 pages, 440 docs, 555 redirects, 397 search records)
+- **현재 단계**: Phase 3 코어 + 필수 기능 + Reading Trace 3개 배포 (Astro 1,005 pages, 440 docs, 555 redirects, 397 search records, 406 sitemap URLs)
 - **디자인**: “VS Code Workbench” 셸 — activity bar, explorer, tabs, status bar, man-page 본문, command palette
 - **의존성**: `npm audit` 0 vulnerabilities (루트·app)
 - **URL 계약**: `/docs/{id}/` 440개와 리디렉션 555개를 유지한다.
@@ -16,7 +16,7 @@ wiki/                 기존 Markdown 콘텐츠 (원본)
 raw/                  기존 원본 자료
 schema/               페이지 스키마 v3 + knowledge 초안
 docs/architecture/    ADR과 Phase 1 설계
-catalog/              노드·작품·어휘 Registry
+catalog/              노드·작품·어휘 Registry + traces.json
 contracts/            URL·리디렉션 계약
 packages/knowledge/   새 지식 컴파일러
 app/                  Astro 사이트
@@ -37,6 +37,7 @@ app/                  Astro 사이트
 - [Graph contract v1](docs/architecture/0002-graph-contract.md)
 - [Astro app contract](docs/architecture/0003-astro-app.md)
 - [Dependency policy](docs/architecture/0004-dependencies.md)
+- [ADR 0005: Reading Traces](docs/architecture/0005-reading-traces.md)
 - [Phase 1 relations 마이그레이션](docs/architecture/phase-1-relations-migration.md)
 - [relations 스키마](schema/knowledge/relations.schema.json)
 - [Registry 스키마](schema/knowledge/registry.schema.json)
@@ -46,4 +47,4 @@ app/                  Astro 사이트
 1. CI·Pages 첫 배포 확인
 2. 콘텐츠 품질: 연도 미상·고아·단일 근거
 3. 검색 품질 측정 후 개선
-4. 그래프 캔버스·경로 탐색기·학습 경로는 사용 수요 확인 후 검토
+4. Reading Trace 추가 및 경로 탐색기 검토

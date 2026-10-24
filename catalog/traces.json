@@ -1,0 +1,254 @@
+{
+  "schema_version": 1,
+  "traces": [
+    {
+      "id": "computation",
+      "title": "계산이란 무엇인가",
+      "question": "기계가 계산한다는 말은 무엇을 보장하고, 무엇을 보장하지 않는가?",
+      "outcome": "튜링 기계와 보편 튜링 기계의 차이를 설명하고, 계산 가능성과 효율을 구분할 수 있다.",
+      "audience": "계산 가능성의 출발점을 원문부터 따라가고 싶은 독자",
+      "minutes": 40,
+      "prerequisites": ["concept:computing-capability"],
+      "steps": [
+        {
+          "document": "source:ref-009",
+          "role": "source",
+          "why": "계산 가능성 논의의 원전에서 문제 설정과 형식화를 직접 확인한다.",
+          "checkpoint": {
+            "question": "튜링은 계산 가능한 수를 무엇으로 정의했는가?",
+            "answer": "유한한 절차, 즉 튜링 기계가 유한 시간 안에 출력할 수 있는 수로 정의했다.",
+            "evidence": ["source:ref-009"]
+          }
+        },
+        {
+          "document": "concept:page-c617f209",
+          "role": "concept",
+          "why": "원문의 절차를 테이프·상태·전이 규칙이라는 최소 모델로 고정한다.",
+          "checkpoint": {
+            "question": "튜링 기계의 계산 능력을 결정하는 핵심 요소는 무엇인가?",
+            "answer": "테이프와 상태 전이 규칙이며, 물리적 구현이나 속도는 정의에 포함되지 않는다.",
+            "evidence": ["concept:page-c617f209", "source:ref-009"]
+          }
+        },
+        {
+          "document": "concept:page-676372e6",
+          "role": "concept",
+          "why": "개별 기계와 달리 프로그램을 데이터로 읽는 보편 기계의 의미를 이해한다.",
+          "checkpoint": {
+            "question": "보편 튜링 기계는 왜 모든 튜링 기계를 대신할 수 있는가?",
+            "answer": "기계의 설명을 테이프에 부호화해 읽고, 그 설명대로 다른 기계의 계산을 흉내 내기 때문이다.",
+            "evidence": ["concept:page-676372e6", "source:ref-009"]
+          }
+        },
+        {
+          "document": "concept:page-b95bdd2d",
+          "role": "concept",
+          "why": "튜링 기계·람다 계산·재귀 함수가 같은 계산 가능성 계층을 가리키는지 확인한다.",
+          "checkpoint": {
+            "question": "처치-튜링 논제는 수학적 정리인가, 정의인가?",
+            "answer": "형식적 정리라기보다 ‘효과적으로 계산 가능’이라는 직관을 여러 형식 체계가 공유한다는 논제다.",
+            "evidence": ["concept:page-b95bdd2d"]
+          }
+        },
+        {
+          "document": "concept:computability",
+          "role": "concept",
+          "why": "계산 가능성과 계산 복잡도·효율을 혼동하지 않도록 경계를 긋는다.",
+          "checkpoint": {
+            "question": "계산 불가능한 문제도 알고리즘으로 다룰 수 있는가?",
+            "answer": "일반적으로는 불가능하다. 다만 제한된 입력이나 근사·확률적 방법은 별도로 다룰 수 있다.",
+            "evidence": ["concept:computability"]
+          }
+        },
+        {
+          "document": "analysis:page-f5a31368",
+          "role": "analysis",
+          "why": "원문·개념을 ‘기계가 계산한다’는 주장의 철학적·이론적 의미로 종합한다.",
+          "checkpoint": {
+            "question": "‘기계가 계산한다’는 주장에서 기계의 물리적 구현은 어떤 역할을 하는가?",
+            "answer": "계산 가능성의 정의에는 필수 조건이 아니며, 구현은 실행·속도·자원의 문제로 분리된다.",
+            "evidence": ["analysis:page-f5a31368"]
+          }
+        }
+      ],
+      "branches": [
+        {
+          "id": "church",
+          "label": "알론조 처치와 람다 계산",
+          "documents": ["person:alonzo-church", "concept:computability"]
+        },
+        {
+          "id": "history",
+          "label": "1936년의 문제 설정",
+          "documents": ["source:ref-009", "person:alan-turing"]
+        }
+      ]
+    },
+    {
+      "id": "performance",
+      "title": "왜 빠른 CPU가 빠른 프로그램을 보장하지 않는가",
+      "question": "프로세서의 클럭이 올라가도 프로그램이 같은 비율로 빨라지지 않는 이유는 무엇인가?",
+      "outcome": "성능을 클럭 하나가 아니라 메모리·캐시·전력·측정의 다층 문제로 설명할 수 있다.",
+      "audience": "하드웨어 성능과 서비스 성능을 함께 이해하고 싶은 독자",
+      "minutes": 45,
+      "prerequisites": ["concept:computing-capability"],
+      "steps": [
+        {
+          "document": "source:ref-039",
+          "role": "source",
+          "why": "메모리 접근이 프로세서 속도를 따라가지 못한다는 문제를 원문에서 확인한다.",
+          "checkpoint": {
+            "question": "메모리 장벽은 무엇과 무엇의 격차인가?",
+            "answer": "프로세서의 연산 속도 향상과 메모리 접근 지연·대역폭 향상 사이의 격차다.",
+            "evidence": ["source:ref-039"]
+          }
+        },
+        {
+          "document": "concept:memory-wall",
+          "role": "concept",
+          "why": "메모리 장벽을 캐시·대역폭·지연 시간의 문제로 정의한다.",
+          "checkpoint": {
+            "question": "메모리 장벽이 심해지면 왜 캐시가 더 중요해지는가?",
+            "answer": "느린 주기억장치 접근을 줄이고, 자주 쓰는 데이터를 빠른 캐시에 두어 평균 지연을 낮추기 때문이다.",
+            "evidence": ["concept:memory-wall"]
+          }
+        },
+        {
+          "document": "concept:page-6aaebafb",
+          "role": "concept",
+          "why": "캐시가 지역성과 계층 구조에 의존하는 이유를 이해한다.",
+          "checkpoint": {
+            "question": "캐시가 효과를 내는 전제는 무엇인가?",
+            "answer": "시간적·공간적 지역성, 즉 최근에 쓰거나 인접한 데이터를 다시 쓸 가능성이다.",
+            "evidence": ["concept:page-6aaebafb"]
+          }
+        },
+        {
+          "document": "analysis:page-2b56fedc",
+          "role": "analysis",
+          "why": "클럭·IPC·메모리 지연·병렬성이 함께 성능을 결정한다는 것을 종합한다.",
+          "checkpoint": {
+            "question": "클럭을 2배로 올리면 프로그램 실행 시간도 2배 줄어드는가?",
+            "answer": "아니다. 메모리 지연, 명령어 수, 병렬성, 전력·발열 제약 때문에 비례하지 않는다.",
+            "evidence": ["analysis:page-2b56fedc", "source:ref-039"]
+          }
+        },
+        {
+          "document": "analysis:power-wall-performance",
+          "role": "analysis",
+          "why": "전력·발열이 클럭 향상의 한계를 만들고 성능의 의미를 바꾸는 과정을 본다.",
+          "checkpoint": {
+            "question": "전력 장벽 이후 성능 향상의 중심은 어디로 이동했는가?",
+            "answer": "단일 클럭 향상보다 병렬성·가속기·전력 효율·소프트웨어 최적화로 이동했다.",
+            "evidence": ["analysis:power-wall-performance"]
+          }
+        },
+        {
+          "document": "analysis:page-01dd444c",
+          "role": "analysis",
+          "why": "평균 성능 지표가 실제 서비스의 컴퓨팅 능력을 가릴 수 있음을 확인한다.",
+          "checkpoint": {
+            "question": "평균 처리량 하나로 서비스 성능을 판단하면 무엇을 놓치는가?",
+            "answer": "꼬리 지연, 부하 변동, 자원 병목, 사용자 경험의 분포를 놓칠 수 있다.",
+            "evidence": ["analysis:page-01dd444c"]
+          }
+        }
+      ],
+      "branches": [
+        {
+          "id": "roofline",
+          "label": "Roofline 모델로 보기",
+          "documents": ["source:ref-034", "analysis:ai-bottleneck-lineage"]
+        },
+        {
+          "id": "benchmark",
+          "label": "벤치마크 숫자의 함정",
+          "documents": ["analysis:benchmark-numbers-not-directly-comparable"]
+        }
+      ]
+    },
+    {
+      "id": "unix-legacy",
+      "title": "Unix와 C는 왜 오래 살아남았는가",
+      "question": "Unix와 C는 어떤 설계 선택 덕분에 다른 기종과 시대에도 이어졌는가?",
+      "outcome": "Unix의 시스템 인터페이스, C의 이식성, 도구·런타임의 관계를 설명할 수 있다.",
+      "audience": "운영체제·언어·도구가 함께 발전한 계보를 따라가고 싶은 독자",
+      "minutes": 35,
+      "prerequisites": ["concept:computing-capability"],
+      "steps": [
+        {
+          "document": "source:ref-018",
+          "role": "source",
+          "why": "Unix의 초기 설계 문서에서 파일·프로세스·셸의 기본 인터페이스를 확인한다.",
+          "checkpoint": {
+            "question": "Unix가 하드웨어와 응용 사이에 제공한 핵심 추상은 무엇인가?",
+            "answer": "파일, 프로세스, 셸·명령 파이프라인 같은 일관된 시스템 인터페이스다.",
+            "evidence": ["source:ref-018"]
+          }
+        },
+        {
+          "document": "concept:page-092a889f",
+          "role": "concept",
+          "why": "Unix를 단일 프로그램이 아니라 시스템 인터페이스와 도구 생태계로 정리한다.",
+          "checkpoint": {
+            "question": "Unix의 이식성은 무엇에 의존하는가?",
+            "answer": "C로 작성된 커널·도구와, 하드웨어 차이를 감추는 시스템 호출·추상화 계층에 의존한다.",
+            "evidence": ["concept:page-092a889f", "source:ref-021"]
+          }
+        },
+        {
+          "document": "source:ref-019",
+          "role": "source",
+          "why": "C가 Unix와 함께 성장하며 어떤 언어적 선택을 했는지 원문에서 본다.",
+          "checkpoint": {
+            "question": "C가 시스템 프로그래밍에 적합했던 이유는 무엇인가?",
+            "answer": "하드웨어에 가까운 제어와 이식 가능한 추상화를 함께 제공했기 때문이다.",
+            "evidence": ["source:ref-019"]
+          }
+        },
+        {
+          "document": "concept:page-f438fd41",
+          "role": "concept",
+          "why": "C의 타입·포인터·컴파일 모델을 이식성과 연결해 정리한다.",
+          "checkpoint": {
+            "question": "C의 ‘이식성’은 소스 코드가 수정 없이 모든 기종에서 동작한다는 뜻인가?",
+            "answer": "아니다. 구현 정의·플랫폼 차이를 다루는 조건과 추상화가 필요하다.",
+            "evidence": ["concept:page-f438fd41", "source:ref-021"]
+          }
+        },
+        {
+          "document": "concept:page-5063ca2b",
+          "role": "concept",
+          "why": "이식성을 언어 기능이 아니라 인터페이스·도구·환경의 문제로 확장한다.",
+          "checkpoint": {
+            "question": "이식성을 높이려면 무엇을 고정해야 하는가?",
+            "answer": "관찰 가능한 동작과 인터페이스를 고정하고, 플랫폼 의존 부분을 격리해야 한다.",
+            "evidence": ["concept:page-5063ca2b", "source:ref-021"]
+          }
+        },
+        {
+          "document": "analysis:page-8d320775",
+          "role": "analysis",
+          "why": "Unix와 C의 결합이 도구·커널·언어 생태계를 어떻게 재생산했는지 종합한다.",
+          "checkpoint": {
+            "question": "Unix와 C의 결합이 만든 가장 중요한 재사용 단위는 무엇인가?",
+            "answer": "시스템 호출·도구·라이브러리로 구성된 이식 가능한 개발 환경이다.",
+            "evidence": ["analysis:page-8d320775"]
+          }
+        }
+      ],
+      "branches": [
+        {
+          "id": "portability",
+          "label": "이식성 원문 읽기",
+          "documents": ["source:ref-021", "concept:page-5063ca2b"]
+        },
+        {
+          "id": "pipes",
+          "label": "Unix 파이프와 도구 철학",
+          "documents": ["concept:page-d86dcb52", "analysis:page-8d320775"]
+        }
+      ]
+    }
+  ]
+}

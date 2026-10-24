@@ -1,0 +1,53 @@
+---
+import Base from "../../layouts/Base.astro";
+import { traces } from "../../lib/traces";
+import { withBase } from "../../lib/data";
+---
+
+<Base title="Reading Traces" description="질문에서 출발해 원본·개념·분석을 잇는 CS Wiki 읽기 경로">
+  <div class="trace-index">
+    <header class="trace-index-head">
+      <p class="eyebrow">READING TRACES</p>
+      <h1>질문에서 출발하는 읽기</h1>
+      <p class="lede">
+        문서 목록을 순서대로 읽는 대신, 하나의 질문을 원본에서 개념과 분석까지 추적합니다.
+        각 단계에는 왜 이 문서를 읽는지와 확인 질문이 붙습니다.
+      </p>
+    </header>
+
+    <div class="trace-grid">
+      {traces.map((trace, index) => (
+        <a class="trace-card" href={withBase(`/traces/${trace.id}/`)} data-trace-badge={trace.id}>
+          <div class="trace-card-top">
+            <span>TRACE {String(index + 1).padStart(2, "0")}</span>
+            <span>{trace.minutes} min</span>
+          </div>
+          <h2>{trace.title}</h2>
+          <p class="trace-card-question">{trace.question}</p>
+          <div class="trace-card-meta">
+            <span>{trace.steps.length} steps</span>
+            <span data-trace-badge-text={trace.id}>0 / {trace.steps.length}</span>
+            <span>→</span>
+          </div>
+        </a>
+      ))}
+    </div>
+
+    <p class="trace-note">
+      진도는 이 브라우저에만 저장됩니다. 계정이나 서버 기록은 만들지 않습니다.
+    </p>
+  </div>
+
+  <script>
+    const traces = [...document.querySelectorAll("[data-trace-badge]")];
+    for (const card of traces) {
+      const id = card.dataset.traceBadge;
+      const total = Number(card.querySelector("[data-trace-badge-text]")?.textContent?.split("/")[1]?.trim() || 0);
+      try {
+        const read = JSON.parse(localStorage.getItem(`cswiki:trace:${id}`) || "[]");
+        const badge = card.querySelector("[data-trace-badge-text]");
+        if (badge) badge.textContent = `${read.length} / ${total}`;
+      } catch { /* progress is optional */ }
+    }
+  </script>
+</Base>

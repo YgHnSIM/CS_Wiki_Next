@@ -9,6 +9,7 @@
 - “VS Code Workbench” 셸: activity bar, explorer, tabs, breadcrumb, status bar
 - 문서 본문은 man page 스타일: `CSWIKI(1)` 헤더, `##`/`###` 프리픽스, RELATIONS/BACKLINKS rail
 - 검색은 `Ctrl/Cmd+K` command palette와 `/search/` 페이지를 함께 사용
+- Reading Trace: `catalog/traces.json`을 읽어 `/traces/`와 `/traces/{id}/`를 생성하고, 진도는 localStorage에만 저장
 - 색인은 explorer형 compact file list
 - IBM Plex Mono / Noto Sans KR 사용, VS Code Dark+ 계열 팔레트
 

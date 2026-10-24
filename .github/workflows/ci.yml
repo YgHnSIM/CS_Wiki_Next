@@ -40,6 +40,9 @@ jobs:
           npm run knowledge:check
           npm run knowledge:schema
 
+      - name: Reading traces
+        run: npm run traces:check
+
       - name: Generated relations parity
         run: npm run knowledge:sync -- --check
 

@@ -1,6 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import { documentUrl, graph, publicDocuments, withBase } from "../lib/data";
+import { traces } from "../lib/traces";
 
 const kindLabels: Record<string, string> = {
   concept: "개념",
@@ -154,5 +155,19 @@ const startEntries = [
         </li>
       ))}
     </ol>
+
+    <div class="section-head">
+      <span>04</span>
+      <h2>읽기 트레이스</h2>
+    </div>
+    <div class="trace-strip">
+      {traces.map((trace, index) => (
+        <a class="trace-strip-card" href={withBase(`/traces/${trace.id}/`)}>
+          <span>TRACE {String(index + 1).padStart(2, "0")}</span>
+          <strong>{trace.title}</strong>
+          <small>{trace.minutes} min · {trace.steps.length} steps</small>
+        </a>
+      ))}
+    </div>
   </div>
 </Base>
