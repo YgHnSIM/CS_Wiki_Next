@@ -106,7 +106,7 @@ const guideCommands = [
         </a>
         <div class="sidebar-section">TRACES</div>
         {traces.map((trace) => (
-          <a class="tree-item" href={withBase(`/traces/${trace.id}/`)}>
+          <a class="tree-item" href={withBase(`/traces/${trace.id}/`)} title={trace.title}>
             <span class="tree-icon">⤳</span>
             <span>{trace.title}</span>
           </a>

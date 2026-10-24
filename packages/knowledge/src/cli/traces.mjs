@@ -1,4 +1,4 @@
-import { readFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import Ajv2020 from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
@@ -63,6 +63,62 @@ if (errors.length) {
   for (const error of errors) console.error(`- ${error}`);
   process.exitCode = 1;
 } else {
-  const steps = catalog.traces.reduce((sum, trace) => sum + trace.steps.length, 0);
-  console.log(`Trace check: ${catalog.traces.length} traces, ${steps} steps, ${catalog.traces.reduce((sum, trace) => sum + trace.minutes, 0)} minutes`);
+  const publicKnowledge = workspace.pages.filter(
+    (page) => ["concept", "entity", "analysis"].includes(page.kind) && page.data.publication_visibility === "public"
+  );
+  const stepDocuments = new Map();
+  const referencedDocuments = new Set();
+  const roleCounts = {};
+  const singleEvidenceSteps = [];
+  const undatedSteps = [];
+  const traceReports = [];
+
+  for (const trace of catalog.traces) {
+    const traceSteps = new Set();
+    for (const [index, step] of trace.steps.entries()) {
+      const page = pages.get(step.document);
+      traceSteps.add(step.document);
+      stepDocuments.set(step.document, page);
+      referencedDocuments.add(step.document);
+      roleCounts[step.role] = (roleCounts[step.role] || 0) + 1;
+      if (page && (page.data.evidence_ids || []).length === 1) {
+        singleEvidenceSteps.push({ trace: trace.id, step: index + 1, document: step.document, title: page.title });
+      }
+      if (page && !(page.data.history?.event?.start != null || page.data.history?.publication_year != null)) {
+        undatedSteps.push({ trace: trace.id, step: index + 1, document: step.document, title: page.title });
+      }
+    }
+    for (const key of trace.prerequisites || []) referencedDocuments.add(key);
+    for (const branch of trace.branches || []) for (const key of branch.documents) referencedDocuments.add(key);
+    traceReports.push({
+      id: trace.id,
+      title: trace.title,
+      steps: trace.steps.length,
+      unique_step_documents: traceSteps.size,
+      minutes: trace.minutes
+    });
+  }
+
+  const coverage = {
+    generated_at: new Date().toISOString(),
+    traces: catalog.traces.length,
+    steps: catalog.traces.reduce((sum, trace) => sum + trace.steps.length, 0),
+    minutes: catalog.traces.reduce((sum, trace) => sum + trace.minutes, 0),
+    public_knowledge: publicKnowledge.length,
+    unique_step_documents: stepDocuments.size,
+    coverage_percent: publicKnowledge.length ? Number(((stepDocuments.size / publicKnowledge.length) * 100).toFixed(1)) : 0,
+    referenced_documents: referencedDocuments.size,
+    roles: roleCounts,
+    single_evidence_steps: singleEvidenceSteps,
+    undated_steps: undatedSteps,
+    tests: traceReports
+  };
+
+  await mkdir(path.join(root, "output"), { recursive: true });
+  await writeFile(path.join(root, "output", "trace-coverage.json"), JSON.stringify(coverage, null, 2) + "\n", "utf8");
+
+  console.log(`Trace check: ${coverage.traces} traces, ${coverage.steps} steps, ${coverage.minutes} minutes`);
+  console.log(`Coverage: ${coverage.unique_step_documents}/${coverage.public_knowledge} public knowledge (${coverage.coverage_percent}%), ${coverage.referenced_documents} referenced documents`);
+  console.log(`Single-evidence steps: ${singleEvidenceSteps.length}, undated steps: ${undatedSteps.length}`);
+  console.log("wrote output/trace-coverage.json");
 }

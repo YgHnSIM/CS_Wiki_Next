@@ -155,7 +155,8 @@ h2 {
 .open-editor:hover,
 .sidebar-shortcut:hover { background: rgba(255, 255, 255, 0.06); color: var(--text); }
 .tree-item { padding-left: 1.6rem; }
-.tree-icon { width: 1rem; color: var(--blue); font-size: 0.72rem; }
+.tree-icon { width: 1rem; flex: 0 0 1rem; color: var(--blue); font-size: 0.72rem; }
+.tree-item > span:last-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .tree-count { margin-left: auto; color: var(--muted); font-size: 0.68rem; }
 .open-editor { color: var(--text); }
 .open-editor .dot { width: 5px; height: 5px; border-radius: 50%; background: var(--green); }
@@ -802,3 +803,12 @@ kbd { border: 1px solid var(--line); padding: 0 0.25rem; color: var(--muted); fo
   .guide-grid, .guide-flow { grid-template-columns: 1fr; }
   .guide-flow div { border-right: 0; border-bottom: 1px solid var(--line); }
 }
+
+.trace-coverage { margin-top: 1.2rem; padding: 0.8rem; border: 1px solid var(--line); background: var(--bg-2); }
+.trace-coverage-main { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.6rem; }
+.trace-coverage-main span:first-child { color: var(--orange); font-size: 0.62rem; letter-spacing: 0.08em; }
+.trace-coverage-main strong { color: var(--text); font-family: var(--sans); font-size: 0.82rem; font-weight: 500; }
+.trace-coverage-main span:last-child { color: var(--green); font-size: 0.72rem; }
+.trace-coverage-bar { height: 3px; margin-top: 0.55rem; background: var(--line); }
+.trace-coverage-bar span { display: block; height: 100%; background: var(--green); }
+.trace-coverage-meta { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-top: 0.5rem; color: var(--muted); font-size: 0.64rem; }

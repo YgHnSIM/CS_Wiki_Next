@@ -1,7 +1,16 @@
 ---
 import Base from "../../layouts/Base.astro";
 import { traces } from "../../lib/traces";
-import { withBase } from "../../lib/data";
+import { docsByKey, publicDocuments, withBase } from "../../lib/data";
+
+const stepKeys = new Set(traces.flatMap((trace) => trace.steps.map((step) => step.document)));
+const publicKnowledge = publicDocuments.filter((document) => ["concept", "entity", "analysis"].includes(document.kind));
+const stepDocuments = [...stepKeys].map((key) => docsByKey.get(key)).filter(Boolean);
+const coverage = publicKnowledge.length ? Number(((stepKeys.size / publicKnowledge.length) * 100).toFixed(1)) : 0;
+const singleEvidence = stepDocuments.filter((document) => (document!.evidence_ids || []).length === 1).length;
+const undated = stepDocuments.filter((document) => !(document!.history?.event?.start != null || document!.history?.publication_year != null)).length;
+const minutes = traces.reduce((sum, trace) => sum + trace.minutes, 0);
+const steps = traces.reduce((sum, trace) => sum + trace.steps.length, 0);
 ---
 
 <Base title="Reading Traces" description="질문에서 출발해 원본·개념·분석을 잇는 CS Wiki 읽기 경로">
@@ -13,6 +22,21 @@ import { withBase } from "../../lib/data";
         문서 목록을 순서대로 읽는 대신, 하나의 질문을 원본에서 개념과 분석까지 추적합니다.
         각 단계에는 왜 이 문서를 읽는지와 확인 질문이 붙습니다.
       </p>
+      <div class="trace-coverage">
+        <div class="trace-coverage-main">
+          <span>COVERAGE</span>
+          <strong>{stepKeys.size} / {publicKnowledge.length} public knowledge</strong>
+          <span>{coverage}%</span>
+        </div>
+        <div class="trace-coverage-bar"><span style={`width:${coverage}%`}></span></div>
+        <div class="trace-coverage-meta">
+          <span>{traces.length} traces</span>
+          <span>{steps} steps</span>
+          <span>{minutes} min</span>
+          <span>{singleEvidence} single-evidence steps</span>
+          <span>{undated} undated steps</span>
+        </div>
+      </div>
     </header>
 
     <div class="trace-grid">

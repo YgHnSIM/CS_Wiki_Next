@@ -163,6 +163,7 @@ redirect_from:
 - [2026-10-24 update | 콘텐츠 품질 배치 01 — 연도·근거 정합성](logs/log-2026-10-24-136-content-quality-batch-01.md)
 - [2026-10-24 update | Reading Trace 3개와 Workbench 경로 UI](logs/log-2026-10-24-137-reading-traces.md)
 - [2026-10-24 update | Reading Guide 2개](logs/log-2026-10-24-138-reading-guides.md)
+- [2026-10-24 update | Reading Trace 3개 추가와 coverage 리포트](logs/log-2026-10-24-139-trace-coverage.md)
 
 ## 출처
 
