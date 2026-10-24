@@ -99,6 +99,9 @@ capability_layers: []
     assert.match(log, /ingest \| Ingest Source/);
     const reseed = await run("seed.mjs");
     assert.equal(reseed.code, 0, reseed.stderr);
+    const duplicate = await run("wiki-ingest.mjs", ["--source", "source.txt", "--id", "src-998", "--title", "Duplicate Source"]);
+    assert.notEqual(duplicate.code, 0);
+    assert.match(duplicate.stderr, /already ingested/);
     const schema = await run("schema.mjs");
     assert.equal(schema.code, 0, schema.stderr);
     assert.match(schema.stdout, /src-999|0 errors/);

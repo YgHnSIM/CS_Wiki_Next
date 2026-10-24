@@ -418,6 +418,20 @@ nodes:
     same_as: []
     status: auto
     page_id: analysis-low-precision-ai-result-contract
+  - key: analysis:mccarthy-eval-symbolic-computation
+    type: analysis
+    labels:
+      ko: eval은 왜 프로그램과 데이터의 경계를 지우는가
+    aliases:
+      - eval은 왜 프로그램과 데이터의 경계를 지우는가
+      - McCarthy eval
+      - Lisp eval analysis
+      - analysis-mccarthy-eval-symbolic-computation
+      - analysis:mccarthy-eval-symbolic-computation
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: analysis-mccarthy-eval-symbolic-computation
   - key: analysis:operational-energy-sustainable-computing
     type: analysis
     labels:
@@ -6516,6 +6530,21 @@ nodes:
     same_as: []
     status: auto
     page_id: ref-154
+  - key: source:ref-155
+    type: source
+    labels:
+      ko: Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I
+    aliases:
+      - Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I
+      - McCarthy 1960
+      - Recursive Functions of Symbolic Expressions
+      - LISP 1960 paper
+      - ref-155
+      - source:ref-155
+    external_ids: {}
+    same_as: []
+    status: auto
+    page_id: ref-155
   - key: source:src-001
     type: source
     labels:

@@ -755,6 +755,7 @@ aliases:
   analysis-local-interface-remote-state: analysis:local-interface-remote-state
   analysis-low-bit-llm-inference: analysis:low-bit-llm-inference
   analysis-low-precision-ai-result-contract: analysis:low-precision-ai-result-contract
+  analysis-mccarthy-eval-symbolic-computation: analysis:mccarthy-eval-symbolic-computation
   analysis-operational-energy-sustainable-computing: analysis:operational-energy-sustainable-computing
   analysis-representation-placement-contract: analysis:representation-placement-contract
   analysis-reproducible-build-boundary: analysis:reproducible-build-boundary
@@ -796,6 +797,7 @@ aliases:
   analysis:local-interface-remote-state: analysis:local-interface-remote-state
   analysis:low-bit-llm-inference: analysis:low-bit-llm-inference
   analysis:low-precision-ai-result-contract: analysis:low-precision-ai-result-contract
+  analysis:mccarthy-eval-symbolic-computation: analysis:mccarthy-eval-symbolic-computation
   analysis:operational-energy-sustainable-computing: analysis:operational-energy-sustainable-computing
   analysis:page-01dd444c: analysis:page-01dd444c
   analysis:page-0b006186: analysis:page-0b006186
@@ -1542,6 +1544,7 @@ aliases:
   Esmaeilzadeh et al. 2011: source:ref-048
   essential and accidental complexity: concept:essential-accidental-complexity
   essential complexity: concept:essential-accidental-complexity
+  eval은 왜 프로그램과 데이터의 경계를 지우는가: analysis:mccarthy-eval-symbolic-computation
   Evolution of Unix: source:ref-020
   EWD 123: source:ref-092
   EWD215: source:ref-011
@@ -1786,6 +1789,8 @@ aliases:
   Linker: concept:page-46257ebe
   linking: concept:page-46257ebe
   LINPACK benchmark overview: source:ref-033
+  LISP 1960 paper: source:ref-155
+  Lisp eval analysis: analysis:mccarthy-eval-symbolic-computation
   Little 1961 queueing proof: source:ref-085
   Little 법칙: concept:littles-law
   Little's Law: concept:littles-law
@@ -1848,6 +1853,8 @@ aliases:
   Mattson et al. 2020: source:ref-070
   Maurice Wilkes: person:maurice-wilkes
   Maynard Smith and Szathmáry 1995: source:ref-153
+  McCarthy 1960: source:ref-155
+  McCarthy eval: analysis:mccarthy-eval-symbolic-computation
   McIlroy software components: source:ref-002
   meaning of machine computation: analysis:page-f5a31368
   measurement contract: concept:benchmark-contract
@@ -2023,6 +2030,8 @@ aliases:
   Ragan-Kelley et al. 2012: source:ref-098
   Recovery-Oriented Computing (ROC): source:ref-065
   "Recovery-Oriented Computing: Motivation, Definition, Techniques, and Case Studies": source:ref-065
+  Recursive Functions of Symbolic Expressions: source:ref-155
+  Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I: source:ref-155
   Reddi et al. 2020: source:ref-078
   Reduced instruction set computer: concept:page-613958ec
   Reducibility Among Combinatorial Problems: source:ref-067
@@ -2181,6 +2190,7 @@ aliases:
   ref-152: source:ref-152
   ref-153: source:ref-153
   ref-154: source:ref-154
+  ref-155: source:ref-155
   registry identity analysis: analysis:dependency-provenance-registry
   registry는 의존성의 출처와 동일성을 어떻게 증명하는가: analysis:dependency-provenance-registry
   relay and switching circuits: source:ref-008
@@ -2429,6 +2439,7 @@ aliases:
   source:ref-152: source:ref-152
   source:ref-153: source:ref-153
   source:ref-154: source:ref-154
+  source:ref-155: source:ref-155
   source:src-001: source:src-001
   source:src-002: source:src-002
   source:src-003: source:src-003

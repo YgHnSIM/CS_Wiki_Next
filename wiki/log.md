@@ -187,6 +187,7 @@ redirect_from:
 - [2026-10-25 update | Wiki query and synthesis](logs/log-2026-10-25-160-wiki-query.md)
 - [2026-10-25 update | Wiki audit and semantic lint](logs/log-2026-10-25-161-wiki-audit.md)
 - [2026-10-25 update | Wiki discovery UI](logs/log-2026-10-25-162-wiki-discovery-ui.md)
+- [2026-10-25 ingest | Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I](logs/log-2026-10-25-163-ingest-ref-155.md)
 
 ## 출처
 

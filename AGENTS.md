@@ -69,7 +69,8 @@ archive 복원은 `npm run content:restore -- --id <id> [--public]`를 사용하
 - `wiki:log`는 `wiki/log.md`와 `wiki/logs/` 항목의 수·순서를 검사한다.
 - `wiki:gaps`는 `wiki/gaps.md`의 wanted/question을 관리한다. 자동 삭제하지 않는다.
 - `wiki:lint`는 schema·raw·evidence·link·index/log·gaps를 deterministic하게 검사한다.
-- `wiki:ingest`는 raw 저장·source skeleton·proposal까지만 자동화하고, wiki 본문은 사람이 승인한 뒤 적용한다.
+- `wiki:ingest`는 raw 저장·source skeleton·proposal까지만 자동화하고, wiki 본문은 사람이 승인한 뒤 적용한다. URL·DOI·raw SHA 중복은 거부한다.
+- 하나의 소스는 source·analysis·기존 concept 통합을 한 작업 단위로 처리하고, 중간 커밋으로 분리하지 않는다.
 - `wiki:query`는 index → search → relations 순으로 읽고 citation을 붙인다. `--save`일 때만 synthesis 페이지를 만든다.
 - `wiki:audit`은 claim을 raw와 대조해 보고만 하고 수정하지 않는다.
 - 지식 대체는 `status: stale` + `superseded_by`, 삭제·URL 은퇴는 `content:retire`/`content:delete`를 사용한다.

@@ -37,6 +37,50 @@ if (workspace.pages.some((page) => page.id === id)) {
   process.exit(1);
 }
 
+const sourceUrl = isUrl ? sourceArg : value("url");
+const normalizeUrl = (value) => {
+  try {
+    const url = new URL(value);
+    url.hash = "";
+    return url.toString().replace(/\/$/, "").toLowerCase();
+  } catch {
+    return String(value || "").replace(/\/$/, "").toLowerCase();
+  }
+};
+const doiOf = (value) => String(value || "").match(/10\.\d{4,9}\/[^\s]+/i)?.[0]?.replace(/[.,;]+$/, "").toLowerCase() || null;
+const sourceDoi = doiOf(sourceUrl || sourceArg);
+let localBuffer = null;
+let localSha = null;
+let localExt = null;
+if (!isUrl) {
+  const absolute = path.resolve(root, sourceArg);
+  localBuffer = await readFile(absolute);
+  localExt = path.extname(absolute).toLowerCase();
+  localSha = createHash("sha256").update(localBuffer).digest("hex");
+}
+const duplicate = workspace.pages
+  .filter((page) => ["source", "reference"].includes(page.kind))
+  .find((page) => {
+    const urls = (page.data.access || []).filter((item) => item.url).map((item) => normalizeUrl(item.url));
+    if (sourceUrl && urls.includes(normalizeUrl(sourceUrl))) return true;
+    if (sourceDoi) {
+      const dois = (page.data.works?.primary || [])
+        .flatMap((work) => work.identifiers || [])
+        .filter((identifier) => identifier.type === "doi")
+        .map((identifier) => String(identifier.value).toLowerCase());
+      if (dois.includes(sourceDoi)) return true;
+    }
+    if (localSha) {
+      const hashes = (page.data.access || []).filter((item) => item.sha256).map((item) => item.sha256);
+      if (hashes.includes(localSha)) return true;
+    }
+    return false;
+  });
+if (duplicate) {
+  console.error(`source already ingested as ${duplicate.id} (${duplicate.title}); update that source instead`);
+  process.exit(1);
+}
+
 const mediaTypes = {
   ".md": "text/markdown",
   ".txt": "text/plain",
@@ -58,9 +102,8 @@ if (isUrl) {
 } else {
   origin = "local";
   const absolute = path.resolve(root, sourceArg);
-  const buffer = await readFile(absolute);
-  const ext = path.extname(absolute).toLowerCase();
-  const sha256 = createHash("sha256").update(buffer).digest("hex");
+  const ext = localExt;
+  const sha256 = localSha;
   const insideRaw = path.relative(root, absolute).startsWith(`raw${path.sep}`) || path.relative(root, absolute).startsWith("raw/");
   if (insideRaw) {
     rawPath = path.relative(root, absolute).split(path.sep).join("/");
@@ -72,7 +115,7 @@ if (isUrl) {
       await copyFile(absolute, path.join(root, rawPath));
     }
   }
-  sourceBytes = buffer.length;
+  sourceBytes = localBuffer.length;
   access.push({
     kind: "local",
     role: "preservation",

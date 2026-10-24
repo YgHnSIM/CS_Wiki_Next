@@ -175,6 +175,7 @@ redirect_from:
 - [[What Every Computer Scientist Should Know About Floating-Point Arithmetic]] — 부동소수점의 표현·반올림 오차·상쇄·정확한 반올림과 IEEE 754-1985의 시스템적 의미를 연결한 David Goldberg의 1991년 해설 논문.
 - [[WHATWG Encoding Standard]] — 웹 플랫폼의 바이트-문자 변환 알고리즘, 인코딩 라벨, BOM, 오류 대체 정책을 정리한 참고 자료.
 - [[Why Do Internet Services Fail and What Can Be Done About It]] — 세 대형 인터넷 서비스의 장애 보고를 분석해 하드웨어·소프트웨어·네트워크·운영자 오류와 탐지·복구 시간을 함께 다룬 Oppenheimer, Ganapathi, Patterson의 2003년 연구.
+- [[Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I]] — S-expression·M-expression·조건식·재귀 정의·apply/eval로 기호 계산을 형식화하고, IBM 704용 LISP의 리스트 구조와 garbage collection까지 제시한 McCarthy의 1960년 논문.
 
 ## 개념
 
@@ -428,6 +429,7 @@ redirect_from:
 - [[runtime contract는 무엇을 보장해야 하는가]] — SavedModel signature, ONNX execution provider, OCI runtime lifecycle을 비교해 model·backend·container·service 사이의 실행 보장과 미해결 경계를 분석한다.
 - [[Transformer 추론은 왜 연산량만으로 설명되지 않는가]] — Transformer의 학습 병렬성·자동회귀 생성 순차성·밀집 어텐션 산술량을 구분하고, FlashAttention이 더 많은 재계산으로도 메모리 이동을 줄여 실제 시간을 단축하는 이유를 분석한다.
 - [[Unix와 C]] — Unix 운영체제와 C 언어가 시스템 프로그래밍, 이식성, 도구 생태계 안에서 서로를 강화한 과정을 분석.
+- [[eval은 왜 프로그램과 데이터의 경계를 지우는가]] — McCarthy의 S-expression·apply·eval이 프로그램과 데이터를 같은 표현으로 만들어 기호 조작과 프로그래밍 가능성을 어떻게 연결하는지, list structure와 garbage collection까지 함께 분석한다.
 
 ## 메타
 
