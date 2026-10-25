@@ -16,7 +16,7 @@ domains:
 publication_visibility: public
 graph_visibility: public
 created: 2026-07-25
-updated: 2026-10-24
+updated: 2026-10-25
 evidence_ids:
   - ref-105
   - ref-106
@@ -25,6 +25,12 @@ capability_layers:
   - programmability
   - reliable-results
 history:
+  event:
+    start: 2022
+    end: 2025
+    basis: representative
+    evidence_id: ref-105
+  note: LLM 기반 코드 생성 도구의 사용성·생산성 실증 연구가 발표된 2022~2025년을 대표 범위로 둔다.
   layer: software
 redirect_from:
   - /concepts/ai-코딩-지원/

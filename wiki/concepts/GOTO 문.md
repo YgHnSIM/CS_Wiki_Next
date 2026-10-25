@@ -16,7 +16,7 @@ domains:
 publication_visibility: public
 graph_visibility: public
 created: 2026-07-10
-updated: 2026-10-24
+updated: 2026-10-25
 evidence_ids:
   - ref-011
   - ref-014
@@ -24,6 +24,12 @@ evidence_ids:
 capability_layers:
   - programmability
 history:
+  event:
+    start: 1968
+    end: 1974
+    basis: representative
+    evidence_id: ref-011
+  note: Dijkstra의 1968년 비판 서한과 Knuth의 1974년 논문으로 이어진 goto 논쟁 범위를 대표 시점으로 둔다.
   layer: software
 redirect_from:
   - /concepts/goto-문/

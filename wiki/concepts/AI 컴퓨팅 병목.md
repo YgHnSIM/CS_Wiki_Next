@@ -15,7 +15,7 @@ domains:
 publication_visibility: public
 graph_visibility: public
 created: 2026-08-04
-updated: 2026-10-24
+updated: 2026-10-25
 evidence_ids:
   - ref-034
   - ref-039
@@ -29,6 +29,12 @@ capability_layers:
   - scalability
   - resource-efficiency
 history:
+  event:
+    start: 2017
+    end: 2024
+    basis: representative
+    evidence_id: ref-042
+  note: 데이터센터 TPU 분석(2017)부터 MLPerf(2020)·DistServe(2024)까지 AI 학습·서빙의 시스템 병목을 측정한 범위를 대표 시점으로 둔다.
   layer: architecture
 relations:
   - predicate: synthesizes

@@ -14,10 +14,14 @@ domains:
 publication_visibility: public
 graph_visibility: public
 created: 2026-08-05
-updated: 2026-10-24
+updated: 2026-10-25
 evidence_ids: []
 capability_layers:
   - reliable-results
+history:
+  publication_year: 2017
+  note: 보존된 Revision 1.1(2017-11-27) 명세 판본 연도를 기록한다.
+  layer: software
 origin: external
 works:
   primary:

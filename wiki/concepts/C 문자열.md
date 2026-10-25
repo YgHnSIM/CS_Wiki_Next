@@ -16,7 +16,7 @@ domains:
 publication_visibility: public
 graph_visibility: public
 created: 2026-05-12
-updated: 2026-10-24
+updated: 2026-10-25
 evidence_ids:
   - src-006
   - ref-019
@@ -25,6 +25,12 @@ evidence_ids:
 capability_layers:
   - reliable-results
 history:
+  event:
+    start: 1969
+    end: 1973
+    basis: representative
+    evidence_id: ref-019
+  note: B와 초기 C 언어 형성(1969~1973) 과정에서 정립된 널 종단 문자열 표현을 대표 범위로 둔다.
   layer: software
 redirect_from:
   - /concepts/c-문자열/

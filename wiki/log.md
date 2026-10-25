@@ -188,6 +188,7 @@ redirect_from:
 - [2026-10-25 update | Wiki audit and semantic lint](logs/log-2026-10-25-161-wiki-audit.md)
 - [2026-10-25 update | Wiki discovery UI](logs/log-2026-10-25-162-wiki-discovery-ui.md)
 - [2026-10-25 ingest | Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I](logs/log-2026-10-25-163-ingest-ref-155.md)
+- [2026-10-25 update | 콘텐츠 품질 배치 02 — 인물·개념·참조 연도 51건 보강](logs/log-2026-10-25-164-content-quality-dates-batch-02.md)
 
 ## 출처
 

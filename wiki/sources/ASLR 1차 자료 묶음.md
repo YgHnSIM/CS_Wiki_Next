@@ -15,9 +15,16 @@ domains:
 publication_visibility: public
 graph_visibility: public
 created: 2026-08-24
-updated: 2026-10-24
+updated: 2026-10-25
 evidence_ids: []
 capability_layers: []
+history:
+  event:
+    start: 2003
+    basis: representative
+    evidence_id: ref-137
+  note: 주 자료인 PaX Team ASLR 설계 문서(2003-03-15)를 대표 시점으로 둔다. 커널 문서 판본 연도는 고정하지 않는다.
+  layer: system
 origin: external
 works:
   primary:

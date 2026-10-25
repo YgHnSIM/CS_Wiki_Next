@@ -16,13 +16,18 @@ domains:
 publication_visibility: public
 graph_visibility: public
 created: 2026-07-10
-updated: 2026-10-24
+updated: 2026-10-25
 evidence_ids:
   - ref-009
   - ref-010
 capability_layers:
   - computability
 history:
+  event:
+    start: 1936
+    basis: representative
+    evidence_id: ref-009
+  note: Church와 Turing이 일반 판정 절차의 부재를 보인 1936년 논문을 대표 시점으로 둔다.
   layer: theory
 redirect_from:
   - /concepts/entscheidungsproblem/
