@@ -7,6 +7,7 @@ import { extractWikiLinkTargets } from "../parse/links.mjs";
 import { loadWorkspace, resolvePage } from "../registry/workspace.mjs";
 import { validatePageSchemas } from "./schema.mjs";
 import { validateLifecycle } from "./lifecycle.mjs";
+import { validatePageMarkdown } from "./markdown-render.mjs";
 
 export async function lintWiki(root = process.cwd(), { semantic = false, write = true } = {}) {
   const workspace = await loadWorkspace(root);
@@ -63,6 +64,10 @@ export async function lintWiki(root = process.cwd(), { semantic = false, write =
       if (!resolvePage(workspace, target)) {
         add("link.internal", relative, `missing link target ${target}`);
       }
+    }
+
+    for (const mdIssue of validatePageMarkdown(page, workspace)) {
+      add(mdIssue.code, relative, mdIssue.message);
     }
   }
 

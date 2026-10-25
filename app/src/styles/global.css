@@ -33,7 +33,7 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: var(--mono);
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
 }
@@ -45,10 +45,11 @@ a:hover { color: #fff; }
 h1 {
   margin: 0 0 1rem;
   color: var(--text);
-  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-size: clamp(1.8rem, 1.2rem + 2.5vw, 3rem);
   font-weight: 600;
   line-height: 1.25;
   letter-spacing: -0.04em;
+  text-wrap: balance;
 }
 h2 {
   margin: 0 0 0.8rem;
@@ -380,8 +381,30 @@ h2 {
 .prose h3::before { color: var(--blue); content: "### "; }
 .prose h4 { margin: 1.4rem 0 0.4rem; color: var(--purple); font-size: 0.88rem; }
 .prose p, .prose li { color: #cccccc; word-break: keep-all; overflow-wrap: break-word; }
+.prose p { text-wrap: pretty; }
 .prose a { color: var(--teal); }
-.prose strong { color: #fff; }
+.prose strong, .prose b { color: #fff; font-weight: 700; }
+.prose em, .prose i { color: #e5e5e5; font-style: italic; }
+.prose s, .prose del { color: var(--muted); text-decoration: line-through; }
+.prose u { text-underline-offset: 0.18em; }
+.prose mark {
+  padding: 0.05em 0.25em;
+  border-radius: 2px;
+  background: rgba(220, 220, 170, 0.2);
+  color: var(--yellow);
+}
+.prose sub, .prose sup { font-size: 0.75em; line-height: 0; }
+.prose .math-inline { color: #e6e6e6; }
+.prose .math-block {
+  display: block;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin: 1.1rem 0;
+  padding: 0.4rem 0;
+  color: #e6e6e6;
+}
+.prose .katex { font-size: 1.04em; }
+.prose .katex-display { margin: 0; }
 .prose code {
   border: 1px solid var(--line);
   border-radius: 2px;
@@ -406,7 +429,9 @@ h2 {
   border-left: 2px solid var(--green);
   background: rgba(181, 206, 168, 0.04);
   color: #a9c49c;
+  text-wrap: pretty;
 }
+.prose blockquote p, .prose blockquote li { color: inherit; }
 .prose table {
   width: 100%;
   margin: 1.2rem 0;
@@ -828,7 +853,7 @@ kbd { border: 1px solid var(--line); padding: 0 0.25rem; color: var(--muted); fo
   .editor-scroll { overflow: visible; padding: 0; }
   .man-page, .welcome, .index-page, .search-page, .lens-page, .trace-page, .guide-page { max-width: none; }
   .man-aside { display: none; }
-  h1, h2, h3, .man-title, .man-head, .prose h2, .prose h3, .prose p, .prose li { color: #000; }
+  h1, h2, h3, .man-title, .man-head, .prose h2, .prose h3, .prose h4, .prose p, .prose li, .prose strong, .prose b, .prose em, .prose i, .prose blockquote, .prose th, .prose td, .prose .math-inline, .prose .math-block, .notice strong { color: #000; }
   .prose { max-width: none; font-size: 10.5pt; line-height: 1.6; }
   .prose a { color: #000; text-decoration: underline; }
   .prose pre, .prose code { background: #f4f4f4; color: #000; border-color: #bbb; }
